@@ -3,9 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <title>My Title</title>
+    <style type="text/css">
+	    .row {
+		  display: flex;
+		}
+
+		.column {
+		  flex: 50%;
+		}
+
+		#header {
+			width: 100%;
+			background-color: yellow;
+			text-align: center;
+		}
+
+		#text-header {
+			display: inline-block; 
+			margin: 0 auto;
+			padding: 3px;
+			background-color: #8ebf42
+
+		}
+	</style>
   </head>
+  
+
   <body>
-    <h1>My Webpage</h1>
     <script src="./index.js"></script>
+    <div class="row" id="header" align="center">
+    	<div id="text-header" align="center">
+    		<p>Hello World</p>
+    	</div>
+    </div>
+	<div class="row">
+	  <div class="column" style="background-color: red">
+	  	<h1>Hello World</h1>
+	  </div>
+	  <div class="column"style="background-color: blue">
+	  	<h1>Hello World2</h1>
+	  </div>
+	</div>
+
   </body>
 </html>
