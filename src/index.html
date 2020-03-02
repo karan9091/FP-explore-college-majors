@@ -14,7 +14,6 @@
 
 		#header {
 			width: 100%;
-			background-color: yellow;
 			text-align: center;
 		}
 
@@ -22,7 +21,6 @@
 			display: inline-block; 
 			margin: 0 auto;
 			padding: 3px;
-			background-color: #8ebf42
 
 		}
 		.line {
@@ -34,16 +32,63 @@
 			fill: #ffab00;
 			stroke: #fff;
 		}
+
+		.button {
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 10px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #008CBA;
+		}
+
+		.button:hover {
+			background-color: #008CBA;
+			color: white;
+		}
+		.button_pressed {
+			background-color: #008CBA;
+			color: white;
+		}
+		.label {
+			vertical-align: middle;
+			min-height: 18px;
+			font-size: 16px;
+		}
+		.select {
+			vertical-align: middle;
+			height: 30px;
+			padding: 10px;
+		}
 	</style>
   </head>
   
 
   <body>
-    <script src="./index.js"></script>
-    <div class="row" id="header" align="center">
-    	<div id="text-header" align="center">
-    		<p>Hello World</p>
-    	</div>
+	<script src="./index.js"></script>
+	<div align="center"><h1 >Amazon Reviews for Movies & TV Shows</h1></div>
+    <div class="row" id="header" align="center", style="background-color: white">
+		<div id="text-header" align="center">
+		<button class="button", id="TV_button">TV Shows</button>
+		<button class="button", id="movie_button">TV Movies</button>
+		<label for="categories">Search By Category:</label>
+		<select id="categories">
+			<option value="asin">ASIN</option>
+			<option value="title">Title</option>
+		</select>
+		<input type="text" id="lname" name="lname">
+	</div>
     </div>
 	<div class="row">
 	  <div class="column" style="background-color: red">

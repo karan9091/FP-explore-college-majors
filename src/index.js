@@ -15,6 +15,27 @@ myClassInstance.sayHi();
 const exampleData = require('./example-data.json');
 
 
+window.onload = init 
+
+function init() {
+    var tv_button = document.getElementById("TV_button");
+    tv_button.addEventListener("click", function() {
+        if(document.getElementById("TV_button").classList.contains("button_pressed")) {
+            document.getElementById("TV_button").classList.remove("button_pressed")
+        } else {
+            document.getElementById("TV_button").classList.add("button_pressed")
+        }
+    })
+    var movie_button = document.getElementById("movie_button");
+    movie_button.addEventListener("click", function() {
+        if(document.getElementById("movie_button").classList.contains("button_pressed")) {
+            document.getElementById("movie_button").classList.remove("button_pressed")
+        } else {
+            document.getElementById("movie_button").classList.add("button_pressed")
+        }
+    })
+}
+
 // Anything you put in the static folder will be available
 // over the network, e.g.
 /*
