@@ -182,7 +182,7 @@ svg.selectAll(".dot")
 svg.append("path")
     .datum(dataset) // 10. Binds data to the line
     .attr("class", "line") // Assign a class for styling
-    .attr("d", line); // 11. Calls the line generator
+    .attr("d", line) // 11. Calls the line generator
     .attr("r", 5)
     .on("mouseover", function (d) {
         div.transition()
