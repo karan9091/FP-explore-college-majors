@@ -18,6 +18,36 @@ const exampleData = require('./example-data.json');
 window.onload = init 
 
 function init() {
+    // read in asin csv into memory
+    var index_asin_map = new Map();
+    var asin_index_map = new Map();
+    var index = 0;
+    d3.csv('metadata_asin.csv', function(data) {
+        asin_index_map.set(data['asin'], index++);
+        index_asin_map.set(index - 1, data['asin']);
+    })
+    // read in title csv into memory
+    var index_title_map = new Map();
+    var index_1 = 0;
+    d3.csv('metadata_title.csv', function(data) {
+        index_title_map.set(index_1++, data['title']);
+    })
+    // create category map with titles
+    var category_title_map = new Map();
+    var index_2 = 0;
+    d3.csv('metadata_category.csv', function(data) {
+        categories = data['category'].substring(1, data['category'].length - 1);
+        sep_categories = categories.split(', ');
+        if(sep_categories.includes("'TV'")) {
+            var key = 'TV';
+        } else {
+            var key = 'Movies';
+        }
+        category_title_map[key] = category_title_map[key] || [];
+        category_title_map[key].push(index_title_map.get(index_2));
+        index_2++;
+    })
+    console.log(category_title_map);
     var tv_button = document.getElementById("TV_button");
     tv_button.addEventListener("click", function() {
         if(document.getElementById("TV_button").classList.contains("button_pressed")) {
