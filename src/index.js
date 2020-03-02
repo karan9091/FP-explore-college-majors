@@ -140,7 +140,7 @@ console.log(data)
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // 3. Call the x axis in a group tag
@@ -160,13 +160,33 @@ svg.append("path")
     .attr("class", "line") // Assign a class for styling
     .attr("d", line); // 11. Calls the line generator
 
+// Define the div for the tooltip
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("pointer-events", "none");
+
 // 12. Appends a circle for each datapoint
 svg.selectAll(".dot")
     .data(data)
-  .enter().append("circle") // Uses the enter().append() method
+    .enter().append("circle") // Uses the enter().append() method
     .attr("class", "dot") // Assign a class for styling
     .attr("cx", function(d) { return xScale(d.overall) })
     .attr("cy", function(d) { return yScale(d.reviewLength) })
-    .attr("r", 5);
+    .attr("r", 5)
+    .on("mouseover", function (d) {
+        div.transition()
+            .duration(200)
+            .style("opacity", .9);
+        div.text(d.reviewText)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
 })
 })
