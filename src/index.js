@@ -143,7 +143,6 @@ var svg = d3.select("#graph1").append("svg")
 	.attr("height", 300 + margin.top + margin.bottom)
     // .attr("width", document.getElementById("graph1").offsetWidth)
     // .attr("height", document.getElementById("graph1").offsetHeight)
-
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // 3. Call the x axis in a group tag
@@ -157,10 +156,23 @@ svg.append("g")
     .attr("class", "y axis")
     .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
 
+// 9. Append the path, bind the data, and call the line generator
+svg.append("path")
+    .datum(dataset) // 10. Binds data to the line
+    .attr("class", "line") // Assign a class for styling
+    .attr("d", line); // 11. Calls the line generator
+
+// Define the div for the tooltip
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("pointer-events", "none");
+
 // 12. Appends a circle for each datapoint
 svg.selectAll(".dot")
     .data(data)
-  .enter().append("circle") // Uses the enter().append() method
+    .enter().append("circle") // Uses the enter().append() method
     .attr("class", "dot") // Assign a class for styling
     .attr("cx", function(d) { return xScale(d.overall) })
     .attr("cy", function(d) { return yScale(d.reviewLength) })
@@ -171,5 +183,19 @@ svg.append("path")
     .datum(dataset) // 10. Binds data to the line
     .attr("class", "line") // Assign a class for styling
     .attr("d", line); // 11. Calls the line generator
+    .attr("r", 5)
+    .on("mouseover", function (d) {
+        div.transition()
+            .duration(200)
+            .style("opacity", .9);
+        div.text(d.reviewText)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
 })
 })
