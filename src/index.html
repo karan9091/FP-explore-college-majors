@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
     <meta charset="UTF-8">
     <title>My Title</title>
     <style type="text/css">
@@ -15,13 +16,7 @@
 		#header {
 			width: 100%;
 			text-align: center;
-		}
-
-		#text-header {
-			display: inline-block; 
-			margin: 0 auto;
-			padding: 3px;
-
+			background-color: white;
 		}
 		.line {
 			fill: none;
@@ -76,35 +71,156 @@
 			width: 50%;
         	height: 100vh;
 		}
+		.div_menu {
+			display: inline-block; 
+			margin: 0 auto;
+			padding: 3px;
+			text-align: center;
+			overflow:visible;
+		}
+		/* #autoComplete_list {
+			position:absolute;
+		} */
+
+		#subheader {
+			width: 100%;
+			text-align: center;
+		}
+
+ 	/* Start of style for the checkboxes */ 
+
+	/* The container */
+	.container {
+	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 22px;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+
+	/* Hide the browser's default radio button */
+	.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+
+	/* Create a custom radio button */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #eee;
+	  border-radius: 50%;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .checkmark {
+	  background-color: #ccc;
+	}
+
+	/* When the radio button is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+	  background-color: #2196F3;
+	}
+
+	/* Create the indicator (the dot/circle - hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	/* Show the indicator (dot/circle) when checked */
+	.container input:checked ~ .checkmark:after {
+	  display: block;
+	}
+
+	/* Style the indicator (dot/circle) */
+	.container .checkmark:after {
+	 	top: 9px;
+		left: 9px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: white;
+	}
+
+ 	/* End of style for the checkboxes */ 
+ 
+ 	.checkbox-div {
+ 		padding-left: 15px;
+ 		padding-right: 15px;
+	}
+
+
+
 	</style>
   </head>
   
 
   <body>
-	<script src="./index.js"></script>
-	<div align="center"><h1 >Amazon Reviews for Movies & TV Shows</h1></div>
-    <div class="row" id="header" align="center", style="background-color: white">
-		<div id="text-header" align="center">
-		<button class="button", id="TV_button">TV Shows</button>
-		<button class="button", id="movie_button">Movies</button>
-		<label for="categories">Search By Category:</label>
-		<select id="categories">
-			<option value="asin">ASIN</option>
-			<option value="title">Title</option>
-		</select>
-		<input type="text" id="lname" name="lname">
-	</div>
+	<div><h1 >Amazon Reviews for Movies & TV Shows</h1></div>
+    <div align="center" class="row" id="header", style="background-color: white">
+		<div class="div_menu" align="center" id="text-header">
+			<button class="button", id="TV_button">TV Shows</button>
+			<button class="button", id="movie_button">Movies</button>
+			<!-- <label for="categories">Search By Category:</label>
+			<select id="categories">
+				<option value="asin">ASIN</option>
+				<option value="title">Title</option>
+			</select> -->
+			<input id="autoComplete" tabindex="1">
+		</div>
     </div>
+    <div class="row">
+	    <div class="checkbox-div">
+	    	<h3>X Axis</h3>
+			<label class="container">Score
+			  <input type="radio" checked="checked" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Length
+			  <input type="radio" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Year
+			  <input type="radio" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+		</div>
+		<div class="checkbox-div2">
+			<h3>Y Axis</h3>
+			<label class="container">Score
+			  <input type="radio2" checked="checked" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Length
+			  <input type="radio2" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Year
+			  <input type="radio2" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+		</div>
+	</div>
 	<div class="row">
 	  <div class="column1" style="width: 50%; background-color: orange; height: auto;">
-	  	<h1>helloworld</h1>
-	  	<h2>hellow</h2>
 	  	<div id="graph1" class="graph"></div>
 	  </div>
 	  <div class="column2" style="background-color: blue">
 	  	<div id="graph2" class="graph"></div>
 	  </div>
 	</div>
-
+	<script src="./index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
   </body>
 </html>
