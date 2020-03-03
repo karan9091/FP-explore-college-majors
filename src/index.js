@@ -20,7 +20,6 @@ window.onload = init
 var index_asin_map = new Map();
 var asin_index_map = new Map();
 var index_title_map = new Map();
-var title_index_map = new Map();
 var category_title_map = new Map();
 var all_titles = []
 
@@ -35,7 +34,6 @@ function init() {
     var index_1 = 0;
     d3.csv('metadata_title.csv', function(data) {
         index_title_map.set(index_1++, data['title']);
-        title_index_map.set(data['title'], index_1-1);
         all_titles.push(data['title']);
     })
     // create category map with titles
@@ -73,196 +71,189 @@ function init() {
 
 // console.log(category_title_map);
 
-function plot_asin(asin){
-	var margin = {top: 50, right: 50, bottom: 50, left: 50}
-	width = 500; // Use the window's width
-	height = 300; // Use the window's height
+var margin = {top: 50, right: 50, bottom: 50, left: 50}
+width = 500; // Use the window's width
+height = 300; // Use the window's height
 
-	// 5. X scale will use the index of our data
-	var xScale = d3.scaleLinear()
-	    .domain([.5, 5.5]) // input
-	    .range([0, width]); // output
+// 5. X scale will use the index of our data
+var xScale = d3.scaleLinear()
+    .domain([.5, 5.5]) // input
+    .range([0, width]); // output
 
-	// 6. Y scale will use the randomly generate number
-	var yScale = d3.scaleLinear()
-	    .domain([0, 10000]) // input
-	    .range([height, 0]); // output
+// 6. Y scale will use the randomly generate number
+var yScale = d3.scaleLinear()
+    .domain([0, 10000]) // input
+    .range([height, 0]); // output
 
-	// 7. d3's line generator
-	var line = d3.line()
-	    .x(function(d, i) { return xScale(i+1); }) // set the x values for the line generator
-	    .y(function(d) { return yScale(d.reviewLength); }) // set the y values for the line generator
-	 
-	// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
-	d3.csv('asin/'+asin+'.csv')
-	    .then((data) => {
-	var sum_list = [0, 0, 0, 0, 0];
-	var count_list = [0, 0, 0, 0, 0];
-	console.log(data)
-	data.forEach(function(d) {
-	    d.overall = +d.overall;
-	    d.overall = d.overall+(Math.random() - .5);
-	    d.reviewLength = +d.reviewLength;
-	    sum_list[d.overall] += d.reviewLength;
-	    count_list[d.overall] += 1;
-	});
-	var avg_list = [];
-	for(i = 0; i < 5; i++){
-		avg_list.push((sum_list[i]+1.0)/count_list);
-	}
+// 7. d3's line generator
+var line = d3.line()
+    .x(function(d, i) { return xScale(i+1); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.reviewLength); }) // set the y values for the line generator
+ 
+// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
+d3.csv('score_averages.csv')
+    .then((dataset) => {
+d3.csv('length_and_score.csv')
+    .then((data) => {
+data.forEach(function(d) {
+    d.overall = +d.overall;
+    d.overall = d.overall+(Math.random() - .5);
+    d.reviewLength = +d.reviewLength;
+});
 
-	var svg = d3.select("#graph1").append("svg")
-		.attr("width", 500 + margin.left + margin.right)
-		.attr("height", 300 + margin.top + margin.bottom)
-	    // .attr("width", document.getElementById("graph1").offsetWidth)
-	    // .attr("height", document.getElementById("graph1").offsetHeight)
-	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	// 3. Call the x axis in a group tag
-	svg.append("g")
-	    .attr("class", "x axis")
-	    .attr("transform", "translate(0," + height + ")")
-	    .call(d3.axisBottom(xScale).ticks(5)); // Create an axis component with d3.axisBottom
+var svg = d3.select("#graph1").append("svg")
+	.attr("width", 500 + margin.left + margin.right)
+	.attr("height", 300 + margin.top + margin.bottom)
+    // .attr("width", document.getElementById("graph1").offsetWidth)
+    // .attr("height", document.getElementById("graph1").offsetHeight)
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	// 4. Call the y axis in a group tag
-	svg.append("g")
-	    .attr("class", "y axis")
-	    .call(d3.axisLeft(yScale).ticks(10)); // Create an axis component with d3.axisLeft
+// 3. Call the x axis in a group tag
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale).ticks(5)); // Create an axis component with d3.axisBottom
 
-	// 9. Append the path, bind the data, and call the line generator
-	svg.append("path")
-	    .datum(avg_list) // 10. Binds data to the line
-	    .attr("class", "line") // Assign a class for styling
-	    .attr("d", line); // 11. Calls the line generator
+// 4. Call the y axis in a group tag
+svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale).ticks(10)); // Create an axis component with d3.axisLeft
 
-	// Define the div for the tooltip
-	var div = d3.select("body")
-	    .append("div")
-	    .attr("class", "tooltip")
-	    .style("opacity", 0)
-	    .style("pointer-events", "none");
+// 9. Append the path, bind the data, and call the line generator
+svg.append("path")
+    .datum(dataset) // 10. Binds data to the line
+    .attr("class", "line") // Assign a class for styling
+    .attr("d", line); // 11. Calls the line generator
 
-	// 12. Appends a circle for each datapoint
-	svg.selectAll(".dot")
-	    .data(data)
-	    .enter().append("circle") // Uses the enter().append() method
-	    .attr("class", "dot") // Assign a class for styling
-	    .attr("cx", function(d) { return xScale(d.overall) })
-	    .attr("cy", function(d) { return yScale(d.reviewLength) })
-	    .attr("r", 3);
+// Define the div for the tooltip
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("pointer-events", "none");
 
-	// // 9. Append the path, bind the data, and call the line generator
-	// svg.append("path")
-	//     .datum(data) // 10. Binds data to the line
-	//     .attr("class", "line") // Assign a class for styling
-	//     .attr("d", line) // 11. Calls the line generator
-	//     .attr("r", 5)
-	//     .on("mouseover", function (d) {
-	//         div.transition()
-	//             .duration(200)
-	//             .style("opacity", .9);
-	//         div.text(d.reviewText)
-	//             .style("left", (d3.event.pageX) + "px")
-	//             .style("top", (d3.event.pageY - 28) + "px");
-	//     })
-	//     .on("mouseout", function (d) {
-	//         div.transition()
-	//             .duration(500)
-	//             .style("opacity", 0);
-	//     });
-	})
-}
+// 12. Appends a circle for each datapoint
+svg.selectAll(".dot")
+    .data(data)
+    .enter().append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d) { return xScale(d.overall) })
+    .attr("cy", function(d) { return yScale(d.reviewLength) })
+    .attr("r", 3);
 
-// var margin = {top: 50, right: 50, bottom: 50, left: 50}
-// width = 500; // Use the window's width
-// height = 300; // Use the window's height
+// 9. Append the path, bind the data, and call the line generator
+svg.append("path")
+    .datum(dataset) // 10. Binds data to the line
+    .attr("class", "line") // Assign a class for styling
+    .attr("d", line) // 11. Calls the line generator
+    .attr("r", 5)
+    .on("mouseover", function (d) {
+        div.transition()
+            .duration(200)
+            .style("opacity", .9);
+        div.text(d.reviewText)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
+})
+})
 
-// // 5. X scale will use the index of our data
-// var xScale2 = d3.scaleLinear()
-//     .domain([1997.5, 2014.5]) // input
-//     .range([0, width]); // output
+var margin = {top: 50, right: 50, bottom: 50, left: 50}
+width = 500; // Use the window's width
+height = 300; // Use the window's height
 
-// // 6. Y scale will use the randomly generate number
-// var yScale2 = d3.scaleLinear()
-//     .domain([0, 10000]) // input
-//     .range([height, 0]); // output
+// 5. X scale will use the index of our data
+var xScale2 = d3.scaleLinear()
+    .domain([1997.5, 2014.5]) // input
+    .range([0, width]); // output
 
-// // 7. d3's line generator
-// var line2 = d3.line()
-//     .x(function(d, i) { return xScale2(i+1); }) // set the x values for the line generator
-//     .y(function(d) { return yScale2(d.reviewLength); }) // set the y values for the line generator
+// 6. Y scale will use the randomly generate number
+var yScale2 = d3.scaleLinear()
+    .domain([0, 10000]) // input
+    .range([height, 0]); // output
 
-// d3.csv('years/year_averages.csv')
-//     .then((dataset2) => {
-// d3.csv('length_and_year.csv')
-//     .then((data2) => {
-// data2.forEach(function(d) {
-//     d.reviewYear = +d.reviewYear;
-//     d.reviewLength = +d.reviewLength;
-// });
-// // console.log(dataset2)
+// 7. d3's line generator
+var line2 = d3.line()
+    .x(function(d, i) { return xScale2(i+1); }) // set the x values for the line generator
+    .y(function(d) { return yScale2(d.reviewLength); }) // set the y values for the line generator
 
-// var svg = d3.select("#graph2").append("svg")
-// 	.attr("width", 500 + margin.left + margin.right)
-// 	.attr("height", 300 + margin.top + margin.bottom)
-//     // .attr("width", document.getElementById("graph1").offsetWidth)
-//     // .attr("height", document.getElementById("graph1").offsetHeight)
-//     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+d3.csv('years/year_averages.csv')
+    .then((dataset2) => {
+d3.csv('length_and_year.csv')
+    .then((data2) => {
+data2.forEach(function(d) {
+    d.reviewYear = +d.reviewYear;
+    d.reviewLength = +d.reviewLength;
+});
+// console.log(dataset2)
 
-// // 3. Call the x axis in a group tag
-// svg.append("g")
-//     .attr("class", "x axis")
-//     .attr("transform", "translate(0," + height + ")")
-//     .call(d3.axisBottom(xScale2).ticks(17)); // Create an axis component with d3.axisBottom
+var svg = d3.select("#graph2").append("svg")
+	.attr("width", 500 + margin.left + margin.right)
+	.attr("height", 300 + margin.top + margin.bottom)
+    // .attr("width", document.getElementById("graph1").offsetWidth)
+    // .attr("height", document.getElementById("graph1").offsetHeight)
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// // 4. Call the y axis in a group tag
-// svg.append("g")
-//     .attr("class", "y axis")
-//     .call(d3.axisLeft(yScale2).ticks(10)); // Create an axis component with d3.axisLeft
+// 3. Call the x axis in a group tag
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale2).ticks(17)); // Create an axis component with d3.axisBottom
 
-// // 9. Append the path, bind the data, and call the line generator
-// svg.append("path")
-//     .datum(dataset2) // 10. Binds data to the line
-//     .attr("class", "line") // Assign a class for styling
-//     .attr("d", line2); // 11. Calls the line generator
+// 4. Call the y axis in a group tag
+svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale2).ticks(10)); // Create an axis component with d3.axisLeft
 
-// // Define the div for the tooltip
-// var div = d3.select("body")
-//     .append("div")
-//     .attr("class", "tooltip")
-//     .style("opacity", 0)
-//     .style("pointer-events", "none");
+// 9. Append the path, bind the data, and call the line generator
+svg.append("path")
+    .datum(dataset2) // 10. Binds data to the line
+    .attr("class", "line") // Assign a class for styling
+    .attr("d", line2); // 11. Calls the line generator
 
-// // 12. Appends a circle for each datapoint
-// svg.selectAll(".dot")
-//     .data(data2)
-//     .enter().append("circle") // Uses the enter().append() method
-//     .attr("class", "dot") // Assign a class for styling
-//     .attr("cx", function(d) { return xScale2(d.reviewYear) })
-//     .attr("cy", function(d) { return yScale2(d.reviewLength) })
-//     .attr("r", 3);
+// Define the div for the tooltip
+var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("pointer-events", "none");
 
-// // 9. Append the path, bind the data, and call the line generator
-// svg.append("path")
-//     .datum(dataset2) // 10. Binds data to the line
-//     .attr("class", "line") // Assign a class for styling
-//     .attr("d", line2) // 11. Calls the line generator
-//     .attr("r", 5)
-//     .on("mouseover", function (d) {
-//         div.transition()
-//             .duration(200)
-//             .style("opacity", .9);
-//         div.text(d.reviewText)
-//             .style("left", (d3.event.pageX) + "px")
-//             .style("top", (d3.event.pageY - 28) + "px");
-//     })
-//     .on("mouseout", function (d) {
-//         div.transition()
-//             .duration(500)
-//             .style("opacity", 0);
-//     });
-// })
-// })
+// 12. Appends a circle for each datapoint
+svg.selectAll(".dot")
+    .data(data2)
+    .enter().append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d) { return xScale2(d.reviewYear) })
+    .attr("cy", function(d) { return yScale2(d.reviewLength) })
+    .attr("r", 3);
+
+// 9. Append the path, bind the data, and call the line generator
+svg.append("path")
+    .datum(dataset2) // 10. Binds data to the line
+    .attr("class", "line") // Assign a class for styling
+    .attr("d", line2) // 11. Calls the line generator
+    .attr("r", 5)
+    .on("mouseover", function (d) {
+        div.transition()
+            .duration(200)
+            .style("opacity", .9);
+        div.text(d.reviewText)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+    .on("mouseout", function (d) {
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
+})
+})
 
 new autoComplete({
     data: {
@@ -309,7 +300,6 @@ new autoComplete({
         document.querySelector("#autoComplete_list").appendChild(result);
     },
     onSelection: feedback => {
-    	console.log(index_asin_map.get(title_index_map.get(feedback.selection.value)))
-        plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)));
+        console.log(feedback.selection.value);
     }
 });
