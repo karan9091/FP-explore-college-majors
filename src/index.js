@@ -75,8 +75,8 @@ function init() {
 
 function plot_asin(asin){
 	var margin = {top: 50, right: 50, bottom: 50, left: 50}
-	width = 500; // Use the window's width
-	height = 300; // Use the window's height
+	width = window.innerWidth - 75; // Use the window's width
+	height = 475; // Use the window's height
 
 	// 5. X scale will use the index of our data
 	var xScale = d3.scaleLinear()
@@ -91,7 +91,7 @@ function plot_asin(asin){
 	// 7. d3's line generator
 	var line = d3.line()
 	    .x(function(d, i) { return xScale(i+1); }) // set the x values for the line generator
-	    .y(function(d) { return yScale(d.reviewLength); }) // set the y values for the line generator
+	    .y(function(d) { return yScale(d); }) // set the y values for the line generator
 	 
 	// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
 	d3.csv('asin/'+asin+'.csv')
@@ -100,20 +100,22 @@ function plot_asin(asin){
 	var count_list = [0, 0, 0, 0, 0];
 	console.log(data)
 	data.forEach(function(d) {
+	    sum_list[d.overall-1] += parseInt(d.reviewLength, 10);
+	    count_list[d.overall-1] += 1;
 	    d.overall = +d.overall;
-	    d.overall = d.overall+(Math.random() - .5);
-	    d.reviewLength = +d.reviewLength;
-	    sum_list[d.overall] += d.reviewLength;
-	    count_list[d.overall] += 1;
+	    d.overall = d.overall + (Math.random() - .5) * .25
+	    d.reviewLength = +d.reviewLength
 	});
+	console.log(sum_list)
+	console.log(count_list)
 	var avg_list = [];
 	for(i = 0; i < 5; i++){
-		avg_list.push((sum_list[i]+1.0)/count_list);
+		avg_list.push((sum_list[i]+0.0)/(count_list[i] + 0.0));
 	}
-
+    console.log(avg_list)
 	var svg = d3.select("#graph1").append("svg")
-		.attr("width", 500 + margin.left + margin.right)
-		.attr("height", 300 + margin.top + margin.bottom)
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
 	    // .attr("width", document.getElementById("graph1").offsetWidth)
 	    // .attr("height", document.getElementById("graph1").offsetHeight)
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -149,7 +151,15 @@ function plot_asin(asin){
 	    .attr("class", "dot") // Assign a class for styling
 	    .attr("cx", function(d) { return xScale(d.overall) })
 	    .attr("cy", function(d) { return yScale(d.reviewLength) })
-	    .attr("r", 3);
+	    .attr("r", 8)
+	    .on("mouseover", function (d) {
+	         div.transition()
+	             .duration(200)
+	             .style("opacity", .9);
+	         div.text(d.reviewText)
+	             .style("left", (d3.event.pageX) + "px")
+	             .style("top", (d3.event.pageY - 28) + "px");
+	     })
 
 	// // 9. Append the path, bind the data, and call the line generator
 	// svg.append("path")
