@@ -15,6 +15,7 @@
 		#header {
 			width: 100%;
 			text-align: center;
+			background-color: white;
 		}
 
 		#text-header {
@@ -76,6 +77,91 @@
 			width: 50%;
         	height: 100vh;
 		}
+
+		#subheader {
+			width: 100%;
+			text-align: center;
+		}
+
+ 	/* Start of style for the checkboxes */ 
+
+	/* The container */
+	.container {
+	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 22px;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #eee;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .checkmark {
+	  background-color: #ccc;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+	  background-color: #2196F3;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+	  display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.container .checkmark:after {
+	  left: 9px;
+	  top: 5px;
+	  width: 5px;
+	  height: 10px;
+	  border: solid white;
+	  border-width: 0 3px 3px 0;
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+
+ 	/* End of style for the checkboxes */ 
+
+ 	.checkbox-div {
+ 		padding-left: 15px;
+ 		padding-right: 15px;
+	}
+
+
+
 	</style>
   </head>
   
@@ -83,7 +169,7 @@
   <body>
 	<script src="./index.js"></script>
 	<div align="center"><h1 >Amazon Reviews for Movies & TV Shows</h1></div>
-    <div class="row" id="header" align="center", style="background-color: white">
+    <div class="row" id="header" align="center">
 		<div id="text-header" align="center">
 		<button class="button", id="TV_button">TV Shows</button>
 		<button class="button", id="movie_button">TV Movies</button>
@@ -95,10 +181,39 @@
 		<input type="text" id="lname" name="lname">
 	</div>
     </div>
+    <div class="row">
+	    <div class="checkbox-div">
+	    	<h3>X Axis</h3>
+			<label class="container">Score
+			  <input type="checkbox" checked="checked">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Length
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+		</div>
+		<div class="checkbox-div">
+			<h3>Y Axis</h3>
+			<label class="container">Score
+			  <input type="checkbox" checked="checked">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Length
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Year
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+		</div>
+	</div>
 	<div class="row">
 	  <div class="column1" style="width: 50%; background-color: orange; height: auto;">
-	  	<h1>helloworld</h1>
-	  	<h2>hellow</h2>
 	  	<div id="graph1" class="graph"></div>
 	  </div>
 	  <div class="column2" style="background-color: blue">
