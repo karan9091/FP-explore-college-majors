@@ -74,10 +74,11 @@ function init() {
 // console.log(category_title_map);
 
 function plot_asin(asin){
-	var margin = {top: 50, right: 50, bottom: 50, left: 50}
-	width = window.innerWidth - 75; // Use the window's width
+	var margin = {top: 30, right: 50, bottom: 50, left: 55}
+	width = window.innerWidth - 100; // Use the window's width
 	height = 475; // Use the window's height
-
+    margin_height = height - margin.top
+    var double_margin = {top: 100, right: 100, bottom: 100, left: 100}
 	// 5. X scale will use the index of our data
 	var xScale = d3.scaleLinear()
 	    .domain([.5, 5.5]) // input
@@ -118,6 +119,7 @@ function plot_asin(asin){
 		.attr("height", height + margin.top + margin.bottom)
 	    // .attr("width", document.getElementById("graph1").offsetWidth)
 	    // .attr("height", document.getElementById("graph1").offsetHeight)
+	    .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	// 3. Call the x axis in a group tag
@@ -126,10 +128,25 @@ function plot_asin(asin){
 	    .attr("transform", "translate(0," + height + ")")
 	    .call(d3.axisBottom(xScale).ticks(5)); // Create an axis component with d3.axisBottom
 
+	svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," +
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .text("Review Length");
+
 	// 4. Call the y axis in a group tag
 	svg.append("g")
 	    .attr("class", "y axis")
 	    .call(d3.axisLeft(yScale).ticks(10)); // Create an axis component with d3.axisLeft
+
+	svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Score");
 
 	// 9. Append the path, bind the data, and call the line generator
 	svg.append("path")
@@ -156,7 +173,7 @@ function plot_asin(asin){
 	         div.transition()
 	             .duration(200)
 	             .style("opacity", .9);
-	         div.text(d.reviewText)
+	         div.html("Review Length: " + d.reviewLength + "<br> Review: " + d.reviewText)
 	             .style("left", (d3.event.pageX) + "px")
 	             .style("top", (d3.event.pageY - 28) + "px");
 	     })
