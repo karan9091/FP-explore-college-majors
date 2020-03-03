@@ -111,7 +111,11 @@ function plot_asin(asin){
 	console.log(count_list)
 	var avg_list = [];
 	for(i = 0; i < 5; i++){
-		avg_list.push((sum_list[i]+0.0)/(count_list[i] + 0.0));
+	    if(count_list[i] == 0) {
+	        avg_list.push(0.0)
+	    } else {
+	        avg_list.push((sum_list[i]+0.0)/(count_list[i] + 0.0));
+	    }
 	}
     console.log(avg_list)
 	var svg = d3.select("#graph1").append("svg")
