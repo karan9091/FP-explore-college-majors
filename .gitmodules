@@ -1,0 +1,3 @@
+[submodule "src/src/autoComplete.js"]
+	path = src/src/autoComplete.js
+	url = https://github.com/TarekRaafat/autoComplete.js.git

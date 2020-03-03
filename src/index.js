@@ -2,6 +2,7 @@
 
 // You can require libraries
 const d3 = require('d3')
+const autoComplete = require("@tarekraafat/autocomplete.js/dist/js/autoComplete");
 
 // You can include local JS files:
 const MyClass = require('./my-class');
@@ -20,6 +21,7 @@ var index_asin_map = new Map();
 var asin_index_map = new Map();
 var index_title_map = new Map();
 var category_title_map = new Map();
+var all_titles = []
 
 function init() {
     // read in asin csv into memory
@@ -32,6 +34,7 @@ function init() {
     var index_1 = 0;
     d3.csv('metadata_title.csv', function(data) {
         index_title_map.set(index_1++, data['title']);
+        all_titles.push(data['title']);
     })
     // create category map with titles
     var index_2 = 0;
@@ -64,8 +67,9 @@ function init() {
         }
     })
 }
+// console.log(all_titles);
 
-console.log(category_title_map);
+// console.log(category_title_map);
 
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
 width = 500; // Use the window's width
@@ -187,7 +191,7 @@ data2.forEach(function(d) {
     d.reviewYear = +d.reviewYear;
     d.reviewLength = +d.reviewLength;
 });
-console.log(dataset2)
+// console.log(dataset2)
 
 var svg = d3.select("#graph2").append("svg")
 	.attr("width", 500 + margin.left + margin.right)
@@ -250,3 +254,52 @@ svg.append("path")
     });
 })
 })
+
+new autoComplete({
+    data: {
+      src: all_titles,
+      cache: true
+    },
+    query: {
+          manipulate: (query) => {
+            return query;
+          }
+    },
+    sort: (a, b) => {
+        if (a.match < b.match) return -1;
+        if (a.match > b.match) return 1;
+        return 0;
+    },
+    placeHolder: "Movies and Shows...",
+    selector: "#autoComplete",
+    threshold: 1,
+    debounce: 300,
+    searchEngine: "strict",
+    resultsList: {
+        render: true,
+        container: source => {
+            source.setAttribute("id", "media_list");
+        },
+        destination: document.querySelector("#autoComplete"),
+        position: "afterend",
+        element: "ul"
+    },
+    maxResults: 5,
+    highlight: true,
+    resultItem: {
+        content: (data, source) => {
+            source.innerHTML = data.match;
+        },
+        element: "li"
+    },
+    noResults: () => {
+        const result = document.createElement("li");
+        result.setAttribute("class", "no_result");
+        result.setAttribute("tabindex", "1");
+        result.innerHTML = "No Results";
+        document.querySelector("#autoComplete_list").appendChild(result);
+    },
+    onSelection: feedback => {
+        console.log(feedback.selection.value);
+    }
+});
