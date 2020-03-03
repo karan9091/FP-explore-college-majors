@@ -16,8 +16,37 @@ const exampleData = require('./example-data.json');
 
 
 window.onload = init 
+var index_asin_map = new Map();
+var asin_index_map = new Map();
+var index_title_map = new Map();
+var category_title_map = new Map();
 
 function init() {
+    // read in asin csv into memory
+    var index = 0;
+    d3.csv('metadata_asin.csv', function(data) {
+        asin_index_map.set(data['asin'], index++);
+        index_asin_map.set(index - 1, data['asin']);
+    })
+    // read in title csv into memory
+    var index_1 = 0;
+    d3.csv('metadata_title.csv', function(data) {
+        index_title_map.set(index_1++, data['title']);
+    })
+    // create category map with titles
+    var index_2 = 0;
+    d3.csv('metadata_category.csv', function(data) {
+        categories = data['category'].substring(1, data['category'].length - 1);
+        sep_categories = categories.split(', ');
+        if(sep_categories.includes("'TV'")) {
+            var key = 'TV';
+        } else {
+            var key = 'Movies';
+        }
+        category_title_map[key] = category_title_map[key] || [];
+        category_title_map[key].push(index_title_map.get(index_2));
+        index_2++;
+    })
     var tv_button = document.getElementById("TV_button");
     tv_button.addEventListener("click", function() {
         if(document.getElementById("TV_button").classList.contains("button_pressed")) {
@@ -36,95 +65,8 @@ function init() {
     })
 }
 
-// Anything you put in the static folder will be available
-// over the network, e.g.
-/*
-d3.csv('length_and_score.csv')
-    .then((data) => {
-d3.csv('score_averages.csv')
-    .then((avg_data) => {
-    console.log(avg_data)
-var margin = {
-        top: 20,
-        right: 20,
-        bottom: 30,
-        left: 40
-    },
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+console.log(category_title_map);
 
-var x = d3.scaleLinear()
-    .range([0, width]);
-
-var y = d3.scaleLinear()
-    .range([height, 0]);
-
-var xAxis = d3.axisBottom(x)
-
-var yAxis = d3.axisLeft(y)
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-data.forEach(function(d) {
-    d.overall = +d.overall;
-    d.reviewLength = +d.reviewLength;
-});
-var line = d3.line()
-    .x(function(d) { return d.overall; }) // set the x values for the line generator
-    .y(function(d) { return d.reviewLength; }) // set the y values for the line generator
-    .curve(d3.curveMonotoneX)
-x.domain(d3.extent(data, function(d) {
-    return d.overall;
-}));
-y.domain(d3.extent(data, function(d) {
-    return d.reviewLength;
-}));
-
-svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis)
-    .append("text")
-    .attr("class", "label")
-    .attr("x", width)
-    .attr("y", -6)
-    .style("text-anchor", "end")
-    .text("X-Value");
-
-svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
-    .attr("class", "label")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 6)
-    .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text("Y-Value")
-
-svg.selectAll(".dot")
-    .data(data)
-    .enter().append("circle")
-    .attr("class", "dot")
-    .attr("r", 3.5)
-    .attr("cx", function(d) {
-        return x(d.overall);
-    })
-    .attr("cy", function(d) {
-        return y(d.reviewLength);
-    });
-svg.append("path")
-        .datum(avg_data)
-        .attr("class", "line")
-        .attr("d", line);
-
-})
-})
-*/
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
 width = 500; // Use the window's width
 height = 300; // Use the window's height
