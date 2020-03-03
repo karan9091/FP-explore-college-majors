@@ -74,6 +74,7 @@ function init() {
 // console.log(category_title_map);
 
 function plot_asin(asin){
+    document.getElementById("graph1").innerHTML = "";
 	var margin = {top: 30, right: 50, bottom: 50, left: 55}
 	width = window.innerWidth - 100; // Use the window's width
 	height = 475; // Use the window's height
