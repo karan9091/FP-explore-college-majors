@@ -1,5 +1,5 @@
 // You can require libraries
-const d3 = require('d3')
+const d3 = require('d3');
 const autoComplete = require("@tarekraafat/autocomplete.js/dist/js/autoComplete");
 
 // You can include local JS files:
