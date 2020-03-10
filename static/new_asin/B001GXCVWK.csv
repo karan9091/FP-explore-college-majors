@@ -1,0 +1,20 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+8307294,4,B001GXCVWK,"Just a warning: I've met the people in this video at Drupalcon 2009 in DC and heard some of them speak on Drupal topics.  They were very nice and smart.  They made me feel dumb since they are drupal community developers at the bleeding edge.  Anyway, that's my caveat and bias.  I bought the video there, not really for myself because I know a bit about drupal, but rather for people at work, as a part of my sales pitch for Drupal to the management at my workplace as 'the future of our client websites'.
+
+The video did a good job of captivating my attention and providing an overview of what Drupal is, why it's better than making websites the old fashioned dumbdumb way (which is basically making templates in Dreamweaver and updating content manually).
+
+Well, that's sufficient for small business and mom and pop sites, if you expect to build compelling modern sites (by my definition, any site having a user-login system for more than just an email list), it becomes quickly unmanageable for a small team to make anything more than that. That's why Drupal is great.  But what is it?
+
+This video explains all the parts of Drupal and provides a very good overview into the architecture of Drupal, without getting overly technical.  They do not show code per se, but it does cover the concept of the node, modules, programmatic hooks and the templating system as well as the lamp (linuxapachemysqlphp) environment in which Drupal runs, optimally.  To my surprise it even mentions cron, which can be a big 'gotcha' if you are not replacing it with something else when trying to run Drupal in windows.
+
+My only criticism is that the production quality was a bit low it seemed because the colors were kinda washed out on the dvd, still the audio quality was clear and the interview technique /documentary style was effective in discussing the topics covered.",1236384000,,1857,4.718266253869969
+8307295,1,B001GXCVWK,"You get the feeling this is an info-mercial for Lullabot.  It also reminds me of ""Spinal Tap"" for its glossy, vapid earnestness.  I am a neophyte to Drupal and I can say this DVD is a really well produced, completely non-technical, stratospheric look at Drupal.  They had a great start, but no practical details.  Www.drupaltutorials.org is a much better use of your money and actually shows you where the ""door lock, ignition and gear shifter"" is on the software!
+
+What is needed all over the 'net is this kind of a fluent start which ends up as a Richard P. Feynman essay on ""how to do"".  Unfortunately, there is not a teacher like Feynman anywhere in cyberspace that I have found.
+
+What is most missing in this introduction is the stark reality that you are on your own, like ""Survivorman"" when it comes to this software.  You CAN find out information through forums, Google, etc.  You can also get things done, but it is like teaching yourself Hungarian.  Slow going -  unless you are Hungarian.  These Lullabotians were born on Drupal, wherever that is.
+
+So, this is more of the same self-possessed ramblings of narrowly focused technicians who hold our future software in their brains.  They are coders, not teachers or visionaries.  We need a ""software messiah"" who can tell us what the hell this stuff really does and how we can use it...  Well, anyhow, this ain't it.",1229904000,2,1376,4.694560669456067
+8307296,2,B001GXCVWK,"I bought this video from Lullabot as soon as it was released.  I've managed several Drupal projects and am now diving in to development myself.  I was very disappointed, this video has no instructional content whatsoever.  It is a very (very) high level view of what Drupal is.  I give it two stars for good production value, only.
+
+I am hoping this is the first in a series of videos that will dive deeper into Drupal.",1228089600,,419,4.4605263157894735

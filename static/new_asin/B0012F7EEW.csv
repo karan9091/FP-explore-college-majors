@@ -1,0 +1,23 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+8245779,5,B0012F7EEW,"A great film by Robert Flaherty which followed the success of Nanook of the North. Flaherty chose the Samoan cultural tradition; he lived for two years on the islands, with the story gradually evolving out of the lives of the native population. Includes the famous sequences of the tattooing of Moana, a part of the initiation into manhood, and dancing the Shiva before a village virgin. An ""intensely lyrical poem on the theme of the last paradise"" (Herman Weinberg). Silent with music score.
+Title: Moana [videorecording] : A romance of the golden age / Paramount pictures ; produced, directed and written by Robert Flaherty.
+
+Description: 1 videocassette (76 min.) : si., b&w ; 1/2 in.
+
+Published: Phoenix, Ariz. : Grapevine Video, [1926]
+
+select link, link_text from uvmdb.elink_index where record_id = '690426' and record_type = 'B'  System: VHS format.
+
+Series Title: Classic silent movies
+
+Credits: Edited by Julian Johnson.
+
+Summary: Depicts the lives of natives of British Samoa.
+
+Notes: Silent film ; English titles.
+Originally produced as a motion picture by Paramount pictures.
+
+Subject(s): Feature films.
+Documentary films.
+
+ Samoan Islands Social condition",1199836800,2,1170,5.4088397790055245
