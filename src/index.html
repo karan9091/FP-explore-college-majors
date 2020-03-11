@@ -78,9 +78,6 @@
 			text-align: center;
 			overflow:visible;
 		}
-		/* #autoComplete_list {
-			position:absolute;
-		} */
 
 		#subheader {
 			width: 100%;
@@ -167,9 +164,6 @@
   
 
   <body>
-	<script src="./index.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
-	<script src="./word_cloud.js"></script>
 	<div><h1 >Amazon Reviews for Movies & TV Shows</h1></div>
     <div align="center" class="row" id="header", style="background-color: white">
 		<div class="div_menu" align="center" id="text-header">
@@ -222,8 +216,12 @@
 	  	<div id="graph1" class="graph"></div>
 	  </div>
 	</div>
-	<!-- <script src="./index.js"></script>
+	<div id="wordcloud"></div>
+	<script src="./index.js"></script>
+	<script src="word_cloud.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
-	<script src="./word_cloud.js"></script> -->
   </body>
 </html>

@@ -1,10 +1,12 @@
-const natural = require('natural')
+const natural = require('natural');
+const fs = require('fs');
+const d3 = require('d3');
 
 // CONSTANTS
 const language = "EN"
 const defaultCategory = 'N';
 const defaultCategoryCapitalized = 'NNP';
-const unimportantTags = new Set(['IN', 'CC', 'CD', 'DT', 'EX', 'LS', 'MD', 'PDT', 'POS', 'PRP', 'PRP$', 'TO', 'WP', 'WP$', 'WRB']);
+const unimportantTags = new Set(['IN', 'CC', 'CD', 'DT', 'EX', 'LS', 'MD', 'PDT', 'POS', 'PRP', 'PRP$', 'TO', 'WP', 'WP$', 'WRB', 'N']);
 
 var lexicon = new natural.Lexicon(language, defaultCategory, defaultCategoryCapitalized);
 var ruleSet = new natural.RuleSet('EN');
@@ -21,46 +23,78 @@ function createWordEntries(asin) {
 	data.forEach(function(d) {
 	    reviewTexts.push(d.reviewText);
     });
-    console.log(reviewTexts);
     // Step 3. POS tag each word
     var taggedReviews = [];
     reviewTexts.forEach(function(r) {
         var tokenizer = new natural.WordTokenizer();
-        var review_array = tokenizer.tokenize("your dog has fleas.");
+        var review_array = tokenizer.tokenize(r);
         var tagged_words = tagger.tag(review_array);
-        console.log(tagged_words);
         taggedReviews.push(tagged_words);
     });
     // Step 4. Throw out inconsequential words
     // Step 5. create a dictionary of word --> count
-    var word_count = {}
-    // taggedReviews.forEach(function(r) {
-    // })
-    // Step 6. call drawWordCloud() with the dictionary.
-},
-
-function drawWordCloud(word_entries) {
-    var svg_location = "#wordcloud";
-    // width and height?
-    var width = $(document).width();
-    var height = $(document).height();
-    var fill = d3.scale.category20();
-    var word_entries = d3.entries(word_entries);var xScale = d3.scale.linear()
-    .domain([0, d3.max(word_entries, function(d) {
-       return d.value;
-     })
-    ])
-    .range([10,100]); // may need to change ths range? unclear what this is for
-    d3.layout.cloud().size([width, height])
-          .timeInterval(20) // check what this does
-          .words(word_entries)
-          .fontSize(function(d) { return xScale(+d.value); })
-          .text(function(d) { return d.key; })
-          .rotate(function() { return ~~(Math.random() * 2) * 90; }) // optional - 
-                                                                    // may look better w/o
-                                                                    // rotation.
-          .font("Impact")
-          .on("end", draw)
-          .start();
-          // call draw with wor
+    var word_count = new Map();
+    var num_words = 0;
+    var counted = 0;
+    taggedReviews.forEach(function(r) {
+        r.taggedWords.forEach(function(w) {
+            if(!unimportantTags.has(w.tag) && w.token.length > 1) {
+                let token = w.token.toLowerCase();
+                num_words += 1;
+                if (word_count[token]) {
+                    word_count[token]++;
+                } else {
+                    word_count[token] = 1;
+                }
+            }
+        });
+    });
 })}
+
+
+//     var svg_location = "#wordcloud";
+//     var width = 400;
+//     var height = 400;
+
+//     // var fill = d3.scale.category20();
+
+//     var word_entries = d3.entries(word_count);
+
+//     var xScale = d3.scaleLinear()
+//         .domain([0, d3.max(word_entries, function(d) {
+//             return d.value;
+//         })
+//         ])
+//         .range([10,100]);
+
+//     d3.layout.cloud().size([width, height])
+//         .timeInterval(20)
+//         .words(word_entries)
+//         .fontSize(function(d) { return xScale(+d.value); })
+//         .text(function(d) { return d.key; })
+//         .rotate(function() { return ~~(Math.random() * 2) * 90; })
+//         .font("Impact")
+//         .on("end", draw)
+//         .start();
+
+//     function draw(words) {
+//     d3.select(svg_location).append("svg")
+//         .attr("width", width)
+//         .attr("height", height)
+//         .append("g")
+//         .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
+//         .selectAll("text")
+//         .data(words)
+//         .enter().append("text")
+//         .style("font-size", function(d) { return xScale(d.value) + "px"; })
+//         .style("font-family", "Impact")
+//         .style("fill", function(d, i) { return fill(i); })
+//         .attr("text-anchor", "middle")
+//         .attr("transform", function(d) {
+//             return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+//         })
+//         .text(function(d) { return d.key; });
+//     }
+
+//     d3.layout.cloud().stop();
+// })}
