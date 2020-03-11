@@ -1,7 +1,5 @@
-
-
 // You can require libraries
-const d3 = require('d3')
+const d3 = require('d3');
 const autoComplete = require("@tarekraafat/autocomplete.js/dist/js/autoComplete");
 
 // You can include local JS files:
@@ -25,7 +23,7 @@ var category_title_map = new Map();
 var all_titles = []
 
 function init() {
-    // read in asin csv into memory
+     // read in asin csv into memory
     var index = 0;
     d3.csv('metadata_asin.csv', function(data) {
         asin_index_map.set(data['asin'], index++);
@@ -52,26 +50,7 @@ function init() {
         category_title_map[key].push(index_title_map.get(index_2));
         index_2++;
     })
-    var tv_button = document.getElementById("TV_button");
-    tv_button.addEventListener("click", function() {
-        if(document.getElementById("TV_button").classList.contains("button_pressed")) {
-            document.getElementById("TV_button").classList.remove("button_pressed")
-        } else {
-            document.getElementById("TV_button").classList.add("button_pressed")
-        }
-    })
-    var movie_button = document.getElementById("movie_button");
-    movie_button.addEventListener("click", function() {
-        if(document.getElementById("movie_button").classList.contains("button_pressed")) {
-            document.getElementById("movie_button").classList.remove("button_pressed")
-        } else {
-            document.getElementById("movie_button").classList.add("button_pressed")
-        }
-    })
 }
-// console.log(all_titles);
-
-// console.log(category_title_map);
 
 function plot_asin(asin){
     document.getElementById("graph1").innerHTML = "";
