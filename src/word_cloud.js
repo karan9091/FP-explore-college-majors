@@ -1,13 +1,13 @@
 const natural = require('natural');
 const fs = require('fs');
 const d3 = require('d3');
+const cloud = require('./d3.layout.cloud.js');
 
 // CONSTANTS
 const language = "EN"
 const defaultCategory = 'N';
 const defaultCategoryCapitalized = 'NNP';
-const unimportantTags = new Set(['IN', 'CC', 'CD', 'DT', 'EX', 'LS', 'MD', 'PDT', 'POS', 'PRP', 'PRP$', 'TO', 'WP', 'WP$', 'WRB', 'N']);
-
+const unimportantTags = new Set(['IN', 'CC', 'CD', 'DT', 'EX', 'LS', 'MD', 'PDT', 'POS', 'PRP', 'PRP$', 'TO', 'WP', 'WP$', 'WRB', 'N', 'WDT']);
 var lexicon = new natural.Lexicon(language, defaultCategory, defaultCategoryCapitalized);
 var ruleSet = new natural.RuleSet('EN');
 var tagger = new natural.BrillPOSTagger(lexicon, ruleSet);
@@ -38,7 +38,7 @@ function createWordEntries(asin) {
     var counted = 0;
     taggedReviews.forEach(function(r) {
         r.taggedWords.forEach(function(w) {
-            if(!unimportantTags.has(w.tag) && w.token.length > 1) {
+            if(!unimportantTags.has(w.tag) && w.token.length > 2) {
                 let token = w.token.toLowerCase();
                 num_words += 1;
                 if (word_count[token]) {
@@ -49,52 +49,43 @@ function createWordEntries(asin) {
             }
         });
     });
+    word_array = [];  
+    Object.entries(word_count).forEach(([key, value]) => {
+        new_word = [];
+        new_word.push(key);
+        // new_word.push(((1.0 * value) / (1.0 * num_words)));
+        // new_word.push(value);
+        new_word.push((1.0 * value) / 10);
+        word_array.push(new_word);
+     });
+     cloud.cloud()
+     .size([600, 600])
+     .words(word_array
+         .map(function(d) {
+             return {text: d[0], size: d[1] * 100};}))
+         .padding(5)
+         .rotate(function() { return ~~(Math.random() * 0) * 90; })
+         .font("Impact")
+         .fontSize(function(d) { return d.size; })
+         .on("end", draw)
+         .start();
 })}
 
-
-//     var svg_location = "#wordcloud";
-//     var width = 400;
-//     var height = 400;
-
-//     // var fill = d3.scale.category20();
-
-//     var word_entries = d3.entries(word_count);
-
-//     var xScale = d3.scaleLinear()
-//         .domain([0, d3.max(word_entries, function(d) {
-//             return d.value;
-//         })
-//         ])
-//         .range([10,100]);
-
-//     d3.layout.cloud().size([width, height])
-//         .timeInterval(20)
-//         .words(word_entries)
-//         .fontSize(function(d) { return xScale(+d.value); })
-//         .text(function(d) { return d.key; })
-//         .rotate(function() { return ~~(Math.random() * 2) * 90; })
-//         .font("Impact")
-//         .on("end", draw)
-//         .start();
-
-//     function draw(words) {
-//     d3.select(svg_location).append("svg")
-//         .attr("width", width)
-//         .attr("height", height)
-//         .append("g")
-//         .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
-//         .selectAll("text")
-//         .data(words)
-//         .enter().append("text")
-//         .style("font-size", function(d) { return xScale(d.value) + "px"; })
-//         .style("font-family", "Impact")
-//         .style("fill", function(d, i) { return fill(i); })
-//         .attr("text-anchor", "middle")
-//         .attr("transform", function(d) {
-//             return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-//         })
-//         .text(function(d) { return d.key; });
-//     }
-
-//     d3.layout.cloud().stop();
-// })}
+function draw(words) {
+    d3.select("#wordcloud").append("svg")
+    .attr("width", 750)
+    .attr("height", 750)
+    .append("g")
+    .attr("transform", "translate(300,300)")
+    .selectAll("text")
+    .data(words)
+    .enter().append("text")
+    .style("font-size", function(d) { return d.size + "px"; })
+    .style("font-family", "Impact")
+    // .style("fill", function(d, i) { return fill(i); })
+    .attr("text-anchor", "middle")
+    .attr("transform", function(d) {
+        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+    })
+    .text(function(d) { return d.text; });
+}
