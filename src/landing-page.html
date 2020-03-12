@@ -44,16 +44,17 @@
   
 
   <body>
-    <script src="landing-page.js"></script>
     <div align="center" class="row" >
 	    <div id="landing-header" align="center">
 	    	<h1>Amazon Reviews</h1>
 	    </div>
 	</div>
+	   
+
 	<div align="center" class="row">
 		<div id="help-text" align="center">
 	    	<p>
-	    		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor ante in mi scelerisque, at pulvinar mauris laoreet. Aliquam malesuada odio sapien, eget facilisis enim molestie at. Etiam dapibus felis tellus, eu facilisis enim placerat eu. Nullam quis nibh commodo, dapibus elit consectetur, laoreet nisl. Vivamus vitae pretium odio. Nam rhoncus nunc id orci porttitor efficitur. Praesent sodales magna quis nulla varius, vel gravida odio dapibus. Mauris posuere quam eu placerat vulputate. Nunc sit amet pulvinar felis. Nulla imperdiet efficitur libero, sed feugiat metus condimentum at. Duis imperdiet, eros id aliquet accumsan, est nibh pulvinar metus, in pretium diam mauris vitae nibh. Praesent at ante lobortis, lobortis est eget, volutpat dolor. Vivamus mi tellus, lacinia ut nulla eu, dignissim porttitor leo. Ut tincidunt dolor vitae justo faucibus tempus. Ut in mi pulvinar, sagittis libero quis, efficitur tellus.
+Amazon has hundreds of thousands of reviews of movies and TV shows, and we have created a way to better visualize the reviews. Simply search below, or choose one of our curated reviews and explore the information on the next page.  
 			</p>
 	    </div>
 	</div>
@@ -80,11 +81,17 @@
 			</div>
 		</div>
 	</div>
-	<div align="center" class="row">
-		<div class="column">
-
+    <div align="center" class="row" id="header", style="background-color: white">
+		<div class="div_menu" align="center" id="text-header">
 			<input id="autoComplete" tabindex="1">
 		</div>
 	</div>
+    <script src="landing-page.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+	<script src="d3.layout.cloud.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+
   </body>
 </html>
