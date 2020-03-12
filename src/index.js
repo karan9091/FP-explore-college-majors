@@ -1,7 +1,7 @@
 // You can require libraries
 const d3 = require('d3');
 const autoComplete = require("@tarekraafat/autocomplete.js/dist/js/autoComplete");
-
+const createCloud = require('./word_cloud.js');
 // You can include local JS files:
 const MyClass = require('./my-class');
 const myClassInstance = new MyClass();
@@ -339,7 +339,9 @@ new autoComplete({
         document.querySelector("#autoComplete_list").appendChild(result);
     },
     onSelection: feedback => {
-    	console.log(index_asin_map.get(title_index_map.get(feedback.selection.value)))
+        var asin = index_asin_map.get(title_index_map.get(feedback.selection.value));
+        console.log(asin);
         plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)));
+        createCloud.createWordEntries(asin);
     }
 });
