@@ -203,6 +203,25 @@ function plot_asin(asin){
 	})
 }
 
+
+/*    To load the asin from search on landing page      */
+
+window.onload = function () {
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name);
+    // document.getElementById('here').innerHTML = data.name;
+}
+
+
+
+
+
 // var margin = {top: 50, right: 50, bottom: 50, left: 50}
 // width = 500; // Use the window's width
 // height = 300; // Use the window's height
@@ -340,6 +359,12 @@ new autoComplete({
     },
     onSelection: feedback => {
     	console.log(index_asin_map.get(title_index_map.get(feedback.selection.value)))
+            
+        var b = index_asin_map.get(title_index_map.get(feedback.selection.value)),
+            url = 'http://localhost:1234/index.html?name=' + encodeURIComponent(b);
+
+        document.location.href = url;
+
         plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)));
     }
 });
