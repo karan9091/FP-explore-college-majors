@@ -22,50 +22,20 @@ var title_index_map = new Map();
 var category_title_map = new Map();
 var all_titles = []
 
+// read in asin csv into memory
+
+
 function init() {
-    // read in asin csv into memory
-    var index = 0;
-    d3.csv('metadata_asin.csv', function(data) {
-        asin_index_map.set(data['asin'], index++);
-        index_asin_map.set(index - 1, data['asin']);
-    })
-    // read in title csv into memory
-    var index_1 = 0;
-    d3.csv('metadata_title.csv', function(data) {
-        index_title_map.set(index_1++, data['title']);
-        title_index_map.set(data['title'], index_1-1);
-        all_titles.push(data['title']);
-    })
-    // create category map with titles
-    var index_2 = 0;
-    d3.csv('metadata_category.csv', function(data) {
-        categories = data['category'].substring(1, data['category'].length - 1);
-        sep_categories = categories.split(', ');
-        if(sep_categories.includes("'TV'")) {
-            var key = 'TV';
-        } else {
-            var key = 'Movies';
-        }
-        category_title_map[key] = category_title_map[key] || [];
-        category_title_map[key].push(index_title_map.get(index_2));
-        index_2++;
-    })
-    var tv_button = document.getElementById("TV_button");
-    tv_button.addEventListener("click", function() {
-        if(document.getElementById("TV_button").classList.contains("button_pressed")) {
-            document.getElementById("TV_button").classList.remove("button_pressed")
-        } else {
-            document.getElementById("TV_button").classList.add("button_pressed")
-        }
-    })
-    var movie_button = document.getElementById("movie_button");
-    movie_button.addEventListener("click", function() {
-        if(document.getElementById("movie_button").classList.contains("button_pressed")) {
-            document.getElementById("movie_button").classList.remove("button_pressed")
-        } else {
-            document.getElementById("movie_button").classList.add("button_pressed")
-        }
-    })
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name);
+    parseMetadata();
+    createCloud.createWordEntries(data.name);
 }
 // console.log(all_titles);
 
@@ -98,7 +68,7 @@ function plot_asin(asin){
 	    .then((data) => {
 	var sum_list = [0, 0, 0, 0, 0];
 	var count_list = [0, 0, 0, 0, 0];
-	console.log(data)
+	// console.log(data)
 	data.forEach(function(d) {
 	    sum_list[d.overall-1] += parseInt(d.reviewLength, 10);
 	    count_list[d.overall-1] += 1;
@@ -106,8 +76,8 @@ function plot_asin(asin){
 	    d.overall = d.overall + (Math.random() - .5) * .25
 	    d.reviewLength = +d.reviewLength
 	});
-	console.log(sum_list)
-	console.log(count_list)
+	// console.log(sum_list)
+	// console.log(count_list)
 	var avg_list = [];
 	for(i = 0; i < 5; i++){
 	    if(count_list[i] == 0) {
@@ -206,17 +176,6 @@ function plot_asin(asin){
 
 /*    To load the asin from search on landing page      */
 
-window.onload = function () {
-    var url = document.location.href,
-        params = url.split('?')[1].split('&'),
-        data = {}, tmp;
-    for (var i = 0, l = params.length; i < l; i++) {
-         tmp = params[i].split('=');
-         data[tmp[0]] = tmp[1];
-    }
-    plot_asin(data.name);
-    // document.getElementById('here').innerHTML = data.name;
-}
 
 
 
@@ -312,7 +271,36 @@ window.onload = function () {
 //     });
 // })
 // })
-
+function parseMetadata() {
+    // read in asin csv into memory
+    var index = 0;
+    console.log("Started");
+    d3.csv('metadata_asin.csv', function(data) {
+        asin_index_map.set(data['asin'], index++);
+        index_asin_map.set(index - 1, data['asin']);
+    })
+    // read in title csv into memory
+    var index_1 = 0;
+    d3.csv('metadata_title.csv', function(data) {
+        index_title_map.set(index_1++, data['title']);
+        title_index_map.set(data['title'], index_1-1);
+        all_titles.push(data['title']);
+    })
+    // create category map with titles
+    var index_2 = 0;
+    d3.csv('metadata_category.csv', function(data) {
+        categories = data['category'].substring(1, data['category'].length - 1);
+        sep_categories = categories.split(', ');
+        if(sep_categories.includes("'TV'")) {
+            var key = 'TV';
+        } else {
+            var key = 'Movies';
+        }
+        category_title_map[key] = category_title_map[key] || [];
+        category_title_map[key].push(index_title_map.get(index_2));
+        index_2++;
+    })
+}
 new autoComplete({
     data: {
       src: all_titles,
@@ -351,6 +339,7 @@ new autoComplete({
         element: "li"
     },
     noResults: () => {
+        console.log(all_titles);
         const result = document.createElement("li");
         result.setAttribute("class", "no_result");
         result.setAttribute("tabindex", "1");
