@@ -180,7 +180,7 @@ function plot_asin(asin, x_axis, y_axis){
 	    .on("mouseover", function (d) {
             var textBox = document.getElementById("reviewBox");
             textBox.innerHTML = d.reviewText;
-
+            d.fill = "red";
 
 	         // div.transition()
 	         //     .duration(200)
