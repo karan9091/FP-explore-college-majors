@@ -33,9 +33,11 @@ function init() {
         tmp = params[i].split('=');
         data[tmp[0]] = tmp[1];
     }
-    plot_asin(data.name, "year", "score");
+    plot_asin(data.name, "score", "reviewLength");
     parseMetadata();
     createCloud.createWordEntries(data.name);
+    var textBox = document.getElementById('reviewBox');
+    textBox.innerHTML = "Hover over a point to read the Review!";
 }
 // console.log(all_titles);
 
@@ -172,16 +174,20 @@ function plot_asin(asin, x_axis, y_axis){
 	    .data(data)
 	    .enter().append("circle") // Uses the enter().append() method
 	    .attr("class", "dot") // Assign a class for styling
-	    .attr("cx", function(d) { return temp(x_axis_labels, d, true, xScale, yScale) })
-	    .attr("cy", function(d) { return temp(y_axis_labels, d, false, xScale, yScale) })
+	    .attr("cx", function(d) { return add_point(x_axis_labels, d, true, xScale, yScale) })
+	    .attr("cy", function(d) { return add_point(y_axis_labels, d, false, xScale, yScale) })
 	    .attr("r", 8)
 	    .on("mouseover", function (d) {
-	         div.transition()
-	             .duration(200)
-	             .style("opacity", .9);
-	         div.html("Review Length: " + d.reviewLength + "<br> Review: " + d.reviewText)
-	             .style("left", (d3.event.pageX) + "px")
-	             .style("top", (d3.event.pageY - 28) + "px");
+            var textBox = document.getElementById("reviewBox");
+            textBox.innerHTML = d.reviewText;
+
+
+	         // div.transition()
+	         //     .duration(200)
+	         //     .style("opacity", .9);
+	         // div.html("Review Length: " + d.reviewLength + "<br> Review: " + d.reviewText)
+	         //     .style("left", (d3.event.pageX) + "px")
+	         //     .style("top", (d3.event.pageY - 28) + "px");
 	     })
 
         yScale = d3.scaleLinear()
@@ -210,7 +216,7 @@ function plot_asin(asin, x_axis, y_axis){
 	})
 }
 
-function temp(labels, d, axis, xScale, yScale) {
+function add_point(labels, d, axis, xScale, yScale) {
     point = 0;
     if (labels[2] == "Year") {
         point = d.unixReviewTime;
@@ -226,12 +232,77 @@ function temp(labels, d, axis, xScale, yScale) {
     }
 }
 
+var dropdown1 = document.getElementById("dropdown-1");
+dropdown1.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "year", "reviewLength");
+}
 
+var dropdown2 = document.getElementById("dropdown-2");
+dropdown2.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "score", "reviewLength");
+}
 
+var dropdown3 = document.getElementById("dropdown-3");
+dropdown3.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "reviewLength", "year");
+}
 
+var dropdown4 = document.getElementById("dropdown-4");
+dropdown4.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "reviewLength", "score");
+}
 
+var dropdown5 = document.getElementById("dropdown-5");
+dropdown5.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "year", "score");
+}
 
-/*    To load the asin from search on landing page      */
+var dropdown6 = document.getElementById("dropdown-6");
+dropdown6.onclick = function() {
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+        tmp = params[i].split('=');
+        data[tmp[0]] = tmp[1];
+    }
+    plot_asin(data.name, "score", "year");
+}
 
 
 
@@ -407,5 +478,8 @@ new autoComplete({
         var asin = index_asin_map.get(title_index_map.get(feedback.selection.value));
         plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)), "score", "reviewLength");
         createCloud.createWordEntries(asin);
+        var textBox = document.getElementById('reviewBox');
+        textBox.innerHTML = "Hover over a point to read the Review!";
+
     }
 });
