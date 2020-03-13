@@ -147,8 +147,6 @@
 		/* Change color of dropdown links on hover */
 		.dropdown-content2 a:hover {background-color: #ddd;}
 
-
-
 	</style>
   </head>
   
@@ -158,60 +156,30 @@
     <div align="center" class="row" id="header", style="background-color: white">
 		<div class="div_menu" align="center" id="text-header">
 			<button class="button", onclick="location.href = 'landing-page.html';", id="home_button" >Home</button>
+			<div class="dropdown">
+				<button class="dropbtn">X-Axis</button>
+				<div class="dropdown-content">
+				    <a href="#">Year</a>
+				    <a href="#">Length Of Review</a>
+				    <a href="#">Score</a>
+				</div>
+			</div>
+			<div class="dropdown2">
+				<button class="dropbtn2">Y-Axis</button>
+				<div class="dropdown-content2">
+				    <a href="#">Year</a>
+				    <a href="#">Length Of Review</a>
+				    <a href="#">Score</a>
+				</div>
+			</div>
 			<input id="autoComplete" tabindex="1">
 		</div>
+
     </div>
-    <div class="row">
-<!-- 	    <div class="checkbox-div">
-	    	<h3>X Axis</h3>
-			<label class="container">Score
-			  <input type="radio" checked="checked" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-			<label class="container">Length
-			  <input type="radio" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-			<label class="container">Year
-			  <input type="radio" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-		</div>
-		<div class="checkbox-div2">
-			<h3>Y Axis</h3>
-			<label class="container">Score
-			  <input type="radio2" checked="checked" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-			<label class="container">Length
-			  <input type="radio2" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-			<label class="container">Year
-			  <input type="radio2" name="radio">
-			  <span class="checkmark"></span>
-			</label>
-		</div> -->
-
-		<div class="dropdown">
-			<button class="dropbtn">X-Axis</button>
-			<div class="dropdown-content">
-			    <a href="#">Year</a>
-			    <a href="#">Length Of Review</a>
-			    <a href="#">Score</a>
-			</div>
-		</div>
-		<div class="dropdown2">
-			<button class="dropbtn2">Y-Axis</button>
-			<div class="dropdown-content2">
-			    <a href="#">Year</a>
-			    <a href="#">Length Of Review</a>
-			    <a href="#">Score</a>
-			</div>
-		</div>
+<!--     <div class="row">
 
 
-	</div>
+	</div>-->	
 	<div class="row">
 	  <div class="column1" style="width: 100%; height: auto;">
 	  	<div id="graph1" class="graph"></div>

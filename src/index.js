@@ -33,7 +33,7 @@ function init() {
         tmp = params[i].split('=');
         data[tmp[0]] = tmp[1];
     }
-    plot_asin(data.name);
+    plot_asin(data.name, "year", "score");
     parseMetadata();
     createCloud.createWordEntries(data.name);
 }
@@ -41,41 +41,74 @@ function init() {
 
 // console.log(category_title_map);
 
-function plot_asin(asin){
-    document.getElementById("graph1").innerHTML = "";
-	var margin = {top: 30, right: 50, bottom: 50, left: 55}
-	width = window.innerWidth - 100; // Use the window's width
-	height = 475; // Use the window's height
-    margin_height = height - margin.top
-    var double_margin = {top: 100, right: 100, bottom: 100, left: 100}
-	// 5. X scale will use the index of our data
-	var xScale = d3.scaleLinear()
-	    .domain([.5, 5.5]) // input
-	    .range([0, width]); // output
-
-	// 6. Y scale will use the randomly generate number
-	var yScale = d3.scaleLinear()
-	    .domain([0, 10000]) // input
-	    .range([height, 0]); // output
-
-	// 7. d3's line generator
-	var line = d3.line()
-	    .x(function(d, i) { return xScale(i+1); }) // set the x values for the line generator
-	    .y(function(d) { return yScale(d); }) // set the y values for the line generator
-	 
+function plot_asin(asin, x_axis, y_axis){	 
 	// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
-	d3.csv('asin/'+asin+'.csv')
+
+    d3.csv('asin/' + asin + '.csv')
 	    .then((data) => {
 	var sum_list = [0, 0, 0, 0, 0];
 	var count_list = [0, 0, 0, 0, 0];
-	// console.log(data)
+    max_review = 0;
 	data.forEach(function(d) {
 	    sum_list[d.overall-1] += parseInt(d.reviewLength, 10);
 	    count_list[d.overall-1] += 1;
 	    d.overall = +d.overall;
 	    d.overall = d.overall + (Math.random() - .5) * .25
 	    d.reviewLength = +d.reviewLength
+        var a = new Date(d.unixReviewTime * 1000);
+        year = a.getFullYear();
+        d.unixReviewTime = year;
+        // We cut out outliers over 10000 characters, squashed the rest of the data more than we wanted
+        if (d.reviewLength > max_review && d.reviewLength < 10000) {
+            max_review = +d.reviewLength;
+        }
 	});
+
+    score_axis = [.5, 5.5];
+    year_axis = [2000, 2015]; // TODO make sure to grab the actual years
+    review_axis = [0, max_review + 50]
+    x_axis_labels = [];
+    y_axis_labels = [];
+    if (x_axis == "score") {
+        x_axis_labels = [.5, 5.5, "Score"];
+    } else if (x_axis == "reviewLength") {
+        x_axis_labels = [0, max_review + 50, "Review Length"];
+    } else { // Year
+        x_axis_labels = [2000, 2015, "Year"];
+    }
+
+    if (y_axis == "score") {
+        y_axis_labels = [.5, 5.5, "Score"];
+    } else if (y_axis == "reviewLength") {
+        y_axis_labels = [0, max_review + 50, "Review Length"];
+    } else { // Year
+        y_axis_labels = [2000, 2015, "Year"];
+    }   
+
+
+    document.getElementById("graph1").innerHTML = "";
+    var margin = {top: 30, right: 50, bottom: 50, left: 55}
+    width = window.innerWidth - 100; // Use the window's width
+    height = 475; // Use the window's height
+    margin_height = height - margin.top
+    var double_margin = {top: 100, right: 100, bottom: 100, left: 100}
+    // 5. X scale will use the index of our data
+
+    var xScale = d3.scaleLinear()
+        .domain([x_axis_labels[0], x_axis_labels[1]]) // input
+        .range([0, width]); // output
+
+    var yScale = d3.scaleLinear()
+        .domain([y_axis_labels[0], y_axis_labels[1]]) // input
+        .range([height, 0]); // output
+
+    // 7. d3's line generator
+    var line = d3.line()
+        .x(function(d, i) { return xScale(i+1); }) // set the x values for the line generator
+        .y(function(d) { return yScale(d); }) // set the y values for the line generator
+
+
+
 	// console.log(sum_list)
 	// console.log(count_list)
 	var avg_list = [];
@@ -106,7 +139,7 @@ function plot_asin(asin){
             "translate(" + (width/2) + " ," +
                            (height + margin.top + 20) + ")")
       .style("text-anchor", "middle")
-      .text("Review Length");
+      .text(x_axis_labels[2]);
 
 	// 4. Call the y axis in a group tag
 	svg.append("g")
@@ -119,7 +152,7 @@ function plot_asin(asin){
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Score");
+      .text(y_axis_labels[2]);
 
 	// 9. Append the path, bind the data, and call the line generator
 	svg.append("path")
@@ -139,8 +172,8 @@ function plot_asin(asin){
 	    .data(data)
 	    .enter().append("circle") // Uses the enter().append() method
 	    .attr("class", "dot") // Assign a class for styling
-	    .attr("cx", function(d) { return xScale(d.overall) })
-	    .attr("cy", function(d) { return yScale(d.reviewLength) })
+	    .attr("cx", function(d) { return temp(x_axis_labels, d, true, xScale, yScale) })
+	    .attr("cy", function(d) { return temp(y_axis_labels, d, false, xScale, yScale) })
 	    .attr("r", 8)
 	    .on("mouseover", function (d) {
 	         div.transition()
@@ -150,6 +183,10 @@ function plot_asin(asin){
 	             .style("left", (d3.event.pageX) + "px")
 	             .style("top", (d3.event.pageY - 28) + "px");
 	     })
+
+        yScale = d3.scaleLinear()
+        .domain([0, ]) // input
+        .range([height, 0]); // output
 
 	// // 9. Append the path, bind the data, and call the line generator
 	// svg.append("path")
@@ -172,6 +209,26 @@ function plot_asin(asin){
 	//     });
 	})
 }
+
+function temp(labels, d, axis, xScale, yScale) {
+    point = 0;
+    if (labels[2] == "Year") {
+        point = d.unixReviewTime;
+    } else if (labels[2] == "Score") {
+        point = d.overall;
+    } else {
+        point = d.reviewLength;
+    }
+    if (axis) {
+        return xScale(point);
+    } else {
+        return yScale(point);
+    }
+}
+
+
+
+
 
 
 /*    To load the asin from search on landing page      */
@@ -348,7 +405,7 @@ new autoComplete({
     },
     onSelection: feedback => {
         var asin = index_asin_map.get(title_index_map.get(feedback.selection.value));
-        plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)));
+        plot_asin(index_asin_map.get(title_index_map.get(feedback.selection.value)), "score", "reviewLength");
         createCloud.createWordEntries(asin);
     }
 });
