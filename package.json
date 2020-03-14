@@ -2,7 +2,7 @@
   "name": "uw-cse442-fp-submission",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "landing-page.js",
   "scripts": {
     "start": "parcel src/landing-page.html",
     "build": "parcel build src/landing-page.html --no-minify --public-url https://uw-cse442-wi20.github.io/FP-explore-college-majors/; rm -rf docs; mv dist docs;",
