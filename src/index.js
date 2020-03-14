@@ -65,7 +65,7 @@ function plot_asin(asin, x_axis, y_axis){
 	    count_list[d.overall-1] += 1;
 	    d.overall = +d.overall;
 	    d.overall = d.overall + (Math.random() - .5) * .25
-        avg_score += d.overall;
+        avg_score += +d.overall;
         num_reviews++;
 	    d.reviewLength = +d.reviewLength
         var a = new Date(d.unixReviewTime * 1000);
