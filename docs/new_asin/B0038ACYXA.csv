@@ -1,0 +1,9 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+8391142,5,B0038ACYXA,"The Unreal Development Kit is one of the best game development kits around. Now that it's absolutely free to download the entire suite, any aspiring game developer needs to know how to use. This instructional video set is the best place to start, hosted by one of the most talented level designers in the industry, Sjored ""Hourences"" De Jong. These introductory videos take you step by step in building a level within the UDK. You'll learn everything from BSP placement, static mesh manipulation, kismet, basically every tool set that the UDK offers. Even if you've used the UDK before, I guarantee you'll learn something new.",1279584000,,626,4.9714285714285715
+8391143,2,B0038ACYXA,"This was the first UDK training video I purchased and so far it is the only one that has truly disappointed me.  The Gnomon Workshop and the free videos on UDK's web site are orders of magnitude better.
+
+The main problem I have with it is that 90% of it covers basic brush and mesh setup: turn this, move that, scale this, and rotate that.  After about ten minutes a beginner gets the idea and wishes to learn more about the rest of the features of UDK but that never happens.
+
+The following are either touched upon extremely briefly or not covered at all: scripting and Kismet, cinematics and Matinee, fractured static meshes, crowds, fluid surfaces, terrain, geometry mode, particle effects, physics, sound, lighting and materials, creating game UI, the UDK UI with all of the above (buttons, menus, shortcuts etc).
+
+Even if it was free you would still just be wasting your time with it.",1277510400,13,889,4.673076923076923
