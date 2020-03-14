@@ -413,7 +413,6 @@ function parseMetadata(asin) {
         title_index_map.set(data['title'], index_1-1);
         all_titles.push(data['title']);
     })
-<<<<<<< HEAD
     // create category map with titles
     var index_2 = 0;
     d3.csv('metadata_category.csv', function(data) {
@@ -441,9 +440,6 @@ function parseMetadata(asin) {
     }
     console.log()
     console.log(asin);
-
-=======
->>>>>>> cd03fc26e03ef8c72bd23dae9ca8f5d0dc707be0
 }
 new autoComplete({
     data: {
