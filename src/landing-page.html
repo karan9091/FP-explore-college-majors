@@ -118,21 +118,37 @@
 			color: #2C1424;
 		} 
 
-		blockquote { 
+		.button {
 			font-family: Raleway; 
-			font-size: 21px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 400; 
-			line-height: 30px; 
-		} 
-		pre { 
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 10px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button {
 			font-family: Raleway; 
-			font-size: 13px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 400; 
-			line-height: 18.5714px; 
+			background-color: #FFF5DA; 
+			color: #2C1424; 
+			border: 2px solid #F5B53A;
+			align-self: center;
+			width: 330px;
+		}
+
+		.button:hover {
+			background-color: #F5B53A;
+			color: white;
+		}
+		.button_pressed {
+			background-color: #008CBA;
+			color: white;
 		}
 
 		#help-text {
@@ -177,11 +193,11 @@ Amazon has hundreds of thousands of reviews of movies and TV shows, and we have 
 			<div align-items="center" position="absolute" style="width: 100%;height:300px;">
 				<div id="interesting-reviews">
 					<h2 style="color: #2C1424;">Interesting Findings:</h2>
-					<a href="#" class="btn-gradient red block">Most liked comment</a>
-					<a href="index.html" class="btn-gradient blue block">Most reviewed movie</a>
-					<a href="index.html" class="btn-gradient orange block">Longest review</a>
+					<a href="#" class="button">Most liked comment</a>
+					<a href="index.html" class="button">Most reviewed movie</a>
+					<a href="index.html" class="button">Longest review</a>
 
-					<a href="index.html" class="btn-gradient purple block">Another interesting review</a>
+					<a href="index.html" class="button">Another interesting review</a>
 				</div>
 			</div>
 			<div align="center" id="header", style="background-color: #FFF5DA">
