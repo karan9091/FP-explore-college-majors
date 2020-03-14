@@ -399,6 +399,8 @@ dropdown6.onclick = function() {
 // })
 // })
 function parseMetadata(asin) {
+    console.log("given asin is ");
+    console.log(asin);
     // read in asin csv into memory
     var index = 0;
     console.log("Started");
@@ -413,33 +415,20 @@ function parseMetadata(asin) {
         title_index_map.set(data['title'], index_1-1);
         all_titles.push(data['title']);
     })
-    // create category map with titles
-    var index_2 = 0;
-    d3.csv('metadata_category.csv', function(data) {
-        categories = data['category'].substring(1, data['category'].length - 1);
-        sep_categories = categories.split(', ');
-        if(sep_categories.includes("'TV'")) {
-            var key = 'TV';
-        } else {
-            var key = 'Movies';
-        }
-        category_title_map[key] = category_title_map[key] || [];
-        category_title_map[key].push(index_title_map.get(index_2));
-        index_2++;
-    })
     var header = document.getElementById("main-header-text");
-    header.innerHTML = index_title_map[0].get(index_asin_map[0].get("000073991X"));
-    console.log(asin_index_map.has("000073991X"));
-    console.log(index_title_map.has(5));
-    console.log(index_asin_map);
-    console.log(asin_index_map);
-    console.log(title_index_map);
     console.log(index_title_map);
-    if (index_asin_map.has(asin)) {
-        console.log("GOOD");
-    }
-    console.log()
-    console.log(asin);
+    header.innerHTML = index_title_map.keys();
+    console.log("trying something");
+    console.log(asin_index_map);
+    console.log(asin_index_map.get("0000695009"));
+    // console.log(asin_index_map.has("000073991X"));
+    // console.log("trying something");
+    // console.log(index_title_map.has('5'));
+    // if (index_asin_map.has(asin)) {
+    //     console.log("GOOD");
+    // }
+    // console.log()
+    // console.log(asin);
 }
 new autoComplete({
     data: {
