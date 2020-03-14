@@ -1,0 +1,84 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+3551035,5,B001EDRPOG,"I agree with the reviewers who recommend purchasing this together with&nbsp;<a data-hook=""product-link-linked"" class=""a-link-normal"" href=""/WordPress-Theme-Design-A-complete-guide-to-creating-professional-WordPress-themes/dp/1847193099/ref=cm_cr_arp_d_rvw_txt?ie=UTF8"">WordPress Theme Design: A complete guide to creating professional WordPress themes</a>. Aleks Monahan takes a straight-forward, direct approach, and gets right into it. There's no fluff, just two hours of straight-ahead teaching. If you're familiar with the training videos on Lynda.com, you'll know what to expect here. Monahan explains that the ""screen shots with narration"" approach works best because her intention is to give as much value and teaching as possible. I've seen it done both ways...including training videos in which the camera spends half the time focused on the smiling faces of the hosts. I prefer Monahan's approach.
+
+You are told at the beginning that Web | CMS Squad is already working on the advanced edition of this DVD. I agree with Monahan when she states that you need to be familiar and comfortable with the concepts before you tackle design masterpieces. If you want the basics, they're here. If you want to start cranking out blogs that are inspired by the advanced CSS masters in&nbsp;<a data-hook=""product-link-linked"" class=""a-link-normal"" href=""/The-Zen-of-CSS-Design-Visual-Enlightenment-for-the-Web-Voices-That-Matter/dp/0321303474/ref=cm_cr_arp_d_rvw_txt?ie=UTF8"">The Zen of CSS Design: Visual Enlightenment for the Web (Voices That Matter)</a>, it's not going to happen overnight. Buy this, buy the Silver book, put in the hours, be patient, and get ready for the sequel.",1229040000,4,1680,6.671232876712328
+8297906,5,B001EDRPOG,"I am familiar with html.  I have installed Wordpress and changed pre built themes on hosted sites.  I have never worked with CSS nor seen how Wordpress works under the hood.  For the beginner this is a great way to get familiar with the inner workings of Wordpress.  Faster to learn from a video than reading a dry manual.
+
+This DVD has been helpful enough for me to create my own theme and test it on my local pc. That is what I needed to learn so I can begin customizing my own themes.  If you are not familiar with Wordpress or CSS but want to get up and running quicker this for me has been a great start.
+
+Everyone has a different skill level and everyone has to start someplace. This DVD is a great start. I will be able to get several of my web blogs customized just the way I like with what I've learned here.  I am looking for intermediate and advanced level Wordpress and CSS dvd's to get even more experience. I may do this for hire after getting my own blogs customized.",1285200000,,982,4.1861702127659575
+8297907,1,B001EDRPOG,"I am severely disappointed with this DVD. It does not fit the title & description of the product.
+
+Content:
+- About 2/3 of the DVD is spent mostly on HTML, CSS, and briefly on installing some local server tools (which are optional to theming WP).
+- 1/3 of the DVD is spent on WordPress theming. The theming shown is: 1. Very basic, 2. Flawed (as the presenter does not call the header.php, and footer.php from one of the pages), and 3. Confusing as the presenter calls those php files from another page. If you're confused, you get the gist of it!
+
+Presentation:
+- The audio quality fluctuated throughout the DVD
+- The website example used was really ugly -- not pleasant to look at for almost 2 hours --> they should have called this DVD series: ""From blank to ugly""!
+- The overall presentation was poorly designed
+
+One good thing only:
+- The HTML/CSS knowledge was pretty good but then again, if you know HTML/CSS, you'll spend 1hr+ getting bored. And if you want to learn CSS, I would get a really good CSS book as this will not give you a strong HTML/CSS foundation. Additionally, this is not supposed to be a DVD about turning your photoshop template into HTML/CSS but turning your HTML/CSS into a Wordpress theme.
+
+Overall, this DVD is NOT worth $35. If you count the time to order, watch, write this review (for your benefit), and return it, this book's worth is in the minus.
+On to returning this product...",1254528000,3,1415,4.537254901960784
+8297908,5,B001EDRPOG,"I've been hovering around CSS and Wordpress for a while but it all seemed hazy. This video clarified how to translate the design comp areas into divs in a way I hadn't grasped through Css podcasts or books. That made the video valuable to me. It's not that I don't care about quality of the video (I AM a Mac user), it's just that I feel the information transcended the presentation. I will try to make my designs prettier but at least now I know how to approach the problems I'm going to face.
+As for quibbling about the approach to the index page, I would probably break it out into header and footer files to conform to WP protocol but I think that's a minor issue.
+I was very happy with my purchase and would recommend the video as the first approach if someone wants to design their own theme.",1243555200,2,798,4.291390728476821
+8297909,2,B001EDRPOG,"This is a poorly produced dvd and something of a missed opportunity. There is a shortage of information on this subject and this product has the potential to fill a gaping need.
+
+The question is, once you get beyond the poor production quality, does it impart some useful information?  Well, yes it does. I certainly did learn some thing things from it, though some of the explanations could be more thorough. So the next question is, is it worth the money?  Sadly not. If this product were priced at $9.99, I would have no hesitation in recommending it as a supplement to anything else you can find, but as it is, it's perilously close to rip-off territory.
+
+The final question I would ask is, does it do what it promises to do?  The answer is an emphatic NO.  The result shown on the video is neither beautiful, nor achieved in 2 hours.  To be fair, this is kind of acknowledged by the authors, but I would prefer some up front honesty. Better still, change the title, take a bit more time and do the job properly.
+
+I would recommend that the authors take what they have, improve graphics and the production (not difficult with the software available these days) and take the time to live up to the first half of the title (blank to beautiful). Then they could price it at 20 bucks and have a worthwhile product. Throw in some resource files with decent graphics and maybe a pdf transcript and it may even be worth the current price.",1243123200,,1435,4.471264367816092
+8297910,2,B001EDRPOG,"First, let me say how disappointed I am that I paid this much money for someone's PowerPoint presentation that lacks appropriate knowledge of what colors look good or bad on other colors.  White font on yellow backgrounds is never a good idea for any business that wants their information to actually be read.  I'm seriously considering making a shoddy DVD from my PPT on how to make an appropriate PPT and selling it to them for $35.
+
+Aside from that the information was all about css and html for the first part, of which I already had a very strong grasp.  I didn't buy this DVD to get html and css tutorials.  Those are free online.  I bought it to learn how to take that knowledge and make it a WordPress theme.  So there was only about 15-25 minutes of the video that did me any good.  And I should clarify it was the audio that helped me, because I couldn't see the screen to tell what was typed on it.
+
+Also, the voice of the presenter got highly annoying after a few minutes.  There are people out there willing to work for voice overs if your voice is not made for public presentation.  If you're going to charge $35 for a DVD of this type, at least put the production costs on your end into it to make it worth it on my end.",1237852800,5,1235,4.212765957446808
+8297911,5,B001EDRPOG,"I'm usually a skeptic about books and DVDs promising you can learn a subject in a matter of hours. Not in this case. I agree with the 5 star ratings. How to Theme WordPress: From Blank To Beautiful in 2 Hours by Aleks Monahan exceeded my expectations. It's an excellent primer if you want to learn basic HTML and get a firm understanding of CSS (the first half of the DVD).
+
+Aleks instructions are easy and to the point. If you already know HTML and CSS, you can delve into creating WordPress Themes from scratch immediately after completing the second half of the DVD.
+
+The instructions on how to install WordPress to your local server is very good as well. As for installing WordPress to your hosting server, most hosting companies offer an auto-installer that will install WordPress in seconds, or you can find a plethora of information on the web about installing WordPress to your hosting server.
+
+This DVD hands down is a must for any beginner to CSS or anyone wanting to quickly learn how to created WordPress themes from scratch.
+
+Thanks Web CMS Squad for a great product.",1237248000,,1080,4.638743455497382
+8297912,5,B001EDRPOG,"I've read the other reviews and I agree with most everything everyone else has to say, including some of what the gentleman from Michigan said. For me, it did exactly what I needed it to do, it introduced me to theming Wordpress in a very straightforward, no nonsense kinda way. I think that it was slightly overpriced, but considering how long it would have taken me to research and read up on that information myself, the cost was reasonable. I will likely get a book to compliment this DVD and did a little deeper into the areas that were left out. If you've never created a theme for Wordpress and have trouble learning straight from a book, this DVD will certainly benefit you. If you're at a more advanced level with CSS, PHP and HTML there is probably only a few things you'll learn from it. Overall, it's excellent for a beginner but not really meant for someone with advanced knowledge.",1237248000,,895,4.565217391304348
+8297913,2,B001EDRPOG,"Let's start with the negative... This DVD is overpriced. For $35 I expect more. I have seen homemade videos on YouTube that have way better quality and I am not talking about the new HD vids. This video is grainy and the design sample as well as the wallpaper colors used in this presentation are absolutely horrible. I mean, it's bad. It is so bad, it is distracting to the viewer. Now I understand that this is not a presentation focused on the design process but the title of the DVD includes the phrase, ""from Blank to Beautiful."" C'mon, it wouldn't have taken much to improve in this area. If the author of this presentation would have considered the viewing experience for more than 5 mins, they would have definitely picked better colors than bright yellow, orange, red, etc in the design. The end result is an ugly, ugly, ugly presentation.
+
+Another problem I have is how they approached the process of coding the theme. Why lose the flexibility of the header and footer template files on the other pages?? That is just ridiculous. The author needs to go back to the drawing board and revamp this presentation using competent programming logic.
+
+Next, at the end of the vid, you are left with Wordpress on your local server and your pants down around your ankles. No discussion of the process of uploading or installing Wordpress on your web host. It just ends abruptly.
+
+Lastly, I can't stand listening to Aleks' voice. It's very annoying to have to listen to her for more than a few minutes. Some people just aren't cut out to do voice-overs.
+
+Now for the positives... If you need to install a local server, you will get an easy walk thru. Aside from that, there are a few tidbits here and there that may be found useful. The rest is disappointing. Hold your breath for the next ""Advanced"" DVD.
+
+If you have any grasp of XHTML/CSS and/or slicing a PSD, you will find the entire first hour utterly useless. After that, you may find yourself arguing with the presenter on a few issues. This DVD was not advertised as a beginner level presentation. It is for newbies only.",1236816000,11,2079,4.592991913746631
+8297914,5,B001EDRPOG,"Very good DVD for wordpress basics,
+Also explains  HTML, and CSS well.
+
+would recommend getting this
+
+I wish the presenter would say something more about herself on the website, I would like to know who she is
+
+An interesting DVD,  which is very watchable,  and explains quite well the subject matter.
+
+Looking forward to more material from this team.",1235088000,,351,4.8474576271186445
+8297915,5,B001EDRPOG,"I bought this DVD based on seeing various free/promotional clips from the same DVD on the 'Net.
+
+Highly recommended. I expected just to learn about the workings of a Wordpress theme so I could modify other people's themes -- but instead, after watching this DVD a few times (and letting it run all day, on repeat, in the background while i was working), I know have an excellent grasp of CSS and have built my OWN themes -- instead of modifying others and not being satisfied with the results.
+
+The first half of the DVD explains the workings of basic CSS, so if you already know HTML and have wanted to learn CSS, I can' think of a better start than this DVD.  It's a fact Wordpress themes rely heavily on CSS, so even if you may not like learning something new, what you learn about CSS from this DVD will be extremely valuable.
+
+The second half of the DVD covers theme creation from beginning-to-end (and it includes very specific information on a lot of Wordpress features that many web-based tutorials leave out).
+
+If you learn visually and have tinkered with Wordpress themes at the source level (even if you didn't know exactly what you were doing, meaning trial and error) then this DVD will be one of your BEST purchases ever.  You will learn a lot! Everything is broken down step-by-step and the results/changes are highlighted on the video in real time so you can actually SEE the results.
+
+BTW, I did not buy any Wordpress theme-related books to go along with this DVD. The DVD is enough. You don't need to buy an extra book, IMHO.
+
+In sum: How to Theme WordPress: From Blank To Beautiful in 2 Hours by Aleks Monahan is highly recommended. This is one computer-related resource that won't simply sit on the shelf unused or unviewed --- you'll be very happy with this DVD.",1231200000,9,1783,4.55

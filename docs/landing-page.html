@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Reviews</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
+    <style>body {
+			background-color: #FFF5DA;
+		}
+		#autoComplete:focus::selection {
+			color: #FFF5DA;
+		}
+		.autoComplete_result::selection{
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+		}
+
+		#autoComplete {
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+			height:3.15rem;
+			width:19rem
+		}
+
+		#autoComplete:hover {
+			height:3.5rem;
+			width:25rem;
+		}
+
+		#autoComplete_list {
+			background-color: #FFF5DA;
+		}
+
+		.autoComplete_highlighted::selection {
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+		}
+		#autoComplete_wrapper {
+			color: #FFF5DA;
+			background-color: #FFF5DA;
+		}
+		
+		.row {
+		  display: flex;
+		}
+
+		.bar { fill: steelblue;
+		 }
+
+		.bar-background {
+			background-color: #FFF5DA;
+		}
+
+		.column {
+		  flex: 50%;
+		}
+
+		#landing-header, #help-text {
+			width: 100%;
+			text-align: center;
+		}
+
+		#text-header {
+			display: inline-block; 
+			margin: 0 auto;
+			padding: 3px;
+		}
+/*
+		#interesting-reviews {
+			text-align: center;
+			align-content: center;
+			margin-right: auto;
+		    margin-left: auto;
+		    width: 200px;
+		}*/
+
+		#heatmap {
+			width: 100%;
+		    height: 300px;
+		}
+		#text-header {
+			display: inline-block; 
+			margin: 0 auto;
+			padding: 3px;
+		}
+
+		h1 { 
+			font-family: Raleway; 
+			font-size: 80px; 
+			font-style: normal; 
+			font-variant: normal; 
+			font-weight: 700; 
+			line-height: 26.4px; 
+			color: #2C1424;
+		}
+		
+		h2 { 
+			font-family: Raleway; 
+			font-size: 20px; 
+			font-style: normal; 
+			font-variant: normal; 
+			font-weight: 700; 
+			line-height: 15.4px; 
+			color: #2C1424;
+		} 
+		
+		p { 
+			font-family: Raleway; 
+			font-size: 20px; 
+			font-style: normal; 
+			font-variant: normal; 
+			font-weight: 400; 
+			line-height: 20px; 
+			color: #2C1424;
+		} 
+
+		.button {
+			font-family: Raleway; 
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 10px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button {
+			font-family: Raleway; 
+			background-color: #FFF5DA; 
+			color: #2C1424; 
+			border: 2px solid #F5B53A;
+			align-self: center;
+			width: 330px;
+		}
+
+		.button:hover {
+			background-color: #F5B53A;
+			color: white;
+		}
+		.button_pressed {
+			background-color: #008CBA;
+			color: white;
+		}
+
+		#help-text {
+			margin-left: 350px;
+			margin-right: 350px;
+		}
+		hr {
+  			border: 1px solid #FF6A71;
+		}</style>
+  </head>
+  
+
+  <body>
+    <div align="center" class="row">
+	    <div id="landing-header" align="center">
+	    	<h1>Amazon Reviews</h1>
+	    </div>
+	</div>
+	   
+
+	<div align="center" class="row">
+		<div id="help-text" align="center">
+	    	<p>
+Amazon has hundreds of thousands of reviews of movies and TV shows, and we have created a way to better visualize the reviews. Simply search below, or choose one of our curated reviews and explore the information on the next page.  
+			</p>
+		</div>
+	</div>
+	<hr>
+	<link rel="stylesheet" type="text/css" href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/interesting-reviews-button.3de01de2.css">
+
+	<div align="center" class="row">
+		<div class="column">
+			<div id="heatmap" align-items="center">
+				<div class="container" id="bargraph" style="width:100%">
+					<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/bar_graph.a7ebeb4f.js"></script>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div align-items="center" position="absolute" style="width: 100%;height:300px;">
+				<div id="interesting-reviews">
+					<h2 style="color: #2C1424;">Interesting Findings:</h2>
+					<a href="#" class="button">Most liked comment</a>
+					<a href="http://localhost:1234/index.html?name=B000WGWQG8" class="btn-gradient blue block">Most Reviewed Movie</a>
+					<a href="http://localhost:1234/index.html?name=B01GWC8JWA" class="btn-gradient orange block">Movie with Longest Average Review</a>
+					<a href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/index.html" class="button">Another interesting review</a>
+				</div>
+			</div>
+			<div align="center" id="header" ,="" style="background-color: #FFF5DA">
+				<div class="div_menu" align="center" id="text-header">
+					<input id="autoComplete" tabindex="1">
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/landing-page.717825b3.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/d3.layout.cloud.2ce218a8.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+
+  </body>
+</html>

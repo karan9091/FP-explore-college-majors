@@ -47,18 +47,18 @@ d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
   // add the x Axis
   svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).ticks(5));
 
   // add the y Axis
   svg.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y).ticks(5));
 
   svg.append("text")
       .attr("transform",
             "translate(" + (width/2) + " ," +
                            (height + margin.top + 20) + ")")
       .style("text-anchor", "middle")
-      .text("Date");
+      .text("Year");
 
     svg.append("text")
         .attr("x", (width / 2))
@@ -74,6 +74,6 @@ d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Value");
+      .text("Maximum Review Count");
 
 });

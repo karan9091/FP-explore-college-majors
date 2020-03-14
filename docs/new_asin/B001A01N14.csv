@@ -1,0 +1,229 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+8275694,5,B001A01N14,"Review of the Jason Gibson introductory course to Matrix Algebra ""The Matrix Algebra Tutor - Linear Algebra"".  The course was on order for about 10 days and arrived in a properly sized box.  I've only recently begun going through the lessons on the DVDs.  It does provide a very good start in my efforts to further improve my understanding of the mathematics that engineers and scientists need to use for the performance of their jobs and research projects.",1481068800,,457,4.833333333333333
+8275695,5,B001A01N14,love it good job,1405641600,,16,3.25
+8275696,5,B001A01N14,"The DVD course covers about the first 75% of what I did in Linear Algebra.  He left out some topics such as Eigenvalues, Eigenvectors, various factorizations of matrices (LU, Gram-Scmidt, QR decomposition), and transposing matrices to name a few.  Linear Algebra can have some abstract and convoluted topics but Jason makes topics such as elimination and solving determinants simple.  This is a good DVD even though I do not think it covers all topics in Linear Algebra (actually, it just doesn't).  It was still very helpful on several topics of Linear Algebra.",1392249600,6,562,5.076086956521739
+8275697,4,B001A01N14,"This is very clear and well explained, it will get one up and running immediately with matrix
+operations. The method used for inverting a 3x3 matrix is very cumbersome, and involves more steps than are necessary (best to find the matrix of cofactors, then the transpose or adjunct, then divide the adjunct by the determinate, giving the inverse matrix; much simpler  and fewer chances of arithmetic errors). Otherwise a good tutorial.",1380412800,3,434,5.112676056338028
+8275698,5,B001A01N14,"As my title says, this is an introduction to matrix algebra.  It is not a full blown linear algebra course.  Depending on your school and how they set up the coursework, this is the material that you might get in the middle to end of a college algebra class and/or the first week of a linear algebra class.  It is by far the foundation of what you need to know to be able to do more complex linear algebra problems, but if you take a course that is entirely linear algebra or combines differential equations and linear algebra, then you are going to go into things far beyond what you will be exposed to here.
+
+This set will show you how to add, subtract, and multiply matricies, and will show you how to take determinants of a matrix and row reduce them to solve systems of equations.  It does not go into higher level concepts like eigenvalues and eigenvectors or touch heavily on linear independence which are concepts that you will use more extensively in an actual linear algebra or calc 4 class.
+
+Like I have said in other reviews of Jason's DVDs, this is great if you can learn from a recorded lecture.  He does not go into theory or do proofs, just shows you how to do problems.  Is it not a substitute for going to class and doing homework, but if used in the right way it will provide you the foundation you need to do well in class.",1336867200,6,1343,4.301587301587301
+8275699,4,B001A01N14,"The 2 DVD set ""The Matrix Algebra Tutor"" features Jason Gibson standing at a marker board and doing examples of matrix arithmetic.  The material focuses on the arithmetic needed to solve systems of simultaneous equations.  There are no examples of matrix ""algebra"" in the sense of doing manipulations with letters that represent matrices.  He does numerical examples of matrix multiplication, Gauss-Jordan reduction, determinants, matrix inverses, determinants and Cramer's rule.  He works these examples by hand, not with a calculator.  His examples do not cover the central material of a ""linear algebra"" course.  There are no problems involving vector spaces, basis vectors, linear transformations, eigenvalues, characteristic polynomials or null spaces.
+
+Jason speaks clearly and spontaneously.  His presentation is organized and fairly smooth.  He is weak on explaining mathematical concepts.  For example, after listening to Jason's explanations, a viewer may confuse the idea of ""equality"" of matrices with the idea of row equivalence"".  A viewer might take Jason's warnings about the order of matrix multiplication to mean that matrix multiplication is not associative.  However, Jason is strong on showing the step by step arithmetic in ""crank turning"" problems.  He even takes the trouble to remind viewers how to add fractions by finding a common denominator.
+
+I rate these DVDs as four stars out of five to indicate that they are a good demonstration of elementary matrix arithmetic.  Those needing help with symbolic calculations and precise mathematical concepts will have to seek different materials.
+
+Synopsis
+
+(I have written matrices by listing their rows from first to last, with each row enclosed in a pair of brackets. For the symbol that is the letter 'a' with two subscripts 'i' and 'j', I use ""a_(i,j)"" .)
+
+Disk 1
+
+1) Introduction  (about 42 minutes)
+
+Jason defines a matrix as a rectangular array of numbers and defines the ""order"" of a matrix.
+Example :The order of {1,2}{3,4}
+Example: What is the order of the matrix { 0,-1,3}{,0,1,4}
+Example: What is the order of the matrix {1,3}{74,29}{-5,-1}?
+He defines an ""element"" of a matrix and the subscript notation for an element..
+Example: In the matrix  a = { 1,2,3}{4,5,6}{7,8,9}, what is element a_(1,1)?
+Example: In the matrix  a = { 1,2,3}{4,5,6}{7,8,9}, what is element a_(1,3)?
+Example: In the matrix  a = { 1,2,3}{4,5,6}{7,8,9}, what is element a_(2,2)?
+Example: In the matrix  a = { 1,2,3}{4,5,6}{7,8,9}, what is element a_(2,3)?
+Example: In the matrix  a = { 1,2,3}{4,5,6}{7,8,9}, what is element a_(3,2)?
+He defines ""square matrix"".  He defines what it means for two matrices to be equal.
+Example: Are the matrices {1,2}{3,4}{5,6} and {1,2,3} {4,5,6} equal?
+Example: Are the matrices {31,79}{0,31}  and {31,79} {10,31} equal?
+Example: Are the matrices {7,3,4}{-1,2,3} and {7,3,4}{-1,2,3} equal?
+Example: Are the matrices {1,3}{9,7}{2,4} and {1,3}{9,7}{2,4} equal?
+Example: Find the order of the matrix {4,-7,5}{-6,8,1} and give the value of elements a_(3,2) and a_(2,3).  He explains that a_(3,2) doesn't exist.
+Example: Find the order of the matrix {1,-5,pi,e}{0,7,-6,-pi}{-2,1/2,11,-1/5}  and give the value of elements a_(3,2) and a_(2,3).
+Example: Solve for x and y in the matrix equation {2x,-4}{6,-3y} = {-10,-4}{6,-6}.
+Example: Solve for x and y in the matrix equation {x+3,2w-8}{y+1,4x+6}{z-3,3z} = {0,-6}{-2,2x}{2z+4,-21}
+
+2) Adding/Subtracting Matrices & Multiplying By A Scalar  ( about 30 minutes)
+
+To add or subtract matrices, they must be of the same order. Add and subtract the corresponding elements.  To multiply by a scalar (""a scalar just means a number""), just multiply each element by the scalar.
+Example: For A = {1,3},{3,4},{5,6} , B = {2 , -1},{ 3,-2},{ 0,1}  find A + B, A - B, 4A and 5A - 3B.
+Example: For A = {2,4,-1}, B = {-5,3,1}  find A + B, A - B, 4A and 5A - 3B.
+Example: A = { sqrt(8),1} { 2,0}  B = { sqrt(2),-1} {-3,6}
+He explains ""column matrices"" and ""row matrices"".  He reminds us how to simplify  sqrt(8) + sqrt(2) and how to simplify  4 sqrt(8).
+
+3) Multiplying Matrices  (59 minutes)
+
+Example:  Multiply {4,2}{1,3} by {1,2,3,4}{0,2,-1,6}
+Jason doesn't give a formal definition of matrix multiplication.  He explains it by illustrating a pattern of ""over and down"" gestures to remind us what things get multiplied by each other.  He emphasizes that matrix multiplication is not commutative (although he never uses the word ""commutative"").  Jason says that a student should not expect to understand why matrix multiplication is defined as it is.  [To understand that, a person needs to understand how matrices define linear transformations. Matrix multiplication is defined so that it produces the matrix corresponding to the composition of two linear transformations.]
+
+Example: A = {1,2,3,4}  B = {1}{2}{3}[4}  Find the products AB and BA
+He emphasizes that it is important that you leave the brackets on the answer to AB to show it is a matrix, even though it has a single entry.
+Example: A = { 1,3}{5,3}, B= {3,-1}{-1,6}. Find the products AB and BA.
+Example: A = {1,-1,4}{4,-1,3}{2,0,-2}, B = {1,1,0} {1,2,4},{1,-1,3}. Find the products AB and BA
+Example: A = {4,0}{-3,5}{0,1}, B = {5,1}{-2,-2}, C = {1,-1}{-1,1}  Find BC + CB
+He points out that he order of operations is multiply first, then add
+Example: A = {4,0}{-3,5}{0,1}, B = {5,1}{-2,-2}, C = {1,-1}{-1,1}  Find A(BC)
+Jason cautions that the notation A(BC) means to do the product BC first.  However, his cautions are so ominous that some viewers may think that (AB)C gives a different result than A(BC).  Jason never reveals that matrix multiplication is associative.
+
+4) Row Equivalent Matrices  (43 minutes)
+
+Example:  He represents the following system of equations as an  3 by 4 matrix ( an ""augmented matrix"")
+3x + y + 2z = 31
+x + y + 2z = 19
+x + 3y + 2z = 25
+If we take on faith that this  ""simplifies"" to {1,2,-5,-19}{0,1,3,9}{0,0,1,4}, he shows the ""simplified"" matrix implies a system of equations that is easy to solve.  He makes an analogy to ""simplifying"" a matrix and reducing a fraction to its lowest term.  This is a confusing analogy because manipulating a matrix with row operations does not preserve ""equality"".  Jason never manages to precisely define what it means for two matrices or systems of equations to be ""equivalent"".  He could say it means that they have the same solution set, but he never even mentions that equations have solution sets.
+
+He lists the operations which ""legal"" in simplifying matrices.  He explains some abbreviations for row operations.  His practice is to write the intended row operation (such as ""-2R1 + R2"")  to the right of  each row in an empty matrix and then fill-in the matrix with numbers as he performs the operation.
+
+Example: For the matrix { 2,-5,5,17}{-1,3,0,-4}{1,-2,3,9}  peform the operation  that interchanges row 1 and row 3.
+Example: For the matrix {10,16,2,100}{0,18,15,150}{9,10,17,23} perform the operations (1/2)R_1 on row 1 and  (-1/3)R_2 on row 2.
+Example: For the matrix {1,-3,2,0}{3,1,-1,7}{2,-2,1,3}  replace row 2 by -3R_1 + R_2 .  Replace row 3 by -2 R_1 + R_3
+Example For the { 1,3,4,10}{0,-5,-15,-38}{4,8,4,9}  replace row 2 by -5 R_1 + R2.  Replace row 3 by -4 R_1 + R_3
+
+5) Gaussian Elimination  (and Gauss-Jordan Elimination)  (59 minutes)
+
+The purpose of these methods is ""simplifying Matrices in order to solve equations""
+
+Gaussian Elimination
+Step 1: Write the system of eq. in matrix form
+Step 2: Perform row operations as necessary to transform the matrix into the following form:
+1' on diagonal, 0's below the diagonal  ""triangular form""  - upper triangular form
+Step 3: Write the system of equations using the new matrix
+Step 4: Use substitution to find the variables
+
+Although Jason doesn't explain a systematic way of performing Step 2,  his examples demonstrate getting the matrix in proper form going column by column, starting with column 1.  He first gets a '1' where he wants it and then gets the zeroes in the column below the 1.  When working on column i, he doesn't always use the ith row to create the zeroes in rows i+1,i+2 etc.  He just picks operations that offer simple arithmetic.
+
+Example: Use Gaussian elimination to solve the system of equations:
+x + y - 1 = -2
+2x - y + z = 5
+-x + 2y + 2z = 1
+
+Example: Use Gaussian elimination to solve the system of equations:
+x + 3y = 0
+x + y + z = 1
+3x - y - z = 11
+
+Gauss-Jordan Elimination
+Jason explains the desired final form of the matrix by writing it as {1,0,0,blah}{0,1,0,blah}{0,0,1,blah}.
+
+Example: Use Gauss-Jordan elimination to solve the system of equations:
+2x + 2y + 7z = -1
+2x + y + 2z = 2
+4x + 6y + z = 15
+
+Disk 2
+
+6) Inconsistent and Dependent Systems (54 minutes)
+
+Jason reminds us of solving linear equations in two variable by graphing them.  He explains that inconsistent equations are those where the graphs of the two equations are parallel.  He doesn't work any examples to show this.  He should have.  His examples are clearer than his explanations.  (In this discussion, he meant to write the first equation as ""y = m_1 x + b_1"" instead of ""y = m_1 x + b_2"".)
+
+He explains the idea of inconsistent equations in 3 variables by describing various ways that 3 planes may intersect or fail to intersect.  He mentions the case where the 3 planes intersect on a common line, but not the case where the three planes coincide.
+
+Example:  If Gaussian elimination is applied to the system of equations:
+  x - y - 2z = 2
+  2x - 3y + 6z = 5
+  3x - 4y + 4z = 12
+it produces the matrix {1,-1,-2,2}{0,1,-10,-1}{0,0,0,5}  The matrix ""cannot be beaten into a triangular form""  It implies the equation 0 x + 0 y + 0 z = 5, which has no solution.
+
+Example: If Gaussian elimination is applied to the system of equations
+  3x - 4y + 4z = 7
+  x - y - 2x = 2
+  2x - 3y + 6z = 5
+it produces { 1, -1, -2, 2}{0,1,-10,-1}{0,0,0,0}  This implies the equation 0 x + 0 y + 0 z = 0 , which has infinitely many solutions.  It is possible to express the set of solutions by solving for x and y in terms of z.  Jason does this.  ""x and y are dependent on the third variable. That's why it's called a 'dependent' system"".
+
+If row reduction yields a last row of {0,0,0, non-zero} then there are no solutions.
+If you get {0,0,0,0} then there are infinitely many solutions.
+
+Example:  Use Gaussian reduction to solve the system of equations
+5x + 12y + z = 10
+2x + 5y + 2z = -1
+x + 2y - 3z = 5
+He shows the system is inconsistent.
+
+Example: Use Gaussian reduction to solve the system of equations
+5x + 8y - 6z = 14
+3x  + 4y - 2z = 8
+x + 2y - 2z = 3
+He shows the system is dependent.  Solutions have the form (x,y,z) = (  -2z + 2, 1/2 + 2z, z)
+
+7) The Inverse Of A Matrix (51 minutes)
+
+He gives examples of the ""multiplicative inverse"" of a number.  He defines the right inverse of a matrix and defines identity matrices by giving examples of the 2x2,3x3 and 4x4 identity matrices. Inverses are  defined only for square matrices.  Not all square matrices have inverses.
+
+""Most of the time you'll be dealing with 2x2 and 3x3 matrices in your homework and in your tests.""
+
+He gives the formula for the inverse of a 2x2 matrix:
+A = {a,b}{c,d}  A^(-1)= (1/(ad -bc)) times matrix {d,-b}{-c,a}.
+He says the formula isn't supposed to make intuitive sense.
+
+Example: Use the above formula to find the inverse of the matrix A = {2,3}{-1,2} and verify that the answer you get satisfies A A^(-1) = the 2x2 identity matrix.
+He points out that if the forumla gives a division by zero then the matrix has no inverse.
+
+Example: Use the above formula to find the inverse of the matrix A = {3,-1}{-4,2} and verify that the answer you get satisfies A A^(-1) = the 2x2 identity matrix.
+
+Procedure to find the inverse of the 3x3 matrix  A
+Step 1: Write it as an augmented matrix, with A on the left and the identity matrix on the right ""of the dotted line"".
+Step 2: Do row operations (Gauss-Jordan elimination) until you get an identity where A was.  What comes out on the right side where the identity was will be the inverse of A.
+
+Example: Find the inverse of the matrix A  = { 2,2,-1}{0,3,-1}{-1,-2,1} by using Gauss-Jordan elimination.
+
+8) Solving Systems Using Matrix Inverses (31 minutes)
+
+Example: Write the following system of equations in matrix form.
+3x + 2y = 7
+-x  + y = 3
+He explains that the matrix form of the equation shows a matrix times the column vector {x}{y}.
+Explains solution to the matrix equation  AX = B is  X = A^(-1)B  (In the explanation, he tacitly assumes that the right inverse of A is also its left inverse - true, but he should have mentioned this.)
+Assumes the matrix inverse is a left inverse.
+
+Example: Write the following system of equations in matrix form:
+2x + 6x + 6z = 8
+2x + 7y + 6z = 10
+2x + 7y + 7z = 9
+Given that {7/2,0,-3}{-1,1,0}{0,-1,1} is the inverse of the coefficient matrix, to solve the system.
+
+Example: Write the following system of equations in matrix form.
+x - y + z = 8
+2y - z = -7
+2x + 3y = 1
+Given that the inverse of the coefficient matrix is {3,3,-1}{-2,-2,1}{ -4,-5,2 }, solve the system.
+
+Example: Write the folloing system of equations in matrix form.  Find the inverse of the coefficient matrix and use it to solve the system.
+x + 2y + 5z = 2
+2x + 3y + 8z = 3
+-x + y + 2z = 3
+
+9) Matrix Determinants  (23 minutes)
+
+Jason demonstrates how to find he determinant of a 2 by 2 matrix.  He emphasizes visualizing an ""X"" pattern to remember how.
+
+Example: Find the determinant of the matrix {2,-7}{-3,4}
+Example: Find the determinant of {-6,-7} {-1,4}
+Example: Find the determinant of {5,-6} {-2,8}
+
+He defines the determinant of a 3x3 matrix.  He emphasizes marking out rows and columns through the entry begin used as a coefficient. (He doesn't define any technical terms such as ""cofactor"".  He doesn't give a definition for the determinant of a general n by n matrix.)
+
+Example: Find the determinant of {3,0,0}{2,1,-5}{2,5,-1}
+Example: Find the determinant of {3,1,0}{-3,4,0}{-1,3,5}
+Example: Find the determinant of {1,1,1}{2,2,2}{-3,4,-5}
+(This example shows that a determinant may be zero }
+Example: Find the determinant of {1,2,3}{2,2,-3}{3,2,1}
+
+10) Cramer's Rule (30 minutes)
+
+He states Cramer's rule for 2 equations in 2 variables and then he states the rule for 3 equations in 3 variables.  (It's up to the viewer to figure out what would be done with more equations and more variables.)
+
+Example: Use Cramer's rule to solve the system of equations:
+x + 2y = 19
+3x - 7y = 8
+Example: Use Cramer's rule to solve the system of equations:
+2x + 3y = 7
+5x - 7y = -3
+Example: Use Cramer's rule to solve the system of equations:
+x + y + z = 0
+2x - y + z = -1
+-x + 3y -z = -8",1283731200,16,14642,4.653515625
+8275700,5,B001A01N14,"If you need to learn matrix algebra,This video is a must. This video unveils all of the mystery of matrices. I learned more from these videos in 2 hours than a 9 week course. Its like having a private tutor.
+Very highly recomended.",1217808000,8,231,4.395348837209302
+8275701,5,B001A01N14,"I hold a Ph. D. in sociology with a strong computer/theoretical background in statistics and yet never really got much into matrix algebra.  This video changed all of that!  Fantastic job, Jason.  Way to go, easy to understand and he cuts through all of the nonsense.",1215561600,2,267,4.760869565217392
+8275702,5,B001A01N14,"Having just signed up for a Matrix Algebra course for college summer session prompted me to get these DVDs.  I'd had some contact with this subject in my last course, but quickly realized that a simplification of the material was needed.  Mr. Gibson is noted for teaching by examples, literally showing you step-by-step how to go from the easy stuff on up.  This series does just that.  You go from learning what a matrix is, to how to transform a matrix (equation) into several different methods of solutions for systems of equations.  No CG bells and whistles, what you get is an easy-to-understand series of steps from an Aerospace Scientist who can truly make it easier for you with PLENTY of examples and solved problems.  Thanks again Jason!",1212624000,9,747,4.796875
