@@ -79,9 +79,8 @@
 			padding: 10px;
 		}
 		
-		#graph {
-			width: 50%;
-        	height: 100vh;
+		#graph1 {
+			margin-right: 100px;
 		}
 		.div_menu {
 			display: inline-block; 
@@ -171,13 +170,12 @@
 			<div class="dropdown">
 				<button class="dropbtn">X-Axis / Y-Axis</button>
 				<div class="dropdown-content">
-				    <a id="dropdown-1">X: Year / Y: Length Of Review</a>
-				    <a id="dropdown-2">X: Score / Y: Length Of Review</a>
-				    <a id="dropdown-3">X: Length Of Review / Y: Year</a>
-				    <a id="dropdown-4">X: Length Of Review / Y: Score</a>
-				    <a id="dropdown-5">X: Year / Y: Score</a>
-				    <a id="dropdown-6">X: Score / Y: Year</a>
-
+				    <a id="dropdown-1">X: Year <br/> Y: Review Length</a>
+				    <a id="dropdown-2">X: Score <br/> Y: Review Length</a>
+				    <a id="dropdown-3">X: Review Length<br/> Y: Year</a>
+				    <a id="dropdown-4">X: Review Length<br/> Y: Score</a>
+				    <a id="dropdown-5">X: Year <br/> Y: Score</a>
+				    <a id="dropdown-6">X: Score <br/> Y: Year</a>
 				</div>
 			</div>
 			<input id="autoComplete" tabindex="1">
@@ -187,15 +185,17 @@
 	<div class="row">
 	  <div class="column1" style="width: 100%%; height: auto;">
 	  	<div id="graph1" class="graph"></div>
-	  </div>
+	  </div> 
 
 	</div>
 	<div class="row">
-	  <div style="width: 100%%; height: auto">
-		<div type="text" id="reviewBox" style="height:100px;width:140px;overflow:auto;background-color:yellowgreen;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;">
+	  	<div style="width: 50%; max-height: 300px">
+			<div type="text" id="reviewBox" style="max-height: 300px; overflow: auto;background-color: #4CAF50; color: white; scrollbar-base-color: gold; font-family: sans-serif; padding: 10px;">
+			</div>
+		</div>
+		<div id="wordcloud" style="width: 50%; height: auto;">
 		</div>
 	</div>
-	<div id="wordcloud"></div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>

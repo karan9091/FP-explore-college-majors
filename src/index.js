@@ -19,7 +19,6 @@ var index_asin_map = new Map();
 var asin_index_map = new Map();
 var index_title_map = new Map();
 var title_index_map = new Map();
-var category_title_map = new Map();
 var all_titles = []
 
 // read in asin csv into memory
@@ -34,10 +33,11 @@ function init() {
         data[tmp[0]] = tmp[1];
     }
     plot_asin(data.name, "score", "reviewLength");
-    parseMetadata();
     createCloud.createWordEntries(data.name);
     var textBox = document.getElementById('reviewBox');
     textBox.innerHTML = "Hover over a point to read the Review!";
+    parseMetadata(data.name);
+
 }
 // console.log(all_titles);
 
@@ -180,7 +180,6 @@ function plot_asin(asin, x_axis, y_axis){
 	    .on("mouseover", function (d) {
             var textBox = document.getElementById("reviewBox");
             textBox.innerHTML = d.reviewText;
-            d.fill = "red";
 
 	         // div.transition()
 	         //     .duration(200)
@@ -399,7 +398,7 @@ dropdown6.onclick = function() {
 //     });
 // })
 // })
-function parseMetadata() {
+function parseMetadata(asin) {
     // read in asin csv into memory
     var index = 0;
     console.log("Started");
@@ -428,6 +427,19 @@ function parseMetadata() {
         category_title_map[key].push(index_title_map.get(index_2));
         index_2++;
     })
+    var header = document.getElementById("main-header-text");
+    header.innerHTML = index_title_map[0].get(index_asin_map[0].get("000073991X"));
+    console.log(asin_index_map.has("000073991X"));
+    console.log(index_title_map.has(5));
+    console.log(index_asin_map);
+    console.log(asin_index_map);
+    console.log(title_index_map);
+    console.log(index_title_map);
+    if (index_asin_map.has(asin)) {
+        console.log("GOOD");
+    }
+    console.log()
+    console.log(asin);
 }
 new autoComplete({
     data: {
@@ -480,6 +492,7 @@ new autoComplete({
         createCloud.createWordEntries(asin);
         var textBox = document.getElementById('reviewBox');
         textBox.innerHTML = "Hover over a point to read the Review!";
-
+        var header = document.getElementById("main-header-text");
+        header.innerHTML = feedback.selection.value;
     }
 });

@@ -47,11 +47,11 @@ d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
   // add the x Axis
   svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).ticks(5));
 
   // add the y Axis
   svg.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y).ticks(5));
 
   svg.append("text")
       .attr("transform",

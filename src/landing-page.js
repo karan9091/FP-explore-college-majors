@@ -19,7 +19,6 @@ var index_asin_map = new Map();
 var asin_index_map = new Map();
 var index_title_map = new Map();
 var title_index_map = new Map();
-var category_title_map = new Map();
 var all_titles = []
 
 function init() {
@@ -35,20 +34,6 @@ function init() {
         index_title_map.set(index_1++, data['title']);
         title_index_map.set(data['title'], index_1-1);
         all_titles.push(data['title']);
-    })
-    // create category map with titles
-    var index_2 = 0;
-    d3.csv('metadata_category.csv', function(data) {
-        categories = data['category'].substring(1, data['category'].length - 1);
-        sep_categories = categories.split(', ');
-        if(sep_categories.includes("'TV'")) {
-            var key = 'TV';
-        } else {
-            var key = 'Movies';
-        }
-        category_title_map[key] = category_title_map[key] || [];
-        category_title_map[key].push(index_title_map.get(index_2));
-        index_2++;
     })
 }
 
