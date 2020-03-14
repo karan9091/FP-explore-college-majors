@@ -3,7 +3,7 @@
   <head>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
     <meta charset="UTF-8">
-    <title>My Title</title>
+    <title>Amazon Reviews</title>
     <style>body {
 			background-color: #FFF5DA;
 		}
@@ -54,17 +54,17 @@
 		}
 
 		.button {
-			background-color: white;
+			background-color: #FFF5DA;
 			color: black;
-			border: 2px solid #008CBA;
+			border: 2px solid #F5B53A;
 		}
 
 		.button:hover {
-			background-color: #008CBA;
+			background-color: #F5B53A;
 			color: white;
 		}
 		.button_pressed {
-			background-color: #008CBA;
+			background-color: #F5B53A;
 			color: white;
 		}
 		.label {
@@ -95,11 +95,15 @@
 		}
 		/* Dropdown Button */
 		.dropbtn {
-		  background-color: #4CAF50;
+		  background-color: #253356;
 		  color: white;
 		  padding: 16px;
 		  font-size: 16px;
 		  border: none;
+		  height: 90%;
+		  vertical-align: middle;
+		  text-anchor: middle;
+		  
 		}
 
 		.dropbtn2 {
@@ -119,13 +123,15 @@
 		.dropdown, .dropdown2 {
 		  position: relative;
 		  display: inline-block;
+		  color: #253356;
+		  background-color: #253356;
 		}
 
 		/* Dropdown Content (Hidden by Default) */
 		.dropdown-content, .dropdown-content2 {
 		  display: none;
 		  position: absolute;
-		  background-color: #f1f1f1;
+		  background-color: #FFF5DA;
 		  min-width: 160px;
 		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		  z-index: 1;
@@ -133,20 +139,20 @@
 
 		/* Links inside the dropdown */
 		.dropdown-content a, .dropdown-content2 a {
-		  color: black;
+		  color: #2C1424;
 		  padding: 12px 16px;
 		  text-decoration: none;
 		  display: block;
 		}
 
 		/* Change color of dropdown links on hover */
-		.dropdown-content a:hover {background-color: #ddd;}
+		.dropdown-content a:hover {background-color: #F5B53A;}
 
 		/* Show the dropdown menu on hover */
 		.dropdown:hover .dropdown-content {display: block;}
 
 		/* Change the background color of the dropdown button when the dropdown content is shown */
-		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+		.dropdown:hover .dropbtn {background-color: #2C3E68;}
 
 		/* Show the dropdown menu on hover */
 		.dropdown2:hover .dropdown-content2 {display: block;}
@@ -165,14 +171,41 @@
 
 		}
 
-		.main-header-text {
-			font-family: Raleway;
-			font-size: 80px;
-			font-style: normal;
-			font-variant: normal;
-			font-weight: 700;
-			line-height: 26.4px;
-			color: #2C1424;
+		.main-header-text1 {
+			font-family: Impact;
+			color: #DA4165;
+			margin-top: 16px;
+		}
+
+		.stars-header-text1 {
+			color: #DA4165;
+		}
+
+		#autoComplete:focus::selection {
+			color: #FFF5DA;
+		}
+		.autoComplete_result::selection{
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+		}
+
+		#autoComplete {
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+		}
+
+		#autoComplete_list {
+			background-color: #FFF5DA;
+		}
+
+		.autoComplete_highlighted::selection {
+			color:#FFF5DA;
+			background-color: #FFF5DA;
+		}
+		
+		#autoComplete_wrapper {
+			color: #FFF5DA;
+			background-color: #FFF5DA;
 		}</style>
   </head>
 
@@ -211,7 +244,7 @@
 	</div>
 	<div class="row">
 	  	<div style="width: 50%; max-height: 300px">
-			<div type="text" id="reviewBox" style="max-height: 300px; overflow: auto;background-color: #4CAF50; color: white; scrollbar-base-color: gold; font-family: sans-serif; padding: 10px;">
+			<div type="text" id="reviewBox" style="max-height: 300px; overflow: auto;background-color: #F5B53A; color: white; scrollbar-base-color: gold; font-family: sans-serif; padding: 10px;">
 			</div>
 		</div>
 		<div id="wordcloud" style="width: 50%; height: auto;">
@@ -222,6 +255,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
 	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/d3.layout.cloud.2ce218a8.js"></script>
 	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/word_cloud.16658cb2.js"></script>
-	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/src.da9c195e.js"></script>
+	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/src.f3494b6b.js"></script>
   </body>
 </html>

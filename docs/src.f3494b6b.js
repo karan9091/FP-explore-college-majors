@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/d3/dist/package.js":[function(require,module,exports) {
+})({"pT13":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -207,7 +207,7 @@ var dependencies = {
   "d3-zoom": "1"
 };
 exports.dependencies = dependencies;
-},{}],"../node_modules/d3-array/src/ascending.js":[function(require,module,exports) {
+},{}],"yJgn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -218,7 +218,7 @@ exports.default = _default;
 function _default(a, b) {
   return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 }
-},{}],"../node_modules/d3-array/src/bisector.js":[function(require,module,exports) {
+},{}],"CQHQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -263,7 +263,7 @@ function ascendingComparator(f) {
     return (0, _ascending.default)(f(d), x);
   };
 }
-},{"./ascending":"../node_modules/d3-array/src/ascending.js"}],"../node_modules/d3-array/src/bisect.js":[function(require,module,exports) {
+},{"./ascending":"yJgn"}],"YrTP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -284,7 +284,7 @@ var bisectLeft = ascendingBisect.left;
 exports.bisectLeft = bisectLeft;
 var _default = bisectRight;
 exports.default = _default;
-},{"./ascending":"../node_modules/d3-array/src/ascending.js","./bisector":"../node_modules/d3-array/src/bisector.js"}],"../node_modules/d3-array/src/pairs.js":[function(require,module,exports) {
+},{"./ascending":"yJgn","./bisector":"CQHQ"}],"DkXH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -308,7 +308,7 @@ function _default(array, f) {
 function pair(a, b) {
   return [a, b];
 }
-},{}],"../node_modules/d3-array/src/cross.js":[function(require,module,exports) {
+},{}],"LKVk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -336,7 +336,7 @@ function _default(values0, values1, reduce) {
 
   return values;
 }
-},{"./pairs":"../node_modules/d3-array/src/pairs.js"}],"../node_modules/d3-array/src/descending.js":[function(require,module,exports) {
+},{"./pairs":"DkXH"}],"fBAz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -347,7 +347,7 @@ exports.default = _default;
 function _default(a, b) {
   return b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN;
 }
-},{}],"../node_modules/d3-array/src/number.js":[function(require,module,exports) {
+},{}],"XWLP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -358,7 +358,7 @@ exports.default = _default;
 function _default(x) {
   return x === null ? NaN : +x;
 }
-},{}],"../node_modules/d3-array/src/variance.js":[function(require,module,exports) {
+},{}],"Nh5Q":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -399,7 +399,7 @@ function _default(values, valueof) {
 
   if (m > 1) return sum / (m - 1);
 }
-},{"./number":"../node_modules/d3-array/src/number.js"}],"../node_modules/d3-array/src/deviation.js":[function(require,module,exports) {
+},{"./number":"XWLP"}],"WEAa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -415,7 +415,7 @@ function _default(array, f) {
   var v = (0, _variance.default)(array, f);
   return v ? Math.sqrt(v) : v;
 }
-},{"./variance":"../node_modules/d3-array/src/variance.js"}],"../node_modules/d3-array/src/extent.js":[function(require,module,exports) {
+},{"./variance":"Nh5Q"}],"UaWb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -464,7 +464,7 @@ function _default(values, valueof) {
 
   return [min, max];
 }
-},{}],"../node_modules/d3-array/src/array.js":[function(require,module,exports) {
+},{}],"RkzJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -476,7 +476,7 @@ var slice = array.slice;
 exports.slice = slice;
 var map = array.map;
 exports.map = map;
-},{}],"../node_modules/d3-array/src/constant.js":[function(require,module,exports) {
+},{}],"aCvo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +489,7 @@ function _default(x) {
     return x;
   };
 }
-},{}],"../node_modules/d3-array/src/identity.js":[function(require,module,exports) {
+},{}],"NNW9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -500,7 +500,7 @@ exports.default = _default;
 function _default(x) {
   return x;
 }
-},{}],"../node_modules/d3-array/src/range.js":[function(require,module,exports) {
+},{}],"wcAU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -520,7 +520,7 @@ function _default(start, stop, step) {
 
   return range;
 }
-},{}],"../node_modules/d3-array/src/ticks.js":[function(require,module,exports) {
+},{}],"EUzg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -576,7 +576,7 @@ function tickStep(start, stop, count) {
   if (error >= e10) step1 *= 10;else if (error >= e5) step1 *= 5;else if (error >= e2) step1 *= 2;
   return stop < start ? -step1 : step1;
 }
-},{}],"../node_modules/d3-array/src/threshold/sturges.js":[function(require,module,exports) {
+},{}],"J0XR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -587,7 +587,7 @@ exports.default = _default;
 function _default(values) {
   return Math.ceil(Math.log(values.length) / Math.LN2) + 1;
 }
-},{}],"../node_modules/d3-array/src/histogram.js":[function(require,module,exports) {
+},{}],"d5Tn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -680,7 +680,7 @@ function _default() {
 
   return histogram;
 }
-},{"./array":"../node_modules/d3-array/src/array.js","./bisect":"../node_modules/d3-array/src/bisect.js","./constant":"../node_modules/d3-array/src/constant.js","./extent":"../node_modules/d3-array/src/extent.js","./identity":"../node_modules/d3-array/src/identity.js","./range":"../node_modules/d3-array/src/range.js","./ticks":"../node_modules/d3-array/src/ticks.js","./threshold/sturges":"../node_modules/d3-array/src/threshold/sturges.js"}],"../node_modules/d3-array/src/quantile.js":[function(require,module,exports) {
+},{"./array":"RkzJ","./bisect":"YrTP","./constant":"aCvo","./extent":"UaWb","./identity":"NNW9","./range":"wcAU","./ticks":"EUzg","./threshold/sturges":"J0XR"}],"xM5B":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -704,7 +704,7 @@ function _default(values, p, valueof) {
       value1 = +valueof(values[i0 + 1], i0 + 1, values);
   return value0 + (value1 - value0) * (i - i0);
 }
-},{"./number":"../node_modules/d3-array/src/number.js"}],"../node_modules/d3-array/src/threshold/freedmanDiaconis.js":[function(require,module,exports) {
+},{"./number":"XWLP"}],"nJJ4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -726,7 +726,7 @@ function _default(values, min, max) {
   values = _array.map.call(values, _number.default).sort(_ascending.default);
   return Math.ceil((max - min) / (2 * ((0, _quantile.default)(values, 0.75) - (0, _quantile.default)(values, 0.25)) * Math.pow(values.length, -1 / 3)));
 }
-},{"../array":"../node_modules/d3-array/src/array.js","../ascending":"../node_modules/d3-array/src/ascending.js","../number":"../node_modules/d3-array/src/number.js","../quantile":"../node_modules/d3-array/src/quantile.js"}],"../node_modules/d3-array/src/threshold/scott.js":[function(require,module,exports) {
+},{"../array":"RkzJ","../ascending":"yJgn","../number":"XWLP","../quantile":"xM5B"}],"Rqev":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -741,7 +741,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(values, min, max) {
   return Math.ceil((max - min) / (3.5 * (0, _deviation.default)(values) * Math.pow(values.length, -1 / 3)));
 }
-},{"../deviation":"../node_modules/d3-array/src/deviation.js"}],"../node_modules/d3-array/src/max.js":[function(require,module,exports) {
+},{"../deviation":"WEAa"}],"Ougw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -787,7 +787,7 @@ function _default(values, valueof) {
 
   return max;
 }
-},{}],"../node_modules/d3-array/src/mean.js":[function(require,module,exports) {
+},{}],"YY5N":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -818,7 +818,7 @@ function _default(values, valueof) {
 
   if (m) return sum / m;
 }
-},{"./number":"../node_modules/d3-array/src/number.js"}],"../node_modules/d3-array/src/median.js":[function(require,module,exports) {
+},{"./number":"XWLP"}],"CxwF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -856,7 +856,7 @@ function _default(values, valueof) {
 
   return (0, _quantile.default)(numbers.sort(_ascending.default), 0.5);
 }
-},{"./ascending":"../node_modules/d3-array/src/ascending.js","./number":"../node_modules/d3-array/src/number.js","./quantile":"../node_modules/d3-array/src/quantile.js"}],"../node_modules/d3-array/src/merge.js":[function(require,module,exports) {
+},{"./ascending":"yJgn","./number":"XWLP","./quantile":"xM5B"}],"Getd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -887,7 +887,7 @@ function _default(arrays) {
 
   return merged;
 }
-},{}],"../node_modules/d3-array/src/min.js":[function(require,module,exports) {
+},{}],"kP8m":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -933,7 +933,7 @@ function _default(values, valueof) {
 
   return min;
 }
-},{}],"../node_modules/d3-array/src/permute.js":[function(require,module,exports) {
+},{}],"RhiG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -949,7 +949,7 @@ function _default(array, indexes) {
 
   return permutes;
 }
-},{}],"../node_modules/d3-array/src/scan.js":[function(require,module,exports) {
+},{}],"swlo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -978,7 +978,7 @@ function _default(values, compare) {
 
   if (compare(xj, xj) === 0) return j;
 }
-},{"./ascending":"../node_modules/d3-array/src/ascending.js"}],"../node_modules/d3-array/src/shuffle.js":[function(require,module,exports) {
+},{"./ascending":"yJgn"}],"Xskt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1000,7 +1000,7 @@ function _default(array, i0, i1) {
 
   return array;
 }
-},{}],"../node_modules/d3-array/src/sum.js":[function(require,module,exports) {
+},{}],"uFmM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1026,7 +1026,7 @@ function _default(values, valueof) {
 
   return sum;
 }
-},{}],"../node_modules/d3-array/src/transpose.js":[function(require,module,exports) {
+},{}],"DmNI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1053,7 +1053,7 @@ function _default(matrix) {
 function length(d) {
   return d.length;
 }
-},{"./min":"../node_modules/d3-array/src/min.js"}],"../node_modules/d3-array/src/zip.js":[function(require,module,exports) {
+},{"./min":"kP8m"}],"ciZM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1068,7 +1068,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default() {
   return (0, _transpose.default)(arguments);
 }
-},{"./transpose":"../node_modules/d3-array/src/transpose.js"}],"../node_modules/d3-array/src/index.js":[function(require,module,exports) {
+},{"./transpose":"DmNI"}],"K0bd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1320,7 +1320,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./bisect":"../node_modules/d3-array/src/bisect.js","./ascending":"../node_modules/d3-array/src/ascending.js","./bisector":"../node_modules/d3-array/src/bisector.js","./cross":"../node_modules/d3-array/src/cross.js","./descending":"../node_modules/d3-array/src/descending.js","./deviation":"../node_modules/d3-array/src/deviation.js","./extent":"../node_modules/d3-array/src/extent.js","./histogram":"../node_modules/d3-array/src/histogram.js","./threshold/freedmanDiaconis":"../node_modules/d3-array/src/threshold/freedmanDiaconis.js","./threshold/scott":"../node_modules/d3-array/src/threshold/scott.js","./threshold/sturges":"../node_modules/d3-array/src/threshold/sturges.js","./max":"../node_modules/d3-array/src/max.js","./mean":"../node_modules/d3-array/src/mean.js","./median":"../node_modules/d3-array/src/median.js","./merge":"../node_modules/d3-array/src/merge.js","./min":"../node_modules/d3-array/src/min.js","./pairs":"../node_modules/d3-array/src/pairs.js","./permute":"../node_modules/d3-array/src/permute.js","./quantile":"../node_modules/d3-array/src/quantile.js","./range":"../node_modules/d3-array/src/range.js","./scan":"../node_modules/d3-array/src/scan.js","./shuffle":"../node_modules/d3-array/src/shuffle.js","./sum":"../node_modules/d3-array/src/sum.js","./ticks":"../node_modules/d3-array/src/ticks.js","./transpose":"../node_modules/d3-array/src/transpose.js","./variance":"../node_modules/d3-array/src/variance.js","./zip":"../node_modules/d3-array/src/zip.js"}],"../node_modules/d3-axis/src/array.js":[function(require,module,exports) {
+},{"./bisect":"YrTP","./ascending":"yJgn","./bisector":"CQHQ","./cross":"LKVk","./descending":"fBAz","./deviation":"WEAa","./extent":"UaWb","./histogram":"d5Tn","./threshold/freedmanDiaconis":"nJJ4","./threshold/scott":"Rqev","./threshold/sturges":"J0XR","./max":"Ougw","./mean":"YY5N","./median":"CxwF","./merge":"Getd","./min":"kP8m","./pairs":"DkXH","./permute":"RhiG","./quantile":"xM5B","./range":"wcAU","./scan":"swlo","./shuffle":"Xskt","./sum":"uFmM","./ticks":"EUzg","./transpose":"DmNI","./variance":"Nh5Q","./zip":"ciZM"}],"KXlw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1329,18 +1329,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.slice = void 0;
 var slice = Array.prototype.slice;
 exports.slice = slice;
-},{}],"../node_modules/d3-axis/src/identity.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return x;
-}
-},{}],"../node_modules/d3-axis/src/axis.js":[function(require,module,exports) {
+},{}],"c1MF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1502,7 +1491,7 @@ function axisBottom(scale) {
 function axisLeft(scale) {
   return axis(left, scale);
 }
-},{"./array":"../node_modules/d3-axis/src/array.js","./identity":"../node_modules/d3-axis/src/identity.js"}],"../node_modules/d3-axis/src/index.js":[function(require,module,exports) {
+},{"./array":"KXlw","./identity":"NNW9"}],"mp0m":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1534,7 +1523,7 @@ Object.defineProperty(exports, "axisLeft", {
 });
 
 var _axis = require("./axis");
-},{"./axis":"../node_modules/d3-axis/src/axis.js"}],"../node_modules/d3-dispatch/src/dispatch.js":[function(require,module,exports) {
+},{"./axis":"c1MF"}],"a3oC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1642,7 +1631,7 @@ function set(type, name, callback) {
 
 var _default = dispatch;
 exports.default = _default;
-},{}],"../node_modules/d3-dispatch/src/index.js":[function(require,module,exports) {
+},{}],"D3zY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1658,7 +1647,7 @@ Object.defineProperty(exports, "dispatch", {
 var _dispatch = _interopRequireDefault(require("./dispatch.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./dispatch.js":"../node_modules/d3-dispatch/src/dispatch.js"}],"../node_modules/d3-selection/src/namespaces.js":[function(require,module,exports) {
+},{"./dispatch.js":"a3oC"}],"YeOr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1675,7 +1664,7 @@ var _default = {
   xmlns: "http://www.w3.org/2000/xmlns/"
 };
 exports.default = _default;
-},{}],"../node_modules/d3-selection/src/namespace.js":[function(require,module,exports) {
+},{}],"U3j5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1696,7 +1685,7 @@ function _default(name) {
     local: name
   } : name;
 }
-},{"./namespaces":"../node_modules/d3-selection/src/namespaces.js"}],"../node_modules/d3-selection/src/creator.js":[function(require,module,exports) {
+},{"./namespaces":"YeOr"}],"z8hd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1728,7 +1717,7 @@ function _default(name) {
   var fullname = (0, _namespace.default)(name);
   return (fullname.local ? creatorFixed : creatorInherit)(fullname);
 }
-},{"./namespace":"../node_modules/d3-selection/src/namespace.js","./namespaces":"../node_modules/d3-selection/src/namespaces.js"}],"../node_modules/d3-selection/src/selector.js":[function(require,module,exports) {
+},{"./namespace":"U3j5","./namespaces":"YeOr"}],"vXaf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1743,7 +1732,7 @@ function _default(selector) {
     return this.querySelector(selector);
   };
 }
-},{}],"../node_modules/d3-selection/src/selection/select.js":[function(require,module,exports) {
+},{}],"LlPS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1771,7 +1760,7 @@ function _default(select) {
 
   return new _index.Selection(subgroups, this._parents);
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js","../selector":"../node_modules/d3-selection/src/selector.js"}],"../node_modules/d3-selection/src/selectorAll.js":[function(require,module,exports) {
+},{"./index":"G2fv","../selector":"vXaf"}],"t3Ja":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1788,7 +1777,7 @@ function _default(selector) {
     return this.querySelectorAll(selector);
   };
 }
-},{}],"../node_modules/d3-selection/src/selection/selectAll.js":[function(require,module,exports) {
+},{}],"VXfp":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1816,7 +1805,7 @@ function _default(select) {
 
   return new _index.Selection(subgroups, parents);
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js","../selectorAll":"../node_modules/d3-selection/src/selectorAll.js"}],"../node_modules/d3-selection/src/matcher.js":[function(require,module,exports) {
+},{"./index":"G2fv","../selectorAll":"t3Ja"}],"oB3r":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1829,7 +1818,7 @@ function _default(selector) {
     return this.matches(selector);
   };
 }
-},{}],"../node_modules/d3-selection/src/selection/filter.js":[function(require,module,exports) {
+},{}],"SSab":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1856,7 +1845,7 @@ function _default(match) {
 
   return new _index.Selection(subgroups, this._parents);
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js","../matcher":"../node_modules/d3-selection/src/matcher.js"}],"../node_modules/d3-selection/src/selection/sparse.js":[function(require,module,exports) {
+},{"./index":"G2fv","../matcher":"oB3r"}],"CH7j":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1867,7 +1856,7 @@ exports.default = _default;
 function _default(update) {
   return new Array(update.length);
 }
-},{}],"../node_modules/d3-selection/src/selection/enter.js":[function(require,module,exports) {
+},{}],"Bnlt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1909,20 +1898,7 @@ EnterNode.prototype = {
     return this._parent.querySelectorAll(selector);
   }
 };
-},{"./sparse":"../node_modules/d3-selection/src/selection/sparse.js","./index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-selection/src/selection/data.js":[function(require,module,exports) {
+},{"./sparse":"CH7j","./index":"G2fv"}],"qO0c":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2053,7 +2029,7 @@ function _default(value, key) {
   update._exit = exit;
   return update;
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js","./enter":"../node_modules/d3-selection/src/selection/enter.js","../constant":"../node_modules/d3-selection/src/constant.js"}],"../node_modules/d3-selection/src/selection/exit.js":[function(require,module,exports) {
+},{"./index":"G2fv","./enter":"Bnlt","../constant":"aCvo"}],"sLhL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2070,7 +2046,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default() {
   return new _index.Selection(this._exit || this._groups.map(_sparse.default), this._parents);
 }
-},{"./sparse":"../node_modules/d3-selection/src/selection/sparse.js","./index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/selection/join.js":[function(require,module,exports) {
+},{"./sparse":"CH7j","./index":"G2fv"}],"Rskg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2087,7 +2063,7 @@ function _default(onenter, onupdate, onexit) {
   if (onexit == null) exit.remove();else onexit(exit);
   return enter && update ? enter.merge(update).order() : update;
 }
-},{}],"../node_modules/d3-selection/src/selection/merge.js":[function(require,module,exports) {
+},{}],"VSNx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2112,7 +2088,7 @@ function _default(selection) {
 
   return new _index.Selection(merges, this._parents);
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/selection/order.js":[function(require,module,exports) {
+},{"./index":"G2fv"}],"z9O9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2132,7 +2108,7 @@ function _default() {
 
   return this;
 }
-},{}],"../node_modules/d3-selection/src/selection/sort.js":[function(require,module,exports) {
+},{}],"Vwkw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2165,7 +2141,7 @@ function _default(compare) {
 function ascending(a, b) {
   return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 }
-},{"./index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/selection/call.js":[function(require,module,exports) {
+},{"./index":"G2fv"}],"fuyN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2179,7 +2155,7 @@ function _default() {
   callback.apply(null, arguments);
   return this;
 }
-},{}],"../node_modules/d3-selection/src/selection/nodes.js":[function(require,module,exports) {
+},{}],"x3ma":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2195,7 +2171,7 @@ function _default() {
   });
   return nodes;
 }
-},{}],"../node_modules/d3-selection/src/selection/node.js":[function(require,module,exports) {
+},{}],"zOHW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2213,7 +2189,7 @@ function _default() {
 
   return null;
 }
-},{}],"../node_modules/d3-selection/src/selection/size.js":[function(require,module,exports) {
+},{}],"zFge":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2228,7 +2204,7 @@ function _default() {
   });
   return size;
 }
-},{}],"../node_modules/d3-selection/src/selection/empty.js":[function(require,module,exports) {
+},{}],"ZnyY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2239,7 +2215,7 @@ exports.default = _default;
 function _default() {
   return !this.node();
 }
-},{}],"../node_modules/d3-selection/src/selection/each.js":[function(require,module,exports) {
+},{}],"ntqp":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2256,7 +2232,7 @@ function _default(callback) {
 
   return this;
 }
-},{}],"../node_modules/d3-selection/src/selection/attr.js":[function(require,module,exports) {
+},{}],"KUPz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2316,7 +2292,7 @@ function _default(name, value) {
 
   return this.each((value == null ? fullname.local ? attrRemoveNS : attrRemove : typeof value === "function" ? fullname.local ? attrFunctionNS : attrFunction : fullname.local ? attrConstantNS : attrConstant)(fullname, value));
 }
-},{"../namespace":"../node_modules/d3-selection/src/namespace.js"}],"../node_modules/d3-selection/src/window.js":[function(require,module,exports) {
+},{"../namespace":"U3j5"}],"iFwm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2329,7 +2305,7 @@ function _default(node) {
   node.document && node // node is a Window
   || node.defaultView; // node is a Document
 }
-},{}],"../node_modules/d3-selection/src/selection/style.js":[function(require,module,exports) {
+},{}],"WecP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2368,7 +2344,7 @@ function _default(name, value, priority) {
 function styleValue(node, name) {
   return node.style.getPropertyValue(name) || (0, _window.default)(node).getComputedStyle(node, null).getPropertyValue(name);
 }
-},{"../window":"../node_modules/d3-selection/src/window.js"}],"../node_modules/d3-selection/src/selection/property.js":[function(require,module,exports) {
+},{"../window":"iFwm"}],"Tr0z":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2398,7 +2374,7 @@ function propertyFunction(name, value) {
 function _default(name, value) {
   return arguments.length > 1 ? this.each((value == null ? propertyRemove : typeof value === "function" ? propertyFunction : propertyConstant)(name, value)) : this.node()[name];
 }
-},{}],"../node_modules/d3-selection/src/selection/classed.js":[function(require,module,exports) {
+},{}],"CVLA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2492,7 +2468,7 @@ function _default(name, value) {
 
   return this.each((typeof value === "function" ? classedFunction : value ? classedTrue : classedFalse)(names, value));
 }
-},{}],"../node_modules/d3-selection/src/selection/text.js":[function(require,module,exports) {
+},{}],"wYBq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2520,7 +2496,7 @@ function textFunction(value) {
 function _default(value) {
   return arguments.length ? this.each(value == null ? textRemove : (typeof value === "function" ? textFunction : textConstant)(value)) : this.node().textContent;
 }
-},{}],"../node_modules/d3-selection/src/selection/html.js":[function(require,module,exports) {
+},{}],"FDS0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2548,7 +2524,7 @@ function htmlFunction(value) {
 function _default(value) {
   return arguments.length ? this.each(value == null ? htmlRemove : (typeof value === "function" ? htmlFunction : htmlConstant)(value)) : this.node().innerHTML;
 }
-},{}],"../node_modules/d3-selection/src/selection/raise.js":[function(require,module,exports) {
+},{}],"AlDR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2563,7 +2539,7 @@ function raise() {
 function _default() {
   return this.each(raise);
 }
-},{}],"../node_modules/d3-selection/src/selection/lower.js":[function(require,module,exports) {
+},{}],"wunq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2578,7 +2554,7 @@ function lower() {
 function _default() {
   return this.each(lower);
 }
-},{}],"../node_modules/d3-selection/src/selection/append.js":[function(require,module,exports) {
+},{}],"jPcQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2596,7 +2572,7 @@ function _default(name) {
     return this.appendChild(create.apply(this, arguments));
   });
 }
-},{"../creator":"../node_modules/d3-selection/src/creator.js"}],"../node_modules/d3-selection/src/selection/insert.js":[function(require,module,exports) {
+},{"../creator":"z8hd"}],"NP4m":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2621,7 +2597,7 @@ function _default(name, before) {
     return this.insertBefore(create.apply(this, arguments), select.apply(this, arguments) || null);
   });
 }
-},{"../creator":"../node_modules/d3-selection/src/creator.js","../selector":"../node_modules/d3-selection/src/selector.js"}],"../node_modules/d3-selection/src/selection/remove.js":[function(require,module,exports) {
+},{"../creator":"z8hd","../selector":"vXaf"}],"BhwP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2637,7 +2613,7 @@ function remove() {
 function _default() {
   return this.each(remove);
 }
-},{}],"../node_modules/d3-selection/src/selection/clone.js":[function(require,module,exports) {
+},{}],"C0rN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2660,7 +2636,7 @@ function selection_cloneDeep() {
 function _default(deep) {
   return this.select(deep ? selection_cloneDeep : selection_cloneShallow);
 }
-},{}],"../node_modules/d3-selection/src/selection/datum.js":[function(require,module,exports) {
+},{}],"dIrG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2671,7 +2647,7 @@ exports.default = _default;
 function _default(value) {
   return arguments.length ? this.property("__data__", value) : this.node().__data__;
 }
-},{}],"../node_modules/d3-selection/src/selection/on.js":[function(require,module,exports) {
+},{}],"pgiW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2813,7 +2789,7 @@ function customEvent(event1, listener, that, args) {
     exports.event = event = event0;
   }
 }
-},{}],"../node_modules/d3-selection/src/selection/dispatch.js":[function(require,module,exports) {
+},{}],"YF1h":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2854,7 +2830,7 @@ function dispatchFunction(type, params) {
 function _default(type, params) {
   return this.each((typeof params === "function" ? dispatchFunction : dispatchConstant)(type, params));
 }
-},{"../window":"../node_modules/d3-selection/src/window.js"}],"../node_modules/d3-selection/src/selection/index.js":[function(require,module,exports) {
+},{"../window":"iFwm"}],"G2fv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2975,7 +2951,7 @@ Selection.prototype = selection.prototype = {
 };
 var _default = selection;
 exports.default = _default;
-},{"./select":"../node_modules/d3-selection/src/selection/select.js","./selectAll":"../node_modules/d3-selection/src/selection/selectAll.js","./filter":"../node_modules/d3-selection/src/selection/filter.js","./data":"../node_modules/d3-selection/src/selection/data.js","./enter":"../node_modules/d3-selection/src/selection/enter.js","./exit":"../node_modules/d3-selection/src/selection/exit.js","./join":"../node_modules/d3-selection/src/selection/join.js","./merge":"../node_modules/d3-selection/src/selection/merge.js","./order":"../node_modules/d3-selection/src/selection/order.js","./sort":"../node_modules/d3-selection/src/selection/sort.js","./call":"../node_modules/d3-selection/src/selection/call.js","./nodes":"../node_modules/d3-selection/src/selection/nodes.js","./node":"../node_modules/d3-selection/src/selection/node.js","./size":"../node_modules/d3-selection/src/selection/size.js","./empty":"../node_modules/d3-selection/src/selection/empty.js","./each":"../node_modules/d3-selection/src/selection/each.js","./attr":"../node_modules/d3-selection/src/selection/attr.js","./style":"../node_modules/d3-selection/src/selection/style.js","./property":"../node_modules/d3-selection/src/selection/property.js","./classed":"../node_modules/d3-selection/src/selection/classed.js","./text":"../node_modules/d3-selection/src/selection/text.js","./html":"../node_modules/d3-selection/src/selection/html.js","./raise":"../node_modules/d3-selection/src/selection/raise.js","./lower":"../node_modules/d3-selection/src/selection/lower.js","./append":"../node_modules/d3-selection/src/selection/append.js","./insert":"../node_modules/d3-selection/src/selection/insert.js","./remove":"../node_modules/d3-selection/src/selection/remove.js","./clone":"../node_modules/d3-selection/src/selection/clone.js","./datum":"../node_modules/d3-selection/src/selection/datum.js","./on":"../node_modules/d3-selection/src/selection/on.js","./dispatch":"../node_modules/d3-selection/src/selection/dispatch.js"}],"../node_modules/d3-selection/src/select.js":[function(require,module,exports) {
+},{"./select":"LlPS","./selectAll":"VXfp","./filter":"SSab","./data":"qO0c","./enter":"Bnlt","./exit":"sLhL","./join":"Rskg","./merge":"VSNx","./order":"z9O9","./sort":"Vwkw","./call":"fuyN","./nodes":"x3ma","./node":"zOHW","./size":"zFge","./empty":"ZnyY","./each":"ntqp","./attr":"KUPz","./style":"WecP","./property":"Tr0z","./classed":"CVLA","./text":"wYBq","./html":"FDS0","./raise":"AlDR","./lower":"wunq","./append":"jPcQ","./insert":"NP4m","./remove":"BhwP","./clone":"C0rN","./datum":"dIrG","./on":"pgiW","./dispatch":"YF1h"}],"RAQf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2988,7 +2964,7 @@ var _index = require("./selection/index");
 function _default(selector) {
   return typeof selector === "string" ? new _index.Selection([[document.querySelector(selector)]], [document.documentElement]) : new _index.Selection([[selector]], _index.root);
 }
-},{"./selection/index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/create.js":[function(require,module,exports) {
+},{"./selection/index":"G2fv"}],"aaeJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3005,7 +2981,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(name) {
   return (0, _select.default)((0, _creator.default)(name).call(document.documentElement));
 }
-},{"./creator":"../node_modules/d3-selection/src/creator.js","./select":"../node_modules/d3-selection/src/select.js"}],"../node_modules/d3-selection/src/local.js":[function(require,module,exports) {
+},{"./creator":"z8hd","./select":"RAQf"}],"iml1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3041,7 +3017,7 @@ Local.prototype = local.prototype = {
     return this._;
   }
 };
-},{}],"../node_modules/d3-selection/src/sourceEvent.js":[function(require,module,exports) {
+},{}],"Tqn5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3059,7 +3035,7 @@ function _default() {
 
   return current;
 }
-},{"./selection/on":"../node_modules/d3-selection/src/selection/on.js"}],"../node_modules/d3-selection/src/point.js":[function(require,module,exports) {
+},{"./selection/on":"pgiW"}],"JEJ4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3080,7 +3056,7 @@ function _default(node, event) {
   var rect = node.getBoundingClientRect();
   return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
 }
-},{}],"../node_modules/d3-selection/src/mouse.js":[function(require,module,exports) {
+},{}],"Y8Cy":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3099,7 +3075,7 @@ function _default(node) {
   if (event.changedTouches) event = event.changedTouches[0];
   return (0, _point.default)(node, event);
 }
-},{"./sourceEvent":"../node_modules/d3-selection/src/sourceEvent.js","./point":"../node_modules/d3-selection/src/point.js"}],"../node_modules/d3-selection/src/selectAll.js":[function(require,module,exports) {
+},{"./sourceEvent":"Tqn5","./point":"JEJ4"}],"zmwq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3112,7 +3088,7 @@ var _index = require("./selection/index");
 function _default(selector) {
   return typeof selector === "string" ? new _index.Selection([document.querySelectorAll(selector)], [document.documentElement]) : new _index.Selection([selector == null ? [] : selector], _index.root);
 }
-},{"./selection/index":"../node_modules/d3-selection/src/selection/index.js"}],"../node_modules/d3-selection/src/touch.js":[function(require,module,exports) {
+},{"./selection/index":"G2fv"}],"SZFU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3137,7 +3113,7 @@ function _default(node, touches, identifier) {
 
   return null;
 }
-},{"./sourceEvent":"../node_modules/d3-selection/src/sourceEvent.js","./point":"../node_modules/d3-selection/src/point.js"}],"../node_modules/d3-selection/src/touches.js":[function(require,module,exports) {
+},{"./sourceEvent":"Tqn5","./point":"JEJ4"}],"lhoo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3160,7 +3136,7 @@ function _default(node, touches) {
 
   return points;
 }
-},{"./sourceEvent":"../node_modules/d3-selection/src/sourceEvent.js","./point":"../node_modules/d3-selection/src/point.js"}],"../node_modules/d3-selection/src/index.js":[function(require,module,exports) {
+},{"./sourceEvent":"Tqn5","./point":"JEJ4"}],"ysDv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3318,7 +3294,7 @@ var _window = _interopRequireDefault(require("./window"));
 var _on = require("./selection/on");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./create":"../node_modules/d3-selection/src/create.js","./creator":"../node_modules/d3-selection/src/creator.js","./local":"../node_modules/d3-selection/src/local.js","./matcher":"../node_modules/d3-selection/src/matcher.js","./mouse":"../node_modules/d3-selection/src/mouse.js","./namespace":"../node_modules/d3-selection/src/namespace.js","./namespaces":"../node_modules/d3-selection/src/namespaces.js","./point":"../node_modules/d3-selection/src/point.js","./select":"../node_modules/d3-selection/src/select.js","./selectAll":"../node_modules/d3-selection/src/selectAll.js","./selection/index":"../node_modules/d3-selection/src/selection/index.js","./selector":"../node_modules/d3-selection/src/selector.js","./selectorAll":"../node_modules/d3-selection/src/selectorAll.js","./selection/style":"../node_modules/d3-selection/src/selection/style.js","./touch":"../node_modules/d3-selection/src/touch.js","./touches":"../node_modules/d3-selection/src/touches.js","./window":"../node_modules/d3-selection/src/window.js","./selection/on":"../node_modules/d3-selection/src/selection/on.js"}],"../node_modules/d3-drag/src/noevent.js":[function(require,module,exports) {
+},{"./create":"aaeJ","./creator":"z8hd","./local":"iml1","./matcher":"oB3r","./mouse":"Y8Cy","./namespace":"U3j5","./namespaces":"YeOr","./point":"JEJ4","./select":"RAQf","./selectAll":"zmwq","./selection/index":"G2fv","./selector":"vXaf","./selectorAll":"t3Ja","./selection/style":"WecP","./touch":"SZFU","./touches":"lhoo","./window":"iFwm","./selection/on":"pgiW"}],"BxLv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3338,7 +3314,7 @@ function _default() {
 
   _d3Selection.event.stopImmediatePropagation();
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js"}],"../node_modules/d3-drag/src/nodrag.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv"}],"m07T":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3383,20 +3359,7 @@ function yesdrag(view, noclick) {
     delete root.__noselect;
   }
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./noevent.js":"../node_modules/d3-drag/src/noevent.js"}],"../node_modules/d3-drag/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-drag/src/event.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./noevent.js":"BxLv"}],"qb7E":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3422,7 +3385,7 @@ DragEvent.prototype.on = function () {
 
   return value === this._ ? this : value;
 };
-},{}],"../node_modules/d3-drag/src/drag.js":[function(require,module,exports) {
+},{}],"NgLN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3627,7 +3590,7 @@ function _default() {
 
   return drag;
 }
-},{"d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","./nodrag.js":"../node_modules/d3-drag/src/nodrag.js","./noevent.js":"../node_modules/d3-drag/src/noevent.js","./constant.js":"../node_modules/d3-drag/src/constant.js","./event.js":"../node_modules/d3-drag/src/event.js"}],"../node_modules/d3-drag/src/index.js":[function(require,module,exports) {
+},{"d3-dispatch":"D3zY","d3-selection":"ysDv","./nodrag.js":"m07T","./noevent.js":"BxLv","./constant.js":"aCvo","./event.js":"qb7E"}],"kkdU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3661,7 +3624,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./drag.js":"../node_modules/d3-drag/src/drag.js","./nodrag.js":"../node_modules/d3-drag/src/nodrag.js"}],"../node_modules/d3-color/src/define.js":[function(require,module,exports) {
+},{"./drag.js":"NgLN","./nodrag.js":"m07T"}],"fV2I":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3682,7 +3645,7 @@ function extend(parent, definition) {
 
   return prototype;
 }
-},{}],"../node_modules/d3-color/src/color.js":[function(require,module,exports) {
+},{}],"LIaf":[function(require,module,exports) {
 
 "use strict";
 
@@ -4052,7 +4015,7 @@ function Hsl(h, s, l, opacity) {
 function hsl2rgb(h, m1, m2) {
   return (h < 60 ? m1 + (m2 - m1) * h / 60 : h < 180 ? m2 : h < 240 ? m1 + (m2 - m1) * (240 - h) / 60 : m1) * 255;
 }
-},{"./define.js":"../node_modules/d3-color/src/define.js"}],"../node_modules/d3-color/src/math.js":[function(require,module,exports) {
+},{"./define.js":"fV2I"}],"XzID":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4063,7 +4026,7 @@ var deg2rad = Math.PI / 180;
 exports.deg2rad = deg2rad;
 var rad2deg = 180 / Math.PI;
 exports.rad2deg = rad2deg;
-},{}],"../node_modules/d3-color/src/lab.js":[function(require,module,exports) {
+},{}],"f7Av":[function(require,module,exports) {
 
 "use strict";
 
@@ -4205,7 +4168,7 @@ function hcl2lab(o) {
     return hcl2lab(this).rgb();
   }
 }));
-},{"./define.js":"../node_modules/d3-color/src/define.js","./color.js":"../node_modules/d3-color/src/color.js","./math.js":"../node_modules/d3-color/src/math.js"}],"../node_modules/d3-color/src/cubehelix.js":[function(require,module,exports) {
+},{"./define.js":"fV2I","./color.js":"LIaf","./math.js":"XzID"}],"CMX9":[function(require,module,exports) {
 
 "use strict";
 
@@ -4278,7 +4241,7 @@ function Cubehelix(h, s, l, opacity) {
     return new _color.Rgb(255 * (l + a * (A * cosh + B * sinh)), 255 * (l + a * (C * cosh + D * sinh)), 255 * (l + a * (E * cosh)), this.opacity);
   }
 }));
-},{"./define.js":"../node_modules/d3-color/src/define.js","./color.js":"../node_modules/d3-color/src/color.js","./math.js":"../node_modules/d3-color/src/math.js"}],"../node_modules/d3-color/src/index.js":[function(require,module,exports) {
+},{"./define.js":"fV2I","./color.js":"LIaf","./math.js":"XzID"}],"Peej":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4344,7 +4307,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./color.js":"../node_modules/d3-color/src/color.js","./lab.js":"../node_modules/d3-color/src/lab.js","./cubehelix.js":"../node_modules/d3-color/src/cubehelix.js"}],"../node_modules/d3-interpolate/src/basis.js":[function(require,module,exports) {
+},{"./color.js":"LIaf","./lab.js":"f7Av","./cubehelix.js":"CMX9"}],"ElXH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4370,7 +4333,7 @@ function _default(values) {
     return basis((t - i / n) * n, v0, v1, v2, v3);
   };
 }
-},{}],"../node_modules/d3-interpolate/src/basisClosed.js":[function(require,module,exports) {
+},{}],"hnXz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4391,20 +4354,7 @@ function _default(values) {
     return (0, _basis.basis)((t - i / n) * n, v0, v1, v2, v3);
   };
 }
-},{"./basis.js":"../node_modules/d3-interpolate/src/basis.js"}],"../node_modules/d3-interpolate/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-interpolate/src/color.js":[function(require,module,exports) {
+},{"./basis.js":"ElXH"}],"RhzI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4445,7 +4395,7 @@ function nogamma(a, b) {
   var d = b - a;
   return d ? linear(a, d) : (0, _constant.default)(isNaN(a) ? b : a);
 }
-},{"./constant.js":"../node_modules/d3-interpolate/src/constant.js"}],"../node_modules/d3-interpolate/src/rgb.js":[function(require,module,exports) {
+},{"./constant.js":"aCvo"}],"rvVK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4523,7 +4473,7 @@ var rgbBasis = rgbSpline(_basis.default);
 exports.rgbBasis = rgbBasis;
 var rgbBasisClosed = rgbSpline(_basisClosed.default);
 exports.rgbBasisClosed = rgbBasisClosed;
-},{"d3-color":"../node_modules/d3-color/src/index.js","./basis.js":"../node_modules/d3-interpolate/src/basis.js","./basisClosed.js":"../node_modules/d3-interpolate/src/basisClosed.js","./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/numberArray.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./basis.js":"ElXH","./basisClosed.js":"hnXz","./color.js":"RhzI"}],"BOJ5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4547,7 +4497,7 @@ function _default(a, b) {
 function isNumberArray(x) {
   return ArrayBuffer.isView(x) && !(x instanceof DataView);
 }
-},{}],"../node_modules/d3-interpolate/src/array.js":[function(require,module,exports) {
+},{}],"TYZM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4587,7 +4537,7 @@ function genericArray(a, b) {
     return c;
   };
 }
-},{"./value.js":"../node_modules/d3-interpolate/src/value.js","./numberArray.js":"../node_modules/d3-interpolate/src/numberArray.js"}],"../node_modules/d3-interpolate/src/date.js":[function(require,module,exports) {
+},{"./value.js":"gzcD","./numberArray.js":"BOJ5"}],"jEDF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4601,7 +4551,7 @@ function _default(a, b) {
     return d.setTime(a * (1 - t) + b * t), d;
   };
 }
-},{}],"../node_modules/d3-interpolate/src/number.js":[function(require,module,exports) {
+},{}],"YNf8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4614,7 +4564,7 @@ function _default(a, b) {
     return a * (1 - t) + b * t;
   };
 }
-},{}],"../node_modules/d3-interpolate/src/object.js":[function(require,module,exports) {
+},{}],"iJdZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4647,7 +4597,7 @@ function _default(a, b) {
     return c;
   };
 }
-},{"./value.js":"../node_modules/d3-interpolate/src/value.js"}],"../node_modules/d3-interpolate/src/string.js":[function(require,module,exports) {
+},{"./value.js":"gzcD"}],"nK0E":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4731,7 +4681,7 @@ function _default(a, b) {
     return s.join("");
   });
 }
-},{"./number.js":"../node_modules/d3-interpolate/src/number.js"}],"../node_modules/d3-interpolate/src/value.js":[function(require,module,exports) {
+},{"./number.js":"YNf8"}],"gzcD":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4768,7 +4718,7 @@ function _default(a, b) {
       c;
   return b == null || t === "boolean" ? (0, _constant.default)(b) : (t === "number" ? _number.default : t === "string" ? (c = (0, _d3Color.color)(b)) ? (b = c, _rgb.default) : _string.default : b instanceof _d3Color.color ? _rgb.default : b instanceof Date ? _date.default : (0, _numberArray.isNumberArray)(b) ? _numberArray.default : Array.isArray(b) ? _array.genericArray : typeof b.valueOf !== "function" && typeof b.toString !== "function" || isNaN(b) ? _object.default : _number.default)(a, b);
 }
-},{"d3-color":"../node_modules/d3-color/src/index.js","./rgb.js":"../node_modules/d3-interpolate/src/rgb.js","./array.js":"../node_modules/d3-interpolate/src/array.js","./date.js":"../node_modules/d3-interpolate/src/date.js","./number.js":"../node_modules/d3-interpolate/src/number.js","./object.js":"../node_modules/d3-interpolate/src/object.js","./string.js":"../node_modules/d3-interpolate/src/string.js","./constant.js":"../node_modules/d3-interpolate/src/constant.js","./numberArray.js":"../node_modules/d3-interpolate/src/numberArray.js"}],"../node_modules/d3-interpolate/src/discrete.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./rgb.js":"rvVK","./array.js":"TYZM","./date.js":"jEDF","./number.js":"YNf8","./object.js":"iJdZ","./string.js":"nK0E","./constant.js":"aCvo","./numberArray.js":"BOJ5"}],"B1w8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4782,7 +4732,7 @@ function _default(range) {
     return range[Math.max(0, Math.min(n - 1, Math.floor(t * n)))];
   };
 }
-},{}],"../node_modules/d3-interpolate/src/hue.js":[function(require,module,exports) {
+},{}],"ZrPS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4799,7 +4749,7 @@ function _default(a, b) {
     return x - 360 * Math.floor(x / 360);
   };
 }
-},{"./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/round.js":[function(require,module,exports) {
+},{"./color.js":"RhzI"}],"nXvs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4812,7 +4762,7 @@ function _default(a, b) {
     return Math.round(a * (1 - t) + b * t);
   };
 }
-},{}],"../node_modules/d3-interpolate/src/transform/decompose.js":[function(require,module,exports) {
+},{}],"UXwK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4846,7 +4796,7 @@ function _default(a, b, c, d, e, f) {
     scaleY: scaleY
   };
 }
-},{}],"../node_modules/d3-interpolate/src/transform/parse.js":[function(require,module,exports) {
+},{}],"LVjk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4881,7 +4831,7 @@ function parseSvg(value) {
   value = value.matrix;
   return (0, _decompose.default)(value.a, value.b, value.c, value.d, value.e, value.f);
 }
-},{"./decompose.js":"../node_modules/d3-interpolate/src/transform/decompose.js"}],"../node_modules/d3-interpolate/src/transform/index.js":[function(require,module,exports) {
+},{"./decompose.js":"UXwK"}],"v4Xl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4982,7 +4932,7 @@ var interpolateTransformCss = interpolateTransform(_parse.parseCss, "px, ", "px)
 exports.interpolateTransformCss = interpolateTransformCss;
 var interpolateTransformSvg = interpolateTransform(_parse.parseSvg, ", ", ")", ")");
 exports.interpolateTransformSvg = interpolateTransformSvg;
-},{"../number.js":"../node_modules/d3-interpolate/src/number.js","./parse.js":"../node_modules/d3-interpolate/src/transform/parse.js"}],"../node_modules/d3-interpolate/src/zoom.js":[function(require,module,exports) {
+},{"../number.js":"YNf8","./parse.js":"LVjk"}],"jU1v":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5047,7 +4997,7 @@ function _default(p0, p1) {
   i.duration = S * 1000;
   return i;
 }
-},{}],"../node_modules/d3-interpolate/src/hsl.js":[function(require,module,exports) {
+},{}],"LdeI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5084,7 +5034,7 @@ var _default = hsl(_color.hue);
 exports.default = _default;
 var hslLong = hsl(_color.default);
 exports.hslLong = hslLong;
-},{"d3-color":"../node_modules/d3-color/src/index.js","./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/lab.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./color.js":"RhzI"}],"rghB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5111,7 +5061,7 @@ function lab(start, end) {
     return start + "";
   };
 }
-},{"d3-color":"../node_modules/d3-color/src/index.js","./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/hcl.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./color.js":"RhzI"}],"dxPN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5148,7 +5098,7 @@ var _default = hcl(_color.hue);
 exports.default = _default;
 var hclLong = hcl(_color.default);
 exports.hclLong = hclLong;
-},{"d3-color":"../node_modules/d3-color/src/index.js","./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/cubehelix.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./color.js":"RhzI"}],"X3VV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5192,7 +5142,7 @@ var _default = cubehelix(_color.hue);
 exports.default = _default;
 var cubehelixLong = cubehelix(_color.default);
 exports.cubehelixLong = cubehelixLong;
-},{"d3-color":"../node_modules/d3-color/src/index.js","./color.js":"../node_modules/d3-interpolate/src/color.js"}],"../node_modules/d3-interpolate/src/piecewise.js":[function(require,module,exports) {
+},{"d3-color":"Peej","./color.js":"RhzI"}],"xtkP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5213,7 +5163,7 @@ function piecewise(interpolate, values) {
     return I[i](t - i);
   };
 }
-},{}],"../node_modules/d3-interpolate/src/quantize.js":[function(require,module,exports) {
+},{}],"Oe1t":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5228,7 +5178,7 @@ function _default(interpolator, n) {
 
   return samples;
 }
-},{}],"../node_modules/d3-interpolate/src/index.js":[function(require,module,exports) {
+},{}],"k9aH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5444,7 +5394,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./value.js":"../node_modules/d3-interpolate/src/value.js","./array.js":"../node_modules/d3-interpolate/src/array.js","./basis.js":"../node_modules/d3-interpolate/src/basis.js","./basisClosed.js":"../node_modules/d3-interpolate/src/basisClosed.js","./date.js":"../node_modules/d3-interpolate/src/date.js","./discrete.js":"../node_modules/d3-interpolate/src/discrete.js","./hue.js":"../node_modules/d3-interpolate/src/hue.js","./number.js":"../node_modules/d3-interpolate/src/number.js","./numberArray.js":"../node_modules/d3-interpolate/src/numberArray.js","./object.js":"../node_modules/d3-interpolate/src/object.js","./round.js":"../node_modules/d3-interpolate/src/round.js","./string.js":"../node_modules/d3-interpolate/src/string.js","./transform/index.js":"../node_modules/d3-interpolate/src/transform/index.js","./zoom.js":"../node_modules/d3-interpolate/src/zoom.js","./rgb.js":"../node_modules/d3-interpolate/src/rgb.js","./hsl.js":"../node_modules/d3-interpolate/src/hsl.js","./lab.js":"../node_modules/d3-interpolate/src/lab.js","./hcl.js":"../node_modules/d3-interpolate/src/hcl.js","./cubehelix.js":"../node_modules/d3-interpolate/src/cubehelix.js","./piecewise.js":"../node_modules/d3-interpolate/src/piecewise.js","./quantize.js":"../node_modules/d3-interpolate/src/quantize.js"}],"../node_modules/d3-timer/src/timer.js":[function(require,module,exports) {
+},{"./value.js":"gzcD","./array.js":"TYZM","./basis.js":"ElXH","./basisClosed.js":"hnXz","./date.js":"jEDF","./discrete.js":"B1w8","./hue.js":"ZrPS","./number.js":"YNf8","./numberArray.js":"BOJ5","./object.js":"iJdZ","./round.js":"nXvs","./string.js":"nK0E","./transform/index.js":"v4Xl","./zoom.js":"jU1v","./rgb.js":"rvVK","./hsl.js":"LdeI","./lab.js":"rghB","./hcl.js":"dxPN","./cubehelix.js":"X3VV","./piecewise.js":"xtkP","./quantize.js":"Oe1t"}],"ea66":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5583,7 +5533,7 @@ function sleep(time) {
     frame = 1, setFrame(wake);
   }
 }
-},{}],"../node_modules/d3-timer/src/timeout.js":[function(require,module,exports) {
+},{}],"jIZm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5602,7 +5552,7 @@ function _default(callback, delay, time) {
   }, delay, time);
   return t;
 }
-},{"./timer.js":"../node_modules/d3-timer/src/timer.js"}],"../node_modules/d3-timer/src/interval.js":[function(require,module,exports) {
+},{"./timer.js":"ea66"}],"QZ3s":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5624,7 +5574,7 @@ function _default(callback, delay, time) {
   }, delay, time);
   return t;
 }
-},{"./timer.js":"../node_modules/d3-timer/src/timer.js"}],"../node_modules/d3-timer/src/index.js":[function(require,module,exports) {
+},{"./timer.js":"ea66"}],"rdzS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5668,7 +5618,7 @@ var _timeout = _interopRequireDefault(require("./timeout.js"));
 var _interval = _interopRequireDefault(require("./interval.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./timer.js":"../node_modules/d3-timer/src/timer.js","./timeout.js":"../node_modules/d3-timer/src/timeout.js","./interval.js":"../node_modules/d3-timer/src/interval.js"}],"../node_modules/d3-transition/src/transition/schedule.js":[function(require,module,exports) {
+},{"./timer.js":"ea66","./timeout.js":"jIZm","./interval.js":"QZ3s"}],"nqGJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5838,7 +5788,7 @@ function create(node, id, self) {
     delete node.__transition;
   }
 }
-},{"d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-timer":"../node_modules/d3-timer/src/index.js"}],"../node_modules/d3-transition/src/interrupt.js":[function(require,module,exports) {
+},{"d3-dispatch":"D3zY","d3-timer":"rdzS"}],"fDNN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5872,7 +5822,7 @@ function _default(node, name) {
 
   if (empty) delete node.__transition;
 }
-},{"./transition/schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/selection/interrupt.js":[function(require,module,exports) {
+},{"./transition/schedule.js":"nqGJ"}],"cQLj":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5889,7 +5839,7 @@ function _default(name) {
     (0, _interrupt.default)(this, name);
   });
 }
-},{"../interrupt.js":"../node_modules/d3-transition/src/interrupt.js"}],"../node_modules/d3-transition/src/transition/tween.js":[function(require,module,exports) {
+},{"../interrupt.js":"fDNN"}],"jGA0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5982,7 +5932,7 @@ function tweenValue(transition, name, value) {
     return (0, _schedule.get)(node, id).value[name];
   };
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/interpolate.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"EwAl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5998,7 +5948,7 @@ function _default(a, b) {
   var c;
   return (typeof b === "number" ? _d3Interpolate.interpolateNumber : b instanceof _d3Color.color ? _d3Interpolate.interpolateRgb : (c = (0, _d3Color.color)(b)) ? (b = c, _d3Interpolate.interpolateRgb) : _d3Interpolate.interpolateString)(a, b);
 }
-},{"d3-color":"../node_modules/d3-color/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js"}],"../node_modules/d3-transition/src/transition/attr.js":[function(require,module,exports) {
+},{"d3-color":"Peej","d3-interpolate":"k9aH"}],"Edhf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6079,7 +6029,7 @@ function _default(name, value) {
       i = fullname === "transform" ? _d3Interpolate.interpolateTransformSvg : _interpolate.default;
   return this.attrTween(name, typeof value === "function" ? (fullname.local ? attrFunctionNS : attrFunction)(fullname, i, (0, _tween.tweenValue)(this, "attr." + name, value)) : value == null ? (fullname.local ? attrRemoveNS : attrRemove)(fullname) : (fullname.local ? attrConstantNS : attrConstant)(fullname, i, value));
 }
-},{"d3-interpolate":"../node_modules/d3-interpolate/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","./tween.js":"../node_modules/d3-transition/src/transition/tween.js","./interpolate.js":"../node_modules/d3-transition/src/transition/interpolate.js"}],"../node_modules/d3-transition/src/transition/attrTween.js":[function(require,module,exports) {
+},{"d3-interpolate":"k9aH","d3-selection":"ysDv","./tween.js":"jGA0","./interpolate.js":"EwAl"}],"bknt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6135,7 +6085,7 @@ function _default(name, value) {
   var fullname = (0, _d3Selection.namespace)(name);
   return this.tween(key, (fullname.local ? attrTweenNS : attrTween)(fullname, value));
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js"}],"../node_modules/d3-transition/src/transition/delay.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv"}],"ln8e":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6161,7 +6111,7 @@ function _default(value) {
   var id = this._id;
   return arguments.length ? this.each((typeof value === "function" ? delayFunction : delayConstant)(id, value)) : (0, _schedule.get)(this.node(), id).delay;
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/duration.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"WWpH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6187,7 +6137,7 @@ function _default(value) {
   var id = this._id;
   return arguments.length ? this.each((typeof value === "function" ? durationFunction : durationConstant)(id, value)) : (0, _schedule.get)(this.node(), id).duration;
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/ease.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"AcgK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6208,7 +6158,7 @@ function _default(value) {
   var id = this._id;
   return arguments.length ? this.each(easeConstant(id, value)) : (0, _schedule.get)(this.node(), id).ease;
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/filter.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"MnwJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6233,7 +6183,7 @@ function _default(match) {
 
   return new _index.Transition(subgroups, this._parents, this._name, this._id);
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./index.js":"../node_modules/d3-transition/src/transition/index.js"}],"../node_modules/d3-transition/src/transition/merge.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./index.js":"OWOq"}],"cfNr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6260,7 +6210,7 @@ function _default(transition) {
 
   return new _index.Transition(merges, this._parents, this._name, this._id);
 }
-},{"./index.js":"../node_modules/d3-transition/src/transition/index.js"}],"../node_modules/d3-transition/src/transition/on.js":[function(require,module,exports) {
+},{"./index.js":"OWOq"}],"ELQ0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6297,7 +6247,7 @@ function _default(name, listener) {
   var id = this._id;
   return arguments.length < 2 ? (0, _schedule.get)(this.node(), id).on.on(name) : this.each(onFunction(id, name, listener));
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/remove.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"mXFz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6318,7 +6268,7 @@ function removeFunction(id) {
 function _default() {
   return this.on("end.remove", removeFunction(this._id));
 }
-},{}],"../node_modules/d3-transition/src/transition/select.js":[function(require,module,exports) {
+},{}],"P4XU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6353,7 +6303,7 @@ function _default(select) {
 
   return new _index.Transition(subgroups, this._parents, name, id);
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./index.js":"../node_modules/d3-transition/src/transition/index.js","./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/selectAll.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./index.js":"OWOq","./schedule.js":"nqGJ"}],"BH5v":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6393,7 +6343,7 @@ function _default(select) {
 
   return new _index.Transition(subgroups, parents, name, id);
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./index.js":"../node_modules/d3-transition/src/transition/index.js","./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/selection.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./index.js":"OWOq","./schedule.js":"nqGJ"}],"kIVv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6408,7 +6358,7 @@ var Selection = _d3Selection.selection.prototype.constructor;
 function _default() {
   return new Selection(this._groups, this._parents);
 }
-},{"d3-selection":"../node_modules/d3-selection/src/index.js"}],"../node_modules/d3-transition/src/transition/style.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv"}],"xTYE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6487,7 +6437,7 @@ function _default(name, value, priority) {
   var i = (name += "") === "transform" ? _d3Interpolate.interpolateTransformCss : _interpolate.default;
   return value == null ? this.styleTween(name, styleNull(name, i)).on("end.style." + name, styleRemove(name)) : typeof value === "function" ? this.styleTween(name, styleFunction(name, i, (0, _tween.tweenValue)(this, "style." + name, value))).each(styleMaybeRemove(this._id, name)) : this.styleTween(name, styleConstant(name, i, value), priority).on("end.style." + name, null);
 }
-},{"d3-interpolate":"../node_modules/d3-interpolate/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js","./tween.js":"../node_modules/d3-transition/src/transition/tween.js","./interpolate.js":"../node_modules/d3-transition/src/transition/interpolate.js"}],"../node_modules/d3-transition/src/transition/styleTween.js":[function(require,module,exports) {
+},{"d3-interpolate":"k9aH","d3-selection":"ysDv","./schedule.js":"nqGJ","./tween.js":"jGA0","./interpolate.js":"EwAl"}],"PSnC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6521,7 +6471,7 @@ function _default(name, value, priority) {
   if (typeof value !== "function") throw new Error();
   return this.tween(key, styleTween(name, value, priority == null ? "" : priority));
 }
-},{}],"../node_modules/d3-transition/src/transition/text.js":[function(require,module,exports) {
+},{}],"JpCG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6547,7 +6497,7 @@ function textFunction(value) {
 function _default(value) {
   return this.tween("text", typeof value === "function" ? textFunction((0, _tween.tweenValue)(this, "text", value)) : textConstant(value == null ? "" : value + ""));
 }
-},{"./tween.js":"../node_modules/d3-transition/src/transition/tween.js"}],"../node_modules/d3-transition/src/transition/textTween.js":[function(require,module,exports) {
+},{"./tween.js":"jGA0"}],"cW7v":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6581,7 +6531,7 @@ function _default(value) {
   if (typeof value !== "function") throw new Error();
   return this.tween(key, textTween(value));
 }
-},{}],"../node_modules/d3-transition/src/transition/transition.js":[function(require,module,exports) {
+},{}],"IPhv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6618,7 +6568,7 @@ function _default() {
 
   return new _index.Transition(groups, this._parents, name, id1);
 }
-},{"./index.js":"../node_modules/d3-transition/src/transition/index.js","./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/end.js":[function(require,module,exports) {
+},{"./index.js":"OWOq","./schedule.js":"nqGJ"}],"Q4LY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6663,7 +6613,7 @@ function _default() {
     });
   });
 }
-},{"./schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/transition/index.js":[function(require,module,exports) {
+},{"./schedule.js":"nqGJ"}],"OWOq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6761,7 +6711,7 @@ Transition.prototype = transition.prototype = {
   ease: _ease.default,
   end: _end.default
 };
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./attr.js":"../node_modules/d3-transition/src/transition/attr.js","./attrTween.js":"../node_modules/d3-transition/src/transition/attrTween.js","./delay.js":"../node_modules/d3-transition/src/transition/delay.js","./duration.js":"../node_modules/d3-transition/src/transition/duration.js","./ease.js":"../node_modules/d3-transition/src/transition/ease.js","./filter.js":"../node_modules/d3-transition/src/transition/filter.js","./merge.js":"../node_modules/d3-transition/src/transition/merge.js","./on.js":"../node_modules/d3-transition/src/transition/on.js","./remove.js":"../node_modules/d3-transition/src/transition/remove.js","./select.js":"../node_modules/d3-transition/src/transition/select.js","./selectAll.js":"../node_modules/d3-transition/src/transition/selectAll.js","./selection.js":"../node_modules/d3-transition/src/transition/selection.js","./style.js":"../node_modules/d3-transition/src/transition/style.js","./styleTween.js":"../node_modules/d3-transition/src/transition/styleTween.js","./text.js":"../node_modules/d3-transition/src/transition/text.js","./textTween.js":"../node_modules/d3-transition/src/transition/textTween.js","./transition.js":"../node_modules/d3-transition/src/transition/transition.js","./tween.js":"../node_modules/d3-transition/src/transition/tween.js","./end.js":"../node_modules/d3-transition/src/transition/end.js"}],"../node_modules/d3-ease/src/linear.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./attr.js":"Edhf","./attrTween.js":"bknt","./delay.js":"ln8e","./duration.js":"WWpH","./ease.js":"AcgK","./filter.js":"MnwJ","./merge.js":"cfNr","./on.js":"ELQ0","./remove.js":"mXFz","./select.js":"P4XU","./selectAll.js":"BH5v","./selection.js":"kIVv","./style.js":"xTYE","./styleTween.js":"PSnC","./text.js":"JpCG","./textTween.js":"cW7v","./transition.js":"IPhv","./tween.js":"jGA0","./end.js":"Q4LY"}],"VacQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6772,7 +6722,7 @@ exports.linear = linear;
 function linear(t) {
   return +t;
 }
-},{}],"../node_modules/d3-ease/src/quad.js":[function(require,module,exports) {
+},{}],"EZNz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6793,7 +6743,7 @@ function quadOut(t) {
 function quadInOut(t) {
   return ((t *= 2) <= 1 ? t * t : --t * (2 - t) + 1) / 2;
 }
-},{}],"../node_modules/d3-ease/src/cubic.js":[function(require,module,exports) {
+},{}],"ropQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6814,7 +6764,7 @@ function cubicOut(t) {
 function cubicInOut(t) {
   return ((t *= 2) <= 1 ? t * t * t : (t -= 2) * t * t + 2) / 2;
 }
-},{}],"../node_modules/d3-ease/src/poly.js":[function(require,module,exports) {
+},{}],"rJoA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6861,7 +6811,7 @@ var polyInOut = function custom(e) {
 }(exponent);
 
 exports.polyInOut = polyInOut;
-},{}],"../node_modules/d3-ease/src/sin.js":[function(require,module,exports) {
+},{}],"XXPs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6884,7 +6834,7 @@ function sinOut(t) {
 function sinInOut(t) {
   return (1 - Math.cos(pi * t)) / 2;
 }
-},{}],"../node_modules/d3-ease/src/exp.js":[function(require,module,exports) {
+},{}],"PTZz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6905,7 +6855,7 @@ function expOut(t) {
 function expInOut(t) {
   return ((t *= 2) <= 1 ? Math.pow(2, 10 * t - 10) : 2 - Math.pow(2, 10 - 10 * t)) / 2;
 }
-},{}],"../node_modules/d3-ease/src/circle.js":[function(require,module,exports) {
+},{}],"qwy6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6926,7 +6876,7 @@ function circleOut(t) {
 function circleInOut(t) {
   return ((t *= 2) <= 1 ? 1 - Math.sqrt(1 - t * t) : Math.sqrt(1 - (t -= 2) * t) + 1) / 2;
 }
-},{}],"../node_modules/d3-ease/src/bounce.js":[function(require,module,exports) {
+},{}],"rEBC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6957,7 +6907,7 @@ function bounceOut(t) {
 function bounceInOut(t) {
   return ((t *= 2) <= 1 ? 1 - bounceOut(1 - t) : bounceOut(t - 1) + 1) / 2;
 }
-},{}],"../node_modules/d3-ease/src/back.js":[function(require,module,exports) {
+},{}],"G5Mi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7004,7 +6954,7 @@ var backInOut = function custom(s) {
 }(overshoot);
 
 exports.backInOut = backInOut;
-},{}],"../node_modules/d3-ease/src/elastic.js":[function(require,module,exports) {
+},{}],"TN0k":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7074,7 +7024,7 @@ var elasticInOut = function custom(a, p) {
 }(amplitude, period);
 
 exports.elasticInOut = elasticInOut;
-},{}],"../node_modules/d3-ease/src/index.js":[function(require,module,exports) {
+},{}],"pJ11":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7322,7 +7272,7 @@ var _bounce = require("./bounce.js");
 var _back = require("./back.js");
 
 var _elastic = require("./elastic.js");
-},{"./linear.js":"../node_modules/d3-ease/src/linear.js","./quad.js":"../node_modules/d3-ease/src/quad.js","./cubic.js":"../node_modules/d3-ease/src/cubic.js","./poly.js":"../node_modules/d3-ease/src/poly.js","./sin.js":"../node_modules/d3-ease/src/sin.js","./exp.js":"../node_modules/d3-ease/src/exp.js","./circle.js":"../node_modules/d3-ease/src/circle.js","./bounce.js":"../node_modules/d3-ease/src/bounce.js","./back.js":"../node_modules/d3-ease/src/back.js","./elastic.js":"../node_modules/d3-ease/src/elastic.js"}],"../node_modules/d3-transition/src/selection/transition.js":[function(require,module,exports) {
+},{"./linear.js":"VacQ","./quad.js":"EZNz","./cubic.js":"ropQ","./poly.js":"rJoA","./sin.js":"XXPs","./exp.js":"PTZz","./circle.js":"qwy6","./bounce.js":"rEBC","./back.js":"G5Mi","./elastic.js":"TN0k"}],"VKWr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7379,7 +7329,7 @@ function _default(name) {
 
   return new _index.Transition(groups, this._parents, name, id);
 }
-},{"../transition/index.js":"../node_modules/d3-transition/src/transition/index.js","../transition/schedule.js":"../node_modules/d3-transition/src/transition/schedule.js","d3-ease":"../node_modules/d3-ease/src/index.js","d3-timer":"../node_modules/d3-timer/src/index.js"}],"../node_modules/d3-transition/src/selection/index.js":[function(require,module,exports) {
+},{"../transition/index.js":"OWOq","../transition/schedule.js":"nqGJ","d3-ease":"pJ11","d3-timer":"rdzS"}],"vGqA":[function(require,module,exports) {
 "use strict";
 
 var _d3Selection = require("d3-selection");
@@ -7392,7 +7342,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _d3Selection.selection.prototype.interrupt = _interrupt.default;
 _d3Selection.selection.prototype.transition = _transition.default;
-},{"d3-selection":"../node_modules/d3-selection/src/index.js","./interrupt.js":"../node_modules/d3-transition/src/selection/interrupt.js","./transition.js":"../node_modules/d3-transition/src/selection/transition.js"}],"../node_modules/d3-transition/src/active.js":[function(require,module,exports) {
+},{"d3-selection":"ysDv","./interrupt.js":"cQLj","./transition.js":"VKWr"}],"UWV3":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7423,7 +7373,7 @@ function _default(node, name) {
 
   return null;
 }
-},{"./transition/index.js":"../node_modules/d3-transition/src/transition/index.js","./transition/schedule.js":"../node_modules/d3-transition/src/transition/schedule.js"}],"../node_modules/d3-transition/src/index.js":[function(require,module,exports) {
+},{"./transition/index.js":"OWOq","./transition/schedule.js":"nqGJ"}],"UqVV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7457,20 +7407,7 @@ var _active = _interopRequireDefault(require("./active.js"));
 var _interrupt = _interopRequireDefault(require("./interrupt.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./selection/index.js":"../node_modules/d3-transition/src/selection/index.js","./transition/index.js":"../node_modules/d3-transition/src/transition/index.js","./active.js":"../node_modules/d3-transition/src/active.js","./interrupt.js":"../node_modules/d3-transition/src/interrupt.js"}],"../node_modules/d3-brush/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-brush/src/event.js":[function(require,module,exports) {
+},{"./selection/index.js":"vGqA","./transition/index.js":"OWOq","./active.js":"UWV3","./interrupt.js":"fDNN"}],"Bo4j":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7483,27 +7420,7 @@ function _default(target, type, selection) {
   this.type = type;
   this.selection = selection;
 }
-},{}],"../node_modules/d3-brush/src/noevent.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.nopropagation = nopropagation;
-exports.default = _default;
-
-var _d3Selection = require("d3-selection");
-
-function nopropagation() {
-  _d3Selection.event.stopImmediatePropagation();
-}
-
-function _default() {
-  _d3Selection.event.preventDefault();
-
-  _d3Selection.event.stopImmediatePropagation();
-}
-},{"d3-selection":"../node_modules/d3-selection/src/index.js"}],"../node_modules/d3-brush/src/brush.js":[function(require,module,exports) {
+},{}],"qu2I":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8119,7 +8036,7 @@ function brush(dim) {
 
   return brush;
 }
-},{"d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-drag":"../node_modules/d3-drag/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","d3-transition":"../node_modules/d3-transition/src/index.js","./constant.js":"../node_modules/d3-brush/src/constant.js","./event.js":"../node_modules/d3-brush/src/event.js","./noevent.js":"../node_modules/d3-brush/src/noevent.js"}],"../node_modules/d3-brush/src/index.js":[function(require,module,exports) {
+},{"d3-dispatch":"D3zY","d3-drag":"kkdU","d3-interpolate":"k9aH","d3-selection":"ysDv","d3-transition":"UqVV","./constant.js":"aCvo","./event.js":"Bo4j","./noevent.js":"BxLv"}],"tkh5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8155,7 +8072,7 @@ var _brush = _interopRequireWildcard(require("./brush.js"));
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./brush.js":"../node_modules/d3-brush/src/brush.js"}],"../node_modules/d3-chord/src/math.js":[function(require,module,exports) {
+},{"./brush.js":"qu2I"}],"nrzw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8174,7 +8091,7 @@ var tau = pi * 2;
 exports.tau = tau;
 var max = Math.max;
 exports.max = max;
-},{}],"../node_modules/d3-chord/src/chord.js":[function(require,module,exports) {
+},{}],"TnSC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8316,29 +8233,7 @@ function _default() {
 
   return chord;
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./math":"../node_modules/d3-chord/src/math.js"}],"../node_modules/d3-chord/src/array.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.slice = void 0;
-var slice = Array.prototype.slice;
-exports.slice = slice;
-},{}],"../node_modules/d3-chord/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-path/src/path.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./math":"nrzw"}],"hMob":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8459,7 +8354,7 @@ Path.prototype = path.prototype = {
 };
 var _default = path;
 exports.default = _default;
-},{}],"../node_modules/d3-path/src/index.js":[function(require,module,exports) {
+},{}],"OTyq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8475,7 +8370,7 @@ Object.defineProperty(exports, "path", {
 var _path = _interopRequireDefault(require("./path.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./path.js":"../node_modules/d3-path/src/path.js"}],"../node_modules/d3-chord/src/ribbon.js":[function(require,module,exports) {
+},{"./path.js":"hMob"}],"stmI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8576,7 +8471,7 @@ function _default() {
 
   return ribbon;
 }
-},{"./array":"../node_modules/d3-chord/src/array.js","./constant":"../node_modules/d3-chord/src/constant.js","./math":"../node_modules/d3-chord/src/math.js","d3-path":"../node_modules/d3-path/src/index.js"}],"../node_modules/d3-chord/src/index.js":[function(require,module,exports) {
+},{"./array":"KXlw","./constant":"aCvo","./math":"nrzw","d3-path":"OTyq"}],"Iy8J":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8600,7 +8495,7 @@ var _chord = _interopRequireDefault(require("./chord"));
 var _ribbon = _interopRequireDefault(require("./ribbon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./chord":"../node_modules/d3-chord/src/chord.js","./ribbon":"../node_modules/d3-chord/src/ribbon.js"}],"../node_modules/d3-collection/src/map.js":[function(require,module,exports) {
+},{"./chord":"TnSC","./ribbon":"stmI"}],"lDuF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8690,7 +8585,7 @@ function map(object, f) {
 
 var _default = map;
 exports.default = _default;
-},{}],"../node_modules/d3-collection/src/nest.js":[function(require,module,exports) {
+},{}],"kDkA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8797,7 +8692,7 @@ function createMap() {
 function setMap(map, key, value) {
   map.set(key, value);
 }
-},{"./map":"../node_modules/d3-collection/src/map.js"}],"../node_modules/d3-collection/src/set.js":[function(require,module,exports) {
+},{"./map":"lDuF"}],"vFPv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8846,7 +8741,7 @@ function set(object, f) {
 
 var _default = set;
 exports.default = _default;
-},{"./map":"../node_modules/d3-collection/src/map.js"}],"../node_modules/d3-collection/src/keys.js":[function(require,module,exports) {
+},{"./map":"lDuF"}],"DTc5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8861,7 +8756,7 @@ function _default(map) {
 
   return keys;
 }
-},{}],"../node_modules/d3-collection/src/values.js":[function(require,module,exports) {
+},{}],"KaQc":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8876,7 +8771,7 @@ function _default(map) {
 
   return values;
 }
-},{}],"../node_modules/d3-collection/src/entries.js":[function(require,module,exports) {
+},{}],"wnH6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8894,7 +8789,7 @@ function _default(map) {
 
   return entries;
 }
-},{}],"../node_modules/d3-collection/src/index.js":[function(require,module,exports) {
+},{}],"S3hn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8950,7 +8845,7 @@ var _values = _interopRequireDefault(require("./values"));
 var _entries = _interopRequireDefault(require("./entries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./nest":"../node_modules/d3-collection/src/nest.js","./set":"../node_modules/d3-collection/src/set.js","./map":"../node_modules/d3-collection/src/map.js","./keys":"../node_modules/d3-collection/src/keys.js","./values":"../node_modules/d3-collection/src/values.js","./entries":"../node_modules/d3-collection/src/entries.js"}],"../node_modules/d3-contour/src/array.js":[function(require,module,exports) {
+},{"./nest":"kDkA","./set":"vFPv","./map":"lDuF","./keys":"DTc5","./values":"KaQc","./entries":"wnH6"}],"TvZ5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8960,7 +8855,7 @@ exports.slice = void 0;
 var array = Array.prototype;
 var slice = array.slice;
 exports.slice = slice;
-},{}],"../node_modules/d3-contour/src/ascending.js":[function(require,module,exports) {
+},{}],"T6bn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8971,7 +8866,7 @@ exports.default = _default;
 function _default(a, b) {
   return a - b;
 }
-},{}],"../node_modules/d3-contour/src/area.js":[function(require,module,exports) {
+},{}],"TIuo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8988,20 +8883,7 @@ function _default(ring) {
 
   return area;
 }
-},{}],"../node_modules/d3-contour/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-contour/src/contains.js":[function(require,module,exports) {
+},{}],"MoCi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9050,7 +8932,7 @@ function collinear(a, b, c) {
 function within(p, q, r) {
   return p <= q && q <= r || r <= q && q <= p;
 }
-},{}],"../node_modules/d3-contour/src/noop.js":[function(require,module,exports) {
+},{}],"zOhu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9059,7 +8941,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = _default;
 
 function _default() {}
-},{}],"../node_modules/d3-contour/src/contours.js":[function(require,module,exports) {
+},{}],"DT0k":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9288,7 +9170,7 @@ function _default() {
 
   return contours;
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./array":"../node_modules/d3-contour/src/array.js","./ascending":"../node_modules/d3-contour/src/ascending.js","./area":"../node_modules/d3-contour/src/area.js","./constant":"../node_modules/d3-contour/src/constant.js","./contains":"../node_modules/d3-contour/src/contains.js","./noop":"../node_modules/d3-contour/src/noop.js"}],"../node_modules/d3-contour/src/blur.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./array":"TvZ5","./ascending":"T6bn","./area":"TIuo","./constant":"aCvo","./contains":"MoCi","./noop":"zOhu"}],"DGMp":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9346,7 +9228,7 @@ function blurY(source, target, r) {
     }
   }
 }
-},{}],"../node_modules/d3-contour/src/density.js":[function(require,module,exports) {
+},{}],"NV0r":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9543,7 +9425,7 @@ function _default() {
 
   return density;
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./array":"../node_modules/d3-contour/src/array.js","./blur":"../node_modules/d3-contour/src/blur.js","./constant":"../node_modules/d3-contour/src/constant.js","./contours":"../node_modules/d3-contour/src/contours.js"}],"../node_modules/d3-contour/src/index.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./array":"TvZ5","./blur":"DGMp","./constant":"aCvo","./contours":"DT0k"}],"SiBy":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9567,7 +9449,7 @@ var _contours = _interopRequireDefault(require("./contours"));
 var _density = _interopRequireDefault(require("./density"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./contours":"../node_modules/d3-contour/src/contours.js","./density":"../node_modules/d3-contour/src/density.js"}],"../node_modules/d3-dsv/src/dsv.js":[function(require,module,exports) {
+},{"./contours":"DT0k","./density":"NV0r"}],"uRW4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9741,7 +9623,7 @@ function _default(delimiter) {
     formatValue: formatValue
   };
 }
-},{}],"../node_modules/d3-dsv/src/csv.js":[function(require,module,exports) {
+},{}],"yGbu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9768,7 +9650,7 @@ var csvFormatRow = csv.formatRow;
 exports.csvFormatRow = csvFormatRow;
 var csvFormatValue = csv.formatValue;
 exports.csvFormatValue = csvFormatValue;
-},{"./dsv.js":"../node_modules/d3-dsv/src/dsv.js"}],"../node_modules/d3-dsv/src/tsv.js":[function(require,module,exports) {
+},{"./dsv.js":"uRW4"}],"Rica":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9795,7 +9677,7 @@ var tsvFormatRow = tsv.formatRow;
 exports.tsvFormatRow = tsvFormatRow;
 var tsvFormatValue = tsv.formatValue;
 exports.tsvFormatValue = tsvFormatValue;
-},{"./dsv.js":"../node_modules/d3-dsv/src/dsv.js"}],"../node_modules/d3-dsv/src/autoType.js":[function(require,module,exports) {
+},{"./dsv.js":"uRW4"}],"hdSA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9820,7 +9702,7 @@ function autoType(object) {
 
 
 var fixtz = new Date("2019-01-01T00:00").getHours() || new Date("2019-07-01T00:00").getHours();
-},{}],"../node_modules/d3-dsv/src/index.js":[function(require,module,exports) {
+},{}],"EC2w":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9932,7 +9814,7 @@ var _tsv = require("./tsv.js");
 var _autoType = _interopRequireDefault(require("./autoType.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./dsv.js":"../node_modules/d3-dsv/src/dsv.js","./csv.js":"../node_modules/d3-dsv/src/csv.js","./tsv.js":"../node_modules/d3-dsv/src/tsv.js","./autoType.js":"../node_modules/d3-dsv/src/autoType.js"}],"../node_modules/d3-fetch/src/blob.js":[function(require,module,exports) {
+},{"./dsv.js":"uRW4","./csv.js":"yGbu","./tsv.js":"Rica","./autoType.js":"hdSA"}],"qUE6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9948,7 +9830,7 @@ function responseBlob(response) {
 function _default(input, init) {
   return fetch(input, init).then(responseBlob);
 }
-},{}],"../node_modules/d3-fetch/src/buffer.js":[function(require,module,exports) {
+},{}],"G9Fv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9964,7 +9846,7 @@ function responseArrayBuffer(response) {
 function _default(input, init) {
   return fetch(input, init).then(responseArrayBuffer);
 }
-},{}],"../node_modules/d3-fetch/src/text.js":[function(require,module,exports) {
+},{}],"bNd6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9980,7 +9862,7 @@ function responseText(response) {
 function _default(input, init) {
   return fetch(input, init).then(responseText);
 }
-},{}],"../node_modules/d3-fetch/src/dsv.js":[function(require,module,exports) {
+},{}],"Ul8d":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10016,7 +9898,7 @@ var csv = dsvParse(_d3Dsv.csvParse);
 exports.csv = csv;
 var tsv = dsvParse(_d3Dsv.tsvParse);
 exports.tsv = tsv;
-},{"d3-dsv":"../node_modules/d3-dsv/src/index.js","./text":"../node_modules/d3-fetch/src/text.js"}],"../node_modules/d3-fetch/src/image.js":[function(require,module,exports) {
+},{"d3-dsv":"EC2w","./text":"bNd6"}],"cIzq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10039,7 +9921,7 @@ function _default(input, init) {
     image.src = input;
   });
 }
-},{}],"../node_modules/d3-fetch/src/json.js":[function(require,module,exports) {
+},{}],"VDYt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10055,7 +9937,7 @@ function responseJson(response) {
 function _default(input, init) {
   return fetch(input, init).then(responseJson);
 }
-},{}],"../node_modules/d3-fetch/src/xml.js":[function(require,module,exports) {
+},{}],"NUeg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10082,7 +9964,7 @@ var html = parser("text/html");
 exports.html = html;
 var svg = parser("image/svg+xml");
 exports.svg = svg;
-},{"./text":"../node_modules/d3-fetch/src/text.js"}],"../node_modules/d3-fetch/src/index.js":[function(require,module,exports) {
+},{"./text":"bNd6"}],"grWT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10174,7 +10056,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./blob":"../node_modules/d3-fetch/src/blob.js","./buffer":"../node_modules/d3-fetch/src/buffer.js","./dsv":"../node_modules/d3-fetch/src/dsv.js","./image":"../node_modules/d3-fetch/src/image.js","./json":"../node_modules/d3-fetch/src/json.js","./text":"../node_modules/d3-fetch/src/text.js","./xml":"../node_modules/d3-fetch/src/xml.js"}],"../node_modules/d3-force/src/center.js":[function(require,module,exports) {
+},{"./blob":"qUE6","./buffer":"G9Fv","./dsv":"Ul8d","./image":"cIzq","./json":"VDYt","./text":"bNd6","./xml":"NUeg"}],"i73m":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10217,20 +10099,7 @@ function _default(x, y) {
 
   return force;
 }
-},{}],"../node_modules/d3-force/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-force/src/jiggle.js":[function(require,module,exports) {
+},{}],"Efbf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10241,7 +10110,7 @@ exports.default = _default;
 function _default() {
   return (Math.random() - 0.5) * 1e-6;
 }
-},{}],"../node_modules/d3-quadtree/src/add.js":[function(require,module,exports) {
+},{}],"ALzt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10333,7 +10202,7 @@ function addAll(data) {
 
   return this;
 }
-},{}],"../node_modules/d3-quadtree/src/cover.js":[function(require,module,exports) {
+},{}],"YvH0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10393,7 +10262,7 @@ function _default(x, y) {
   this._y1 = y1;
   return this;
 }
-},{}],"../node_modules/d3-quadtree/src/data.js":[function(require,module,exports) {
+},{}],"uVl3":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10408,7 +10277,7 @@ function _default() {
   });
   return data;
 }
-},{}],"../node_modules/d3-quadtree/src/extent.js":[function(require,module,exports) {
+},{}],"wciv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10419,7 +10288,7 @@ exports.default = _default;
 function _default(_) {
   return arguments.length ? this.cover(+_[0][0], +_[0][1]).cover(+_[1][0], +_[1][1]) : isNaN(this._x0) ? undefined : [[this._x0, this._y0], [this._x1, this._y1]];
 }
-},{}],"../node_modules/d3-quadtree/src/quad.js":[function(require,module,exports) {
+},{}],"HTh0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10434,7 +10303,7 @@ function _default(node, x0, y0, x1, y1) {
   this.x1 = x1;
   this.y1 = y1;
 }
-},{}],"../node_modules/d3-quadtree/src/find.js":[function(require,module,exports) {
+},{}],"NXzM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10498,7 +10367,7 @@ function _default(x, y, radius) {
 
   return data;
 }
-},{"./quad.js":"../node_modules/d3-quadtree/src/quad.js"}],"../node_modules/d3-quadtree/src/remove.js":[function(require,module,exports) {
+},{"./quad.js":"HTh0"}],"qMQE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10561,7 +10430,7 @@ function removeAll(data) {
 
   return this;
 }
-},{}],"../node_modules/d3-quadtree/src/root.js":[function(require,module,exports) {
+},{}],"f6UW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10572,7 +10441,7 @@ exports.default = _default;
 function _default() {
   return this._root;
 }
-},{}],"../node_modules/d3-quadtree/src/size.js":[function(require,module,exports) {
+},{}],"hpwG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10587,7 +10456,7 @@ function _default() {
   });
   return size;
 }
-},{}],"../node_modules/d3-quadtree/src/visit.js":[function(require,module,exports) {
+},{}],"NlIW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10623,7 +10492,7 @@ function _default(callback) {
 
   return this;
 }
-},{"./quad.js":"../node_modules/d3-quadtree/src/quad.js"}],"../node_modules/d3-quadtree/src/visitAfter.js":[function(require,module,exports) {
+},{"./quad.js":"HTh0"}],"mFQa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10667,7 +10536,7 @@ function _default(callback) {
 
   return this;
 }
-},{"./quad.js":"../node_modules/d3-quadtree/src/quad.js"}],"../node_modules/d3-quadtree/src/x.js":[function(require,module,exports) {
+},{"./quad.js":"HTh0"}],"zEre":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10683,7 +10552,7 @@ function defaultX(d) {
 function _default(_) {
   return arguments.length ? (this._x = _, this) : this._x;
 }
-},{}],"../node_modules/d3-quadtree/src/y.js":[function(require,module,exports) {
+},{}],"C58w":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10699,7 +10568,7 @@ function defaultY(d) {
 function _default(_) {
   return arguments.length ? (this._y = _, this) : this._y;
 }
-},{}],"../node_modules/d3-quadtree/src/quadtree.js":[function(require,module,exports) {
+},{}],"e6a1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10807,7 +10676,7 @@ treeProto.visit = _visit.default;
 treeProto.visitAfter = _visitAfter.default;
 treeProto.x = _x.default;
 treeProto.y = _y.default;
-},{"./add.js":"../node_modules/d3-quadtree/src/add.js","./cover.js":"../node_modules/d3-quadtree/src/cover.js","./data.js":"../node_modules/d3-quadtree/src/data.js","./extent.js":"../node_modules/d3-quadtree/src/extent.js","./find.js":"../node_modules/d3-quadtree/src/find.js","./remove.js":"../node_modules/d3-quadtree/src/remove.js","./root.js":"../node_modules/d3-quadtree/src/root.js","./size.js":"../node_modules/d3-quadtree/src/size.js","./visit.js":"../node_modules/d3-quadtree/src/visit.js","./visitAfter.js":"../node_modules/d3-quadtree/src/visitAfter.js","./x.js":"../node_modules/d3-quadtree/src/x.js","./y.js":"../node_modules/d3-quadtree/src/y.js"}],"../node_modules/d3-quadtree/src/index.js":[function(require,module,exports) {
+},{"./add.js":"ALzt","./cover.js":"YvH0","./data.js":"uVl3","./extent.js":"wciv","./find.js":"NXzM","./remove.js":"qMQE","./root.js":"f6UW","./size.js":"hpwG","./visit.js":"NlIW","./visitAfter.js":"mFQa","./x.js":"zEre","./y.js":"C58w"}],"lUbg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10823,7 +10692,7 @@ Object.defineProperty(exports, "quadtree", {
 var _quadtree = _interopRequireDefault(require("./quadtree.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./quadtree.js":"../node_modules/d3-quadtree/src/quadtree.js"}],"../node_modules/d3-force/src/collide.js":[function(require,module,exports) {
+},{"./quadtree.js":"e6a1"}],"vmaP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10944,7 +10813,7 @@ function _default(radius) {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js","./jiggle":"../node_modules/d3-force/src/jiggle.js","d3-quadtree":"../node_modules/d3-quadtree/src/index.js"}],"../node_modules/d3-force/src/link.js":[function(require,module,exports) {
+},{"./constant":"aCvo","./jiggle":"Efbf","d3-quadtree":"lUbg"}],"zZLJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11070,7 +10939,7 @@ function _default(links) {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js","./jiggle":"../node_modules/d3-force/src/jiggle.js","d3-collection":"../node_modules/d3-collection/src/index.js"}],"../node_modules/d3-force/src/simulation.js":[function(require,module,exports) {
+},{"./constant":"aCvo","./jiggle":"Efbf","d3-collection":"S3hn"}],"Jr7D":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11220,7 +11089,7 @@ function _default(nodes) {
     }
   };
 }
-},{"d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-collection":"../node_modules/d3-collection/src/index.js","d3-timer":"../node_modules/d3-timer/src/index.js"}],"../node_modules/d3-force/src/manyBody.js":[function(require,module,exports) {
+},{"d3-dispatch":"D3zY","d3-collection":"S3hn","d3-timer":"rdzS"}],"i5c4":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11354,7 +11223,7 @@ function _default() {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js","./jiggle":"../node_modules/d3-force/src/jiggle.js","d3-quadtree":"../node_modules/d3-quadtree/src/index.js","./simulation":"../node_modules/d3-force/src/simulation.js"}],"../node_modules/d3-force/src/radial.js":[function(require,module,exports) {
+},{"./constant":"aCvo","./jiggle":"Efbf","d3-quadtree":"lUbg","./simulation":"Jr7D"}],"UAq1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11422,7 +11291,7 @@ function _default(radius, x, y) {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js"}],"../node_modules/d3-force/src/x.js":[function(require,module,exports) {
+},{"./constant":"aCvo"}],"ossL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11474,7 +11343,7 @@ function _default(x) {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js"}],"../node_modules/d3-force/src/y.js":[function(require,module,exports) {
+},{"./constant":"aCvo"}],"GLsE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11526,7 +11395,7 @@ function _default(y) {
 
   return force;
 }
-},{"./constant":"../node_modules/d3-force/src/constant.js"}],"../node_modules/d3-force/src/index.js":[function(require,module,exports) {
+},{"./constant":"aCvo"}],"oYRE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11598,7 +11467,7 @@ var _x = _interopRequireDefault(require("./x"));
 var _y = _interopRequireDefault(require("./y"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./center":"../node_modules/d3-force/src/center.js","./collide":"../node_modules/d3-force/src/collide.js","./link":"../node_modules/d3-force/src/link.js","./manyBody":"../node_modules/d3-force/src/manyBody.js","./radial":"../node_modules/d3-force/src/radial.js","./simulation":"../node_modules/d3-force/src/simulation.js","./x":"../node_modules/d3-force/src/x.js","./y":"../node_modules/d3-force/src/y.js"}],"../node_modules/d3-format/src/formatDecimal.js":[function(require,module,exports) {
+},{"./center":"i73m","./collide":"vmaP","./link":"zZLJ","./manyBody":"i5c4","./radial":"UAq1","./simulation":"Jr7D","./x":"ossL","./y":"GLsE"}],"GAUC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11618,7 +11487,7 @@ function _default(x, p) {
 
   return [coefficient.length > 1 ? coefficient[0] + coefficient.slice(2) : coefficient, +x.slice(i + 1)];
 }
-},{}],"../node_modules/d3-format/src/exponent.js":[function(require,module,exports) {
+},{}],"tXBB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11633,7 +11502,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(x) {
   return x = (0, _formatDecimal.default)(Math.abs(x)), x ? x[1] : NaN;
 }
-},{"./formatDecimal.js":"../node_modules/d3-format/src/formatDecimal.js"}],"../node_modules/d3-format/src/formatGroup.js":[function(require,module,exports) {
+},{"./formatDecimal.js":"GAUC"}],"rbAM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11659,7 +11528,7 @@ function _default(grouping, thousands) {
     return t.reverse().join(thousands);
   };
 }
-},{}],"../node_modules/d3-format/src/formatNumerals.js":[function(require,module,exports) {
+},{}],"hTcF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11674,7 +11543,7 @@ function _default(numerals) {
     });
   };
 }
-},{}],"../node_modules/d3-format/src/formatSpecifier.js":[function(require,module,exports) {
+},{}],"aibL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11720,7 +11589,7 @@ function FormatSpecifier(specifier) {
 FormatSpecifier.prototype.toString = function () {
   return this.fill + this.align + this.sign + this.symbol + (this.zero ? "0" : "") + (this.width === undefined ? "" : Math.max(1, this.width | 0)) + (this.comma ? "," : "") + (this.precision === undefined ? "" : "." + Math.max(0, this.precision | 0)) + (this.trim ? "~" : "") + this.type;
 };
-},{}],"../node_modules/d3-format/src/formatTrim.js":[function(require,module,exports) {
+},{}],"SUnU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11750,7 +11619,7 @@ function _default(s) {
 
   return i0 > 0 ? s.slice(0, i0) + s.slice(i1 + 1) : s;
 }
-},{}],"../node_modules/d3-format/src/formatPrefixAuto.js":[function(require,module,exports) {
+},{}],"fBpa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11775,7 +11644,7 @@ function _default(x, p) {
       n = coefficient.length;
   return i === n ? coefficient : i > n ? coefficient + new Array(i - n + 1).join("0") : i > 0 ? coefficient.slice(0, i) + "." + coefficient.slice(i) : "0." + new Array(1 - i).join("0") + (0, _formatDecimal.default)(x, Math.max(0, p + i - 1))[0]; // less than 1y!
 }
-},{"./formatDecimal.js":"../node_modules/d3-format/src/formatDecimal.js"}],"../node_modules/d3-format/src/formatRounded.js":[function(require,module,exports) {
+},{"./formatDecimal.js":"GAUC"}],"UDrw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11794,7 +11663,7 @@ function _default(x, p) {
       exponent = d[1];
   return exponent < 0 ? "0." + new Array(-exponent).join("0") + coefficient : coefficient.length > exponent + 1 ? coefficient.slice(0, exponent + 1) + "." + coefficient.slice(exponent + 1) : coefficient + new Array(exponent - coefficient.length + 2).join("0");
 }
-},{"./formatDecimal.js":"../node_modules/d3-format/src/formatDecimal.js"}],"../node_modules/d3-format/src/formatTypes.js":[function(require,module,exports) {
+},{"./formatDecimal.js":"GAUC"}],"Wavi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11846,18 +11715,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{"./formatPrefixAuto.js":"../node_modules/d3-format/src/formatPrefixAuto.js","./formatRounded.js":"../node_modules/d3-format/src/formatRounded.js"}],"../node_modules/d3-format/src/identity.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return x;
-}
-},{}],"../node_modules/d3-format/src/locale.js":[function(require,module,exports) {
+},{"./formatPrefixAuto.js":"fBpa","./formatRounded.js":"UDrw"}],"IVmM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12016,7 +11874,7 @@ function _default(locale) {
     formatPrefix: formatPrefix
   };
 }
-},{"./exponent.js":"../node_modules/d3-format/src/exponent.js","./formatGroup.js":"../node_modules/d3-format/src/formatGroup.js","./formatNumerals.js":"../node_modules/d3-format/src/formatNumerals.js","./formatSpecifier.js":"../node_modules/d3-format/src/formatSpecifier.js","./formatTrim.js":"../node_modules/d3-format/src/formatTrim.js","./formatTypes.js":"../node_modules/d3-format/src/formatTypes.js","./formatPrefixAuto.js":"../node_modules/d3-format/src/formatPrefixAuto.js","./identity.js":"../node_modules/d3-format/src/identity.js"}],"../node_modules/d3-format/src/defaultLocale.js":[function(require,module,exports) {
+},{"./exponent.js":"tXBB","./formatGroup.js":"rbAM","./formatNumerals.js":"hTcF","./formatSpecifier.js":"aibL","./formatTrim.js":"SUnU","./formatTypes.js":"Wavi","./formatPrefixAuto.js":"fBpa","./identity.js":"NNW9"}],"KaMm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12048,7 +11906,7 @@ function defaultLocale(definition) {
   exports.formatPrefix = formatPrefix = locale.formatPrefix;
   return locale;
 }
-},{"./locale.js":"../node_modules/d3-format/src/locale.js"}],"../node_modules/d3-format/src/precisionFixed.js":[function(require,module,exports) {
+},{"./locale.js":"IVmM"}],"EyKk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12063,7 +11921,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(step) {
   return Math.max(0, -(0, _exponent.default)(Math.abs(step)));
 }
-},{"./exponent.js":"../node_modules/d3-format/src/exponent.js"}],"../node_modules/d3-format/src/precisionPrefix.js":[function(require,module,exports) {
+},{"./exponent.js":"tXBB"}],"VPkn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12078,7 +11936,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(step, value) {
   return Math.max(0, Math.max(-8, Math.min(8, Math.floor((0, _exponent.default)(value) / 3))) * 3 - (0, _exponent.default)(Math.abs(step)));
 }
-},{"./exponent.js":"../node_modules/d3-format/src/exponent.js"}],"../node_modules/d3-format/src/precisionRound.js":[function(require,module,exports) {
+},{"./exponent.js":"tXBB"}],"DMyZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12094,7 +11952,7 @@ function _default(step, max) {
   step = Math.abs(step), max = Math.abs(max) - step;
   return Math.max(0, (0, _exponent.default)(max) - (0, _exponent.default)(step)) + 1;
 }
-},{"./exponent.js":"../node_modules/d3-format/src/exponent.js"}],"../node_modules/d3-format/src/index.js":[function(require,module,exports) {
+},{"./exponent.js":"tXBB"}],"VuZR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12172,7 +12030,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./defaultLocale.js":"../node_modules/d3-format/src/defaultLocale.js","./locale.js":"../node_modules/d3-format/src/locale.js","./formatSpecifier.js":"../node_modules/d3-format/src/formatSpecifier.js","./precisionFixed.js":"../node_modules/d3-format/src/precisionFixed.js","./precisionPrefix.js":"../node_modules/d3-format/src/precisionPrefix.js","./precisionRound.js":"../node_modules/d3-format/src/precisionRound.js"}],"../node_modules/d3-geo/src/adder.js":[function(require,module,exports) {
+},{"./defaultLocale.js":"KaMm","./locale.js":"IVmM","./formatSpecifier.js":"aibL","./precisionFixed.js":"EyKk","./precisionPrefix.js":"VPkn","./precisionRound.js":"DMyZ"}],"fG8A":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12217,7 +12075,7 @@ function add(adder, a, b) {
       av = x - bv;
   adder.t = a - av + (b - bv);
 }
-},{}],"../node_modules/d3-geo/src/math.js":[function(require,module,exports) {
+},{}],"JQgf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12285,7 +12143,7 @@ function asin(x) {
 function haversin(x) {
   return (x = sin(x / 2)) * x;
 }
-},{}],"../node_modules/d3-geo/src/noop.js":[function(require,module,exports) {
+},{}],"DUih":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12294,7 +12152,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = noop;
 
 function noop() {}
-},{}],"../node_modules/d3-geo/src/stream.js":[function(require,module,exports) {
+},{}],"XQuq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12392,7 +12250,7 @@ function _default(object, stream) {
     streamGeometry(object, stream);
   }
 }
-},{}],"../node_modules/d3-geo/src/area.js":[function(require,module,exports) {
+},{}],"rKta":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12479,7 +12337,7 @@ function _default(object) {
   (0, _stream.default)(object, areaStream);
   return areaSum * 2;
 }
-},{"./adder.js":"../node_modules/d3-geo/src/adder.js","./math.js":"../node_modules/d3-geo/src/math.js","./noop.js":"../node_modules/d3-geo/src/noop.js","./stream.js":"../node_modules/d3-geo/src/stream.js"}],"../node_modules/d3-geo/src/cartesian.js":[function(require,module,exports) {
+},{"./adder.js":"fG8A","./math.js":"JQgf","./noop.js":"DUih","./stream.js":"XQuq"}],"V83Q":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12528,7 +12386,7 @@ function cartesianNormalizeInPlace(d) {
   var l = (0, _math.sqrt)(d[0] * d[0] + d[1] * d[1] + d[2] * d[2]);
   d[0] /= l, d[1] /= l, d[2] /= l;
 }
-},{"./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/bounds.js":[function(require,module,exports) {
+},{"./math.js":"JQgf"}],"rw3L":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12731,7 +12589,7 @@ function _default(feature) {
   ranges = range = null;
   return lambda0 === Infinity || phi0 === Infinity ? [[NaN, NaN], [NaN, NaN]] : [[lambda0, phi0], [lambda1, phi1]];
 }
-},{"./adder.js":"../node_modules/d3-geo/src/adder.js","./area.js":"../node_modules/d3-geo/src/area.js","./cartesian.js":"../node_modules/d3-geo/src/cartesian.js","./math.js":"../node_modules/d3-geo/src/math.js","./stream.js":"../node_modules/d3-geo/src/stream.js"}],"../node_modules/d3-geo/src/centroid.js":[function(require,module,exports) {
+},{"./adder.js":"fG8A","./area.js":"rKta","./cartesian.js":"V83Q","./math.js":"JQgf","./stream.js":"XQuq"}],"GCsQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12875,20 +12733,7 @@ function _default(object) {
 
   return [(0, _math.atan2)(y, x) * _math.degrees, (0, _math.asin)(z / (0, _math.sqrt)(m)) * _math.degrees];
 }
-},{"./math.js":"../node_modules/d3-geo/src/math.js","./noop.js":"../node_modules/d3-geo/src/noop.js","./stream.js":"../node_modules/d3-geo/src/stream.js"}],"../node_modules/d3-geo/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-geo/src/compose.js":[function(require,module,exports) {
+},{"./math.js":"JQgf","./noop.js":"DUih","./stream.js":"XQuq"}],"tY9i":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12906,7 +12751,7 @@ function _default(a, b) {
   };
   return compose;
 }
-},{}],"../node_modules/d3-geo/src/rotation.js":[function(require,module,exports) {
+},{}],"LqUY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12985,7 +12830,7 @@ function _default(rotate) {
 
   return forward;
 }
-},{"./compose.js":"../node_modules/d3-geo/src/compose.js","./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/circle.js":[function(require,module,exports) {
+},{"./compose.js":"tY9i","./math.js":"JQgf"}],"KcOR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13079,7 +12924,7 @@ function _default() {
 
   return circle;
 }
-},{"./cartesian.js":"../node_modules/d3-geo/src/cartesian.js","./constant.js":"../node_modules/d3-geo/src/constant.js","./math.js":"../node_modules/d3-geo/src/math.js","./rotation.js":"../node_modules/d3-geo/src/rotation.js"}],"../node_modules/d3-geo/src/clip/buffer.js":[function(require,module,exports) {
+},{"./cartesian.js":"V83Q","./constant.js":"aCvo","./math.js":"JQgf","./rotation.js":"LqUY"}],"jFd0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13113,7 +12958,7 @@ function _default() {
     }
   };
 }
-},{"../noop.js":"../node_modules/d3-geo/src/noop.js"}],"../node_modules/d3-geo/src/pointEqual.js":[function(require,module,exports) {
+},{"../noop.js":"DUih"}],"yH90":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13126,7 +12971,7 @@ var _math = require("./math.js");
 function _default(a, b) {
   return (0, _math.abs)(a[0] - b[0]) < _math.epsilon && (0, _math.abs)(a[1] - b[1]) < _math.epsilon;
 }
-},{"./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/clip/rejoin.js":[function(require,module,exports) {
+},{"./math.js":"JQgf"}],"Nr15":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13252,7 +13097,7 @@ function link(array) {
   a.n = b = array[0];
   b.p = a;
 }
-},{"../pointEqual.js":"../node_modules/d3-geo/src/pointEqual.js"}],"../node_modules/d3-geo/src/polygonContains.js":[function(require,module,exports) {
+},{"../pointEqual.js":"yH90"}],"GrwB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13335,7 +13180,7 @@ function _default(polygon, point) {
 
   return (angle < -_math.epsilon || angle < _math.epsilon && sum < -_math.epsilon) ^ winding & 1;
 }
-},{"./adder.js":"../node_modules/d3-geo/src/adder.js","./cartesian.js":"../node_modules/d3-geo/src/cartesian.js","./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/clip/index.js":[function(require,module,exports) {
+},{"./adder.js":"fG8A","./cartesian.js":"V83Q","./math.js":"JQgf"}],"J6h6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13481,7 +13326,7 @@ function validSegment(segment) {
 function compareIntersection(a, b) {
   return ((a = a.x)[0] < 0 ? a[1] - _math.halfPi - _math.epsilon : _math.halfPi - a[1]) - ((b = b.x)[0] < 0 ? b[1] - _math.halfPi - _math.epsilon : _math.halfPi - b[1]);
 }
-},{"./buffer.js":"../node_modules/d3-geo/src/clip/buffer.js","./rejoin.js":"../node_modules/d3-geo/src/clip/rejoin.js","../math.js":"../node_modules/d3-geo/src/math.js","../polygonContains.js":"../node_modules/d3-geo/src/polygonContains.js","d3-array":"../node_modules/d3-array/src/index.js"}],"../node_modules/d3-geo/src/clip/antimeridian.js":[function(require,module,exports) {
+},{"./buffer.js":"jFd0","./rejoin.js":"Nr15","../math.js":"JQgf","../polygonContains.js":"GrwB","d3-array":"K0bd"}],"Gots":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13585,7 +13430,7 @@ function clipAntimeridianInterpolate(from, to, direction, stream) {
     stream.point(to[0], to[1]);
   }
 }
-},{"./index.js":"../node_modules/d3-geo/src/clip/index.js","../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/clip/circle.js":[function(require,module,exports) {
+},{"./index.js":"J6h6","../math.js":"JQgf"}],"lcCJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13778,7 +13623,7 @@ function _default(radius) {
 
   return (0, _index.default)(visible, clipLine, interpolate, smallRadius ? [0, -radius] : [-_math.pi, radius - _math.pi]);
 }
-},{"../cartesian.js":"../node_modules/d3-geo/src/cartesian.js","../circle.js":"../node_modules/d3-geo/src/circle.js","../math.js":"../node_modules/d3-geo/src/math.js","../pointEqual.js":"../node_modules/d3-geo/src/pointEqual.js","./index.js":"../node_modules/d3-geo/src/clip/index.js"}],"../node_modules/d3-geo/src/clip/line.js":[function(require,module,exports) {
+},{"../cartesian.js":"V83Q","../circle.js":"KcOR","../math.js":"JQgf","../pointEqual.js":"yH90","./index.js":"J6h6"}],"w1ni":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13848,7 +13693,7 @@ function _default(a, b, x0, y0, x1, y1) {
   if (t1 < 1) b[0] = ax + t1 * dx, b[1] = ay + t1 * dy;
   return true;
 }
-},{}],"../node_modules/d3-geo/src/clip/rectangle.js":[function(require,module,exports) {
+},{}],"jRQA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14039,7 +13884,7 @@ function clipRectangle(x0, y0, x1, y1) {
     return clipStream;
   };
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./buffer.js":"../node_modules/d3-geo/src/clip/buffer.js","./line.js":"../node_modules/d3-geo/src/clip/line.js","./rejoin.js":"../node_modules/d3-geo/src/clip/rejoin.js","d3-array":"../node_modules/d3-array/src/index.js"}],"../node_modules/d3-geo/src/clip/extent.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./buffer.js":"jFd0","./line.js":"w1ni","./rejoin.js":"Nr15","d3-array":"K0bd"}],"EodF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14068,7 +13913,7 @@ function _default() {
     }
   };
 }
-},{"./rectangle.js":"../node_modules/d3-geo/src/clip/rectangle.js"}],"../node_modules/d3-geo/src/length.js":[function(require,module,exports) {
+},{"./rectangle.js":"jRQA"}],"bXUe":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14133,7 +13978,7 @@ function _default(object) {
   (0, _stream.default)(object, lengthStream);
   return +lengthSum;
 }
-},{"./adder.js":"../node_modules/d3-geo/src/adder.js","./math.js":"../node_modules/d3-geo/src/math.js","./noop.js":"../node_modules/d3-geo/src/noop.js","./stream.js":"../node_modules/d3-geo/src/stream.js"}],"../node_modules/d3-geo/src/distance.js":[function(require,module,exports) {
+},{"./adder.js":"fG8A","./math.js":"JQgf","./noop.js":"DUih","./stream.js":"XQuq"}],"hTgK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14156,7 +14001,7 @@ function _default(a, b) {
   coordinates[1] = b;
   return (0, _length.default)(object);
 }
-},{"./length.js":"../node_modules/d3-geo/src/length.js"}],"../node_modules/d3-geo/src/contains.js":[function(require,module,exports) {
+},{"./length.js":"bXUe"}],"tRhb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14278,7 +14123,7 @@ function pointRadians(point) {
 function _default(object, point) {
   return (object && containsObjectType.hasOwnProperty(object.type) ? containsObjectType[object.type] : containsGeometry)(object, point);
 }
-},{"./polygonContains.js":"../node_modules/d3-geo/src/polygonContains.js","./distance.js":"../node_modules/d3-geo/src/distance.js","./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/graticule.js":[function(require,module,exports) {
+},{"./polygonContains.js":"GrwB","./distance.js":"hTgK","./math.js":"JQgf"}],"IdZ0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14415,7 +14260,7 @@ function graticule() {
 function graticule10() {
   return graticule()();
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/interpolate.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./math.js":"JQgf"}],"uuLr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14453,18 +14298,7 @@ function _default(a, b) {
   interpolate.distance = d;
   return interpolate;
 }
-},{"./math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/identity.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return x;
-}
-},{}],"../node_modules/d3-geo/src/path/area.js":[function(require,module,exports) {
+},{"./math.js":"JQgf"}],"ueEe":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14526,7 +14360,7 @@ function areaRingEnd() {
 
 var _default = areaStream;
 exports.default = _default;
-},{"../adder.js":"../node_modules/d3-geo/src/adder.js","../math.js":"../node_modules/d3-geo/src/math.js","../noop.js":"../node_modules/d3-geo/src/noop.js"}],"../node_modules/d3-geo/src/path/bounds.js":[function(require,module,exports) {
+},{"../adder.js":"fG8A","../math.js":"JQgf","../noop.js":"DUih"}],"tL3W":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14564,7 +14398,7 @@ function boundsPoint(x, y) {
 
 var _default = boundsStream;
 exports.default = _default;
-},{"../noop.js":"../node_modules/d3-geo/src/noop.js"}],"../node_modules/d3-geo/src/path/centroid.js":[function(require,module,exports) {
+},{"../noop.js":"DUih"}],"PA8j":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14666,7 +14500,7 @@ function centroidPointRing(x, y) {
 
 var _default = centroidStream;
 exports.default = _default;
-},{"../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/path/context.js":[function(require,module,exports) {
+},{"../math.js":"JQgf"}],"r69t":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14731,7 +14565,7 @@ PathContext.prototype = {
   },
   result: _noop.default
 };
-},{"../math.js":"../node_modules/d3-geo/src/math.js","../noop.js":"../node_modules/d3-geo/src/noop.js"}],"../node_modules/d3-geo/src/path/measure.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","../noop.js":"DUih"}],"SjQK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14788,7 +14622,7 @@ function lengthPoint(x, y) {
 
 var _default = lengthStream;
 exports.default = _default;
-},{"../adder.js":"../node_modules/d3-geo/src/adder.js","../math.js":"../node_modules/d3-geo/src/math.js","../noop.js":"../node_modules/d3-geo/src/noop.js"}],"../node_modules/d3-geo/src/path/string.js":[function(require,module,exports) {
+},{"../adder.js":"fG8A","../math.js":"JQgf","../noop.js":"DUih"}],"cxj1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14862,7 +14696,7 @@ PathString.prototype = {
 function circle(radius) {
   return "m0," + radius + "a" + radius + "," + radius + " 0 1,1 0," + -2 * radius + "a" + radius + "," + radius + " 0 1,1 0," + 2 * radius + "z";
 }
-},{}],"../node_modules/d3-geo/src/path/index.js":[function(require,module,exports) {
+},{}],"JRMk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14941,7 +14775,7 @@ function _default(projection, context) {
 
   return path.projection(projection).context(context);
 }
-},{"../identity.js":"../node_modules/d3-geo/src/identity.js","../stream.js":"../node_modules/d3-geo/src/stream.js","./area.js":"../node_modules/d3-geo/src/path/area.js","./bounds.js":"../node_modules/d3-geo/src/path/bounds.js","./centroid.js":"../node_modules/d3-geo/src/path/centroid.js","./context.js":"../node_modules/d3-geo/src/path/context.js","./measure.js":"../node_modules/d3-geo/src/path/measure.js","./string.js":"../node_modules/d3-geo/src/path/string.js"}],"../node_modules/d3-geo/src/transform.js":[function(require,module,exports) {
+},{"../identity.js":"NNW9","../stream.js":"XQuq","./area.js":"ueEe","./bounds.js":"tL3W","./centroid.js":"PA8j","./context.js":"r69t","./measure.js":"SjQK","./string.js":"cxj1"}],"pfKH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14990,7 +14824,7 @@ TransformStream.prototype = {
     this.stream.polygonEnd();
   }
 };
-},{}],"../node_modules/d3-geo/src/projection/fit.js":[function(require,module,exports) {
+},{}],"Ycma":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15051,7 +14885,7 @@ function fitHeight(projection, height, object) {
     projection.scale(150 * k).translate([x, y]);
   }, object);
 }
-},{"../stream.js":"../node_modules/d3-geo/src/stream.js","../path/bounds.js":"../node_modules/d3-geo/src/path/bounds.js"}],"../node_modules/d3-geo/src/projection/resample.js":[function(require,module,exports) {
+},{"../stream.js":"XQuq","../path/bounds.js":"tL3W"}],"nAh8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15174,7 +15008,7 @@ function resample(project, delta2) {
     return resampleStream;
   };
 }
-},{"../cartesian.js":"../node_modules/d3-geo/src/cartesian.js","../math.js":"../node_modules/d3-geo/src/math.js","../transform.js":"../node_modules/d3-geo/src/transform.js"}],"../node_modules/d3-geo/src/projection/index.js":[function(require,module,exports) {
+},{"../cartesian.js":"V83Q","../math.js":"JQgf","../transform.js":"pfKH"}],"Ktpb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15383,7 +15217,7 @@ function projectionMutator(projectAt) {
     return recenter();
   };
 }
-},{"../clip/antimeridian.js":"../node_modules/d3-geo/src/clip/antimeridian.js","../clip/circle.js":"../node_modules/d3-geo/src/clip/circle.js","../clip/rectangle.js":"../node_modules/d3-geo/src/clip/rectangle.js","../compose.js":"../node_modules/d3-geo/src/compose.js","../identity.js":"../node_modules/d3-geo/src/identity.js","../math.js":"../node_modules/d3-geo/src/math.js","../rotation.js":"../node_modules/d3-geo/src/rotation.js","../transform.js":"../node_modules/d3-geo/src/transform.js","./fit.js":"../node_modules/d3-geo/src/projection/fit.js","./resample.js":"../node_modules/d3-geo/src/projection/resample.js"}],"../node_modules/d3-geo/src/projection/conic.js":[function(require,module,exports) {
+},{"../clip/antimeridian.js":"Gots","../clip/circle.js":"lcCJ","../clip/rectangle.js":"jRQA","../compose.js":"tY9i","../identity.js":"NNW9","../math.js":"JQgf","../rotation.js":"LqUY","../transform.js":"pfKH","./fit.js":"Ycma","./resample.js":"nAh8"}],"Q2ed":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15407,7 +15241,7 @@ function conicProjection(projectAt) {
 
   return p;
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/cylindricalEqualArea.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./index.js":"Ktpb"}],"JFau":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15430,7 +15264,7 @@ function cylindricalEqualAreaRaw(phi0) {
 
   return forward;
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/projection/conicEqualArea.js":[function(require,module,exports) {
+},{"../math.js":"JQgf"}],"TNCf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15469,7 +15303,7 @@ function conicEqualAreaRaw(y0, y1) {
 function _default() {
   return (0, _conic.conicProjection)(conicEqualAreaRaw).scale(155.424).center([0, 33.6442]);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./conic.js":"../node_modules/d3-geo/src/projection/conic.js","./cylindricalEqualArea.js":"../node_modules/d3-geo/src/projection/cylindricalEqualArea.js"}],"../node_modules/d3-geo/src/projection/albers.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./conic.js":"Q2ed","./cylindricalEqualArea.js":"JFau"}],"cpQd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15484,7 +15318,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default() {
   return (0, _conicEqualArea.default)().parallels([29.5, 45.5]).scale(1070).translate([480, 250]).rotate([96, 0]).center([-0.6, 38.7]);
 }
-},{"./conicEqualArea.js":"../node_modules/d3-geo/src/projection/conicEqualArea.js"}],"../node_modules/d3-geo/src/projection/albersUsa.js":[function(require,module,exports) {
+},{"./conicEqualArea.js":"TNCf"}],"RPZI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15627,7 +15461,7 @@ function _default() {
 
   return albersUsa.scale(1070);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./albers.js":"../node_modules/d3-geo/src/projection/albers.js","./conicEqualArea.js":"../node_modules/d3-geo/src/projection/conicEqualArea.js","./fit.js":"../node_modules/d3-geo/src/projection/fit.js"}],"../node_modules/d3-geo/src/projection/azimuthal.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./albers.js":"cpQd","./conicEqualArea.js":"TNCf","./fit.js":"Ycma"}],"WksQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15656,7 +15490,7 @@ function azimuthalInvert(angle) {
     return [(0, _math.atan2)(x * sc, z * cc), (0, _math.asin)(z && y * sc / z)];
   };
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/projection/azimuthalEqualArea.js":[function(require,module,exports) {
+},{"../math.js":"JQgf"}],"OyGo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15684,7 +15518,7 @@ azimuthalEqualAreaRaw.invert = (0, _azimuthal.azimuthalInvert)(function (z) {
 function _default() {
   return (0, _index.default)(azimuthalEqualAreaRaw).scale(124.75).clipAngle(180 - 1e-3);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./azimuthal.js":"../node_modules/d3-geo/src/projection/azimuthal.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/azimuthalEquidistant.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./azimuthal.js":"WksQ","./index.js":"Ktpb"}],"mwct":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15712,7 +15546,7 @@ azimuthalEquidistantRaw.invert = (0, _azimuthal.azimuthalInvert)(function (z) {
 function _default() {
   return (0, _index.default)(azimuthalEquidistantRaw).scale(79.4188).clipAngle(180 - 1e-3);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./azimuthal.js":"../node_modules/d3-geo/src/projection/azimuthal.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/mercator.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./azimuthal.js":"WksQ","./index.js":"Ktpb"}],"n0Ot":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15777,7 +15611,7 @@ function mercatorProjection(project) {
 
   return reclip();
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","../rotation.js":"../node_modules/d3-geo/src/rotation.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/conicConformal.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","../rotation.js":"LqUY","./index.js":"Ktpb"}],"kVD1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15825,7 +15659,7 @@ function conicConformalRaw(y0, y1) {
 function _default() {
   return (0, _conic.conicProjection)(conicConformalRaw).scale(109.5).parallels([30, 30]);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./conic.js":"../node_modules/d3-geo/src/projection/conic.js","./mercator.js":"../node_modules/d3-geo/src/projection/mercator.js"}],"../node_modules/d3-geo/src/projection/equirectangular.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./conic.js":"Q2ed","./mercator.js":"n0Ot"}],"RMXQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15847,7 +15681,7 @@ equirectangularRaw.invert = equirectangularRaw;
 function _default() {
   return (0, _index.default)(equirectangularRaw).scale(152.63);
 }
-},{"./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/conicEquidistant.js":[function(require,module,exports) {
+},{"./index.js":"Ktpb"}],"TJ85":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15885,7 +15719,7 @@ function conicEquidistantRaw(y0, y1) {
 function _default() {
   return (0, _conic.conicProjection)(conicEquidistantRaw).scale(131.154).center([0, 13.9389]);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./conic.js":"../node_modules/d3-geo/src/projection/conic.js","./equirectangular.js":"../node_modules/d3-geo/src/projection/equirectangular.js"}],"../node_modules/d3-geo/src/projection/equalEarth.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./conic.js":"Q2ed","./equirectangular.js":"RMXQ"}],"qrWJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15932,7 +15766,7 @@ equalEarthRaw.invert = function (x, y) {
 function _default() {
   return (0, _index.default)(equalEarthRaw).scale(177.158);
 }
-},{"./index.js":"../node_modules/d3-geo/src/projection/index.js","../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/projection/gnomonic.js":[function(require,module,exports) {
+},{"./index.js":"Ktpb","../math.js":"JQgf"}],"KVOo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15960,7 +15794,7 @@ gnomonicRaw.invert = (0, _azimuthal.azimuthalInvert)(_math.atan);
 function _default() {
   return (0, _index.default)(gnomonicRaw).scale(144.049).clipAngle(60);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./azimuthal.js":"../node_modules/d3-geo/src/projection/azimuthal.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/identity.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./azimuthal.js":"WksQ","./index.js":"Ktpb"}],"XK0T":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16045,7 +15879,7 @@ function _default() {
     }
   };
 }
-},{"../clip/rectangle.js":"../node_modules/d3-geo/src/clip/rectangle.js","../identity.js":"../node_modules/d3-geo/src/identity.js","../transform.js":"../node_modules/d3-geo/src/transform.js","./fit.js":"../node_modules/d3-geo/src/projection/fit.js"}],"../node_modules/d3-geo/src/projection/naturalEarth1.js":[function(require,module,exports) {
+},{"../clip/rectangle.js":"jRQA","../identity.js":"NNW9","../transform.js":"pfKH","./fit.js":"Ycma"}],"Y5z7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16083,7 +15917,7 @@ naturalEarth1Raw.invert = function (x, y) {
 function _default() {
   return (0, _index.default)(naturalEarth1Raw).scale(175.295);
 }
-},{"./index.js":"../node_modules/d3-geo/src/projection/index.js","../math.js":"../node_modules/d3-geo/src/math.js"}],"../node_modules/d3-geo/src/projection/orthographic.js":[function(require,module,exports) {
+},{"./index.js":"Ktpb","../math.js":"JQgf"}],"UMbg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16109,7 +15943,7 @@ orthographicRaw.invert = (0, _azimuthal.azimuthalInvert)(_math.asin);
 function _default() {
   return (0, _index.default)(orthographicRaw).scale(249.5).clipAngle(90 + _math.epsilon);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./azimuthal.js":"../node_modules/d3-geo/src/projection/azimuthal.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/stereographic.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./azimuthal.js":"WksQ","./index.js":"Ktpb"}],"vfE9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16139,7 +15973,7 @@ stereographicRaw.invert = (0, _azimuthal.azimuthalInvert)(function (z) {
 function _default() {
   return (0, _index.default)(stereographicRaw).scale(250).clipAngle(142);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./azimuthal.js":"../node_modules/d3-geo/src/projection/azimuthal.js","./index.js":"../node_modules/d3-geo/src/projection/index.js"}],"../node_modules/d3-geo/src/projection/transverseMercator.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./azimuthal.js":"WksQ","./index.js":"Ktpb"}],"o0eF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16175,7 +16009,7 @@ function _default() {
 
   return rotate([0, 0, 90]).scale(159.155);
 }
-},{"../math.js":"../node_modules/d3-geo/src/math.js","./mercator.js":"../node_modules/d3-geo/src/projection/mercator.js"}],"../node_modules/d3-geo/src/index.js":[function(require,module,exports) {
+},{"../math.js":"JQgf","./mercator.js":"n0Ot"}],"Ah6W":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16549,7 +16383,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./area.js":"../node_modules/d3-geo/src/area.js","./bounds.js":"../node_modules/d3-geo/src/bounds.js","./centroid.js":"../node_modules/d3-geo/src/centroid.js","./circle.js":"../node_modules/d3-geo/src/circle.js","./clip/antimeridian.js":"../node_modules/d3-geo/src/clip/antimeridian.js","./clip/circle.js":"../node_modules/d3-geo/src/clip/circle.js","./clip/extent.js":"../node_modules/d3-geo/src/clip/extent.js","./clip/rectangle.js":"../node_modules/d3-geo/src/clip/rectangle.js","./contains.js":"../node_modules/d3-geo/src/contains.js","./distance.js":"../node_modules/d3-geo/src/distance.js","./graticule.js":"../node_modules/d3-geo/src/graticule.js","./interpolate.js":"../node_modules/d3-geo/src/interpolate.js","./length.js":"../node_modules/d3-geo/src/length.js","./path/index.js":"../node_modules/d3-geo/src/path/index.js","./projection/albers.js":"../node_modules/d3-geo/src/projection/albers.js","./projection/albersUsa.js":"../node_modules/d3-geo/src/projection/albersUsa.js","./projection/azimuthalEqualArea.js":"../node_modules/d3-geo/src/projection/azimuthalEqualArea.js","./projection/azimuthalEquidistant.js":"../node_modules/d3-geo/src/projection/azimuthalEquidistant.js","./projection/conicConformal.js":"../node_modules/d3-geo/src/projection/conicConformal.js","./projection/conicEqualArea.js":"../node_modules/d3-geo/src/projection/conicEqualArea.js","./projection/conicEquidistant.js":"../node_modules/d3-geo/src/projection/conicEquidistant.js","./projection/equalEarth.js":"../node_modules/d3-geo/src/projection/equalEarth.js","./projection/equirectangular.js":"../node_modules/d3-geo/src/projection/equirectangular.js","./projection/gnomonic.js":"../node_modules/d3-geo/src/projection/gnomonic.js","./projection/identity.js":"../node_modules/d3-geo/src/projection/identity.js","./projection/index.js":"../node_modules/d3-geo/src/projection/index.js","./projection/mercator.js":"../node_modules/d3-geo/src/projection/mercator.js","./projection/naturalEarth1.js":"../node_modules/d3-geo/src/projection/naturalEarth1.js","./projection/orthographic.js":"../node_modules/d3-geo/src/projection/orthographic.js","./projection/stereographic.js":"../node_modules/d3-geo/src/projection/stereographic.js","./projection/transverseMercator.js":"../node_modules/d3-geo/src/projection/transverseMercator.js","./rotation.js":"../node_modules/d3-geo/src/rotation.js","./stream.js":"../node_modules/d3-geo/src/stream.js","./transform.js":"../node_modules/d3-geo/src/transform.js"}],"../node_modules/d3-hierarchy/src/cluster.js":[function(require,module,exports) {
+},{"./area.js":"rKta","./bounds.js":"rw3L","./centroid.js":"GCsQ","./circle.js":"KcOR","./clip/antimeridian.js":"Gots","./clip/circle.js":"lcCJ","./clip/extent.js":"EodF","./clip/rectangle.js":"jRQA","./contains.js":"tRhb","./distance.js":"hTgK","./graticule.js":"IdZ0","./interpolate.js":"uuLr","./length.js":"bXUe","./path/index.js":"JRMk","./projection/albers.js":"cpQd","./projection/albersUsa.js":"RPZI","./projection/azimuthalEqualArea.js":"OyGo","./projection/azimuthalEquidistant.js":"mwct","./projection/conicConformal.js":"kVD1","./projection/conicEqualArea.js":"TNCf","./projection/conicEquidistant.js":"TJ85","./projection/equalEarth.js":"qrWJ","./projection/equirectangular.js":"RMXQ","./projection/gnomonic.js":"KVOo","./projection/identity.js":"XK0T","./projection/index.js":"Ktpb","./projection/mercator.js":"n0Ot","./projection/naturalEarth1.js":"Y5z7","./projection/orthographic.js":"UMbg","./projection/stereographic.js":"vfE9","./projection/transverseMercator.js":"o0eF","./rotation.js":"LqUY","./stream.js":"XQuq","./transform.js":"pfKH"}],"JRxK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16643,7 +16477,7 @@ function _default() {
 
   return cluster;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/count.js":[function(require,module,exports) {
+},{}],"FbP8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16662,7 +16496,7 @@ function count(node) {
 function _default() {
   return this.eachAfter(count);
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/each.js":[function(require,module,exports) {
+},{}],"aoO7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16691,7 +16525,7 @@ function _default(callback) {
 
   return this;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/eachBefore.js":[function(require,module,exports) {
+},{}],"vU7q":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16714,7 +16548,7 @@ function _default(callback) {
 
   return this;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/eachAfter.js":[function(require,module,exports) {
+},{}],"bidz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16743,7 +16577,7 @@ function _default(callback) {
 
   return this;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/sum.js":[function(require,module,exports) {
+},{}],"tYQG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16762,7 +16596,7 @@ function _default(value) {
     node.value = sum;
   });
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/sort.js":[function(require,module,exports) {
+},{}],"l55u":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16777,7 +16611,7 @@ function _default(compare) {
     }
   });
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/path.js":[function(require,module,exports) {
+},{}],"Rfs8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16821,7 +16655,7 @@ function leastCommonAncestor(a, b) {
 
   return c;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/ancestors.js":[function(require,module,exports) {
+},{}],"iENO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16839,7 +16673,7 @@ function _default() {
 
   return nodes;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/descendants.js":[function(require,module,exports) {
+},{}],"b4YN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16854,7 +16688,7 @@ function _default() {
   });
   return nodes;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/leaves.js":[function(require,module,exports) {
+},{}],"A1Sr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16871,7 +16705,7 @@ function _default() {
   });
   return leaves;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/links.js":[function(require,module,exports) {
+},{}],"NfF5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16893,7 +16727,7 @@ function _default() {
   });
   return links;
 }
-},{}],"../node_modules/d3-hierarchy/src/hierarchy/index.js":[function(require,module,exports) {
+},{}],"xn1B":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16994,7 +16828,7 @@ Node.prototype = hierarchy.prototype = {
   links: _links.default,
   copy: node_copy
 };
-},{"./count.js":"../node_modules/d3-hierarchy/src/hierarchy/count.js","./each.js":"../node_modules/d3-hierarchy/src/hierarchy/each.js","./eachBefore.js":"../node_modules/d3-hierarchy/src/hierarchy/eachBefore.js","./eachAfter.js":"../node_modules/d3-hierarchy/src/hierarchy/eachAfter.js","./sum.js":"../node_modules/d3-hierarchy/src/hierarchy/sum.js","./sort.js":"../node_modules/d3-hierarchy/src/hierarchy/sort.js","./path.js":"../node_modules/d3-hierarchy/src/hierarchy/path.js","./ancestors.js":"../node_modules/d3-hierarchy/src/hierarchy/ancestors.js","./descendants.js":"../node_modules/d3-hierarchy/src/hierarchy/descendants.js","./leaves.js":"../node_modules/d3-hierarchy/src/hierarchy/leaves.js","./links.js":"../node_modules/d3-hierarchy/src/hierarchy/links.js"}],"../node_modules/d3-hierarchy/src/array.js":[function(require,module,exports) {
+},{"./count.js":"FbP8","./each.js":"aoO7","./eachBefore.js":"vU7q","./eachAfter.js":"bidz","./sum.js":"tYQG","./sort.js":"l55u","./path.js":"Rfs8","./ancestors.js":"iENO","./descendants.js":"b4YN","./leaves.js":"A1Sr","./links.js":"NfF5"}],"aDgv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17019,7 +16853,7 @@ function shuffle(array) {
 
   return array;
 }
-},{}],"../node_modules/d3-hierarchy/src/pack/enclose.js":[function(require,module,exports) {
+},{}],"H7R8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17164,7 +16998,7 @@ function encloseBasis3(a, b, c) {
     r: r
   };
 }
-},{"../array.js":"../node_modules/d3-hierarchy/src/array.js"}],"../node_modules/d3-hierarchy/src/pack/siblings.js":[function(require,module,exports) {
+},{"../array.js":"aDgv"}],"ObEg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17301,7 +17135,7 @@ function _default(circles) {
   packEnclose(circles);
   return circles;
 }
-},{"./enclose.js":"../node_modules/d3-hierarchy/src/pack/enclose.js"}],"../node_modules/d3-hierarchy/src/accessors.js":[function(require,module,exports) {
+},{"./enclose.js":"H7R8"}],"kxuB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17318,7 +17152,7 @@ function required(f) {
   if (typeof f !== "function") throw new Error();
   return f;
 }
-},{}],"../node_modules/d3-hierarchy/src/constant.js":[function(require,module,exports) {
+},{}],"JuqG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17336,7 +17170,7 @@ function _default(x) {
     return x;
   };
 }
-},{}],"../node_modules/d3-hierarchy/src/pack/index.js":[function(require,module,exports) {
+},{}],"fIYd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17426,7 +17260,7 @@ function translateChild(k) {
     }
   };
 }
-},{"./siblings.js":"../node_modules/d3-hierarchy/src/pack/siblings.js","../accessors.js":"../node_modules/d3-hierarchy/src/accessors.js","../constant.js":"../node_modules/d3-hierarchy/src/constant.js"}],"../node_modules/d3-hierarchy/src/treemap/round.js":[function(require,module,exports) {
+},{"./siblings.js":"ObEg","../accessors.js":"kxuB","../constant.js":"JuqG"}],"kcDz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17440,7 +17274,7 @@ function _default(node) {
   node.x1 = Math.round(node.x1);
   node.y1 = Math.round(node.y1);
 }
-},{}],"../node_modules/d3-hierarchy/src/treemap/dice.js":[function(require,module,exports) {
+},{}],"Z1AK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17460,7 +17294,7 @@ function _default(parent, x0, y0, x1, y1) {
     node.x0 = x0, node.x1 = x0 += node.value * k;
   }
 }
-},{}],"../node_modules/d3-hierarchy/src/partition.js":[function(require,module,exports) {
+},{}],"ekbw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17523,7 +17357,7 @@ function _default() {
 
   return partition;
 }
-},{"./treemap/round.js":"../node_modules/d3-hierarchy/src/treemap/round.js","./treemap/dice.js":"../node_modules/d3-hierarchy/src/treemap/dice.js"}],"../node_modules/d3-hierarchy/src/stratify.js":[function(require,module,exports) {
+},{"./treemap/round.js":"kcDz","./treemap/dice.js":"Z1AK"}],"fM3r":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17611,7 +17445,7 @@ function _default() {
 
   return stratify;
 }
-},{"./accessors.js":"../node_modules/d3-hierarchy/src/accessors.js","./hierarchy/index.js":"../node_modules/d3-hierarchy/src/hierarchy/index.js"}],"../node_modules/d3-hierarchy/src/tree.js":[function(require,module,exports) {
+},{"./accessors.js":"kxuB","./hierarchy/index.js":"xn1B"}],"xQqP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17868,7 +17702,7 @@ function _default() {
 
   return tree;
 }
-},{"./hierarchy/index.js":"../node_modules/d3-hierarchy/src/hierarchy/index.js"}],"../node_modules/d3-hierarchy/src/treemap/slice.js":[function(require,module,exports) {
+},{"./hierarchy/index.js":"xn1B"}],"XP76":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17888,7 +17722,7 @@ function _default(parent, x0, y0, x1, y1) {
     node.y0 = y0, node.y1 = y0 += node.value * k;
   }
 }
-},{}],"../node_modules/d3-hierarchy/src/treemap/squarify.js":[function(require,module,exports) {
+},{}],"sjir":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17976,7 +17810,7 @@ var _default = function custom(ratio) {
 }(phi);
 
 exports.default = _default;
-},{"./dice.js":"../node_modules/d3-hierarchy/src/treemap/dice.js","./slice.js":"../node_modules/d3-hierarchy/src/treemap/slice.js"}],"../node_modules/d3-hierarchy/src/treemap/index.js":[function(require,module,exports) {
+},{"./dice.js":"Z1AK","./slice.js":"XP76"}],"dRX5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18087,7 +17921,7 @@ function _default() {
 
   return treemap;
 }
-},{"./round.js":"../node_modules/d3-hierarchy/src/treemap/round.js","./squarify.js":"../node_modules/d3-hierarchy/src/treemap/squarify.js","../accessors.js":"../node_modules/d3-hierarchy/src/accessors.js","../constant.js":"../node_modules/d3-hierarchy/src/constant.js"}],"../node_modules/d3-hierarchy/src/treemap/binary.js":[function(require,module,exports) {
+},{"./round.js":"kcDz","./squarify.js":"sjir","../accessors.js":"kxuB","../constant.js":"JuqG"}],"dNVH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18141,7 +17975,7 @@ function _default(parent, x0, y0, x1, y1) {
     }
   }
 }
-},{}],"../node_modules/d3-hierarchy/src/treemap/sliceDice.js":[function(require,module,exports) {
+},{}],"rOuR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18158,7 +17992,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(parent, x0, y0, x1, y1) {
   (parent.depth & 1 ? _slice.default : _dice.default)(parent, x0, y0, x1, y1);
 }
-},{"./dice.js":"../node_modules/d3-hierarchy/src/treemap/dice.js","./slice.js":"../node_modules/d3-hierarchy/src/treemap/slice.js"}],"../node_modules/d3-hierarchy/src/treemap/resquarify.js":[function(require,module,exports) {
+},{"./dice.js":"Z1AK","./slice.js":"XP76"}],"XhZ5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18208,7 +18042,7 @@ var _default = function custom(ratio) {
 }(_squarify.phi);
 
 exports.default = _default;
-},{"./dice.js":"../node_modules/d3-hierarchy/src/treemap/dice.js","./slice.js":"../node_modules/d3-hierarchy/src/treemap/slice.js","./squarify.js":"../node_modules/d3-hierarchy/src/treemap/squarify.js"}],"../node_modules/d3-hierarchy/src/index.js":[function(require,module,exports) {
+},{"./dice.js":"Z1AK","./slice.js":"XP76","./squarify.js":"sjir"}],"Kps6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18336,7 +18170,7 @@ var _squarify = _interopRequireDefault(require("./treemap/squarify.js"));
 var _resquarify = _interopRequireDefault(require("./treemap/resquarify.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./cluster.js":"../node_modules/d3-hierarchy/src/cluster.js","./hierarchy/index.js":"../node_modules/d3-hierarchy/src/hierarchy/index.js","./pack/index.js":"../node_modules/d3-hierarchy/src/pack/index.js","./pack/siblings.js":"../node_modules/d3-hierarchy/src/pack/siblings.js","./pack/enclose.js":"../node_modules/d3-hierarchy/src/pack/enclose.js","./partition.js":"../node_modules/d3-hierarchy/src/partition.js","./stratify.js":"../node_modules/d3-hierarchy/src/stratify.js","./tree.js":"../node_modules/d3-hierarchy/src/tree.js","./treemap/index.js":"../node_modules/d3-hierarchy/src/treemap/index.js","./treemap/binary.js":"../node_modules/d3-hierarchy/src/treemap/binary.js","./treemap/dice.js":"../node_modules/d3-hierarchy/src/treemap/dice.js","./treemap/slice.js":"../node_modules/d3-hierarchy/src/treemap/slice.js","./treemap/sliceDice.js":"../node_modules/d3-hierarchy/src/treemap/sliceDice.js","./treemap/squarify.js":"../node_modules/d3-hierarchy/src/treemap/squarify.js","./treemap/resquarify.js":"../node_modules/d3-hierarchy/src/treemap/resquarify.js"}],"../node_modules/d3-polygon/src/area.js":[function(require,module,exports) {
+},{"./cluster.js":"JRxK","./hierarchy/index.js":"xn1B","./pack/index.js":"fIYd","./pack/siblings.js":"ObEg","./pack/enclose.js":"H7R8","./partition.js":"ekbw","./stratify.js":"fM3r","./tree.js":"xQqP","./treemap/index.js":"dRX5","./treemap/binary.js":"dNVH","./treemap/dice.js":"Z1AK","./treemap/slice.js":"XP76","./treemap/sliceDice.js":"rOuR","./treemap/squarify.js":"sjir","./treemap/resquarify.js":"XhZ5"}],"lAFu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18359,7 +18193,7 @@ function _default(polygon) {
 
   return area / 2;
 }
-},{}],"../node_modules/d3-polygon/src/centroid.js":[function(require,module,exports) {
+},{}],"CP3F":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18387,7 +18221,7 @@ function _default(polygon) {
 
   return k *= 3, [x / k, y / k];
 }
-},{}],"../node_modules/d3-polygon/src/cross.js":[function(require,module,exports) {
+},{}],"zVqT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18402,7 +18236,7 @@ exports.default = _default;
 function _default(a, b, c) {
   return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]);
 }
-},{}],"../node_modules/d3-polygon/src/hull.js":[function(require,module,exports) {
+},{}],"Q16x":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18462,7 +18296,7 @@ function _default(points) {
 
   return hull;
 }
-},{"./cross.js":"../node_modules/d3-polygon/src/cross.js"}],"../node_modules/d3-polygon/src/contains.js":[function(require,module,exports) {
+},{"./cross.js":"zVqT"}],"tuiT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18489,7 +18323,7 @@ function _default(polygon, point) {
 
   return inside;
 }
-},{}],"../node_modules/d3-polygon/src/length.js":[function(require,module,exports) {
+},{}],"AReD":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18520,7 +18354,7 @@ function _default(polygon) {
 
   return perimeter;
 }
-},{}],"../node_modules/d3-polygon/src/index.js":[function(require,module,exports) {
+},{}],"H15P":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18568,7 +18402,7 @@ var _contains = _interopRequireDefault(require("./contains.js"));
 var _length = _interopRequireDefault(require("./length.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./area.js":"../node_modules/d3-polygon/src/area.js","./centroid.js":"../node_modules/d3-polygon/src/centroid.js","./hull.js":"../node_modules/d3-polygon/src/hull.js","./contains.js":"../node_modules/d3-polygon/src/contains.js","./length.js":"../node_modules/d3-polygon/src/length.js"}],"../node_modules/d3-random/src/defaultSource.js":[function(require,module,exports) {
+},{"./area.js":"lAFu","./centroid.js":"CP3F","./hull.js":"Q16x","./contains.js":"tuiT","./length.js":"AReD"}],"m3Qw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18579,7 +18413,7 @@ exports.default = _default;
 function _default() {
   return Math.random();
 }
-},{}],"../node_modules/d3-random/src/uniform.js":[function(require,module,exports) {
+},{}],"j5my":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18606,7 +18440,7 @@ var _default = function sourceRandomUniform(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js"}],"../node_modules/d3-random/src/normal.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw"}],"rHsL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18641,7 +18475,7 @@ var _default = function sourceRandomNormal(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js"}],"../node_modules/d3-random/src/logNormal.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw"}],"egwl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18669,7 +18503,7 @@ var _default = function sourceRandomLogNormal(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js","./normal":"../node_modules/d3-random/src/normal.js"}],"../node_modules/d3-random/src/irwinHall.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw","./normal":"rHsL"}],"xpLv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18695,7 +18529,7 @@ var _default = function sourceRandomIrwinHall(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js"}],"../node_modules/d3-random/src/bates.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw"}],"th5P":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18723,7 +18557,7 @@ var _default = function sourceRandomBates(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js","./irwinHall":"../node_modules/d3-random/src/irwinHall.js"}],"../node_modules/d3-random/src/exponential.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw","./irwinHall":"xpLv"}],"r4q1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18747,7 +18581,7 @@ var _default = function sourceRandomExponential(source) {
 }(_defaultSource.default);
 
 exports.default = _default;
-},{"./defaultSource":"../node_modules/d3-random/src/defaultSource.js"}],"../node_modules/d3-random/src/index.js":[function(require,module,exports) {
+},{"./defaultSource":"m3Qw"}],"Gz2j":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18803,7 +18637,7 @@ var _irwinHall = _interopRequireDefault(require("./irwinHall"));
 var _exponential = _interopRequireDefault(require("./exponential"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./uniform":"../node_modules/d3-random/src/uniform.js","./normal":"../node_modules/d3-random/src/normal.js","./logNormal":"../node_modules/d3-random/src/logNormal.js","./bates":"../node_modules/d3-random/src/bates.js","./irwinHall":"../node_modules/d3-random/src/irwinHall.js","./exponential":"../node_modules/d3-random/src/exponential.js"}],"../node_modules/d3-scale/src/init.js":[function(require,module,exports) {
+},{"./uniform":"j5my","./normal":"rHsL","./logNormal":"egwl","./bates":"th5P","./irwinHall":"xpLv","./exponential":"r4q1"}],"buZa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18845,7 +18679,7 @@ function initInterpolator(domain, interpolator) {
 
   return this;
 }
-},{}],"../node_modules/d3-scale/src/array.js":[function(require,module,exports) {
+},{}],"qoMs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18857,7 +18691,7 @@ var map = array.map;
 exports.map = map;
 var slice = array.slice;
 exports.slice = slice;
-},{}],"../node_modules/d3-scale/src/ordinal.js":[function(require,module,exports) {
+},{}],"GjLX":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18924,7 +18758,7 @@ function ordinal() {
 
   return scale;
 }
-},{"d3-collection":"../node_modules/d3-collection/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/band.js":[function(require,module,exports) {
+},{"d3-collection":"S3hn","./array":"qoMs","./init":"buZa"}],"BAgl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19033,20 +18867,7 @@ function pointish(scale) {
 function point() {
   return pointish(band.apply(null, arguments).paddingInner(1));
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./init":"../node_modules/d3-scale/src/init.js","./ordinal":"../node_modules/d3-scale/src/ordinal.js"}],"../node_modules/d3-scale/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-scale/src/number.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./init":"buZa","./ordinal":"GjLX"}],"FNaI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19057,7 +18878,7 @@ exports.default = _default;
 function _default(x) {
   return +x;
 }
-},{}],"../node_modules/d3-scale/src/continuous.js":[function(require,module,exports) {
+},{}],"CjJ5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19200,7 +19021,7 @@ function transformer() {
 function continuous(transform, untransform) {
   return transformer()(transform, untransform);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./constant":"../node_modules/d3-scale/src/constant.js","./number":"../node_modules/d3-scale/src/number.js"}],"../node_modules/d3-scale/src/tickFormat.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","d3-interpolate":"k9aH","./array":"qoMs","./constant":"aCvo","./number":"FNaI"}],"qjRa":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19245,7 +19066,7 @@ function _default(start, stop, count, specifier) {
 
   return (0, _d3Format.format)(specifier);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","d3-format":"../node_modules/d3-format/src/index.js"}],"../node_modules/d3-scale/src/linear.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","d3-format":"VuZR"}],"LIJk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19334,7 +19155,7 @@ function linear() {
 
   return linearish(scale);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js","./tickFormat":"../node_modules/d3-scale/src/tickFormat.js"}],"../node_modules/d3-scale/src/identity.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./continuous":"CjJ5","./init":"buZa","./tickFormat":"qjRa"}],"FKHe":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19374,7 +19195,7 @@ function identity(domain) {
   domain = arguments.length ? _array.map.call(domain, _number.default) : [0, 1];
   return (0, _linear.linearish)(scale);
 }
-},{"./array":"../node_modules/d3-scale/src/array.js","./linear":"../node_modules/d3-scale/src/linear.js","./number":"../node_modules/d3-scale/src/number.js"}],"../node_modules/d3-scale/src/nice.js":[function(require,module,exports) {
+},{"./array":"qoMs","./linear":"LIJk","./number":"FNaI"}],"eMTM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19399,7 +19220,7 @@ function _default(domain, interval) {
   domain[i1] = interval.ceil(x1);
   return domain;
 }
-},{}],"../node_modules/d3-scale/src/log.js":[function(require,module,exports) {
+},{}],"ea59":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19563,7 +19384,7 @@ function log() {
 
   return scale;
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","d3-format":"../node_modules/d3-format/src/index.js","./nice":"../node_modules/d3-scale/src/nice.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/symlog.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","d3-format":"VuZR","./nice":"eMTM","./continuous":"CjJ5","./init":"buZa"}],"nanU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19610,7 +19431,7 @@ function symlog() {
 
   return _init.initRange.apply(scale, arguments);
 }
-},{"./linear":"../node_modules/d3-scale/src/linear.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/pow.js":[function(require,module,exports) {
+},{"./linear":"LIJk","./continuous":"CjJ5","./init":"buZa"}],"xeRN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19670,7 +19491,7 @@ function pow() {
 function sqrt() {
   return pow.apply(null, arguments).exponent(0.5);
 }
-},{"./linear":"../node_modules/d3-scale/src/linear.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/quantile.js":[function(require,module,exports) {
+},{"./linear":"LIJk","./continuous":"CjJ5","./init":"buZa"}],"AGCd":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19737,7 +19558,7 @@ function quantile() {
 
   return _init.initRange.apply(scale, arguments);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/quantize.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./array":"qoMs","./init":"buZa"}],"d6Xk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19801,7 +19622,7 @@ function quantize() {
 
   return _init.initRange.apply((0, _linear.linearish)(scale), arguments);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./linear":"../node_modules/d3-scale/src/linear.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/threshold.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./array":"qoMs","./linear":"LIJk","./init":"buZa"}],"I63C":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19848,7 +19669,7 @@ function threshold() {
 
   return _init.initRange.apply(scale, arguments);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-time/src/interval.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./array":"qoMs","./init":"buZa"}],"QFUQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19928,7 +19749,7 @@ function newInterval(floori, offseti, count, field) {
 
   return interval;
 }
-},{}],"../node_modules/d3-time/src/millisecond.js":[function(require,module,exports) {
+},{}],"WVmH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19964,7 +19785,7 @@ var _default = millisecond;
 exports.default = _default;
 var milliseconds = millisecond.range;
 exports.milliseconds = milliseconds;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js"}],"../node_modules/d3-time/src/duration.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ"}],"Vnta":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19981,7 +19802,7 @@ var durationDay = 864e5;
 exports.durationDay = durationDay;
 var durationWeek = 6048e5;
 exports.durationWeek = durationWeek;
-},{}],"../node_modules/d3-time/src/second.js":[function(require,module,exports) {
+},{}],"AYLw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20008,7 +19829,7 @@ var _default = second;
 exports.default = _default;
 var seconds = second.range;
 exports.seconds = seconds;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/minute.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"etD9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20035,7 +19856,7 @@ var _default = minute;
 exports.default = _default;
 var minutes = minute.range;
 exports.minutes = minutes;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/hour.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"py4n":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20062,7 +19883,7 @@ var _default = hour;
 exports.default = _default;
 var hours = hour.range;
 exports.hours = hours;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/day.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"LWrz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20089,7 +19910,7 @@ var _default = day;
 exports.default = _default;
 var days = day.range;
 exports.days = days;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/week.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"Dweu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20142,7 +19963,7 @@ var fridays = friday.range;
 exports.fridays = fridays;
 var saturdays = saturday.range;
 exports.saturdays = saturdays;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/month.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"gOAO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20168,7 +19989,7 @@ var _default = month;
 exports.default = _default;
 var months = month.range;
 exports.months = months;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js"}],"../node_modules/d3-time/src/year.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ"}],"kReM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20205,7 +20026,7 @@ var _default = year;
 exports.default = _default;
 var years = year.range;
 exports.years = years;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js"}],"../node_modules/d3-time/src/utcMinute.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ"}],"O6lW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20232,7 +20053,7 @@ var _default = utcMinute;
 exports.default = _default;
 var utcMinutes = utcMinute.range;
 exports.utcMinutes = utcMinutes;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/utcHour.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"qnVA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20259,7 +20080,7 @@ var _default = utcHour;
 exports.default = _default;
 var utcHours = utcHour.range;
 exports.utcHours = utcHours;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/utcDay.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"HXiV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20286,7 +20107,7 @@ var _default = utcDay;
 exports.default = _default;
 var utcDays = utcDay.range;
 exports.utcDays = utcDays;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/utcWeek.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"CRXo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20339,7 +20160,7 @@ var utcFridays = utcFriday.range;
 exports.utcFridays = utcFridays;
 var utcSaturdays = utcSaturday.range;
 exports.utcSaturdays = utcSaturdays;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./duration.js":"../node_modules/d3-time/src/duration.js"}],"../node_modules/d3-time/src/utcMonth.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./duration.js":"Vnta"}],"EphR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20365,7 +20186,7 @@ var _default = utcMonth;
 exports.default = _default;
 var utcMonths = utcMonth.range;
 exports.utcMonths = utcMonths;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js"}],"../node_modules/d3-time/src/utcYear.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ"}],"Abfv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20402,7 +20223,7 @@ var _default = utcYear;
 exports.default = _default;
 var utcYears = utcYear.range;
 exports.utcYears = utcYears;
-},{"./interval.js":"../node_modules/d3-time/src/interval.js"}],"../node_modules/d3-time/src/index.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ"}],"hQYG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20810,7 +20631,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./interval.js":"../node_modules/d3-time/src/interval.js","./millisecond.js":"../node_modules/d3-time/src/millisecond.js","./second.js":"../node_modules/d3-time/src/second.js","./minute.js":"../node_modules/d3-time/src/minute.js","./hour.js":"../node_modules/d3-time/src/hour.js","./day.js":"../node_modules/d3-time/src/day.js","./week.js":"../node_modules/d3-time/src/week.js","./month.js":"../node_modules/d3-time/src/month.js","./year.js":"../node_modules/d3-time/src/year.js","./utcMinute.js":"../node_modules/d3-time/src/utcMinute.js","./utcHour.js":"../node_modules/d3-time/src/utcHour.js","./utcDay.js":"../node_modules/d3-time/src/utcDay.js","./utcWeek.js":"../node_modules/d3-time/src/utcWeek.js","./utcMonth.js":"../node_modules/d3-time/src/utcMonth.js","./utcYear.js":"../node_modules/d3-time/src/utcYear.js"}],"../node_modules/d3-time-format/src/locale.js":[function(require,module,exports) {
+},{"./interval.js":"QFUQ","./millisecond.js":"WVmH","./second.js":"AYLw","./minute.js":"etD9","./hour.js":"py4n","./day.js":"LWrz","./week.js":"Dweu","./month.js":"gOAO","./year.js":"kReM","./utcMinute.js":"O6lW","./utcHour.js":"qnVA","./utcDay.js":"HXiV","./utcWeek.js":"CRXo","./utcMonth.js":"EphR","./utcYear.js":"Abfv"}],"UbHU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21494,7 +21315,7 @@ function formatUnixTimestamp(d) {
 function formatUnixTimestampSeconds(d) {
   return Math.floor(+d / 1000);
 }
-},{"d3-time":"../node_modules/d3-time/src/index.js"}],"../node_modules/d3-time-format/src/defaultLocale.js":[function(require,module,exports) {
+},{"d3-time":"hQYG"}],"csjH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21535,7 +21356,7 @@ function defaultLocale(definition) {
   exports.utcParse = utcParse = locale.utcParse;
   return locale;
 }
-},{"./locale.js":"../node_modules/d3-time-format/src/locale.js"}],"../node_modules/d3-time-format/src/isoFormat.js":[function(require,module,exports) {
+},{"./locale.js":"UbHU"}],"PKKZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21555,7 +21376,7 @@ function formatIsoNative(date) {
 var formatIso = Date.prototype.toISOString ? formatIsoNative : (0, _defaultLocale.utcFormat)(isoSpecifier);
 var _default = formatIso;
 exports.default = _default;
-},{"./defaultLocale.js":"../node_modules/d3-time-format/src/defaultLocale.js"}],"../node_modules/d3-time-format/src/isoParse.js":[function(require,module,exports) {
+},{"./defaultLocale.js":"csjH"}],"d4jk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21575,7 +21396,7 @@ function parseIsoNative(string) {
 var parseIso = +new Date("2000-01-01T00:00:00.000Z") ? parseIsoNative : (0, _defaultLocale.utcParse)(_isoFormat.isoSpecifier);
 var _default = parseIso;
 exports.default = _default;
-},{"./isoFormat.js":"../node_modules/d3-time-format/src/isoFormat.js","./defaultLocale.js":"../node_modules/d3-time-format/src/defaultLocale.js"}],"../node_modules/d3-time-format/src/index.js":[function(require,module,exports) {
+},{"./isoFormat.js":"PKKZ","./defaultLocale.js":"csjH"}],"UYpZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21643,7 +21464,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./defaultLocale.js":"../node_modules/d3-time-format/src/defaultLocale.js","./locale.js":"../node_modules/d3-time-format/src/locale.js","./isoFormat.js":"../node_modules/d3-time-format/src/isoFormat.js","./isoParse.js":"../node_modules/d3-time-format/src/isoParse.js"}],"../node_modules/d3-scale/src/time.js":[function(require,module,exports) {
+},{"./defaultLocale.js":"csjH","./locale.js":"UbHU","./isoFormat.js":"PKKZ","./isoParse.js":"d4jk"}],"kVXt":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21773,7 +21594,7 @@ function calendar(year, month, week, day, hour, minute, second, millisecond, for
 function _default() {
   return _init.initRange.apply(calendar(_d3Time.timeYear, _d3Time.timeMonth, _d3Time.timeWeek, _d3Time.timeDay, _d3Time.timeHour, _d3Time.timeMinute, _d3Time.timeSecond, _d3Time.timeMillisecond, _d3TimeFormat.timeFormat).domain([new Date(2000, 0, 1), new Date(2000, 0, 2)]), arguments);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","d3-time":"../node_modules/d3-time/src/index.js","d3-time-format":"../node_modules/d3-time-format/src/index.js","./array":"../node_modules/d3-scale/src/array.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js","./nice":"../node_modules/d3-scale/src/nice.js"}],"../node_modules/d3-scale/src/utcTime.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","d3-time":"hQYG","d3-time-format":"UYpZ","./array":"qoMs","./continuous":"CjJ5","./init":"buZa","./nice":"eMTM"}],"WrbA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21792,7 +21613,7 @@ var _init = require("./init");
 function _default() {
   return _init.initRange.apply((0, _time.calendar)(_d3Time.utcYear, _d3Time.utcMonth, _d3Time.utcWeek, _d3Time.utcDay, _d3Time.utcHour, _d3Time.utcMinute, _d3Time.utcSecond, _d3Time.utcMillisecond, _d3TimeFormat.utcFormat).domain([Date.UTC(2000, 0, 1), Date.UTC(2000, 0, 2)]), arguments);
 }
-},{"./time":"../node_modules/d3-scale/src/time.js","d3-time-format":"../node_modules/d3-time-format/src/index.js","d3-time":"../node_modules/d3-time/src/index.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/sequential.js":[function(require,module,exports) {
+},{"./time":"kVXt","d3-time-format":"UYpZ","d3-time":"hQYG","./init":"buZa"}],"J7VY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21901,7 +21722,7 @@ function sequentialPow() {
 function sequentialSqrt() {
   return sequentialPow.apply(null, arguments).exponent(0.5);
 }
-},{"./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js","./linear":"../node_modules/d3-scale/src/linear.js","./log":"../node_modules/d3-scale/src/log.js","./symlog":"../node_modules/d3-scale/src/symlog.js","./pow":"../node_modules/d3-scale/src/pow.js"}],"../node_modules/d3-scale/src/sequentialQuantile.js":[function(require,module,exports) {
+},{"./continuous":"CjJ5","./init":"buZa","./linear":"LIJk","./log":"ea59","./symlog":"nanU","./pow":"xeRN"}],"XYTZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21943,7 +21764,7 @@ function sequentialQuantile() {
 
   return _init.initInterpolator.apply(scale, arguments);
 }
-},{"d3-array":"../node_modules/d3-array/src/index.js","./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js"}],"../node_modules/d3-scale/src/diverging.js":[function(require,module,exports) {
+},{"d3-array":"K0bd","./continuous":"CjJ5","./init":"buZa"}],"CLse":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22052,7 +21873,7 @@ function divergingPow() {
 function divergingSqrt() {
   return divergingPow.apply(null, arguments).exponent(0.5);
 }
-},{"./continuous":"../node_modules/d3-scale/src/continuous.js","./init":"../node_modules/d3-scale/src/init.js","./linear":"../node_modules/d3-scale/src/linear.js","./log":"../node_modules/d3-scale/src/log.js","./sequential":"../node_modules/d3-scale/src/sequential.js","./symlog":"../node_modules/d3-scale/src/symlog.js","./pow":"../node_modules/d3-scale/src/pow.js"}],"../node_modules/d3-scale/src/index.js":[function(require,module,exports) {
+},{"./continuous":"CjJ5","./init":"buZa","./linear":"LIJk","./log":"ea59","./sequential":"J7VY","./symlog":"nanU","./pow":"xeRN"}],"zL2z":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22258,7 +22079,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./band":"../node_modules/d3-scale/src/band.js","./identity":"../node_modules/d3-scale/src/identity.js","./linear":"../node_modules/d3-scale/src/linear.js","./log":"../node_modules/d3-scale/src/log.js","./symlog":"../node_modules/d3-scale/src/symlog.js","./ordinal":"../node_modules/d3-scale/src/ordinal.js","./pow":"../node_modules/d3-scale/src/pow.js","./quantile":"../node_modules/d3-scale/src/quantile.js","./quantize":"../node_modules/d3-scale/src/quantize.js","./threshold":"../node_modules/d3-scale/src/threshold.js","./time":"../node_modules/d3-scale/src/time.js","./utcTime":"../node_modules/d3-scale/src/utcTime.js","./sequential":"../node_modules/d3-scale/src/sequential.js","./sequentialQuantile":"../node_modules/d3-scale/src/sequentialQuantile.js","./diverging":"../node_modules/d3-scale/src/diverging.js","./tickFormat":"../node_modules/d3-scale/src/tickFormat.js"}],"../node_modules/d3-scale-chromatic/src/colors.js":[function(require,module,exports) {
+},{"./band":"BAgl","./identity":"FKHe","./linear":"LIJk","./log":"ea59","./symlog":"nanU","./ordinal":"GjLX","./pow":"xeRN","./quantile":"AGCd","./quantize":"d6Xk","./threshold":"I63C","./time":"kVXt","./utcTime":"WrbA","./sequential":"J7VY","./sequentialQuantile":"XYTZ","./diverging":"CLse","./tickFormat":"qjRa"}],"xz73":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22275,7 +22096,7 @@ function _default(specifier) {
 
   return colors;
 }
-},{}],"../node_modules/d3-scale-chromatic/src/categorical/category10.js":[function(require,module,exports) {
+},{}],"dTYe":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22290,7 +22111,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("1f77b4ff7f0e2ca02cd627289467bd8c564be377c27f7f7fbcbd2217becf");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Accent.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"o8vx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22305,7 +22126,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("7fc97fbeaed4fdc086ffff99386cb0f0027fbf5b17666666");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Dark2.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"regV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22320,7 +22141,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("1b9e77d95f027570b3e7298a66a61ee6ab02a6761d666666");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Paired.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"E9sC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22335,7 +22156,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("a6cee31f78b4b2df8a33a02cfb9a99e31a1cfdbf6fff7f00cab2d66a3d9affff99b15928");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Pastel1.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"RCRU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22350,7 +22171,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("fbb4aeb3cde3ccebc5decbe4fed9a6ffffcce5d8bdfddaecf2f2f2");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Pastel2.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"QfGF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22365,7 +22186,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("b3e2cdfdcdaccbd5e8f4cae4e6f5c9fff2aef1e2cccccccc");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Set1.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"IldB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22380,7 +22201,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("e41a1c377eb84daf4a984ea3ff7f00ffff33a65628f781bf999999");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Set2.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"KR9o":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22395,7 +22216,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("66c2a5fc8d628da0cbe78ac3a6d854ffd92fe5c494b3b3b3");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Set3.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"XNXw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22410,7 +22231,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("8dd3c7ffffb3bebadafb807280b1d3fdb462b3de69fccde5d9d9d9bc80bdccebc5ffed6f");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/categorical/Tableau10.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"FyyB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22425,7 +22246,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _colors.default)("4e79a7f28e2ce1575976b7b259a14fedc949af7aa1ff9da79c755fbab0ab");
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/ramp.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"MNyl":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22438,7 +22259,7 @@ var _d3Interpolate = require("d3-interpolate");
 function _default(scheme) {
   return (0, _d3Interpolate.interpolateRgbBasis)(scheme[scheme.length - 1]);
 }
-},{"d3-interpolate":"../node_modules/d3-interpolate/src/index.js"}],"../node_modules/d3-scale-chromatic/src/diverging/BrBG.js":[function(require,module,exports) {
+},{"d3-interpolate":"k9aH"}],"ArEB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22458,7 +22279,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/PRGn.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"kzYK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22478,7 +22299,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/PiYG.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"PI8x":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22498,7 +22319,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/PuOr.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"h8TC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22518,7 +22339,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/RdBu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"i3rG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22538,7 +22359,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/RdGy.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"WaJg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22558,7 +22379,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/RdYlBu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"JvsS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22578,7 +22399,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/RdYlGn.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"K9lw":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22598,7 +22419,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/diverging/Spectral.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"rXym":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22618,7 +22439,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/BuGn.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"KGBO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22638,7 +22459,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/BuPu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"lAoh":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22658,7 +22479,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/GnBu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"ZoIf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22678,7 +22499,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/OrRd.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"SiOD":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22698,7 +22519,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/PuBuGn.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"vp6S":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22718,7 +22539,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/PuBu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"Wfss":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22738,7 +22559,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/PuRd.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"NZPG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22758,7 +22579,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/RdPu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"fzkB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22778,7 +22599,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/YlGnBu.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"fL1Z":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22798,7 +22619,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/YlGn.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"xEGO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22818,7 +22639,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/YlOrBr.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"BmdO":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22838,7 +22659,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/YlOrRd.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"SHo5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22858,7 +22679,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Blues.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"jpg6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22878,7 +22699,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Greens.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"rjqF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22898,7 +22719,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Greys.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"x8Iu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22918,7 +22739,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Purples.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"MJdW":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22938,7 +22759,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Reds.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"DiEh":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22958,7 +22779,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-single/Oranges.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"O9hI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22978,7 +22799,7 @@ exports.scheme = scheme;
 var _default = (0, _ramp.default)(scheme);
 
 exports.default = _default;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js","../ramp.js":"../node_modules/d3-scale-chromatic/src/ramp.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/cividis.js":[function(require,module,exports) {
+},{"../colors.js":"xz73","../ramp.js":"MNyl"}],"SaPT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22990,7 +22811,7 @@ function _default(t) {
   t = Math.max(0, Math.min(1, t));
   return "rgb(" + Math.max(0, Math.min(255, Math.round(-4.54 - t * (35.34 - t * (2381.73 - t * (6402.7 - t * (7024.72 - t * 2710.57))))))) + ", " + Math.max(0, Math.min(255, Math.round(32.49 + t * (170.73 + t * (52.82 - t * (131.46 - t * (176.58 - t * 67.37))))))) + ", " + Math.max(0, Math.min(255, Math.round(81.24 + t * (442.36 - t * (2482.43 - t * (6167.24 - t * (6614.94 - t * 2475.67))))))) + ")";
 }
-},{}],"../node_modules/d3-scale-chromatic/src/sequential-multi/cubehelix.js":[function(require,module,exports) {
+},{}],"cI87":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23005,7 +22826,7 @@ var _d3Interpolate = require("d3-interpolate");
 var _default = (0, _d3Interpolate.interpolateCubehelixLong)((0, _d3Color.cubehelix)(300, 0.5, 0.0), (0, _d3Color.cubehelix)(-240, 0.5, 1.0));
 
 exports.default = _default;
-},{"d3-color":"../node_modules/d3-color/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/rainbow.js":[function(require,module,exports) {
+},{"d3-color":"Peej","d3-interpolate":"k9aH"}],"BkJF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23032,7 +22853,7 @@ function _default(t) {
   c.l = 0.8 - 0.9 * ts;
   return c + "";
 }
-},{"d3-color":"../node_modules/d3-color/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/sinebow.js":[function(require,module,exports) {
+},{"d3-color":"Peej","d3-interpolate":"k9aH"}],"ZXMu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23054,7 +22875,7 @@ function _default(t) {
   c.b = 255 * (x = Math.sin(t + pi_2_3)) * x;
   return c + "";
 }
-},{"d3-color":"../node_modules/d3-color/src/index.js"}],"../node_modules/d3-scale-chromatic/src/sequential-multi/turbo.js":[function(require,module,exports) {
+},{"d3-color":"Peej"}],"PX18":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23066,7 +22887,7 @@ function _default(t) {
   t = Math.max(0, Math.min(1, t));
   return "rgb(" + Math.max(0, Math.min(255, Math.round(34.61 + t * (1172.33 - t * (10793.56 - t * (33300.12 - t * (38394.49 - t * 14825.05))))))) + ", " + Math.max(0, Math.min(255, Math.round(23.31 + t * (557.33 + t * (1225.33 - t * (3574.96 - t * (1073.77 + t * 707.56))))))) + ", " + Math.max(0, Math.min(255, Math.round(27.2 + t * (3211.1 - t * (15327.97 - t * (27814 - t * (22569.18 - t * 6838.66))))))) + ")";
 }
-},{}],"../node_modules/d3-scale-chromatic/src/sequential-multi/viridis.js":[function(require,module,exports) {
+},{}],"SfG7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23094,7 +22915,7 @@ var inferno = ramp((0, _colors.default)("00000401000501010601010802010a02020c020
 exports.inferno = inferno;
 var plasma = ramp((0, _colors.default)("0d088710078813078916078a19068c1b068d1d068e20068f2206902406912605912805922a05932c05942e05952f059631059733059735049837049938049a3a049a3c049b3e049c3f049c41049d43039e44039e46039f48039f4903a04b03a14c02a14e02a25002a25102a35302a35502a45601a45801a45901a55b01a55c01a65e01a66001a66100a76300a76400a76600a76700a86900a86a00a86c00a86e00a86f00a87100a87201a87401a87501a87701a87801a87a02a87b02a87d03a87e03a88004a88104a78305a78405a78606a68707a68808a68a09a58b0aa58d0ba58e0ca48f0da4910ea3920fa39410a29511a19613a19814a099159f9a169f9c179e9d189d9e199da01a9ca11b9ba21d9aa31e9aa51f99a62098a72197a82296aa2395ab2494ac2694ad2793ae2892b02991b12a90b22b8fb32c8eb42e8db52f8cb6308bb7318ab83289ba3388bb3488bc3587bd3786be3885bf3984c03a83c13b82c23c81c33d80c43e7fc5407ec6417dc7427cc8437bc9447aca457acb4679cc4778cc4977cd4a76ce4b75cf4c74d04d73d14e72d24f71d35171d45270d5536fd5546ed6556dd7566cd8576bd9586ada5a6ada5b69db5c68dc5d67dd5e66de5f65de6164df6263e06363e16462e26561e26660e3685fe4695ee56a5de56b5de66c5ce76e5be76f5ae87059e97158e97257ea7457eb7556eb7655ec7754ed7953ed7a52ee7b51ef7c51ef7e50f07f4ff0804ef1814df1834cf2844bf3854bf3874af48849f48948f58b47f58c46f68d45f68f44f79044f79143f79342f89441f89540f9973ff9983ef99a3efa9b3dfa9c3cfa9e3bfb9f3afba139fba238fca338fca537fca636fca835fca934fdab33fdac33fdae32fdaf31fdb130fdb22ffdb42ffdb52efeb72dfeb82cfeba2cfebb2bfebd2afebe2afec029fdc229fdc328fdc527fdc627fdc827fdca26fdcb26fccd25fcce25fcd025fcd225fbd324fbd524fbd724fad824fada24f9dc24f9dd25f8df25f8e125f7e225f7e425f6e626f6e826f5e926f5eb27f4ed27f3ee27f3f027f2f227f1f426f1f525f0f724f0f921"));
 exports.plasma = plasma;
-},{"../colors.js":"../node_modules/d3-scale-chromatic/src/colors.js"}],"../node_modules/d3-scale-chromatic/src/index.js":[function(require,module,exports) {
+},{"../colors.js":"xz73"}],"ado2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23642,7 +23463,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./categorical/category10.js":"../node_modules/d3-scale-chromatic/src/categorical/category10.js","./categorical/Accent.js":"../node_modules/d3-scale-chromatic/src/categorical/Accent.js","./categorical/Dark2.js":"../node_modules/d3-scale-chromatic/src/categorical/Dark2.js","./categorical/Paired.js":"../node_modules/d3-scale-chromatic/src/categorical/Paired.js","./categorical/Pastel1.js":"../node_modules/d3-scale-chromatic/src/categorical/Pastel1.js","./categorical/Pastel2.js":"../node_modules/d3-scale-chromatic/src/categorical/Pastel2.js","./categorical/Set1.js":"../node_modules/d3-scale-chromatic/src/categorical/Set1.js","./categorical/Set2.js":"../node_modules/d3-scale-chromatic/src/categorical/Set2.js","./categorical/Set3.js":"../node_modules/d3-scale-chromatic/src/categorical/Set3.js","./categorical/Tableau10.js":"../node_modules/d3-scale-chromatic/src/categorical/Tableau10.js","./diverging/BrBG.js":"../node_modules/d3-scale-chromatic/src/diverging/BrBG.js","./diverging/PRGn.js":"../node_modules/d3-scale-chromatic/src/diverging/PRGn.js","./diverging/PiYG.js":"../node_modules/d3-scale-chromatic/src/diverging/PiYG.js","./diverging/PuOr.js":"../node_modules/d3-scale-chromatic/src/diverging/PuOr.js","./diverging/RdBu.js":"../node_modules/d3-scale-chromatic/src/diverging/RdBu.js","./diverging/RdGy.js":"../node_modules/d3-scale-chromatic/src/diverging/RdGy.js","./diverging/RdYlBu.js":"../node_modules/d3-scale-chromatic/src/diverging/RdYlBu.js","./diverging/RdYlGn.js":"../node_modules/d3-scale-chromatic/src/diverging/RdYlGn.js","./diverging/Spectral.js":"../node_modules/d3-scale-chromatic/src/diverging/Spectral.js","./sequential-multi/BuGn.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/BuGn.js","./sequential-multi/BuPu.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/BuPu.js","./sequential-multi/GnBu.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/GnBu.js","./sequential-multi/OrRd.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/OrRd.js","./sequential-multi/PuBuGn.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/PuBuGn.js","./sequential-multi/PuBu.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/PuBu.js","./sequential-multi/PuRd.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/PuRd.js","./sequential-multi/RdPu.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/RdPu.js","./sequential-multi/YlGnBu.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/YlGnBu.js","./sequential-multi/YlGn.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/YlGn.js","./sequential-multi/YlOrBr.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/YlOrBr.js","./sequential-multi/YlOrRd.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/YlOrRd.js","./sequential-single/Blues.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Blues.js","./sequential-single/Greens.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Greens.js","./sequential-single/Greys.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Greys.js","./sequential-single/Purples.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Purples.js","./sequential-single/Reds.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Reds.js","./sequential-single/Oranges.js":"../node_modules/d3-scale-chromatic/src/sequential-single/Oranges.js","./sequential-multi/cividis.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/cividis.js","./sequential-multi/cubehelix.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/cubehelix.js","./sequential-multi/rainbow.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/rainbow.js","./sequential-multi/sinebow.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/sinebow.js","./sequential-multi/turbo.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/turbo.js","./sequential-multi/viridis.js":"../node_modules/d3-scale-chromatic/src/sequential-multi/viridis.js"}],"../node_modules/d3-shape/src/constant.js":[function(require,module,exports) {
+},{"./categorical/category10.js":"dTYe","./categorical/Accent.js":"o8vx","./categorical/Dark2.js":"regV","./categorical/Paired.js":"E9sC","./categorical/Pastel1.js":"RCRU","./categorical/Pastel2.js":"QfGF","./categorical/Set1.js":"IldB","./categorical/Set2.js":"KR9o","./categorical/Set3.js":"XNXw","./categorical/Tableau10.js":"FyyB","./diverging/BrBG.js":"ArEB","./diverging/PRGn.js":"kzYK","./diverging/PiYG.js":"PI8x","./diverging/PuOr.js":"h8TC","./diverging/RdBu.js":"i3rG","./diverging/RdGy.js":"WaJg","./diverging/RdYlBu.js":"JvsS","./diverging/RdYlGn.js":"K9lw","./diverging/Spectral.js":"rXym","./sequential-multi/BuGn.js":"KGBO","./sequential-multi/BuPu.js":"lAoh","./sequential-multi/GnBu.js":"ZoIf","./sequential-multi/OrRd.js":"SiOD","./sequential-multi/PuBuGn.js":"vp6S","./sequential-multi/PuBu.js":"Wfss","./sequential-multi/PuRd.js":"NZPG","./sequential-multi/RdPu.js":"fzkB","./sequential-multi/YlGnBu.js":"fL1Z","./sequential-multi/YlGn.js":"xEGO","./sequential-multi/YlOrBr.js":"BmdO","./sequential-multi/YlOrRd.js":"SHo5","./sequential-single/Blues.js":"jpg6","./sequential-single/Greens.js":"rjqF","./sequential-single/Greys.js":"x8Iu","./sequential-single/Purples.js":"MJdW","./sequential-single/Reds.js":"DiEh","./sequential-single/Oranges.js":"O9hI","./sequential-multi/cividis.js":"SaPT","./sequential-multi/cubehelix.js":"cI87","./sequential-multi/rainbow.js":"BkJF","./sequential-multi/sinebow.js":"ZXMu","./sequential-multi/turbo.js":"PX18","./sequential-multi/viridis.js":"SfG7"}],"ezXE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23655,7 +23476,7 @@ function _default(x) {
     return x;
   };
 }
-},{}],"../node_modules/d3-shape/src/math.js":[function(require,module,exports) {
+},{}],"kIKs":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23694,7 +23515,7 @@ function acos(x) {
 function asin(x) {
   return x >= 1 ? halfPi : x <= -1 ? -halfPi : Math.asin(x);
 }
-},{}],"../node_modules/d3-shape/src/arc.js":[function(require,module,exports) {
+},{}],"BL7I":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23938,7 +23759,7 @@ function _default() {
 
   return arc;
 }
-},{"d3-path":"../node_modules/d3-path/src/index.js","./constant.js":"../node_modules/d3-shape/src/constant.js","./math.js":"../node_modules/d3-shape/src/math.js"}],"../node_modules/d3-shape/src/curve/linear.js":[function(require,module,exports) {
+},{"d3-path":"OTyq","./constant.js":"ezXE","./math.js":"kIKs"}],"L3Qx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23988,7 +23809,7 @@ Linear.prototype = {
 function _default(context) {
   return new Linear(context);
 }
-},{}],"../node_modules/d3-shape/src/point.js":[function(require,module,exports) {
+},{}],"LnI9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24004,7 +23825,7 @@ function x(p) {
 function y(p) {
   return p[1];
 }
-},{}],"../node_modules/d3-shape/src/line.js":[function(require,module,exports) {
+},{}],"KhHE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24071,7 +23892,7 @@ function _default() {
 
   return line;
 }
-},{"d3-path":"../node_modules/d3-path/src/index.js","./constant.js":"../node_modules/d3-shape/src/constant.js","./curve/linear.js":"../node_modules/d3-shape/src/curve/linear.js","./point.js":"../node_modules/d3-shape/src/point.js"}],"../node_modules/d3-shape/src/area.js":[function(require,module,exports) {
+},{"d3-path":"OTyq","./constant.js":"ezXE","./curve/linear.js":"L3Qx","./point.js":"LnI9"}],"IYvJ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24195,18 +24016,7 @@ function _default() {
 
   return area;
 }
-},{"d3-path":"../node_modules/d3-path/src/index.js","./constant.js":"../node_modules/d3-shape/src/constant.js","./curve/linear.js":"../node_modules/d3-shape/src/curve/linear.js","./line.js":"../node_modules/d3-shape/src/line.js","./point.js":"../node_modules/d3-shape/src/point.js"}],"../node_modules/d3-shape/src/descending.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(a, b) {
-  return b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN;
-}
-},{}],"../node_modules/d3-shape/src/identity.js":[function(require,module,exports) {
+},{"d3-path":"OTyq","./constant.js":"ezXE","./curve/linear.js":"L3Qx","./line.js":"KhHE","./point.js":"LnI9"}],"idkR":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24217,7 +24027,7 @@ exports.default = _default;
 function _default(d) {
   return d;
 }
-},{}],"../node_modules/d3-shape/src/pie.js":[function(require,module,exports) {
+},{}],"bAZU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24311,7 +24121,7 @@ function _default() {
 
   return pie;
 }
-},{"./constant.js":"../node_modules/d3-shape/src/constant.js","./descending.js":"../node_modules/d3-shape/src/descending.js","./identity.js":"../node_modules/d3-shape/src/identity.js","./math.js":"../node_modules/d3-shape/src/math.js"}],"../node_modules/d3-shape/src/curve/radial.js":[function(require,module,exports) {
+},{"./constant.js":"ezXE","./descending.js":"fBAz","./identity.js":"idkR","./math.js":"kIKs"}],"LARK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24357,7 +24167,7 @@ function curveRadial(curve) {
   radial._curve = curve;
   return radial;
 }
-},{"./linear.js":"../node_modules/d3-shape/src/curve/linear.js"}],"../node_modules/d3-shape/src/lineRadial.js":[function(require,module,exports) {
+},{"./linear.js":"L3Qx"}],"faWF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24391,7 +24201,7 @@ function lineRadial(l) {
 function _default() {
   return lineRadial((0, _line.default)().curve(_radial.curveRadialLinear));
 }
-},{"./curve/radial.js":"../node_modules/d3-shape/src/curve/radial.js","./line.js":"../node_modules/d3-shape/src/line.js"}],"../node_modules/d3-shape/src/areaRadial.js":[function(require,module,exports) {
+},{"./curve/radial.js":"LARK","./line.js":"KhHE"}],"T5gn":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24443,7 +24253,7 @@ function _default() {
 
   return a;
 }
-},{"./curve/radial.js":"../node_modules/d3-shape/src/curve/radial.js","./area.js":"../node_modules/d3-shape/src/area.js","./lineRadial.js":"../node_modules/d3-shape/src/lineRadial.js"}],"../node_modules/d3-shape/src/pointRadial.js":[function(require,module,exports) {
+},{"./curve/radial.js":"LARK","./area.js":"IYvJ","./lineRadial.js":"faWF"}],"vzjT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24454,16 +24264,7 @@ exports.default = _default;
 function _default(x, y) {
   return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
 }
-},{}],"../node_modules/d3-shape/src/array.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.slice = void 0;
-var slice = Array.prototype.slice;
-exports.slice = slice;
-},{}],"../node_modules/d3-shape/src/link/index.js":[function(require,module,exports) {
+},{}],"npGN":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24567,7 +24368,7 @@ function linkRadial() {
   l.radius = l.y, delete l.y;
   return l;
 }
-},{"d3-path":"../node_modules/d3-path/src/index.js","../array.js":"../node_modules/d3-shape/src/array.js","../constant.js":"../node_modules/d3-shape/src/constant.js","../point.js":"../node_modules/d3-shape/src/point.js","../pointRadial.js":"../node_modules/d3-shape/src/pointRadial.js"}],"../node_modules/d3-shape/src/symbol/circle.js":[function(require,module,exports) {
+},{"d3-path":"OTyq","../array.js":"KXlw","../constant.js":"ezXE","../point.js":"LnI9","../pointRadial.js":"vzjT"}],"zjv7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24585,7 +24386,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{"../math.js":"../node_modules/d3-shape/src/math.js"}],"../node_modules/d3-shape/src/symbol/cross.js":[function(require,module,exports) {
+},{"../math.js":"kIKs"}],"PTh9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24611,7 +24412,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/symbol/diamond.js":[function(require,module,exports) {
+},{}],"fuDX":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24632,7 +24433,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/symbol/star.js":[function(require,module,exports) {
+},{}],"L5Ql":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24666,7 +24467,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{"../math.js":"../node_modules/d3-shape/src/math.js"}],"../node_modules/d3-shape/src/symbol/square.js":[function(require,module,exports) {
+},{"../math.js":"kIKs"}],"bj9s":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24681,7 +24482,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/symbol/triangle.js":[function(require,module,exports) {
+},{}],"owZx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24699,7 +24500,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/symbol/wye.js":[function(require,module,exports) {
+},{}],"UZQY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24732,7 +24533,7 @@ var _default = {
   }
 };
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/symbol.js":[function(require,module,exports) {
+},{}],"bBhM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24790,16 +24591,7 @@ function _default() {
 
   return symbol;
 }
-},{"d3-path":"../node_modules/d3-path/src/index.js","./symbol/circle.js":"../node_modules/d3-shape/src/symbol/circle.js","./symbol/cross.js":"../node_modules/d3-shape/src/symbol/cross.js","./symbol/diamond.js":"../node_modules/d3-shape/src/symbol/diamond.js","./symbol/star.js":"../node_modules/d3-shape/src/symbol/star.js","./symbol/square.js":"../node_modules/d3-shape/src/symbol/square.js","./symbol/triangle.js":"../node_modules/d3-shape/src/symbol/triangle.js","./symbol/wye.js":"../node_modules/d3-shape/src/symbol/wye.js","./constant.js":"../node_modules/d3-shape/src/constant.js"}],"../node_modules/d3-shape/src/noop.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default() {}
-},{}],"../node_modules/d3-shape/src/curve/basis.js":[function(require,module,exports) {
+},{"d3-path":"OTyq","./symbol/circle.js":"zjv7","./symbol/cross.js":"PTh9","./symbol/diamond.js":"fuDX","./symbol/star.js":"L5Ql","./symbol/square.js":"bj9s","./symbol/triangle.js":"owZx","./symbol/wye.js":"UZQY","./constant.js":"ezXE"}],"cx05":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24876,7 +24668,7 @@ Basis.prototype = {
 function _default(context) {
   return new Basis(context);
 }
-},{}],"../node_modules/d3-shape/src/curve/basisClosed.js":[function(require,module,exports) {
+},{}],"FS5M":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24967,7 +24759,7 @@ BasisClosed.prototype = {
 function _default(context) {
   return new BasisClosed(context);
 }
-},{"../noop.js":"../node_modules/d3-shape/src/noop.js","./basis.js":"../node_modules/d3-shape/src/curve/basis.js"}],"../node_modules/d3-shape/src/curve/basisOpen.js":[function(require,module,exports) {
+},{"../noop.js":"zOhu","./basis.js":"cx05"}],"feGb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25032,7 +24824,7 @@ BasisOpen.prototype = {
 function _default(context) {
   return new BasisOpen(context);
 }
-},{"./basis.js":"../node_modules/d3-shape/src/curve/basis.js"}],"../node_modules/d3-shape/src/curve/bundle.js":[function(require,module,exports) {
+},{"./basis.js":"cx05"}],"iAgm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25098,7 +24890,7 @@ var _default = function custom(beta) {
 }(0.85);
 
 exports.default = _default;
-},{"./basis.js":"../node_modules/d3-shape/src/curve/basis.js"}],"../node_modules/d3-shape/src/curve/cardinal.js":[function(require,module,exports) {
+},{"./basis.js":"cx05"}],"DORS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25184,7 +24976,7 @@ var _default = function custom(tension) {
 }(0);
 
 exports.default = _default;
-},{}],"../node_modules/d3-shape/src/curve/cardinalClosed.js":[function(require,module,exports) {
+},{}],"FUQi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25284,7 +25076,7 @@ var _default = function custom(tension) {
 }(0);
 
 exports.default = _default;
-},{"../noop.js":"../node_modules/d3-shape/src/noop.js","./cardinal.js":"../node_modules/d3-shape/src/curve/cardinal.js"}],"../node_modules/d3-shape/src/curve/cardinalOpen.js":[function(require,module,exports) {
+},{"../noop.js":"zOhu","./cardinal.js":"DORS"}],"iWbK":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25359,7 +25151,7 @@ var _default = function custom(tension) {
 }(0);
 
 exports.default = _default;
-},{"./cardinal.js":"../node_modules/d3-shape/src/curve/cardinal.js"}],"../node_modules/d3-shape/src/curve/catmullRom.js":[function(require,module,exports) {
+},{"./cardinal.js":"DORS"}],"oFi9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25474,7 +25266,7 @@ var _default = function custom(alpha) {
 }(0.5);
 
 exports.default = _default;
-},{"../math.js":"../node_modules/d3-shape/src/math.js","./cardinal.js":"../node_modules/d3-shape/src/curve/cardinal.js"}],"../node_modules/d3-shape/src/curve/catmullRomClosed.js":[function(require,module,exports) {
+},{"../math.js":"kIKs","./cardinal.js":"DORS"}],"AW0P":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25583,7 +25375,7 @@ var _default = function custom(alpha) {
 }(0.5);
 
 exports.default = _default;
-},{"./cardinalClosed.js":"../node_modules/d3-shape/src/curve/cardinalClosed.js","../noop.js":"../node_modules/d3-shape/src/noop.js","./catmullRom.js":"../node_modules/d3-shape/src/curve/catmullRom.js"}],"../node_modules/d3-shape/src/curve/catmullRomOpen.js":[function(require,module,exports) {
+},{"./cardinalClosed.js":"FUQi","../noop.js":"zOhu","./catmullRom.js":"oFi9"}],"PGVM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25667,7 +25459,7 @@ var _default = function custom(alpha) {
 }(0.5);
 
 exports.default = _default;
-},{"./cardinalOpen.js":"../node_modules/d3-shape/src/curve/cardinalOpen.js","./catmullRom.js":"../node_modules/d3-shape/src/curve/catmullRom.js"}],"../node_modules/d3-shape/src/curve/linearClosed.js":[function(require,module,exports) {
+},{"./cardinalOpen.js":"iWbK","./catmullRom.js":"oFi9"}],"c2vC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25701,7 +25493,7 @@ LinearClosed.prototype = {
 function _default(context) {
   return new LinearClosed(context);
 }
-},{"../noop.js":"../node_modules/d3-shape/src/noop.js"}],"../node_modules/d3-shape/src/curve/monotone.js":[function(require,module,exports) {
+},{"../noop.js":"zOhu"}],"DNx2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25841,7 +25633,7 @@ function monotoneX(context) {
 function monotoneY(context) {
   return new MonotoneY(context);
 }
-},{}],"../node_modules/d3-shape/src/curve/natural.js":[function(require,module,exports) {
+},{}],"qyH2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25924,7 +25716,7 @@ function controlPoints(x) {
 function _default(context) {
   return new Natural(context);
 }
-},{}],"../node_modules/d3-shape/src/curve/step.js":[function(require,module,exports) {
+},{}],"SIad":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26001,7 +25793,7 @@ function stepBefore(context) {
 function stepAfter(context) {
   return new Step(context, 1);
 }
-},{}],"../node_modules/d3-shape/src/offset/none.js":[function(require,module,exports) {
+},{}],"jW6Y":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26020,7 +25812,7 @@ function _default(series, order) {
     }
   }
 }
-},{}],"../node_modules/d3-shape/src/order/none.js":[function(require,module,exports) {
+},{}],"NTwk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26036,7 +25828,7 @@ function _default(series) {
 
   return o;
 }
-},{}],"../node_modules/d3-shape/src/stack.js":[function(require,module,exports) {
+},{}],"k9Ur":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26107,7 +25899,7 @@ function _default() {
 
   return stack;
 }
-},{"./array.js":"../node_modules/d3-shape/src/array.js","./constant.js":"../node_modules/d3-shape/src/constant.js","./offset/none.js":"../node_modules/d3-shape/src/offset/none.js","./order/none.js":"../node_modules/d3-shape/src/order/none.js"}],"../node_modules/d3-shape/src/offset/expand.js":[function(require,module,exports) {
+},{"./array.js":"KXlw","./constant.js":"ezXE","./offset/none.js":"jW6Y","./order/none.js":"NTwk"}],"WOsM":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26130,7 +25922,7 @@ function _default(series, order) {
 
   (0, _none.default)(series, order);
 }
-},{"./none.js":"../node_modules/d3-shape/src/offset/none.js"}],"../node_modules/d3-shape/src/offset/diverging.js":[function(require,module,exports) {
+},{"./none.js":"jW6Y"}],"PS7K":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26153,7 +25945,7 @@ function _default(series, order) {
     }
   }
 }
-},{}],"../node_modules/d3-shape/src/offset/silhouette.js":[function(require,module,exports) {
+},{}],"UGaf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26176,7 +25968,7 @@ function _default(series, order) {
 
   (0, _none.default)(series, order);
 }
-},{"./none.js":"../node_modules/d3-shape/src/offset/none.js"}],"../node_modules/d3-shape/src/offset/wiggle.js":[function(require,module,exports) {
+},{"./none.js":"jW6Y"}],"zv8R":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26215,7 +26007,7 @@ function _default(series, order) {
   s0[j - 1][1] += s0[j - 1][0] = y;
   (0, _none.default)(series, order);
 }
-},{"./none.js":"../node_modules/d3-shape/src/offset/none.js"}],"../node_modules/d3-shape/src/order/appearance.js":[function(require,module,exports) {
+},{"./none.js":"jW6Y"}],"Uz9Z":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26245,7 +26037,7 @@ function peak(series) {
 
   return j;
 }
-},{"./none.js":"../node_modules/d3-shape/src/order/none.js"}],"../node_modules/d3-shape/src/order/ascending.js":[function(require,module,exports) {
+},{"./none.js":"NTwk"}],"Z1jP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26275,7 +26067,7 @@ function sum(series) {
 
   return s;
 }
-},{"./none.js":"../node_modules/d3-shape/src/order/none.js"}],"../node_modules/d3-shape/src/order/descending.js":[function(require,module,exports) {
+},{"./none.js":"NTwk"}],"oyxb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26290,7 +26082,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(series) {
   return (0, _ascending.default)(series).reverse();
 }
-},{"./ascending.js":"../node_modules/d3-shape/src/order/ascending.js"}],"../node_modules/d3-shape/src/order/insideOut.js":[function(require,module,exports) {
+},{"./ascending.js":"Z1jP"}],"cmz2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26329,7 +26121,7 @@ function _default(series) {
 
   return bottoms.reverse().concat(tops);
 }
-},{"./appearance.js":"../node_modules/d3-shape/src/order/appearance.js","./ascending.js":"../node_modules/d3-shape/src/order/ascending.js"}],"../node_modules/d3-shape/src/order/reverse.js":[function(require,module,exports) {
+},{"./appearance.js":"Uz9Z","./ascending.js":"Z1jP"}],"MoW7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26344,7 +26136,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _default(series) {
   return (0, _none.default)(series).reverse();
 }
-},{"./none.js":"../node_modules/d3-shape/src/order/none.js"}],"../node_modules/d3-shape/src/index.js":[function(require,module,exports) {
+},{"./none.js":"NTwk"}],"maww":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26748,20 +26540,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./arc.js":"../node_modules/d3-shape/src/arc.js","./area.js":"../node_modules/d3-shape/src/area.js","./line.js":"../node_modules/d3-shape/src/line.js","./pie.js":"../node_modules/d3-shape/src/pie.js","./areaRadial.js":"../node_modules/d3-shape/src/areaRadial.js","./lineRadial.js":"../node_modules/d3-shape/src/lineRadial.js","./pointRadial.js":"../node_modules/d3-shape/src/pointRadial.js","./link/index.js":"../node_modules/d3-shape/src/link/index.js","./symbol.js":"../node_modules/d3-shape/src/symbol.js","./symbol/circle.js":"../node_modules/d3-shape/src/symbol/circle.js","./symbol/cross.js":"../node_modules/d3-shape/src/symbol/cross.js","./symbol/diamond.js":"../node_modules/d3-shape/src/symbol/diamond.js","./symbol/square.js":"../node_modules/d3-shape/src/symbol/square.js","./symbol/star.js":"../node_modules/d3-shape/src/symbol/star.js","./symbol/triangle.js":"../node_modules/d3-shape/src/symbol/triangle.js","./symbol/wye.js":"../node_modules/d3-shape/src/symbol/wye.js","./curve/basisClosed.js":"../node_modules/d3-shape/src/curve/basisClosed.js","./curve/basisOpen.js":"../node_modules/d3-shape/src/curve/basisOpen.js","./curve/basis.js":"../node_modules/d3-shape/src/curve/basis.js","./curve/bundle.js":"../node_modules/d3-shape/src/curve/bundle.js","./curve/cardinalClosed.js":"../node_modules/d3-shape/src/curve/cardinalClosed.js","./curve/cardinalOpen.js":"../node_modules/d3-shape/src/curve/cardinalOpen.js","./curve/cardinal.js":"../node_modules/d3-shape/src/curve/cardinal.js","./curve/catmullRomClosed.js":"../node_modules/d3-shape/src/curve/catmullRomClosed.js","./curve/catmullRomOpen.js":"../node_modules/d3-shape/src/curve/catmullRomOpen.js","./curve/catmullRom.js":"../node_modules/d3-shape/src/curve/catmullRom.js","./curve/linearClosed.js":"../node_modules/d3-shape/src/curve/linearClosed.js","./curve/linear.js":"../node_modules/d3-shape/src/curve/linear.js","./curve/monotone.js":"../node_modules/d3-shape/src/curve/monotone.js","./curve/natural.js":"../node_modules/d3-shape/src/curve/natural.js","./curve/step.js":"../node_modules/d3-shape/src/curve/step.js","./stack.js":"../node_modules/d3-shape/src/stack.js","./offset/expand.js":"../node_modules/d3-shape/src/offset/expand.js","./offset/diverging.js":"../node_modules/d3-shape/src/offset/diverging.js","./offset/none.js":"../node_modules/d3-shape/src/offset/none.js","./offset/silhouette.js":"../node_modules/d3-shape/src/offset/silhouette.js","./offset/wiggle.js":"../node_modules/d3-shape/src/offset/wiggle.js","./order/appearance.js":"../node_modules/d3-shape/src/order/appearance.js","./order/ascending.js":"../node_modules/d3-shape/src/order/ascending.js","./order/descending.js":"../node_modules/d3-shape/src/order/descending.js","./order/insideOut.js":"../node_modules/d3-shape/src/order/insideOut.js","./order/none.js":"../node_modules/d3-shape/src/order/none.js","./order/reverse.js":"../node_modules/d3-shape/src/order/reverse.js"}],"../node_modules/d3-voronoi/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-voronoi/src/point.js":[function(require,module,exports) {
+},{"./arc.js":"BL7I","./area.js":"IYvJ","./line.js":"KhHE","./pie.js":"bAZU","./areaRadial.js":"T5gn","./lineRadial.js":"faWF","./pointRadial.js":"vzjT","./link/index.js":"npGN","./symbol.js":"bBhM","./symbol/circle.js":"zjv7","./symbol/cross.js":"PTh9","./symbol/diamond.js":"fuDX","./symbol/square.js":"bj9s","./symbol/star.js":"L5Ql","./symbol/triangle.js":"owZx","./symbol/wye.js":"UZQY","./curve/basisClosed.js":"FS5M","./curve/basisOpen.js":"feGb","./curve/basis.js":"cx05","./curve/bundle.js":"iAgm","./curve/cardinalClosed.js":"FUQi","./curve/cardinalOpen.js":"iWbK","./curve/cardinal.js":"DORS","./curve/catmullRomClosed.js":"AW0P","./curve/catmullRomOpen.js":"PGVM","./curve/catmullRom.js":"oFi9","./curve/linearClosed.js":"c2vC","./curve/linear.js":"L3Qx","./curve/monotone.js":"DNx2","./curve/natural.js":"qyH2","./curve/step.js":"SIad","./stack.js":"k9Ur","./offset/expand.js":"WOsM","./offset/diverging.js":"PS7K","./offset/none.js":"jW6Y","./offset/silhouette.js":"UGaf","./offset/wiggle.js":"zv8R","./order/appearance.js":"Uz9Z","./order/ascending.js":"Z1jP","./order/descending.js":"oyxb","./order/insideOut.js":"cmz2","./order/none.js":"NTwk","./order/reverse.js":"MoW7"}],"Xind":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26777,7 +26556,7 @@ function x(d) {
 function y(d) {
   return d[1];
 }
-},{}],"../node_modules/d3-voronoi/src/RedBlackTree.js":[function(require,module,exports) {
+},{}],"getm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27039,7 +26818,7 @@ function RedBlackFirst(node) {
 
 var _default = RedBlackTree;
 exports.default = _default;
-},{}],"../node_modules/d3-voronoi/src/Edge.js":[function(require,module,exports) {
+},{}],"R6Hk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27216,7 +26995,7 @@ function clipEdges(x0, y0, x1, y1) {
     }
   }
 }
-},{"./Diagram":"../node_modules/d3-voronoi/src/Diagram.js"}],"../node_modules/d3-voronoi/src/Cell.js":[function(require,module,exports) {
+},{"./Diagram":"ZmLv"}],"bFev":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27357,7 +27136,7 @@ function clipCells(x0, y0, x1, y1) {
     }
   }
 }
-},{"./Edge":"../node_modules/d3-voronoi/src/Edge.js","./Diagram":"../node_modules/d3-voronoi/src/Diagram.js"}],"../node_modules/d3-voronoi/src/Circle.js":[function(require,module,exports) {
+},{"./Edge":"R6Hk","./Diagram":"ZmLv"}],"Nay5":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27442,7 +27221,7 @@ function detachCircle(arc) {
     arc.circle = null;
   }
 }
-},{"./RedBlackTree":"../node_modules/d3-voronoi/src/RedBlackTree.js","./Diagram":"../node_modules/d3-voronoi/src/Diagram.js"}],"../node_modules/d3-voronoi/src/Beach.js":[function(require,module,exports) {
+},{"./RedBlackTree":"getm","./Diagram":"ZmLv"}],"YRKg":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27640,7 +27419,7 @@ function rightBreakPoint(arc, directrix) {
   var site = arc.site;
   return site[1] === directrix ? site[0] : Infinity;
 }
-},{"./RedBlackTree":"../node_modules/d3-voronoi/src/RedBlackTree.js","./Cell":"../node_modules/d3-voronoi/src/Cell.js","./Circle":"../node_modules/d3-voronoi/src/Circle.js","./Edge":"../node_modules/d3-voronoi/src/Edge.js","./Diagram":"../node_modules/d3-voronoi/src/Diagram.js"}],"../node_modules/d3-voronoi/src/Diagram.js":[function(require,module,exports) {
+},{"./RedBlackTree":"getm","./Cell":"bFev","./Circle":"Nay5","./Edge":"R6Hk","./Diagram":"ZmLv"}],"ZmLv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27802,7 +27581,7 @@ Diagram.prototype = {
     return radius == null || d2 <= radius * radius ? cell.site : null;
   }
 };
-},{"./Beach":"../node_modules/d3-voronoi/src/Beach.js","./Cell":"../node_modules/d3-voronoi/src/Cell.js","./Circle":"../node_modules/d3-voronoi/src/Circle.js","./Edge":"../node_modules/d3-voronoi/src/Edge.js","./RedBlackTree":"../node_modules/d3-voronoi/src/RedBlackTree.js"}],"../node_modules/d3-voronoi/src/voronoi.js":[function(require,module,exports) {
+},{"./Beach":"YRKg","./Cell":"bFev","./Circle":"Nay5","./Edge":"R6Hk","./RedBlackTree":"getm"}],"huq3":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27866,7 +27645,7 @@ function _default() {
 
   return voronoi;
 }
-},{"./constant":"../node_modules/d3-voronoi/src/constant.js","./point":"../node_modules/d3-voronoi/src/point.js","./Diagram":"../node_modules/d3-voronoi/src/Diagram.js"}],"../node_modules/d3-voronoi/src/index.js":[function(require,module,exports) {
+},{"./constant":"aCvo","./point":"Xind","./Diagram":"ZmLv"}],"rLIC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27882,20 +27661,7 @@ Object.defineProperty(exports, "voronoi", {
 var _voronoi = _interopRequireDefault(require("./voronoi"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./voronoi":"../node_modules/d3-voronoi/src/voronoi.js"}],"../node_modules/d3-zoom/src/constant.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = _default;
-
-function _default(x) {
-  return function () {
-    return x;
-  };
-}
-},{}],"../node_modules/d3-zoom/src/event.js":[function(require,module,exports) {
+},{"./voronoi":"huq3"}],"UMU7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27908,7 +27674,7 @@ function ZoomEvent(target, type, transform) {
   this.type = type;
   this.transform = transform;
 }
-},{}],"../node_modules/d3-zoom/src/transform.js":[function(require,module,exports) {
+},{}],"OLQI":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27969,27 +27735,7 @@ function transform(node) {
 
   return node.__zoom;
 }
-},{}],"../node_modules/d3-zoom/src/noevent.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.nopropagation = nopropagation;
-exports.default = _default;
-
-var _d3Selection = require("d3-selection");
-
-function nopropagation() {
-  _d3Selection.event.stopImmediatePropagation();
-}
-
-function _default() {
-  _d3Selection.event.preventDefault();
-
-  _d3Selection.event.stopImmediatePropagation();
-}
-},{"d3-selection":"../node_modules/d3-selection/src/index.js"}],"../node_modules/d3-zoom/src/zoom.js":[function(require,module,exports) {
+},{}],"LZWf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28430,7 +28176,7 @@ function _default() {
 
   return zoom;
 }
-},{"d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-drag":"../node_modules/d3-drag/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","d3-transition":"../node_modules/d3-transition/src/index.js","./constant.js":"../node_modules/d3-zoom/src/constant.js","./event.js":"../node_modules/d3-zoom/src/event.js","./transform.js":"../node_modules/d3-zoom/src/transform.js","./noevent.js":"../node_modules/d3-zoom/src/noevent.js"}],"../node_modules/d3-zoom/src/index.js":[function(require,module,exports) {
+},{"d3-dispatch":"D3zY","d3-drag":"kkdU","d3-interpolate":"k9aH","d3-selection":"ysDv","d3-transition":"UqVV","./constant.js":"aCvo","./event.js":"UMU7","./transform.js":"OLQI","./noevent.js":"BxLv"}],"MHdZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28464,7 +28210,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./zoom.js":"../node_modules/d3-zoom/src/zoom.js","./transform.js":"../node_modules/d3-zoom/src/transform.js"}],"../node_modules/d3/index.js":[function(require,module,exports) {
+},{"./zoom.js":"LZWf","./transform.js":"OLQI"}],"UzF0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28884,7 +28630,7 @@ Object.keys(_d3Zoom).forEach(function (key) {
     }
   });
 });
-},{"./dist/package.js":"../node_modules/d3/dist/package.js","d3-array":"../node_modules/d3-array/src/index.js","d3-axis":"../node_modules/d3-axis/src/index.js","d3-brush":"../node_modules/d3-brush/src/index.js","d3-chord":"../node_modules/d3-chord/src/index.js","d3-collection":"../node_modules/d3-collection/src/index.js","d3-color":"../node_modules/d3-color/src/index.js","d3-contour":"../node_modules/d3-contour/src/index.js","d3-dispatch":"../node_modules/d3-dispatch/src/index.js","d3-drag":"../node_modules/d3-drag/src/index.js","d3-dsv":"../node_modules/d3-dsv/src/index.js","d3-ease":"../node_modules/d3-ease/src/index.js","d3-fetch":"../node_modules/d3-fetch/src/index.js","d3-force":"../node_modules/d3-force/src/index.js","d3-format":"../node_modules/d3-format/src/index.js","d3-geo":"../node_modules/d3-geo/src/index.js","d3-hierarchy":"../node_modules/d3-hierarchy/src/index.js","d3-interpolate":"../node_modules/d3-interpolate/src/index.js","d3-path":"../node_modules/d3-path/src/index.js","d3-polygon":"../node_modules/d3-polygon/src/index.js","d3-quadtree":"../node_modules/d3-quadtree/src/index.js","d3-random":"../node_modules/d3-random/src/index.js","d3-scale":"../node_modules/d3-scale/src/index.js","d3-scale-chromatic":"../node_modules/d3-scale-chromatic/src/index.js","d3-selection":"../node_modules/d3-selection/src/index.js","d3-shape":"../node_modules/d3-shape/src/index.js","d3-time":"../node_modules/d3-time/src/index.js","d3-time-format":"../node_modules/d3-time-format/src/index.js","d3-timer":"../node_modules/d3-timer/src/index.js","d3-transition":"../node_modules/d3-transition/src/index.js","d3-voronoi":"../node_modules/d3-voronoi/src/index.js","d3-zoom":"../node_modules/d3-zoom/src/index.js"}],"../node_modules/@tarekraafat/autocomplete.js/dist/js/autoComplete.js":[function(require,module,exports) {
+},{"./dist/package.js":"pT13","d3-array":"K0bd","d3-axis":"mp0m","d3-brush":"tkh5","d3-chord":"Iy8J","d3-collection":"S3hn","d3-color":"Peej","d3-contour":"SiBy","d3-dispatch":"D3zY","d3-drag":"kkdU","d3-dsv":"EC2w","d3-ease":"pJ11","d3-fetch":"grWT","d3-force":"oYRE","d3-format":"VuZR","d3-geo":"Ah6W","d3-hierarchy":"Kps6","d3-interpolate":"k9aH","d3-path":"OTyq","d3-polygon":"H15P","d3-quadtree":"lUbg","d3-random":"Gz2j","d3-scale":"zL2z","d3-scale-chromatic":"ado2","d3-selection":"ysDv","d3-shape":"maww","d3-time":"hQYG","d3-time-format":"UYpZ","d3-timer":"rdzS","d3-transition":"UqVV","d3-voronoi":"rLIC","d3-zoom":"MHdZ"}],"LF4t":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 (function (global, factory) {
@@ -29352,7 +29098,7 @@ var global = arguments[3];
 
 })));
 
-},{}],"../node_modules/natural/lib/natural/util/stopwords.js":[function(require,module,exports) {
+},{}],"l7Q1":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -29379,7 +29125,7 @@ THE SOFTWARE.
 var words = ['about', 'above', 'after', 'again', 'all', 'also', 'am', 'an', 'and', 'another', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'came', 'can', 'cannot', 'come', 'could', 'did', 'do', 'does', 'doing', 'during', 'each', 'few', 'for', 'from', 'further', 'get', 'got', 'has', 'had', 'he', 'have', 'her', 'here', 'him', 'himself', 'his', 'how', 'if', 'in', 'into', 'is', 'it', 'its', 'itself', 'like', 'make', 'many', 'me', 'might', 'more', 'most', 'much', 'must', 'my', 'myself', 'never', 'now', 'of', 'on', 'only', 'or', 'other', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'said', 'same', 'see', 'should', 'since', 'so', 'some', 'still', 'such', 'take', 'than', 'that', 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', 'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', 'way', 'we', 'well', 'were', 'what', 'where', 'when', 'which', 'while', 'who', 'whom', 'with', 'would', 'why', 'you', 'your', 'yours', 'yourself', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '$', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/tokenizer.js":[function(require,module,exports) {
+},{}],"ZemB":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -29427,14 +29173,14 @@ Tokenizer.prototype.attach = function () {
 Tokenizer.prototype.tokenize = function () {};
 
 module.exports = Tokenizer;
-},{}],"../node_modules/node-libs-browser/node_modules/util/support/isBufferBrowser.js":[function(require,module,exports) {
+},{}],"gADh":[function(require,module,exports) {
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],"../node_modules/inherits/inherits_browser.js":[function(require,module,exports) {
+},{}],"Bm0n":[function(require,module,exports) {
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -29459,7 +29205,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],"../node_modules/process/browser.js":[function(require,module,exports) {
+},{}],"pBGv":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -29668,7 +29414,7 @@ process.chdir = function (dir) {
 process.umask = function () {
   return 0;
 };
-},{}],"../node_modules/node-libs-browser/node_modules/util/util.js":[function(require,module,exports) {
+},{}],"nq70":[function(require,module,exports) {
 var process = require("process");
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -30389,7 +30135,7 @@ function callbackify(original) {
 }
 
 exports.callbackify = callbackify;
-},{"./support/isBuffer":"../node_modules/node-libs-browser/node_modules/util/support/isBufferBrowser.js","inherits":"../node_modules/inherits/inherits_browser.js","process":"../node_modules/process/browser.js"}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer.js":[function(require,module,exports) {
+},{"./support/isBuffer":"gADh","inherits":"Bm0n","process":"pBGv"}],"nbJc":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -30425,7 +30171,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.trim(text.split(/\W+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/phonetics/phonetic.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"aFPt":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -30477,7 +30223,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords":"../node_modules/natural/lib/natural/util/stopwords.js","../tokenizers/aggressive_tokenizer":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer.js"}],"../node_modules/natural/lib/natural/phonetics/soundex.js":[function(require,module,exports) {
+},{"../util/stopwords":"l7Q1","../tokenizers/aggressive_tokenizer":"nbJc"}],"fHeJ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -30558,7 +30304,7 @@ SoundEx.transformHum = transformHum;
 SoundEx.transformR = transformR;
 SoundEx.condense = condense;
 SoundEx.padRight0 = padRight0;
-},{"./phonetic":"../node_modules/natural/lib/natural/phonetics/phonetic.js"}],"../node_modules/natural/lib/natural/phonetics/metaphone.js":[function(require,module,exports) {
+},{"./phonetic":"aFPt"}],"WElW":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -30737,7 +30483,7 @@ Metaphone.transformX = transformX;
 Metaphone.dropY = dropY;
 Metaphone.transformZ = transformZ;
 Metaphone.dropVowels = dropVowels;
-},{"./phonetic":"../node_modules/natural/lib/natural/phonetics/phonetic.js"}],"../node_modules/natural/lib/natural/phonetics/double_metaphone.js":[function(require,module,exports) {
+},{"./phonetic":"aFPt"}],"IUBO":[function(require,module,exports) {
 
 /*
 Copyright (c) 2011, Chris Umbel
@@ -31227,7 +30973,7 @@ function compare(stringA, stringB) {
 DoubleMetaphone.compare = compare;
 DoubleMetaphone.process = process;
 DoubleMetaphone.isVowel = isVowel;
-},{"./phonetic":"../node_modules/natural/lib/natural/phonetics/phonetic.js"}],"../node_modules/natural/lib/natural/phonetics/dm_soundex.js":[function(require,module,exports) {
+},{"./phonetic":"aFPt"}],"yBLz":[function(require,module,exports) {
 
 /*
 Copyright (c) 2012, Alexy Maslenninkov
@@ -31616,7 +31362,7 @@ var Phonetic = require('./phonetic');
 var soundex = new Phonetic();
 soundex.process = process;
 module.exports = soundex;
-},{"./phonetic":"../node_modules/natural/lib/natural/phonetics/phonetic.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer.js":[function(require,module,exports) {
+},{"./phonetic":"aFPt"}],"W4ba":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -31699,7 +31445,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords":"../node_modules/natural/lib/natural/util/stopwords.js","../tokenizers/aggressive_tokenizer":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer.js":[function(require,module,exports) {
+},{"../util/stopwords":"l7Q1","../tokenizers/aggressive_tokenizer":"nbJc"}],"hFgZ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -31908,7 +31654,7 @@ PorterStemmer.step3 = step3;
 PorterStemmer.step4 = step4;
 PorterStemmer.step5a = step5a;
 PorterStemmer.step5b = step5b;
-},{"./stemmer":"../node_modules/natural/lib/natural/stemmers/stemmer.js"}],"../node_modules/natural/lib/natural/util/stopwords_fa.js":[function(require,module,exports) {
+},{"./stemmer":"W4ba"}],"Ir2F":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 Farsi Stop Words by Fardin Koochaki <me@fardinak.com>
@@ -31939,7 +31685,7 @@ var words = [// Words
 '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹', '۰']; // tell the world about the noise words.    
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fa.js":[function(require,module,exports) {
+},{}],"q7Gk":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 Farsi Aggressive Tokenizer by Fardin Koochaki <me@fardinak.com>
@@ -31987,7 +31733,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   text = this.clearText(text);
   return this.clearEmptyString(text.split(/\s+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_fa.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"vgNB":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 Farsi Stemmer by Fardin Koochaki <me@fardinak.com>
@@ -32039,7 +31785,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_fa":"../node_modules/natural/lib/natural/util/stopwords_fa.js","../tokenizers/aggressive_tokenizer_fa":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fa.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_fa.js":[function(require,module,exports) {
+},{"../util/stopwords_fa":"Ir2F","../tokenizers/aggressive_tokenizer_fa":"q7Gk"}],"xje2":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 Farsi Porter Stemmer by Fardin Koochaki <me@fardinak.com>
@@ -32071,7 +31817,7 @@ module.exports = PorterStemmer; // disabled stemming for Farsi
 PorterStemmer.stem = function (token) {
   return token;
 };
-},{"./stemmer_fa":"../node_modules/natural/lib/natural/stemmers/stemmer_fa.js"}],"../node_modules/natural/lib/natural/util/stopwords_fr.js":[function(require,module,exports) {
+},{"./stemmer_fa":"vgNB"}],"ezsZ":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Ismaël Héry
 
@@ -32097,7 +31843,7 @@ PorterStemmer.stem = function (token) {
 // from analysis.
 var words = ['être', 'avoir', 'faire', 'a', 'au', 'aux', 'avec', 'ce', 'ces', 'dans', 'de', 'des', 'du', 'elle', 'en', 'et', 'eux', 'il', 'je', 'la', 'le', 'leur', 'lui', 'ma', 'mais', 'me', 'même', 'mes', 'moi', 'mon', 'ne', 'nos', 'notre', 'nous', 'on', 'ou', 'où', 'par', 'pas', 'pour', 'qu', 'que', 'qui', 'sa', 'se', 'ses', 'son', 'sur', 'ta', 'te', 'tes', 'toi', 'ton', 'tu', 'un', 'une', 'vos', 'votre', 'vous', 'c', 'd', 'j', 'l', 'à', 'm', 'n', 's', 't', 'y', 'été', 'étée', 'étées', 'étés', 'étant', 'suis', 'es', 'est', 'sommes', 'êtes', 'sont', 'serai', 'seras', 'sera', 'serons', 'serez', 'seront', 'serais', 'serait', 'serions', 'seriez', 'seraient', 'étais', 'était', 'étions', 'étiez', 'étaient', 'fus', 'fut', 'fûmes', 'fûtes', 'furent', 'sois', 'soit', 'soyons', 'soyez', 'soient', 'fusse', 'fusses', 'fût', 'fussions', 'fussiez', 'fussent', 'ayant', 'eu', 'eue', 'eues', 'eus', 'ai', 'as', 'avons', 'avez', 'ont', 'aurai', 'auras', 'aura', 'aurons', 'aurez', 'auront', 'aurais', 'aurait', 'aurions', 'auriez', 'auraient', 'avais', 'avait', 'avions', 'aviez', 'avaient', 'eut', 'eûmes', 'eûtes', 'eurent', 'aie', 'aies', 'ait', 'ayons', 'ayez', 'aient', 'eusse', 'eusses', 'eût', 'eussions', 'eussiez', 'eussent', 'ceci', 'cela', 'cet', 'cette', 'ici', 'ils', 'les', 'leurs', 'quel', 'quels', 'quelle', 'quelles', 'sans', 'soi'];
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fr.js":[function(require,module,exports) {
+},{}],"CrSh":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -32133,7 +31879,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.trim(text.split(/[^a-z0-9äâàéèëêïîöôùüûœç]+/i));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_fr.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"oP98":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Ismaël Héry
 
@@ -32192,7 +31938,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_fr":"../node_modules/natural/lib/natural/util/stopwords_fr.js","../tokenizers/aggressive_tokenizer_fr":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fr.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_fr.js":[function(require,module,exports) {
+},{"../util/stopwords_fr":"ezsZ","../tokenizers/aggressive_tokenizer_fr":"CrSh"}],"q7pO":[function(require,module,exports) {
 'use strict';
 /*
 Copyright (c) 2014, Ismaël Héry
@@ -32569,7 +32315,7 @@ function endsin(token, suffix) {
 }
 
 ;
-},{"./stemmer_fr":"../node_modules/natural/lib/natural/stemmers/stemmer_fr.js"}],"../node_modules/natural/lib/natural/util/stopwords_ru.js":[function(require,module,exports) {
+},{"./stemmer_fr":"oP98"}],"FAgS":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Polyakov Vladimir, Chris Umbel
 
@@ -32596,7 +32342,7 @@ THE SOFTWARE.
 var words = ['о', 'после', 'все', 'также', 'и', 'другие', 'все', 'как', 'во', 'быть', 'потому', 'был', 'до', 'являюсь', 'между', 'все', 'но', 'от', 'иди', 'могу', 'подойди', 'мог', 'делал', 'делаю', 'каждый', 'для', 'откуда', 'иметь', 'имел', 'он', 'имеет', 'её', 'здесь', 'его', 'как', 'если', 'в', 'оно', 'за', 'делать', 'много', 'я', 'может быть', 'более', 'самый', 'должен', 'мой', 'никогда', 'сейчас', 'из', 'на', 'только', 'или', 'другой', 'другая', 'другое', 'наше', 'вне', 'конец', 'сказал', 'сказала', 'также', 'видел', 'c', 'немного', 'все еще', 'так', 'затем', 'тот', 'их', 'там', 'этот', 'они', 'те', 'через', 'тоже', 'под', 'над', 'очень', 'был', 'путь', 'мы', 'хорошо', 'что', 'где', 'который', 'пока', 'кто', 'с кем', 'хотел бы', 'ты', 'твои', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'o', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', '$', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.    
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_ru.js":[function(require,module,exports) {
+},{}],"qWaQ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -32642,7 +32388,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.withoutEmpty(this.clearText(text).split(' '));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_ru.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"XKxT":[function(require,module,exports) {
 /*
 Copyright (c) 2012, Polyakov Vladimir, Chris Umbel
 
@@ -32701,7 +32447,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_ru":"../node_modules/natural/lib/natural/util/stopwords_ru.js","../tokenizers/aggressive_tokenizer_ru":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_ru.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_ru.js":[function(require,module,exports) {
+},{"../util/stopwords_ru":"FAgS","../tokenizers/aggressive_tokenizer_ru":"qWaQ"}],"jwxo":[function(require,module,exports) {
 /*
 Copyright (c) 2012, Polyakov Vladimir, Chris Umbel
 
@@ -32866,7 +32612,7 @@ PorterStemmer.stem = function (token) {
   superlativeResult = superlativeResult.replace(/ь$/g, '');
   return head + superlativeResult;
 };
-},{"./stemmer_ru":"../node_modules/natural/lib/natural/stemmers/stemmer_ru.js"}],"../node_modules/natural/lib/natural/util/stopwords_es.js":[function(require,module,exports) {
+},{"./stemmer_ru":"XKxT"}],"iTBC":[function(require,module,exports) {
 /*
 Copyright (c) 2011, David Przybilla, Chris Umbel
 
@@ -32893,7 +32639,7 @@ THE SOFTWARE.
 var words = ['a', 'un', 'el', 'ella', 'y', 'sobre', 'de', 'la', 'que', 'en', 'los', 'del', 'se', 'las', 'por', 'un', 'para', 'con', 'no', 'una', 'su', 'al', 'lo', 'como', 'más', 'pero', 'sus', 'le', 'ya', 'o', 'porque', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'donde', 'quien', 'desde', 'nos', 'durante', 'uno', 'ni', 'contra', 'ese', 'eso', 'mí', 'qué', 'otro', 'él', 'cual', 'poco', 'mi', 'tú', 'te', 'ti', 'sí', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.    
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_es.js":[function(require,module,exports) {
+},{}],"WaGX":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel,David Przybilla
 
@@ -32929,7 +32675,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.trim(text.split(/[^a-zA-Zá-úÁ-ÚñÑüÜ]+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_es.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"mWmA":[function(require,module,exports) {
 /*
 Copyright (c) 2012, 2018 David Przybilla, Chris Umbel, Hugo W.L. ter Doest 
 
@@ -32994,7 +32740,7 @@ class Stemmer {
 }
 
 module.exports = Stemmer;
-},{"../util/stopwords_es":"../node_modules/natural/lib/natural/util/stopwords_es.js","../tokenizers/aggressive_tokenizer_es":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_es.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_es.js":[function(require,module,exports) {
+},{"../util/stopwords_es":"iTBC","../tokenizers/aggressive_tokenizer_es":"WaGX"}],"sT5O":[function(require,module,exports) {
 /*
   Copyright (c) 2018, Domingo Martín Mancera
 
@@ -33244,7 +32990,7 @@ class PorterStemmer extends Stemmer {
 }
 
 module.exports = new PorterStemmer();
-},{"./stemmer_es":"../node_modules/natural/lib/natural/stemmers/stemmer_es.js"}],"../node_modules/natural/lib/natural/util/stopwords_it.js":[function(require,module,exports) {
+},{"./stemmer_es":"mWmA"}],"JTvQ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, David Przybilla, Chris Umbel
 
@@ -33271,7 +33017,7 @@ THE SOFTWARE.
 var words = ['ad', 'al', 'allo', 'ai', 'agli', 'all', 'agl', 'alla', 'alle', 'con', 'col', 'coi', 'da', 'dal', 'dallo', 'dai', 'dagli', 'dall', 'dagl', 'dalla', 'dalle', 'di', 'del', 'dello', 'dei', 'degli', 'dell', 'degl', 'della', 'delle', 'in', 'nel', 'nello', 'nei', 'negli', 'nell', 'negl', 'nella', 'nelle', 'su', 'sul', 'sullo', 'sui', 'sugli', 'sull', 'sugl', 'sulla', 'sulle', 'per', 'tra', 'contro', 'io', 'tu', 'lui', 'lei', 'noi', 'voi', 'loro', 'mio', 'mia', 'miei', 'mie', 'tuo', 'tua', 'tuoi', 'tue', 'suo', 'sua', 'suoi', 'sue', 'nostro', 'nostra', 'nostri', 'nostre', 'vostro', 'vostra', 'vostri', 'vostre', 'mi', 'ti', 'ci', 'vi', 'lo', 'la', 'li', 'le', 'gli', 'ne', 'il', 'un', 'uno', 'una', 'ma', 'ed', 'se', 'perché', 'anche', 'come', 'dov', 'dove', 'che', 'chi', 'cui', 'non', 'più', 'quale', 'quanto', 'quanti', 'quanta', 'quante', 'quello', 'quelli', 'quella', 'quelle', 'questo', 'questi', 'questa', 'queste', 'si', 'tutto', 'tutti', 'a', 'c', 'e', 'i', 'l', 'o', 'ho', 'hai', 'ha', 'abbiamo', 'avete', 'hanno', 'abbia', 'abbiate', 'abbiano', 'avrò', 'avrai', 'avrà', 'avremo', 'avrete', 'avranno', 'avrei', 'avresti', 'avrebbe', 'avremmo', 'avreste', 'avrebbero', 'avevo', 'avevi', 'aveva', 'avevamo', 'avevate', 'avevano', 'ebbi', 'avesti', 'ebbe', 'avemmo', 'aveste', 'ebbero', 'avessi', 'avesse', 'avessimo', 'avessero', 'avendo', 'avuto', 'avuta', 'avuti', 'avute', 'sono', 'sei', 'è', 'siamo', 'siete', 'sia', 'siate', 'siano', 'sarò', 'sarai', 'sarà', 'saremo', 'sarete', 'saranno', 'sarei', 'saresti', 'sarebbe', 'saremmo', 'sareste', 'sarebbero', 'ero', 'eri', 'era', 'eravamo', 'eravate', 'erano', 'fui', 'fosti', 'fu', 'fummo', 'foste', 'furono', 'fossi', 'fosse', 'fossimo', 'fossero', 'essendo', 'faccio', 'fai', 'facciamo', 'fanno', 'faccia', 'facciate', 'facciano', 'farò', 'farai', 'farà', 'faremo', 'farete', 'faranno', 'farei', 'faresti', 'farebbe', 'faremmo', 'fareste', 'farebbero', 'facevo', 'facevi', 'faceva', 'facevamo', 'facevate', 'facevano', 'feci', 'facesti', 'fece', 'facemmo', 'faceste', 'fecero', 'facessi', 'facesse', 'facessimo', 'facessero', 'facendo', 'sto', 'stai', 'sta', 'stiamo', 'stanno', 'stia', 'stiate', 'stiano', 'starò', 'starai', 'starà', 'staremo', 'starete', 'staranno', 'starei', 'staresti', 'starebbe', 'staremmo', 'stareste', 'starebbero', 'stavo', 'stavi', 'stava', 'stavamo', 'stavate', 'stavano', 'stetti', 'stesti', 'stette', 'stemmo', 'steste', 'stettero', 'stessi', 'stesse', 'stessimo', 'stessero', 'stando', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.    
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_it.js":[function(require,module,exports) {
+},{}],"v6r3":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel,David Przybilla
 
@@ -33307,7 +33053,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.trim(text.split(/\W+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_it.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"i9ev":[function(require,module,exports) {
 var stopwords = require('../util/stopwords_it');
 
 var Tokenizer = require('../tokenizers/aggressive_tokenizer_it');
@@ -33345,7 +33091,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_it":"../node_modules/natural/lib/natural/util/stopwords_it.js","../tokenizers/aggressive_tokenizer_it":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_it.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_it.js":[function(require,module,exports) {
+},{"../util/stopwords_it":"JTvQ","../tokenizers/aggressive_tokenizer_it":"v6r3"}],"fYpG":[function(require,module,exports) {
 /*
 Copyright (c) 2012, Leonardo Fenu, Chris Umbel
 
@@ -33574,7 +33320,7 @@ PorterStemmer.stem = function (token) {
   rv_txt = token.substring(rv);
   return token.toLowerCase();
 };
-},{"./stemmer_it":"../node_modules/natural/lib/natural/stemmers/stemmer_it.js"}],"../node_modules/natural/lib/natural/util/stopwords_no.js":[function(require,module,exports) {
+},{"./stemmer_it":"i9ev"}],"eAl0":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Kristoffer Brabrand
 
@@ -33601,7 +33347,7 @@ THE SOFTWARE.
 var words = ['og', 'i', 'jeg', 'det', 'at', 'en', 'et', 'den', 'til', 'er', 'som', 'på', 'de', 'med', 'han', 'av', 'ikke', 'der', 'så', 'var', 'meg', 'seg', 'men', 'ett', 'har', 'om', 'vi', 'min', 'mitt', 'ha', 'hadde', 'hun', 'nå', 'over', 'da', 'ved', 'fra', 'du', 'ut', 'sin', 'dem', 'oss', 'opp', 'man', 'kan', 'hans', 'hvor', 'eller', 'hva', 'skal', 'selv', 'sjøl', 'her', 'alle', 'vil', 'bli', 'ble', 'blitt', 'kunne', 'inn', 'når', 'være', 'kom', 'noen', 'noe', 'ville', 'dere', 'som', 'deres', 'kun', 'ja', 'etter', 'ned', 'skulle', 'denne', 'for', 'deg', 'si', 'sine', 'sitt', 'mot', 'å', 'meget', 'hvorfor', 'dette', 'disse', 'uten', 'hvordan', 'ingen', 'din', 'ditt', 'blir', 'samme', 'hvilken', 'hvilke', 'sånn', 'inni', 'mellom', 'vår', 'hver', 'hvem', 'vors', 'hvis', 'både', 'bare', 'enn', 'fordi', 'før', 'mange', 'også', 'slik', 'vært', 'være', 'begge', 'siden', 'henne', 'hennar', 'hennes', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/normalizers/normalizer_no.js":[function(require,module,exports) {
+},{}],"cW10":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Kristoffer Brabrand
 
@@ -33660,7 +33406,7 @@ var remove_diacritics = function (text) {
 
 
 exports.remove_diacritics = remove_diacritics;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_no.js":[function(require,module,exports) {
+},{}],"Cv9T":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Kristoffer Brabrand
 
@@ -33698,7 +33444,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
 
   return this.trim(text.split(/[^A-Za-z0-9_æøåÆØÅäÄöÖüÜ]+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","../normalizers/normalizer_no":"../node_modules/natural/lib/natural/normalizers/normalizer_no.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_no.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","../normalizers/normalizer_no":"cW10","util":"nq70"}],"FB2d":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Kristoffer Brabrand
 
@@ -33757,7 +33503,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_no":"../node_modules/natural/lib/natural/util/stopwords_no.js","../tokenizers/aggressive_tokenizer_no":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_no.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_no.js":[function(require,module,exports) {
+},{"../util/stopwords_no":"eAl0","../tokenizers/aggressive_tokenizer_no":"Cv9T"}],"d9Kl":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Kristoffer Brabrand
 
@@ -33907,7 +33653,7 @@ PorterStemmer.step1b = step1b;
 PorterStemmer.step1c = step1c;
 PorterStemmer.step2 = step2;
 PorterStemmer.step3 = step3;
-},{"./stemmer_no":"../node_modules/natural/lib/natural/stemmers/stemmer_no.js"}],"../node_modules/natural/lib/natural/util/stopwords_sv.js":[function(require,module,exports) {
+},{"./stemmer_no":"FB2d"}],"vvpR":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Dogan Yazar
 
@@ -33934,7 +33680,7 @@ THE SOFTWARE.
 const words = ["aderton", "adertonde", "adjö", "aldrig", "alla", "allas", "allt", "alltid", "alltså", "andra", "andras", "annan", "annat", "artonde", "artonn", "att", "av", "bakom", "bara", "behöva", "behövas", "behövde", "behövt", "beslut", "beslutat", "beslutit", "bland", "blev", "bli", "blir", "blivit", "bort", "borta", "bra", "bäst", "bättre", "båda", "bådas", "dag", "dagar", "dagarna", "dagen", "de", "del", "delen", "dem", "den", "denna", "deras", "dess", "dessa", "det", "detta", "dig", "din", "dina", "dit", "ditt", "dock", "dom", "du", "där", "därför", "då", "e", "efter", "eftersom", "ej", "elfte", "eller", "elva", "emot", "en", "enkel", "enkelt", "enkla", "enligt", "ens", "er", "era", "ers", "ert", "ett", "ettusen", "fanns", "fem", "femte", "femtio", "femtionde", "femton", "femtonde", "fick", "fin", "finnas", "finns", "fjorton", "fjortonde", "fjärde", "fler", "flera", "flesta", "fram", "framför", "från", "fyra", "fyrtio", "fyrtionde", "få", "får", "fått", "följande", "för", "före", "förlåt", "förra", "första", "genast", "genom", "gick", "gjorde", "gjort", "god", "goda", "godare", "godast", "gott", "gälla", "gäller", "gällt", "gärna", "gå", "går", "gått", "gör", "göra", "ha", "hade", "haft", "han", "hans", "har", "heller", "hellre", "helst", "helt", "henne", "hennes", "hit", "hon", "honom", "hundra", "hundraen", "hundraett", "hur", "här", "hög", "höger", "högre", "högst", "i", "ibland", "icke", "idag", "igen", "igår", "imorgon", "in", "inför", "inga", "ingen", "ingenting", "inget", "innan", "inne", "inom", "inte", "inuti", "ja", "jag", "jo", "ju", "just", "jämfört", "kan", "kanske", "knappast", "kom", "komma", "kommer", "kommit", "kr", "kunde", "kunna", "kunnat", "kvar", "legat", "ligga", "ligger", "lika", "likställd", "likställda", "lilla", "lite", "liten", "litet", "länge", "längre", "längst", "lätt", "lättare", "lättast", "långsam", "långsammare", "långsammast", "långsamt", "långt", "låt", "man", "med", "mej", "mellan", "men", "mer", "mera", "mest", "mig", "min", "mina", "mindre", "minst", "mitt", "mittemot", "mot", "mycket", "många", "måste", "möjlig", "möjligen", "möjligt", "möjligtvis", "ned", "nederst", "nedersta", "nedre", "nej", "ner", "ni", "nio", "nionde", "nittio", "nittionde", "nitton", "nittonde", "nog", "noll", "nr", "nu", "nummer", "när", "nästa", "någon", "någonting", "något", "några", "nån", "nånting", "nåt", "nödvändig", "nödvändiga", "nödvändigt", "nödvändigtvis", "och", "också", "ofta", "oftast", "olika", "olikt", "om", "oss", "på", "rakt", "redan", "rätt", "sa", "sade", "sagt", "samma", "sedan", "senare", "senast", "sent", "sex", "sextio", "sextionde", "sexton", "sextonde", "sig", "sin", "sina", "sist", "sista", "siste", "sitt", "sitta", "sju", "sjunde", "sjuttio", "sjuttionde", "sjutton", "sjuttonde", "själv", "sjätte", "ska", "skall", "skulle", "slutligen", "små", "smått", "snart", "som", "stor", "stora", "stort", "större", "störst", "säga", "säger", "sämre", "sämst", "så", "sådan", "sådana", "sådant", "ta", "tack", "tar", "tidig", "tidigare", "tidigast", "tidigt", "till", "tills", "tillsammans", "tio", "tionde", "tjugo", "tjugoen", "tjugoett", "tjugonde", "tjugotre", "tjugotvå", "tjungo", "tolfte", "tolv", "tre", "tredje", "trettio", "trettionde", "tretton", "trettonde", "två", "tvåhundra", "under", "upp", "ur", "ursäkt", "ut", "utan", "utanför", "ute", "va", "vad", "var", "vara", "varför", "varifrån", "varit", "varje", "varken", "vars", "varsågod", "vart", "vem", "vems", "verkligen", "vi", "vid", "vidare", "viktig", "viktigare", "viktigast", "viktigt", "vilka", "vilkas", "vilken", "vilket", "vill", "väl", "vänster", "vänstra", "värre", "vår", "våra", "vårt", "än", "ännu", "är", "även", "åt", "åtminstone", "åtta", "åttio", "åttionde", "åttonde", "över", "övermorgon", "överst", "övre", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/normalizers/normalizer_sv.js":[function(require,module,exports) {
+},{}],"aR8y":[function(require,module,exports) {
 /*
  Copyright (c) 2017, Dogan Yazar
 
@@ -33975,7 +33721,7 @@ var remove_diacritics = function (text) {
 
 
 exports.remove_diacritics = remove_diacritics;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_sv.js":[function(require,module,exports) {
+},{}],"vQpl":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Dogan Yazar
 
@@ -34014,7 +33760,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
 
   return this.trim(text.split(/[^A-Za-z0-9_åÅäÄöÖüÜ\-]+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","../normalizers/normalizer_sv":"../node_modules/natural/lib/natural/normalizers/normalizer_sv.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_sv.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","../normalizers/normalizer_sv":"aR8y","util":"nq70"}],"MbE4":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Dogan Yazar
 
@@ -34073,7 +33819,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_sv":"../node_modules/natural/lib/natural/util/stopwords_sv.js","../tokenizers/aggressive_tokenizer_sv":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_sv.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_sv.js":[function(require,module,exports) {
+},{"../util/stopwords_sv":"vvpR","../tokenizers/aggressive_tokenizer_sv":"vQpl"}],"BtZF":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Dogan Yazar
 
@@ -34179,7 +33925,7 @@ var PorterStemmer = new Stemmer();
 module.exports = PorterStemmer; // perform full stemming algorithm on a single word
 
 PorterStemmer.stem = stem;
-},{"./stemmer_sv":"../node_modules/natural/lib/natural/stemmers/stemmer_sv.js"}],"../node_modules/natural/lib/natural/util/stopwords_pt.js":[function(require,module,exports) {
+},{"./stemmer_sv":"MbE4"}],"AOSE":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Luís Rodrigues
 
@@ -34206,7 +33952,7 @@ THE SOFTWARE.
 var words = ['a', 'à', 'ao', 'aos', 'aquela', 'aquelas', 'aquele', 'aqueles', 'aquilo', 'as', 'às', 'até', 'com', 'como', 'da', 'das', 'de', 'dela', 'delas', 'dele', 'deles', 'depois', 'do', 'dos', 'e', 'ela', 'elas', 'ele', 'eles', 'em', 'entre', 'essa', 'essas', 'esse', 'esses', 'esta', 'estas', 'este', 'estes', 'eu', 'isso', 'isto', 'já', 'lhe', 'lhes', 'mais', 'mas', 'me', 'mesmo', 'meu', 'meus', 'minha', 'minhas', 'muito', 'muitos', 'na', 'não', 'nas', 'nem', 'no', 'nos', 'nós', 'nossa', 'nossas', 'nosso', 'nossos', 'num', 'nuns', 'numa', 'numas', 'o', 'os', 'ou', 'para', 'pela', 'pelas', 'pelo', 'pelos', 'por', 'quais', 'qual', 'quando', 'que', 'quem', 'se', 'sem', 'seu', 'seus', 'só', 'sua', 'suas', 'também', 'te', 'teu', 'teus', 'tu', 'tua', 'tuas', 'um', 'uma', 'umas', 'você', 'vocês', 'vos', 'vosso', 'vossos', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_']; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_pt.js":[function(require,module,exports) {
+},{}],"IWGI":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel,David Przybilla
 
@@ -34248,7 +33994,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.withoutEmpty(this.trim(text.split(/[^a-zA-Zà-úÀ-Ú]/)));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/stemmer_pt.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"AanW":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Ismaël Héry
 
@@ -34312,7 +34058,7 @@ module.exports = function () {
     };
   };
 };
-},{"../util/stopwords_pt":"../node_modules/natural/lib/natural/util/stopwords_pt.js","../tokenizers/aggressive_tokenizer_pt":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_pt.js"}],"../node_modules/natural/lib/natural/stemmers/token.js":[function(require,module,exports) {
+},{"../util/stopwords_pt":"AOSE","../tokenizers/aggressive_tokenizer_pt":"IWGI"}],"a9CL":[function(require,module,exports) {
 /*
 Copyright (c) 2015, Luís Rodrigues
 
@@ -34489,7 +34235,7 @@ module.exports = function () {
 
   return Token;
 }();
-},{}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_pt.js":[function(require,module,exports) {
+},{}],"vN4u":[function(require,module,exports) {
 /*
 Copyright (c) 2015, Luís Rodrigues
 
@@ -34724,7 +34470,7 @@ module.exports = function () {
 
   return PorterStemmer;
 }();
-},{"./stemmer_pt":"../node_modules/natural/lib/natural/stemmers/stemmer_pt.js","./token":"../node_modules/natural/lib/natural/stemmers/token.js"}],"../node_modules/natural/lib/natural/util/stopwords_nl.js":[function(require,module,exports) {
+},{"./stemmer_pt":"AanW","./token":"a9CL"}],"Bt0H":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel, Martijn de Boer, Damien van Holten
 
@@ -34753,7 +34499,7 @@ THE SOFTWARE.
 var words = ['aan', 'af', 'al', 'alles', 'als', 'altijd', 'andere', 'ben', 'bij', 'daar', 'dan', 'dat', 'de', 'der', 'deze', 'die', 'dit', 'doch', 'doen', 'door', 'dus', 'een', 'eens', 'en', 'er', 'ge', 'geen', 'geweest', 'haar', 'had', 'heb', 'hebben', 'heeft', 'hem', 'het', 'hier', 'hij', 'hoe', 'hun', 'iemand', 'iets', 'ik', 'in', 'is', 'ja', 'je ', 'kan', 'kon', 'kunnen', 'maar', 'me', 'meer', 'men', 'met', 'mij', 'mijn', 'moet', 'na', 'naar', 'niet', 'niets', 'nog', 'nu', 'of', 'om', 'omdat', 'ons', 'ook', 'op', 'over', 'reeds', 'te', 'tegen', 'toch', 'toen', 'tot', 'u', 'uit', 'uw', 'van', 'veel', 'voor', 'want', 'waren', 'was', 'wat', 'we', 'wel', 'werd', 'wezen', 'wie', 'wij', 'wil', 'worden', 'zal', 'ze', 'zei', 'zelf', 'zich', 'zij', 'zijn', 'zo', 'zonder', 'zou', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '$', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_', '-']; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/stemmers/stemmer_nl.js":[function(require,module,exports) {
+},{}],"uWxa":[function(require,module,exports) {
 /*
 Copyright (c) 2018 Hugo W.L. ter Doest 
 
@@ -34818,7 +34564,7 @@ class Stemmer {
 }
 
 module.exports = Stemmer;
-},{"../util/stopwords_nl":"../node_modules/natural/lib/natural/util/stopwords_nl.js","../tokenizers/aggressive_tokenizer":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer.js"}],"../node_modules/natural/lib/natural/stemmers/porter_stemmer_nl.js":[function(require,module,exports) {
+},{"../util/stopwords_nl":"Bt0H","../tokenizers/aggressive_tokenizer":"nbJc"}],"Bi3x":[function(require,module,exports) {
 /*
 Copyright (c) 2018, Hugo W.L. ter Doest
 
@@ -35185,7 +34931,7 @@ class PorterStemmer extends Stemmer {
 }
 
 module.exports = new PorterStemmer();
-},{"./stemmer_nl":"../node_modules/natural/lib/natural/stemmers/stemmer_nl.js"}],"../node_modules/natural/lib/natural/stemmers/lancaster_rules.js":[function(require,module,exports) {
+},{"./stemmer_nl":"uWxa"}],"mZOq":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -35838,7 +35584,7 @@ exports.rules = {
     "size": "1"
   }]
 };
-},{}],"../node_modules/natural/lib/natural/stemmers/lancaster_stemmer.js":[function(require,module,exports) {
+},{}],"QfRu":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -35907,7 +35653,7 @@ module.exports = LancasterStemmer;
 LancasterStemmer.stem = function (token) {
   return applyRuleSection(token.toLowerCase(), true);
 };
-},{"./stemmer":"../node_modules/natural/lib/natural/stemmers/stemmer.js","./lancaster_rules":"../node_modules/natural/lib/natural/stemmers/lancaster_rules.js"}],"../node_modules/natural/lib/natural/util/utils.js":[function(require,module,exports) {
+},{"./stemmer":"W4ba","./lancaster_rules":"mZOq"}],"Jjya":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -36025,7 +35771,7 @@ function merge(var_args) {
 exports.replacer = replacer;
 exports.flip = flip;
 exports.merge = merge;
-},{}],"../node_modules/natural/lib/natural/normalizers/normalizer_ja.js":[function(require,module,exports) {
+},{}],"bYkY":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -36609,7 +36355,7 @@ var normalize_ja = function (str) {
 
 exports.normalize_ja = normalize_ja;
 exports.converters = converters;
-},{"../util/utils.js":"../node_modules/natural/lib/natural/util/utils.js","../util/utils":"../node_modules/natural/lib/natural/util/utils.js"}],"../node_modules/natural/lib/natural/tokenizers/tokenizer_ja.js":[function(require,module,exports) {
+},{"../util/utils.js":"Jjya","../util/utils":"Jjya"}],"Fain":[function(require,module,exports) {
 // Original copyright:
 
 /*
@@ -38215,7 +37961,7 @@ TokenizerJa.prototype.tokenize = function (text) {
 };
 
 module.exports = TokenizerJa;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","../normalizers/normalizer_ja":"../node_modules/natural/lib/natural/normalizers/normalizer_ja.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/util/stopwords_ja.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","../normalizers/normalizer_ja":"bYkY","util":"nq70"}],"yEFa":[function(require,module,exports) {
 // Original copyright:
 
 /*
@@ -38264,7 +38010,7 @@ THE SOFTWARE.
 var words = ['の', 'に', 'は', 'を', 'た', 'が', 'で', 'て', 'と', 'し', 'れ', 'さ', 'ある', 'いる', 'も', 'する', 'から', 'な', 'こと', 'として', 'い', 'や', 'れる', 'など', 'なっ', 'ない', 'この', 'ため', 'その', 'あっ', 'よう', 'また', 'もの', 'という', 'あり', 'まで', 'られ', 'なる', 'へ', 'か', 'だ', 'これ', 'によって', 'により', 'おり', 'より', 'による', 'ず', 'なり', 'られる', 'において', 'ば', 'なかっ', 'なく', 'しかし', 'について', 'せ', 'だっ', 'その後', 'できる', 'それ', 'う', 'ので', 'なお', 'のみ', 'でき', 'き', 'つ', 'における', 'および', 'いう', 'さらに', 'でも', 'ら', 'たり', 'その他', 'に関する', 'たち', 'ます', 'ん', 'なら', 'に対して', '特に', 'せる', '及び', 'これら', 'とき', 'では', 'にて', 'ほか', 'ながら', 'うち', 'そして', 'とともに', 'ただし', 'かつて', 'それぞれ', 'または', 'お', 'ほど', 'ものの', 'に対する', 'ほとんど', 'と共に', 'といった', 'です', 'とも', 'ところ', 'ここ']; // tell the world about the noise words.
 
 module.exports = words;
-},{}],"../node_modules/natural/lib/natural/stemmers/stemmer_ja.js":[function(require,module,exports) {
+},{}],"DyXv":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -38398,7 +38144,7 @@ StemmerJa.prototype.attach = function () {
 };
 
 module.exports = StemmerJa;
-},{"../tokenizers/tokenizer_ja":"../node_modules/natural/lib/natural/tokenizers/tokenizer_ja.js","../util/stopwords_ja":"../node_modules/natural/lib/natural/util/stopwords_ja.js"}],"../node_modules/natural/lib/natural/util/stopwords_id.js":[function(require,module,exports) {
+},{"../tokenizers/tokenizer_ja":"Fain","../util/stopwords_ja":"yEFa"}],"Niew":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -38425,7 +38171,7 @@ THE SOFTWARE.
 var words = ['a', 'ada', 'adalah', 'adanya', 'adapun', 'agak', 'agaknya', 'agar', 'akan', 'akankah', 'akhir', 'akhiri', 'akhirnya', 'aku', 'akulah', 'amat', 'amatlah', 'anda', 'andalah', 'antar', 'antara', 'antaranya', 'apa', 'apaan', 'apabila', 'apakah', 'apalagi', 'apatah', 'arti', 'artinya', 'asal', 'asalkan', 'atas', 'atau', 'ataukah', 'ataupun', 'awal', 'awalnya', 'b', 'bagai', 'bagaikan', 'bagaimana', 'bagaimanakah', 'bagaimanapun', 'bagainamakah', 'bagi', 'bagian', 'bahkan', 'bahwa', 'bahwasannya', 'bahwasanya', 'baik', 'baiklah', 'bakal', 'bakalan', 'balik', 'banyak', 'bapak', 'baru', 'bawah', 'beberapa', 'begini', 'beginian', 'beginikah', 'beginilah', 'begitu', 'begitukah', 'begitulah', 'begitupun', 'bekerja', 'belakang', 'belakangan', 'belum', 'belumlah', 'benar', 'benarkah', 'benarlah', 'berada', 'berakhir', 'berakhirlah', 'berakhirnya', 'berapa', 'berapakah', 'berapalah', 'berapapun', 'berarti', 'berawal', 'berbagai', 'berdatangan', 'beri', 'berikan', 'berikut', 'berikutnya', 'berjumlah', 'berkali-kali', 'berkata', 'berkehendak', 'berkeinginan', 'berkenaan', 'berlainan', 'berlalu', 'berlangsung', 'berlebihan', 'bermacam', 'bermacam-macam', 'bermaksud', 'bermula', 'bersama', 'bersama-sama', 'bersiap', 'bersiap-siap', 'bertanya', 'bertanya-tanya', 'berturut', 'berturut-turut', 'bertutur', 'berujar', 'berupa', 'besar', 'betul', 'betulkah', 'biasa', 'biasanya', 'bila', 'bilakah', 'bisa', 'bisakah', 'boleh', 'bolehkah', 'bolehlah', 'buat', 'bukan', 'bukankah', 'bukanlah', 'bukannya', 'bulan', 'bung', 'c', 'cara', 'caranya', 'cukup', 'cukupkah', 'cukuplah', 'cuma', 'd', 'dahulu', 'dalam', 'dan', 'dapat', 'dari', 'daripada', 'datang', 'dekat', 'demi', 'demikian', 'demikianlah', 'dengan', 'depan', 'di', 'dia', 'diakhiri', 'diakhirinya', 'dialah', 'diantara', 'diantaranya', 'diberi', 'diberikan', 'diberikannya', 'dibuat', 'dibuatnya', 'didapat', 'didatangkan', 'digunakan', 'diibaratkan', 'diibaratkannya', 'diingat', 'diingatkan', 'diinginkan', 'dijawab', 'dijelaskan', 'dijelaskannya', 'dikarenakan', 'dikatakan', 'dikatakannya', 'dikerjakan', 'diketahui', 'diketahuinya', 'dikira', 'dilakukan', 'dilalui', 'dilihat', 'dimaksud', 'dimaksudkan', 'dimaksudkannya', 'dimaksudnya', 'diminta', 'dimintai', 'dimisalkan', 'dimulai', 'dimulailah', 'dimulainya', 'dimungkinkan', 'dini', 'dipastikan', 'diperbuat', 'diperbuatnya', 'dipergunakan', 'diperkirakan', 'diperlihatkan', 'diperlukan', 'diperlukannya', 'dipersoalkan', 'dipertanyakan', 'dipunyai', 'diri', 'dirinya', 'disampaikan', 'disebut', 'disebutkan', 'disebutkannya', 'disini', 'disinilah', 'ditambahkan', 'ditandaskan', 'ditanya', 'ditanyai', 'ditanyakan', 'ditegaskan', 'ditujukan', 'ditunjuk', 'ditunjuki', 'ditunjukkan', 'ditunjukkannya', 'ditunjuknya', 'dituturkan', 'dituturkannya', 'diucapkan', 'diucapkannya', 'diungkapkan', 'dong', 'dua', 'dulu', 'e', 'empat', 'enak', 'enggak', 'enggaknya', 'entah', 'entahlah', 'f', 'g', 'guna', 'gunakan', 'h', 'hadap', 'hai', 'hal', 'halo', 'hallo', 'hampir', 'hanya', 'hanyalah', 'hari', 'harus', 'haruslah', 'harusnya', 'helo', 'hello', 'hendak', 'hendaklah', 'hendaknya', 'hingga', 'i', 'ia', 'ialah', 'ibarat', 'ibaratkan', 'ibaratnya', 'ibu', 'ikut', 'ingat', 'ingat-ingat', 'ingin', 'inginkah', 'inginkan', 'ini', 'inikah', 'inilah', 'itu', 'itukah', 'itulah', 'j', 'jadi', 'jadilah', 'jadinya', 'jangan', 'jangankan', 'janganlah', 'jauh', 'jawab', 'jawaban', 'jawabnya', 'jelas', 'jelaskan', 'jelaslah', 'jelasnya', 'jika', 'jikalau', 'juga', 'jumlah', 'jumlahnya', 'justru', 'k', 'kadar', 'kala', 'kalau', 'kalaulah', 'kalaupun', 'kali', 'kalian', 'kami', 'kamilah', 'kamu', 'kamulah', 'kan', 'kapan', 'kapankah', 'kapanpun', 'karena', 'karenanya', 'kasus', 'kata', 'katakan', 'katakanlah', 'katanya', 'ke', 'keadaan', 'kebetulan', 'kecil', 'kedua', 'keduanya', 'keinginan', 'kelamaan', 'kelihatan', 'kelihatannya', 'kelima', 'keluar', 'kembali', 'kemudian', 'kemungkinan', 'kemungkinannya', 'kena', 'kenapa', 'kepada', 'kepadanya', 'kerja', 'kesampaian', 'keseluruhan', 'keseluruhannya', 'keterlaluan', 'ketika', 'khusus', 'khususnya', 'kini', 'kinilah', 'kira', 'kira-kira', 'kiranya', 'kita', 'kitalah', 'kok', 'kurang', 'l', 'lagi', 'lagian', 'lah', 'lain', 'lainnya', 'laku', 'lalu', 'lama', 'lamanya', 'langsung', 'lanjut', 'lanjutnya', 'lebih', 'lewat', 'lihat', 'lima', 'luar', 'm', 'macam', 'maka', 'makanya', 'makin', 'maksud', 'malah', 'malahan', 'mampu', 'mampukah', 'mana', 'manakala', 'manalagi', 'masa', 'masalah', 'masalahnya', 'masih', 'masihkah', 'masing', 'masing-masing', 'masuk', 'mata', 'mau', 'maupun', 'melainkan', 'melakukan', 'melalui', 'melihat', 'melihatnya', 'memang', 'memastikan', 'memberi', 'memberikan', 'membuat', 'memerlukan', 'memihak', 'meminta', 'memintakan', 'memisalkan', 'memperbuat', 'mempergunakan', 'memperkirakan', 'memperlihatkan', 'mempersiapkan', 'mempersoalkan', 'mempertanyakan', 'mempunyai', 'memulai', 'memungkinkan', 'menaiki', 'menambahkan', 'menandaskan', 'menanti', 'menanti-nanti', 'menantikan', 'menanya', 'menanyai', 'menanyakan', 'mendapat', 'mendapatkan', 'mendatang', 'mendatangi', 'mendatangkan', 'menegaskan', 'mengakhiri', 'mengapa', 'mengatakan', 'mengatakannya', 'mengenai', 'mengerjakan', 'mengetahui', 'menggunakan', 'menghendaki', 'mengibaratkan', 'mengibaratkannya', 'mengingat', 'mengingatkan', 'menginginkan', 'mengira', 'mengucapkan', 'mengucapkannya', 'mengungkapkan', 'menjadi', 'menjawab', 'menjelaskan', 'menuju', 'menunjuk', 'menunjuki', 'menunjukkan', 'menunjuknya', 'menurut', 'menuturkan', 'menyampaikan', 'menyangkut', 'menyatakan', 'menyebutkan', 'menyeluruh', 'menyiapkan', 'merasa', 'mereka', 'merekalah', 'merupakan', 'meski', 'meskipun', 'meyakini', 'meyakinkan', 'minta', 'mirip', 'misal', 'misalkan', 'misalnya', 'mohon', 'mula', 'mulai', 'mulailah', 'mulanya', 'mungkin', 'mungkinkah', 'n', 'nah', 'naik', 'namun', 'nanti', 'nantinya', 'nya', 'nyaris', 'nyata', 'nyatanya', 'o', 'oleh', 'olehnya', 'orang', 'p', 'pada', 'padahal', 'padanya', 'pak', 'paling', 'panjang', 'pantas', 'para', 'pasti', 'pastilah', 'penting', 'pentingnya', 'per', 'percuma', 'perlu', 'perlukah', 'perlunya', 'pernah', 'persoalan', 'pertama', 'pertama-tama', 'pertanyaan', 'pertanyakan', 'pihak', 'pihaknya', 'pukul', 'pula', 'pun', 'punya', 'q', 'r', 'rasa', 'rasanya', 'rupa', 'rupanya', 's', 'saat', 'saatnya', 'saja', 'sajalah', 'salam', 'saling', 'sama', 'sama-sama', 'sambil', 'sampai', 'sampai-sampai', 'sampaikan', 'sana', 'sangat', 'sangatlah', 'sangkut', 'satu', 'saya', 'sayalah', 'se', 'sebab', 'sebabnya', 'sebagai', 'sebagaimana', 'sebagainya', 'sebagian', 'sebaik', 'sebaik-baiknya', 'sebaiknya', 'sebaliknya', 'sebanyak', 'sebegini', 'sebegitu', 'sebelum', 'sebelumnya', 'sebenarnya', 'seberapa', 'sebesar', 'sebetulnya', 'sebisanya', 'sebuah', 'sebut', 'sebutlah', 'sebutnya', 'secara', 'secukupnya', 'sedang', 'sedangkan', 'sedemikian', 'sedikit', 'sedikitnya', 'seenaknya', 'segala', 'segalanya', 'segera', 'seharusnya', 'sehingga', 'seingat', 'sejak', 'sejauh', 'sejenak', 'sejumlah', 'sekadar', 'sekadarnya', 'sekali', 'sekali-kali', 'sekalian', 'sekaligus', 'sekalipun', 'sekarang', 'sekaranglah', 'sekecil', 'seketika', 'sekiranya', 'sekitar', 'sekitarnya', 'sekurang-kurangnya', 'sekurangnya', 'sela', 'selain', 'selaku', 'selalu', 'selama', 'selama-lamanya', 'selamanya', 'selanjutnya', 'seluruh', 'seluruhnya', 'semacam', 'semakin', 'semampu', 'semampunya', 'semasa', 'semasih', 'semata', 'semata-mata', 'semaunya', 'sementara', 'semisal', 'semisalnya', 'sempat', 'semua', 'semuanya', 'semula', 'sendiri', 'sendirian', 'sendirinya', 'seolah', 'seolah-olah', 'seorang', 'sepanjang', 'sepantasnya', 'sepantasnyalah', 'seperlunya', 'seperti', 'sepertinya', 'sepihak', 'sering', 'seringnya', 'serta', 'serupa', 'sesaat', 'sesama', 'sesampai', 'sesegera', 'sesekali', 'seseorang', 'sesuatu', 'sesuatunya', 'sesudah', 'sesudahnya', 'setelah', 'setempat', 'setengah', 'seterusnya', 'setiap', 'setiba', 'setibanya', 'setidak-tidaknya', 'setidaknya', 'setinggi', 'seusai', 'sewaktu', 'siap', 'siapa', 'siapakah', 'siapapun', 'sini', 'sinilah', 'soal', 'soalnya', 'suatu', 'sudah', 'sudahkah', 'sudahlah', 'supaya', 't', 'tadi', 'tadinya', 'tahu', 'tak', 'tambah', 'tambahnya', 'tampak', 'tampaknya', 'tandas', 'tandasnya', 'tanpa', 'tanya', 'tanyakan', 'tanyanya', 'tapi', 'tegas', 'tegasnya', 'telah', 'tempat', 'tentang', 'tentu', 'tentulah', 'tentunya', 'tepat', 'terakhir', 'terasa', 'terbanyak', 'terdahulu', 'terdapat', 'terdiri', 'terhadap', 'terhadapnya', 'teringat', 'teringat-ingat', 'terjadi', 'terjadilah', 'terjadinya', 'terkira', 'terlalu', 'terlebih', 'terlihat', 'termasuk', 'ternyata', 'tersampaikan', 'tersebut', 'tersebutlah', 'tertentu', 'tertuju', 'terus', 'terutama', 'tetap', 'tetapi', 'tiap', 'tiba', 'tiba-tiba', 'tidak', 'tidakkah', 'tidaklah', 'tiga', 'toh', 'tuju', 'tunjuk', 'turut', 'tutur', 'tuturnya', 'u', 'ucap', 'ucapnya', 'ujar', 'ujarnya', 'umumnya', 'ungkap', 'ungkapnya', 'untuk', 'usah', 'usai', 'v', 'w', 'waduh', 'wah', 'wahai', 'waktunya', 'walau', 'walaupun', 'wong', 'x', 'y', 'ya', 'yaitu', 'yakin', 'yakni', 'yang', 'z']; // tell the world about the noise words.
 
 exports.words = words;
-},{}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_id.js":[function(require,module,exports) {
+},{}],"miQx":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -38468,7 +38214,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   text = normalizeText(text);
   return this.trim(text.split(' '));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/stemmers/indonesian/base_stemmer_id.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"K9OX":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -38551,7 +38297,7 @@ module.exports = function () {
     };
   };
 };
-},{"../../util/stopwords_id":"../node_modules/natural/lib/natural/util/stopwords_id.js","../../tokenizers/aggressive_tokenizer_id":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_id.js"}],"../node_modules/natural/lib/natural/stemmers/indonesian/removal.js":[function(require,module,exports) {
+},{"../../util/stopwords_id":"Niew","../../tokenizers/aggressive_tokenizer_id":"miQx"}],"jQaI":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -38599,7 +38345,7 @@ Removal.prototype.getAffixType = function () {
 };
 
 module.exports = Removal;
-},{}],"../node_modules/natural/lib/natural/stemmers/indonesian/suffix_rules.js":[function(require,module,exports) {
+},{}],"b9X0":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -38667,11 +38413,11 @@ rules.push(sr.RemoveInflectionalParticle);
 rules.push(sr.RemoveInflectionalPossessivePronoun);
 rules.push(sr.RemoveDerivationalSuffix);
 SuffixRules.rules = rules;
-},{"./removal":"../node_modules/natural/lib/natural/stemmers/indonesian/removal.js"}],"../node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
+},{"./removal":"jQaI"}],"rDCW":[function(require,module,exports) {
 
-},{}],"../node_modules/natural/lib/natural/stemmers/indonesian/data/kata-dasar.json":[function(require,module,exports) {
+},{}],"fmNn":[function(require,module,exports) {
 module.exports = ["aba", "abad", "abadi", "abadiah", "abah", "abai", "abaimana", "abaka", "abaktinal", "abakus", "abal-abal", "aban", "abang", "abangan", "abangga", "abar", "abatoar", "abau", "abdas", "abdi", "abdikasi", "abdomen", "abdominal", "abdu", "abduksi", "abduktor", "abece", "aben", "aberasi", "abet", "abian", "abid", "abidin", "abilah", "abing", "abiogenesis", "abiosfer", "abiotik", "abis", "abisal", "abiseka", "abiturien", "abjad", "abjadiah", "ablasi", "ablaut", "ablepsia", "abnormal", "abnormalitas", "abnus", "aboi", "abolisi", "abon", "abonemen", "abong-abong", "aborsi", "abortif", "abortiva", "abortus", "abrak", "abrakadabra", "abrar", "abras", "abrasi", "abreaksi", "abrek", "abreviasi", "abrikos", "abrit-abrit", "abrosfer", "absah", "absen", "absensi", "absensia", "absente", "absenteisme", "abses", "absis", "absolusi", "absolut", "absolutisme", "absonan", "absorb", "absorben", "absorbir", "absorpsi", "absorpsiometer", "absorptif", "abstain", "abstinensi", "abstrak", "abstraksi", "absurd", "absurdisme", "abtar", "abu", "abuan", "abuh", "abuk", "abulhayat", "abulia", "abun-abun", "abur", "abus", "abyad", "acah", "acak", "acala", "acan", "acang", "acap", "acar", "acara", "acaram", "acat", "acau", "acawi", "acerang", "aci", "acik", "aco", "acu", "acuh", "acum", "acung", "ada", "adab", "adad", "adagio", "adagium", "adakala", "adakalanya", "adakan", "adaks", "adaktil", "adalah", "adalat", "adam", "adan", "adang", "adap", "adaptabel", "adaptabilitas", "adaptasi", "adaptif", "adaptometer", "adaptor", "adapun", "adar", "adas", "adat", "adati", "adegan", "adeh", "adekuat", "adem", "adempauze", "adendum", "adenoid", "adenoma", "adenosis", "adhesi", "adhesif", "adi", "adiabatik", "adiabatis", "adiaktinik", "adib", "adibangkit", "adibintang", "adiboga", "adibusana", "adicita", "adidaya", "adigang", "adiguna", "adigung", "adik", "adika", "adikara", "adikarya", "adikodrati", "adikong", "adiksi", "adiktif", "adikuasa", "adil", "adiluhung", "adimarga", "adinda", "ading", "adipati", "adipenghantar", "adiposa", "adipositas", "adipura", "adiraja", "adiratna", "adisi", "adisional", "adisiswa", "aditif", "aditokoh", "adiwangsa", "adiwarna", "adiwidia", "adjektif", "adjektiva", "adjektival", "adjuvan", "administrasi", "administratif", "administrator", "admiral", "admisi", "admitans", "adnan", "adolesens", "adon", "adopsi", "adoptif", "adpertensi", "adrenal", "adrenalin", "adrenergik", "adres", "adsorben", "adsorpi", "adsorpsi", "adstringen", "adu", "aduh", "aduhai", "aduk", "aduksi", "aduktor", "adun", "adveksi", "adven", "adventisia", "adventisius", "adverbia", "adverbial", "advertensi", "advis", "advokad", "advokasi", "advokat", "aerasi", "aerator", "aerob", "aerobatik", "aerobik", "aerobika", "aerodinamik", "aerodinamika", "aerofisika", "aerofisiologi", "aerofon", "aerogram", "aerolit", "aerologi", "aerometer", "aeromovel", "aeronautika", "aeroplangton", "aeroplankton", "aeroskop", "aerosol", "aerostat", "aerostatika", "aestetika", "afair", "afal", "afasia", "afdal", "afdeling", "afdruk", "afek", "afeksi", "afektif", "aferesis", "afiat", "afidavit", "afiks", "afiksasi", "afiliasi", "afinitas", "afirmasi", "afirmatif", "afonia", "aforisme", "afotik", "afrasia", "afrikat", "afrit", "afrodisiak", "afsun", "afwah", "aga", "agah", "agak", "agak-agih", "agal", "agalaksia", "agam", "agama", "agamais", "agamawi", "agamen", "agamet", "agami", "agamogenesis", "agan", "agape", "agar", "agas", "agen", "agenda", "agens", "agentif", "agih", "agil", "agio", "agiria", "agitasi", "agitatif", "agitator", "aglikon", "aglomerasi", "aglomerat", "aglutinasi", "aglutinat", "aglutinatif", "aglutinin", "agnosia", "agnostik", "agnostisisme", "agogo", "agometer", "agon", "agonia", "agonis", "agonistik", "agorafobia", "agradasi", "agrafia", "agraria", "agraris", "agregasi", "agregat", "agregatif", "agresi", "agresif", "agresivitas", "agresor", "agriologi", "agripnia", "agrisilvikultur", "agrobis", "agrobisnis", "agroekonomi", "agroekosistem", "agrogeologi", "agroikos", "agroindustri", "agrokimia", "agronom", "agronomi", "agrostologi", "agrowisata", "aguk", "agul", "agun", "agung", "agus", "agustus", "agut", "ahad", "ahadiat", "ahimsa", "ahistoris", "ahkam", "ahlan", "ahli", "ahlulbait", "ahlulkitab", "ahlulkubur", "ahlunujum", "ahlusuluk", "ahlusunah", "ahmak", "ahmar", "aho", "ahsan", "ahwal", "aib", "ain", "ainulbanat", "ainulyakin", "ainunjariah", "air", "aja", "ajab", "ajaib", "ajaibkhanah", "ajak", "ajal", "ajang", "ajar", "ajek", "ajektifa", "ajektiva", "ajengan", "aji", "ajigineng", "ajimumpung", "ajir", "ajisaka", "ajnabi", "ajnas", "ajojing", "ajre", "aju", "ajudan", "ajufan", "ajujah", "ajuk", "ajun", "ajung", "ajur", "ajuster", "akad", "akademi", "akademik", "akademikus", "akademis", "akademisi", "akaid", "akak", "akal", "akan", "akang", "akapela", "akar", "akas", "akasia", "akatalepsia", "akbar", "akene", "akeo", "akh", "akhbar", "akhir", "akhirat", "akhirulkalam", "akhlak", "akhlaki", "akhwan", "aki", "akibat", "akidah", "akik", "akikah", "akil", "aklamasi", "aklasia", "akli", "akliah", "aklimasi", "aklimatisasi", "akmal", "akolade", "akomodasi", "akomodatif", "akor", "akordeon", "akrab", "akrawati", "akreditasi", "akriflavina", "akrilat", "akrilik", "akrobat", "akrobatik", "akrofobia", "akromegali", "akrometer", "akromion", "akronim", "aksa", "aksara", "akseleran", "akselerasi", "akselerator", "akselerometer", "aksen", "aksentologi", "aksentuasi", "aksep", "akseptabel", "akseptabilitas", "akseptasi", "akseptor", "akses", "aksesibilitas", "aksesori", "aksi", "aksidental", "aksila", "aksiologi", "aksioma", "aksiomatis", "aksis", "akson", "aksostil", "akta", "aktentas", "aktif", "akting", "aktinida", "aktinik", "aktinisme", "aktinium", "aktinokimia", "aktinolit", "aktinometer", "aktiva", "aktivis", "aktivisme", "aktivitas", "aktor", "aktris", "aktual", "aktualisasi", "aktuaria", "aktuaris", "aku", "akua", "akuades", "akuaduk", "akuakultur", "akualung", "akuamarin", "akuan", "akuarel", "akuaris", "akuarium", "akuarius", "akuatik", "akuifer", "akuisisi", "akuk", "akulturasi", "akumulasi", "akumulatif", "akumulator", "akun", "akuntabel", "akuntabilitas", "akuntan", "akuntansi", "akupungtur", "akupungturis", "akupunktur", "akur", "akurasi", "akurat", "akusatif", "akustik", "akustika", "akut", "akwal", "ala", "alabangka", "alabio", "alaf", "alai", "alai-belai", "alaihisalam", "alaika", "alaikum", "alak", "alalia", "alam", "alamah", "alamak", "alamanda", "alamas", "alamat", "alamatulhayat", "alami", "alamiah", "alamin", "alan-alan", "alang", "alangkah", "alantois", "alap", "alarm", "alas", "alat", "alau", "alawar", "alazon", "albanat", "albas", "albatros", "albedo", "albedometer", "albinisme", "albino", "albinoid", "albit", "albuginea", "album", "albumen", "albumin", "albuminoit", "albuminometer", "albuminuria", "aldehida", "alegori", "alegoris", "aleksandrit", "aleksia", "aleksin", "alel", "alem", "alergen", "alergi", "alergis", "alf", "alfa", "alfabet", "alfabetis", "alfaktorius", "alfanumerik", "alferes", "alga", "algilik", "algoid", "algojo", "algologi", "algometer", "algoritme", "algrafi", "alhamdulillah", "alhasil", "ali", "aliansi", "alias", "aliase", "alibi", "alienasi", "alif", "alifatik", "alifbata", "alih", "alihragam", "alik", "alikuot", "alim", "alimbubu", "alimentasi", "alimenter", "alimiah", "alimiat", "alimun", "alin", "alinea", "aling", "alip", "alir", "alis", "alisiklik", "alit", "aliterasi", "alizarin", "aljabar", "aljalil", "alkabir", "alkadim", "alkadir", "alkah", "alkali", "alkalinitas", "alkalis", "alkaloid", "alkalometri", "alkamar", "alkana", "alkari", "alkasyaf", "alkausar", "alkena", "alkil", "alkimia", "alkisah", "alkitab", "alkohol", "alkoholis", "alkoholisasi", "alkoholisme", "alkoholometer", "alku", "alkuna", "alkus", "allah", "allahu", "allahuma", "almaktub", "almalik", "almalun", "almamater", "almanak", "almandin", "almandina", "almandit", "almarhum", "almarhumah", "almasih", "almuazam", "almukhlis", "alobar", "alofon", "alograf", "aloi", "alokasi", "alokron", "aloleks", "alomerisme", "alomorf", "alon", "alonim", "alopati", "alopesia", "alot", "alotropi", "alpa", "alpaka", "alperes", "alpukah", "alquran", "altar", "alter", "alteratif", "alternasi", "alternatif", "alternator", "altimeter", "alto", "altokumulus", "altostratus", "altruis", "altruisme", "altruistis", "alu", "alufiru", "alum", "alumina", "aluminium", "alumni", "alumnus", "alun", "alung", "alup", "alur", "alusi", "aluvial", "aluvium", "alveolar", "alveolum", "alveolus", "alwah", "alwasi", "alwasia", "ama", "amabakdu", "amah", "amai-amai", "amal", "amalgam", "amalgamasi", "amalgamator", "amaliah", "aman", "amanah", "amanat", "amandel", "amandemen", "amang", "amanitin", "amar", "amarilis", "amat", "amatir", "amatirisme", "amatol", "ambah", "ambah-ambah", "ambai", "ambai-ambai", "ambak", "ambal", "ambalang", "ambalela", "ambang", "ambar", "ambarau", "ambasade", "ambasador", "ambau", "ambeien", "ambek", "amben", "amberal", "ambergris", "amberit", "ambet", "ambi", "ambigu", "ambiguitas", "ambil", "ambilingual", "ambin", "ambing", "ambisi", "ambisius", "ambivalen", "ambivalensi", "amblas", "amblek", "ambles", "ambliobia", "amboi", "ambreng-ambrengan", "ambring", "ambrol", "ambruk", "ambu-ambu", "ambuh", "ambul", "ambulakral", "ambulans", "ambulatori", "ambung", "ambur", "amburadul", "ambyar", "ameba", "amebiasis", "ameboid", "amebosit", "ameliorasi", "amelioratif", "amen", "amendemen", "amenorea", "amensalisme", "amenta", "amerisium", "amerospora", "amerta", "ametabola", "ametis", "ametobola", "amfetamin", "amfiartrosis", "amfibi", "amfibol", "amfibolisme", "amfiston", "amfiteater", "amfoterik", "ami", "amigdalin", "amikal", "amil", "amilase", "amilopektin", "amin", "amina", "aminisasi", "amino", "amir", "amirulbahar", "amirulhaj", "amirulmukminin", "amis", "amit", "amitosir", "amko", "ammeter", "amnesia", "amnesti", "amnion", "amniotik", "amoi", "amonia", "amonifikasi", "amonit", "amonium", "amor", "amoral", "amorf", "amortisasi", "ampai", "ampang", "ampas", "ampat", "ampe", "ampean", "ampek", "ampel", "ampela", "ampelam", "ampelas", "ampere", "amperemeter", "amperometri", "ampisilin", "amplas", "amplifikasi", "amplitudo", "amplop", "ampo", "amprok", "amprung", "ampu", "ampuh", "ampuk", "ampul", "ampula", "ampun", "amput", "amputasi", "amra", "amril", "amsal", "amtenar", "amuba", "amuh", "amuk", "amulet", "amung", "amunisi", "ana", "anabasis", "anabiosis", "anabolisme", "anadrom", "anaerob", "anaerobik", "anafilaksis", "anafora", "anaforis", "anafrodisiak", "anaglif", "anai-anai", "anak", "anakoluton", "anakronisme", "anakronistis", "anakrus", "anal", "analekta", "analeptik", "analgesik", "analis", "analisis", "analitis", "analog", "analogi", "analseks", "analsit", "anamel", "anamnesis", "anamorfosis", "ananda", "anang", "anani", "anapes", "anaptiksis", "anarki", "anarkis", "anarkisme", "anarkistis", "anasional", "anasir", "anastomosis", "anatase", "anatomi", "anatomis", "anbia", "anca", "ancai", "ancak", "ancala", "ancam", "ancang", "ancar-ancar", "ancoa", "ancol", "ancuk", "anda", "andai", "andak", "andaka", "andal", "andalas", "andalusit", "andam", "andan", "andang", "andapita", "andar", "andarah", "andeng-andeng", "anderak", "andesit", "andewi", "andika", "andiko", "andil", "andilau", "andok", "andong", "andragogi", "andrawina", "androgen", "androgini", "androgogi", "androlog", "andrologi", "anduh", "andur", "aneh", "aneka", "anekdot", "aneksasi", "anemer", "anemia", "anemofili", "anemograf", "anemogram", "anemometer", "aneroid", "anestesi", "anestesia", "anestesiolog", "anestetis", "aneuploid", "aneurisme", "anfas", "angah", "angan", "angel", "angga", "anggai", "anggak", "anggal", "anggan", "anggap", "anggar", "anggara", "anggau", "anggerka", "anggit", "angglap", "anggorokasih", "anggota", "anggrek", "angguh", "angguk", "anggul", "anggun", "anggung", "anggung-anggip", "anggur", "anggut", "anghun", "angin", "angina", "angiogenesis", "angiologi", "angiosperma", "angit", "angka", "angkak", "angkal-angkal", "angkara", "angkasa", "angkat", "angkel", "angker", "angket", "angkin", "angkit", "angklung", "angkong", "angkring", "angku", "angkuh", "angkuk", "angkul-angkul", "angkup", "angkur", "angkus", "angkusa", "angkut", "angler", "anglo", "anglong", "anglung", "angon", "angop", "angot", "angpau", "angsa", "angsana", "angsoka", "angsu", "angsur", "angus", "angut", "anhidrosis", "ani", "aniaya", "anil", "anilina", "animasi", "animis", "animisme", "animo", "aning-aning", "anion", "aniridia", "anis", "anisogamet", "anisogami", "anisokoria", "anisotropis", "anja", "anjak", "anjal", "anjang", "anjangkarya", "anjangsana", "anjar", "anjiman", "anjing", "anjir", "anjlok", "anju", "anjung", "anjur", "ankilosis", "anoa", "anode", "anodin", "anofeles", "anoksemia", "anoksik", "anom", "anomali", "anomi", "anonim", "anonimitas", "anoreksia", "anorganik", "anorgastik", "anortopia", "anosmia", "anotasi", "ansa", "ansambel", "ansar", "ansari", "anta", "antagonis", "antagonisme", "antagonistis", "antah", "antah-berantah", "antakesuma", "antalas", "antalkali", "antamir", "antan", "antap", "antar", "antara", "antarbangsa", "antarbenua", "antardaerah", "antari", "antariksa", "antarkelompok", "antarlingkungan", "antarmaster", "antarmolekul", "antarmuka", "antarnegara", "antarplanet", "antarpribadi", "antarpulau", "antarras", "antarruang", "antarsel", "antarsuku", "antartika", "antarwilayah", "antasid", "antasida", "antawacana", "ante", "antedilivium", "antediluvium", "antefiks", "antek", "anteken", "antelas", "anteliks", "antelmintik", "antelop", "antem", "antemeridiem", "antena", "antenatal", "anteng", "antenul", "antep", "anter", "antera", "anteridium", "anterior", "antero", "anteseden", "anti", "antianemia", "antiartritik", "antibarion", "antibeku", "antibiosis", "antibiotik", "antibodi", "antidepresan", "antidioksida", "antidiuretik", "antidot", "antienzim", "antiflogistik", "antigen", "antigravitasi", "antih", "antihistamin", "antijasad", "antik", "antikarat", "antikatalis", "antiklimaks", "antiklin", "antiklinal", "antiklor", "antikonsepsi", "antikristus", "antikuari", "antikuariat", "antimateri", "antimetari", "antimonium", "antimuntah", "anting", "antinomi", "antinovel", "antipartikel", "antipati", "antipenawar", "antipiretik", "antipode", "antiproton", "antipruritik", "antisemitisme", "antisepsis", "antiseptik", "antisiklogenesis", "antisiklon", "antisiklonal", "antisiklonis", "antisimpul", "antisipasi", "antisipatif", "antitank", "antitesis", "antitoksin", "antitragus", "antiwirawan", "antizarah", "antoi", "antologi", "antonim", "antonimi", "antop", "antosian", "antraknosa", "antraks", "antrasena", "antrasian", "antrasit", "antre", "antri", "antromometer", "antromorfis", "antropobiologi", "antropoda", "antropofagi", "antropogeografi", "antropoid", "antropolog", "antropologi", "antropometer", "antropomorfisme", "antroponimi", "antroposentris", "antroposentrisme", "antroposofi", "antuk", "antul", "antun", "antung-antung", "antup", "anturium", "antusias", "antusiasme", "anu", "anual", "anugerah", "anuitas", "anulir", "anulus", "anumerta", "anunasika", "anuresis", "anuria", "anus", "anuswara", "anut", "anyak", "anyam", "anyang", "anyar", "anyel", "anyelir", "anyep", "anyes", "anyik", "anyir", "aorta", "apa", "apabila", "apak", "apakah", "apakala", "apalagi", "apam", "apanase", "apar", "aparat", "aparatur", "aparatus", "apartemen", "apartemenisasi", "apartheid", "apartotel", "apas", "apatah", "apati", "apatis", "apatride", "ape", "apek", "apel", "apelativa", "apendektomi", "apendiks", "apendisitis", "apepsi", "apersepsi", "apes", "aphelion", "apheliotropisme", "api", "apik", "apikal", "apikultur", "apilan", "aping", "apion", "apit", "apium", "apkir", "aplasi", "aplaus", "aplikasi", "aplikatif", "aplus", "apnea", "apo", "apodal", "apoenzim", "apogami", "apoge", "apograf", "apok", "apokalips", "apokaliptik", "apokope", "apokrifa", "apokrin", "apokromatik", "apolitis", "apologetika", "apologetis", "apologi", "apologia", "apomiksis", "apomorfin", "apopleksi", "aposematik", "aposiopesis", "aposisi", "aposisional", "apositif", "apostasi", "apostel", "aposteriori", "apostolik", "apostrof", "apotek", "apoteker", "apotik", "apraksi", "apraksia", "apresiasi", "apresiatif", "apresorium", "april", "apriori", "aprit", "apron", "apsara", "apsari", "aptasi", "aptiklus", "apu", "apuh", "apung", "apuran", "ara", "arab", "arababu", "arabahu", "arabes", "arabesk", "arabika", "aragonit", "arah", "arai", "arak", "araknitis", "araknoid", "aral", "aram", "aramba", "arang", "aransemen", "ararut", "aras", "arasy", "arau", "arbaa", "arbab", "arbei", "arbiter", "arbitrase", "arbitrer", "arboreal", "arboretum", "arborikultur", "arca", "arcas", "ardi", "are", "area", "areal", "arek", "arem-arem", "aren", "arena", "areografi", "areola", "areometer", "arerut", "ares", "arestasi", "areta", "argari", "argentit", "argentum", "argirodit", "argol", "argometer", "argon", "argot", "argumen", "argumentasi", "argumentatif", "ari", "aria", "aries", "arif", "arifin", "arih", "arik", "aril", "aring", "ariningsun", "arip", "aris", "arisan", "aristokrasi", "aristokrat", "aristokratis", "aristotipe", "arit", "aritenoid", "aritmetika", "arja", "arkade", "arkais", "arkaisme", "arkan", "arkati", "arkegonium", "arkeolog", "arkeologi", "arkeologis", "arkeozoikum", "arketipe", "arkian", "arkifonem", "arkileksem", "arkitraf", "arktika", "arku", "arloji", "armada", "arnal", "arogan", "arogansi", "aroma", "aromatik", "arombai", "aron", "arpus", "arsenal", "arsenik", "arsenikum", "arsip", "arsipelago", "arsir", "arsis", "arsitek", "arsitektur", "arta", "artefak", "arteri", "arteriografi", "arteriola", "arteriosklerosis", "artesis", "artetis", "arti", "articok", "artifak", "artifisial", "artik", "artikel", "artikulasi", "artikulator", "artileri", "artiodaktil", "artis", "artisan", "artistik", "artisyok", "artona", "artotek", "artrobrankium", "artropoda", "aru", "aruan", "aruda", "aruk", "arumba", "arun", "arung", "arus", "arwah", "arwana", "arya", "aryaduta", "arzak", "asa", "asabat", "asabiah", "asabiyah", "asad", "asah", "asai", "asak", "asal", "asali", "asam", "asan", "asana", "asap", "asar", "asas", "asasi", "asbak", "asbes", "asbut", "aseksual", "asemble", "asembling", "asepsis", "aseptik", "aseran", "asese", "aset", "asetabulum", "asetat", "asetilena", "asetimeter", "aseton", "asfal", "asfar", "asfiksia", "asi", "asibilan", "asibilasi", "asid", "asidimeter", "asidosis", "asih", "asiklik", "asil", "asilabis", "asimetris", "asimilasi", "asimilatif", "asimtot", "asimus", "asin", "asindeton", "asing", "asinyor", "asiri", "asisten", "asistensi", "askar", "askariasis", "askarid", "askese", "asket", "asketisisme", "askon", "askriptif", "asli", "asma", "asmara", "asmaradanta", "asmaragama", "asmaraloka", "asmarandana", "asnad", "aso", "asoi", "asonansi", "asong", "asor", "asortimen", "asosial", "asosiasi", "asosiatif", "aspal", "asparaga", "asparagus", "aspartame", "aspek", "asperses", "aspiran", "aspirasi", "aspirasional", "aspirat", "aspiratif", "aspirator", "aspirin", "asprak", "asrama", "asrar", "asri", "assalamualaikum", "asta", "astadikpala", "astaga", "astagfirullah", "astaka", "astakona", "astana", "astasia", "astatik", "astatin", "astenia", "astenik", "astenopia", "asteositoma", "aster", "asteroid", "astigmatis", "astra", "astral", "astringen", "astrofisika", "astrolab", "astrolog", "astrologi", "astronaut", "astronautika", "astronom", "astronomi", "astronomis", "astrosit", "asu", "asuh", "asumsi", "asumtif", "asung", "asurador", "asuransi", "asusila", "aswa", "aswad", "aswasada", "asyera", "asyik", "asytoret", "asyura", "atak", "ataksia", "atap", "atar", "atas", "atase", "atau", "atavisme", "atebrin", "ateis", "ateisme", "ateistis", "atelir", "atensi", "atenuasi", "ateret", "atfal", "ati", "atlas", "atlet", "atletik", "atma", "atman", "atmolisis", "atmologi", "atmometer", "atmosfer", "atmosferis", "ato", "atok", "atol", "atom", "atomisasi", "atomistis", "atop", "atos", "atowa", "atraksi", "atraktan", "atraktif", "atresia", "atret", "atribut", "atributif", "atrisi", "atrium", "atrofi", "atropin", "atung", "atur", "atus", "aubade", "audiensi", "audio", "audiofil", "audiofon", "audiograf", "audiogram", "audiolingual", "audiologi", "audiometer", "audiovisual", "audit", "auditor", "auditorium", "augmentatif", "auk", "auksanometer", "auksi", "auksin", "aula", "aulia", "aum", "aung", "aur", "aura", "aural", "aurat", "aurikularia", "aurora", "aurum", "aus", "auskultasi", "autad", "autarki", "autarkis", "autentik", "autentikasi", "autentisitas", "autisme", "autistik", "auto", "autobiograf", "autobiografi", "autodidak", "autodidaktik", "autodin", "autofon", "autogami", "autogen", "autograf", "autografi", "autogram", "autoklaf", "autoklastik", "autokrasi", "autokrat", "autokton", "autoktonos", "autolisis", "autolitograf", "autologi", "automaton", "automobil", "automotif", "autopsi", "autoskop", "autosom", "autotoksin", "autotrof", "autotrofik", "autotrop", "autotropik", "auzubillah", "avalans", "aven", "aversi", "avertebrata", "avesta", "avgas", "aviari", "aviasi", "aviator", "avifauna", "avikultur", "avirulen", "avitaminosis", "avokad", "avontur", "avonturir", "avtur", "avunkulokal", "awa", "awaair", "awaarang", "awabau", "awabeku", "awabulu", "awabusa", "awadara", "awah", "awahama", "awai", "awak", "awal", "awalengas", "awam", "awamineral", "awan", "awanama", "awang", "awar", "awaracun", "awas", "awasenjata", "awat", "awawarna", "awet", "awewe", "awi", "awik-awik", "awin", "awur", "awut", "ayah", "ayahan", "ayahanda", "ayak", "ayal", "ayam", "ayan", "ayanda", "ayang-ayang", "ayap", "ayar", "ayat", "ayatullah", "ayem", "ayeng", "ayid", "ayit", "ayo", "ayom", "ayu", "ayuk", "ayum", "ayun", "ayunda", "ayut", "azab", "azal", "azali", "azam", "azan", "azeotrop", "azimat", "azimut", "aziz", "azmat", "azoikum", "azospermi", "azurit", "bab", "baba", "babad", "babah", "babak", "babakan", "babal", "baban", "babang", "babar", "babaring", "babas", "babat", "babatan", "babe", "babesiasis", "babet", "babi", "babil", "babit", "bablas", "babon", "babu", "babun", "babur", "babut", "baca", "bacah", "bacak", "bacang", "bacar", "bacek", "bacem", "bacik", "bacin", "baco", "bacok", "bacot", "bacul", "bacut", "bad", "bada", "badai", "badak", "badal", "badam", "badan", "badang", "badani", "badar", "badari", "badasi", "badau", "bade", "badi", "badik", "badminton", "badong", "badui", "baduk", "badung", "badur", "badut", "baduyut", "bafta", "bagai", "bagaimana", "bagak", "bagal", "bagan", "bagang", "bagar", "bagas", "bagasi", "bagat", "bagau", "bagea", "bagi", "baginda", "bagong", "bagor", "baguk", "bagul", "bagur", "bagus", "bah", "bahadur", "bahaduri", "bahagia", "bahak", "bahala", "bahalan", "baham", "bahan", "bahana", "bahang", "bahar", "bahara", "bahari", "baharu", "bahas", "bahasa", "bahaya", "bahenol", "baheula", "bahimiah", "bahkan", "bahri", "bahrulhayat", "bahtera", "bahu", "bahuku", "bahwa", "bahwasanya", "baiat", "baid", "baiduri", "baik", "bain", "bainah", "bais", "bait", "baitulharam", "baitullah", "baitulmakdis", "baitulmakmur", "baitulmal", "baitulmukadas", "baitulmukadis", "baja", "bajaj", "bajak", "bajan", "bajang", "bajar", "bajau", "bajetah", "baji", "bajigur", "bajik", "bajing", "baju", "bajul", "bak", "baka", "bakak", "bakal", "bakalaureat", "bakam", "bakap", "bakar", "bakarat", "bakas", "bakat", "bakau", "bakda", "bakdahu", "bakdu", "bakdul", "bakelit", "bakero", "bakh", "bakhil", "baki", "bakiak", "bakik", "bakir", "bakmi", "bako", "bakpao", "bakpia", "baksi", "baksis", "bakso", "baktau", "bakteremia", "bakteri", "bakterin", "bakteriofag", "bakteriolisis", "bakteriolog", "bakteriologi", "bakteriostatik", "bakterisida", "bakti", "baku", "bakul", "bakung", "bakup", "bakut", "bakwan", "bal", "bala", "balabad", "balad", "balada", "balah", "balai", "balairung", "balak", "balalaika", "balam", "balan", "balang", "balangkep", "balans", "balap", "balar", "balas", "balau", "balela", "balen", "balerina", "balerong", "balet", "balgam", "balian", "balig", "baliho", "balik", "baling", "balistik", "balistika", "baliu", "balkas", "balkon", "balneologi", "balneoterapi", "balok", "balon", "balong", "balot", "balsam", "balseros", "balu", "baluarti", "baluh", "balui", "baluk", "balun", "balung", "balur", "balut", "bam", "bambam", "bambang", "bambu", "bambung", "ban", "bana", "banal", "banang", "banar", "banat", "bancak", "bancang", "bancar", "bancet", "banci", "bancik", "bancuh", "bancut", "banda", "bandan", "bandang", "bandar", "bandara", "bandarsah", "bandasrayan", "bandea", "bandel", "bandela", "bandeng", "bandering", "banderol", "banding", "bandit", "banditisme", "bando", "bandongan", "bandos", "bandot", "bandrek", "bandu", "bandul", "bandung", "bandusa", "bandut", "bang", "bangai", "bangan", "bangang", "bangar", "bangas", "bangat", "bangau", "bangbung", "banget", "bangga", "banggan", "bangir", "bangka", "bangkah", "bangkai", "bangkal", "bangkang", "bangkar", "bangkas", "bangkasan", "bangkeh", "bangket", "bangking", "bangkir", "bangkis", "bangkit", "bangkong", "bangkot", "bangkrut", "bangku", "bangkut", "banglas", "bangle", "banglo", "bango", "bangor", "bangpak", "bangsa", "bangsai", "bangsal", "bangsat", "bangsi", "bangun", "bangus", "bani", "banian", "baning", "banir", "banjang", "banjar", "banjaran", "banji", "banjir", "banjur", "bank", "bankir", "bantah", "bantai", "bantal", "bantam", "bantar", "bantaran", "bantat", "bantau", "banteng", "banter", "banting", "bantu", "bantun", "bantut", "banua", "banyak", "banyo", "banyol", "banyu", "banyun", "banzai", "bao", "bap", "bapa", "bapak", "bapakisme", "bapanda", "bapang", "bapet", "baplang", "baptis", "bar", "bara", "baraat", "baragajul", "barah", "barai", "barak", "barakat", "barakatuh", "baran", "barang", "barangan", "barangkali", "barap", "baras", "barat", "barau-barau", "barbar", "barbarisme", "barbel", "barber", "barbital", "barbiton", "barbiturat", "barbur", "bardi", "bare-bare", "barel", "bareng", "barep", "baret", "barga", "bari", "barid", "barier", "barik", "barikade", "baring", "baringan", "barion", "baris", "barisfer", "barit", "barita", "bariton", "barium", "barjad", "barkas", "barkometer", "barli", "barograf", "barogram", "barok", "barologi", "barometer", "barometri", "baron", "barong", "barongan", "barongsai", "baroskop", "barotermograf", "barso", "barter", "baru", "barua", "baruh", "baruje", "baruna", "barung-barung", "barusan", "barut", "barzakh", "barzanji", "bas", "basa", "basa-basi", "basah", "basal", "basalioma", "basanit", "basat", "basau", "basi", "basil", "basilari", "basilika", "basilus", "basin", "basir", "basirah", "basis", "basit", "baskara", "baskat", "basket", "baskom", "basmi", "bastar", "basuh", "basung", "basut", "bata", "batagor", "batai", "batak", "batako", "batal", "batalion", "batalyon", "batang", "batara", "batari", "batas", "batekeng", "batel", "batela", "baterai", "bati", "batih", "batik", "batil", "batila", "batimetri", "batin", "batiplankton", "batir-batir", "batis", "batisfer", "batok", "batolit", "baton", "batu", "batuk", "batun", "batung", "bau", "baud", "bauk", "bauksit", "baun", "baung", "baur", "baureksa", "bausastra", "bausuku", "baut", "bawa", "bawab", "bawah", "bawak", "bawal", "bawang", "bawasir", "bawat", "bawel", "bawon", "baya", "bayak", "bayam", "bayan", "bayang", "bayangkara", "bayangkari", "bayar", "bayas", "bayat", "bayata", "bayati", "bayem", "bayi", "bayonet", "bayong", "bayu", "bayuh", "bayun", "bayung", "bayur", "bazar", "bazoka", "bea", "beasiswa", "beatifikasi", "bebal", "beban", "bebandos", "bebang", "bebar", "bebaru", "bebas", "bebat", "bebe", "bebek", "bebekel", "bebekisme", "bebel", "bebenah", "beber", "beberapa", "beberas", "bebesaran", "bebi", "bebodoran", "bebotoh", "bebrek", "bebuyutan", "becak", "becek", "beceng", "becokok", "becuk", "becus", "beda", "bedah", "bedak", "bedal", "bedama", "bedan", "bedar", "bedaru", "bedawi", "bedaya", "bedebah", "bedegap", "bedegong", "bedel", "bedeng", "bedil", "bedinde", "bedo", "bedol", "bedudak", "beduk", "bedukang", "bedung", "beeng", "bega", "begadang", "begah", "begal", "begana", "begana-begini", "begandering", "begandring", "begap", "begar", "begawan", "begini", "begitu", "bego", "begonia", "begroting", "begu", "beguk", "begundal", "beha", "behandel", "behena", "bejana", "bejat", "bek", "beka", "bekah", "bekakak", "bekakas", "bekal", "bekam", "bekantan", "bekap", "bekas", "bekat", "bekatul", "bekel", "beken", "beker", "bekerma", "bekicot", "bekil", "beking", "bekisar", "bekleding", "bekles", "beklit", "beksan", "beku", "bekuk", "bekuku", "bekukung", "bel", "bela", "belabas", "belacak", "belacan", "belacu", "belada", "beladau", "beladu", "belah", "belahak", "belahong", "belai", "belak", "belaka", "belakang", "belako", "belalah", "belalai", "belalak", "belalang", "belam", "belambang", "belan", "belanak", "belanda", "belandang", "belandar", "belandong", "belandung", "belang", "belanga", "belangah", "belangir", "belangkas", "belangkin", "belangkon", "belanja", "belantai", "belantan", "belantara", "belantik", "belantika", "belantuk", "belar", "belarak", "belas", "belasah", "belasting", "belasungkawa", "belasut", "belat", "belat-belit", "belata", "belater", "belati", "belatik", "belatuk", "belatung", "belau", "belawan", "beldu", "belebas", "belebat", "belecak", "beleda", "beledang", "beledi", "beledu", "beleid", "belek", "belekek", "belekok", "belel", "belelang", "belembang", "belencong", "belendong", "belendung", "beleng", "belenggu", "belengket", "belengkok", "belengkong", "belengset", "belenting", "belentung", "belepas", "belera", "belerang", "belerong", "beleter", "beli", "belia", "beliak", "belian", "beliau", "belibas", "belibat", "belibis", "belida", "beligat", "beligo", "belik", "belikan", "belikat", "beliku", "belimbing", "belincong", "beling", "belingkang", "belingsat", "belingut", "belinjo", "belintang", "belis", "belit", "belitung", "beliung", "beliut", "beloan", "belobor", "belodok", "beloh", "belok", "belokok", "belolang", "belolok", "belolong", "belon", "belonggok", "belongkang", "belongkeng", "belongkot", "belongkotan", "belongsong", "belontang", "beloon", "belot", "belotong", "belu", "belu-belai", "beluam", "beluas", "belubu", "belubur", "beludak", "beludar", "beludru", "beluhan", "beluk", "belukap", "belukar", "beluku", "belukut", "belulang", "beluluk", "belulung", "belum", "belumpai", "belungkang", "belungkur", "belungsing", "belunjur", "beluntas", "beluru", "belus", "belusuk", "belut", "beluwek", "bembam", "bemban", "bembar", "bembarap", "bembet", "bemo", "bemper", "bena", "benah", "benak", "benalu", "benam", "benang", "benar", "benara", "benatu", "bencah", "bencana", "bencat", "benci", "bencol", "bencong", "benda", "bendahara", "bendahari", "bendala", "bendalu", "bendang", "bendar", "bendara", "bendari", "bendawat", "bendawi", "bende", "bendel", "bendela", "bendera", "benderang", "benderung", "bendesa", "bendi", "bendir", "bendo", "bendoro", "bendu", "benduan", "bendul", "bendung", "benefaktif", "bengah", "bengal", "bengang", "bengang-bengut", "bengap", "bengawan", "bengek", "bengep", "benggal", "benggala", "benggang", "benggil", "benggol", "bengis", "bengkah", "bengkak", "bengkal", "bengkal-bengkil", "bengkalai", "bengkang-bengkok", "bengkang-bengkong", "bengkang-bengkung", "bengkar", "bengkarak", "bengkarap", "bengkaras", "bengkarung", "bengkatak", "bengkawan", "bengkawang", "bengkayang", "bengkel", "bengkelai", "bengkeng", "bengker", "bengkerap", "bengkil", "bengkok", "bengkol", "bengkong", "bengkos", "bengku", "bengkuang", "bengkudu", "bengkunang", "bengkung", "bengoh", "bengok", "bengong", "bengot", "bengu", "benguk", "bengul", "bengung", "beni", "benian", "benih", "bening", "benitan", "benjol", "benjut", "benkap", "bensin", "benta", "bentak", "bentala", "bentan", "bentang", "bentangkan", "bentangur", "bentar", "bentara", "bentaus", "benteh", "benteng", "bentes", "bentet", "bentik", "bentoh", "bentok", "bentol", "bentong", "bentonit", "bentos", "bentrok", "bentuk", "bentul", "bentulu", "bentur", "benturung", "bentus", "benua", "benuang", "benuaron", "benulung", "benum", "benur", "benyai", "benyek", "benyoh", "benyot", "benzedrin", "benzena", "benzil", "benzoat", "benzoil", "benzoin", "benzol", "beo", "beol", "bera", "berabe", "beragan", "berahi", "berai", "beraja", "berak", "berakah", "beraksa", "beram", "berambang", "beramin", "beranang", "beranda", "berandal", "berandang", "berang", "berangai", "berangan", "berangas", "berangasan", "berangga", "berangkal", "berangkat", "berangsang", "berangta", "berangus", "berani", "beranta", "berantak", "berantas", "berapa", "beras", "berat", "bercak", "berdikari", "berdus", "berebes", "beredel", "berek-berek", "beremban", "berembang", "berendeng", "bereng-bereng", "berengau", "berenggil", "berengos", "berengsek", "berengut", "berentang", "bereo", "bererot", "beres", "beresok", "beret", "berewok", "bergajul", "bergas", "berguk", "berhala", "beri", "beriang", "beriani", "berida", "berik", "beril", "berilium", "berinda", "bering-bering", "beringas", "beringin", "beringsang", "berisik", "berita", "berkah", "berkas", "berkat", "berkelium", "berkik", "berkil", "berko", "berkung", "berlau", "berlian", "berma", "bermat", "bermi", "bernas", "bernga", "beroci", "beroga", "berok", "berokat", "beron", "beronang", "berondok", "berondong", "berong", "berongkos", "berongsang", "berongsong", "beronjong", "beronok", "beronsang", "berontak", "berosot", "beroti", "beroya", "bersat", "bersih", "bersil", "bersin", "bersit", "bersut", "bertam", "bertih", "beru", "beruang", "beruas", "berubuh", "berudu", "berui", "beruju", "berujul", "beruk", "berumbun", "berumbung", "berunai", "berunang", "berungut", "beruntus", "beruri", "berus", "berwari", "berzanji", "besalen", "besan", "besar", "besek", "besel", "besengek", "beser", "besero", "beset", "besi", "besikal", "besing", "besit", "beskal", "beskap", "beskat", "beslah", "beslit", "besok", "besot", "bestari", "bestek", "bestel", "bestialitas", "bestik", "bestir", "bestral", "besuk", "besusu", "besut", "besuta", "bet", "beta", "betah", "betahak", "betak-betak", "betang", "betapa", "betara", "betari", "betas", "betatas", "betatron", "betau", "betet", "beti", "betik", "betina", "beting", "betinga", "betis", "betok", "beton", "betonisasi", "betot", "betul", "betung", "betutu", "bewok", "bhayangkara", "biadab", "biadat", "biadi", "biah", "biak", "biang", "bianglala", "biaperi", "biar", "biara", "biarpet", "biarpun", "bias", "biasa", "biat", "biau", "biawak", "biawan", "biawas", "biaya", "bibel", "bibi", "bibinda", "bibir", "bibit", "biblio", "bibliografi", "bibliomania", "bibliotek", "bicana", "bicara", "bicokok", "bicu", "bida", "bidadari", "bidah", "bidai", "bidak", "bidal", "bidan", "bidang", "bidar", "bidara", "bidari", "bidas", "bidet", "bidik", "bido", "biduan", "biduanda", "biduanita", "biduk", "bidur", "biduri", "bienial", "biennale", "bifasial", "bifida", "bigair", "bigami", "bigamis", "bihi", "bihun", "bijak", "bijaksana", "bijan", "bijana", "biji", "bijih", "bik", "bikameral", "bikang", "bikarbonat", "bikin", "bikini", "bikir", "bikonkaf", "bikonveks", "bikromat", "biksah", "biksu", "biksuni", "biku", "bila", "bilabial", "bilah", "bilai", "bilakmata", "bilal", "bilamana", "bilamasa", "bilang", "bilas", "bilateral", "bilateralisme", "bilga", "bilhak", "biliar", "bilik", "bilineal", "bilingual", "bilingualisme", "bilis", "biliun", "billahi", "bilokal", "bilur", "bilyet", "bimasakti", "bimbang", "bimbing", "bimbit", "bimetal", "bin", "bina", "binal", "binar", "binara", "binaraga", "binasa", "binatak", "binatang", "binatu", "binawah", "binayah", "bincacak", "bincang", "bincang-bincut", "bincu", "bincul", "bincut", "bindam", "bindeng", "binder", "bindu", "bineka", "binen", "biner", "bingas", "bingit", "bingka", "bingkah", "bingkai", "bingkas", "bingkatak", "bingkis", "bingung", "bini", "binjai", "binjat", "binokular", "binomial", "bintak", "bintal", "bintalak", "bintan", "bintang", "bintara", "binti", "bintik", "bintil", "bintit", "bintul", "bintulbahar", "bintur", "binturung", "biodata", "biodin", "biofera", "biofilm", "biofilter", "biofisik", "biofisika", "biogas", "biogenesis", "biogenik", "biogeografi", "biografi", "biokimia", "bioklimatologi", "biola", "biolinguistik", "biolit", "biolog", "biologi", "biologis", "bioluminesensi", "biomassa", "biomekani", "biometeorologi", "biometri", "biometrika", "bionomika", "biopendar", "bioplasma", "biopsi", "bioritme", "bioritmik", "biosekuen", "biosfer", "biosida", "bioskop", "biostatika", "biota", "biotek", "bioteknologi", "biotik", "biotin", "biotoksin", "biotron", "bipatride", "bipolar", "bipolaritas", "bipolisentrisme", "biprisma", "bir", "birah", "birai", "biram", "birama", "birang", "biras", "birat", "biri-biri", "biring", "birit", "biro", "birofaks", "birokrasi", "birokrat", "birokratis", "birokratisasi", "birokratisme", "birsam", "biru", "bis", "bisa", "bisai", "bisan", "bisawab", "bisbol", "biseksual", "bisektris", "biseps", "bisik", "bising", "bisinosis", "biskuit", "bismillah", "bismut", "bisnis", "bison", "bissu", "bistik", "bisu", "bisul", "bit", "biti", "biting", "bitisik", "bitumen", "biuku", "biumbai", "bius", "biut", "bivak", "biverbal", "biyuh-biyuh", "bizurai", "blabar", "blabitisme", "blakblakan", "blangko", "blantik", "blantika", "blaster", "blastostil", "blazer", "blek", "blekek", "blekok", "blenda", "blender", "blepot", "blewah", "blirik", "blog", "bloger", "blok", "blokade", "blokir", "bloknot", "blong", "blower", "bludrek", "blues", "blus", "blustru", "bobato", "bobok", "bobol", "bobos", "bobot", "bobotok", "bobrok", "bocah", "bocok", "bocong", "bocor", "bodhi", "bodhisatwa", "bodi", "bodoh", "bodok", "bodong", "bodor", "boga", "bogam", "bogel", "bogem", "bogi", "bogol", "bogor", "bogot", "bohemian", "bohlam", "bohong", "bohorok", "bohsia", "boi", "boikot", "bois", "bokar", "bokca", "bokek", "boko", "bokoh", "bokong", "bokop", "bokor", "boks", "boksen", "bokser", "bokset", "boksu", "boku", "bol", "bola", "bolak", "bolak-balik", "bolang-baling", "boleh", "bolero", "bolide", "boling", "bolometer", "bolong", "bolos", "bolot", "bolotu", "bolpoin", "bolsak", "bolu", "bom", "bombai", "bombardemen", "bombardir", "bombas", "bombastis", "bomber", "bomoh", "bomseks", "bon", "bonafide", "bonafiditas", "bonang", "bonanza", "bonar", "bonbon", "boncel", "bonceng", "boncol", "boncong", "bondol", "bondong", "bondot", "boneka", "bonet", "bong", "bongak", "bonggol", "bongkah", "bongkak", "bongkar", "bongkar-bangkir", "bongkin", "bongko", "bongkol", "bongkong", "bongkor", "bongkot", "bongkrek", "bonglai", "bongmeh", "bongo", "bongok", "bongsang", "bongsor", "bonjol", "bonjor", "bonsai", "bontak", "bonto", "bontok", "bontot", "bonus", "bonyok", "bopeng", "boplang", "bopok", "bopong", "bor", "bora", "borak", "boraks", "borang", "borat", "borci", "border", "bordes", "bordil", "bordir", "bordu", "boreal", "boreh", "borek", "borgol", "borhan", "borjuasi", "borjuis", "borkol", "boro-boro", "borok", "boron", "borong", "boros", "bortel", "bos", "bosan", "boseta", "bosman", "boson", "bosor", "bosun", "bot", "bota", "botak", "botang", "botani", "botanikus", "botanis", "botelir", "botlir", "boto", "botoh", "botok", "botol", "botor", "botridium", "botulisme", "bowo", "boya", "boyak", "boyas", "boyo-boyo", "boyong", "boyongan", "bozah", "bradikardi", "brahma", "brahmana", "brahmani", "brahmi", "brahmin", "braille", "brakiasi", "brakilogi", "brakisefalik", "brakistokron", "brakiurus", "braktea", "bramacorah", "brambang", "brana", "brander", "brankar", "brankas", "branwir", "braseri", "brata", "bratawali", "bredel", "breksi", "breksia", "brem", "bren", "brendi", "brengsek", "bretel", "brevet", "brifing", "brigade", "brigadir", "brigidig", "briket", "brilian", "briofita", "briologi", "briozoa", "brisan", "broiler", "brokade", "brokat", "broker", "brokoli", "brom", "bromat", "bromida", "bromin", "bromisme", "brompit", "brongkos", "bronkioli", "bronkitis", "bronkodilator", "bronkotomi", "bronkus", "brontosaurus", "bros", "brosur", "browser", "bruder", "bruk", "brunai", "brutal", "brutalisme", "bruto", "bua", "buah", "buai", "buak", "bual", "buana", "buang", "buani", "buar", "buari", "buas", "buat", "buaya", "bubar", "bubo", "bubu", "bubuh", "bubuhan", "bubuk", "bubul", "bubun", "bubung", "bubur", "bubus", "bubut", "bucu", "budak", "budanco", "budaya", "buddha", "buddhis", "buddhisme", "bude", "budek", "budi", "budian", "budiman", "budu", "buduk", "budur", "bueng", "bufer", "bufet", "bugar", "bugenfil", "bugenvil", "bugi-bugi", "bugil", "buhuk", "buhul", "bui", "buih", "buil", "bujal", "bujam", "bujang", "bujangga", "bujet", "bujeter", "bujuk", "bujur", "bujut", "buk", "buka", "bukan", "bukankah", "bukantah", "bukat", "bukau", "buket", "bukit", "buklet", "bukti", "buku", "bukung", "bukur", "bukut", "bulai", "bulak", "bulan", "bulang", "bulang-baling", "bulangan", "bular", "bulat", "bulbul", "buldan", "buldog", "buldoser", "bule", "buleng", "buletin", "bulevar", "bulgur", "buli-buli", "bulian", "bulimia", "bulir", "bulsak", "bulu", "bulug", "buluh", "buluk", "bulur", "bulus", "bum", "bumantara", "bumban", "bumbu", "bumbun", "bumbung", "bumel", "bumerang", "bumi", "bumiah", "bumiputra", "bumper", "bumpet", "bumping", "bun", "buna", "bunbunan", "buncah", "buncak", "buncang", "buncis", "buncit", "bunda", "bundak", "bundar", "bundas", "bundel", "bunduk", "bundung", "bung", "bunga", "bungalo", "bungar", "bungkal", "bungkam", "bungkang", "bungkas", "bungker", "bungkil", "bungking", "bungkuk", "bungkul", "bungkus", "bunglai", "bunglon", "bungsil", "bungsu", "bungur", "buni", "bunian", "bunjai", "buntak", "buntal", "buntang", "buntar", "buntat", "buntek", "buntel", "buntet", "buntil", "bunting", "buntu", "buntung", "buntut", "bunuh", "bunut", "bunyi", "bupala", "bupati", "bupet", "bur", "bura", "burai", "burak", "burakah", "buraksa", "buram", "buras", "burat", "burayak", "burdah", "bureng", "buret", "burgundi", "burhan", "burik", "burit", "burjusumbulat", "burkak", "burnout", "buron", "bursa", "buru", "buruh", "buruj", "buruk", "burun", "burung", "burut", "bus", "busa", "busai", "busana", "busar", "buset", "bushido", "busi", "busik", "bustan", "buster", "busuk", "busung", "busur", "busut", "buta", "butadiena", "butala", "butana", "butang", "butarepan", "butbut", "butek", "butik", "butir", "butirat", "butongpai", "butuh", "butul", "butun", "butut", "buwuh", "buya", "buyar", "buyung", "buyur", "buyut", "byarpet", "caba", "cabai", "cabak", "cabang", "cabar", "cabau", "cabe", "cabik", "cabir", "cabo", "cabuh", "cabuk", "cabul", "cabur", "cabut", "caca", "cacah", "cacak", "cacap", "cacar", "cacat", "cacau", "caci", "cacibar", "cacil", "cacing", "cadai", "cadang", "cadar", "cadas", "cadel", "cadik", "cadok", "caduk", "cadung", "caem", "cagak", "cagar", "cagil", "cagu", "caguh", "cagun", "cagut", "cah", "cahang", "cahar", "cahari", "cahaya", "cahi", "cailah", "caima", "caing", "cair", "cais", "caisim", "cak", "cakah", "cakak", "cakalang", "cakalele", "cakap", "cakar", "cakawari", "cakela", "cakep", "caki", "cakiak", "cakil", "cakmar", "cako", "cakra", "cakrabirawa", "cakrabuana", "cakram", "cakrawala", "cakruk", "cakup", "cakur", "cakus", "cal", "calabikang", "caladi", "calak", "calang", "calar", "calecer", "calempong", "caling", "calir", "calit", "calo", "calon", "calui", "caluk", "calung", "calus", "cam", "camar", "camat", "camau", "cambahan", "cambang", "cambuk", "cambul", "cambung", "camca", "camil", "campa", "campah", "campak", "campang", "campin", "camping", "camplungan", "campuh", "campung", "campur", "camuk", "camur", "canai", "canak", "canang", "cancan", "cancang", "cancut", "canda", "candai", "candak", "candala", "candang", "candat", "candi", "candik", "candit", "candra", "candradimuka", "candramawa", "candrasa", "candrasengkala", "candu", "candung", "cang", "cangah", "cangak", "cangam", "cangap", "cangar", "cangcang", "cangga", "canggaan", "canggah", "canggai", "canggal", "cangget", "canggih", "canggu", "canggung", "cangkang", "cangkat", "cangkel", "cangkih", "cangking", "cangkir", "cangklong", "cangkok", "cangkol", "cangkrang", "cangkrim", "cangkriman", "cangkring", "cangkuk", "cangkul", "cangkulan", "cangkum", "cangkung", "cangkup", "canguk", "cangut", "cantas", "cante", "cantel", "canteng", "cantik", "canting", "cantol", "cantrik", "cantum", "caos", "cap", "capa", "capah", "capai", "capak", "capal", "capang", "capar", "capcai", "cape", "capek", "capelin", "capgome", "capik", "capil", "caping", "capit", "capjiki", "caplak", "caplok", "capuk", "capung", "cara", "carah", "carak", "caraka", "caram", "caran", "carang", "caren", "cari", "carik", "caring", "carter", "caruk", "carut", "cas", "casciscus", "cat", "catat", "catek", "catu", "catuk", "catur", "caturjalma", "caturlarik", "caturtunggal", "caturwangsa", "caturwarga", "caturwarna", "caturwulan", "catut", "caul", "caung", "cawai", "cawak", "cawan", "cawangan", "cawat", "cawe-cawe", "cawi", "cawis", "cebak", "ceban", "cebik", "cebikas", "cebil", "cebir", "cebis", "cebok", "cebol", "cebong", "cebur", "cecah", "cecak", "cecap", "cecar", "cecawi", "cece", "ceceh", "ceceng", "cecengklok", "cecer", "cecere", "cecok", "cecongor", "cecunguk", "cedal", "cedayam", "cedera", "ceding", "cedok", "cedong", "ceduk", "cegah", "cegak", "cegar", "cegat", "ceguk", "cek", "cekah", "cekak", "cekakak", "cekakan", "cekal", "cekam", "cekang", "cekarau", "cekat", "cekau", "cekcekcek", "cekcok", "cekdam", "cekdel", "cekek", "cekel", "ceker", "cekeram", "ceki", "cekibar", "cekih", "cekik", "cekikik", "ceking", "cekit", "ceklek", "cekluk", "cekok", "cekrem", "cekres", "ceku", "cekuh", "cekuk", "cekung", "cekup", "cekur", "cekut", "cela", "celaga", "celah", "celak", "celaka", "celampak", "celana", "celang", "celangak", "celangak-celinguk", "celangap", "celapak", "celar", "celari", "celas", "celas-celus", "celat", "celatuk", "cele", "celebuk", "celedang-celedok", "celek", "celekeh", "celemek", "celemotan", "celempong", "celempung", "celeng", "celengan", "celengkak-celengkok", "celengkang", "celentang", "celep", "celepik", "celepuk", "celetuk", "celi", "celih", "celik", "celinguk", "celingus", "celis", "celok", "celomes", "celomok", "celonok", "celopar", "celorot", "celoteh", "celsius", "celuk", "celum", "celung", "celup", "celupak", "celur", "celuring", "celurit", "celurut", "celus", "celutak", "celutuk", "cema", "cemani", "cemar", "cemara", "cemas", "cemat", "cembeng", "cemberut", "cembul", "cembung", "cemburu", "cemeeh", "cemeh", "cemek", "cemekian", "cemengkian", "cemer", "cemerlang", "cemeti", "cemetuk", "cemomot", "cemong", "cemooh", "cempa", "cempaka", "cempal", "cempala", "cempana", "cempe", "cempedak", "cempek", "cempelik", "cempelung", "cempeng", "cempera", "cemperai", "cemperling", "cempiang", "cempil", "cempin", "cemping", "cemplang", "cemplung", "cempor", "cempreng", "cempres", "cempuling", "cempung", "cempurit", "cemuas", "cemuk", "cena", "cenak", "cenal-cenil", "cenangau", "cenangga", "cenangkas", "cenayang", "cencala", "cencaluk", "cencang", "cencaru", "cencawan", "cencawi", "cendala", "cendana", "cendang", "cendawan", "cendekia", "cendera", "cenderai", "cenderasa", "cenderawasih", "cenderung", "cendok", "cendol", "cenduai", "cenela", "ceng", "cengal", "cengam", "cengang", "cengap", "cengar-cengir", "cengbeng", "cengeh", "cengek", "cengeng", "cengengesan", "cenggek", "cengger", "cenggeret", "cengi", "cengir-cengir", "cengis", "cengkal", "cengkam", "cengkar", "cengkaruk", "cengkau", "cengkedi", "cengkeh", "cengkek", "cengkelong", "cengkeram", "cengkerama", "cengkerawak", "cengkerik", "cengkering", "cengkerung", "cengki", "cengkiak", "cengkih", "cengking", "cengkir", "cengkiwing", "cengkok", "cengkol", "cengkong", "cengkung", "cengkurai", "cengli", "cengung", "cengut", "centang", "centangan", "centeng", "centet", "centil", "centong", "centung", "cenung", "cepak", "cepal", "cepat", "cepek", "cepeng", "cepengan", "ceper", "cepiau", "ceplas-ceplos", "ceples", "ceplok", "ceplos", "cepo", "cepol", "cepu", "cepuk", "cerabah", "cerabih", "cerabut", "ceracak", "ceracam", "ceracap", "ceracau", "cerah", "cerai", "cerai-berai", "cerak", "ceraka", "cerakin", "ceramah", "cerana", "cerancang", "cerang", "ceranggah", "cerangka", "cerap", "cerat", "ceratai", "ceratuk", "cerau", "cerawat", "cerbak", "cerca", "cercah", "cercak", "cercap", "cerdas", "cerdik", "cere", "cerecek", "cerek", "ceremai", "cerempung", "cerepu", "ceret", "cerewet", "cergas", "ceri", "ceria", "cericap", "cericau", "cericip", "ceriga", "cerih", "cerita", "ceriwis", "cerkam", "cerkau", "cerlang", "cerlih", "cerling", "cermai", "cermat", "cermin", "cerna", "ceroboh", "cerobong", "cerocok", "cerocos", "cerompong", "ceronggah", "ceropong", "ceroteh", "cerowok", "cerpelai", "cerpen", "cerpenis", "cerpu", "cerucuh", "cerucup", "ceruh", "ceruk", "cerun", "cerup", "cerut", "cerutu", "cespleng", "cetai", "cetak", "cetar", "cetek", "ceteng", "ceter", "cetera", "ceteri", "ceteria", "ceti", "cetok", "cetus", "ceuki", "cewang", "cewek", "ciak", "cialat", "ciap", "ciar", "cibir", "cibit", "ciblon", "cibuk", "cicik", "cicil", "cicinda", "cicip", "cicit", "cidomo", "ciduk", "cigak", "cih", "cihui", "cik", "cika", "cikadas", "cikal", "cikar", "cikok", "cikrak", "ciku", "cikun", "cikut", "cilap", "cilawagi", "cili", "cilik", "ciling", "cilok", "ciluk", "cilukba", "cimplong", "cina", "cincang", "cincau", "cincin", "cincong", "cincu", "cinda", "cindai", "cindaku", "cinde", "cindil", "cindur", "cing", "cingak", "cingam", "cingangah", "cingge", "cingkat", "cingkeh", "cingkrang", "cingur", "cinta", "cintamani", "cinteng", "cintrong", "cip", "cipai", "cipan", "ciplak", "cipok", "ciprat", "cipta", "cir", "circir", "ciri", "cirit", "ciriwangi", "cis", "cit", "cita", "citra", "citraleka", "ciu", "cium", "ciut", "coak", "coang", "coba", "coban", "cobar-cabir", "cobek", "coblos", "cocok", "cocol", "cocor", "codak", "codet", "codot", "cogah", "cogan", "cogok", "cok", "cokar", "cokek", "cokelat", "coket", "coklat", "cokmar", "coko", "cokok", "cokol", "cokor", "cokorda", "cola-cala", "colak", "colak-caling", "colang-caling", "colek", "coleng", "colet", "coli", "colok", "colong", "colot", "comat-comot", "comberan", "comblang", "combong", "comek", "comel", "comor", "comot", "compang-camping", "compeng", "compes", "compoh", "compreng", "comro", "concong", "condong", "conet", "congak", "congeh", "congek", "conggah-canggih", "congget", "conggok", "congkah-cangkih", "congkah-mangkih", "congkak", "congkel", "congki", "congklak", "congklang", "congkok", "congkong", "congo", "congok", "congol", "congor", "congsam", "contek", "conteng", "contoh", "contong", "cop", "copak-capik", "copet", "coplok", "copot", "cor", "corak", "corat-coret", "corek", "coreng", "coret", "coro", "corob", "corong", "corot", "cotet", "cotok", "cowok", "cowokan", "crat-crit", "criping", "cua", "cuaca", "cuai", "cuak", "cual", "cuang", "cuar", "cuat", "cubit", "cublik", "cubung", "cuca", "cucakrawa", "cuci", "cucu", "cucuh", "cucuk", "cucun", "cucunda", "cucung", "cucup", "cucur", "cucurut", "cucut", "cudang", "cuek", "cugat", "cuh", "cuik", "cuil", "cuit", "cuk", "cuka", "cukai", "cuki", "cukil", "cukimai", "cukin", "cukit", "cukong", "cuku", "cukup", "cukur", "cula", "culak", "culan", "culas", "culi", "culiah", "culik", "culika", "culim", "culun", "cuma", "cuman", "cumbu", "cumengkling", "cumepak", "cumi-cumi", "cumil", "cuming", "cun", "cunam", "cundang", "cundrik", "cunduk", "cung", "cungap", "cungkil", "cungkup", "cungo", "cungul", "cungur", "cunia", "cup", "cupai", "cupak", "cupang", "cupar", "cupet", "cuping", "cuplik", "cupu", "cupul", "cur", "cura", "curah", "curai", "curam", "curang", "curat", "cureng", "curi", "curiah", "curiga", "curik", "curna", "curu", "cus", "cut", "cutak", "cutbrai", "cutel", "cuti", "cuwil", "daayah", "dab", "daba", "dabak", "dabal", "dabat", "dabih", "dabik", "dabing", "dabir", "dabit", "dablek", "dabol", "dabung", "dabus", "dacin", "dad", "dada", "dadah", "dadaisme", "dadak", "dadal", "dadali", "dadap", "dadar", "dadek", "dadi", "dadih", "dading", "dadu", "daduh", "daduk", "dadung", "daeng", "daerah", "daerahisme", "dafnah", "daftar", "daga", "dagang", "dage", "dagel", "dagi", "daging", "dagu", "dah", "dahaga", "dahagi", "dahak", "daham", "dahan", "dahanam", "dahar", "dahi", "dahiat", "dahina", "dahlia", "dahriah", "dahsyat", "dahulu", "dai", "daidan", "daidanco", "daif", "daim", "daiman", "daing", "daitia", "dajal", "daka", "dakah", "dakaik", "dakar", "dakhil", "daki", "dakik", "dakocan", "dakon", "dakron", "daksa", "daksina", "daktil", "daktilitis", "daktilologi", "daktiloskopi", "daku", "dakwa", "dakwah", "dal", "dalal", "dalalah", "dalalat", "dalam", "dalang", "daldaru", "dalem", "dalfin", "dali-dali", "dalih", "dalil", "daltonisme", "dalu", "daluang", "dalung", "dam", "damah", "damai", "damak", "damal", "daman", "damar", "damaru", "damas", "damat", "damba", "dambin", "dambir", "dame", "damen", "dami", "damik", "damotin", "dampak", "dampal", "dampan", "dampar", "dampeng", "dampil", "damping", "dampit", "damprat", "dampung", "dan", "dana", "danau", "danawa", "danda", "dandan", "dandang", "dandanggula", "dandapati", "dandi", "dang", "dangai", "dangar", "dangau", "dangdut", "dange", "danghyang", "dangir", "dangka", "dangkal", "dangkap", "dangkar", "dangkung", "danguk", "dansa", "dansanak", "danta", "danuh", "danur", "danyang", "dap", "dapa", "dapar", "dapat", "dapra", "dapur", "dar", "dara", "darab", "darah", "daras", "darat", "darau", "dargah", "dari", "daripada", "darji", "darma", "darmabakti", "darmakelana", "darmasiswa", "darmatirta", "darmawisata", "daro", "darpana", "daru-daru", "darulaitam", "darulakhirat", "darulbaka", "darulfana", "daruljalal", "darun", "darunu", "darurat", "darusalam", "darwis", "das", "dasa", "dasalomba", "dasar", "dasarian", "dasasila", "dasatitah", "dasawarsa", "dasbor", "dasi", "dasin", "daster", "dasun", "data", "datang", "datar", "datatamak", "dati", "datif", "datu", "datuk", "datum", "datung", "dauk", "daulat", "daun", "daur", "dawai", "dawan", "dawat", "dawet", "daya", "dayah", "dayang", "dayu", "dayuh", "dayuk", "dayung", "dayus", "dealat", "deaneksasi", "debah", "debak", "debam", "debap", "debar", "debarkasi", "debas", "debat", "debet", "debik", "debil", "debing", "debirokratisasi", "debit", "debitase", "debitor", "debitur", "debris", "debu", "debug", "debuk", "debum", "debun", "debung", "debup", "debur", "debus", "debut", "decak", "decap", "deceh", "decing", "decit", "decup", "decur", "decut", "dedah", "dedai", "dedak", "dedal", "dedalu", "dedap", "dedar", "dedara", "dedare", "dedas", "dedau", "dedek", "dedel", "dedemit", "dedengkot", "deder", "dederuk", "dedes", "dedikasi", "dedikatif", "deduksi", "deduktif", "dedulang", "deeskalasi", "defaitisme", "defekasi", "defender", "defensi", "defensif", "deferens", "defile", "definisi", "definit", "definitif", "defisien", "defisit", "deflagrasi", "deflagrator", "deflasi", "defleksi", "deflorasi", "defoliasi", "defolisasi", "defonologisasi", "deforestasi", "deformasi", "deformatif", "deg", "degam", "degan", "degap", "degar", "degen", "degenerasi", "degeneratif", "degil", "deging", "degradasi", "degresi", "deguk", "degum", "degung", "degup", "deh", "deham", "dehem", "dehidrasi", "dehidrat", "dehidrogenasi", "dehumanisasi", "deideologisasi", "deifikasi", "deiksis", "deiktis", "deislamisasi", "deisme", "dek", "dekade", "dekaden", "dekadensi", "dekagram", "dekah", "dekak", "dekaliter", "dekam", "dekameter", "dekan", "dekanal", "dekantasi", "dekap", "dekapoda", "dekar", "dekare", "dekat", "dekik", "dekil", "deking", "deklamasi", "deklamator", "deklarasi", "deklaratif", "deklasifikasi", "deklerer", "deklinasi", "deklinometer", "dekode", "dekoder", "dekolonisasi", "dekomposer", "dekomposisi", "dekompresi", "dekongestan", "dekonsentrasi", "dekontekstualisasi", "dekor", "dekorasi", "dekoratif", "dekorator", "dekosistem", "dekremeter", "dekreolisasi", "dekret", "dekriminalisasi", "deksa", "dekstrin", "dekstrosa", "deksura", "deku", "dekunci", "dekung", "dekus", "dekut", "delabialisasi", "delah", "delamak", "delan", "delap", "delapan", "delas", "delat", "delegasi", "delegat", "delegitimasi", "delepak", "deler", "delik", "delikan", "delikat", "delikates", "delima", "delineasi", "delinkuen", "delinkuensi", "delirium", "delman", "delong", "delongop", "delta", "deltoid", "delu", "delusi", "delusif", "demabrasi", "demagog", "demagogi", "demagogis", "demah", "demam", "demang", "demap", "demarkasi", "dembai", "dembam", "dembun", "demek", "demen", "demes", "demi", "demik", "demikian", "demiliterisasi", "demineralisasi", "demisioner", "demo", "demobilisan", "demobilisasi", "demograf", "demografi", "demografis", "demokrasi", "demokrat", "demokratis", "demokratisasi", "demon", "demoniak", "demonopolisasi", "demonstran", "demonstrasi", "demonstratif", "demonstrativa", "demoralisasi", "demosi", "dempak", "dempam", "dempang", "demper", "dempet", "dempir", "demplon", "dempok", "dempuk", "dempul", "dempung", "demung", "den", "dena", "denah", "denai", "denak", "denasalisasi", "denasionalisasi", "denawa", "dencang", "dencing", "denda", "dendam", "dendang", "dendeng", "dendi", "dendrokronologi", "dendrologi", "denervasi", "dengak", "dengan", "dengap", "dengar", "dengih", "denging", "dengkang", "dengkel", "dengki", "dengkik", "dengking", "dengkol", "dengkul", "dengkung", "dengkur", "dengkus", "dengu", "dengue", "denguk", "dengung", "dengus", "dengut", "denim", "denok", "denominal", "denominasi", "denotasi", "denotatif", "densimeter", "densitas", "densitometer", "densitometri", "densometer", "dental", "dentam", "dentang", "dentat", "dentin", "denting", "dentum", "dentung", "dentur", "denudasi", "denuklirisasi", "denyar", "denyit", "denyut", "deodoran", "deoknumisasi", "deontologi", "depa", "depak", "depalatalisasi", "depan", "depang", "depap", "deparpolisasi", "departemen", "departemental", "departementalisasi", "dependen", "dependensi", "depersonalisasi", "depersonifikasi", "depigmentasi", "depilasi", "deplesi", "depo", "depolarisasi", "depolitisasi", "deponir", "depopulasi", "deportasi", "deposan", "deposit", "deposito", "depot", "depresi", "depresiasi", "depresor", "deprok", "deprotonasi", "depun", "depus", "deputasi", "deputi", "dera", "deragem", "derai", "derajah", "derajang", "derajat", "derak", "deram", "deran", "derana", "derang", "derap", "deras", "derau", "derawa", "derebar", "deregulasi", "derek", "derel", "derep", "deres", "deresi", "deret", "dergama", "derik", "dering", "deringo", "deris", "derit", "derita", "deritaan", "derivasi", "derivat", "derivatif", "derji", "derma", "dermaga", "derman", "dermatitis", "dermatofitosis", "dermatolog", "dermatologi", "dermatom", "dermis", "dermoid", "dersana", "dersik", "deru", "deruji", "deruk", "derum", "derun", "derung", "derup", "derus", "derut", "desa", "desah", "desain", "desainer", "desak", "desakralisasi", "desalinasi", "desaneksasi", "desar", "desas-desus", "desau", "desegregasi", "deselerasi", "desember", "desensitisasi", "desentralisasi", "deserebrasi", "desersi", "desertir", "desibel", "desidua", "desigram", "desih", "desik", "desikan", "desikator", "desil", "desiliter", "desiliun", "desimal", "desimeter", "desinens", "desinfeksi", "desinfektan", "desing", "desintegrasi", "desir", "desis", "desit", "deskripsi", "deskriptif", "deskuamasi", "desmonem", "desmoplasia", "desmosom", "desorientasi", "desorpsi", "despot", "despotik", "despotisme", "destabilisasi", "destar", "destinasi", "destroyer", "destruksi", "destruktif", "destruktor", "desuk", "desulfurisasi", "desup", "desur", "desus", "desut", "detail", "detak", "detap", "detar", "detas", "detasemen", "detasering", "detasir", "deteksi", "detektif", "detektofon", "detektor", "detenidos", "detensi", "detente", "detergen", "deteriorasi", "determinan", "determinasi", "determinatif", "determinator", "determinis", "determinisme", "detik", "deting", "detoksifikasi", "detonasi", "detonator", "detritus", "detrusor", "detup", "detus", "deuterium", "deuterokanonika", "deuteron", "deutranomalopia", "deutranopia", "devaluasi", "developer", "deverbal", "deviasi", "devisa", "devosi", "dewa", "dewadaru", "dewala", "dewan", "dewana", "dewanagari", "dewangga", "dewasa", "dewata", "dewe", "dewi", "dia", "diabetes", "diad", "diadem", "diafon", "diaforetik", "diafragma", "diagenesis", "diagnosis", "diagnostik", "diagometer", "diagonal", "diagram", "diaken", "diakon", "diakones", "diakonia", "diakritik", "diakronis", "dialek", "dialektal", "dialektik", "dialektika", "dialektis", "dialektologi", "dialinguistik", "dialisis", "dialog", "dialogis", "diam", "diamagnetisme", "diameter", "diametral", "diamorf", "dian", "diang", "diaper", "diapositif", "diar", "diare", "dias", "diasistem", "diaspora", "diastase", "diastole", "diat", "diaterman", "diatermi", "diatermik", "diatesis", "diatipe", "diatom", "diatomit", "diatonik", "diatopik", "diayah", "dibasa", "didaktik", "didaktikus", "didaktis", "didih", "didik", "didis", "didong", "dielektrik", "diensefalon", "dies", "diesel", "diet", "dietetika", "difabel", "diferensial", "diferensiasi", "difluens", "difluensi", "difraksi", "difteri", "diftong", "difusi", "digdaya", "digenesis", "digestif", "digit", "digital", "digitalin", "digitalis", "digitalisasi", "diglosia", "digraf", "digresi", "digul", "dihedral", "dihidroksil", "dik", "dikara", "dikau", "dikit", "diklorida", "dikotil", "dikotomi", "dikroisme", "dikromat", "dikromatik", "diksa", "diksi", "diktat", "diktator", "diktatorial", "diktatoris", "dikte", "diktum", "dil", "dila", "dilak", "dilam", "dilasi", "dilatasi", "dilatometer", "dilema", "dilematik", "diler", "diletan", "diluvium", "dim", "dimensi", "dimer", "diminutif", "dimorfik", "dimorfisme", "din", "dina", "dinamik", "dinamika", "dinamis", "dinamisator", "dinamisme", "dinamit", "dinamo", "dinamometer", "dinar", "dinas", "dinasti", "dinding", "dingin", "dingkis", "dingkit", "dingklang", "dingklik", "dingo", "dini", "diniah", "diniyah", "dinosaurus", "dinul-islam", "diode", "dioesis", "dioksida", "dioksin", "diopsida", "dioptase", "dioptri", "diorama", "diorit", "dioses", "dipan", "diplo", "diploid", "diploma", "diplomasi", "diplomat", "diplomatik", "diplomatis", "dipsomania", "diptera", "diptotos", "dirah", "diraja", "direk", "direksi", "direktorat", "direktorium", "direktris", "direktur", "dirgahayu", "dirgantara", "dirham", "diri", "dirigen", "diris", "dirus", "disagio", "disain", "disainer", "disakarida", "disastria", "disbursemen", "disdrometer", "disekuilibrium", "disel", "disensus", "disentri", "disertasi", "disfonia", "disfungsi", "disharmoni", "disiden", "disilabik", "disimilasi", "disinfektan", "disinformasi", "disinsentif", "disintegrasi", "disiplin", "disjoki", "disjungsi", "disjungtif", "diska", "disket", "diskiasis", "disklimaks", "disko", "diskoid", "diskon", "diskontinu", "diskontinuitas", "diskonto", "diskordans", "diskorobik", "diskotek", "diskredit", "diskrepansi", "diskresi", "diskriminasi", "diskriminatif", "diskriminator", "diskualifikasi", "diskulpasi", "diskursif", "diskus", "diskusi", "dislalia", "disleksia", "dislokasi", "dismembrasio", "dismenorea", "dismutasi", "disolventia", "disonansi", "disoperasi", "disorder", "disorganisasi", "disorientasi", "disosiasi", "dispareunia", "disparitas", "dispensasi", "dispenser", "dispepsia", "dispersal", "dispersi", "disposisi", "disposotio", "disprosium", "disrupsi", "distabilitas", "distal", "distansi", "distikiasis", "distikon", "distilasi", "distilator", "distingsi", "distingtif", "distoma", "distorsi", "distosia", "distribusi", "distributor", "distrik", "disuasi", "disuria", "dito", "ditransitif", "diuresis", "diuretik", "diurnal", "divergen", "divergensi", "diversifikasi", "diversitas", "divestasi", "dividen", "divisi", "diwala", "doa", "doang", "dobel", "dobi", "doblangan", "doble", "dobol", "dobolo", "dobrak", "dodekagon", "dodekahedron", "dodet", "dodok", "dodol", "dodong", "dodor", "dodos", "dodot", "doeloe", "dog", "dogel", "dogeng", "doger", "dogma", "dogmatik", "dogmatis", "dogmatisme", "dogol", "dohok", "dohyo", "doi", "dok", "dokar", "doko", "dokoh", "dokok-dokok", "doksologi", "dokter", "doktor", "doktoranda", "doktorandus", "doktrin", "doku", "dokumen", "dokumentasi", "dokumenter", "dol", "dolak-dalik", "dolan", "dolar", "doldrum", "dolfin", "dolikosepalik", "dolmen", "dolok", "dolomit", "dom", "domain", "domba", "domblong", "domein", "domestik", "domestikasi", "dominan", "dominansi", "dominasi", "domine", "dominggo", "dominion", "domino", "domisili", "domot", "dompak", "dompet", "domplang", "dompleng", "dompol", "don", "donasi", "donat", "donatur", "doncang", "dondang", "donder", "dondon", "dong", "dongak", "dongan", "dongbret", "dongeng", "dongkak", "dongkel", "dongkok", "dongkol", "dongkrak", "dongkrok", "dongok", "dongpan", "dongsok", "doni", "donor", "donto", "dop", "doping", "dopis", "dor", "dorang", "dorbi", "dorbia", "dorman", "dormansi", "dorna", "dorong", "dorsal", "dorslah", "dorsopalatal", "dorsovelar", "dorsum", "dortrap", "dos", "dosa", "dosen", "dosin", "dosir", "dosis", "dot", "dowel", "dower", "doyak", "doyan", "doyang", "doyo", "doyong", "draf", "dragon", "drai", "drainase", "drakula", "dram", "drama", "dramatik", "dramatikus", "dramatis", "dramatisasi", "dramaturg", "dramaturgi", "draperi", "drastis", "drat", "drel", "dresoar", "dresur", "dribel", "drif", "dril", "drip", "drop", "droping", "dropsi", "drum", "drumben", "drumer", "druwe", "dua", "duafa", "duai", "duaja", "dualis", "dualisme", "dualistis", "duane", "duang", "duangsom", "dub", "dubalang", "dubelir", "dubes", "dubila", "dubing", "dubius", "duble", "dublir", "dubuk", "dubur", "duda", "duduk", "dudur", "dudus", "duel", "duet", "duga", "dugal", "dugang", "dugas", "dugdeng", "dugder", "duh", "duha", "duhai", "duhe", "duhu", "duilah", "duit", "duk", "duka", "dukacarita", "dukacita", "dukan", "dukana", "dukat", "dukaten", "duktulus", "duktus", "duku", "dukuh", "dukun", "dukung", "dula", "dulag", "dulang", "dulang-dulang", "duli", "dulur", "dum", "dumdum", "dumi", "dumping", "dumung", "dunah", "dunak", "dung", "dungas", "dungkelan", "dungkul", "dungu", "dungun", "dunia", "duniawi", "duodenum", "duodesimal", "duodrama", "duopoli", "dup", "dupa", "dupak", "dupleks", "duplik", "duplikasi", "duplikat", "duplikator", "duplisitas", "duplo", "dur", "dura", "duralumin", "duramater", "durasi", "durat", "duratif", "duren", "dureng", "durhaka", "duri", "durian", "durias", "duriat", "durja", "durjana", "durjasa", "durkarsa", "durma", "durna", "durno", "durnois", "durnoisme", "durometer", "dursila", "duru", "duruwiksa", "dus", "dusin", "dusta", "dustur", "dusun", "duta", "duwegan", "duwet", "duyun", "duyung", "dwiarti", "dwibahasa", "dwidarma", "dwidasawarsa", "dwifungsi", "dwiganda", "dwiguna", "dwilingga", "dwimatra", "dwiminggu", "dwimuka", "dwiperan", "dwipurwa", "dwisegi", "dwitarung", "dwitunggal", "dwiwarna", "dzal", "ebam", "eban", "ebek", "ebi", "eboni", "ebonit", "ebro", "eburina", "ecek", "eceng", "ecer", "eco", "edafik", "edafit", "edafologi", "edafon", "edan", "edar", "edema", "edentat", "edisi", "edit", "editor", "editorial", "edukasi", "edukatif", "efedrina", "efek", "efektif", "efektivitas", "efektor", "efelis", "efendi", "efisien", "efisiensi", "efloresensi", "eforus", "efusi", "egah", "egalisasi", "egalitarian", "egalitarianisme", "egalitarisme", "egaliter", "egat", "ego", "egois", "egoisme", "egoistis", "egol", "egomania", "egos", "egosentris", "egosentrisitas", "egosentrisme", "egrang", "egresif", "ehe", "eidetik", "eigendom", "eikosan", "einsteinium", "eja", "ejakulasi", "ejan", "ejawantah", "ejek", "ejektif", "ejektor", "ekabahasa", "ekad", "ekajati", "ekakarsa", "ekamatra", "ekang", "ekaristi", "ekatantri", "ekbalium", "ekdemik", "ekderon", "ekdisis", "ekeh", "ekimosis", "ekiofit", "eklektik", "eklektikus", "eklektis", "eklektisisme", "eklektisme", "eklips", "ekliptika", "ekliptis", "eklosi", "ekofisiologi", "ekofraksia", "ekofrasia", "ekografi", "ekogrup", "ekoklimat", "ekoklimatologi", "ekokronologi", "ekolabel", "ekolalia", "ekologi", "ekologis", "ekon", "ekonom", "ekonometri", "ekonomi", "ekonomis", "ekopolitik", "ekopraksia", "ekor", "ekornia", "ekosfer", "ekosistem", "ekosistematika", "ekospesies", "ekostratigrafi", "ekotipe", "ekotipifikasi", "ekoturisme", "ekozona", "ekrin", "ekrinologi", "eks", "eksak", "eksakta", "eksaltasi", "eksamen", "eksaminasi", "eksaminator", "eksantem", "eksantropus", "eksarasi", "eksegesis", "ekseget", "eksekusi", "eksekutif", "eksekutor", "eksem", "eksemplar", "eksenterasi", "eksentrik", "eksepsi", "ekseptor", "ekses", "eksesif", "eksfoliasi", "ekshalasi", "ekshibisi", "ekshibisionis", "ekshibisionisme", "ekshibitum", "eksikator", "eksin", "eksipien", "eksisi", "eksistensi", "eksistensialis", "eksistensialisme", "eksit", "eksitasi", "eksitus", "ekskavasi", "ekskavator", "eksklave", "eksklusif", "eksklusivisme", "ekskomunikasi", "ekskresi", "ekskreta", "ekskursi", "ekskursif", "eksobiologi", "eksobiotik", "eksodermis", "eksodos", "eksodus", "eksoenzim", "eksoergik", "eksofasia", "eksofora", "eksoftalmia", "eksoftalmos", "eksoftalmus", "eksogam", "eksogami", "eksogen", "eksogin", "eksoisogami", "eksordium", "eksorsis", "eksosfer", "eksospora", "eksostosis", "eksoterik", "eksotermik", "eksotik", "eksotis", "eksotisme", "ekspansi", "ekspansif", "ekspansionis", "ekspansionisme", "ekspansionistis", "ekspatriasi", "ekspatriat", "ekspedisi", "ekspeditor", "ekspektoran", "eksper", "eksperimen", "eksperimental", "ekspirasi", "eksplan", "eksplikasi", "eksplisit", "eksploit", "eksploitasi", "eksploitir", "eksplorasi", "eksploratif", "eksplorator", "eksplosi", "eksplosif", "ekspo", "eksponen", "eksponensial", "ekspor", "eksportir", "ekspos", "ekspose", "eksposisi", "ekspres", "ekspresi", "ekspresif", "ekspresionisme", "ekspresionistik", "ekspresivitas", "ekstase", "ekstasi", "ekstensi", "ekstensif", "ekstensifikasi", "ekstensor", "eksterior", "eksteriorisasi", "eksteritorialitas", "ekstern", "eksternal", "ekstin", "ekstra", "ekstradisi", "ekstrak", "ekstrakardial", "ekstraksi", "ekstraktif", "ekstrakurikuler", "ekstralinguistis", "ekstramarital", "ekstranei", "ekstraparlementer", "ekstrapolasi", "ekstraseluler", "ekstraterestrial", "ekstrateritorialitas", "ekstrauterin", "ekstraversi", "ekstrem", "ekstremis", "ekstremitas", "ekstrinsik", "ekstrospeksi", "ekstrover", "ekstrusi", "eksudasi", "eksudat", "ektoblas", "ektoderm", "ektohormon", "ektoparasit", "ektoplasma", "ektoterm", "ektotermik", "ekualitas", "ekuatif", "ekuator", "ekuilibrium", "ekuinoks", "ekuitas", "ekuiti", "ekuivalen", "ekuivalensi", "ekuivokasi", "ekumene", "ekumenis", "ekumenisme", "ela", "elaborasi", "elak", "elan", "elang", "elastik", "elastin", "elastis", "elastisitas", "elastomer", "elatif", "elefantiasis", "elegan", "elegansi", "elegi", "elektif", "elektorat", "elektret", "elektrifikasi", "elektrik", "elektris", "elektro", "elektrode", "elektrodinamika", "elektroensefalogram", "elektroforesis", "elektrokardiogram", "elektrokimia", "elektrokoagulasi", "elektrokusi", "elektrolisi", "elektrolisis", "elektrolit", "elektromagnet", "elektromagnetik", "elektromagnetisme", "elektrometalurgi", "elektromiografi", "elektromotif", "elektron", "elektronegatif", "elektronik", "elektronika", "elektronis", "elektropatologi", "elektropositif", "elektroskop", "elektrostatika", "elektroteknik", "elektroterapeutika", "elektroterapi", "elektrotipe", "elektrum", "elemen", "elementer", "elemi", "eleng", "elevasi", "elevator", "eliksir", "eliminasi", "eliminir", "eling", "elips", "elipsis", "elipsoid", "elipsometer", "elipsometri", "eliptis", "elite", "elitis", "elitron", "elo", "elok", "elokuensi", "elon", "elongasi", "elpiji", "eltor", "elu", "eluat", "eluen", "elung", "elus", "elusi", "elusian", "elusif", "elutriasi", "eluvial", "eluviasi", "eluvium", "email", "emanasi", "emang", "emansipasi", "emas", "emaskulasi", "emat", "embacang", "embah", "embak", "embal", "embalase", "embalau", "emban", "embar", "embara", "embarau", "embargo", "embarkasi", "embaru", "embat", "embek", "embel", "ember", "embih", "embik", "emblem", "embok", "embol", "emboli", "embolisme", "embolus", "embosur", "embrat", "embrio", "embriogenesis", "embriologi", "embrionik", "embuai", "embuh", "embun", "embung", "embus", "embut", "emendasi", "emeraldin", "emeritus", "emetik", "emetina", "emfisema", "emigran", "emigrasi", "eminen", "eminensi", "emir", "emirat", "emis", "emisi", "emisivitas", "emitans", "emiten", "emoh", "emol", "emolumen", "emong", "emosi", "emosional", "emosionalisme", "emotif", "empal", "empang", "empap", "empar", "empas", "empat", "empati", "empedal", "empedu", "empek", "empela", "empelas", "empenak", "empeng", "emper", "empet", "empiema", "empik", "emping", "empiri", "empiris", "empirisme", "emplasemen", "emplek", "employe", "empo", "empoh", "empok", "emporium", "empos", "empot", "emprak", "empu", "empuan", "empuk", "empul", "empulur", "empunya", "emrat", "emulasi", "emulator", "emulsi", "emulsifikasi", "emut", "enak", "enam", "enamel", "enap", "enartrosis", "enas", "enau", "encal", "encang", "enceh", "encek", "encel", "encer", "encik", "encim", "encit", "encok", "encot", "endak", "endal", "endang", "endap", "endas", "endasan", "endemi", "endemis", "endilau", "endoderm", "endoderma", "endodermis", "endofit", "endogami", "endogen", "endokardia", "endokrin", "endokrinologi", "endolimfa", "endometriosis", "endometrium", "endomiksis", "endomiokarditis", "endomisium", "endon", "endong", "endoparasit", "endoplasma", "endorfin", "endosemen", "endosentris", "endoskeleton", "endoskop", "endoskopi", "endosmosis", "endosperma", "endotel", "endoterm", "endotermal", "endotermis", "endotoksin", "endrin", "enduk", "endul", "enduro", "endus", "endut", "enek", "eneng", "energetik", "energi", "energik", "enes", "enfitotik", "engah", "engap-engap", "engas", "enggak", "enggan", "enggang", "engget", "enggil", "enggok", "engkah", "engkak", "engkang", "engkau", "engket-engket", "engkoh", "engkol", "engkong", "engku", "engkuk", "engsel", "enigma", "enjak", "enjal", "enjambemen", "enjelai", "enjin", "enjut", "enkapsulasi", "enklave", "enklitik", "enkode", "enkripsi", "enkulturasi", "enologi", "enom", "ensambel", "ensefalitis", "ensefalitogen", "ensefalograf", "ensefalografi", "ensefalogram", "ensefalomielitis", "ensefalon", "ensiform", "ensiklik", "ensiklopedia", "ensiklopedis", "ensopor", "entah", "entak", "entalpi", "entar", "entas", "ente", "enten", "enteng", "entente", "enteritis", "enterograf", "enterologi", "enteron", "enteropati", "enterosel", "enterostomi", "enterotoksin", "enterovirus", "entit", "entitas", "entoderm", "entogenus", "entok", "entomofili", "entomolog", "entomologi", "entong", "entot", "entozoa", "entozoik", "entre", "entrepot", "entri", "entropi", "enukleasi", "enumerasi", "enuresis", "envoi", "enyah", "enyak", "enzim", "enzimolisis", "enzimologi", "enzootik", "eolit", "eon", "eosen", "eosin", "eozoikum", "epak", "epek", "epentesis", "epibentos", "epidemi", "epidemiologi", "epidermis", "epidiaskop", "epifaring", "epifil", "epifiotik", "epifisis", "epifit", "epifiton", "epifora", "epigastrium", "epigenesis", "epiglotis", "epigon", "epigraf", "epigrafi", "epigram", "epik", "epikotil", "epikuris", "epilepsi", "epileptik", "epilog", "epimisium", "epinasti", "epinefrina", "epinurim", "episentrum", "episiklik", "episiotomi", "episkopal", "episkopat", "episode", "episodik", "epispora", "epistaksis", "epistel", "epistemologi", "epistola", "epitaf", "epitaksi", "epitel", "epitelioma", "epitermal", "epitet", "epizoik", "epizootik", "epok", "epoksi", "epolet", "eponim", "epos", "epsilon", "era", "eradikasi", "eradiksi", "erak", "eram", "erang", "erat", "erata", "erbis", "erbium", "ercis", "ereh", "erek-erek", "ereksi", "erektor", "ereng", "erepsin", "eret", "erg", "ergasiofit", "ergonomi", "ergonomika", "ergonomis", "ergosterol", "ergot", "ergoterapi", "erik", "ering", "erisipelas", "eritema", "eritroblas", "eritrosit", "erong", "eror", "erosentrisme", "erosi", "erot", "erotik", "erotika", "erotis", "erotisisme", "erotisme", "erpah", "erpak", "erti", "eru", "erupsi", "es", "esa", "esai", "esais", "esak", "esek", "eselon", "esembling", "esens", "esensi", "esensial", "esensialitas", "eskader", "eskadron", "eskalasi", "eskalator", "eskapisme", "eskas", "eskatologi", "eskatologis", "esofagus", "esok", "esot", "esoteris", "estafet", "ester", "estesia", "estetik", "estetika", "estetikus", "estetis", "estimasi", "estriol", "estrogen", "estron", "estrus", "estuari", "estuarin", "eta", "etalase", "etana", "etanol", "etape", "etatisme", "etek", "eter", "eteris", "eternit", "etik", "etika", "etiket", "etil", "etilena", "etimologi", "etimologis", "etimon", "etiolin", "etiologi", "etis", "etmoid", "etnik", "etnis", "etnobotani", "etnograf", "etnografi", "etnografis", "etnolinguistik", "etnolog", "etnologi", "etnologis", "etnomusikolog", "etnomusikologi", "etnopolitik", "etnosentrisme", "etologi", "etos", "etsa", "eudaemonisme", "eufemisme", "eufemistis", "eufoni", "eufonium", "euforia", "euforian", "eugenetika", "eugenika", "eugenol", "eukaliptol", "eukaliptus", "eukarion", "eukariota", "eulogi", "euploid", "eurasia", "eurihalin", "europium", "eurosentris", "euseksual", "eusinantropus", "eutanasia", "eutektik", "eutenika", "eutrofikasi", "evakuasi", "evaluasi", "evaluatif", "evangeli", "evangelis", "evaporasi", "evaporator", "evaporimeter", "evapotranspirasi", "eversi", "eviden", "eviserasi", "evokasi", "evokatif", "evolusi", "evolusioner", "evolusionisme", "ewa", "eyang", "eyel", "faal", "faali", "fabel", "fabula", "faden", "fadihat", "fadil", "fadilat", "faedah", "fafa", "fagosit", "fagositosis", "fagot", "fahombe", "fahrenheit", "fahsya", "fail", "fajar", "fakih", "fakir", "faks", "faksi", "faksimile", "fakta", "faktif", "faktitius", "faktor", "faktual", "faktur", "fakultas", "fakultatif", "falah", "falaj", "falak", "falakiah", "falsafah", "falsafi", "fam", "famili", "familia", "familier", "familiisme", "familisme", "fana", "fanatik", "fanatisme", "fanfare", "fani", "fantasi", "fantastis", "fantom", "farad", "faraid", "faraj", "farak", "fardu", "farik", "faring", "faringal", "faringalisasi", "faringitis", "farisi", "farji", "farmakodinamika", "farmakokinetika", "farmakolog", "farmakologi", "farmakologis", "farmakope", "farmakoseutika", "farmasi", "farsakh", "fasad", "fasakh", "fase", "faset", "fasia", "fasid", "fasih", "fasihat", "fasik", "fasilitas", "fasilitator", "fasis", "fasisme", "fastabikhulkhairat", "fatah", "fatal", "fatala", "fatalis", "fatalisme", "fatalitas", "fatamorgana", "fatanah", "fatihah", "fatimah", "fatir", "fatom", "fatometer", "fatri", "fatsun", "fatur", "fatwa", "fauna", "faunistik", "favorit", "favoritisme", "febrin", "februari", "federal", "federalis", "federalisme", "federalistis", "federasi", "feko", "fekundasi", "fekunditas", "felon", "felspar", "feminin", "feminisme", "fenakit", "fengsui", "fenit", "fenol", "fenologi", "fenomena", "fenomenal", "fenomenalisme", "fenomenologi", "fenosis", "fenotipe", "feodal", "feodalisme", "feodalistis", "feral", "feri", "feritin", "fermen", "fermentasi", "fermion", "fermium", "feromagnetik", "feromagnetisme", "feromon", "feronikel", "fertil", "fertilasi", "fertilisasi", "fertilitas", "fertilizin", "ferum", "feses", "festival", "fetis", "fetor", "fetus", "fiasko", "fiat", "fiber", "fibrasi", "fibriblas", "fibril", "fibrilasi", "fibrin", "fibrinogen", "fibrokistik", "fidah", "fider", "fidiah", "fidusia", "fidyah", "figur", "figuran", "figuratif", "fiil", "fikih", "fikli", "fikologi", "fikrah", "fiksasi", "fiksi", "fiktif", "fikus", "filamen", "filantrop", "filantropi", "filantropis", "filaria", "filariasis", "filateli", "filatelik", "filatelis", "filharmoni", "filial", "filibuster", "film", "filmis", "filo", "filodendron", "filogenesis", "filogeni", "filolog", "filologi", "filologis", "filopur", "filosof", "filosofi", "filosofis", "filsafat", "filsuf", "filter", "filtrasi", "filtrat", "filum", "fimbria", "final", "finansial", "finir", "finis", "fiolaks", "firajullah", "firasat", "firauniah", "firdaus", "firdausi", "firjatullah", "firkah", "firma", "firman", "firn", "fisi", "fisibel", "fisibilitas", "fisik", "fisika", "fisiognomi", "fisiognomis", "fisiologi", "fisiologis", "fisioterapi", "fisis", "fiskal", "fit", "fiting", "fitnah", "fitofag", "fitofogus", "fitogeni", "fitogeografi", "fitokimia", "fitologi", "fitometer", "fiton", "fitopatologi", "fitosanitasi", "fitososiologi", "fitosterol", "fitostrot", "fitotoksin", "fitotoksoid", "fitotopografi", "fitotron", "fitrah", "fitri", "flakon", "flamboyan", "flamingo", "flanel", "flat", "flegma", "flegmatis", "fleksi", "fleksibel", "fleksibilitas", "fleksor", "flensa", "flip-plop", "flis", "floem", "flop", "flora", "floret", "flotasi", "flotet", "flu", "fluensi", "fluida", "fluks", "fluktuasi", "fluktuatif", "fluor", "fluoresen", "fluoresens", "fluorin", "fluorit", "fobia", "fokimeter", "fokstrot", "fokus", "folder", "foli", "folikel", "folio", "folklor", "folksong", "fon", "fonasi", "fondamen", "fondasi", "fonds", "fonem", "fonemik", "fonemis", "fonetik", "fonetis", "fonik", "fonis", "fonograf", "fonografi", "fonologi", "fonologis", "fonon", "fonotaktik", "fonotipi", "foramen", "foraminifera", "forensik", "forklif", "forma", "formal", "formalin", "formalistis", "formalitas", "forman", "formasi", "format", "formatif", "formatir", "formatur", "formika", "formula", "formulasi", "formulator", "formulir", "fornifikasi", "fornikasi", "forsep", "forsir", "forsit", "forte", "fortifikasi", "fortin", "forum", "fosfat", "fosfina", "fosfit", "fosfor", "fosforesens", "fosforilase", "fosforus", "fosgen", "fosil", "foto", "fotodiode", "fotoelektron", "fotoemisi", "fotogenik", "fotograf", "fotografer", "fotografi", "fotografis", "fotograver", "fotogravur", "fotokimia", "fotokonduksi", "fotokonduktivitas", "fotokonduktor", "fotokopi", "fotokromi", "fotokromik", "fotolisis", "fotolitografi", "fotometer", "fotometri", "fotomikrografi", "fotomodel", "foton", "fotoperiodisme", "fotosel", "fotosfer", "fotosintesis", "fotostat", "fototaksis", "fototropis", "fototustel", "fovea", "foya", "fragmen", "fragmentaris", "fragmentasi", "fraksi", "fraksinasi", "fraktur", "fraktus", "frambusia", "fransium", "frasa", "frase", "fraseologi", "frater", "fraternitas", "freatofit", "fregat", "frekuen", "frekuensi", "frekuentatif", "frenologi", "freon", "frib", "frigid", "frigorigraf", "frigorimeter", "frikatif", "friksi", "fron", "front", "frontal", "fruktosa", "frustrasi", "fuad", "fugasitas", "fujur", "fukaha", "fukara", "fuksina", "fulgurit", "fuli", "fulminat", "fulus", "fumarol", "fumigan", "fumigasi", "fumigator", "fundamen", "fundamental", "fundamentalis", "fundamentalisme", "fundamentalistis", "fungi", "fungibel", "fungisida", "fungistatik", "fungoid", "fungsi", "fungsional", "fungsionalisasi", "fungsionalisme", "fungsionalitas", "fungsionaris", "fungus", "furfural", "furkan", "furnitur", "furqan", "furuk", "fusi", "fusta", "fusuk", "futual", "futur", "futurisme", "futuristik", "futuristis", "futurolog", "futurologi", "futurologis", "fyord", "gaba-gaba", "gabah", "gabai", "gabak", "gabardin", "gabas", "gabir", "gableg", "gablek", "gabor", "gabro", "gabruk", "gabuk", "gabung", "gabus", "gaco", "gacok", "gacong", "gada", "gadai", "gadamala", "gadang", "gading", "gadis", "gado", "gadolinit", "gadolinium", "gadon", "gaduh", "gaduk", "gadung", "gadungan", "gaek", "gaet", "gafar", "gaflah", "gaflat", "gaftar", "gafur", "gaga", "gagah", "gagai", "gagak", "gagal", "gagang", "gagap", "gagas", "gagau", "gagu", "gaguk", "gah", "gaham", "gahar", "gahara", "gahari", "gaharu", "gai", "gaib", "gail", "gain", "gaing", "gairah", "gait", "gajah", "gajak", "gaji", "gajih", "gajul", "gajus", "gakang", "gakari", "gala", "galaba", "galaganjur", "galagasi", "galah", "galai", "galak", "galaksi", "galaktometer", "galaktorea", "galaktosa", "galaktosemia", "galaktosuria", "galan", "galang", "galanggasi", "galar", "galas", "galat", "galau", "galbani", "galeng", "galeri", "galgal", "gali", "galias", "galib", "galibut", "galih", "galiot", "galir", "galium", "galiung", "galon", "galu-galu", "galuh", "galung", "galungan", "galur", "galvanis", "galvanisasi", "galvanometer", "galvanometri", "galvanoskop", "galyas", "gam", "gama", "gamak", "gamal", "gamalisasi", "gamam", "gaman", "gamang", "gamat", "gambang", "gambar", "gambas", "gambir", "gamblang", "gambling", "gambuh", "gambus", "gambut", "gambyong", "gamelan", "gamet", "gametangium", "gametofit", "gametogenesis", "gametosit", "gamik", "gamis", "gamit", "gamma", "gamopetal", "gamosepal", "gampang", "gampar", "gamparan", "gamping", "gamuh", "gana", "gana-gini", "ganal", "ganang", "ganar", "ganas", "gancang", "gancar", "ganco", "gancu", "ganda", "gandal", "gandapura", "gandar", "gandaria", "gandarukem", "gandarusa", "gandarwa", "gandasturi", "gandasuli", "gandek", "gandem", "ganden", "gandeng", "gandes", "gandewa", "gandi", "gandik", "gandin", "ganding", "gandok", "gandola", "gandos", "gandringan", "gandrung", "gandu", "ganduh", "gandul", "gandum", "gandung", "gang", "ganggam", "ganggang", "ganggu", "ganggut", "ganglion", "gangsa", "gangsal", "gangsar", "gangsi", "gangsir", "gangster", "gani", "ganih", "ganimah", "ganja", "ganjak", "ganjal", "ganjar", "ganjat", "ganjen", "ganjil", "ganjing", "ganjling", "ganjur", "ganoid", "gantal", "gantang", "gantar", "gantel", "ganteng", "ganti", "gantih", "gantilan", "ganting", "gantol", "gantole", "gantung", "ganyah", "ganyang", "ganyar", "ganyong", "ganyut", "gaok", "gap", "gapah", "gapah-gopoh", "gapai", "gapil", "gapit", "gaple", "gaplek", "gaplok", "gapuk", "gapura", "gar", "gara-gara", "garah", "garai", "garam", "garan", "garang", "garangan", "garansi", "garap", "garasi", "garau", "garba", "garbarata", "garbis", "garda", "gardan", "gardu", "garebek", "gari", "garib", "garindin", "garing", "garis", "garit", "garizah", "garmen", "garnet", "garnis", "garnisun", "garong", "garpu", "garu", "garuda", "garuk", "garung", "garut", "garwa", "gas", "gasab", "gasak", "gasal", "gasang", "gasatrin", "gasifikasi", "gasing", "gasket", "gasolin", "gasometer", "gaster", "gastrektomi", "gastrin", "gastritis", "gastroenteritis", "gastroenterolog", "gastroenterologi", "gastrointestinal", "gastronomi", "gastrula", "gastrulasi", "gatal", "gatot", "gatra", "gatrik", "gatuk", "gauk", "gaukang", "gaul", "gaun", "gaung", "gaut", "gawai", "gawal", "gawan", "gawang", "gawar", "gawat", "gawir", "gaya", "gayal", "gayam", "gayang", "gayat", "gayau", "gayem", "gayeng", "gayuh", "gayuk", "gayun", "gayung", "gayut", "gaz", "gazal", "gebah", "gebang", "gebar", "gebeng", "geber", "geblak", "geblek", "geblok", "gebogan", "gebok", "gebos", "gebot", "gebrak", "gebu", "gebuk", "gebung", "gebyah-uyah", "gebyar", "gebyur", "gecar", "gecek", "gecer", "gecul", "gedabah", "gedana-gedini", "gedang", "gede", "gedebak-gedebuk", "gedebar-gedebur", "gedebeg", "gedebok", "gedebuk", "gedebung", "gedek", "gedembai", "gedembal", "gedempol", "gedeng", "gedi", "gedik", "gedok", "gedombak", "gedombrongan", "gedong", "gedor", "gedubang", "gedung", "geduyut", "gegabah", "gegadan", "gegai", "gegak", "gegala", "gegaman", "gegana", "gegaokan", "gegap", "gegar", "gegares", "gegas", "gegat", "gegau", "gegep", "geger", "gegetar", "gegetun", "gegisik", "gegua", "geiger", "geiser", "gejah", "gejala", "gejolak", "gejos", "gejuju", "gel", "gela", "gelabah", "gelabir", "gelabur", "geladak", "geladeri", "geladi", "geladir", "geladrah", "gelagah", "gelagap", "gelagar", "gelagat", "gelak", "gelakak", "gelalar", "gelam", "gelama", "gelamai", "gelambir", "gelandang", "gelandot", "gelang", "gelanggang", "gelangsar", "gelantang", "gelanting", "gelantung", "gelap", "gelapung", "gelar", "gelas", "gelasak", "gelasir", "gelatak", "gelatik", "gelatin", "gelatuk", "gelayangan", "gelayar", "gelayut", "gelebah", "gelebap", "gelebar", "geleber", "gelebuk", "geleca", "gelecik", "geledah", "geledang", "geledek", "geleding", "geledur", "gelegah", "gelegak", "gelegar", "gelegata", "gelek", "gelekak", "gelekek", "gelema", "gelemat", "gelemberan", "gelembong", "gelembung", "gelembur", "gelempang", "gelemprang", "gelenang", "gelendo", "gelendong", "gelendot", "geleng", "gelenggang", "gelentang", "gelenting", "gelenyar", "gelepai", "gelepar", "gelepek", "gelepot", "gelepung", "gelepur", "geler", "gelesek", "geleser", "gelesot", "geleta", "geletak", "geletar", "geletek", "geletik", "geleting", "geletis", "geletuk", "geli", "geliang", "geliat", "gelibir", "gelicik", "geliga", "geligi", "geligin", "geligis", "geligit", "gelignit", "gelimang", "gelimantang", "gelimbir", "gelimir", "gelimpang", "gelimun", "gelincir", "gelincuh", "gelinding", "gelinggam", "gelinggaman", "gelinggang", "gelingsir", "gelinjang", "gelintang", "gelintar", "gelintin", "gelinting", "gelintir", "gelipar", "gelisah", "gelita", "gelitar", "gelitik", "gelo", "gelobak", "gelobok", "gelocak", "gelodar", "gelodok", "gelogok", "gelohok", "gelojoh", "gelomang", "gelombang", "gelompar", "gelondong", "geloneng", "gelonggong", "gelongsor", "gelontor", "gelopak", "gelora", "gelosang", "geloso", "gelosok", "gelotak", "geluduk", "geluga", "gelugu", "gelugur", "gelugut", "geluh", "geluk", "gelulur", "gelumang", "gelumat", "geluncur", "gelundung", "gelung", "gelup", "gelupur", "gelut", "gema", "gemah", "gemak", "gemal", "geman", "gemang", "gemap", "gemar", "gemas", "gemaung", "gemawan", "gembak", "gembala", "gembar-gembor", "gembel", "gembeng", "gembil", "gembili", "gembira", "gemblak", "gembleng", "gemblong", "gemblung", "gembok", "gembol", "gembolo", "gembong", "gembor", "gembos", "gembreng", "gembrot", "gembul", "gembung", "gembur", "gembus", "gembut", "gemebyar", "gemelentam", "gemeletak", "gemeletap", "gemeletek", "gemeletuk", "gemelugut", "gementam", "gementar", "gemercak", "gemercik", "gemerencang", "gemerencik", "gemerencing", "gemerencung", "gemeresak", "gemeresik", "gemeretak", "gemeretuk", "gemeretup", "gemerlap", "gemertak", "gemertuk", "gemerusuk", "gemetar", "gemi", "gemik", "gemilang", "gemilap", "geming", "gemini", "gemintang", "geminte", "gemirang", "gempa", "gempal", "gempar", "gempil", "gempita", "gempol", "gempor", "gempul-gempul", "gempur", "gemrobyos", "gemuk", "gemul", "gemulai", "gemulung", "gemuntur", "gemuruh", "gen", "gena", "genah", "genahar", "genang", "genap", "gencar", "gencat", "gencel", "gencer", "gencet", "gencir", "gendak", "gendala", "gendam", "gendang", "gendar", "gendarmeri", "gendeng", "gender", "genderang", "genderuwo", "gendewa", "gending", "gendis", "gendon", "gendong", "genduk", "gendut", "genealogi", "genealogis", "genegin", "geneng", "generalis", "generalisasi", "generalisimo", "generasi", "generatif", "generator", "generik", "genesis", "genetika", "genetis", "geng", "genggam", "genggang", "genggong", "gengsah", "gengsi", "gengsot", "genial", "genialitas", "genikulum", "genis", "genit", "genital", "genitalia", "genitif", "genius", "genjah", "genjang", "genjang-genjot", "genjer", "genjik", "genjot", "genjrang", "genjring", "genjur", "genom", "genosida", "genotipe", "genre", "genta", "gentala", "gentar", "gentas", "gentat", "gentayang", "gentel", "genteng", "gentian", "genting", "gentong", "gentrifikasi", "gentur", "gentus", "genus", "genyot", "geobotani", "geodesi", "geofisika", "geofisis", "geofon", "geognosi", "geografi", "geografis", "geohidrologi", "geokimia", "geokronologi", "geolog", "geologi", "geologis", "geomansi", "geometri", "geometris", "geomorfologi", "geonomi", "geopolitik", "geosentris", "geosinkronis", "geostasioner", "geostatika", "geoteknik", "geoteknologi", "geotermal", "geotermi", "geotermometer", "gepeng", "gepit", "geplak", "gepok", "geprak", "gepuk", "gera", "gerabah", "gerabak", "gerabang", "geradi", "geragai", "geragap", "geragas", "geragau", "geragih", "geragot", "geraguk", "gerah", "geraham", "gerai", "gerak", "geram", "geraman", "geramang", "geramsut", "geramus", "gerang", "gerangan", "geranggang", "geranium", "gerantak", "gerantang", "geranyam", "gerapai", "gerapu", "gerat", "geratak", "geratih", "gerau", "gerawan", "gerawat", "gerayah", "gerayang", "gerbak", "gerbang", "gerbas-gerbus", "gerbera", "gerbong", "gerbus", "gerda", "gerdam", "gerdan", "gerdum", "gerebek", "gerecak", "gerecok", "gereget", "gereh", "gereja", "gerejani", "gerejawi", "gerek", "geremet", "gerempang", "gerencang", "gerendel", "gerendeng", "gerenek", "gereneng", "gereng-gereng", "gerengseng", "gerenik", "gerenjeng", "gerenjet", "gerentang", "gerenyau", "gerenyeng", "gerenyet", "gerenying", "gerenyit", "gerenyot", "gerepe", "gerepek", "gerepes", "geresek", "geret", "geretak", "geretang", "gergaji", "gergajul", "gergasi", "gergeran", "gerha", "gerhana", "geriak", "geriak-geriuk", "geriap", "geriatrik", "geribik", "gericau", "geridip", "geridit", "geriditpidit", "gerigi", "gerigik", "gerigis", "gerih", "gerik", "gerilya", "gerim", "gerimis", "gerincing", "gerinda", "gerindin", "gerinding", "gering", "geringging", "geringgingan", "geringsing", "gerinjal", "gerinjam", "gerinting", "gerinyau", "gerip", "geripir", "geripis", "gerisik", "gerising", "gerit", "geriuk", "gerlap", "gerlip", "germang", "germanium", "germinal", "germisida", "germo", "germut", "gero", "geroak", "gerobak", "gerobok", "gerobyak", "gerocok", "gerodak", "gerogol", "gerogot", "gerohok", "gerohong", "gerojok", "gerombol", "gerombong", "gerompok", "gerong", "geronggang", "geronium", "gerontokrasi", "gerontol", "gerontologi", "geronyot", "geropes", "geropyok", "geros", "gerosak", "gerot-gerot", "gerowong", "gerowot", "gerpol", "gersak", "gersang", "gersik", "gertak", "gertik", "gertuk", "geru", "gerugut", "geruh", "geruit", "gerumit", "gerumpung", "gerumuk", "gerumut", "gerun", "gerundang", "gerundel", "gerung", "gerunggung", "gerunyam", "gerup", "gerupis", "gerupuk", "gerus", "gerut", "gerutu", "gerutup", "gerutus", "gesa", "gesek", "gesel", "geser", "gesit", "gesper", "gestikulasi", "geta", "getah", "getak-getuk", "getang", "getap", "getar", "getas", "getek", "getem-getem", "geti-geti", "getik", "getil", "getir", "getis", "getok", "getol", "getu", "getuk", "getun", "geulis", "gewang", "gial", "giam", "giat", "gibah", "gibang", "gibas", "giblet", "gibtah", "gidik", "gigahertz", "gigantisme", "gigi", "gigih", "gigil", "gigir", "gigis", "gigit", "gigolo", "gila", "gilang", "gilap", "gilas", "gilbet", "gili", "gilik", "giling", "gilir", "gim", "gimbal", "gimnasium", "gimnastik", "gimpal", "gin", "ginang", "gincu", "ginding", "ginekolog", "ginekologi", "ginekomasti", "ginesium", "gingivitis", "ginglimus", "gingsir", "gingsul", "ginjal", "ginjean", "ginkang", "ginogenesis", "ginseng", "gips", "gipsi", "gir", "girah", "giral", "girang", "girap-girap", "giras", "girasol", "giri", "girik", "girikan", "giring", "giris", "giro", "giroskop", "girostat", "girostatika", "gisar", "gisik", "gisil", "gita", "gitapati", "gitar", "gitaris", "gites", "gitik", "gitok", "giuk", "giur", "giwang", "gizi", "glabela", "gladiator", "gladiol", "glamor", "glandula", "glans", "glasial", "glasir", "glasnos", "glaukoma", "glegek", "glenik", "glenoid", "gletser", "glidik", "glikogen", "glikogenesis", "glikogenolisis", "glikol", "glikolisis", "glikosid", "glikosida", "glikosidasa", "glikosidase", "glikosuria", "gliserida", "gliserol", "global", "globalisasi", "globalisme", "globe", "globulin", "globus", "glokidium", "glomerulus", "glomus", "glosarium", "glosem", "glosematik", "glositas", "glositis", "glotal", "glotalisasi", "glotis", "glukagon", "glukosa", "glukosan", "glukosida", "gluten", "gnomon", "goak", "gob", "goba", "gobak", "gobang", "gobar", "gobek", "gobet", "goblok", "gocap", "gocek", "gocoh", "goda", "godak", "godam", "godek", "godok", "godong", "godot", "goel", "gogoh", "gogok", "gogos", "gogrok", "gohok", "gohong", "gojek", "gojlok", "gokar", "gol", "golak", "golak-galik", "golbi", "golek", "goleng", "goler", "golf", "golok", "golong", "golput", "gom", "gombak", "gombal", "gombang", "gombeng", "gombrang", "gombroh", "gombyok", "gompal", "gompiok", "gonad", "gondang", "gondas-gandes", "gondok", "gondol", "gondola", "gondong", "gondorukem", "gondrong", "gong", "gonggo", "gonggok", "gonggong", "gongli", "gongseng", "gongyo", "goni", "gonidium", "goniometri", "gonjak", "gonjang", "gonjang-ganjing", "gonjing", "gonjlang", "gonjlang-ganjling", "gonjok", "gonjong", "gonokokus", "gonore", "gonrang", "gontaganti", "gontai", "gontok", "gonyak", "gonyeh", "gonyel", "gonyoh", "gopek", "gopoh", "gorap", "gorden", "gorek", "goreng", "gores", "gori", "gorila", "gorilya", "goroh", "gorok", "gorong-gorong", "gosan", "gosip", "gosok", "gosong", "gospel", "got", "gotes", "gotik", "gotong", "gotri", "gotrok", "gotun", "gowok", "goyah", "goyak", "goyang", "grabadan", "grad", "gradasi", "gradien", "gradual", "gradualisme", "graf", "grafem", "grafemik", "grafemis", "grafetik", "grafik", "grafika", "grafis", "grafit", "grafitasi", "grafolog", "grafologi", "graha", "grahita", "gram", "gramatika", "gramatikal", "grambyang", "gramofon", "granat", "granit", "granolitik", "granula", "granulasi", "granulosit", "grapyak", "grasi", "gratak", "gratifikasi", "gratis", "gravel", "graver", "gravimeter", "gravitas", "gravitasi", "grecok", "gregarius", "grehon", "grempel", "gres", "gresek-gresek", "gria", "grip", "griya", "grogi", "gronjong", "gros", "grosir", "grup", "gruwung", "gua", "gual", "guam", "guanidina", "guanin", "guanina", "guano", "guar", "gubah", "gubal", "gubang", "gubel", "gubernemen", "gubernur", "gubit", "gubris", "gubuk", "guci", "gudam", "gudang", "gudangan", "gude", "gudeg", "guderi", "gudi", "gudik", "gudu-gudu", "gue", "gugah", "gugat", "gugu", "guguh", "guguk", "gugup", "gugur", "gugus", "guit", "gujirak", "gujirat", "gukakas", "gul", "gula", "gulah", "gulai", "gulali", "gulam", "gulambai", "gulana", "gulang-gulang", "gulat", "guli", "guliga", "guling", "gulir", "gulita", "gulma", "gulud", "gulung", "gulut", "gum", "guma", "gumal", "gumam", "gumba", "gumbaan", "gumbang", "gumbar", "gumboro", "gumbuk", "gumebruk", "gumelaran", "gumpal", "gumpil", "gumuk", "gumul", "gumun", "gun", "guna", "gunawan", "guncang", "gunci", "gundah", "gundal", "gundala", "gundang", "gundar", "gundi", "gundik", "gundu", "gunduk", "gundul", "gung", "gunggung", "gunjai", "gunjing", "gunolugu", "gunrit", "gunseikan", "guntai", "guntak", "guntang", "guntil", "gunting", "guntung", "guntur", "gunung", "gunyam", "gup", "gurab", "gurah", "guram", "gurami", "gurat", "gurau", "gurdan", "gurdi", "guri", "gurih", "gurik", "gurindam", "guring", "gurit", "gurita", "gurnadur", "guru", "gurub", "guruh", "guruk", "gurun", "gurung", "gurur", "gus", "gusah", "gusar", "gusel", "gusi", "gusrek", "gusti", "gusul", "gusur", "gutasi", "gutik", "gutuk", "guyon", "guyub", "guyur", "habenula", "habib", "habibi", "habibulah", "habibullah", "habis", "habitat", "habituasi", "habitus", "habluk", "hablun", "hablur", "habsyi", "habuan", "habuk", "habung", "had", "hadanah", "hadap", "hadas", "hadat", "hadiah", "hadir", "hadirat", "hadirin", "hadis", "hadron", "hafal", "hafiz", "hafnium", "hagiografi", "hahnium", "hai", "haid", "haik", "haiking", "haiku", "hail", "hailai", "haj", "hajah", "hajar", "hajat", "haji", "hajib", "hajim", "hajis", "hak", "hakaik", "hakam", "hakikat", "hakiki", "hakim", "hakimah", "hakul", "hakulah", "hakulyakin", "hal", "hala", "halai-balai", "halaik", "halakah", "halal", "halalbihalal", "halaman", "halang", "halau", "halazon", "halba", "haleluya", "halia", "halilintar", "halim", "halimbubu", "halimun", "halimunan", "halipan", "halitosis", "halkah", "halma", "halo", "halobion", "halofili", "halofit", "halofita", "halofob", "halogen", "halogenasi", "halotan", "halsduk", "halte", "halter", "haluan", "halus", "halusinasi", "halusinogen", "halwa", "ham", "hama", "hamal", "hamatum", "hamba", "hambali", "hambar", "hambat", "hambur", "hamburger", "hamdalah", "hamdu", "hamik", "hamil", "haminte", "hampa", "hampang", "hampar", "hampir", "hamud", "hamulus", "hamun", "hamzah", "hana", "hanacaraka", "hanafi", "hancing", "hancur", "handai", "handam", "handaruan", "handasah", "handelar", "handuk", "hang", "hangar", "hangat", "hanger", "hanggar", "hangit", "hangus", "hanif", "hanjuang", "hansop", "hantai", "hantam", "hantap", "hantar", "hantir", "hantu", "hanya", "hanyut", "hap", "hapetan", "haplografi", "haploid", "haplologi", "hapus", "hara", "harak", "harakah", "harakat", "harakiri", "haram", "harap", "harawan", "harbi", "hardik", "harem", "harendong", "harfiah", "harga", "hari", "haribaan", "harimau", "haring", "harini", "haris", "harisah", "harit", "harkat", "harmoni", "harmonik", "harmonika", "harmonis", "harmonisasi", "harmonium", "harnet", "harpa", "harpis", "harpun", "hart", "harta", "hartal", "haru", "haruan", "harum", "harungguan", "harus", "has", "hasab", "hasad", "hasai", "hasan", "hasar", "hasib", "hasid", "hasil", "hasrat", "hasta", "hasta-wara", "hasud", "hasut", "hasyiah", "hasyis", "hati", "hatif", "hatta", "hatur", "haud", "haudah", "haukalah", "haul", "haur", "hauri", "haus", "haustorium", "haver", "hawa", "hawar", "hawari", "hawiah", "hayat", "hayati", "hayo", "heban", "hebat", "heboh", "hebras", "hebring", "hedonis", "hedonisme", "hegelianisme", "hegemoni", "hegemonik", "hegemonisme", "hegemonnisme", "heiho", "heksadesimal", "heksagon", "heksahedron", "heksaklorida", "heksameter", "heksana", "heksapoda", "hektar", "hektare", "hektograf", "hektogram", "hektoliter", "hektometer", "hela", "helah", "helai", "helat", "helicak", "helikopter", "heling", "heliofit", "heliofobi", "heliograf", "heliogram", "heliometer", "heliosentrik", "helioskop", "heliotaksis", "helioterapi", "heliotrop", "heliotropisme", "helipad", "helium", "helm", "helmintologi", "hem", "hemat", "hematit", "hematite", "hematofobia", "hematologi", "hematom", "hematometra", "hematuri", "hembak", "hembalang", "hembus", "hemeralopi", "hemikordat", "hemiplegia", "hemisfer", "hemodialisis", "hemofilia", "hemoglobin", "hemolisis", "hemopoiesis", "hemopteran", "hemoragi", "hemoroid", "hemosit", "hemositometer", "hemostasis", "hemostatik", "hempap", "hempas", "hendak", "hendam", "hendel", "heng", "hengit", "hengkang", "hening", "henoteisme", "henry", "hentar", "henti", "henyak", "hepar", "hepatitis", "heptagon", "heptahedron", "heptameter", "heptana", "heraldik", "heran", "herba", "herbarium", "herbisida", "herbivor", "herbivora", "herder", "hereditas", "herediter", "heregistrasi", "heresi", "hering", "hermafrodit", "hermafroditisme", "hermetis", "hernia", "hero", "heroik", "heroin", "heroisme", "herpes", "herpetolog", "herpetologi", "hertz", "hesperidin", "heterodin", "heterodoks", "heterofemi", "heterofil", "heterofit", "heterogamet", "heterogami", "heterogen", "heterogenitas", "heterograf", "heterografi", "heteroklitus", "heteronim", "heteronimi", "heteronomi", "heteroseksual", "heteroseksualitas", "heterosfer", "heterosiklis", "heterosis", "heterospora", "heterostili", "heterotrof", "heterozigot", "heuristis", "hewan", "hewani", "hia", "hialin", "hialit", "hias", "hiatus", "hibah", "hibal", "hibat", "hibernasi", "hibiskus", "hibob", "hibrida", "hibridis", "hibridisasi", "hibuk", "hibur", "hidang", "hidatod", "hidayah", "hidayat", "hidrasi", "hidrat", "hidraulik", "hidraulika", "hidraulis", "hidrida", "hidrodinamika", "hidrofili", "hidrofit", "hidrofobia", "hidrofoil", "hidrofon", "hidrogen", "hidrogenasi", "hidrogeologi", "hidrograf", "hidrografi", "hidrogram", "hidrokarbon", "hidroklorida", "hidrokori", "hidroksida", "hidroksil", "hidrolika", "hidrolisis", "hidrologi", "hidrometeorologi", "hidrometer", "hidrometri", "hidromini", "hidronan", "hidropati", "hidroperoksida", "hidroponik", "hidropsoma", "hidrosfer", "hidrosiklon", "hidroskop", "hidrostatika", "hidrostatis", "hidroterapi", "hidrotermal", "hidu", "hidung", "hidup", "hiena", "hierarki", "hierarkis", "hieroglif", "hifa", "higiene", "higienis", "higrograf", "higrogram", "higrometer", "higrometri", "higroskop", "higroskopis", "higrotermograf", "higrotermogram", "hijab", "hijaiah", "hijau", "hijrah", "hijriah", "hikayat", "hikmah", "hikmat", "hilal", "hilang", "hilap", "hilau", "hilir", "hilofagus", "himanga", "himar", "himen", "himenium", "himne", "himpun", "hina", "hinap", "hinayana", "hindar", "hindi", "hindu", "hinduisme", "hingga", "hinggap", "hinggut", "hio", "hiosiamina", "hiosin", "hip", "hipantium", "hiperaktif", "hiperamnesi", "hiperbarik", "hiperbol", "hiperbolis", "hiperemia", "hiperestesia", "hipergami", "hiperkelas", "hiperkinesis", "hiperklas", "hiperkorek", "hiperkritis", "hiperlipemia", "hipermetropia", "hiperon", "hiperopia", "hiperparasit", "hiperplasia", "hiperseks", "hiperseksual", "hipersensitif", "hipersonik", "hipersonika", "hipertensi", "hipertonik", "hipertradisional", "hipertrikosis", "hipertrofi", "hipervitaminosis", "hipnosis", "hipnoterapi", "hipnotis", "hipnotisme", "hipoblas", "hipodermis", "hipodermoklisis", "hipodrom", "hipofisis", "hipofremia", "hipogen", "hipoglikemia", "hipokondria", "hipokotil", "hipokrisi", "hipokrit", "hipokritis", "hipolimnion", "hipomastia", "hipomnesia", "hiponim", "hipopituitarisme", "hipoplankton", "hipoplasia", "hipopotamus", "hiposentrum", "hipotaksis", "hipotek", "hipotensi", "hipotenusa", "hipotermia", "hipotesis", "hipotetis", "hipotiroid", "hipotiroidisme", "hipotonik", "hipovitaminosis", "hipsometer", "hipui", "hirap", "hirau", "hirsutisme", "hiru-biru", "hiru-hara", "hirudin", "hiruk", "hirup", "his", "hisab", "histamina", "histerektomi", "histeria", "histeris", "histerisis", "histidina", "histogeni", "histokimia", "histologi", "histon", "histopatologi", "histori", "historikus", "historiografi", "historis", "historisisme", "historisitas", "hit", "hitam", "hitung", "hiu", "hiyayat", "hobat", "hobi", "hobo", "hodadoda", "hodah", "hodometer", "hoi", "hokah", "hoki", "hol", "holi", "holisme", "holistis", "holmium", "holobentos", "holoenzim", "holofit", "holofitik", "holofrasis", "hologamet", "hologami", "holograf", "holografis", "hologram", "holokrim", "holokrin", "holoplankton", "holosen", "holozoik", "homeostasis", "homili", "hominid", "hominoid", "homo", "homofon", "homofoni", "homogami", "homogen", "homogeni", "homogenitas", "homograf", "homografi", "homogram", "homoiotermal", "homolog", "homologi", "homonim", "homonimi", "homorgan", "homoseks", "homoseksual", "homoseksualisme", "homoseksualitas", "homosfer", "homospora", "homoterm", "homozigot", "honae", "honcoe", "honji", "honor", "honorarium", "honorer", "honorifik", "hop", "hopagen", "hopbiro", "hopkantor", "hopyes", "horak", "horas", "hore", "horizon", "horizontal", "hormat", "hormon", "hornblenda", "horor", "horoskop", "hortikultura", "hortikulturis", "hoskut", "hospital", "hostel", "hostes", "hosti", "hot", "hotel", "howitzer", "huakiau", "hubar", "hubaya-hubaya", "hububan", "hubulwatan", "hubung", "huda", "hudai", "hudhud", "hudud", "hufaz", "huh", "hujah", "hujaj", "hujan", "hujat", "huji", "hujin", "hujung", "hukah", "hukama", "hukum", "hula-hula", "hulam", "huler", "hulu", "hulubalang", "hulul", "hulur", "huma", "human", "humaniora", "humanis", "humanisasi", "humanisme", "humanistis", "humanitas", "humaniter", "humas", "humbalang", "humektan", "humerus", "humidifikasi", "humiditas", "humifikasi", "humin", "humor", "humoris", "humoristis", "humorolog", "humus", "hun", "huncue", "huni", "hunjam", "hunjuk", "hunkue", "hunus", "hura-hura", "hurah", "huria", "huriah", "hurikan", "huru-hara", "huruf", "hus", "husnulkhatimah", "hut", "hutan", "hutang", "huyung", "ialah", "iambus", "iatrogenik", "iba", "ibadah", "ibadat", "ibadurahman", "iban", "ibar-ibar", "ibarat", "ibayuh", "ibid", "ibidem", "ibing", "iblis", "ibni", "ibnu", "ibra", "ibrit", "ibtida", "ibtidaiah", "ibu", "ibul", "ibun", "ibunda", "ibung", "ibus", "icak-icak", "ida", "idafi", "idah", "idam", "idap", "idarah", "idas", "ide", "ideal", "idealis", "idealisasi", "idealisme", "idealistis", "idem", "identifikasi", "identik", "identitas", "ideofon", "ideograf", "ideografi", "ideografis", "ideogram", "ideologi", "ideologis", "ideosinkretik", "idep", "idiil", "idiolek", "idiom", "idiomatis", "idiomatologi", "idiosi", "idiosinkrasi", "idiosinkretik", "idiot", "idola", "idrak", "idu", "iduladha", "idulfitri", "ifah", "ifrit", "iftar", "iftitah", "iga", "igal", "igau", "iglo", "ihdad", "ihram", "ihsan", "ihsanat", "ihsas", "ihtifal", "ihtikar", "ihtilam", "ihtimal", "ihwal", "ijab", "ijabat", "ijajil", "ijarah", "ijas", "ijazah", "ijbar", "ijeman", "ijil", "ijmak", "ijmal", "ijon", "ijtihad", "ijtimaiah", "ijtimak", "ijuk", "ikab", "ikal", "ikamah", "ikan", "ikat", "ikebana", "ikhbar", "ikhlas", "ikhtiar", "ikhtiari", "ikhtilaf", "ikhtiogeografi", "ikhtiosarkotoksisme", "ikhtiotoksisme", "ikhtisar", "ikhwan", "iklan", "iklim", "ikon", "ikonis", "ikonograf", "ikonografi", "ikonoklasme", "ikonometer", "ikrab", "ikram", "ikrar", "iktibar", "iktidal", "iktikad", "iktikaf", "iktiografi", "iktiolit", "iktiologi", "iktiologis", "iktirad", "iktiraf", "iktisab", "ikuh", "ikut", "ilafi", "ilah", "ilahi", "ilahiah", "ilahiat", "ilai", "ilak", "ilam-ilam", "ilanun", "ilar", "ilas", "ilat", "ilegal", "iler", "iles", "ileum", "ilham", "ili", "ilian", "iling", "ilmiah", "ilmu", "ilu", "iluminasi", "ilusi", "ilusif", "ilusionis", "ilustrasi", "ilustratif", "ilustrator", "imago", "imaji", "imajinasi", "imajinatif", "imajiner", "imak", "imam", "imamah", "imamologi", "iman", "imanen", "imanensi", "imani", "imbak", "imbal", "imbang", "imbas", "imbau", "imbesil", "imbesilitas", "imbibisi", "imbit", "imbuh", "imigran", "imigrasi", "iming-iming", "imitasi", "imitatif", "imitator", "imkan", "imla", "imlek", "imobilisasi", "impak", "impas", "impase", "impedans", "impedansi", "impek", "imperatif", "imperfek", "imperfeksi", "imperial", "imperialis", "imperialisme", "imperium", "impersonal", "impersonalia", "impersonalitas", "impi", "impit", "implan", "implantasi", "implemen", "implementasi", "implikasi", "implisit", "implosif", "implosit", "impor", "importasi", "importir", "impoten", "impotensi", "impregnasi", "impresariat", "impresario", "impresi", "impresif", "impresionis", "impresionisme", "impresionistik", "imprimatur", "improvisasi", "impuls", "impulsif", "imsak", "imsakiah", "imtihan", "imun", "imunisasi", "imunitas", "imunokimia", "imunokompromi", "imunologi", "imunologis", "imunosupresi", "imunoterapi", "ina", "inadaptabilitas", "inai", "inang", "inangda", "inap", "inartikulat", "inas", "inaugurasi", "inayat", "inca", "incang-incut", "incar", "inci", "incit", "incling", "incrit", "incu", "incut", "indah", "indang", "indap", "indarus", "indayang", "indebitum", "indehoi", "indekos", "indeks", "inden", "independen", "inderawasih", "indeterminisme", "indigenos", "indigo", "indik", "indikan", "indikasi", "indikatif", "indikator", "inding", "indisipliner", "indium", "individu", "individual", "individualis", "individualisasi", "individualisme", "individualistis", "individualitas", "individuasi", "indoktrinasi", "indolen", "indolensi", "indologi", "indonesia", "indonesianisasi", "indra", "indraloka", "indranila", "indria", "indriawi", "indu", "induk", "induksi", "induktans", "induktansi", "induktif", "induktor", "indung", "indusemen", "industri", "inefisiensi", "inersia", "infak", "infanteri", "infantil", "infantilisasi", "infantilisme", "infarktus", "infeksi", "inferensi", "inferensial", "inferior", "inferioritas", "inferno", "infertil", "infertilitas", "infiks", "infiltrasi", "infiltrometer", "infinitif", "infiradi", "inflamasi", "inflasi", "inflatoar", "infleksi", "infleksibel", "infleksif", "infloresen", "infloresens", "influensa", "influenza", "info", "informal", "informan", "informasi", "informatif", "informatika", "inframerah", "infrasonik", "infrastruktur", "infus", "inga", "ingar", "ingat", "ingau", "inggang-inggung", "inggris", "inggu", "inggung", "ingin", "ingkah", "ingkar", "ingkir", "ingresif", "ingsar", "ingsun", "ingsut", "ingus", "inheren", "inhibisi", "inhibitor", "ini", "inisial", "inisiasi", "inisiatif", "inisiator", "injak", "injap", "injeksi", "injil", "injin", "inkarnasi", "inkarserasi", "inkarsunah", "inkaso", "inklaring", "inklinasi", "inklinometer", "inklusif", "inkognito", "inkompabilitas", "inkompatibilitas", "inkompeten", "inkomplet", "inkonfeso", "inkonsisten", "inkonsistensi", "inkonstitusional", "inkonvensional", "inkorporasi", "inkremental", "inkubasi", "inkubator", "inkulturasi", "inlander", "inohong", "inokulasi", "inovasi", "inovatif", "inovator", "insaf", "insan", "insanan", "insang", "insani", "insanulkamil", "insar", "insek", "insekta", "insektari", "insektisida", "insektivor", "insektivora", "insektologi", "inseminasi", "insentif", "insersi", "inses", "inset", "insiden", "insidental", "insinerator", "insinuasi", "insinuatif", "insinye", "insinyur", "inskripsi", "inslan", "insolven", "insomnia", "inspeksi", "inspektorat", "inspektur", "inspirasi", "instabilitas", "instalasi", "instalatur", "instan", "instansi", "insting", "instingtif", "institusi", "institusional", "institut", "instruksi", "instruksional", "instruktif", "instruktur", "instrumen", "instrumental", "instrumentalia", "instrumentalis", "instrumentasi", "insubordinasi", "insulator", "insuler", "insulin", "insulinde", "insya", "intai", "intan", "integral", "integralistik", "integrasi", "integrasionis", "integritas", "integumen", "intel", "intelek", "intelektual", "intelektualisasi", "intelektualisme", "inteligen", "inteligensi", "inteligensia", "intelijen", "intendans", "intens", "intensi", "intensif", "intensifikasi", "intensional", "intensitas", "interaksi", "interaksionistik", "interaktif", "interdepartemental", "interdependen", "interdiksi", "interdisipliner", "interegnum", "interelasi", "interen", "interes", "interesan", "interetnik", "interferens", "interferensi", "interferometer", "interferon", "interglasial", "interim", "interinsuler", "interior", "interjeksi", "interkom", "interkoneksi", "interkonsonantal", "interkontinental", "interlokal", "interlokutor", "interlud", "intermeso", "intermezo", "intermolekuler", "intern", "internal", "internalisasi", "internasional", "internasionalisasi", "internat", "internir", "internis", "internuntius", "interogasi", "interogatif", "interogator", "interpelan", "interpelasi", "interpelator", "interpiu", "interpolasi", "interpretasi", "interpretatif", "interpretator", "interpreter", "intersepsi", "intertestial", "intertidal", "interupsi", "interval", "intervensi", "intervensionisme", "interviu", "interzona", "inti", "intifadah", "intiha", "intikad", "intim", "intima", "intimasi", "intimidasi", "intip", "intipati", "intisari", "intoksikasi", "intoleran", "intonasi", "intradermal", "intrakalimat", "intrakurikuler", "intralinguistis", "intramembran", "intramolekul", "intramuskuler", "intransitif", "intraseluler", "intrauniversiter", "intravaskuler", "intravena", "intrik", "intrinsik", "intro", "introduksi", "introjeksi", "introspeksi", "introver", "intrusi", "intuisi", "intuitif", "intumesensi", "invaginasi", "invalid", "invasi", "invensi", "inventaris", "inventarisasi", "inventif", "inventor", "inventori", "inventoriminat", "inversi", "invertebrata", "investasi", "investigasi", "investigatif", "investor", "invitasi", "invois", "involusi", "inyik", "inzar", "inziaj", "iodin", "ion", "ionisasi", "ionosfer", "iota", "ipar", "ipis", "ipon", "iprit", "ipuh", "ipuk", "ipung", "iqamat", "iqra", "ira", "iradat", "iradiasi", "irafah", "irah-irahan", "iram", "irama", "iras", "irasional", "irasionalitas", "iri", "iridium", "irigasi", "irigator", "irik", "iring", "iris", "irit", "iritabilitas", "iritasi", "iritatif", "ironi", "ironis", "irsyad", "irung", "irus", "isa", "isak", "isalohipse", "isap", "isbat", "iseng", "isentropik", "isi", "isim", "isis", "isit", "iskemia", "islah", "islam", "islami", "islamiah", "islamis", "islamisasi", "islamisme", "islamologi", "isoaglutinin", "isobar", "isobarik", "isobat", "isobron", "isodin", "isodinamik", "isofase", "isofen", "isofet", "isoflor", "isofon", "isogamet", "isogami", "isoglos", "isogon", "isogram", "isohalin", "isohel", "isohiet", "isohips", "isokal", "isokalori", "isokemi", "isokeraunik", "isokor", "isokorik", "isokronisme", "isolasi", "isolasionisme", "isolatif", "isolator", "isoleks", "isolemen", "isolir", "isomer", "isometrik", "isomorf", "isomorfis", "isomorfisme", "isonefel", "isonomi", "isopal", "isopiestik", "isoplet", "isoriza", "isosilabisme", "isotah", "isoterm", "isotermal", "isotop", "isotrop", "isotropik", "isovolumik", "isra", "israf", "istal", "istan", "istana", "istanggi", "istaz", "istazah", "istiadat", "istianah", "istiazah", "istibdad", "istibra", "istidlal", "istidraj", "istifham", "istigasah", "istigfar", "istihadah", "istihsan", "istikamah", "istikharah", "istikhlaf", "istiklal", "istikmal", "istilah", "istima", "istimaiah", "istimewa", "istimna", "istimtak", "istinggar", "istinja", "istiqlal", "istirahat", "istislah", "istislam", "istisna", "istitaah", "istiwa", "istri", "isu", "isya", "isyarat", "isytiak", "isyu", "italik", "item", "iterasi", "iterbium", "itibak", "itibar", "itidal", "itifak", "itihad", "itik", "itikad", "itikaf", "itil", "itisal", "itlak", "itrium", "itu", "iudisasi", "iur", "iwad", "iya", "izah", "izin", "jaat", "jab", "jabal", "jabang", "jabar", "jabariah", "jabat", "jabir", "jables", "jabrik", "jabung", "jadah", "jadam", "jadayat", "jadi", "jaduk", "jadwal", "jaga", "jagabaya", "jagabela", "jagal", "jagang", "jagapati", "jagaraga", "jagat", "jagawana", "jago", "jagra", "jagrak", "jaguar", "jagung", "jagur", "jah", "jaha", "jahan", "jahanam", "jahar", "jaharu", "jahat", "jahe", "jahil", "jahiliah", "jahiriah", "jahit", "jahul", "jail", "jainisme", "jaipong", "jais", "jaiz", "jaja", "jajah", "jajak", "jajal", "jajan", "jajar", "jaka", "jakal", "jakas", "jaket", "jaksa", "jaksi", "jakun", "jala", "jalabria", "jalad", "jalak", "jalal", "jalan", "jalang", "jalangkote", "jalangkung", "jalar", "jali", "jalibut", "jalil", "jalin", "jalma", "jalu", "jalur", "jam", "jamaah", "jamadat", "jamah", "jamak", "jamal", "jaman", "jamang", "jambak", "jambal", "jamban", "jambang", "jambar", "jambat", "jambe", "jambiah", "jambian", "jamblang", "jambon", "jambore", "jambret", "jambu", "jambul", "jambulan", "jambur", "jamhur", "jamiah", "jamiatul", "jamik", "jamil", "jamin", "jamis", "jamiyah", "jamiyatul", "jampal", "jampen", "jampi", "jampuk", "jamrah", "jamrud", "jamu", "jamung", "jamur", "janabah", "janabijana", "janah", "janat", "janda", "jangak", "jangan", "jangar", "jangat", "janggal", "janggelan", "janggi", "janggolan", "janggung", "janggut", "jangka", "jangkah", "jangkang", "jangkap", "jangkar", "jangkat", "jangkau", "jangki", "jangkih", "jangkih-mangkih", "jangking", "jangkir", "jangkit", "jangkrik", "jangkung", "jangla", "jangol", "jani", "janik", "janin", "janjang", "janji", "jantan", "jantang", "jantina", "jantuk", "jantung", "jantur", "janturan", "januari", "janubi", "janur", "jap", "japan", "japin", "japu", "japuk", "jara", "jarab", "jarah", "jarak", "jaram", "jaran", "jaranan", "jarang", "jaras", "jarem", "jargon", "jari", "jariah", "jariji", "jarimah", "jaring", "jarit", "jarjau", "jaro", "jarotan", "jarum", "jarwa", "jas", "jasa", "jasad", "jasadi", "jasmani", "jasmaniah", "jasus", "jaswadi", "jatah", "jatayu", "jati", "jatilan", "jatmika", "jatuh", "jatukrama", "jauh", "jauhar", "jauhari", "jauza", "jawab", "jawang", "jawanisasi", "jawara", "jawat", "jawawut", "jawer", "jawi", "jawil", "jaya", "jayacihna", "jayapatra", "jayasong", "jayastamba", "jayeng", "jaz", "jazam", "jazirah", "jazirat", "jebab", "jebah", "jebai", "jebak", "jebang", "jebar", "jebat", "jeblok", "jeblos", "jebluk", "jebol", "jebor", "jebrol", "jebuh", "jebung", "jebur", "jeda", "jeding", "jedot", "jegal", "jegang", "jegil", "jegogan", "jegung", "jejabah", "jejak", "jejaka", "jejal", "jejap", "jejas", "jejengkok", "jejer", "jejunum", "jejuri", "jeket", "jeksi", "jel", "jela", "jelabak", "jelabir", "jeladan", "jeladren", "jeladri", "jelaga", "jelagra", "jelah", "jelai", "jelajah", "jelak", "jelalat", "jelamprang", "jelanak", "jelang", "jelangak", "jelangkung", "jelantah", "jelapak", "jelapang", "jelar", "jelarang", "jelas", "jelata", "jelatang", "jelau", "jelawat", "jelejeh", "jelek", "jelempah", "jelengar", "jelentik", "jelepak", "jelepok", "jeli", "jelih", "jelijih", "jelimet", "jelimpat", "jeling", "jelir", "jelit", "jelita", "jelma", "jelu", "jeluak", "jeluang", "jelujur", "jeluk", "jelum", "jelungkap", "jeluntung", "jelunut", "jelur-jelir", "jelus", "jelut", "jelutung", "jem", "jemaah", "jemaat", "jemah", "jemala", "jemang", "jemari", "jemaring", "jemawa", "jemba", "jembak", "jembalang", "jembar", "jembatan", "jembel", "jember", "jembiah", "jembrana", "jembut", "jemeki", "jemerlang", "jempalik", "jempalit", "jempana", "jemparing", "jempol", "jempul", "jemput", "jemu", "jemuas", "jemuju", "jemur", "jenahar", "jenak", "jenaka", "jenama", "jenang", "jenangau", "jenat", "jenawi", "jenayah", "jenazah", "jendal", "jendala", "jendel", "jendela", "jendera", "jenderal", "jendol", "jendul", "jenela", "jeneng", "jenewer", "jeng", "jengah", "jengang", "jengat", "jengek", "jenggala", "jenggar", "jengger", "jengget", "jengglong", "jenggot", "jengguk", "jenggul", "jenggut", "jengit", "jengkal", "jengkang", "jengkek", "jengkel", "jengkelit", "jengkeng", "jengker", "jengket", "jengki", "jengking", "jengkit", "jengkol", "jengkolet", "jengkot", "jenglong", "jenguh", "jenguk", "jengul", "jenis", "jenius", "jenjam", "jenjang", "jenjeng", "jentaka", "jentang", "jentayu", "jentelmen", "jentera", "jentik", "jentur", "jenu", "jenuh", "jepa", "jepet", "jepit", "jeprat", "jepret", "jepun", "jeput", "jera", "jerabai", "jeradik", "jeragih", "jerah", "jerahak", "jerahap", "jerait", "jeram", "jeramah", "jerambah", "jerambai", "jerambang", "jerambung", "jerami", "jeran", "jerang", "jerangan", "jerangau", "jerangkah", "jerangkak", "jerangkang", "jerangkong", "jerap", "jerapah", "jerat", "jerau", "jeraus", "jerawat", "jerba", "jerbak", "jereket", "jeremak", "jeremba", "jerembap", "jerembat", "jerembet", "jerembun", "jerempak", "jereng", "jerepet", "jeri", "jeriau", "jerigen", "jerih", "jeriji", "jeriken", "jering", "jeringing", "jerit", "jerjak", "jerkah", "jerkat", "jermal", "jermang", "jernang", "jernih", "jero", "jeroan", "jerohok", "jerojol", "jerongkang", "jerongkes", "jerongkok", "jerongkong", "jerubung", "jeruji", "jeruju", "jeruk", "jerukun", "jerukup", "jerum", "jerumat", "jerumbai", "jerumun", "jerumus", "jerun", "jerung", "jerungkau", "jerungkis", "jerungkung", "jerunuk", "jerupih", "jesben", "jet", "jetis", "jetsam", "jetset", "jewer", "jiawang", "jib", "jibaku", "jibilah", "jibrail", "jibril", "jibti", "jibun", "jicap", "jicapgo", "jicing", "jidal", "jidar", "jidat", "jidur", "jigong", "jigrah", "jih", "jihad", "jihat", "jijik", "jijit", "jijitsu", "jika", "jikalau", "jil", "jila", "jilah", "jilam", "jilat", "jilbab", "jilid", "jim", "jimahir", "jimak", "jimakir", "jimat", "jimawal", "jimbit", "jimpit", "jin", "jinak", "jinayah", "jindra", "jinem", "jineman", "jineng", "jingap", "jingau", "jingga", "jinggring", "jingkat", "jingkik", "jingkrak", "jingo", "jingoisme", "jingu", "jinjang", "jinjing", "jinjit", "jinsom", "jintan", "jip", "jipang", "jiplak", "jipro", "jir", "jirak", "jiran", "jirat", "jirian", "jirus", "jisim", "jitah", "jitak", "jitok", "jitu", "jiwa", "jiwat", "jiwatman", "jiwit", "jizyah", "jlegur", "joang", "jobak", "jobong", "jodang", "jodoh", "jodong", "jogan", "jogar", "joget", "joging", "joglo", "johan", "johar", "johari", "jojing", "jojol", "jok", "joki", "jolak", "jolek", "joli", "jolok", "jolong", "jolor", "jombang", "jomlo", "jompak", "jompo", "jongang", "jonget", "jongga", "jonggol", "jonggolan", "jongjorang", "jongkang", "jongkar-jangkir", "jongkat-jangkit", "jongki", "jongko", "jongkok", "jongkong", "jongos", "jonjot", "jontoh", "jontor", "jontrot", "joran", "joreng", "jori", "jorjoran", "jorok", "jorong", "josna", "jota", "jotang", "jotos", "joule", "jrambah", "jreng", "jua", "juadah", "juak", "jual", "juan", "juandang", "juang", "juar", "juara", "jubah", "jubel", "jubin", "jublag", "jublek", "judek", "judes", "judi", "judo", "judogi", "judoka", "judul", "juek", "juga", "juhi", "juhut", "juih", "juita", "juja", "jujah", "jujai", "jujitsu", "juju", "jujuh", "jujur", "jujuran", "jujut", "jukstaposisi", "jukut", "julab", "julai", "julang", "julat", "juli", "juling", "julir", "julo", "juluk", "julung", "julur", "jumadilakhir", "jumadilawal", "jumantan", "jumantara", "jumat", "jumbai", "jumbil", "jumbo", "jumbuh", "jumbul", "jumeneng", "jumhur", "jumjumah", "jumlah", "jumpa", "jumpalit", "jumpang", "jumpelang", "jumpul", "jumput", "jumrah", "jumud", "jun", "junam", "jundai", "jung", "jungat", "junggang", "jungkal", "jungkang", "jungkar", "jungkat", "jungkir", "jungkit", "jungkol", "jungur", "jungut", "juni", "junior", "junjung", "junta", "juntai", "juntrung", "junub", "junun", "jupang", "jura", "juragan", "jurai", "jurang", "juri", "jurik", "juring", "juris", "jurit", "jurnal", "jurnalis", "jurnalisme", "jurnalistik", "juru", "juruh", "jurung", "jurus", "jus", "justifikasi", "justru", "juta", "jute", "juvenil", "juz", "kaabah", "kaba", "kabah", "kabak", "kabang-kabang", "kabar", "kabaret", "kabat", "kabau", "kabel", "kabihat", "kabil", "kabilah", "kabin", "kabinet", "kabir", "kabisat", "kabit", "kaboi", "kabriolet", "kabruk", "kabu-kabu", "kabuki", "kabul", "kabumbu", "kabung", "kabupaten", "kabur", "kabus", "kabut", "kaca", "kacak", "kacam", "kacamata", "kacang", "kacapiring", "kacapuri", "kacar", "kacau", "kacau-balau", "kacauan", "kacek", "kacer", "kaci", "kacici", "kacip", "kacir", "kaco", "kacrek", "kacu", "kacuk", "kacukan", "kacung", "kad", "kada", "kadahajat", "kadal", "kadam", "kadang", "kadar", "kadariah", "kadas", "kadaster", "kadasteral", "kadastral", "kadaver", "kade", "kademat", "kadensa", "kader", "kadera", "kaderisasi", "kades", "kadet", "kadi", "kadim", "kadipaten", "kadir", "kadiriah", "kadmium", "kado", "kadofor", "kadok", "kadru", "kadung", "kadut", "kaedah", "kaf", "kafaah", "kafah", "kafan", "kafarat", "kafe", "kafeina", "kafetaria", "kafi", "kafil", "kafilah", "kafir", "kafiri", "kaftan", "kagak", "kaget", "kagok", "kagum", "kah", "kahaf", "kahak", "kahan", "kahang", "kahar", "kahat", "kahin", "kahrab", "kahwa", "kahwaji", "kahyangan", "kaidah", "kaifiah", "kaifiat", "kail", "kailalo", "kaimat", "kain", "kaing", "kainit", "kainofobia", "kais", "kaisar", "kait", "kajai", "kajang", "kajangan", "kajen", "kaji", "kak", "kakaban", "kakafoni", "kakagau", "kakah", "kakak", "kakaktua", "kakanda", "kakang", "kakao", "kakap", "kakas", "kakawin", "kakbah", "kakek", "kakerlak", "kaki", "kakodil", "kakofoni", "kakografi", "kakok", "kakologi", "kakostokrasi", "kakrupukan", "kaksa", "kaktus", "kaku", "kakuminal", "kakus", "kala", "kalah", "kalai", "kalajengking", "kalaka", "kalakanji", "kalakati", "kalakeran", "kalakian", "kalam", "kalamba", "kalamdan", "kalamin", "kalamisani", "kalamkari", "kalandar", "kalander", "kalang", "kalap", "kalar", "kalas", "kalat", "kalau", "kalaupun", "kalawija", "kalaza", "kalbi", "kalbu", "kaldera", "kaldron", "kaldu", "kalebas", "kaleidoskop", "kaleidoskopis", "kalem", "kalempagi", "kalender", "kaleng", "kali", "kalian", "kaliber", "kalibit", "kalibrasi", "kalibut", "kalicau", "kalifornium", "kaligraf", "kaligrafi", "kaligrafis", "kalih", "kalikausar", "kaliki", "kalimah", "kalimantang", "kalimat", "kalimatullah", "kalimatusyahadat", "kalimayah", "kalimpanang", "kalingan", "kalio", "kaliper", "kalipso", "kaliptra", "kalis", "kalistenik", "kalium", "kalk", "kalkalah", "kalkarium", "kalkasar", "kalkausar", "kalkopirit", "kalkosium", "kalkulasi", "kalkulator", "kalkulus", "kalkun", "kalo", "kalomel", "kalong", "kalongwese", "kalongwewe", "kalor", "kalori", "kalorimeter", "kalorimetri", "kalorisitas", "kalowatan", "kalpataru", "kalsedon", "kalsiferol", "kalsifikasi", "kalsinasi", "kalsit", "kalsium", "kalui", "kalumet", "kalung", "kalus", "kalut", "kam", "kama", "kamajaya", "kamal", "kamalir", "kamantuhu", "kamar", "kamarban", "kamariah", "kamas", "kamat", "kamba", "kamban", "kambang", "kambar", "kambeh", "kambeli", "kamber", "kambi", "kambing", "kambium", "kambrik", "kambrium", "kambuh", "kambus", "kambut", "kamelia", "kamera", "kamerad", "kamfana", "kamfer", "kamfor", "kamhar", "kami", "kamikaze", "kamil", "kamilmukamil", "kamir", "kamis", "kamisa", "kamisol", "kamisosolen", "kamit", "kamitua", "kamka", "kamkama", "kamomil", "kamp", "kampa", "kampai", "kampalogi", "kampanologi", "kampanye", "kampas", "kampemen", "kamper", "kampil", "kamping", "kampiun", "kampos", "kampret", "kampuh", "kampul", "kampung", "kampus", "kamrad", "kamsen", "kamsia", "kamu", "kamuflase", "kamus", "kan", "kana", "kanaah", "kanaat", "kanabis", "kanak-kanak", "kanal", "kanalisasi", "kanan", "kanang", "kancah", "kancap", "kanceh", "kancera", "kancil", "kancing", "kancung", "kancut", "kanda", "kandang", "kandar", "kandas", "kandel", "kandela", "kandi", "kandidat", "kandidiasis", "kandil", "kandis", "kandul", "kandung", "kandut", "kane", "kang", "kangar", "kangen", "kangka", "kangkang", "kangkung", "kangmas", "kangsa", "kangsar", "kangtau", "kanguru", "kanibal", "kanibalisasi", "kanibalisme", "kanigara", "kanilem", "kanina", "kanisah", "kanjal", "kanjang", "kanjar", "kanjeng", "kanji", "kanker", "kano", "kanoman", "kanon", "kanonir", "kanonis", "kanopi", "kans", "kansel", "kanselari", "kanselir", "kanser", "kanstof", "kanta", "kantan", "kantang", "kantar", "kantata", "kanti", "kantih", "kantil", "kantilever", "kantin", "kanto", "kantong", "kantor", "kantuk", "kantung", "kanun", "kanvas", "kanya", "kanyon", "kaok", "kaolin", "kaon", "kaos", "kaotis", "kap", "kapa", "kapabel", "kapah", "kapai", "kapak", "kapal", "kapan", "kapang", "kapar", "kaparinyo", "kapas", "kapasitans", "kapasitas", "kapasitor", "kapat", "kapel", "kapela", "kaper", "kapi", "kapilaritas", "kapiler", "kapiran", "kapis", "kapisa", "kapit", "kapita", "kapital", "kapitalis", "kapitalisme", "kapitalistis", "kapitan", "kapitol", "kapitulasi", "kapitulum", "kaplares", "kaplars", "kapling", "kaplok", "kapok", "kapon", "kaporit", "kappa", "kaprah", "kapri", "kaprikornus", "kapsalon", "kapsel", "kapstan", "kapster", "kapstok", "kapsul", "kapten", "kapu", "kapuk", "kapung", "kapur", "kapurancang", "kara", "karabin", "karaeng", "karaf", "karagen", "karah", "karahah", "karakter", "karakterisasi", "karakteristik", "karakterologi", "karam", "karamba", "karambol", "karamel", "karang", "karangkitri", "karangwulu", "karantina", "karaoke", "karap", "karapaks", "karapan", "karar", "karas", "karat", "karate", "karategi", "karateka", "karau", "karavan", "karawitan", "karbiah", "karbid", "karbida", "karbohidrase", "karbohidrat", "karboksil", "karbol", "karbolat", "karbolik", "karbon", "karbonado", "karbonan", "karbonat", "karbonil", "karbonisasi", "karborundum", "karburasi", "karburator", "karcis", "kardamunggu", "kardan", "kardia", "kardiak", "kardigan", "kardil", "kardinal", "kardiograf", "kardiografi", "kardiogram", "kardiolog", "kardiologi", "kardiovaskular", "karditis", "kardus", "karel", "karembong", "karena", "karengga", "kareseh-peseh", "karet", "kargo", "kari", "karib", "karibu", "karier", "karies", "karih", "karikatur", "karikatural", "karikaturis", "karil", "karim", "karimah", "karina", "karinasi", "karisma", "karismatik", "karismatis", "karitas", "karitatif", "karkas", "karkata", "karkum", "karkun", "karma", "karmina", "karminatif", "karnaval", "karnivor", "karosel", "karoseri", "karotena", "karotenoid", "karotis", "karpai", "karpel", "karper", "karpet", "karpopodil", "karsa", "karsinogen", "karsinogenik", "karsinologi", "karsinoma", "karst", "karteker", "kartel", "karti", "kartika", "kartilago", "kartografi", "kartogram", "karton", "kartonase", "kartotek", "kartu", "kartun", "kartunis", "karu", "karuan", "karuhun", "karun", "karung", "karunia", "karunkel", "karusi", "karut", "karya", "karyah", "karyasiswa", "karyat", "karyawisata", "kas", "kasa", "kasab", "kasabandiah", "kasad", "kasah", "kasai", "kasak-kusuk", "kasam", "kasang", "kasap", "kasar", "kasasi", "kasatmata", "kasau", "kasdu", "kasein", "kasemat", "kasemek", "kasep", "kaserin", "kaserol", "kaset", "kasi", "kasid", "kasidah", "kasih", "kasihan", "kasiku", "kasim", "kasima", "kasino", "kasintu", "kasip", "kasir", "kasiterit", "kaskade", "kaskaya", "kasmaran", "kasmir", "kasmutik", "kaspe", "kasrah", "kasregister", "kassia", "kasta", "kastal", "kastanyet", "kastel", "kasti", "kastrasi", "kastroli", "kasturi", "kasual", "kasualisme", "kasualitas", "kasuari", "kasuarina", "kasui", "kasuis", "kasuistik", "kasur", "kasus", "kasut", "kaswah", "kata", "katabalik", "katabatik", "katabolisme", "katadrom", "katafalk", "katafora", "katah", "katai", "katak", "kataka", "katakana", "kataklisme", "katakomba", "katalase", "katalepsi", "katalina", "katalis", "katalisasi", "katalisator", "katalisis", "katalisit", "katalog", "katalogisasi", "katalogus", "katamaran", "katang-katang", "katapel", "katar", "katarak", "katarsis", "katartik", "katastrofe", "katatoni", "katatonia", "katawi", "kate", "katebelece", "katedral", "kategori", "kategorial", "kategoris", "kategorisasi", "katek", "katekese", "katekis", "katekisasi", "katekismus", "katekumen", "katel", "katelum", "kater", "katering", "kates", "kateter", "katetometer", "kati", "katib", "katibin", "katifah", "katifan", "katik", "katil", "katimaha", "katimumul", "kation", "katir", "katirah", "katiti", "katode", "katok", "katolik", "katrol", "katuk", "katul", "katun", "katung", "katup", "katut", "katvanga", "katwal", "kau", "kaukab", "kaukasoid", "kaukus", "kaul", "kaula", "kauli", "kaum", "kaung", "kaupui", "kaus", "kausa", "kausal", "kausalitas", "kausatif", "kaustik", "kaustiksoda", "kaut", "kavaleri", "kaveling", "kaver", "kaviar", "kawa-kawa", "kawah", "kawak", "kawal", "kawan", "kawang", "kawanua", "kawasan", "kawat", "kawi", "kawih", "kawijayan", "kawin", "kawista", "kawruh", "kawuk", "kawula", "kawung", "kaya", "kayai", "kayak", "kayambang", "kayan", "kayang", "kayangan", "kayau", "kayu", "kayuh", "kayun", "kebab", "kebabal", "kebah", "kebaji", "kebal", "kebam", "kebas", "kebat", "kebaya", "kebayan", "kebel", "kebelet", "kebembem", "kebin", "kebiri", "keblangsak", "keblinger", "kebo", "kebon", "kebuk", "kebul", "kebuli", "kebun", "kebur", "keburu", "kebut", "kebyar", "kecai", "kecak", "kecalingan", "kecam", "kecambah", "kecamuk", "kecandan", "kecantol", "kecap", "kecapi", "kecar", "kece", "kecebong", "kecek", "kecele", "keceng", "kecepek", "kecer", "kecewa", "keci", "keciak", "kecibak", "kecibeling", "kecik", "kecil", "kecimik", "kecimpring", "kecimpung", "kecimus", "kecipak", "kecipir", "kecipuk", "kecit", "keciut", "kecoak", "kecoh", "kecombrang", "kecong", "kecrek", "kecu", "kecuali", "kecubung", "kecuh-kecah", "kecumik", "kecundang", "kecup", "kecut", "kedabu", "kedadak", "kedah", "kedai", "kedak", "kedal", "kedaluwarsa", "kedam", "kedang", "kedangkai", "kedangkan", "kedangsa", "kedap", "kedasih", "kedau", "kedaung", "kedayan", "kedebong", "kedek", "kedekai", "kedeki", "kedekik", "kedekut", "kedelai", "kedele", "kedemat", "kedemplung", "kedempung", "kedengkang", "kedengkik", "keder", "kedera", "kederang", "kedewaga", "kedi", "kedidi", "kedik", "kedikit", "kedip", "kedodoran", "kedok", "kedondong", "kedongdong", "kedongkok", "kedot", "keduduk", "keduk", "kedul", "kedumung", "kedung", "kedut", "keferdom", "kehel", "keibodan", "kejai", "kejam", "kejamas", "kejan", "kejang", "kejap", "kejar", "kejat", "kejawen", "kejen", "kejer", "keji", "kejibeling", "kejip", "kejolak", "kejora", "keju", "kejuju", "kejur", "kejut", "kek", "kekah", "kekal", "kekam", "kekandi", "kekang", "kekapas", "kekar", "kekara", "kekas", "kekat", "kekau", "kekawin", "kekeba", "kekebik", "kekeh", "kekek", "kekel", "kekemben", "kekep", "keker", "keki", "kekitir", "kekok", "kekol", "kekrupukan", "kelab", "kelabak", "kelabang", "kelabat", "kelabau", "kelabu", "keladak", "keladan", "keladau", "keladi", "kelah", "kelahi", "kelai", "kelak", "kelak-kelik", "kelak-keluk", "kelakah", "kelakanji", "kelakar", "kelalang", "kelam", "kelamai", "kelamarin", "kelambai", "kelambir", "kelambit", "kelambu", "kelambur", "kelamin", "kelamkari", "kelana", "kelandera", "kelang", "kelang-kelok", "kelangkan", "kelangkang", "kelanjar", "kelantang", "kelap", "kelapa", "kelar", "kelara", "kelarah", "kelarai", "kelaras", "kelari", "kelas", "kelasa", "kelasah", "kelasak", "kelasi", "kelat", "kelati", "kelawan", "kelayan", "kelayang", "kelayu", "kelder", "kelebat", "kelebek", "kelebet", "kelebu", "kelebuk", "kelebut", "keledai", "keledang", "keledar", "keledek", "kelejat", "kelek", "kelekap", "kelekatu", "kelelap", "kelelawar", "kelelesa", "kelelot", "kelemak-kelemek", "kelemantang", "kelemayar", "kelemayuh", "kelembahang", "kelembai", "kelembak", "kelemban", "kelembuai", "kelempai", "kelemping", "kelemton", "kelemumur", "kelemur", "kelencer", "kelendara", "keleneng", "kelengar", "kelenggara", "kelengkeng", "kelengkiak", "kelening", "kelenjar", "kelentang", "kelenteng", "kelentik", "kelenting", "kelentit", "kelentong", "kelentung", "kelenung", "kelenyit", "kelep", "kelepai", "kelepak", "kelepat", "kelepek", "kelepet", "kelepik", "kelepir", "kelepit", "kelepuk", "kelepur", "keler", "kelereng", "kelesa", "kelesah", "keleseh", "kelesek", "kelesot", "keletah", "keletak", "keletang", "keletar", "keleti", "keletik", "keletuk", "keletung", "kelewang", "keli", "kelian", "keliar", "kelibang", "kelibat", "kelicap", "kelici", "kelicik", "kelih", "kelijak", "kelik", "kelika", "kelikah", "kelikat", "keliki", "kelikih", "kelikik", "kelikir", "keliling", "kelilip", "kelim", "kelimat", "kelimpanan", "kelimpungan", "kelimun", "kelimut", "kelinci", "kelincir", "kelindan", "keling", "kelingking", "kelingsir", "kelining", "kelinjat", "kelintang", "kelintar", "kelinting", "kelip", "kelipat", "kelir", "keliru", "kelis", "kelisera", "kelisere", "kelit", "keliti", "kelitik", "keliwon", "kelobot", "kelobotisme", "kelocak", "keloceh", "kelodan", "keloelektrovolt", "keloid", "kelojot", "kelok", "kelokak", "kelola", "kelolong", "kelom", "kelombeng", "kelompang", "kelompen", "kelompok", "kelon", "keloneng", "kelonet", "kelong", "kelongkong", "kelongsong", "kelontang", "kelontang-kelantung", "kelontong", "kelonyo", "kelop", "kelopak", "kelor", "kelorak", "kelos", "kelosok", "kelotok", "keloyak", "keloyang", "keloyor", "kelp", "kelu", "kelua", "keluai", "keluak", "keluan", "keluang", "keluangsa", "keluar", "keluarga", "kelubak", "kelubi", "keluburan", "keluh", "kelui", "keluih", "keluk", "kelukup", "kelukur", "keluli", "kelulu", "kelulus", "kelulut", "kelumit", "kelumpang", "kelumun", "kelun", "keluna", "kelunak", "kelung", "kelupas", "kelupur", "keluron", "keluruk", "kelurut", "kelus", "kelusuh-kelasah", "kelut", "kelutum", "keluwung", "keluyuk", "keluyur", "kemah", "kemal", "kemala", "kemam", "kemamang", "keman", "kemandang", "kemandoran", "kemang", "kemangi", "kemarau", "kemari", "kemarin", "kemaruk", "kemas", "kemat", "kematu", "kematus", "kemayu", "kembal", "kembali", "kemban", "kembang", "kembar", "kembara", "kembatu", "kembayat", "kembeng", "kembera", "kembili", "kemboja", "kembol", "kembu", "kembuk", "kembung", "kembur", "kembut", "kemeja", "kemejan", "kemekmek", "kemelut", "kemenakan", "kemendalam", "kemendang", "kemendur", "kementam", "kemenyan", "kemerakan", "kemesu", "kemi", "kemih", "kemik", "kemilap", "kemiluminesens", "kemiri", "kemit", "kemlaka", "kemlandingan", "kemloko", "kemoceng", "kemokinesis", "kemon", "kemopsikiatri", "kemoterapi", "kempa", "kempal", "kempang", "kempas", "kempek", "kempes", "kempetai", "kempis", "kempit", "kemplang", "kempot", "kempu", "kempuh", "kempul", "kempunan", "kempung", "kemput", "kempyang", "kemu", "kemucing", "kemudi", "kemudian", "kemudu", "kemukus", "kemul", "kemumu", "kemuncak", "kemuncup", "kemundir", "kemung", "kemungkus", "kemuning", "kemunting", "kemurgi", "kemut", "kemutul", "ken", "kena", "kenaf", "kenal", "kenan", "kenang", "kenanga", "kenap", "kenapa", "kenapang", "kenari", "kenas", "kencan", "kencana", "kencang", "kencar", "kenceng", "kencing", "kencit", "kencong", "kencrang-kencring", "kencreng", "kencung", "kencur", "kendaga", "kendal", "kendala", "kendali", "kendana", "kendang", "kendara", "kendati", "kendayakan", "kendeka", "kenderi", "kendi", "kendil", "kendit", "kendo", "kendong", "kenduduk", "kendung", "kendungan", "kendur", "kenduri", "kenek", "keneker", "kenem", "kenematik", "kenes", "keng", "kengkang", "kengkeng", "kenidai", "kenikir", "kening", "kenohong", "kenong", "kenop", "kensel", "kental", "kentang", "kentar", "kentara", "kenteng", "kentrung", "kentung", "kentut", "kenur", "kenya", "kenyal", "kenyam", "kenyang", "kenyat", "kenyat-kenyit", "kenyet-kenyut", "kenyi", "kenyih", "kenyir", "kenyit", "kenyut", "keok", "keong", "kep", "kepada", "kepah", "kepai", "kepak", "kepal", "kepala", "kepalang", "kepam", "kepang", "kepar", "keparat", "kepayang", "kepecong", "kepek", "kepel", "kepencong", "kepeng", "keper", "keperancak", "kepet", "kepetang", "kepialu", "kepiat", "kepik", "kepil", "kepincut", "kepinding", "keping", "kepingin", "kepinis", "kepinjal", "kepiri", "kepis", "kepit", "kepiting", "keplak", "kepleset", "keplok", "kepodang", "kepoh", "kepol", "kepompong", "keponakan", "kepot", "keprak", "keprek", "kepret", "kepris", "kepruk", "kepuh", "kepuk", "kepul", "kepulaga", "kepundan", "kepundung", "kepung", "kepurun", "keputren", "kepuyuk", "kera", "kerabang", "kerabat", "kerabik", "kerabu", "keracak", "keracap", "keraeng", "kerah", "kerahi", "kerai", "kerajang", "kerajat", "kerak", "kerakah", "kerakal", "kerakap", "kerakeling", "keram", "kerama", "keraman", "keramas", "keramat", "keramba", "kerambil", "kerambit", "keramboja", "keramik", "keramikus", "kerampagi", "kerampang", "keramunting", "keran", "kerancang", "keranda", "kerang", "kerang-keroh", "kerangas", "kerangka", "kerangkai", "kerangkeng", "kerani", "keranjang", "keranjat", "keranji", "keranjingan", "keranta", "kerantong", "kerap", "kerapu", "keras", "kerasan", "kerat", "keratabasa", "keratin", "keratitis", "keratoelastin", "keraton", "kerau", "kerawai", "kerawak", "kerawang", "kerawat", "kerawit", "kerbang", "kerbat", "kerbau", "kerbuk", "kercap-kercip", "kercap-kercup", "kercing", "kercit", "kercup", "kercut", "kerdak", "kerdam", "kerdil", "kerdom", "kerdut", "kere", "kerebok", "kereceng", "kerecik", "keredak", "keredep", "keredok", "keredong", "kerek", "kereket", "kerekot", "kerekut", "keremi", "keremot", "kerempagi", "kerempeng", "kerempung", "keremus", "keren", "kerencang", "kerencung", "kerendang", "kereneng", "kereng", "kerengga", "kerenggamunggu", "kerengkam", "kerengkiang", "kerentam", "kerentang", "kerenting", "kerenyam", "kerenyot", "kerepas", "kerepek", "kerepes", "kerepot", "kerepyak", "kerese", "kerese-pese", "keresek", "kereseng", "keresot", "kereta", "keretan", "keretek", "keretot", "keretut", "kereweng", "keri", "keriang-keriut", "keriap", "kerias", "keriau", "kerical", "kericau", "keridas", "keridik", "kerih", "kerik", "kerikal", "kerikam", "kerikil", "kerikit", "kerimut", "kerinan", "kerincing", "kerinding", "kering", "keringat", "keriningan", "kerinjal", "kerinjang", "kerinjing", "kerintil", "kerinting", "kerip", "keripik", "keriput", "keris", "kerisi", "kerisik", "kerising", "kerisut", "kerit", "keritik", "keriting", "keriuk", "keriut", "kerja", "kerjang", "kerjantara", "kerjap", "kerkah", "kerkak", "kerkap", "kerkau", "kerkop", "kerkup", "kerlap", "kerling", "kerlip", "kermak", "kermanici", "kermi", "kernai", "kerneli", "kernet", "kernu", "kernyat-kernyut", "kernyau", "kernyih", "kernying", "kernyit", "kernyut", "kero", "kerobak", "kerobat", "kerobek", "keroco", "kerocok", "kerogen", "keroh", "kerok", "kerokot", "keromong", "keron", "keroncang", "keroncong", "keroncor", "kerong", "kerongkongan", "kerongsang", "kerontang", "kerop", "keropak", "keropas-keropis", "keropeng", "keropok", "keropong", "keropos", "kerosak", "kerosek", "kerosi", "kerosin", "kerosok", "kerosong", "kerot", "kerotak", "kerotot", "keroyok", "kerpai", "kerpak", "kerpas", "kerpubesi", "kerpuk", "kerpus", "kers", "kersai", "kersak", "kersang", "kersani", "kersen", "kersik", "kersuk", "kertaaji", "kertah", "kertak", "kertang", "kertap", "kertas", "kertau", "kertuk", "kertus", "keruan", "kerubim", "kerubin", "kerubung", "kerubut", "kerucil", "kerucut", "kerudung", "keruh", "keruing", "keruit", "keruk", "kerukut", "kerul", "keruma", "kerumit", "kerumuk", "kerumun", "kerumus", "kerun", "kerung", "kerunkel", "keruntang-pungkang", "kerunting", "keruntung", "kerunyut", "kerup", "kerupuk", "kerut", "kerutak", "kerutup", "keruyuk", "kes", "kesah", "kesak", "kesal", "kesam", "kesambet", "kesambi", "kesan", "kesana", "kesandung", "kesang", "kesangsang", "kesap-kesip", "kesasar", "kesat", "kesatria", "kesek", "kesel", "keselak", "keseleo", "kesemek", "kesengsem", "keseran", "keseser", "keset", "kesi", "kesiap", "kesik", "kesima", "kesimbukan", "kesini", "kesip", "kesitu", "kesiur", "keskul", "kesmaran", "kesohor", "kesomplok", "kesongo", "kesot", "kesrakat", "kesting", "kesturi", "kesu-kesi", "kesuh-kesih", "kesuk-kesik", "kesuma", "kesumat", "kesumba", "kesup", "kesusu", "kesut", "keta", "ketaban", "ketai", "ketak", "ketakar", "ketakong", "ketal", "ketam", "ketambak", "ketampi", "ketan", "ketang", "ketap", "ketapak", "ketapang", "ketapek", "ketar", "ketarap", "ketat", "ketaton", "ketawa", "ketaya", "ketayap", "ketegar", "ketek", "ketel", "ketela", "ketemu", "keten", "ketena", "keteng", "ketepel", "ketepeng", "keter", "ketes", "keteter", "ketgat", "keti", "ketiak", "ketial", "ketiap", "ketiau", "ketiban", "ketiding", "ketik", "ketika", "ketil", "ketilang", "ketimbang", "ketimbis", "ketimbul", "ketimbung", "keting", "ketinjau", "ketinting", "ketip", "ketiplak", "ketipung", "ketirah", "ketis", "ketitir", "ketlingsut", "ketogenesis", "ketok", "ketola", "ketombe", "keton", "ketonemia", "ketonggeng", "ketonuria", "ketopong", "ketoprak", "ketosa", "ketrek", "ketu", "ketua", "ketuat", "ketuban", "ketuir", "ketuk", "ketul", "ketumbar", "ketumbi", "ketumbit", "ketumbu", "ketumpang", "ketun", "ketungging", "ketup", "ketupa", "ketupat", "ketupuk", "ketur", "ketus", "kev", "kewalahan", "keweni", "kewer", "kewes", "kewuh", "kha", "khabis", "khadam", "khadim", "khafi", "khair", "khairat", "khalas", "khalayak", "khali", "khalifah", "khalifatulah", "khalifatullah", "khalik", "khalikah", "khalikul", "khalil", "khalilullah", "khalis", "khalwat", "khamar", "khamir", "khamsin", "khamzab", "khanjar", "kharab", "khas", "khasi", "khasiat", "khat", "khatam", "khatib", "khatifah", "khatimah", "khatulistiwa", "khauf", "khaul", "khawas", "khawasulkhawas", "khawatir", "khayal", "khayali", "khazanah", "khi", "khianat", "khiar", "khidaah", "khidmah", "khidmat", "khilaf", "khilafiah", "khinzir", "khisit", "khitah", "khitan", "khitbah", "khizanatulkitab", "khoja", "khojah", "khotbah", "khuduk", "khulafa", "khuldi", "khuluk", "khunsa", "khurafat", "khusuf", "khusus", "khusyuk", "kia", "kiah", "kiai", "kiak", "kial", "kiam", "kiamat", "kiambang", "kian", "kiang-kiut", "kiani", "kiap", "kiar", "kiara", "kias", "kiasi", "kiasmus", "kiat", "kiaupau", "kibang", "kibar", "kibas", "kibernetika", "kibir", "kiblat", "kiblik", "kibriah", "kibul", "kicang-kecoh", "kicang-kicu", "kicau", "kici", "kicik", "kicu", "kicuh", "kicut", "kida-kida", "kidal", "kidam", "kidang", "kidar", "kidul", "kidung", "kifayah", "kifoskaliose", "kifoskaliosis", "kihanat", "kijai", "kijang", "kijil", "kijing", "kikih", "kikik", "kikil", "kikir", "kikis", "kikitir", "kikuk", "kikus", "kila", "kilah", "kilai", "kilan", "kilang", "kilap", "kilar", "kilas", "kilat", "kilau", "kili", "kilik", "kilir", "kiln", "kilo", "kilogram", "kilohertz", "kilokalori", "kiloliter", "kilometer", "kiloton", "kilovolt", "kilowatt", "kilowattjam", "kilus", "kim", "kima", "kimah", "kimantu", "kimar", "kimbah", "kimbang", "kimbul", "kimia", "kimiawi", "kimkha", "kimlo", "kimo", "kimograf", "kimono", "kimpal", "kimpul", "kimpus", "kimput", "kimus", "kina", "kinang", "kinantan", "kinanti", "kinasa", "kinasih", "kinca", "kincah", "kincak", "kincang", "kincau", "kincir", "kincit", "kincung", "kincup", "kindap", "kinematika", "kinematograf", "kinesika", "kinesimeter", "kineskop", "kinestesia", "kinestesiometer", "kinestesis", "kinetik", "kinetika", "kinetokardiografi", "kingking", "kingkip", "kingkit", "kingkong", "kini", "kinine", "kinja", "kinjat", "kinjeng", "kinred", "kintaka", "kintal", "kinte", "kintil", "kinyang", "kio", "kios", "kipa", "kipai", "kipang", "kipas", "kiper", "kiprah", "kiprat", "kipsiau", "kipu", "kir", "kira", "kiraah", "kiraat", "kirab", "kirai", "kiramat", "kiran", "kirana", "kirap", "kiras", "kirau", "kirbat", "kiri", "kirik", "kirim", "kirinyu", "kirip", "kiris", "kirita", "kirmizi", "kiru", "kiruh", "kirung", "kisa", "kisah", "kisai", "kisar", "kisas", "kisat", "kisi", "kisik", "kismat", "kismis", "kisruh", "kista", "kisut", "kiswah", "kit", "kita", "kitab", "kitabulah", "kitang", "kitar", "kitik", "kitin", "kiting", "kitir", "kitorang", "kitri", "kits", "kiu", "kiuk", "kiwari", "kiwi", "kizib", "klaim", "klakklik", "klakson", "klamidospora", "klan", "klandestin", "klangenan", "klante", "klarifikasi", "klarinet", "klasemen", "klasifikasi", "klasik", "klasikal", "klasis", "klasisisme", "klausa", "klaustrofobia", "klaustrum", "klausul", "klaver", "klavikor", "klavikula", "klaviola", "kleder", "kleidotomi", "kleistogami", "klem", "klemensi", "klen", "klenengan", "klengkeng", "klenik", "klenteng", "klep", "klepon", "klepsidra", "kleptofobi", "kleptoman", "kleptomania", "kleptomaniak", "klerek", "klerikal", "klerikus", "klerus", "klien", "klik", "kliker", "klimaks", "klimakterium", "klimaktorium", "klimatografi", "klimatolog", "klimatologi", "klimis", "klimograf", "klimosekuen", "klimoskop", "klin", "klinik", "klining", "klinis", "klinisi", "klinometer", "klip", "kliping", "klir", "kliring", "klise", "klistron", "klitelum", "klitik", "klitoris", "kliwon", "kliyengan", "kloaka", "klon", "klona", "kloning", "klonograf", "klonus", "klop", "klor", "kloral", "kloramina", "klorat", "klorida", "kloridimeter", "klorin", "klorinasi", "klorit", "klorobenzena", "klorofil", "kloroform", "kloroformat", "klorokuin", "klorolignin", "kloroplas", "kloroprena", "klorosis", "kloset", "klub", "kluntang-kluntung", "klusium", "knalpot", "knop", "knot", "koa", "koagel", "koagregasi", "koagulan", "koagulasi", "koak", "koaksi", "koaksial", "koala", "koalisi", "koana", "koar", "kobah", "kobak", "kobalamin", "kobalt", "kobar", "kober", "koboi", "koboisme", "kobok", "kobol", "kobongan", "kobra", "kocah-kacih", "kocak", "kocar-kacir", "kocek", "koci", "kocilembik", "kocoh", "kocok", "kocolan", "kocong", "kocor", "koda", "kodak", "kode", "kodein", "kodeks", "kodi", "kodifikasi", "kodok", "kodominan", "kodrat", "kodrati", "koe", "koedukasi", "koefisien", "koeksistensi", "koenzim", "koersi", "koersif", "kofaktor", "kofein", "kofermen", "kognat", "kognatif", "kognisi", "kognitif", "koh", "kohabitasi", "koheren", "koherensi", "kohesi", "kohesif", "kohir", "kohlea", "kohol", "kohong", "kohor", "koil", "koin", "koinseden", "koinsiden", "koinsidensi", "koipuk", "koit", "koitus", "koja", "kojah", "kojang", "kojoh", "kojol", "kojor", "kok", "koka", "kokah", "kokaina", "kokainisasi", "kokainisme", "kokang", "kokarde", "kokas", "koki", "kokila", "koklea", "kokoa", "kokoh", "kokok", "kokokbeluk", "kokol", "kokon", "kokosan", "kokot", "kokpit", "koksa", "koktail", "kokurikuler", "kokus", "kol", "kola", "kolaborasi", "kolaborator", "kolagen", "kolak", "kolam", "kolang-kaling", "kolaps", "kolaret", "kolase", "kolateral", "kolator", "kolega", "kolegial", "kolegialitas", "koleh-koleh", "kolek", "koleksi", "kolekte", "kolektif", "kolektivis", "kolektivisasi", "kolektivisme", "kolektivitas", "kolektor", "kolembeng", "kolemia", "koleng", "koleoptil", "kolera", "kolese", "kolesom", "kolesterin", "kolesterol", "koli", "kolibri", "koligasi", "kolik", "kolimasi", "kolina", "kolintang", "koliseng", "kolitis", "kolkhoz", "kolodion", "kolofon", "kologen", "koloid", "koloidal", "kolok", "kolokasi", "kolokium", "kolom", "kolomben", "kolon", "kolone", "kolonel", "kolong", "koloni", "kolonial", "kolonialis", "kolonialisme", "kolonis", "kolonisasi", "kolonoskop", "kolonye", "kolor", "kolorimeter", "kolorimetri", "kolosal", "kolosom", "kolostomi", "kolostrum", "kolot", "kolportir", "kolt", "kolum", "kolumela", "kolumnis", "kolumnus", "kolusi", "koluvium", "kom", "koma", "komaliwan", "koman", "komandan", "komandemen", "komanditer", "komando", "komaran", "komat-kamit", "kombat", "kombinasi", "kombo", "kombor", "kombusio", "komedi", "komedian", "komendur", "komeng", "komensal", "komensalisme", "komentar", "komentator", "komersial", "komersialisasi", "komet", "komfortabel", "komidi", "komik", "komikal", "komikus", "kominusi", "komis", "komisar", "komisariat", "komisaris", "komisi", "komisioner", "komisura", "komit", "komite", "komitmen", "komkoma", "komoditas", "komodo", "komodor", "kompak", "kompanyon", "komparasi", "komparatif", "komparator", "kompartemen", "kompas", "kompatibel", "kompatibilitas", "kompatriot", "kompendium", "kompeni", "kompensasi", "kompes", "kompeten", "kompetensi", "kompetisi", "kompetitif", "kompetitor", "kompi", "kompilasi", "kompilator", "komplain", "kompleks", "kompleksitas", "komplemen", "komplementer", "komplet", "komplikasi", "komplikatif", "komplimen", "komplot", "kompon", "komponen", "kompong", "komponis", "kompor", "kompos", "komposer", "komposisi", "komposit", "kompositum", "komprador", "komprang", "komprehensif", "kompres", "kompresi", "kompresor", "kompromi", "kompromistis", "kompulsi", "kompulsif", "komputer", "komputerisasi", "komtabilitas", "komunal", "komunalisme", "komunalistik", "komune", "komuni", "komunikabilitas", "komunikan", "komunikasi", "komunikatif", "komunikator", "komunike", "komunis", "komunisme", "komunistis", "komunistofobi", "komunistofobia", "komunitas", "komutator", "komuter", "konan", "konco", "koncoisme", "kondang", "kondangan", "konde", "kondektur", "kondensasi", "kondensat", "kondensator", "kondensor", "kondilus", "kondisi", "kondom", "kondominium", "kondomisasi", "kondor", "kondrin", "kondroblas", "konduite", "konduksi", "konduktans", "konduktimeter", "konduktivitas", "konduktor", "kondusif", "koneksi", "koneksitas", "konektor", "konfederasi", "konfeksi", "konferensi", "konfesi", "konfigurasi", "konfiks", "konfirmasi", "konflik", "konform", "konformitas", "konfrontasi", "konfrontatif", "kongenital", "kongesti", "kongkalikong", "kongko", "kongkoan", "kongkong", "kongkret", "konglomerasi", "konglomerat", "kongregasi", "kongres", "kongresis", "kongsi", "konifera", "konis", "konjugan", "konjugasi", "konjungsi", "konjungter", "konjungtif", "konjungtiva", "konjungtivitis", "konjungtor", "konjungtur", "konkaf", "konklaf", "konklusi", "konklusif", "konkologi", "konkomitan", "konkordansi", "konkordat", "konkresi", "konkret", "konkretisasi", "konkuisnador", "konkuren", "konkurensi", "konkurs", "konoid", "konon", "konosemen", "konotasi", "konotatif", "konperensi", "konsekrasi", "konsekuen", "konsekuensi", "konsekutif", "konseli", "konseling", "konselor", "konsensus", "konsentrasi", "konsentrat", "konsentrik", "konsentris", "konsep", "konsepsi", "konsepsional", "konseptor", "konseptual", "konseptualisasi", "konser", "konsertina", "konserto", "konservasi", "konservasionis", "konservatif", "konservatisme", "konservator", "konservatori", "konservatorium", "konsesi", "konsesif", "konsesional", "konsiderans", "konsiderasi", "konsili", "konsiliasi", "konsinyasi", "konsinyatir", "konsisten", "konsistensi", "konsistori", "konsol", "konsolasi", "konsolidasi", "konsonan", "konsonansi", "konsonantal", "konsorsium", "konspirasi", "konspiratif", "konspirator", "konstabel", "konstan", "konstanta", "konstantagravitasi", "konstatasi", "konstatatif", "konstatir", "konstelasi", "konstipasi", "konstituante", "konstituen", "konstitusi", "konstitusional", "konstitusionalisme", "konstriksi", "konstriktor", "konstruksi", "konstruktif", "konstruktivisme", "konsul", "konsulat", "konsulen", "konsuler", "konsultan", "konsultasi", "konsumen", "konsumer", "konsumerisme", "konsumsi", "konsumtif", "kontak", "kontal-kantil", "kontaminasi", "kontan", "kontang-kanting", "konte", "konteks", "kontekstual", "kontekstualisme", "kontemplasi", "kontemplatif", "kontemporer", "konten", "konter", "kontes", "kontestan", "kontet", "kontiguitas", "kontinen", "kontinental", "kontingen", "kontinu", "kontinuitas", "kontinum", "kontoid", "kontol", "kontra", "kontrabande", "kontrabas", "kontradiksi", "kontradiktif", "kontraindikasi", "kontrak", "kontraksi", "kontraktor", "kontraktual", "kontraproduktif", "kontras", "kontrasepsi", "kontraseptif", "kontravensi", "kontribusi", "kontributor", "kontrol", "kontrolir", "kontroversi", "kontroversial", "kontur", "konus", "konveks", "konveksi", "konvektif", "konvensi", "konvensional", "konvergen", "konvergensi", "konversasi", "konversi", "konveyor", "konvoi", "konvolusi", "konvulsan", "konvulsi", "konyak", "konyal", "konyan", "konyol", "kooperasi", "kooperatif", "kooperativisme", "kooperator", "kooptasi", "koordinasi", "koordinat", "koordinatif", "koordinator", "kop", "kopah", "kopaiba", "kopak", "kopal", "kopat-kapit", "kopbal", "kopek", "kopel", "kopelrim", "koper", "koperasi", "kopet", "kopi", "kopiah", "kopilot", "kopling", "koplo", "kopok", "kopolimer", "kopong", "kopra", "koprafagia", "koprak", "kopral", "koprok", "koprol", "koprolit", "kopula", "kopulasi", "kopulatif", "kopyok", "kopyor", "kor", "koral", "koralit", "koran", "korano", "korban", "korden", "kordial", "kordit", "kordon", "korduroi", "kored", "koreferensialitas", "korek", "koreke", "koreksi", "korektif", "korektor", "korelasi", "korelatif", "korenah", "koreng", "koreograf", "koreografer", "koreografi", "koreografis", "kores", "koresponden", "korespondensi", "koret", "koridor", "korion", "kornea", "kornel", "korner", "kornet", "koroh", "koroid", "korok", "korologi", "korona", "koronal", "koroner", "korong", "korosi", "korosif", "korporasi", "korporat", "korporatif", "korporatisme", "korps", "korpulensi", "korpus", "korsase", "korsel", "korselet", "korset", "korsleting", "korteks", "kortikulus", "korting", "kortison", "korugator", "korundum", "korup", "korupsi", "koruptif", "koruptor", "korve", "korvet", "kosak-kasik", "kosakata", "kosar", "kosbas", "kosek", "kosekan", "kosel", "kosen", "koset", "kosinus", "kosmetik", "kosmetilogi", "kosmetolog", "kosmetologi", "kosmetologis", "kosmis", "kosmogoni", "kosmografi", "kosmologi", "kosmologis", "kosmonaut", "kosmopolit", "kosmopolitan", "kosmopolitanisme", "kosmos", "kosmotron", "kosokbali", "kosong", "kostum", "kota", "kotah", "kotai", "kotak", "kotak-katik", "kotaklema", "kotek", "koteka", "koteks", "koteng", "koterek", "kotes", "kotiledon", "kotipa", "kotok", "kotong", "kotor", "kotrek", "kovalensi", "kover", "kowan", "kowek", "koyak", "koyam", "koyan", "koyok", "krai", "krakal", "kram", "krama", "kranapaksa", "krangeyan", "kraniologi", "kraniometri", "kraniotomi", "kranium", "krans", "krasis", "krayon", "kreasi", "kreatif", "kreativitas", "kreator", "krebo", "krecek", "kredibilitas", "kredit", "kreditabel", "kreditor", "kredo", "krem", "kremasi", "krematori", "krematorium", "kreol", "kreolin", "kreolisasi", "kreosol", "kresendo", "kresol", "kretin", "kribo", "kricak", "krida", "krifoli", "krim", "kriminal", "kriminalis", "kriminalisasi", "kriminalitas", "kriminolog", "kriminologi", "kriminologis", "kring", "krio", "kriofil", "kriofit", "kriogen", "kriogenika", "krioterapi", "kripta", "kriptogam", "kriptografi", "kriptogram", "kriptol", "kripton", "krisan", "krisantemum", "krisis", "krisma", "krisoberil", "krisofil", "krisolit", "krisopras", "krista", "kristal", "kristalisasi", "kristalografi", "kristaloid", "kristalosa", "kristen", "kristiani", "kristus", "kriteria", "kriterium", "kritik", "kritikus", "kritis", "kritisi", "kriya", "krobongan", "kroco", "kroket", "krol", "krom", "kromat", "kromatid", "kromatika", "kromatin", "kromatis", "kromatofor", "kromatografi", "kromit", "kromium", "kromo", "kromofil", "kromofob", "kromogen", "kromong", "kromosfer", "kromosom", "kromotropi", "krompyang", "kronem", "kroni", "kronik", "kroniometri", "kronis", "kronisme", "kronobiologi", "kronogram", "kronologi", "kronologis", "kronometer", "kronosekuen", "kronoskop", "krosboi", "kroto", "kru", "kruistik", "kruk", "krukat", "krusial", "krustasea", "ksatria", "ksi", "kuaci", "kuadran", "kuadrat", "kuadratika", "kuadratur", "kuadratus", "kuadrenium", "kuadriliun", "kuadripartit", "kuadrisep", "kuadrupel", "kuadrupleks", "kuadruplet", "kuah", "kuai", "kuak", "kuala", "kualat", "kuali", "kualifikasi", "kualitas", "kualitatif", "kualon", "kuang", "kuangkiut", "kuangwung", "kuantifikasi", "kuantitas", "kuantitatif", "kuantum", "kuap", "kuar", "kuari", "kuarik", "kuark", "kuarsa", "kuarsit", "kuart", "kuartal", "kuarter", "kuarterner", "kuartet", "kuartil", "kuarto", "kuas", "kuasa", "kuasar", "kuasi", "kuat", "kuatren", "kuau", "kuaya", "kuayah", "kuayan", "kubah", "kubak", "kubang", "kubik", "kubil", "kubin", "kubis", "kubisme", "kubistik", "kubit", "kuboid", "kubra", "kubti", "kubu", "kubul", "kubung", "kubur", "kubus", "kucai", "kucak", "kucam", "kucandan", "kucar-kacir", "kucek", "kucel", "kucica", "kucil", "kucindan", "kucing", "kucir", "kucup", "kucur", "kuda", "kudai", "kudang", "kudap", "kudeta", "kudi", "kudian", "kudis", "kudu", "kuduk", "kudung", "kudup", "kudus", "kue", "kueni", "kuesioner", "kuetiau", "kufu", "kufur", "kui", "kuih", "kuil", "kuilu", "kuin", "kuing", "kuini", "kuinina", "kuintal", "kuintesens", "kuintet", "kuintil", "kuintiliun", "kuintuplet", "kuir", "kuis", "kuit", "kuitansi", "kujang", "kujarat", "kujung", "kujur", "kujut", "kuk", "kukabura", "kukai", "kukang", "kukila", "kuku", "kukuh", "kukuk", "kukul", "kukup", "kukur", "kukuruyuk", "kukus", "kulah", "kulai", "kulak", "kulakasar", "kulan", "kulansing", "kulasentana", "kulat", "kulawangsa", "kuli", "kuliah", "kulik-kulik", "kulikat", "kulim", "kulimat", "kuliner", "kulintang", "kulir", "kulit", "kulkas", "kulminasi", "kulon", "kulot", "kult", "kultivar", "kultivasi", "kultur", "kultural", "kulturisasi", "kultus", "kulub", "kuluk", "kulum", "kulup", "kulur", "kulut", "kulzum", "kuma-kuma", "kumai", "kumal", "kuman", "kumandang", "kumanga", "kumat", "kumba", "kumbah", "kumbang", "kumbar", "kumbik", "kumbu", "kumbuh", "kumena", "kumico", "kuminter", "kumis", "kumkuma", "kumpai", "kumpal", "kumpar", "kumpi", "kumpul", "kumuh", "kumulasi", "kumulatif", "kumulonimbus", "kumulus", "kumur", "kumus", "kumut", "kunang-kunang", "kunani", "kunar-kunar", "kunarpa", "kunca", "kuncah", "kuncen", "kunci", "kuncir", "kuncit", "kuncung", "kuncup", "kundai", "kundang", "kundi", "kundur", "kunduran", "kunfayakun", "kung", "kungfu", "kungkang", "kungki", "kungkum", "kungkung", "kuning", "kuningan", "kunjung", "kuno", "kunta", "kuntau", "kuntilanak", "kuntit", "kuntuan", "kuntul", "kuntum", "kuntung", "kunut", "kunyah", "kunyam", "kunyit", "kunyuk", "kuorum", "kuosien", "kuota", "kup", "kupa", "kupahan", "kupak", "kupang", "kupas", "kupat", "kupat-kapit", "kupe", "kupel", "kupi", "kupil", "kuping", "kupir", "kuplet", "kupluk", "kupnat", "kupon", "kuproprotein", "kuprum", "kupu-kupu", "kupui", "kupur", "kur", "kura", "kurai", "kurambit", "kurang", "kurap", "kuras", "kurasani", "kurasao", "kuratif", "kurator", "kuratorium", "kurau", "kurawal", "kurban", "kurcaci", "kuren", "kuret", "kuretase", "kuria", "kuricak", "kurigram", "kurik", "kurikuler", "kurikulum", "kuring", "kuriositas", "kuripan", "kurir", "kuririk", "kurium", "kurkatovium", "kurkuma", "kurltase", "kurma", "kurs", "kursemangat", "kursi", "kursif", "kursor", "kursus", "kurtase", "kurun", "kurung", "kurus", "kuruyuk", "kurva", "kurvalinier", "kurvatur", "kus", "kusa", "kusal", "kusam", "kusanin", "kusat-mesat", "kusau", "kusen", "kusik", "kusir", "kuskus", "kuspis", "kusruk", "kusta", "kusu", "kusuf", "kusuk", "kusuma", "kusut", "kuta", "kutaha", "kutak", "kutang", "kutat", "kutat-kutet", "kuteks", "kuteri", "kuti", "kutik", "kutikula", "kutil", "kutin", "kuting", "kutip", "kutu", "kutub", "kutubaru", "kutubusitah", "kutuk", "kutung", "kutut", "kuud", "kuwu", "kuwuk", "kuwung-kuwung", "kuwur", "kuya", "kuyang", "kuyu", "kuyuh", "kuyup", "kwartet", "kwartir", "kwasiorkor", "kweni", "kwetiau", "kwosien", "laal", "lab", "laba", "labah-labah", "labak", "labang", "labas", "label", "labelum", "laberang", "labi-labi", "labial", "labialisasi", "labil", "labiodental", "labiovelar", "labirin", "labium", "laboran", "laboratoris", "laboratorium", "labrak", "labrakan", "labrang", "labres", "labrum", "labu", "labuda", "labuh", "labun", "labur", "labut", "lacak", "laci", "lacur", "lacut", "lada", "ladah", "ladam", "ladan", "ladang", "laden", "ladi", "lading", "ladu", "ladung", "lafal", "laga", "lagak", "lagam", "lagan", "lagang", "lagau", "lagi", "lagiah", "lago", "lagonder", "lagu", "laguh-lagah", "laguna", "lagwu", "lah", "lahab", "lahad", "lahak", "lahan", "lahang", "lahap", "lahar", "lahir", "lahiriah", "lai", "laici", "laif", "laik", "lailah", "lailatulkadar", "lain", "lais", "laja", "lajak", "lajang", "lajat", "lajnah", "laju", "lajur", "lak", "lakab", "lakak", "lakar", "lakara", "laken", "lakeri", "laki", "laklak", "laklakan", "lakmus", "laknat", "laknatullah", "lakon", "lakonik", "lakonisme", "lakrimator", "laksa", "laksamana", "laksana", "laksatif", "laksmi", "laktase", "laktasi", "laktat", "laktogen", "laktoglobulin", "laktometer", "lakton", "laktosa", "laku", "lakum", "lakuna", "lakur", "lakustrin", "lala", "lalah", "lalai", "lalak", "lalandak", "lalang", "lalap", "lalat", "lalau", "laler", "lali", "lalim", "lalu", "lalu-lalang", "lam", "lama", "lamalif", "laman", "lamang", "lamar", "lamat-lamat", "lambai", "lambak", "lamban", "lambang", "lambar", "lambat", "lambda", "lambe", "lambert", "lambit", "lambo", "lambu", "lambuk", "lambung", "lambur", "lamdukpai", "lamela", "lamender", "lamin", "lamina", "laminah", "laminasi", "laminating", "lampai", "lampam", "lampan", "lampang", "lampar", "lampas", "lampau", "lampeni", "lampes", "lampias", "lampik", "lampin", "lamping", "lampion", "lampir", "lampit", "lampok", "lampor", "lampu", "lampung", "lampus", "lamtoro", "lamtoronisasi", "lamun", "lamur", "lamusir", "lana", "lanang", "lanar", "lanau", "lanbau", "lanca", "lancang", "lancap", "lancar", "lancia", "lancing", "lancip", "lancit", "lancong", "lancung", "lancur", "lancut", "landa", "landahur", "landai", "landak", "landang", "landap", "landas", "landau", "landors", "landrad", "landuk", "landung", "landur", "lang", "langah", "langak-languk", "langau", "langen", "langendrian", "langenswara", "langgah", "langgai", "langgam", "langgan", "langgang", "langgar", "langgas", "langgayan", "langgeng", "langguk", "langgung", "langi", "langir", "langis", "langit", "langka", "langkah", "langkai", "langkan", "langkang", "langkap", "langkara", "langkas", "langkat", "langkau", "langking", "langkisan", "langkitang", "langkong", "langkup", "langlai", "langlang", "langsai", "langsam", "langsang", "langsar", "langsat", "langse", "langseng", "langsep", "langsi", "langsing", "langsir", "langsuir", "langsung", "langu", "langut", "lanhir", "lanja", "lanjai", "lanjak", "lanjam", "lanjang", "lanjar", "lanjau", "lanji", "lanjuk", "lanjung", "lanjur", "lanjut", "lanolin", "lanset", "lansia", "lansir", "lanskap", "lantah", "lantai", "lantak", "lantam", "lantan", "lantang", "lantanum", "lantar", "lantas", "lantera", "lantesari", "lantik", "lantin", "lanting", "lantip", "lantun", "lantung", "lantur", "lanugo", "lanun", "lanus", "lanyah", "lanyak", "lanyau", "laocu", "laos", "laoteng", "lap", "lapah", "lapak", "lapang", "lapar", "laparoskop", "laparoskopi", "lapat-lapat", "lapektomi", "lapel", "lapih", "lapik", "lapili", "lapir", "lapis", "lapislazuli", "lapo", "lapor", "laptop", "lapuk", "lapun", "lapur", "lara", "larah", "larai", "larak", "laram", "larang", "larap", "laras", "larat", "larau", "largisimo", "largo", "lari", "larih", "larik", "laring", "laringal", "laringitis", "laringoskop", "laris", "larnaks", "laron", "lars", "laru", "larung", "larut", "larva", "larvarium", "las", "lasa", "lasah", "lasak", "lasana", "lasat", "laser", "lasi", "lasinia", "laskar", "laso", "lasparaginase", "lasuh", "lat", "lata", "latah", "latak", "latam", "latar", "latas", "lateks", "laten", "latensi", "lateral", "laterit", "latif", "latifundium", "latih", "lating", "latis", "latma", "latosol", "latuh", "latuk", "latung", "latur", "lauh", "lauk", "laun", "laung", "laur", "laut", "lauya", "lava", "lavase", "lavendel", "lavender", "lawa", "lawah", "lawak", "lawalata", "lawamah", "lawan", "lawang", "lawar", "lawas", "lawat", "lawazim", "lawe", "lawean", "lawi", "lawina", "lawon", "lawrensium", "layah", "layak", "layam", "layan", "layang", "layap", "layar", "layas", "layat", "layer", "layon", "layu", "layuh", "layuk", "layung", "layur", "layut", "laza", "lazim", "lazuardi", "leak", "lebah", "lebai", "lebak", "lebam", "leban", "lebang", "lebap", "lebar", "lebaran", "lebas", "lebat", "leber", "lebih", "lebuh", "lebuk", "lebum", "lebun", "lebung", "lebur", "lecah", "lecak", "lecap", "lecat", "leceh", "lecek", "lecer", "lecet", "leci", "lecit", "leco", "lecok", "lecuh", "lecun", "lecup", "lecur", "lecut", "ledak", "ledang", "ledek", "ledeng", "ledes", "leding", "ledos", "ledre", "leduk", "ledung", "lefa", "lega", "legak-legok", "legal", "legalisasi", "legalitas", "legam", "legap", "legar", "legasi", "legasteni", "legat", "legataris", "legato", "legator", "lege", "legek", "legen", "legenda", "legendaris", "leger", "leges", "leghorn", "legi", "legih", "legio", "legislasi", "legislatif", "legislator", "legisme", "legit", "legitimaris", "legitimas", "legitimasi", "legitimitas", "legiun", "lego", "legok", "legong", "legu", "legum", "legunder", "legundi", "legung", "legup-legup", "leha-leha", "lehar", "leher", "lei", "leja", "lejang", "lejar", "lejas", "lejit", "lejok", "leka", "lekah", "lekak-lekuk", "lekam", "lekang", "lekap", "lekap-lekup", "lekar", "lekas", "lekat", "lekemia", "lekir", "lekit", "lekok", "lekosit", "leksem", "leksikal", "leksikograf", "leksikografi", "leksikografis", "leksikolog", "leksikologi", "leksikon", "leksikostatistik", "leksis", "lekton", "lektor", "lektur", "leku", "lekuh-lekih", "lekuk", "lekum", "lekun", "lekung", "lekup-lekap", "lela", "lelabah", "lelah", "lelai", "lelaki", "lelancur", "lelang", "lelangon", "lelangse", "lelap", "lelar", "lelas", "lelat", "lelatu", "lelawa", "lele", "leleh", "lelembut", "lelemuku", "lelep", "leler", "leles", "lelet", "lelewa", "leli", "lelonobroto", "leluasa", "lelucon", "leluhur", "leluing", "lelung", "lelungit", "leluri", "lem", "lema", "lemah", "lemak", "lemang", "lemari", "lemas", "lemata", "lemau", "lembaga", "lembah", "lembai", "lembak", "lembam", "lemban", "lembang", "lembap", "lembar", "lembayung", "lembega", "lembek", "lembeng", "lembidang", "lembing", "lembok", "lembora", "lembu", "lembung", "lembur", "lemburu", "lembut", "lemena", "lemender", "lemes", "lemidi", "lemo", "lemon", "lempah", "lempai", "lempang", "lempap", "lempar", "lempari", "lempaung", "lempem", "lempenai", "lempeng", "lemper", "lemping", "lempit", "lempoh", "lempuh", "lempuk", "lempung", "lempuyang", "lempuyangan", "lemur", "lemuru", "lemusir", "lena", "lenan", "lencana", "lencang", "lenceng", "lencet", "lenci", "lencir", "lencit", "lencong", "lencun", "lenda", "lendaian", "lendeh", "lender", "lendir", "lendot", "lendung", "lendut", "leng", "lenga", "lengah", "lengai", "lengak", "lengan", "lengang", "lengar", "lengas", "lengat", "lenge", "lenggak", "lenggana", "lengganan", "lenggang", "lenggara", "lenggek", "lengger", "lenggok", "lenggong", "lenggor", "lenggundi", "lenggut", "lengit", "lengkai", "lengkanas", "lengkang", "lengkap", "lengkara", "lengkeng", "lengkesa", "lengket", "lengkiang", "lengking", "lengkitang", "lengkok", "lengkong", "lengkuas", "lengkung", "lengkur", "lengoh", "lengong", "lengos", "lengseng", "lengser", "lengset", "lenguh", "lengung", "lening", "lenis", "lenitrik", "lenja", "lenjan", "lenjaran", "lenjing", "lenjuang", "lenong", "lenor", "lens", "lensa", "lenser", "lenset", "lenso", "lentam-lentum", "lentang", "lentang-lentok", "lenteng", "lentera", "lentik", "lenting", "lentisel", "lentoid", "lentok", "lentong", "lentuk", "lentum", "lentung", "lentur", "lentus", "lenung", "lenyah", "lenyai", "lenyak", "lenyap", "lenyau", "lenyeh", "lenyet", "lenyut", "leo", "leonid", "leontin", "leot", "lepa", "lepai", "lepak", "lepang", "lepap", "lepas", "lepat", "lepau", "lepe", "lepek", "leper", "leperi", "lepes", "lepet", "lepih", "lepik", "lepit", "leplap", "lepoh", "lepok", "lepot", "lepra", "leproma", "lepromin", "leproseri", "leptodos", "leptoskop", "leptosom", "lepu", "lepuh", "lepuk", "lepur", "lerah", "lerai", "lerak", "lerang", "lerap", "lereng", "leret", "lerok", "lerot", "lerum", "les", "lesa", "lesak", "lesan", "lesang", "lesap", "lesat", "lesbi", "lesbian", "lesbianisme", "leseh", "lesek", "leset", "lesi", "lesing", "lesir", "lesit", "lesitin", "lesitina", "lesnar", "lesot", "lesplang", "lestari", "lestek", "lesterung", "lesu", "lesung", "lesus", "lesut", "leta", "letai", "letak", "letal", "letalitas", "letang", "letargi", "lete-lete", "letek", "leter", "leterseter", "letih", "letik", "leting", "letis", "letnan", "letoi", "letos", "letraset", "letuk", "letum", "letung", "letup", "letur", "letus", "leuca", "leukemia", "leukoderma", "leukofit", "leukoma", "leukonisia", "leukopenia", "leukoplakia", "leukore", "leukorea", "leukosit", "leukositometer", "leukositosis", "level", "lever", "leveransir", "levertran", "levirat", "levitin", "levulosa", "lewa", "lewah", "lewar", "lewat", "lewisid", "lewu", "leyeh", "leyot", "lezat", "liabilitas", "lian", "liana", "liang", "liangliong", "liar", "lias", "liat", "liau", "libas", "libat", "libei", "liberal", "liberalis", "liberalisasi", "liberalisme", "liberalistis", "liberasi", "liberator", "libero", "libidis", "libido", "libitum", "libra", "librasi", "libreto", "libur", "licak", "licau", "lici", "licik", "licin", "licurai", "lid", "lidah", "lidas", "lidi", "lidid", "lifo", "lift", "lifter", "liga", "ligamen", "ligan", "ligar", "ligas", "ligasi", "ligat", "ligatur", "ligih", "lignin", "lignit", "lignoselulosa", "lignosulfonat", "lignotuber", "lihai", "lihat", "lik", "likantropi", "likas", "likat", "likir", "liku", "likuid", "likuida", "likuidasi", "likuiditas", "likur", "likut", "lil", "lila", "lilah", "lilan", "lilau", "lili", "lilin", "liliput", "lilit", "lillahi", "lima", "liman", "limar", "limas", "limau", "limbah", "limbai", "limbak", "limban", "limbang", "limbat", "limbing", "limbubu", "limbuk", "limbung", "limbur", "limfa", "limfadema", "limfadenitis", "limfadenoma", "limfadenosis", "limfaderitis", "limfangioma", "limfatik", "limfoblartoma", "limfoblas", "limfoblastoma", "limfografi", "limfoma", "limfonodus", "limfopenia", "limfosit", "limfositopenia", "limfositosis", "limit", "limitasi", "limitatif", "limnetik", "limnologi", "limnoplankton", "limpa", "limpah", "limpap", "limpapas", "limpas", "limpau", "limpit", "limpoh", "limpung", "limun", "limusin", "limut", "lin", "linang", "linau", "lincah", "lincak", "lincam", "lincir", "lincun", "lindak", "lindang", "lindap", "lindas", "lindik", "lindis", "lindu", "lindung", "lindur", "linear", "linen", "ling", "lingar", "lingat", "lingga", "linggam", "linggata", "linggayuran", "linggi", "linggis", "lingkap", "lingkar", "lingkawa", "lingkis", "lingkung", "lingkup", "linglung", "lingsa", "lingsang", "lingsir", "lingsu", "lingua", "linguafon", "linguis", "linguistik", "lini", "linier", "linimen", "lining", "linjak", "linoleum", "linsang", "lintabung", "lintadu", "lintah", "lintang", "lintap", "lintar", "lintas", "lintibang", "linting", "lintir", "lintuh", "lintup", "linu", "linuhung", "linyak", "linyar", "lio", "liofilisasi", "liong", "liontin", "lipai", "lipan", "lipas", "lipase", "lipat", "lipektomi", "lipemia", "lipid", "lipiodol", "lipit", "liplap", "lipoksidase", "lipolisis", "lipoprotein", "lipstik", "lipu", "lipur", "liput", "lir", "lira", "lirida", "lirih", "lirik", "liris", "lis", "lisah", "lisan", "lisani", "lisensi", "lisimeter", "lisis", "lisol", "lisong", "lisplang", "lister", "listeria", "listrik", "lisu", "lisus", "lisut", "litah", "litak", "litani", "liter", "literator", "literer", "litium", "litografi", "litologi", "litoral", "litosfer", "litotes", "litotomi", "litsus", "liturgi", "liturgis", "liuk", "liung-liung", "liur", "liut", "liver", "liwa", "liwan", "liwat", "liwet", "loak", "lob", "loba", "lobak", "loban", "loberci", "lobi", "lobster", "locok", "locot", "lodan", "lodeh", "lodoh", "lodong", "log", "logam", "logaritma", "logat", "logawiah", "logika", "logis", "logistik", "logo", "logogram", "logopedia", "logotip", "loh", "loha", "lohok", "lohor", "loji", "lok", "loka", "lokacipta", "lokakarya", "lokal", "lokalis", "lokalisasi", "lokan", "lokananta", "lokap", "lokasi", "lokastiti", "lokatif", "lokatikranta", "lokatraya", "lokawarta", "lokawidura", "lokawigna", "lokawiruda", "lokawisata", "lokcuan", "lokek", "lokeswara", "loket", "loki", "lokia", "lokika", "lokio", "loklok", "lokomobil", "lokomotif", "lokos", "loksek", "loksun", "loktong", "lokus", "lokusi", "lolak", "loleng", "loloh", "lolohan", "lolong", "lolos", "lomba", "lombar", "lombok", "lombong", "lomek", "lomot", "lompat", "lompayang", "lompok", "lompong", "lonan", "loncat", "loncek", "lonceng", "loncer", "lonco", "loncos", "londang", "londong", "loneng", "long", "longak-longok", "longdres", "longgar", "longgok", "longgor", "longitudinal", "longo", "longok", "longong", "longser", "longsor", "longtorso", "lonjak", "lonjong", "lonjor", "lonsong", "lontai", "lontang-lanting", "lontang-lantung", "lontar", "lontara", "lonte", "lontok", "lontong", "lonyok", "lop", "lopak", "lopek", "loper", "lopis", "lopor", "lor", "lorah", "loran", "lorat", "lorber", "lorek", "loreng", "lori", "lornyet", "lorong", "lorot", "los", "lose", "losin", "losion", "losmen", "loso", "losong", "lot", "lota", "lotak", "lotek", "loteng", "lotis", "lotong", "lotre", "lotus", "lowong", "loya", "loyak", "loyal", "loyalis", "loyalitas", "loyang", "loyar", "loyo", "loyong", "lozenge", "luah", "luak", "luang", "luap", "luar", "luas", "luat", "luban", "lubang", "luber", "lubuk", "lucah", "lucu", "lucup", "lucut", "ludah", "ludat", "ludes", "luding", "ludruk", "lues", "lugas", "lugu", "lugut", "luhak", "luhmahful", "luhung", "luhur", "luih", "luik", "luing", "luk", "luka", "lukah", "lukat", "lukeh", "lukis", "luks", "luku", "lukut", "lulai", "luli", "luluh", "luluk", "lulum", "lulup", "lulur", "lulus", "lulut", "lum", "lumai", "lumang", "lumar", "lumas", "lumat", "lumayan", "lumba-lumba", "lumbal", "lumbu", "lumbung", "lumen", "lumer", "lumi-lumi", "luminositas", "lumpang", "lumpektomi", "lumpia", "lumping", "lumpuh", "lumpuk", "lumpur", "lumrah", "lumsum", "lumuh", "lumur", "lumus", "lumut", "lunak", "lunas", "lunau", "luncai", "luncas", "luncung", "luncur", "lundang", "lundi", "lundu", "luner", "lung", "lungguh", "lungkah", "lungkang", "lungkum", "lunglai", "lunglung", "lungsar", "lungse", "lungsin", "lungsung", "lungsur", "lungun", "lunjur", "lunta", "luntang", "luntang-lantung", "luntas", "luntur", "lunyah", "lunyai", "lup", "lupa", "lupat", "lupi", "lupuh", "lupuk", "lupung", "lupus", "luput", "lurah", "lurik", "luru", "lurub", "luruh", "lurus", "lurut", "lus", "lusa", "lusin", "lustrum", "lusuh", "lut", "lutetium", "luti", "lutu", "lutung", "lutut", "luweng", "luwes", "luyak", "luyu", "luyut", "maab", "maaf", "mabriuk", "mabrur", "mabuh", "mabuk", "mabul", "macakal", "macam", "macan", "macapat", "mace", "macet", "macis", "mad", "mada", "madah", "madali", "madam", "madang", "madani", "madar", "madat", "madewi", "madi", "madia", "madik", "madinding", "madmadah", "mado", "madona", "madras", "madrasah", "madu", "madukara", "madumangsa", "madya", "maesan", "maesenas", "maestro", "mafela", "mafhum", "mafia", "mafioso", "mafsadah", "mafsadat", "mag", "magainin", "magalah", "magandi", "magang", "magasin", "magel", "magenta", "magersari", "magfirah", "magfirat", "magi", "magis", "magister", "magistrat", "maglub", "magma", "magnesium", "magnesol", "magnet", "magnetik", "magnetika", "magnetis", "magnetisme", "magnetit", "magnetometer", "magnetor", "magnetostatika", "magnitudo", "magrib", "magribi", "magrur", "magun", "mah", "maha", "mahabah", "mahabintang", "mahadewa", "mahadewi", "mahaduta", "mahaguru", "mahah", "mahajana", "mahakala", "mahakarya", "mahakuasa", "mahal", "mahamen", "mahamenteri", "mahamulia", "mahang", "mahaparana", "mahapatih", "mahar", "maharaja", "maharajalela", "maharana", "maharani", "mahardika", "maharesi", "maharupa", "mahasiswa", "mahasiswi", "mahasuci", "mahatahu", "mahatma", "mahatur", "mahayana", "mahbub", "mahbubah", "mahbubat", "mahdi", "maherat", "mahesa", "maheswara", "mahfuz", "mahia", "mahimahi", "mahir", "mahkamah", "mahkota", "mahligai", "mahmud", "mahoni", "mahraj", "mahram", "mahsul", "mahsyar", "mahwu", "mahyong", "mahzurat", "mai", "maido", "maimun", "main", "mair", "mairat", "maizena", "maja", "majaan", "majakane", "majakaya", "majakeling", "majal", "majalah", "majas", "majasi", "majati", "majedub", "majekeling", "majelis", "majemuk", "majenun", "majikan", "majir", "majizat", "majong", "maju", "majuh", "majuj", "majun", "majung", "majusi", "maka", "makadam", "makadasang", "makadok", "makalah", "makalangkang", "makam", "makan", "makantah", "makantuh", "makanya", "makao", "makaopo", "makar", "makara", "makaroni", "makas", "makbud", "makbul", "makcik", "makcomblang", "makda", "makdan", "makelar", "makerel", "maket", "makhdum", "makhluk", "makhraj", "maki", "makin", "making", "makiyah", "makjuj", "maklaf", "maklum", "maklumat", "maklun", "makmal", "makmum", "makmur", "makna", "maknawi", "makramat", "makrame", "makrifat", "makrifatullah", "makro", "makroekonomi", "makrofita", "makrofotografi", "makroftalmus", "makrogametosit", "makrohistori", "makrokosmos", "makrokriminologi", "makrolinguistik", "makromelia", "makrometeorologi", "makromolekul", "makrosefalik", "makroskopis", "makrosmatik", "makrosmatis", "makrososiologi", "makruf", "makruh", "maksi", "maksiat", "maksila", "maksim", "maksimal", "maksimum", "maksud", "maksum", "maktab", "maktub", "makua", "makul", "makula", "makulat", "makurung", "makuta", "makyong", "makzul", "mal", "mala", "malabau", "malabsorpsi", "malafide", "malafungsi", "malagandang", "malagizi", "malah", "malai", "malaik", "malaikat", "malaikatulmaut", "malaise", "malak", "malaka", "malakama", "malakat", "malakit", "malakofili", "malakologi", "malakut", "malam", "malan", "malang", "malangbang", "malap", "malapari", "malapetaka", "malapraktek", "malapraktik", "malar", "malaria", "malas", "malasia", "malasuai", "malatindak", "malau", "maldistribusi", "male", "maleman", "maleo", "maleolus", "mali-mali", "maligai", "malih", "malik", "maliki", "malikuljabar", "malikulmuluk", "malim", "maling", "malis", "malisol", "malka", "malnutrisi", "maloklusi", "malt", "maltase", "maltosa", "malu", "malun", "malung", "mam", "mama", "mamah", "mamai", "mamak", "mamalia", "maman", "mamanah", "mamanda", "mamang", "mamano", "mamat", "mambang", "mambek", "mambo", "mambruk", "mambu", "mambung", "mamduhah", "mami", "mamik", "mamlakat", "mamografi", "mampai", "mampat", "mampir", "mampu", "mampung", "mampus", "mamut", "man", "mana", "manah", "manai", "manajemen", "manajer", "manajerial", "manakala", "manakan", "manakib", "manalagi", "manasik", "manasongo", "manasuka", "manau", "mancanegara", "mancawarna", "manci", "mancis", "mancung", "mancur", "manda", "mandah", "mandai", "mandala", "mandalika", "mandam", "mandar", "mandarin", "mandat", "mandataris", "mandau", "mandeh", "mandek", "mandelevium", "mandi", "mandibula", "mandil", "mandir", "mandiri", "mandolin", "mandor", "mandraguna", "mandril", "mandrin", "mandul", "mandung", "maneken", "manerisme", "manfaat", "mang", "mangan", "mangap", "mangas", "mangau", "mangayubagya", "mangga", "manggah", "manggala", "manggar", "manggis", "manggung", "mangir", "mangkak", "mangkanya", "mangkar", "mangkas", "mangkat", "mangkel", "mangkih", "mangkir", "mangkok", "mangkubumi", "mangkuk", "mangkus", "mangsa", "mangsi", "mangu", "mangun", "mangut", "mani", "mania", "maniak", "manifes", "manifestasi", "manifesto", "manik", "manik-depresif", "manikam", "manikdepresi", "manikmaya", "manikur", "manila", "manimba", "manipol", "manipulasi", "manipulatif", "manipulator", "manira", "manis", "manise", "manja", "manjapada", "manjau", "manjeri", "manjing", "manjung", "manjur", "manol", "manometer", "manora", "manostat", "manset", "mansiang", "mansukh", "manta", "mantan", "mantap", "mantari", "mantel", "manten", "manti", "mantik", "mantiki", "mantisa", "mantissa", "mantra", "mantram", "mantri", "mantu", "mantuk", "manual", "manufaktur", "manufakturing", "manuk", "manumisio", "manumpak", "manunggal", "manusia", "manusiawi", "manuskrip", "manut", "manuver", "manuwa", "manyala", "manyar", "manzil", "manzilah", "maois", "map", "mapak", "mapalus", "mapan", "mar", "mara", "marah", "maraja", "marak", "marakas", "marambung", "maramus", "maranta", "marapulai", "maras", "maraton", "marbling", "marbut", "marcapada", "mardatilah", "mardatillah", "mardud", "mare", "marem", "maret", "marfuk", "marga", "margalit", "margarin", "margasatwa", "margin", "marginal", "marginalisasi", "marginalisme", "margrit", "marhaban", "marhaen", "marhaenis", "marhaenisme", "marhum", "marhumah", "mari", "maria", "marikan", "marikh", "marikultur", "marimu", "marina", "marinade", "marine", "marinir", "marinyo", "marinyu", "marital", "maritim", "mariyuana", "marjik", "marjinal", "mark", "marka", "markado", "markah", "markas", "markasit", "marketri", "markis", "markisa", "markoni", "markonis", "markusip", "marlin", "marmelade", "marmer", "marmot", "maro", "marpaud", "mars", "marsaoleh", "marsekal", "marsepen", "marsose", "martabak", "martaban", "martabat", "martandang", "martil", "martini", "martir", "maru", "marus", "marut", "marwas", "marxisme", "marzipan", "mas", "masa", "masai", "masak", "masakan", "masakat", "masala", "masalah", "masam", "masap", "masase", "masayu", "masbuk", "masdar", "masehi", "masektomi", "maser", "maserasi", "mashaf", "masif", "masih", "masin", "masinal", "masing-masing", "masinis", "masir", "masjid", "masjidilaksa", "masjidilharam", "maskanat", "maskapai", "maskara", "maskat", "maskawin", "masker", "maskodok", "maskon", "maskot", "maskulin", "maskulinitas", "maskumambang", "maslahat", "masnawi", "masohi", "masoi", "masokhis", "masokhisme", "masokisme", "mason", "masori", "masrum", "massa", "massal", "mastautin", "mastektomi", "master", "masterplan", "mastik", "mastitis", "mastodon", "mastuli", "masturbasi", "masuk", "masuliah", "masya", "masyakah", "masyarakat", "masygul", "masyhadat", "masyhur", "masyrik", "masyuk", "mat", "mata", "matador", "matahari", "matakao", "matalamat", "matan", "matang", "mate", "matematika", "matematikus", "matematis", "materi", "material", "materialistis", "materiil", "mati", "matine", "matlak", "matoa", "maton", "matra", "matras", "matres", "matriarkal", "matriarkat", "matriks", "matrikulasi", "matrilineal", "matrilokal", "matris", "matronim", "matros", "matu", "matur", "maturasi", "maturitas", "mau", "mauizah", "maujud", "maujudat", "maukhid", "maukif", "maukuf", "maula", "maulai", "maulana", "maulhayat", "maulid", "maulidurasul", "maulud", "maung", "maupun", "mausoleum", "maut", "mauz", "mawadah", "mawar", "mawas", "maweda", "mawin", "mawon", "mawut", "maya", "mayam", "mayang", "mayangda", "mayapada", "mayas", "mayat", "mayeng", "mayokratio", "mayones", "mayor", "mayoret", "mayoritas", "mayung", "mayur", "mazarin", "mazbah", "mazhab", "mazi", "mazkur", "mazmumah", "mazmur", "mbah", "mbak", "mbakyu", "mbeling", "mbok", "mbokmas", "meander", "mebel", "mecis", "medali", "medalion", "medan", "medang", "mede", "media", "medial", "median", "mediasi", "mediastinum", "mediator", "medik", "medikamentosa", "medikasi", "mediko", "medikolegal", "medikus", "medil", "medio", "medis", "medisinal", "medit", "meditasi", "mediterania", "medium", "medok", "medu", "medula", "medusa", "mega", "megabyte", "megafon", "megah", "megak", "megakredit", "megal-megol", "megalit", "megalitikum", "megalomania", "megalomaniak", "megalopolis", "megalosit", "megamerger", "megan", "megaohm", "megap-megap", "megapolis", "megaproyek", "megar", "megaspora", "megasporangium", "megasporofil", "megat", "megaton", "megatren", "megatruh", "megawatt", "meger", "megrek-megrek", "mei", "meiosis", "meja", "mejam", "mejan", "mejana", "mejeng", "mek", "mekanik", "mekanika", "mekanikgraha", "mekanis", "mekanisasi", "mekanisme", "mekanolinguistik", "mekap", "mekar", "meko", "mekonium", "mel", "melabuai", "melambang", "melamin", "melanesia", "melangkup", "melanin", "melanisme", "melankolia", "melankolis", "melankonis", "melanoderma", "melar", "melarat", "melas", "melase", "melasma", "melati", "melawah", "melayu", "melek", "melela", "melempem", "meleng", "meler", "melesek", "meleset", "melik", "melilin", "melinjo", "melintir", "melit", "melitofili", "meliwis", "melodi", "melodika", "melodius", "melodrama", "melodramatik", "melodramatis", "melompong", "melon", "melor", "melotot", "melpari", "melukut", "melulu", "melur", "mem", "memang", "memar", "membal", "memble", "membran", "memedi", "memek", "memelas", "memo", "memoar", "memorabilia", "memorandum", "memorat", "memori", "memorial", "mempan", "mempelai", "mempelam", "mempelas", "mempelasari", "mempening", "memper", "mempitis", "memplak", "mempurung", "memutah", "mena", "menaga", "menak", "menampun", "menang", "menantu", "menara", "menat", "mencak", "mencelat", "menceng", "menceret", "mencit", "mencla-mencle", "menclok", "mencok", "mencong", "mencos", "mencret", "mendak", "mendap", "mendapa", "mendeleka", "mendelevium", "mendeng", "mendiang", "mendikai", "mending", "mendira", "mendoan", "mendonan", "mendong", "mendreng", "mendu", "mendung", "mendur", "mendura", "mendut", "menep", "menepaat", "mengah", "mengangah", "mengap", "mengapa", "mengapmendam", "mengeh", "mengerawan", "mengerna", "menget", "mengga", "menggala", "menggusta", "mengi", "mengiang", "mengicip", "mengirat", "mengkal", "mengkali", "mengkara", "mengkaras", "mengkelan", "mengkerang", "mengkeret", "mengking", "mengkirai", "mengkirik", "mengkis", "mengkona", "mengkuang", "mengkudu", "mengok", "mengor", "mengot", "mengsol", "mengsong", "mengung", "menhir", "meni", "meningitis", "menir", "meniran", "meniskus", "menit", "menjangan", "menong", "menopause", "menor", "menoragia", "menostaksis", "mens", "menserendahi", "mensiang", "menstruasi", "mensurasi", "mentah", "mentak", "mental", "mentalitas", "mentang", "mentari", "mentaruh", "mentas", "mentaus", "mentega", "menteleng", "menteng", "mentereng", "menteri", "mentibu", "mentifakta", "mentigi", "mentilau", "mentimun", "mentis", "mentok", "mentol", "mentolo", "mentor", "mentora", "mentua", "mentul", "menu", "menuet", "menung", "menur", "meong", "mepet", "meracang", "meraga", "meragi", "merah", "merajak", "merak", "merakan", "meralgia", "merambai", "merambung", "merana", "merang", "meranggi", "merangsi", "merangu", "meranti", "merapu", "merat", "merawal", "merawan", "merbah", "merbau", "merbaya", "merbuk", "merbulan", "mercak-mercik", "mercon", "mercu", "mercusuar", "merdangga", "merdeka", "merdesa", "merdinah", "merdu", "merduk", "mere", "merek", "mereka", "merem", "merembung", "mereng", "meres", "mergat", "merger", "mergul", "meri", "meriam", "meriang", "merica", "meridian", "merih", "merik", "merikan", "merikarp", "merinding", "mering", "meristem", "merjan", "merkah", "merkantilisme", "merkubang", "merkuri", "merkurium", "merkurius", "merkuro", "merkurokrom", "merlilin", "merlimau", "merogoni", "merosot", "merot", "merpati", "merpaud", "merpitis", "merpoyan", "merserisasi", "mersik", "merta", "mertamu", "mertapal", "mertayam", "mertega", "mertelu", "mertua", "meru", "meruap", "merubi", "merunggai", "merut", "merwatin", "mes", "mesa", "mesan", "mesara", "mesem", "mesin", "mesiu", "mesjid", "meskalin", "meskalina", "meski", "mesmerisme", "mesoderm", "mesodermik", "mesofili", "mesofit", "mesolitik", "mesolitikum", "mesometeorologi", "mesomorf", "meson", "mesopause", "mesosfer", "mesotel", "mesotoraks", "mesozoa", "mesozoikum", "mesra", "mester", "mesti", "mestika", "mestizo", "mesui", "mesum", "mesut", "meta", "metabahasa", "metabolik", "metabolis", "metabolisme", "metabolit", "metafil", "metafisik", "metafisika", "metafora", "metaforis", "metah", "metai", "metal", "metalik", "metalinguistik", "metalografi", "metaloid", "metalurgi", "metalurgis", "metamorf", "metamorfis", "metamorfisme", "metamorfosis", "metana", "metanefros", "metanol", "metari", "metasenter", "metastasis", "metatarsus", "metatesis", "metazoa", "mete", "meteor", "meteorit", "meteorograf", "meteorogram", "meteoroid", "meteorologi", "meteorologis", "meter", "meterai", "metil", "metode", "metodik", "metodis", "metodologi", "metonimi", "metonimia", "metrik", "metris", "metro", "metrologi", "metromini", "metronimik", "metronom", "metronomis", "metropolis", "metropolisasi", "metropolitan", "metroragia", "metrum", "meunasah", "mewah", "mewari", "mewek", "mezanin", "mezbah", "mezosopran", "mi", "miak", "miana", "miang", "miap", "miasma", "midar", "midi", "midik", "midodareni", "mieloma", "migrain", "migran", "migrasi", "migren", "mihrab", "mihun", "miiofili", "mijil", "miju", "mik", "mika", "mikat", "mikologi", "mikoprotein", "mikosis", "mikotoksin", "mikraj", "mikro", "mikroanalisis", "mikroangiopati", "mikrob", "mikrobe", "mikrobiologi", "mikrobiologis", "mikrobisida", "mikrobus", "mikroekonomi", "mikroelektronika", "mikroelemen", "mikrofag", "mikrofarad", "mikrofilm", "mikrofita", "mikrofon", "mikrofotografi", "mikrogelombang", "mikrograf", "mikrografika", "mikrogram", "mikrohabitat", "mikrohistori", "mikrohm", "mikroklimat", "mikrokomputer", "mikrokosmos", "mikrolet", "mikrolinguistik", "mikrolit", "mikrom", "mikromanipulasi", "mikrometer", "mikrometri", "mikron", "mikroorganisme", "mikroprosesor", "mikrosefalia", "mikrosekon", "mikroskop", "mikroskopis", "mikrospora", "mikrotom", "mikrovilus", "mikrowatt", "mikser", "miksoedema", "mil", "milad", "milenium", "miliampere", "miliar", "miliarder", "miliaria", "milibar", "milieu", "miligram", "milik", "mililiter", "milimeter", "milimikron", "milimol", "milioner", "milir", "milisi", "militan", "militansi", "militer", "militerisme", "militeristis", "miliun", "miliuner", "milivolt", "milu", "mim", "mimbar", "mimeograf", "mimesis", "mimi", "mimik", "mimikri", "mimis", "mimisan", "mimosa", "mimpi", "min", "mina", "minangsraya", "minat", "minder", "mindi", "mindoan", "mindring", "mineral", "mineralisasi", "mineralogi", "mineralogis", "minggat", "minggir", "minggu", "minhaj", "mini", "miniatur", "minibasket", "minibus", "minikar", "minikata", "minikomputer", "minim", "minimal", "minimarket", "minimum", "minium", "minor", "minoritas", "minta", "mintak", "mintakat", "mintakulburuj", "mintal", "minterat", "mintuna", "minum", "minus", "minyak", "mioglobin", "miokardia", "mioma", "miop", "miopia", "miosis", "miotik", "mipis", "mirah", "mirai", "mirakel", "mirat", "miriapod", "mirih", "mirik", "miring", "mirip", "miris", "mirmekofag", "mirmekofili", "mirmekologi", "misa", "misai", "misal", "misan", "misantrop", "misbah", "misdinar", "misi", "misil", "misiologi", "misionaris", "misioner", "miskal", "miskin", "miskram", "misoa", "misofobia", "misogami", "misoginis", "mispersepsi", "miss", "mistar", "mister", "misteri", "misterius", "mistik", "mistis", "mistisisme", "mistri", "misuh", "miswat", "mitasi", "mite", "mitisida", "mitogen", "mitologi", "mitologis", "mitos", "mitosis", "mitra", "mitraliur", "mizab", "mizan", "mnemonik", "moa", "mob", "mobil", "mobilet", "mobilisasi", "mobilisator", "mobilitas", "moblong", "mobokrasi", "mochi", "modal", "modalitas", "modar", "mode", "model", "modeling", "modem", "moderamen", "moderat", "moderato", "moderator", "modern", "modernisasi", "modernisme", "modernitas", "modernomaniak", "modifikasi", "modifikatif", "modin", "modis", "modiste", "modol", "modul", "modular", "modulasi", "modulator", "modus", "mofet", "moga", "mogok", "mohair", "mohon", "mohor", "mojah", "mojang", "mok", "moka", "mokal", "moke", "moko", "moksa", "mol", "mola", "molar", "mole", "molek", "molekul", "molekuler", "moler", "moles", "molibden", "molibdenum", "molor", "molos", "molotov", "moluska", "momen", "momental", "momentum", "momok", "momong", "momot", "monarki", "moncong", "moncor", "mondar-mandir", "mondeling", "mondial", "mondok", "mondolan", "mondong", "monel", "moneter", "mong", "monggo", "monggol", "mongkok", "mongmong", "mongolisme", "mongoloid", "monisme", "monitor", "mono", "monoatom", "monodi", "monodrama", "monofag", "monofobia", "monofonir", "monogam", "monogami", "monogini", "monografi", "monogram", "monokarpa", "monokel", "monokini", "monoklin", "monoklinal", "monokotil", "monokotiledon", "monokrasi", "monokrom", "monokromatis", "monokromator", "monoksida", "monokultur", "monolingual", "monolit", "monolitik", "monolog", "monoloyalitas", "monomania", "monomer", "monoploid", "monopoli", "monopolistik", "monopsoni", "monorel", "monosakarida", "monosem", "monosemantik", "monosemi", "monosilabel", "monosilabisme", "monosit", "monospermi", "monoteis", "monoteisme", "monotipe", "monoton", "monsinyur", "monster", "monstera", "monsun", "montase", "montering", "montir", "montit", "montok", "monumen", "monumental", "monyet", "monyong", "monyos", "mop", "mopela", "mopit", "morak", "moral", "moralis", "moralisasi", "moralisme", "moralistis", "moralitas", "morat-marit", "moratorium", "morbiditas", "morbili", "mordan", "moreng", "mores", "morf", "morfem", "morfemik", "morfemis", "morfin", "morfinis", "morfofonem", "morfofonemik", "morfofonemis", "morfofonologi", "morfogenesis", "morfologi", "mori", "moril", "mormon", "moron", "morong", "morse", "mortalitas", "mortar", "mortir", "mosaik", "mosi", "mosok", "moster", "mota", "motel", "motif", "motivasi", "motivator", "moto", "motor", "motorik", "motoris", "motorisasi", "motorsaikel", "moyang", "mozah", "mozaik", "mu", "mua", "muadin", "muai", "muak", "muakadah", "mual", "mualaf", "mualamat", "mualif", "mualim", "muamalah", "muamalat", "muanas", "muara", "muarikh", "muas", "muasasah", "muasir", "muat", "muazam", "muazin", "mubah", "mubalig", "mubaligah", "mubarak", "mubarat", "mubazir", "mubtadi", "mubut", "mucikari", "mud", "muda", "mudah", "mudakar", "mudarabah", "mudarat", "mudasir", "mudat", "mudigah", "mudik", "mudra", "mudun", "mufaham", "mufakat", "mufarik", "mufasal", "mufasir", "muflis", "mufrad", "mufsidin", "mufti", "mugabat", "muhabah", "muhadarah", "muhadat", "muhajat", "muhajir", "muhajirin", "muhal", "muhalil", "muhami", "muhammad", "muharam", "muhasabah", "muhib", "muhibah", "muhit", "muhlikah", "muhrim", "muhsin", "muhtasyam", "muih", "mujadalah", "mujadid", "mujahadat", "mujahid", "mujahidin", "mujair", "mujang", "mujarab", "mujarad", "mujari", "mujbir", "mujtahid", "mujtamak", "mujur", "muk", "muka", "mukabalah", "mukadam", "mukadas", "mukadim", "mukadimah", "mukadin", "mukadis", "mukah", "mukalaf", "mukalid", "mukaram", "mukatabah", "mukena", "mukhabarah", "mukhalaf", "mukhalafah", "mukhalif", "mukhalis", "mukhlis", "mukhtasar", "mukibat", "mukim", "mukimin", "mukjizat", "mukmin", "mukminat", "mukminin", "mukoprotein", "mukosa", "mukositis", "muktabar", "muktamad", "muktamar", "muktamirin", "muktazilah", "mukun", "mula", "mulai", "mulakat", "mulamasah", "mulas", "mulat", "mulato", "mulazamah", "mulhid", "mulia", "mullah", "mulsa", "multazam", "multibahasa", "multidimensi", "multidisipliner", "multietnik", "multifaset", "multifungsi", "multigravida", "multiguna", "multikompleks", "multikrisis", "multikultur", "multikulturalisme", "multilateral", "multilingual", "multilingualisme", "multimedia", "multimeter", "multimilioner", "multinasional", "multinegara", "multiorgan", "multipara", "multipel", "multipleks", "multiplikasi", "multiplikator", "multipolar", "multiprosesor", "multirasial", "multirasialisme", "multiseluler", "multivalen", "multivalensi", "multivitamin", "muluk", "mulur", "mulus", "mulut", "mumayiz", "mumbang", "mumbul", "mumbung", "mumet", "mumi", "mumifikasi", "mumpung", "mumpuni", "mumuk", "mumur", "mumut", "munafik", "munafikin", "munajat", "munajim", "munasabah", "muncang", "munci", "muncikari", "muncrat", "muncul", "muncus", "mundam", "munding", "mundu", "mundur", "mung", "munggu", "munggur", "mungil", "mungkar", "mungkin", "mungkir", "mungkum", "mungkur", "mungmung", "mungsi", "mungut", "munib", "munjung", "muno", "munsyi", "muntaber", "muntah", "muntaha", "muntu", "muntul", "muntup", "munyuk", "muon", "mupaham", "muparik", "mupus", "mur", "mura", "murad", "muradif", "murah", "murai", "murakab", "murakabi", "mural", "muram", "murang", "muras", "murba", "murbei", "murca", "muri", "murid", "muring", "muris", "murka", "murni", "mursal", "mursyid", "murtad", "muruah", "murung", "murup", "murus", "mus", "musaadah", "musabab", "musabaqah", "musafir", "musafirin", "musakat", "musala", "musang", "musara", "museolog", "museologi", "museum", "mushaf", "musibah", "musik", "musikal", "musikalisasi", "musikalitas", "musikolog", "musikologi", "musikologis", "musikus", "musim", "musisi", "muskil", "muskovit", "muslih", "muslihat", "muslim", "muslimat", "muslimin", "muslin", "musnah", "muspra", "mustahak", "mustahik", "mustahil", "mustaid", "mustajab", "mustak", "mustaka", "mustakim", "mustamik", "mustang", "musuh", "musyarakah", "musyarakat", "musyarik", "musyawarah", "musyawarat", "musyrik", "musyrikin", "musytak", "musytari", "mutabar", "mutagen", "mutah", "mutakadim", "mutakalim", "mutakhir", "mutaki", "mutalaah", "mutamad", "mutan", "mutasawif", "mutasi", "mutawif", "mute", "mutiara", "mutih", "mutilasi", "mutisme", "mutlak", "mutmainah", "mutu", "mutualisme", "mutung", "muwafakat", "muwahid", "muwajahah", "muwakal", "muwakil", "muwari", "muzah", "muzakar", "muzakarah", "muzaki", "muzamil", "muzawir", "muzhab", "naam", "nabatah", "nabati", "nabi", "nabtun", "nabu", "nada", "nadi", "nadim", "nadir", "naf", "nafar", "nafas", "nafi", "nafiri", "nafkah", "nafsi", "nafsu", "nafta", "naftal", "naftalena", "naftena", "naftol", "naga", "nagam", "nagara", "nagari", "nagasari", "nahak", "nahas", "nahdiyin", "nahi", "nahkoda", "nahu", "naib", "naif", "naik", "naim", "najam", "najasah", "najasat", "najis", "nak", "naka", "nakal", "nakara", "nakhoda", "nal", "nala", "nalam", "nalar", "nali", "nalih", "naluri", "naluriah", "nama", "namaskara", "namatad", "namatium", "nambi", "namnam", "nampan", "namun", "nan", "nanah", "nanang", "nanap", "nanaplankton", "nanar", "nanas", "nandu", "nandung", "nang", "nangka", "nangkoda", "nangkring", "nangui", "naning", "nanofarad", "nanofosil", "nanogram", "nanometer", "nanti", "napal", "napalm", "napas", "napuh", "naqal", "naqli", "nara", "narablog", "narapati", "narapidana", "narapraja", "narasi", "narasumber", "naratif", "narator", "narkolepsi", "narkomaniak", "narkose", "narkosis", "narkotik", "narpati", "narsis", "narsisisme", "narsisme", "narwastu", "nas", "nasab", "nasabah", "nasakh", "nasal", "nasalisasi", "nasar", "nasehat", "nasel", "nasi", "nasib", "nasihat", "nasion", "nasional", "nasionalis", "nasionalisasi", "nasionalisme", "nasionalistis", "nasionisme", "naskah", "nasofaring", "nasrani", "nasti", "nasut", "natal", "natalis", "natalitas", "natang", "natar", "natijah", "nativis", "nativisme", "nativistik", "natolokal", "natrium", "natur", "natura", "natural", "naturalis", "naturalisasi", "naturalisme", "naturalistis", "naturopatis", "naung", "nauplius", "nausea", "nautik", "nautika", "nautikal", "nautilus", "nauzubillah", "navigasi", "navigator", "nawa", "nawaitu", "nawala", "nawalapradata", "nayaka", "nayam", "nayap", "nazam", "nazar", "nazi", "naziisme", "nazim", "nazir", "ndoro", "ndoroisme", "neala", "nealogi", "nebeng", "nebula", "nebulium", "neces", "necis", "nefoskop", "nefrektomi", "nefridium", "nefrit", "nefritis", "nefroblastoma", "nefrologi", "nefron", "nefrosis", "negara", "negasi", "negatif", "negativisme", "negativistik", "neger", "negeri", "negosi", "negosiasi", "negosiator", "negrito", "negro", "negroid", "negus", "neka", "nekad", "nekara", "nekat", "nekel", "neko", "nekrofag", "nekrofagus", "nekrofili", "nekrofilia", "nekrogeografi", "nekrolog", "nekrologi", "nekromansi", "nekropolis", "nekropsi", "nekrosis", "neksus", "nektar", "nelangsa", "nelayan", "nemagon", "nematoda", "nematologi", "nematosida", "nematosis", "nenda", "nendatan", "nenek", "nenekanda", "nenen", "nenenda", "nener", "nenes", "neng", "neodarwinisme", "neodimium", "neofeodalisme", "neofeodalistis", "neoiknologi", "neoimpresionisme", "neokarpi", "neoklasik", "neoklasisisme", "neoklasisme", "neokolonialisme", "neoliberalisme", "neolit", "neolitik", "neolitikum", "neologi", "neologisme", "neolokal", "neon", "neonatal", "neonatus", "neontologi", "neoplasma", "neoplatonisme", "neoprena", "neositosis", "neotipologi", "neovirus", "neozoikum", "nepotis", "nepotisme", "neptunium", "neptunus", "neraca", "nerak", "neraka", "neritik", "neritopelagik", "neritoplankton", "neroglia", "nervasi", "nervur", "nesa", "nestapa", "nestor", "net", "neting", "neto", "netra", "netral", "netralis", "netralisasi", "netralisme", "netralitas", "neural", "neuralgia", "neurastenia", "neuritis", "neuroblastoma", "neuroglia", "neurolinguistik", "neurolog", "neurologi", "neurologis", "neuron", "neurosis", "neurotik", "neurotransmiter", "neustonologi", "neutrino", "neutron", "newton", "ngabei", "ngaben", "ngablak", "ngabur", "ngakngikngok", "ngalau", "ngalor-ngidul", "nganga", "ngap-ngap", "ngapain", "ngarai", "ngeang", "ngebet", "ngebut", "ngeceng", "ngeden", "ngedumel", "ngelindur", "ngemil", "ngenas", "ngengat", "ngenyek", "ngeong", "ngeres", "ngeri", "ngiang", "ngilu", "ngoko", "ngos-ngosan", "ngot-ngotan", "ngowos", "ngoyo", "ngung", "nia", "niaga", "nian", "niasin", "niat", "nibung", "nica", "nidasi", "nidera", "nidikola", "nidulus", "nifak", "nifas", "nih", "nihil", "nihilis", "nihilisme", "nijas", "nik", "nikah", "nikel", "nikmat", "nikotin", "niktigami", "nila", "nilai", "nilakandi", "nilam", "nilau", "nilon", "nimbostratus", "nimbrung", "nimfomania", "ninabobo", "ning", "ningnong", "ningrat", "nini", "ninik", "ninitowok", "niobium", "nipah", "nipis", "nira", "niraksara", "nirgagasan", "nirgesekan", "nirguna", "nirkabel", "nirlaba", "nirleka", "nirmala", "nirselera", "nirwana", "nirwarta", "nisab", "nisan", "nisbah", "nisbi", "niscaya", "niskala", "nista", "nistagmus", "nistatin", "nitrat", "nitrifikasi", "nitrobenzena", "nitrofili", "nitrofit", "nitrogen", "nitrogliserin", "nitroselulosa", "niyaga", "noa", "nobat", "nobelium", "noda", "nodulus", "nodus", "noem", "noja", "noken", "noktah", "nokturia", "nokturnal", "nol", "nomad", "nomenklatur", "nomina", "nominal", "nominalisasi", "nominalisme", "nominasi", "nominatif", "nominator", "nomine", "nomogram", "nomokrasi", "nomor", "nomplok", "non", "nona", "nonagresi", "nonaktif", "nonblok", "nondepartemen", "nondepartemental", "none", "nonekonomi", "noneksakta", "nonfiksi", "nonformal", "nong-nong", "nongol", "nongrata", "nonhistoris", "noni", "nonilium", "nonindustri", "nonintervensi", "nonius", "nonkimia", "nonkombatan", "nonkonvensional", "nonkooperasi", "nonkooperatif", "nonmedis", "nonmigas", "nonmiliter", "nonok", "nonol", "nonong", "nonpatogenik", "nonpemerintah", "nonpolitik", "nonpredikatif", "nonpribumi", "nonproduktif", "nonprofit", "nonprotein", "nonsens", "nonsilabis", "nonstandar", "nonstop", "nonteknis", "nontradisional", "nonverbal", "nopek", "norak", "norit", "norma", "normal", "normalisasi", "normatif", "nosologi", "nostalgia", "nostrum", "not", "nota", "notabene", "notariat", "notaris", "notasi", "notes", "notifikasi", "notok", "notula", "notulis", "nova", "novel", "novela", "novelet", "novelis", "november", "novena", "novokaina", "nrima", "nuansa", "nubuat", "nudis", "nudisme", "nugat", "nugraha", "nujum", "nukil", "nukleat", "nukleolus", "nukleon", "nukleoprotein", "nukleus", "nuklida", "nuklir", "nulipara", "numeralia", "numerik", "numeris", "numismatika", "nun", "nunatak", "nung", "nunsius", "nunut", "nur", "nuraga", "nurani", "nurbisa", "nuri", "nuriah", "nus", "nusa", "nusaindah", "nusakambangan", "nusantara", "nusyu", "nusyus", "nutan", "nutasi", "nutfah", "nutriea", "nutrisi", "nutrisionis", "nutrisisme", "nuzul", "nuzulul", "nyai", "nyak", "nyala", "nyalang", "nyalar", "nyalawadi", "nyale", "nyali", "nyaman", "nyambing", "nyamik", "nyamleng", "nyampang", "nyamplung", "nyamuk", "nyamur", "nyana", "nyang", "nyanya", "nyanyah", "nyanyang", "nyanyar", "nyanyi", "nyanyu", "nyanyuk", "nyapang", "nyapnyap", "nyarang", "nyarik", "nyaring", "nyaris", "nyata", "nyatuh", "nyawa", "nyawang", "nyelekit", "nyemplong", "nyentrik", "nyenyai", "nyenyak", "nyenyat", "nyenyeh", "nyenyep", "nyenyet", "nyepi", "nyeri", "nyerocos", "nyi", "nyilih", "nyingnying", "nyinyir", "nyiri", "nyiru", "nyit", "nyiur", "nyolnyolan", "nyolo", "nyoman", "nyong", "nyonya", "nyonyeh", "nyonyong", "nyonyor", "nyungsung", "nyunyut", "nyureng", "nyut", "oase", "oasis", "obar", "obat", "obduksi", "obelisk", "obeng", "obesitas", "obi", "obituarium", "objek", "objektif", "objektivisme", "objektivitas", "oblak", "oblasi", "obligasi", "oblong", "obo", "obor", "obral", "obras", "obrol", "obrus", "observasi", "observatorium", "obsesi", "obsesif", "obsidian", "obsolet", "obstetri", "obstruen", "obstruksi", "obversi", "obviatif", "obyek", "obyektif", "obyektivisme", "obyektivitas", "oceh", "odalan", "ode", "odekolonye", "odinometer", "oditur", "odoh", "odol", "odometer", "odontoblas", "odontoid", "odontologi", "odoran", "oedipus-kompleks", "oersted", "ofensif", "oferte", "ofisial", "ofset", "oftalmia", "oftalmoskop", "oga", "ogah", "ogah-agih", "ogak-agik", "ogak-ogak", "ogam", "ogel", "ogok", "ogonium", "ohm", "ohmmeter", "oikumene", "oja", "ojeg", "ojek", "ojok", "okarina", "oke", "oker", "oklokrasi", "oklusi", "oklusif", "oknum", "okok", "oksalat", "oksiasetilena", "oksida", "oksidan", "oksidasi", "oksidator", "oksigen", "oksigenase", "oksimoron", "oksitetrasiklin", "oksiton", "oktaf", "oktagon", "oktahedron", "oktal", "oktana", "oktet", "oktober", "oktroi", "okulasi", "okuler", "okulis", "okultis", "okultisme", "okupasi", "okupasional", "olah", "olahraga", "olak", "olak-alik", "olanda", "olang-aling", "oleander", "olefin", "oleh", "olek", "oleng", "oleografi", "oleometer", "oleovitamin", "oles", "olet", "oleum", "oli", "olia", "oligarki", "oligofagus", "oligofrenia", "oligopoli", "oligopolistis", "oligopsoni", "oligosen", "oligositemia", "oligotrofik", "oliman", "olimpiade", "oliva", "olivin", "olok", "olong-olong", "om", "oma", "ombak", "ombang-ambing", "ombyok", "omega", "omel", "omikron", "omnibus", "omnivor", "omnivora", "omong", "ompol", "ompong", "ompreng", "omprong", "ompu", "omset", "omslah", "omzet", "onagata", "onak", "onani", "onar", "oncat", "once", "oncek", "oncen", "oncer", "oncom", "oncor", "onde-onde", "ondel-ondel", "onder", "onderdil", "onderdistrik", "onderneming", "onderok", "ondo", "ondoafi", "ondok", "ondos", "oneng-oneng", "ong", "ongahangih", "ongeh", "onggok", "ongji", "ongkang", "ongkok", "ongkos", "ongok", "ongol-ongol", "oniks", "onkogen", "onkologi", "onomasiologi", "onomastika", "onomatologi", "onomatope", "ons", "onslah", "ontogeni", "ontologi", "ontologis", "ontran-ontran", "onyah-anyih", "onyak-anyik", "onyang", "onyok", "onyot", "oogenesis", "oolit", "opa", "opak", "opak-apik", "opal", "opalesen", "opas", "opasitas", "opelet", "open", "opendim", "openkap", "oper", "opera", "operasi", "operasional", "operasionalisasi", "operatif", "operator", "operet", "operkulum", "opini", "opisometer", "opium", "oplah", "oplet", "oplos", "opmak", "opname", "oponen", "opor", "oportunis", "oportunisme", "oportunistis", "oportunitas", "oposan", "oposisi", "oppo", "opsen", "opseter", "opsi", "opsin", "opsinder", "opsiner", "opsional", "opsir", "opstal", "optatif", "optik", "optika", "optimal", "optimalisasi", "optimis", "optimisme", "optimistis", "optimum", "optis", "optisien", "optoelektronika", "optometri", "optometris", "opus", "orak", "orak-arik", "orakel", "oral", "oralit", "orang", "orang-aring", "oranye", "orasi", "orat-oret", "orator", "oratoria", "oratoris", "oratorium", "orbit", "orbita", "orbital", "orde", "order", "ordi", "ordinal", "ordinasi", "ordinat", "ordiner", "ordner", "ordo", "ordonans", "ordonansi", "oren", "oreng", "oreol", "oret", "organ", "organdi", "organel", "organik", "organis", "organisasi", "organisator", "organisatoris", "organisir", "organisme", "organismus", "organogram", "organon", "orgasme", "orgasmik", "orgel", "orien", "oriental", "orientalis", "orientasi", "origami", "orion", "orisinal", "orisinalitas", "orkes", "orkestra", "orkestrasi", "ornamen", "ornamental", "ornamentasi", "ornitologi", "ornitologis", "ornitosis", "orografi", "orografik", "orografis", "orok", "orong-orong", "ortodidaktik", "ortodoks", "ortodoksi", "ortodrom", "ortoepi", "ortografi", "ortografis", "ortoklas", "ortopedagogik", "ortopedi", "ortopedis", "ose", "osean", "oseanarium", "oseanografi", "oseanologi", "osifikasi", "osikel", "osilasi", "osilator", "osilograf", "osilogram", "osiloskop", "oskilator", "oskulum", "osmium", "osmometer", "osmoregulasi", "osmose", "osmosis", "osomosis", "ostentasi", "osteoblas", "osteoklas", "osteologi", "osteopati", "osteoporosis", "ostium", "otak", "otak-atik", "otak-otak", "otar", "otek", "otentik", "oto", "otobus", "otofon", "otologi", "otomat", "otomatis", "otomatisasi", "otomobil", "otomotif", "otonom", "otonomi", "otopet", "otorisasi", "otoritas", "otoriter", "otoritet", "otoskop", "otot", "ototipi", "oval", "ovarium", "ovasi", "oven", "over", "overaktif", "overakting", "overal", "overdosis", "overkompensasi", "overpopulasi", "overproduksi", "oversimplifikasi", "overste", "oviduk", "ovipar", "oviparitas", "ovipositor", "ovitesis", "ovovivipar", "ovulasi", "ovulum", "ovum", "oyak", "oyek", "oyok", "oyong", "oyot", "ozokerit", "ozon", "ozonisasi", "ozonisator", "ozonometer", "pabean", "pabrik", "pabrikan", "pabrikasi", "pacai", "pacak", "pacal", "pacangan", "pacar", "pacat", "pacau", "pace", "pacek", "paceklik", "pacet", "pacih", "pacik", "pacok", "pacu", "pacuk", "pacul", "pada", "padah", "padahal", "padak", "padam", "padan", "padang", "padas", "padasan", "padat", "padepokan", "padi", "padma", "padmasana", "padmi", "padri", "padu", "padudan", "paduk", "paduka", "paduraksa", "paedofil", "paes", "pagan", "paganisme", "pagar", "pagas", "pagebluk", "pagelaran", "pagi", "pagina", "pagoda", "pagon", "pagositosis", "pagu", "pagun", "pagupon", "pagut", "paguyuban", "pah", "paha", "pahala", "paham", "pahang", "pahar", "pahat", "paheman", "pahit", "pahlawan", "pahter", "pai", "paidon", "pail", "pailit", "paing", "paip", "pair", "pais", "paitua", "paja", "pajak", "pajan", "pajang", "pajuan", "pajuh", "pakai", "pakal", "pakan", "pakanira", "pakansi", "pakar", "pakaryan", "pakat", "pakau", "pakcik", "pakde", "pakem", "paket", "pakihang", "pakihi", "paking", "pakis", "paklik", "pakma", "pakpui", "pakpung", "paksa", "paksi", "paksina", "pakta", "pakter", "paku", "pakuh", "pakuk", "pakuncen", "pakus", "pal", "pala", "paladium", "palagan", "palai", "palak", "palaka", "palam", "palamarta", "palang", "palapa", "palar", "palari", "palas", "palasik", "palat", "palatabilitas", "palatal", "palatalisasi", "palatografi", "palatogram", "palatum", "palau", "palawa", "palawija", "paldu", "pale", "palem", "palen", "paleoantropologi", "paleobotani", "paleoekologi", "paleogeografi", "paleografi", "paleografis", "paleoklimatologi", "paleolitik", "paleolitikum", "paleontologi", "paleosen", "paleozoikum", "pales", "palet", "pali", "paliatif", "paliatip", "palindrom", "paling", "palinologi", "palis", "palit", "palka", "pallawa", "palmarosa", "palmin", "palmistri", "palmit", "palmitat", "palolo", "palpasi", "palsu", "paltu", "palu", "paluh", "palun", "palung", "palut", "pamah", "paman", "pameget", "pamer", "pamflet", "pamit", "pamong", "pamor", "pampa", "pampan", "pampang", "pampas", "pampat", "pamper", "pampiniform", "pamrih", "pamungkas", "pan", "pana", "panah", "panai", "panakawan", "panar", "panas", "panasea", "panau", "panca", "pancabicara", "pancabuta", "pancacita", "pancadarma", "pancaindera", "pancaindra", "pancaka", "pancakara", "pancakembar", "pancal", "pancalima", "pancalogam", "pancalomba", "pancalongok", "pancamarga", "pancamuka", "pancang", "pancaniti", "pancapersada", "pancar", "pancaragam", "pancarajadiraja", "pancaroba", "pancarona", "pancasila", "pancasilais", "pancasona", "pancasuara", "pancasuda", "pancausaha", "pancawalikrama", "pancawara", "pancawarna", "pancawarsa", "panci", "pancing", "pancir", "pancit", "panco", "pancong", "pancung", "pancur", "pancut", "pandai", "pandak", "pandam", "pandan", "pandang", "pandau", "pandawa", "pandega", "pandemi", "pandemik", "pandialektal", "pandir", "pandit", "pandom", "pandu", "panekuk", "panel", "panelis", "panembahan", "panembrama", "panen", "panewu", "pangabekti", "pangah", "pangan", "pangeran", "pangestu", "panggak", "panggal", "panggang", "panggar", "panggau", "panggih", "panggil", "panggon", "panggu", "panggul", "panggung", "pangkah", "pangkai", "pangkal", "pangkas", "pangkat", "pangkek", "pangkin", "pangking", "pangkon", "pangku", "pangkung", "pangkur", "panglima", "pangling", "panglong", "pangolat", "pangonan", "pangpet", "pangpung", "pangreh", "pangrehpraja", "pangrukti", "pangsa", "pangsek", "pangsi", "pangsit", "panguk", "pangur", "pangus", "panik", "paniki", "panil", "panili", "paninggil", "paningset", "panir", "paniradia", "panitera", "panitia", "panja", "panjak", "panjang", "panjar", "panjarwala", "panjat", "panjer", "panji", "panjing", "panjul", "panjunan", "panjut", "pankreas", "pankromatis", "pankronis", "panlektal", "panleukapema", "panleukopenia", "panoptikum", "panorama", "panser", "pantai", "pantak", "pantalon", "pantang", "pantar", "pantas", "pantat", "pantau", "panteis", "panteisme", "panteistis", "pantek", "pantekosta", "panteon", "panter", "panti", "pantik", "panting", "pantis", "panto", "pantofel", "pantograf", "pantomim", "pantri", "pantul", "pantun", "panus", "panutan", "panyembrama", "pao-pao", "papa", "papacang", "papah", "papain", "papak", "papakerma", "papan", "papar", "paparazi", "papas", "papat", "papatong", "papi", "papil", "papila", "papirus", "papras", "paprika", "papui", "par", "para", "parab", "parabasis", "parabel", "parabiosis", "parabola", "paradam", "parade", "paradigma", "paradigmatis", "paradiso", "paradoks", "paradoksal", "parados", "paraf", "parafasia", "parafemia", "parafin", "parafrasa", "parafrase", "parafrenia", "paragaster", "paragog", "paragon", "paragraf", "parah", "parak", "paralaks", "paraldehida", "paralel", "paralelisasi", "paralelisme", "paralelogram", "paralgesia", "paralinguistik", "paralinguistis", "paralipsis", "paralisis", "paralitis", "param", "paramaarta", "paramarta", "paramasastra", "paramedis", "paramen", "parameter", "paramiliter", "parampara", "paran", "parang", "paranoia", "paranoid", "paranormal", "paranpara", "parap", "parapalatal", "parapati", "paraplasme", "paraplegia", "parapodium", "parapsikolog", "parapsikologi", "paras", "parasetamol", "parasintesis", "parasit", "parasitisme", "parasitoid", "parasitologi", "parasitoma", "parasitopolis", "parasut", "parasutis", "parataksis", "parataktis", "paratesis", "paratifus", "paratiroid", "parau", "pare", "parenial", "parenkim", "parental", "parentesis", "parestesia", "parewa", "parfum", "parga", "parhelion", "pari", "paria", "parididimis", "parih", "parik", "parikan", "paring", "paripurna", "paris", "parit", "paritas", "pariwara", "pariwisata", "parji", "parka", "parket", "parkinson", "parkinsonisme", "parkir", "parkit", "parlemen", "parlementaria", "parlementarisme", "parlementer", "parmitu", "paro", "parodi", "paroki", "parokial", "parokialisme", "parolfaktori", "paron", "paronim", "paronisia", "paronomasia", "parotitis", "pars", "parser", "parsi", "parsial", "partai", "partenogenesis", "partial", "partikel", "partikelir", "partikularisme", "partisan", "partisi", "partisipan", "partisipasi", "partitif", "partitur", "partner", "partus", "paru", "paruh", "parun", "parut", "parvenu", "parwa", "pas", "pasah", "pasai", "pasak", "pasal", "pasang", "pasanggiri", "pasar", "pasara", "pasaraya", "pasase", "pasasir", "pasat", "pascabedah", "pascadoktoral", "pascajual", "pascakawin", "pascakrisis", "pascalahir", "pascalarva", "pascalikuidasi", "pascamodern", "pascamodernisme", "pascaoperasi", "pascapanen", "pascaperang", "pascaproduksi", "pascareformasi", "pascasarjana", "pascausaha", "pascayuwana", "paseban", "paser", "paset", "pasfoto", "pasi", "pasien", "pasif", "pasifikasi", "pasifisme", "pasigrafi", "pasik", "pasilan", "pasim", "pasimologi", "pasir", "pasirah", "pasit", "pasiva", "paskah", "pasmat", "pasmen", "pasok", "pasowan", "paspor", "pasrah", "pasta", "pastel", "pasteur", "pasteurisasi", "pasti", "pastiles", "pastor", "pastoral", "pastoran", "pastur", "pastura", "pasu", "pasuel", "pasuk", "pasumandan", "pasung", "patah", "pataka", "patam", "patang", "patar", "patek", "patela", "paten", "pater", "patera", "pateram", "paternalis", "paternalisme", "paternalistis", "patet", "patetis", "patgulipat", "pati", "patih", "patik", "patikim", "patil", "patin", "patina", "pating", "patio", "patirasa", "patiseri", "patka", "patogen", "patogenesis", "patogenik", "patois", "patok", "patokimia", "patol", "patola", "patolog", "patologi", "patologis", "patolopolis", "patos", "patra", "patrap", "patri", "patriark", "patriarkat", "patrilineal", "patrimonium", "patriot", "patriotik", "patriotisme", "patroli", "patron", "patronasi", "patrun", "patuh", "patuk", "patung", "patungan", "patut", "pauh", "pauhi", "pauk", "paul", "paun", "paung", "paus", "pause", "paut", "paviliun", "pawai", "pawak", "pawaka", "pawana", "pawang", "pawiyatan", "pawukon", "paya", "payah", "payang", "payar", "payau", "payet", "payon", "payu", "payudara", "payung", "peang", "pecah", "pecai", "pecak", "pecal", "pecara", "pecat", "pece", "pecel", "peci", "pecicilan", "pecinan", "pecok", "pecuk", "pecun", "pecut", "peda", "pedada", "pedadah", "pedagog", "pedagogi", "pedagogis", "pedak", "pedaka", "pedal", "pedanda", "pedang", "pedapa", "pedar", "pedas", "pedati", "pedel", "pedena", "pedendang", "pedengan", "pedepokan", "pedestrian", "pedet", "pedewakan", "pediatri", "pedih", "pedikur", "pedis", "pedisel", "pedogenesis", "pedok", "pedologi", "pedoman", "pedometer", "pedongkang", "pedot", "peduli", "pedunkel", "pedusi", "pedut", "pegagang", "pegah", "pegal", "pegan", "pegang", "pegar", "pegari", "pegas", "pegat", "pegawai", "pego", "pegoh", "pegon", "peguam", "pegun", "pehong", "pei", "pejajaran", "pejaka", "pejal", "pejam", "pejatian", "pejera", "pek", "peka", "pekaja", "pekak", "pekakak", "pekan", "pekarang", "pekasam", "pekaseh", "pekat", "pekatu", "pekatul", "pekau", "pekerti", "pekik", "peking", "pekir", "pekis", "pekiwan", "pekojan", "peksi", "pektik", "pektil", "pektin", "peku", "pekuk", "pekulun", "pekung", "pekur", "pel", "pelabi", "pelabur", "pelaga", "pelagas", "pelagis", "pelagra", "pelah", "pelak", "pelalah", "pelamin", "pelampang", "pelampung", "pelan", "pelana", "pelancar", "pelanduk", "pelang", "pelangai", "pelanggi", "pelangi", "pelangkin", "pelangpang", "pelantar", "pelanting", "pelas", "pelasah", "pelasik", "pelaspas", "pelasuh", "pelat", "pelata", "pelatuk", "pelawa", "pelayon", "pelbagai", "pelbak", "pelbet", "pelebat", "pelebaya", "pelebegu", "pelebon", "pelecet", "pelecok", "peleh", "pelek", "pelekat", "pelekok", "pelekuk", "pelembaya", "pelencit", "pelengak", "pelengan", "pelengset", "pelepah", "peles", "pelesat", "peleset", "pelesir", "pelesit", "pelet", "peletek", "peletik", "peleting", "peleton", "pelias", "pelihara", "pelik", "pelikan", "pelikel", "pelinggam", "pelinteng", "pelintir", "pelipir", "pelipis", "pelir", "pelisir", "pelisit", "pelit", "pelita", "pelitur", "pelo", "pelog", "peloh", "pelojok", "pelonco", "pelong", "pelopor", "pelor", "pelorot", "pelosok", "pelosot", "pelota", "pelotaris", "pelotot", "pelples", "pelpolisi", "pels", "peluang", "peluh", "peluit", "peluk", "peluluk", "pelulut", "pelumpung", "pelungpung", "pelupuh", "pelupuk", "peluru", "peluruh", "pelus", "pelvis", "pemair", "pemali", "pemarip", "pematah", "pematang", "pemayang", "pembarap", "pembayan", "pemendak", "pemeo", "pemetikan", "pemidang", "pemindang", "peminggir", "pempek", "pemuda", "pemudi", "pemuras", "pen", "pena", "penak", "penaka", "penalti", "penampan", "penampang", "penanggah", "penaram", "penasaran", "penat", "penatu", "penatua", "penca", "pencak", "pencalang", "pencar", "pencet", "pencil", "pencok", "pencong", "pencu", "pencut", "penda", "pendaga", "pendahan", "pendak", "pendam", "pendapa", "pendar", "pendaringan", "pendek", "pendekar", "pendet", "pendeta", "pending", "pendok", "pendongkok", "pendopo", "pendua", "penduk", "pendulum", "penembahan", "penes", "penetrasi", "penetron", "penewu", "pengalasan", "penganak", "penganan", "pengang", "pengantin", "pengap", "pengapuh", "pengar", "pengaruh", "pengat", "pengatu", "pengawinan", "pengeng", "pengerih", "pengga", "penggaga", "penggah", "penggal", "penggar", "penggawa", "penghulu", "pengin", "pengkal", "pengkar", "pengki", "pengkis", "pengkol", "pengkor", "pengos", "penguin", "pengulun", "peni", "peniaram", "pening", "peningset", "penis", "penisilin", "penisilinat", "penitensi", "peniti", "penjajap", "penjalin", "penjara", "penjaruman", "penjor", "penjuna", "penjura", "penjuru", "penmes", "penologi", "penomah", "pensi", "pensil", "pensiun", "pentagin", "pentagon", "pentagor", "pentagram", "pentahedron", "pental", "pentameter", "pentan", "pentana", "pentang", "pentar", "pentas", "pentatonik", "pentil", "pentilasi", "penting", "pentode", "pentol", "pentosa", "pentotal", "pentung", "penuh", "penyap", "penyek", "penyet", "penyok", "penyu", "peok", "peot", "pepagan", "pepah", "pepak", "pepaku", "peparu", "pepas", "pepat", "pepatah", "pepaya", "pepe", "pepek", "pepeling", "peper", "pepermin", "pepes", "pepet", "pepindan", "peplum", "pepsin", "pepsina", "pepsinogen", "peptida", "peptidase", "peptik", "pepton", "pepuju", "pepunden", "pepung", "peputut", "per", "pera", "perabot", "perabung", "perada", "peragat", "perah", "perahu", "perai", "peraji", "perak", "peraka", "peram", "perambut", "peran", "perancah", "perang", "perangah", "perangai", "peranggang", "peranggu", "peranggul", "perangin", "perangkap", "perangkat", "peranjat", "peranti", "peranye", "perap", "peras", "peras-perus", "perasat", "perasukan", "perat", "perata", "perawan", "perawas", "perawi", "perawis", "perbal", "perban", "perbani", "perbatin", "perbawa", "perbegu", "perbekel", "perca", "percaya", "percik", "percis", "percit", "percul", "percuma", "perdah", "perdana", "perdata", "perdeo", "perdikan", "perdom", "perdu", "pere", "peredus", "pereh", "perei", "perek", "perekik", "perempuan", "perencah", "perenggan", "perengkat", "perengus", "perengut", "perenial", "perenkum", "perenyak", "perenyuk", "perepat", "peres", "peresau", "peresih", "perestroika", "peretel", "perewa", "perfek", "perfeksi", "perfeksionis", "perfeksionisme", "perfektif", "perforasi", "perforator", "performa", "pergam", "pergat", "pergata", "pergedel", "pergi", "pergok", "pergol", "pergola", "perhati", "peri", "peria", "perian", "periang", "periantium", "peribahasa", "periboga", "peribudi", "peridi", "perifer", "periferal", "periferalis", "periferi", "perifiton", "perifrasa", "perifrase", "perifrastis", "perige", "perigel", "perigi", "perih", "perihal", "perihelion", "perikarditis", "perikardium", "perikemanusiaan", "perikondrium", "periksa", "perilaku", "perimbas", "perimeter", "perimisium", "perimpin", "perimping", "perinci", "perincit", "perineorium", "perineum", "perineurium", "pering", "peringgan", "peringgi", "peringgitan", "peringis", "peringkat", "perintah", "periodat", "periode", "periodik", "periodisasi", "periodonsium", "periodontium", "periorbita", "periosteum", "perirana", "perisa", "perisai", "periskop", "perispora", "peristalsis", "peristaltik", "peristerit", "peristiwa", "peristonium", "perit", "peritoneum", "peritonitis", "periuk", "perivaskuler", "perjaka", "perji", "perkakas", "perkale", "perkamen", "perkara", "perkasa", "perkedel", "perkelang", "perkolar", "perkolasi", "perkolator", "perkoler", "perkosa", "perkusi", "perkutut", "perlahan", "perlak", "perlambang", "perleng", "perlente", "perlenteh", "perli", "perlina", "perling", "perlintih", "perlip", "perlit", "perlop", "perlu", "perlup", "perlus", "permadani", "permai", "permaisuri", "permak", "permalin", "permana", "permanen", "permanganat", "permasan", "permata", "permeabel", "permeabilitas", "permen", "permil", "permisi", "permisif", "permutasi", "pernah", "pernak", "pernekel", "pernik", "pernikel", "pernis", "perogol", "perohong", "peroi", "peroksida", "peroksidase", "peroksisom", "peroksisoma", "peroman", "perompak", "peron", "peroneal", "peronyok", "perop", "perosok", "perosot", "perot", "perpatih", "perpetuasi", "perponding", "pers", "persada", "persangga", "persegi", "persekot", "persekusi", "persen", "persentase", "persentil", "persepsi", "perseptif", "perseptivitas", "persero", "persetan", "perseus", "perseverasi", "persih", "persik", "persil", "persis", "persisi", "perslah", "persneling", "person", "persona", "personal", "personalia", "personalisme", "personalitas", "personel", "personifikasi", "perspektif", "perspektivisme", "persuasi", "persuasif", "pertal", "pertama", "pertepel", "pertiwi", "pertua", "perturbasi", "pertusis", "peruak", "peruan", "peruang", "perubalsem", "perudang", "peruk", "perum", "perumpung", "perun", "perunggu", "perunjung", "perupuk", "perus", "perusi", "perut", "perversi", "perwara", "perwira", "pes", "pesa", "pesai", "pesak", "pesakin", "pesam", "pesan", "pesanggrahan", "pesantren", "pesara", "pesat", "pesawat", "pese", "peseh", "pesek", "peser", "pesero", "peset", "pesi", "pesiar", "pesimis", "pesimisme", "pesimistis", "pesing", "pesirah", "pesisir", "pesok", "pesolot", "pesona", "pesong", "pesta", "pestaka", "pestisida", "pestol", "pesuk", "pesut", "pet", "peta", "petah", "petai", "petak", "petaka", "petal", "petala", "petaling", "petam", "petamari", "petan", "petanen", "petang", "petaram", "petarang", "petarangan", "petaruan", "petas", "petatang-peteteng", "petatus", "petegian", "petek", "petel", "petenteng", "petepete", "peterana", "peterseli", "petes", "peti", "petia", "petik", "petikrah", "petikut", "petilan", "peting", "petinggi", "petiolus", "petir", "petis", "petisi", "petitih", "petitum", "petogram", "petola", "petopan", "petor", "petrodolar", "petrografi", "petrogram", "petrokimia", "petrol", "petrolatum", "petroleum", "petrologi", "petromaks", "petsai", "petuah", "petuding", "petuduh", "petuk", "petunia", "peturun", "petus", "petut", "pewaka", "pewat", "peyek", "peyorasi", "peyot", "phi", "piadah", "piagam", "piah", "piak", "pial", "piala", "pialang", "pialing", "pialu", "piama", "piang", "pianggang", "pianggu", "pianika", "pianis", "piano", "pianola", "piantan", "piara", "piarit", "pias", "piaster", "piat", "piatu", "piawai", "pica", "picah", "picik", "picing", "picis", "picit", "pico", "picu", "picung", "pidana", "pidato", "pidi", "piezoelektrik", "piezoelektrisitas", "piezometer", "pigmen", "pigmentasi", "pigmi", "pigura", "pihak", "pijah", "pijak", "pijar", "pijat", "pijin", "pijinasi", "pijit", "pika", "pikap", "pikat", "pikau", "pike", "piket", "pikir", "piknik", "piknometer", "pikofarad", "pikogram", "pikolo", "piktografi", "piktogram", "pikul", "pikun", "pikup", "pil", "pilah", "pilak", "pilang", "pilar", "pilas", "pilaster", "pilau", "pileh", "pilek", "pileren", "pilih", "pilin", "pilis", "pilon", "pilong", "pilorus", "pilositas", "pilot", "pilsener", "pilu", "pilus", "pimpel", "pimpin", "pimping", "pin", "pina-pina", "pinak", "pinang", "pinar", "pincang", "pincuk", "pincut", "pinda", "pindah", "pindai", "pindang", "pines", "pinga", "pingai", "pinggah", "pinggan", "pinggang", "pinggir", "pinggul", "pingit", "pingkal", "pingkau", "pingpong", "pingsan", "pingul", "pinis", "pinisepuh", "pinisi", "pinjal", "pinjam", "pinjung", "pinset", "pinta", "pintal", "pintan", "pintang", "pintar", "pintas", "pintil", "pintu", "pintur", "pinus", "piogenik", "pion", "pioner", "piong", "pionir", "pipa", "pipet", "pipi", "pipih", "pipil", "pipis", "pipit", "pir", "pirai", "piramid", "piramida", "piramidal", "pirang", "piranograf", "piranogram", "piranometer", "pirasat", "pirau", "pireksia", "pirektik", "piretrum", "pirian", "piriform", "pirik", "piring", "pirit", "pirofilit", "pirofobia", "piroksen", "pirolisis", "piromania", "pirometalurgi", "pirometer", "piroteknik", "pirsa", "piruet", "pirus", "pis", "pisah", "pisang", "pisau", "pises", "pisiformis", "pisik", "pisin", "pisit", "pisitan", "pisovonus", "pispot", "pistol", "pistom", "piston", "pisuh", "pit", "pita", "pitak", "pitam", "pitanggang", "pitar", "pitarah", "pitawat", "piting", "pitiriasis", "pitis", "pitometer", "piton", "pitot", "pitut", "piuh", "piung", "piut", "piutang", "pivot", "piwulang", "piyik", "piza", "plafon", "plagiarisme", "plagiat", "plagiator", "plagioklas", "plakat", "plaket", "plaksegel", "plamir", "plan", "planaria", "planel", "planet", "planetarium", "planetoid", "plang", "plangkan", "planimeter", "planimetri", "planing", "planisfer", "plankton", "plano", "planologi", "planologis", "planospora", "plantase", "planula", "plasenta", "plaser", "plasma", "plasmodium", "plasmosis", "plastid", "plastik", "plastin", "plastis", "plastisitas", "plastogami", "plastometer", "plastron", "platelet", "platform", "platina", "platinoid", "platinum", "platisma", "plato", "platonik", "platonisme", "plaza", "plebisit", "pleidoi", "pleiogami", "pleistosen", "pleksus", "plengkung", "pleno", "pleonasme", "pleopod", "plerem", "plester", "pletora", "pleura", "plinplan", "plintat-plintut", "plinteng", "plintit", "pliosaurus", "pliosen", "ploi", "ploidi", "plombir", "plonci", "plonco", "plong", "plonga-plongo", "plontos", "plosif", "plot", "plug", "plumbago", "plumbum", "plumbung", "plural", "pluralis", "pluralisme", "pluralistis", "pluriform", "plus", "pluto", "plutokrasi", "plutonik", "plutonium", "pluvial", "pluviograf", "pluviometer", "pneumatika", "pneumatofos", "pneumatokista", "pneumonia", "poal", "poces", "poci", "pocok", "pocong", "podemporem", "podikal", "podium", "poetika", "pof", "pogrom", "pohon", "poikilohalin", "poikiloterm", "poin", "point", "poise", "poiseuille", "pojok", "pok", "pokah", "pokeng", "poker", "poket", "poko", "pokok", "pokrol", "poksai", "pokta", "pol", "pola", "polah", "polan", "polang", "polarimeter", "polarimetri", "polaris", "polarisasi", "polaritas", "poldan", "polder", "polemik", "polemis", "polen", "poleng", "polenter", "poler", "poles", "polet", "poliandri", "poliantus", "poliester", "polifagia", "polifase", "polifoni", "poligam", "poligami", "poligini", "poliglot", "poliglotisme", "poligon", "poligraf", "polihalin", "polikel", "poliket", "poliklinik", "polikrom", "polikultur", "polimer", "polimerisasi", "polinia", "polio", "polip", "polipeptida", "polipetal", "poliploid", "polipropilena", "polis", "polisakarida", "polisemi", "polisentrisme", "polisepal", "polisi", "polisiklis", "polisilogisme", "polisindeton", "polisional", "polispermi", "polister", "politbiro", "politeis", "politeisme", "politeistis", "politeknik", "politena", "politik", "politika", "politikus", "politis", "politisasi", "poliuretan", "polivini", "polizoa", "polka", "polkadot", "polmah", "polo", "polok", "polones", "polong", "polonium", "polonter", "polos", "polusi", "polutan", "polutif", "poma", "pomade", "pomologi", "pompa", "pompang", "pompon", "pompong", "pon", "ponakan", "ponco", "pondamen", "pondar", "ponderabilitas", "pondik", "pondoh", "pondok", "pondong", "pongah", "ponggang", "ponggok", "pongkol", "pongsu", "poni", "ponil", "ponok", "ponor", "pons", "pontang-panting", "ponten", "pontoh", "ponton", "poo", "pop", "popelin", "popi", "popok", "popor", "popularisasi", "popularitas", "populasi", "populer", "populis", "populisme", "pora", "porah", "porak-parik", "porak-peranda", "porak-poranda", "porfiria", "pori", "porisitas", "porno", "pornografi", "pornografis", "porok", "porong", "poros", "porositas", "porot", "porselen", "porsi", "porta", "portabel", "portal", "portepel", "portik", "portir", "porto", "portofolio", "pos", "pose", "poser", "posesif", "posisi", "positif", "positivisme", "positivistik", "positron", "positronium", "poskar", "poso", "posologi", "postar", "poster", "posterior", "postulat", "postur", "pot", "potas", "potasium", "potator", "potehi", "potel", "potensi", "potensial", "potensiometer", "potia", "potlot", "potol", "potong", "potret", "poundal", "poyang", "praanggapan", "praba", "prabu", "pradana", "pradesa", "pradesain", "pradini", "praduga", "pragmatik", "pragmatika", "pragmatis", "pragmatisme", "prah", "prahara", "prahoto", "prairi", "praja", "prajaksa", "prajurit", "prakala", "prakarsa", "prakarya", "prakata", "prakilang", "prakira", "prakondisi", "prakonsepsi", "praksis", "praktek", "praktik", "praktikan", "praktikum", "praktis", "praktisi", "pralahir", "pramenstruasi", "prameswari", "pramodern", "pramubakti", "pramubarang", "pramubayi", "pramudi", "pramugara", "pramugari", "pramujasa", "pramuka", "pramukamar", "pramuniaga", "pramupintu", "pramuria", "pramusaji", "pramusiwi", "pramutamu", "pramuwisata", "pramuwisma", "pranala", "pranata", "pranatacara", "pranatal", "prangas", "prangko", "pranikah", "prapalatal", "prapatan", "prapendapat", "praperadilan", "prapromosi", "prapuber", "prapubertas", "prapuna", "prapustaka", "prarasa", "prarekam", "praremaja", "prasaja", "prasangka", "prasaran", "prasarana", "prasasti", "prasawya", "prasejahtera", "prasejarah", "prasekolah", "praseminar", "praseodimium", "prasetia", "prasi", "prasmanan", "prastudi", "prasyarat", "pratersier", "pratinjau", "prawacana", "prawira", "prayang", "prayitna", "prayojana", "prayuwana", "preadvis", "preambul", "preantena", "preasetabulum", "predasi", "predator", "predestinasi", "predikat", "predikatif", "prediksi", "predisposisi", "preferensi", "prefiks", "prehistori", "prei", "prekositas", "prekursor", "preliminer", "prelude", "preman", "prematur", "premi", "premis", "premium", "premolar", "prenatal", "prenjak", "preparat", "preposisi", "prepotensi", "prerogatif", "pres", "presbiopia", "presbiterium", "preseden", "presensi", "presentabel", "presentasi", "presentil", "preservasi", "presesi", "presiden", "presidensial", "presidentil", "presidium", "presiositas", "presipitasi", "presisi", "preskripsi", "preskriptif", "prestasi", "prestise", "prestisius", "presto", "presumsi", "pretel", "pretensi", "prevalensi", "preventif", "preview", "prewangan", "pria", "priagung", "priayi", "pribadi", "pribumi", "prihatin", "prima", "primadona", "primas", "primata", "primbon", "primer", "primitif", "primogenetur", "primordial", "primordialisme", "primpen", "pringas-pringis", "pringgitan", "prinsip", "prinsipiil", "prioritas", "pripih", "pris", "prisma", "prit", "privasi", "privat", "privatisasi", "prive", "privilese", "pro", "proaktif", "probabilitas", "problem", "problematik", "procot", "prodemokrasi", "prodeo", "produk", "produksi", "produktif", "produktivitas", "produsen", "produser", "proenzim", "prof", "profan", "profanitas", "profase", "profesi", "profesional", "profesionalisme", "profesionalitas", "profesor", "profetik", "profil", "profilaksis", "profit", "profitabel", "profitabilitas", "proforma", "progeni", "progesteron", "prognosis", "program", "programa", "progres", "progresif", "progresivitas", "prohibisi", "proklamasi", "proklamator", "proklitik", "proksimal", "proksimat", "prokurasi", "prokurator", "prolat", "prolegomena", "proleksem", "proletar", "proletariat", "proletarisasi", "proliferasi", "prolog", "promenade", "prometium", "prominen", "prominensia", "promiskuitas", "promontorium", "promosi", "promotif", "promotor", "promovendus", "pronomina", "pronominal", "pronominalisasi", "prop", "propaganda", "propagandis", "propana", "propelan", "propeler", "properti", "propfan", "propilena", "propinsi", "proporsi", "proporsional", "proposal", "proposisi", "propulsi", "prosa", "prosais", "prosede", "prosedur", "prosedural", "prosenium", "proses", "prosesi", "prosesor", "proskonion", "proskriptivisme", "prosodi", "prosodis", "prospek", "prospeksi", "prospektif", "prospektus", "prostaglandin", "prostat", "prostitusi", "protagonis", "protaktinium", "protandri", "protandris", "protasis", "proteid", "protein", "proteinuria", "proteksi", "proteksionisme", "protektif", "protektorat", "proteolisis", "proteolitik", "protes", "protese", "protesis", "protestan", "protestantisme", "protista", "proto", "protofon", "protogenesis", "protokol", "protokoler", "protolisis", "protolitik", "proton", "protoneolitik", "protoplasma", "protoraks", "prototipe", "protozoa", "protrombin", "protuberansia", "provinsi", "provinsialisme", "provisi", "provisional", "provitamin", "provokasi", "provokatif", "provokator", "provokatur", "provos", "proyek", "proyeksi", "proyektil", "proyektor", "prudensial", "prurigo", "psalm", "psamolitoral", "pseudo", "pseudokata", "pseudomorf", "pseudonim", "psi", "psike", "psikiater", "psikiatri", "psikis", "psikoanalisis", "psikodrama", "psikofarmakologi", "psikofisiologis", "psikokinesis", "psikolepsi", "psikolinguistik", "psikolog", "psikologi", "psikologis", "psikometri", "psikometrika", "psikomotor", "psikomotorik", "psikoneurosis", "psikopat", "psikopati", "psikopatologi", "psikosastra", "psikoseksual", "psikosis", "psikosomatik", "psikoteknik", "psikoteknis", "psikoterapi", "psikotes", "psikotropika", "psikrofili", "psikrometer", "psikrometri", "psitakosis", "psoriasis", "pterodaktil", "pteropoda", "ptialin", "ptomaina", "puadai", "puah", "puak", "puaka", "pual", "pualam", "puan", "puas", "puasa", "puatang", "pub", "puber", "pubertas", "pubesens", "publik", "publikasi", "publisis", "publisistik", "publisitas", "pucang", "pucat", "pucik", "pucuk", "pucung", "pudar", "pudat", "pudel", "puder", "pudi", "puding", "pudur", "puerpera", "puerperium", "pugak", "pugar", "pugas", "puguh", "puih", "puing", "puisi", "puitis", "puitisasi", "puja", "pujangga", "puji", "pujuk", "pujur", "pujut", "pukah", "pukal", "pukang", "pukas", "pukat", "pukau", "puki", "pukul", "pul", "pula", "pulai", "pulan", "pulang", "pulas", "pulasan", "pulasari", "pulau", "pulen", "pulih", "pulik", "pulover", "pulp", "pulpa", "pulpen", "pulper", "pulsa", "pulsar", "pulsasi", "puluh", "pulun", "pulung", "pulut", "puma", "pumpun", "pun", "punah", "punai", "punakawan", "punar", "punat", "punca", "puncak", "punci", "pundak", "punden", "pundi", "punding", "punduh", "punduk", "pundung", "pung", "pungak-pinguk", "punggah", "punggai", "punggal", "punggawa", "pungguk", "punggung", "punggur", "pungkah", "pungkang", "pungkas", "pungkur", "pungli", "pungsi", "pungtuasi", "punguk", "pungut", "punia", "punjul", "punjung", "punjut", "punk", "puntal", "punti", "puntianak", "puntir", "puntuk", "puntul", "puntung", "punuk", "punya", "pupa", "pupil", "pupu", "pupuan", "pupuh", "pupuk", "pupur", "pupus", "puput", "pura", "purba", "purbakala", "purbani", "purbasangka", "purbawisesa", "purdah", "pure", "purgatif", "puri", "purifikasi", "purik", "puring", "puris", "purisme", "puristis", "puritan", "puritanisme", "purna", "purnabakti", "purnaintegrasi", "purnajabatan", "purnajual", "purnakarya", "purnama", "purnapugar", "purnasarjana", "purnatugas", "purnawaktu", "purpura", "purser", "puruk", "puruk-parak", "purun", "purus", "purusa", "purut", "purwa", "purwakanti", "purwapada", "purwarupa", "pus", "pusa", "pusak", "pusaka", "pusang", "pusar", "pusara", "pusat", "puser", "pusing", "puskesmas", "puso", "puspa", "puspadana", "puspadanta", "puspamala", "pusparagam", "puspas", "puspawarna", "puspita", "pusta", "pustaha", "pustaka", "pustakaloka", "pusu", "pusung", "pusut", "putar", "putat", "puter", "puti", "putih", "putik", "puting", "putra", "putranda", "putrawali", "putrefaksi", "putresin", "putri", "putriditas", "putu", "putus", "putut", "puvi-puvi", "puyan", "puyeng", "puyer", "puyonghai", "puyu", "puyuh", "qaf", "qari", "qariah", "qasar", "qiamulail", "qiraah", "qiraat", "qudsi", "quran", "raba", "raba-rubu", "rabak", "raban", "rabana", "rabani", "rabas", "rabat", "rabet", "rabi", "rabies", "rabik", "rabit", "rabiulakhir", "rabiulawal", "rabotase", "rabu", "rabuk", "rabulizat", "rabun", "rabung", "rabut", "racak", "racau", "racik", "racuh", "racun", "rad", "rada", "radaah", "radah", "radai", "radak", "radang", "radar", "radas", "raden", "rades", "radi", "radiah", "radial", "radian", "radians", "radiasi", "radiator", "radif", "radikal", "radikalisasi", "radikalisme", "radiks", "radikula", "radin", "radio", "radioaktif", "radioaktivitas", "radiogenetika", "radiogoniometer", "radiogoniometri", "radiograf", "radiografi", "radiogram", "radioisotop", "radiokarbon", "radiokimia", "radiolisis", "radiolog", "radiologi", "radiolokasi", "radiometer", "radiosonde", "radiotelefoni", "radiotelegrafi", "radiotelegrafis", "radioterapi", "radis", "radium", "radius", "radon", "radu", "radurisasi", "rafak", "rafaksi", "rafe", "rafi", "rafia", "rafidi", "rafik", "raflesia", "raga", "ragam", "ragang", "ragas", "ragawi", "ragi", "ragib", "ragil", "ragu", "raguk", "ragum", "ragung", "ragut", "rahak", "rahang", "rahap", "raharja", "rahasia", "rahat", "rahayu", "rahib", "rahim", "rahimakallah", "rahimakumullah", "rahmah", "rahman", "rahmat", "rahmatullah", "rahu", "rai", "raib", "raigedeg", "raih", "raimuna", "rais", "raja", "rajab", "rajabiah", "rajah", "rajalela", "rajam", "rajang", "rajapati", "rajawali", "rajim", "rajin", "rajok", "rajuk", "rajul", "rajungan", "rajut", "rak", "raka", "rakaat", "rakah", "rakanita", "rakap", "rakat", "rakawira", "rakbol", "raket", "rakila", "rakis", "rakit", "rakitis", "rakna", "raksa", "raksabumi", "raksasa", "raksi", "rakuk", "rakung", "rakus", "rakut", "rakyat", "rakyu", "ralat", "ralip", "ram", "rama", "rama-rama", "ramadan", "ramah", "ramai", "ramal", "ramanda", "ramania", "rambah", "rambai", "rambak", "ramban", "rambang", "rambat", "rambeh", "rambih", "rambu", "rambun", "rambung", "rambut", "rambutan", "rambuti", "rames", "rami", "ramin", "ramirezi", "rampa", "rampai", "rampak", "rampang", "rampas", "rampat", "ramping", "rampok", "rampuh", "rampung", "rampus", "ramu", "ramus", "rana", "ranah", "ranai", "ranap", "ranca", "rancah", "rancak", "rancam", "rancang", "rancap", "rancau", "rancu", "rancung", "randa", "randa-rondo", "randah", "randai", "randajawan", "randak", "randat", "randau", "randek", "randi", "randu", "randuk", "randung", "rang", "rangah", "rangai", "rangak", "rangam", "rangas", "rangga", "ranggah", "ranggak", "ranggas", "ranggeh", "ranggi", "ranggit", "ranggul", "ranggung", "rangin", "rangina", "rangka", "rangkai", "rangkak", "rangkam", "rangkang", "rangkap", "rangkaya", "rangket", "rangkiang", "rangkik", "rangking", "rangkit", "rangkok", "rangkul", "rangkum", "rangkung", "rangkup", "rangkus", "rangkut", "rango-rango", "rangrang", "rangrangan", "rangsang", "rangu", "rangum", "rangup", "rani", "ranjah", "ranjang", "ranjau", "ranji", "ranjing", "rankine", "ransel", "ransum", "rantai", "rantam", "rantang", "rantas", "rantau", "rante", "ranti", "ranting", "rantuk", "rantus", "ranum", "ranyah", "ranyang", "ranyau", "ranyun", "rap", "rapah", "rapai", "rapak", "rapal", "rapang", "rapat", "rapel", "rapi", "rapiah", "rapik", "rapor", "rapsodi", "rapu", "rapuh", "rapun", "rapung", "rapus", "raraha", "rarai", "rarak", "rarangan", "raras", "ras", "rasa", "rasai", "rasam", "rasamala", "rasan", "rasau", "rasberi", "rase", "rasem", "rasi", "rasia", "rasial", "rasialis", "rasialisme", "rasian", "rasio", "rasional", "rasionalis", "rasionalisasi", "rasionalisme", "rasionalitas", "rasisme", "raster", "rasuk", "rasul", "rasuli", "rasulullah", "rasyid", "rasywah", "rat", "rata", "ratah", "ratap", "ratib", "ratifikasi", "ratna", "ratu", "ratus", "rau", "raudah", "raudatul", "raudatulatfal", "raum", "raun", "raung", "raup", "raut", "rawa", "rawah", "rawai", "rawak", "rawan", "rawang", "rawat", "rawatib", "rawi", "rawin", "rawit", "rawon", "rawuh", "raya", "rayah", "rayan", "rayang", "rayap", "rayau", "rayon", "rayonisasi", "rayu", "razia", "reagen", "reagensia", "reak", "reaksi", "reaksioner", "reaktan", "reaktans", "reaktansi", "reaktif", "reaktivitas", "reakton", "reaktor", "reaktualisasi", "real", "realis", "realisasi", "realisme", "realistis", "realitas", "realokasi", "realpolitik", "reasuransi", "reaumur", "reba", "rebab", "rebah", "rebak", "reban", "rebana", "rebas", "rebat", "rebeh", "rebek", "rebes", "rebet", "rebewes", "reboisasi", "rebon", "rebu", "rebuk", "rebung", "rebus", "rebut", "reca", "recak", "receh", "recet", "recik", "recok", "recup", "reda", "redah", "redaksi", "redaksional", "redaktur", "redam", "redang", "redap", "redefinisi", "redih", "redik", "redoks", "reduksi", "reduksionisme", "redum", "redup", "reduplikasi", "redusir", "redut", "reedukasi", "reekspor", "referat", "referen", "referendaris", "referendum", "referensi", "referensial", "reflasi", "refleks", "refleksi", "reflektif", "reflektor", "reformasi", "reformis", "refraksi", "refraktometer", "refraktor", "refrein", "refrigerator", "regah", "regan", "regang", "regas", "regat", "regata", "regel", "regen", "regenarasi", "regenerasi", "reges", "regi", "regio", "region", "regional", "regionalisme", "register", "registrasi", "regisur", "reglemen", "reglementer", "regol", "regresi", "regresif", "regu", "reguk", "regularisasi", "regulasi", "regulatif", "regulator", "reguler", "regup", "rehab", "rehabilitasi", "rehabilitatif", "rehal", "rehat", "rehidrasi", "reideologisasi", "reindoktrinasi", "reinkarnasi", "reintegrasi", "reinterpretasi", "reinvestasi", "reja", "rejab", "rejah", "rejan", "rejang", "rejasa", "rejeh", "rejeng", "rejuk", "rek", "reka", "rekah", "rekal", "rekalkulasi", "rekalsitran", "rekam", "rekan", "rekanalisasi", "rekanita", "rekap", "rekapangan", "rekapitalisasi", "rekapitulasi", "rekat", "rekata", "rekayasa", "reken", "rekening", "rekes", "rekisitor", "rekisitur", "reklamasi", "reklame", "reklasering", "reklasifikasi", "rekognisi", "rekoleksi", "rekombinan", "rekombinasi", "rekomendasi", "rekonsiliasi", "rekonstruksi", "rekonstruktif", "rekonvensi", "rekor", "rekreasi", "rekrut", "rekrutmen", "reksa", "rekstok", "rektifikasi", "rekto", "rektor", "rekuiem", "rekuisisi", "rekuisitor", "rekurs", "rel", "rela", "relai", "relaks", "relaksasi", "relang", "relap", "relas", "relasi", "relatif", "relativisasi", "relativisme", "relativitas", "relau", "relban", "relevan", "relevansi", "reli", "reliabel", "reliabilitas", "relief", "religi", "religiositas", "religius", "relik", "relikui", "relikwi", "relokasi", "reluk", "relung", "rem", "rema", "remah", "remai", "remaja", "remak", "remanen", "remang", "remas", "rematik", "rematisme", "rematoid", "rembah", "rembang", "rembas", "rembat", "rembega", "rembes", "rembet", "rembih", "rembuk", "rembulan", "rembunai", "remburs", "rembut", "remedi", "remedial", "remediasi", "remeh", "remenia", "remet", "remi", "remiak", "remiling", "reminisensi", "remis", "remisi", "remoh", "rempa", "rempah", "rempak", "rempela", "rempelas", "rempenai", "rempeyek", "rempong", "rempuh", "rempuk", "rempus", "remujung", "remuk", "remunerasi", "remunggai", "rena", "renah", "renai", "renaisans", "renal", "renang", "rencah", "rencak", "rencam", "rencana", "rencang", "rencat", "renceh", "renceng", "rencet", "rencong", "renda", "rendabel", "rendah", "rendam", "rendang", "rendemen", "rendeng", "rendet", "rendong", "renegosiasi", "renek", "renes", "reng", "rengadean", "rengap", "rengas", "rengat", "rengeh", "rengek", "rengeng", "rengga", "renggam", "renggang", "renggat", "renggek", "rengges", "rengginang", "renggut", "rengit", "rengkah", "rengkam", "rengkeh", "rengket", "rengkit", "rengkong", "rengkudah", "rengkuh", "rengrengan", "rengsa", "rengus", "rengut", "renik", "renin", "renium", "renjana", "renjatan", "renjeng", "renjis", "renjong", "renjul", "renkinang", "renovasi", "renta", "rentabilitas", "rentak", "rentaka", "rental", "rentan", "rentang", "rentap", "rentas", "rente", "renteng", "rentenir", "rentet", "renti", "rentik", "renumerasi", "renung", "renvoi", "renyah", "renyai", "renyam", "renyang", "renyap", "renyau", "renyeh", "renyek", "renyem", "renyuk", "renyut", "reog", "reol", "reologi", "reometri", "reorganisasi", "reorientasi", "reostat", "reot", "rep-repan", "repang", "reparasi", "repas", "repatrian", "repatriasi", "repek", "repertoar", "repertorium", "repes", "repet", "repeten", "repetisi", "repetitif", "repetitor", "repih", "replik", "replika", "repolarisasi", "repormir", "reportase", "reporter", "reposisi", "repot", "representasi", "representatif", "represi", "represif", "reproduksi", "reprografi", "reptil", "reptilia", "republik", "republiken", "repuh", "repui", "reput", "reputasi", "rerak", "rerangka", "reranting", "reras", "rerata", "reresanan", "rerongkong", "rerot", "rerugi", "reruntuk", "resa", "resah", "resak", "resam", "resan", "resap", "resbang", "resek", "resensi", "resensor", "resep", "resepsi", "resepsionis", "reseptif", "reseptor", "reserse", "resersir", "reservat", "reserve", "reservoir", "reses", "resesi", "resi", "residen", "residivis", "residivisme", "residivistis", "residu", "resik", "resiko", "resimen", "resin", "resinol", "resipien", "resiprok", "resiprokal", "resistan", "resistans", "resistansi", "resistor", "resital", "resitasi", "resmi", "resolusi", "resonan", "resonansi", "resonator", "resor", "resorpsi", "resorsinol", "resosialisasi", "respek", "respirasi", "respirator", "responden", "respons", "responsi", "responsif", "restan", "restiformis", "restitusi", "restoran", "restorasi", "restriksi", "restriktif", "restrukturisasi", "restu", "restung", "resu", "resultan", "resume", "resurjensi", "ret", "reta", "retail", "retak", "retardasi", "retas", "retek", "retenidos", "retensi", "retet", "retih", "retikuler", "retina", "retinakulum", "retinitis", "retok", "retorik", "retorika", "retoris", "retorsi", "retradisionalisasi", "retreatisme", "retret", "retribusi", "retro", "retroaktif", "retrofleks", "retrofleksi", "retrogresi", "retrogresif", "retrolingual", "retromamal", "retromandibuler", "retrospeksi", "retur", "retus", "reumatismos", "reuni", "reunifikasi", "revaksinasi", "revaluasi", "revans", "reverberasi", "revisi", "revisibilitas", "revisionis", "revitalisasi", "revolusi", "revolusioner", "revolver", "rewak", "rewan", "rewanda", "rewang", "rewel", "rewet", "reyal", "reyot", "rezeki", "rezim", "rho", "ria", "riadat", "riah", "riak", "rial", "riam", "rian", "riang", "riap", "rias", "riba", "ribang", "ribat", "ribatat", "riben", "riboflavin", "ribosom", "ribu", "ribut", "rica", "ricau", "ricik", "ricuh", "rida", "ridan", "ridi", "riding", "ridip", "ridu", "rigai", "rigi-rigi", "rihat", "rihlah", "riil", "rijal", "rijalugaib", "rijalulgaib", "rijang", "rikuh", "rileks", "rilis", "rim", "rima", "rimas", "rimata", "rimba", "rimbas", "rimbat", "rimbawan", "rimbun", "rime", "rimis", "rimpang", "rimpel", "rimpi", "rimpuh", "rimpung", "rinai", "rincih", "rincis", "rincu", "rindang", "rinding", "rindu", "ring", "ringan", "ringgit", "ringih", "ringik", "ringin", "ringis", "ringkai", "ringkas", "ringkih", "ringkik", "ringking", "ringkuk", "ringkus", "ringsek", "ringsing", "rini", "rinitis", "rinjing", "rinoskop", "rintang", "rintas", "rintih", "rintik", "rintis", "rinyai", "riol", "ripit", "ripta", "ripuh", "ripuk", "ririt", "risa", "risak", "risalah", "risau", "riset", "risi", "risik", "risiko", "risit", "riskan", "rit", "ritel", "ritma", "ritme", "ritmis", "ritual", "ritul", "ritus", "riuh", "riuk", "riung", "rival", "rivalitas", "riwan", "riwayat", "robak-rabik", "robat-rabit", "robek", "roboh", "robok", "robot", "robotika", "rocet", "roda", "rodan", "rodat", "rodensial", "rodentisida", "rodi", "rodium", "rodok", "rodolit", "rodong", "roga", "rogoh", "rogok", "rogol", "roh", "rohani", "rohaniah", "rohmat", "rohulkudus", "roi", "rojeng", "rojol", "rok", "rokade", "roker", "roket", "roki", "rokok", "rol", "rolet", "rolpres", "roma", "roman", "romanistik", "romansa", "romantik", "romantika", "romantikus", "romantis", "romantisisme", "romawi", "rombak", "rombang-rambing", "rombeng", "rombik", "rombohedron", "romboid", "rombok", "rombong", "rombus", "romet", "romok", "romol-romol", "romong", "rompak", "rompal", "rompang", "rompeng", "rompes", "rompi", "rompoh", "rompok", "rompong", "rompyok", "romsus", "romusa", "rona", "ronce", "roncet", "ronda", "rondah-rondih", "ronde", "rondo", "rondok", "roneo", "rong", "rongak", "rongga", "ronggang", "ronggeng", "ronggok", "ronggong", "rongkoh", "rongkok", "rongkol", "rongkong", "rongos", "rongrong", "rongseng", "rongsok", "ronta", "rontek", "rontgen", "rontok", "ronyeh", "ronyok", "ropak-rapik", "rorehe", "rorod", "ros", "rosario", "rosbang", "rosela", "roseng", "roseola", "roset", "rosin", "rosok", "rosot", "rotan", "rotasi", "rotator", "roti", "rotograf", "rotok", "rowa", "rowot", "royak", "royal", "royalti", "royan", "royemen", "royer", "royong", "rua", "ruadat", "ruah", "ruai", "ruak", "ruam", "ruang", "ruap", "ruas", "ruat", "ruaya", "ruba-ruba", "rubah", "rubai", "rubaiat", "ruban", "rubanat", "rubel", "rubela", "rubeola", "rubiah", "rubidium", "rubik", "rubin", "rubing", "rubrik", "rubu", "rubung", "rucah", "rudah", "rudal", "rudapaksa", "rudi", "rudimen", "rudin", "rudu", "rudus", "rugbi", "rugi", "ruh", "ruhbahnat", "ruhban", "ruhbanat", "ruhbaniat", "ruilslag", "ruing", "ruit", "rujah", "rujak", "ruji", "rujuk", "rukam", "rukhsah", "rukiah", "ruko", "ruku", "rukuh", "rukuk", "rukun", "rukyat", "rukyatulhilal", "rum", "rumah", "rumal", "rumba", "rumbah", "rumbai", "rumbia", "rumbing", "rumbu", "rumen", "rumenia", "rumi", "rumin", "ruminansi", "ruminansia", "rumit", "rumor", "rumpakan", "rumpang", "rumpi", "rumpil", "rumpon", "rumpun", "rumput", "rumrum", "rumuk", "rumung", "rumus", "runcing", "runcit", "runding", "rundu-rundu", "runduk", "rundung", "rungau", "runggas", "runggu", "runggu-rangga", "rungguh", "runggut", "rungkau", "rungkuh", "rungkun", "rungkup", "rungu", "rungus", "rungut", "runjam", "runjang", "runjau", "runjung", "runtai", "runtang-runtung", "runtas", "runti", "runtih", "runtuh", "runtun", "runtut", "runut", "runyam", "runyut", "ruok", "rupa", "rupee", "rupiah", "rurut", "rusa", "rusak", "rusuh", "rusuk", "rutab", "rute", "rutenium", "ruterfordium", "rutin", "rutuk", "rutup", "ruwah", "ruwat", "ruwet", "ruyak", "ruyap", "ruyung", "ruyup", "saadah", "saadin", "saanen", "saat", "sab-sab", "saba", "sabah", "sabak", "saban", "sabana", "sabang", "sabar", "sabas", "sabasani", "sabat", "sabatikal", "sabda", "sabel", "saben", "sabet", "sabi", "sabil", "sabilillah", "sabit", "sabitah", "sableng", "sablon", "sabo", "sabot", "sabotase", "sabsab", "sabtu", "sabuk", "sabun", "sabung", "sabur", "sabut", "sad", "sadah", "sadai", "sadak", "sadang", "sadap", "sadar", "sadariah", "sadarulkalam", "sadarusalam", "sadau", "sadel", "sadik", "sadin", "sading", "sadir", "sadis", "sadisme", "sadistis", "sado", "sadrah", "sadran", "sadu", "sadur", "saf", "safa", "safar", "safari", "safi", "safih", "safinah", "safinatunajah", "safir", "safrah", "safron", "safsaf", "safsah", "saga", "sagai", "sagang", "sagar", "sagitarius", "sagon", "sagu", "saguer", "sagur", "sah", "sahabat", "sahaja", "saham", "sahan", "sahang", "sahap", "sahara", "saharah", "sahaya", "sahayanda", "sahda", "sahdu", "sahi", "sahib", "sahibulbait", "sahibulhajat", "sahibulhikayat", "sahifah", "sahih", "sahir", "sahkan", "sahmura", "sahur", "sahut", "sai", "saif", "sailan", "sailo", "saing", "sains", "saintis", "sair", "sais", "saja", "sajadah", "sajak", "sajang", "sajen", "saji", "sak", "saka", "sakai", "sakal", "sakang", "sakap", "sakar", "sakarida", "sakarimeter", "sakarin", "sakarosa", "sakat", "sake", "sakelar", "sakelek", "sakhawat", "sakhi", "sakhrat", "sakhsi", "saki", "sakinah", "saking", "sakit", "saklek", "sakral", "sakramen", "sakramental", "sakramentalia", "sakratulmaut", "sakrilegi", "sakristi", "sakrokoksigeal", "sakrolumbal", "sakrum", "saksama", "saksang", "saksi", "saksofon", "sakti", "saku", "sakura", "sal", "sala", "salaf", "salah", "salai", "salak", "salam", "salang", "salar", "salaris", "salasal", "salat", "salatin", "saldo", "sale", "saleh", "salem", "salep", "sali", "salib", "salihah", "salim", "salin", "salina", "salindia", "salindra", "saling", "salinisasi", "salinitas", "salinometer", "salip", "salir", "salira", "salivasi", "salju", "salmon", "salmonela", "salon", "salpeter", "salping", "saltasi", "salto", "saluir", "saluk", "salung", "salur", "salut", "salvarsan", "salvo", "sama", "samad", "samak", "saman", "samanera", "samaniah", "samapta", "samar", "samara", "samarium", "samas", "samawi", "samba", "sambal", "sambalewa", "sambang", "sambangan", "sambar", "sambat", "sambau", "samben", "sambet", "sambi", "sambil", "sambiloto", "sambit", "sambuk", "sambung", "sambur", "sambut", "sami", "samidra", "samijaga", "samin", "samir", "samo-samo", "samovar", "sampa", "sampah", "sampai", "sampak", "sampakan", "sampan", "sampang", "sampanye", "sampar", "samparan", "sampat", "sampean", "sampek", "sampel", "samper", "sampeyan", "sampil", "sampilik", "samping", "sampir", "sampling", "samplok", "sampo", "sampu", "sampuk", "sampul", "sampur", "samsak", "samsam", "samseng", "samsir", "samsiti", "samsu", "samudra", "samuh", "samum", "samun", "samurai", "sana", "sanad", "sanak", "sanat", "sanatogen", "sanatorium", "sanatulhijriah", "sanatulmiladiah", "sanawiah", "sanca", "sanda", "sandal", "sandang", "sandar", "sandel", "sandera", "sandi", "sanding", "sandiwara", "sando", "sandung", "sandungan", "sanering", "sang", "sanga", "sangai", "sangan", "sangar", "sangat", "sangau", "sangga", "sanggah", "sanggam", "sanggama", "sanggan", "sanggang", "sanggar", "sanggarunggi", "sanggat", "sanggep", "sanggerah", "sangging", "sanggit", "sanggrah", "sanggraloka", "sanggul", "sanggup", "sanggurdi", "sangha", "sangih", "sangir", "sangit", "sangka", "sangkak", "sangkakala", "sangkal", "sangkala", "sangkan", "sangkar", "sangkil", "sangku", "sangkul", "sangkur", "sangkuriang", "sangkut", "sangkut-paut", "sangli", "sangling", "sanglir", "sangon", "sangrai", "sangsai", "sangsam", "sangsang", "sangsi", "sangu", "sanguifikasi", "sangulun", "sangyang", "sani", "sanik", "sanitas", "sanitasi", "saniter", "sanjai", "sanjak", "sanjang", "sanjung", "sanksi", "sano", "sansai", "sanseviera", "sanskerta", "santa", "santai", "santak", "santam", "santan", "santap", "santase", "santau", "santer", "santet", "santiaji", "santing", "santir", "santo", "santonin", "santri", "santun", "santung", "sanubari", "sap", "sapa", "sapai", "saparantu", "sapat", "sapau", "sapersi", "sapi", "sapih", "sapir", "sapit", "sapogenin", "saponin", "saprofit", "sapta", "saptadarma", "saptamarga", "saptapesona", "sapu", "saput", "saputangan", "sar", "sara", "saradasi", "saraf", "sarak", "saran", "sarana", "sarang", "sarangan", "sarap", "sarasehan", "sarat", "sarau", "sarden", "sardencis", "sarean", "sareh", "sarekat", "saren", "sarengat", "sarhad", "sari", "saridele", "sarik", "sarikan", "saring", "sarira", "sarirah", "sarit", "sarjana", "sarju", "sarkasme", "sarkastis", "sarkode", "sarkoderma", "sarkofagus", "sarkolema", "sarkologi", "sarkoma", "sarkoplasma", "saron", "sarsaparila", "sartan", "saru", "saruk", "sarung", "sarut", "sarwa", "sasa", "sasak", "sasakala", "sasana", "sasando", "sasap", "sasar", "sasau", "sasi", "sasian", "sasis", "sasmita", "sastra", "sasus", "sat", "satai", "satak", "satang", "satanologi", "satar", "sate", "satelit", "satih", "satin", "satinet", "satir", "satire", "satiris", "sato", "satori", "satpam", "satria", "satron", "satu", "saturnus", "saturometer", "satwa", "satyagraha", "satyalencana", "satyawacana", "sau", "saudagar", "saudara", "saudari", "sauh", "saujana", "sauk", "saum", "sauna", "saung", "saur", "saus", "saut", "sauvinis", "sauvinisme", "sauvinistis", "saw", "sawa", "sawab", "sawah", "sawai", "sawala", "sawan", "sawang", "sawangan", "sawar", "sawat", "sawer", "sawi", "sawit", "sawo", "sawut", "saya", "sayak", "sayang", "sayap", "sayat", "sayembara", "sayet", "sayib", "sayid", "sayidani", "sayidi", "sayidina", "sayu", "sayung", "sayup", "sayur", "seba", "sebab", "sebahat", "sebai", "sebak", "sebal", "sebam", "sebar", "sebarang", "sebarau", "sebasah", "sebat", "sebaur", "sebekah", "sebel", "sebelas", "sebeng", "sebentar", "seberang", "seberhana", "sebet", "sebit", "seblang", "sebrot", "sebu", "sebuk", "sebum", "sebun", "sebura", "seburas", "seburu", "seburus", "seburut", "sebut", "secang", "seceng", "secerek", "secina", "sedahan", "sedak", "sedam", "sedan", "sedang", "sedap", "sedat", "sedatif", "sedativa", "sedawai", "sedekah", "sedekap", "sedelinggam", "sedeng", "sederhana", "sederum", "sedia", "sediakala", "sedih", "sedikit", "sedimen", "sedimentasi", "sedimenter", "sedingin", "sedong", "sedot", "sedu", "seduayah", "seduh", "sefalopoda", "sefalotoraks", "seg", "sega", "segah", "segak", "segala", "segan", "seganda", "segani", "segar", "segara", "segata", "segeger", "segeh", "segel", "segenap", "segera", "segi", "segianya", "segitiga", "segmen", "segmental", "segmentasi", "segregasi", "seguna", "seh", "seharah", "sehat", "sehingga", "seia", "seilometer", "sein", "seismik", "seismograf", "seismogram", "seismolog", "seismologi", "seismometer", "sejahtera", "sejajar", "sejak", "sejarah", "sejarawan", "sejari", "sejat", "sejati", "sejingkat", "sejuk", "sek", "seka", "sekadar", "sekah", "sekak", "sekakar", "sekakmat", "sekal", "sekala", "sekali", "sekaligus", "sekalipun", "sekalor", "sekam", "sekan", "sekang", "sekap", "sekapar", "sekar", "sekarang", "sekarat", "sekat", "sekata", "sekaten", "sekati", "sekaut", "sekeber", "sekebun", "sekedeng", "sekeduduk", "sekedup", "sekelat", "sekelebatan", "sekelian", "sekema", "sekendal", "sekendi", "sekengkeng", "sekepat", "sekeram", "sekeri", "sekerindangan", "sekering", "sekesel", "seketeng", "sekh", "sekian", "sekilwak", "sekip", "sekira", "sekiram", "sekitar", "seko", "sekoci", "sekoi", "sekolah", "sekon", "sekongkol", "sekonyong-konyong", "sekop", "sekopong", "sekoteng", "sekrap", "sekresi", "sekret", "sekreta", "sekretariat", "sekretaris", "sekretin", "sekring", "sekrip", "sekrup", "seks", "seksi", "seksmaniak", "seksolog", "seksologi", "seksologis", "sekstan", "sekstet", "seksual", "seksualitas", "sektarian", "sektarianisme", "sekte", "sektor", "sektoral", "sekuas", "sekui", "sekul", "sekularis", "sekularisasi", "sekularisme", "sekularitas", "sekuler", "sekulir", "sekunar", "sekunder", "sekunyit", "sekuritas", "sekuriti", "sekutu", "sel", "sela", "selabar", "selaber", "selaberak", "selada", "seladang", "seladon", "selagi", "selai", "selain", "selaju", "selak", "selaka", "selakarang", "selaku", "selalu", "selam", "selamat", "selamba", "selampai", "selampe", "selampek", "selampit", "selan", "selancak", "selancang", "selancar", "selang", "selangat", "selangka", "selangkang", "selangkup", "selanting", "selap", "selapan", "selaput", "selar", "selara", "selarak", "selaras", "selarung", "selasa", "selasar", "selasih", "selat", "selatan", "selawah", "selawat", "selawe", "selaya", "selayun", "selayur", "sele", "selebaran", "selebran", "selebrasi", "selebritas", "selebriti", "selebu", "seleder", "selederi", "seledri", "seleguri", "selekeh", "selekoh", "selekor", "seleksi", "selekta", "selektif", "selektivitas", "seleler", "selembana", "selembubu", "selempada", "selempang", "selempukau", "selempuri", "selendang", "selender", "selendro", "selenggara", "selengkatan", "selenium", "selenografi", "selenologi", "selentang-selenting", "selentik", "selenting", "seleo", "selepa", "selepang", "selepat", "selepe", "seleper", "selepetan", "selepi", "selera", "selerak", "selerang", "seleret", "selesa", "selesai", "selesma", "seletuk", "seleweng", "selia", "seliap", "selibat", "selibu", "selibut", "selidik", "seligi", "seligit", "selimang", "selimpang", "selimpat", "selimut", "selinap", "selindung", "seling", "selingar", "selingkit", "selingkuh", "selingkup", "selip", "selipar", "selir", "selira", "selirak", "selirat", "seliri", "selisih", "selisik", "selisip", "selisir", "selit", "seliwer", "selo", "selofan", "selok", "seloka", "selokan", "seloki", "selom", "selomot", "selompret", "selon", "selonding", "selong", "selongkar", "selongsong", "selonjor", "selonong", "selop", "seloroh", "selot", "seloyak", "seloyong", "selter", "seluang", "seluar", "selubung", "seludang", "seludu", "seluduk", "seludup", "selui", "seluk", "seluk-beluk", "selukat", "selukung", "seluler", "seluloid", "selulosa", "selulup", "selulur", "selumar", "selumbar", "selumbari", "selumbat", "selumu", "selumur", "seluncur", "selundat", "selundup", "selungkang", "selungkup", "selup", "selupan", "selupat", "selurah", "seluru", "seluruh", "selusuh", "selusup", "selusur", "selut", "sema", "semadi", "semafor", "semah", "semai", "semaja", "semak", "semalu", "semambu", "semampai", "semampang", "semampat", "seman", "semanak", "semandan", "semandarasa", "semandarasah", "semandera", "semang", "semangat", "semanggi", "semangka", "semangkok", "semangkuk", "semantan", "semantik", "semantis", "semantung", "semaput", "semara", "semarai", "semarak", "semaram", "semarmendem", "semat", "semata", "semawang", "semawar", "semaya", "semayam", "semayi", "sembab", "sembabat", "sembada", "sembagi", "sembah", "sembahyang", "sembai", "sembak", "sembam", "sembap", "sembar", "sembarang", "sembari", "sembat", "sembawang", "sembayan", "sembelih", "sembelit", "sember", "semberap", "semberip", "sembesi", "sembeta", "sembiang", "sembilan", "sembilang", "sembilik", "sembilu", "sembir", "sembirat", "semboyan", "sembrani", "sembrono", "sembuang", "sembuh", "sembul", "sembung", "sembunyi", "sembur", "semburat", "semburit", "semecah", "semedera", "semejana", "semeleh", "sememeh", "semen", "semena", "semenanjung", "semenda", "semendarasa", "semenggah", "semenjak", "semenjana", "sementang", "sementara", "sementasi", "sementelah", "sementung", "semerawang", "semerbak", "semerdanta", "semesta", "semester", "semi", "semiang", "semidiurnal", "semifinal", "semifinalis", "semiidiom", "semikonduktor", "semilat", "seminai", "seminar", "seminari", "seminaris", "seminau", "semiologi", "semiotik", "semiotika", "semipermanen", "semir", "semitisme", "semivokal", "semok", "sempada", "sempadan", "sempak", "sempal", "sempalai", "sempana", "sempang", "sempat", "sempelah", "sempena", "sempil", "sempit", "semplak", "sempoyong", "sempoyongan", "semprit", "semprong", "semprot", "sempul", "sempur", "sempuras", "sempurna", "semrawut", "semringah", "semsem", "semu", "semua", "semunding", "semunian", "semur", "semut", "sen", "sena", "senak", "senam", "senamaki", "senandika", "senandung", "senang", "senangin", "senantan", "senantiasa", "senapan", "senapati", "senar", "senarai", "senario", "senat", "senator", "senawan", "senawar", "senawat", "senawi", "senda", "sendal", "sendalu", "sendam", "sendang", "sendar", "sendarat", "sendaren", "sendat", "sendawa", "sendayan", "sendayang", "sendel", "sendeng", "sender", "senderik", "senderung", "senderut", "sendi", "sending", "sendiri", "sendocong", "sendok", "sendon", "sendorong", "sendratari", "sendu", "senduduk", "senduk", "senen", "senewen", "seng", "sengaja", "sengal", "sengam", "sengangar", "sengangkar", "sengap", "sengar", "sengar-sengir", "sengarat", "sengaring", "sengat", "sengau", "sengelat", "senget", "senggak", "senggang", "senggara", "senggat", "senggau", "senggayut", "senggerahan", "senggeruk", "sengget", "senggiling", "senggol", "senggora", "senggugu", "senggugut", "sengguk", "senggulung", "senggut", "sengih", "sengingih", "sengir", "sengit", "sengkak", "sengkal", "sengkalan", "sengkang", "sengkar", "sengkarut", "sengkawang", "sengkayan", "sengked", "sengkedan", "sengkek", "sengkela", "sengkelang", "sengkelat", "sengkeling", "sengkelit", "sengkenit", "sengker", "sengketa", "sengkil", "sengkilit", "sengkuang", "sengkuap", "sengon", "sengsai", "sengsam", "sengsara", "sengsem", "sengsurit", "senguk", "sengungut", "sengut", "seni", "senigai", "senil", "senilitas", "seniman", "senin", "senior", "senioritas", "senja", "senjak", "senjang", "senjata", "senjolong", "senjong", "senohong", "senonoh", "senoyong", "sensasi", "sensasional", "sensibel", "sensibilitas", "sensitif", "sensitivitas", "sensor", "sensoris", "sensual", "sensualisme", "sensualitas", "sensur", "sensus", "senta", "sentada", "sentadu", "sentagi", "sentak", "sentaka", "sental", "sentali", "sentana", "sentap", "sentara", "senteng", "senter", "senterpor", "senti", "sentiare", "sentiasa", "sentigram", "sentil", "sentiliter", "sentimen", "sentimental", "sentimentalitas", "sentimentil", "sentimeter", "senting", "sentiong", "sentiung", "sentol", "sentong", "sentosa", "sentra", "sentral", "sentralisasi", "sentralistis", "sentrifugal", "sentripetal", "sentrum", "sentuh", "sentuk", "sentul", "sentung", "senu", "senuh", "senuk", "senunggang", "senur", "senyampang", "senyap", "senyar", "senyawa", "senyum", "senyur", "seok", "seolah-olah", "sep", "sepada", "sepah", "sepai", "sepak", "sepakat", "sepal", "sepala-pala", "sepam", "sepan", "sepanar", "sepandri", "sepang", "sepangkalan", "separasi", "separatis", "separatisme", "separbang", "sepasin", "sepat", "sepatbor", "sepatu", "sepeda", "sepedas", "sepegoh", "sepekuk", "sepel", "sepele", "sepeling", "sepen", "sepenuh", "seperah", "seperantu", "sepersi", "seperti", "sepesan", "sepet", "sepetir", "sepi", "sepih", "sepiker", "sepir", "sepit", "seples", "sepoi", "seprai", "seprei", "sepsis", "september", "septima", "septum", "sepuh", "sepuit", "sepuk", "sepukal", "sepul", "sepulih", "sepuluh", "sepupu", "sepur", "seput", "sera", "serabi", "serabut", "serabutan", "seraga", "seragam", "serah", "serahi", "serai", "serak", "serakah", "seram", "serama", "serambi", "serampang", "serampin", "serampu", "serampuk", "seran", "serana", "seranah", "serandang", "serandau", "serandib", "serandung", "serang", "serangga", "serangguh", "seranggung", "serangkak", "serangsang", "serani", "seranograf", "seranometer", "seranta", "serap", "serapah", "serapat", "serasa", "serasah", "serasi", "serat", "seratah", "serati", "seratung", "serau", "seraumeter", "seraut", "serawak", "serawal", "seraya", "serba", "serbaada", "serbaakal", "serbabaru", "serbabisa", "serbadua", "serbaemas", "serbaguna", "serbah-serbih", "serbaindah", "serbak", "serbakeemasan", "serbakurang", "serbamacam", "serban", "serbaneka", "serbaputih", "serbarumah", "serbasalah", "serbasama", "serbasusah", "serbat", "serbausaha", "serbet", "serbi", "serbu", "serbuk", "serdadu", "serdak", "serdam", "serdang", "serdawa", "serdi", "serdih", "serealia", "serealin", "sereat", "serebral", "serebrospinal", "serebrum", "seregang", "sereh", "serembah-serembih", "seremban", "seremoni", "seremonial", "serempak", "serempet", "serempu", "serendah", "serendeng", "sereng", "serengam", "serengeh", "serengit", "serenjak", "serenjang", "serenta", "serentak", "serep", "seresin", "seret", "sergah", "sergam", "sergap", "sergut", "seri", "serial", "seriap", "seriat", "seriawan", "seribulan", "seriding", "serigading", "serigala", "serigunting", "serik", "serikat", "serikaya", "serimala", "serimpet", "serimpi", "serimpung", "serindai", "serindit", "sering", "seringai", "seringing", "seriosa", "serit", "serium", "serius", "serkah", "serkai", "serkap", "serkup", "serlah", "serling", "sermangin", "sermet", "sernak", "sero", "serobeh", "serobok", "serobot", "serografi", "seroja", "serok", "serologi", "serombong", "serompok", "serondeng", "serondok", "serondol", "serondong", "serong", "seronok", "seroplastik", "seropot", "serositas", "serosoh", "serot", "seroyong", "serpentina", "serpih", "sersan", "serse", "sersi", "serta", "sertifikasi", "sertifikat", "sertu", "seru", "seruak", "seruas", "seruda", "serudi", "seruduk", "serugah", "serugat", "seruh", "serui", "seruit", "seruk", "serul", "seruling", "serum", "serumat", "serumen", "serumpu", "serun", "serunai", "serunda", "serundang", "serundeng", "seruni", "serunjang", "seruntun", "serupih", "seruput", "seruru", "serut", "serutu", "seruyuk", "servis", "sesah", "sesai", "sesaing", "sesajen", "sesak", "sesal", "sesam", "sesamoid", "sesanti", "sesap", "sesar", "sesat", "sesawi", "sesenap", "seser", "sesi", "sesil", "sesira", "sesium", "sesoca", "sespan", "sestina", "sesuai", "sesuatu", "sesumbar", "set", "seta", "setabelan", "setagen", "setai", "setaka", "setakona", "setal", "setambun", "setan", "setana", "setang", "setangan", "setanggi", "setapak", "setaria", "setat", "setawar", "setebal", "seteger", "seteheng", "setek", "seteker", "setel", "setela", "seteleng", "setem", "setempel", "seten", "setenggar", "seter", "seteranah", "seteru", "setewel", "seti", "setia", "setiabu", "setiar", "setiga", "setik", "setin", "setinggi", "setip", "setir", "setirman", "setiwel", "setoka", "setokin", "setolop", "setom", "seton", "setop", "setoples", "setor", "setori", "setoter", "setra", "setrap", "setrat", "setren", "setreng", "setrik", "setrika", "setrimin", "setrip", "setruk", "setrum", "setrup", "setti", "setu", "setuil", "setum", "setung", "setup", "seturi", "seturu", "seudati", "sewa", "sewah", "sewaka", "sewal", "sewar", "sewat", "sewot", "sewu", "sfenoidal", "sferoid", "sferometer", "sfigmograf", "sfigmomanometer", "sfikmograf", "sfingofili", "sfingter", "sfinks", "sia", "siaga", "siah", "siak", "siakap", "siakon", "sial", "sialang", "sialit", "siam", "siamang", "sian", "sianamida", "sianang", "siang", "sianggit", "sianida", "sianometer", "sianometri", "sianosis", "siantan", "siap", "siap-sedia", "siap-siaga", "siapa", "siapuh", "siar", "siarah", "siarat", "siasat", "siat", "siau", "sibak", "sibar", "sibernetika", "sibilan", "sibir", "sibuk", "sibur", "sibusuk", "sice", "sicerek", "sida", "sidai", "sidamukti", "sidang", "sidat", "siderit", "sidi", "sidik", "siding", "sidomukti", "sidratulmuntaha", "siduga", "siduk", "sif", "sifat", "sifatullah", "sifer", "sifilis", "sifilobia", "sifiloid", "sifir", "sifon", "sigai", "sigak", "sigando", "sigap", "sigar", "sigaret", "sigasir", "sigenting", "siger", "sigi", "sigilografi", "sigma", "signifikan", "signifikansi", "signifikasi", "sigot", "sigung", "sih", "sihir", "sijik", "sijil", "sika", "sikah", "sikai", "sikak", "sikap", "sikari", "sikas", "sikat", "sikedempung", "sikeras", "sikik", "sikikih", "sikin", "sikit", "siklik", "siklis", "sikloid", "siklon", "sikloparafin", "siklotron", "siklus", "siksa", "siku", "sikudidi", "sikudomba", "sikut", "sil", "sila", "silabel", "silabis", "silabus", "silah", "silalatu", "silam", "silampukau", "silang", "silap", "silara", "silase", "silat", "silaturahmi", "silau", "silengah", "silet", "silih", "silik", "silika", "silikat", "silikon", "silikona", "silikosis", "silinder", "silindris", "silindroid", "silir", "silium", "silo", "silogisme", "silok", "silologi", "silometer", "siloptik", "silsilah", "silt", "silu", "siluet", "siluk", "siluman", "silungkang", "silvika", "silvikultur", "silvisida", "simak", "simalakama", "simalu", "simaung", "simbah", "simbai", "simbang", "simbar", "simbat", "simbion", "simbiosis", "simbiotis", "simbiou", "simbok", "simbol", "simbolis", "simbolisme", "simbukan", "simbur", "simetri", "simetris", "simfisis", "simfoni", "simifisis", "simile", "simpai", "simpak", "simpan", "simpang", "simpang-siur", "simpanse", "simpat", "simpati", "simpatik", "simpatisan", "simpel", "simpetal", "simping", "simpir", "simpleks", "simplifikasi", "simplistis", "simposium", "simpuh", "simpuk", "simpul", "simpur", "simtom", "simtomatis", "simtomatologi", "simulasi", "simulator", "simulfiks", "simultan", "simuntu", "sin", "sinaga", "sinagoga", "sinagoge", "sinambung", "sinanaga", "sinansari", "sinar", "sinatan", "sinau", "sinawar", "sindap", "sinden", "sinder", "sindeton", "sindikalisme", "sindikasi", "sindikat", "sindir", "sindrom", "sindur", "sineas", "sinekdoke", "sinektika", "sinema", "sinemapleks", "sinemaskop", "sinematik", "sinematograf", "sinematografi", "sinematografis", "sinemikrografik", "sineol", "sinepleks", "sinergi", "sinergis", "sinergisme", "sineskop", "sinestesia", "sinetron", "sing", "singa", "singahak", "singelar", "singga", "singgah", "singgan", "singgang", "singgasana", "singgel", "singgir", "singgit", "singgul", "singgung", "singit", "singkak", "singkang", "singkap", "singkat", "singkeh", "singkek", "singkil", "singkir", "singkong", "singkup", "singkur", "singlet", "singsat", "singse", "singset", "singsing", "singularis", "singulum", "singulun", "singunen", "sini", "sinis", "sinisme", "sinjang", "sinklin", "sinkonina", "sinkope", "sinkretis", "sinkretisasi", "sinkretisme", "sinkron", "sinkronis", "sinkronisasi", "sinkronisme", "sinode", "sinolog", "sinologi", "sinom", "sinoman", "sinonim", "sinonimi", "sinopsis", "sinoptis", "sinovia", "sinovial", "sinovitas", "sinovitis", "sinrili", "sinse", "sintagma", "sintagmatis", "sintaksis", "sintaktis", "sintal", "sintar", "sintas", "sinter", "sinterklas", "sintese", "sintesis", "sintetik", "sintetis", "sinting", "sintir", "sintonik", "sintren", "sintua", "sintuk", "sintulang", "sintung", "sinu", "sinuhun", "sinus", "sinusal", "sinusitis", "sinusoid", "sinyal", "sinyalemen", "sinyalir", "sinyo", "sinyokolas", "sio", "sioca", "siong", "siongka", "sip", "sipahi", "sipai", "sipangkalan", "sipat", "sipatung", "sipedas", "sipesan", "sipi", "sipil", "sipir", "sipit", "sipolan", "sipongang", "sipu", "sipulut", "siput", "sir", "sira", "sirah", "siram", "sirangkak", "sirap", "sirat", "siratalmustakim", "siraut", "sirene", "sirep", "siri", "siriasis", "sirib", "sirih", "sirik", "siring", "siringitis", "sirip", "sirkam", "sirke", "sirkol", "sirkuit", "sirkulasi", "sirkuler", "sirkumfiks", "sirkumfleks", "sirkus", "sirlak", "sirna", "sirokumulus", "sirop", "sirostratus", "sirsak", "siru", "sirup", "sirus", "sis", "sisa", "sisal", "sisalak", "sisi", "sisih", "sisik", "sisip", "sisir", "sista", "sistaltik", "sistem", "sistematik", "sistematika", "sistematis", "sistematisasi", "sistematisir", "sistemis", "sistemisasi", "sisterna", "sistitis", "sistole", "sistolik", "sisurut", "siswa", "siswi", "sit", "sita", "sitak", "sitat", "siter", "siti", "sitinggil", "sitir", "sitokrom", "sitolilis", "sitolisis", "sitologi", "sitoplasma", "sitrat", "sitrin", "sitrun", "situ", "situasi", "situasional", "situn", "situs", "siuh", "siuk", "siul", "siuman", "siung", "siur", "siut", "sivilisasi", "siwalan", "siwaratri", "siwer", "sizigi", "skafa", "skala", "skalanisasi", "skalar", "skalop", "skandal", "skandium", "skarifikasi", "skatola", "skatologi", "skedul", "skelet", "skema", "skematis", "skenario", "skene", "skeptis", "skeptisisme", "sketsa", "ski", "skiameter", "skiatika", "skilot", "skip", "skiping", "skisma", "skizofrenia", "skizoid", "sklerenkima", "sklerosis", "skleroterapi", "skolastik", "skolastikus", "skolastisi", "skolastisisme", "skombroid", "skop", "skopometer", "skor", "skorbut", "skorpio", "skors", "skorsing", "skrin", "skrining", "skrip", "skripsi", "skrobikulus", "skrotum", "skuadron", "skuas", "skuat", "skuos", "skuter", "slagorde", "slah", "slang", "slebor", "slendro", "sling", "slintat-slintut", "slip", "slof", "slogan", "smes", "smokel", "snob", "snobisme", "soak", "soal", "soang", "soarma", "soba", "soban", "sobat", "sobek", "sobok", "soda", "sodet", "sodium", "sodok", "sodomasosisme", "sodomi", "sodomia", "sodor", "soe", "sofa", "sofis", "sofisme", "sofistri", "sofitel", "soga", "sogan", "sogang", "sogo", "sogok", "sohar", "sohib", "sohor", "sohun", "soja", "sok", "soka", "sokah", "soker", "soket", "sokom", "sokong", "sol", "solah", "solak", "solang", "solanina", "solar", "solarimeter", "solder", "solek", "solempis", "solenoide", "solfatar", "solfatara", "solid", "solidaritas", "solider", "soliditas", "solilokui", "solinometer", "solipsisme", "solis", "soliter", "solo", "solois", "solok", "solokan", "solot", "solum", "solusi", "solvabilitas", "solven", "som", "soma", "somah", "somasi", "somatis", "somatomegali", "sombok", "sombol", "sombong", "sombrero", "someng", "somnambulis", "somnambulisme", "sompek", "sompeng", "somplak", "somplok", "sompoh", "sompok", "sompong", "sompret", "sonar", "sonata", "sonatina", "sondai", "sondanco", "sondang", "sondase", "sondek", "sonder", "sondok", "sondong", "soneta", "songar", "songel", "songgeng", "songket", "songkok", "songkro", "songong", "songsong", "sonik", "sono", "sonogram", "sonokeling", "sonor", "sonoran", "sontak", "sontek", "sontok", "sontoloyo", "sop", "sopak", "sopan", "sopek", "sopi", "sopir", "soporifik", "sopran", "sorak", "sorang", "sorban", "sorbet", "sore", "sorek", "soren", "sorgum", "sori", "sorog", "sorok", "sorong", "sorot", "sortir", "sosi", "sosial", "sosialis", "sosialisasi", "sosialisme", "sosialistis", "sosio", "sosio-kultural", "sosiobiolog", "sosiodemokrasi", "sosiodrama", "sosiokultural", "sosiolek", "sosiolinguistik", "sosiolog", "sosiologi", "sosiologis", "sosiometri", "sosionasional", "sosiopat", "sosis", "sositet", "sosoh", "sosok", "sosor", "soto", "sotoh", "sotong", "sotor", "soun", "sowan", "sowang", "soyak", "spageti", "spalasi", "span", "spanduk", "spaning", "sparing", "spasi", "spasial", "spasmodis", "spasmus", "spastik", "spatbor", "spatula", "spedometer", "spektakel", "spektakuler", "spektator", "spektograf", "spektogram", "spektrograf", "spektrogram", "spektrokimia", "spektrometer", "spektroskop", "spektrum", "spekuk", "spekulan", "spekulasi", "spekulatif", "spekulator", "speleologi", "spelter", "sperma", "spermaseti", "spermatid", "spermatofora", "spermatogenesis", "spermatosit", "spermatozoa", "spermatozoid", "spesial", "spesialis", "spesialisasi", "spesialistis", "spesies", "spesifik", "spesifikasi", "spesimen", "spidol", "spidometer", "spikul", "spil", "spina", "spion", "spionase", "spiral", "spiralisasi", "spirilum", "spirit", "spiritis", "spiritisme", "spiritual", "spiritualisasi", "spiritualisme", "spiritus", "spirometer", "spons", "sponsor", "spontan", "spontanitas", "spora", "sporadis", "sporangium", "sporofil", "sport", "sportif", "sportivitas", "spring", "sprint", "sprinter", "sputnik", "sputum", "sreg", "sregep", "srempet", "sri", "srigading", "srigunggu", "srigunting", "srikandi", "srikaya", "srimanganti", "sripah", "sripanggung", "sriti", "stabil", "stabilisasi", "stabilisator", "stabilitas", "stabilizer", "stadion", "stadium", "staf", "stafilitis", "stagnan", "stagnasi", "staking", "stalagmit", "stalagmometri", "stalaktit", "stalinisme", "stalon", "stamba", "stambon", "stambuk", "stambul", "stamen", "stamina", "stan", "standar", "standardisasi", "stanplat", "stanum", "stanza", "stapler", "staples", "start", "starter", "stasi", "stasioner", "stasis", "stasiun", "statis", "statistik", "statistika", "statistis", "stator", "status", "statuta", "statuter", "stearat", "stearin", "steatit", "steatosis", "stegodon", "steik", "stek", "steker", "stela", "steling", "stema", "stemma", "stempel", "sten", "stengun", "steno", "stenografer", "stenografi", "stenogram", "stensil", "step", "stepa", "stepler", "steradian", "stereo", "stereofoni", "stereofonik", "stereognosis", "stereograf", "stereografi", "stereoisomerisme", "stereokimia", "stereometri", "stereoskop", "stereotip", "stereotipikal", "steril", "sterilisasi", "sterilitas", "steroid", "steroidal", "sterol", "stetoskop", "stevador", "stibium", "stigma", "stigmata", "stik", "stiker", "stilbestrol", "stilir", "stilistika", "stilograf", "stimulan", "stimulans", "stimulasi", "stimulatif", "stimulator", "stimulus", "stipendium", "stipulasi", "stirena", "stoikiometri", "stok", "stokastik", "stoker", "stol", "stoliditas", "stolon", "stomata", "stomatitis", "stomatogastrik", "stomatoskop", "stop", "stoper", "stopkeran", "stopkontak", "stoples", "stori", "stormking", "strabotomi", "strata", "strategem", "strategi", "strategis", "stratifikasi", "stratigrafi", "strato", "stratokumulus", "stratopause", "stratopouse", "stratosfer", "stratum", "stratus", "streng", "streptokokus", "streptomisin", "stres", "striker", "strimin", "strip", "striptis", "stroberi", "strobila", "stroboskop", "stroke", "stromking", "strontium", "struktur", "struktural", "strukturalisasi", "strukturalisme", "struma", "studen", "studi", "studio", "stuko", "stupa", "sua", "suah", "suai", "suak", "suaka", "suam", "suami", "suaminda", "suang", "suangi", "suap", "suar", "suara", "suarang", "suargaloka", "suari", "suasa", "suasana", "suat", "suatu", "sub", "subak", "subal", "subam", "suban", "subang", "subbab", "subbagian", "subdirektorat", "subentri", "suberat", "suberin", "subetnik", "subfilum", "subgeneralisasi", "subgenus", "subhana", "subhanallah", "subhat", "subirigasi", "subjek", "subjektif", "subjektivisme", "subkategorisasi", "subkelas", "subklas", "subkontraktor", "subkultur", "sublema", "subletal", "sublim", "sublimasi", "sublimat", "submarine", "submukosa", "subordinasi", "subordinat", "suborganisasi", "subsider", "subsidi", "subskrip", "subsonik", "substandar", "substansi", "substansial", "substantif", "substitusi", "substitutif", "substrat", "subtil", "subtonik", "subtropik", "subuco", "subuh", "subunit", "subur", "subversi", "subversif", "subyek", "subyektif", "subyektivisme", "suceng", "suci", "suda", "sudah", "sudet", "sudi", "sudip", "sudoriferus", "sudra", "sudu", "suduayah", "suduk", "sudung", "sudut", "suf", "sufah", "sufal", "sufi", "sufiks", "sufisme", "sufrah", "sugar", "sugesti", "sugi", "sugih", "suguh", "sugul", "sugun", "suh", "suhad", "suhian", "suhu", "suhuf", "suhun", "suiseki", "suit", "sujana", "sujen", "suji", "sujud", "suka", "sukacita", "sukade", "sukamandi", "sukan", "sukar", "sukarela", "sukaria", "sukat", "sukduf", "suke", "suket", "suki", "suklapaksa", "sukma", "sukrosa", "sukses", "suksesi", "suksesif", "suku", "sukuisme", "sukun", "sula", "sulah", "sulalah", "sulalat", "sulam", "sulang", "sulap", "sulat-sulit", "sulbi", "sulfanasi", "sulfanilamida", "sulfat", "sulfhidril", "sulfolipid", "sulfonamida", "sulfur", "sulfurasi", "suli", "sulih", "suling", "sulit", "sultan", "sultanat", "sultani", "suluh", "suluk", "sulung", "sulur", "sulut", "sum", "sumah", "sumarah", "sumare", "sumasi", "sumba", "sumbang", "sumbangsih", "sumbar", "sumbat", "sumbel", "sumber", "sumbi", "sumbing", "sumbu", "sumbuk", "sumbul", "sumbung", "sumbur", "sumbut", "sumeh", "sumengit", "sumilir", "sumir", "sumirat", "sumo", "sumpah", "sumpal", "sumpek", "sumpel", "sumping", "sumpit", "sumsum", "sumur", "sumurung", "sun", "sunah", "sunam", "sunan", "sunat", "sunatullah", "sunbulat", "sundai", "sundak", "sundal", "sundang", "sundari", "sundep", "sunduk", "sundul", "sundus", "sundusin", "sundut", "sungai", "sungga", "sunggi", "sungging", "sunggit", "sungguh", "sungguhpun", "sungil", "sungkah", "sungkai", "sungkal", "sungkan", "sungkap", "sungkawa", "sungkem", "sungkit", "sungkuk", "sungkum", "sungkup", "sungkur", "sungkuran", "sungsang", "sungu", "sungut", "suni", "sunjam", "sunti", "suntiabu", "suntih", "suntik", "sunting", "suntuk", "sunu", "sunukung", "sunyata", "sunyi", "sup", "supa", "supai", "supaya", "supel", "super", "superblok", "supercepat", "superfisial", "superfosfat", "superheterodin", "superinfeksi", "superintenden", "superior", "superioritas", "superjet", "superkomputer", "superkonduktivitas", "superkonduktor", "superlatif", "superlativisme", "superlunar", "supermarket", "supermen", "supernatural", "supernova", "superskrip", "superskripsi", "supersonik", "superstar", "superstruktur", "supervisi", "supervisor", "suplai", "suplemen", "suplementasi", "suplesi", "supletoar", "suporter", "suportif", "supra", "supraalami", "suprafiks", "supramolekuler", "supranasional", "suprarene", "suprarenoma", "suprasasti", "suprasegmental", "supremasi", "supresif", "supresor", "surah", "surahi", "surai", "suralaya", "suraloka", "suram", "surat", "surati", "surau", "suraya", "surealis", "surealisme", "suren", "surfaktan", "surga", "surgaloka", "surgawi", "suri", "surian", "surih", "surili", "surjan", "surogat", "surplus", "suruh", "suruk", "surup", "surut", "survei", "surya", "suryakanta", "suryani", "sus", "susah", "susastra", "suseptibilitas", "susila", "susilat", "suspender", "suspensi", "suster", "susu", "susuh", "susuk", "susul", "susun", "susung", "susup", "susur", "susut", "sut", "sutan", "suten", "sutil", "sutra", "sutradara", "sutura", "suul", "suun", "suuzan", "suvenir", "suwarnabumi", "suwarnadwipa", "suwir", "suwita", "svedberg", "swa", "swabakar", "swabela", "swadana", "swadarma", "swadaya", "swadesi", "swadidik", "swadisiplin", "swagriya", "swahara", "swaharga", "swaimbas", "swak", "swakaji", "swakarsa", "swakarya", "swakelola", "swakendali", "swakontradiksi", "swalayan", "swanama", "swanggi", "swapraja", "swarabakti", "swasembada", "swasensor", "swasraya", "swasta", "swastanisasi", "swastiastu", "swastika", "swatabur", "swatantra", "swausaha", "sweter", "swike", "swimpak", "swipoa", "syabah", "syabas", "syafaat", "syafakat", "syafii", "syah", "syahadat", "syahadatain", "syahbandar", "syahda", "syahdan", "syahdu", "syahid", "syahriah", "syahsiah", "syahwat", "syair", "syairi", "syajar", "syajarah", "syak", "syaka", "syakban", "syakduf", "syakhsi", "syakir", "syal", "syala", "syam", "syamali", "syaman", "syamanisme", "syamsi", "syamsiah", "syamsir", "syamsu", "syantung", "syar", "syarab", "syarah", "syarak", "syarat", "syarbat", "syarekat", "syariat", "syarif", "syarifah", "syarik", "syarikat", "syatar", "syaulam", "syawal", "syeir", "syekh", "syeti", "syiar", "syikak", "syin", "syirik", "syiwa", "syiwaratri", "syogun", "syok", "syubhat", "syuhada", "syukur", "syumuliah", "syur", "syura", "syurah", "syuriah", "syuruk", "syuting", "taajul", "taala", "taaruf", "taasub", "taat", "taawud", "taazur", "tabah", "tabak", "tabal", "taban", "tabar-tabar", "tabarak", "tabaruk", "tabayun", "tabe", "tabel", "tabela", "tabelaris", "tabernakel", "tabia", "tabiat", "tabib", "tabii", "tabiin", "tabik", "tabir", "tablet", "tablig", "tablo", "tabloid", "tabo", "tabok", "tabrak", "tabu", "tabuh", "tabuhan", "tabula", "tabulasi", "tabulator", "tabulatur", "tabun", "tabung", "tabur", "tabut", "tabzir", "taci", "tadabur", "tadah", "tadaruk", "tadarus", "tadbir", "tadi", "tadir", "tadung", "tadwin", "taekwondo", "taeniasis", "taf", "tafadal", "tafahus", "tafakur", "tafeta", "tafsir", "tagak", "tagal", "tagan", "tagar", "tageh", "tagih", "tago", "tagut", "tahajud", "tahak", "tahal", "tahalul", "tahan", "tahana", "tahang", "tahap", "tahar", "taharah", "tahbis", "tahi", "tahiat", "tahil", "tahir", "tahkik", "tahkim", "tahlil", "tahmid", "tahniah", "tahnik", "tahsil", "tahu", "tahun", "taib", "taifun", "taiga", "taiko", "taipan", "tais", "taiso", "taja", "tajak", "tajali", "tajam", "tajarud", "tajau", "tajdid", "tajen", "taji", "tajin", "tajnis", "tajribah", "taju", "tajuk", "tajung", "tajur", "tajusalatin", "tajwid", "tak", "takabur", "takaful", "takah", "takak", "takal", "takang-takik", "takar", "takarir", "takarub", "takat", "takbir", "takbiratulihram", "takdim", "takdir", "takdis", "takeh", "takel", "takeyari", "takhayul", "takhlik", "takhsis", "takhta", "taki", "takigrafi", "takik", "takimeter", "takir", "takisme", "takjil", "takjub", "taklid", "taklif", "taklik", "taklikat", "taklim", "taklimat", "takluk", "takma", "takmurni", "takoah", "takol", "takometer", "takraw", "takrif", "takrim", "takrir", "taksa", "taksasi", "taksem", "taksi", "taksidermi", "taksimeter", "taksin", "taksir", "taksologi", "takson", "taksonomi", "taktik", "taktil", "taktis", "takuh", "takuk", "takung", "takur", "takut", "takwa", "takwil", "takwim", "takwin", "takyin", "takziah", "takzim", "takzir", "tal", "tala", "talabiah", "talah", "talak", "talam", "talang", "talar", "talas", "talasemia", "talasofit", "talbiah", "talek", "talempong", "talen", "talenan", "talenta", "tali", "talib", "talibun", "talium", "talk", "talkin", "talon", "talu", "talun", "talupuh", "talut", "tam", "tamadun", "tamah", "tamak", "tamam", "taman", "tamar", "tamarinda", "tamasya", "tamat", "tamatulkalam", "tambah", "tambak", "tambakan", "tambal", "tamban", "tambang", "tambar", "tambat", "tamber", "tambera", "tambi", "tambo", "tamborin", "tambuh", "tambul", "tambun", "tambung", "tambur", "tambus", "tameng", "tamimah", "tampah", "tampak", "tampal", "tampan", "tampang", "tampar", "tampas", "tampel", "tampi", "tampik", "tampil", "tampin", "tamping", "tampon", "tamponade", "tampuk", "tampung", "tampus", "tamsil", "tamtam", "tamtama", "tamu", "tamuk", "tamyiz", "tan", "tanah", "tanai", "tanak", "tanam", "tanang", "tanau", "tanazul", "tanbiat", "tanbihat", "tancang", "tancap", "tanda", "tandak", "tandan", "tandang", "tandas", "tandem", "tandik", "tandikat", "tandil", "tanding", "tandon", "tandu", "tanduk", "tandun", "tandur", "tandus", "tanfiziah", "tang", "tangan", "tangap", "tangar", "tangas", "tangeh", "tangen", "tangga", "tanggah", "tanggal", "tanggam", "tanggang", "tanggap", "tanggar", "tanggetong", "tangguh", "tangguk", "tanggul", "tanggulang", "tanggung", "tangis", "tangkah", "tangkai", "tangkaian", "tangkal", "tangkap", "tangkar", "tangkas", "tangki", "tangkil", "tangkis", "tangkue", "tangkuk", "tangkul", "tangkup", "tangkur", "tangkut", "tanglung", "tango", "tangsa", "tangsel", "tangsi", "tani", "tania", "tanin", "tanjak", "tanji", "tanjidor", "tanju", "tanjul", "tanjung", "tanjur", "tank", "tanker", "tanpa", "tansi", "tantang", "tante", "tanti", "tantiem", "tantrisme", "tanur", "tanwin", "tanwir", "tanwujud", "tanya", "tanzih", "tanzil", "taocang", "taoci", "taoco", "taoge", "taoisme", "taoke", "taosi", "tap", "tapa", "tapai", "tapak", "tapal", "tapang", "tapestri", "tapi", "tapih", "tapin", "tapioka", "tapir", "tapis", "taplak", "taprofit", "taptibau", "taptu", "tapui", "tapuk", "tapung", "tapus", "tar", "tara", "taraf", "tarah", "tarak", "taraksasin", "taram", "tarang", "tarantisme", "tarantula", "tarap", "taraqi", "tarasul", "tarawangsa", "tarawih", "tarbiah", "tarbil", "tarbus", "tarcis", "tarekat", "target", "tarhim", "tari", "tarif", "tarik", "tarikat", "tarikh", "taring", "taris", "tarjih", "tarkas", "tarling", "tarmak", "tarpaulin", "tarsus", "tartar", "tartil", "tartir", "tartrat", "taruh", "taruk", "taruko", "tarum", "tarung", "tarup", "tarzan", "tas", "tasa", "tasai", "tasak", "tasalsul", "tasamuh", "tasaruf", "tasawuf", "tasbeh", "tasbih", "tasdik", "tasel", "tashih", "tasik", "taslim", "tasmik", "tasrif", "tasrih", "taswir", "tasyahud", "tasyakur", "tasyaum", "tasyayuh", "tasybih", "tasydid", "tasyhid", "tasyrih", "tasyrik", "tata", "tataganing", "tatah", "tatai", "tatak", "tatal", "tatami", "tatanan", "tatang", "tatap", "tatar", "tatih", "tating", "tatkala", "tato", "tau", "taubat", "taucang", "taufah", "taufik", "tauhid", "tauhidiah", "tauke", "taul", "tauliah", "taun", "taung", "taur", "taurat", "tauret", "taurus", "taut", "tautofoni", "tautologi", "tautomerisme", "tautonimi", "tautonomi", "tawa", "tawadu", "tawaduk", "tawaf", "tawajuh", "tawak", "tawakal", "tawan", "tawang", "tawar", "tawarik", "tawaruk", "tawas", "tawasul", "tawes", "tawon", "tawur", "tayamum", "tayang", "tayib", "tayibah", "tayub", "tayum", "tazkirah", "tean", "teater", "teatris", "tebah", "tebak", "tebal", "teban", "tebang", "tebar", "tebas", "tebat", "tebeng", "teberau", "tebing", "tebok", "tebon", "tebu", "tebuhar", "tebuk", "tebung", "tebus", "tedak", "tedarus", "tedas", "tedeng", "tedong", "teduh", "tedung", "tefrit", "tega", "tegah", "tegak", "tegal", "tegang", "tegap", "tegar", "tegari", "tegarun", "tegas", "tegel", "tegil", "tegmen", "teguh", "teguk", "tegun", "tegur", "teh", "teisme", "teja", "teji", "teka", "tekaan", "tekad", "tekah", "tekak", "tekalak", "tekam", "tekan", "tekang", "tekap", "tekar", "tekat", "tekek", "tekel", "teken", "teker", "teki", "tekidanto", "tekik", "tekis", "teklek", "teklok", "teknifon", "teknik", "teknikus", "teknis", "teknisi", "teknokrasi", "teknokrat", "teknokratik", "teknokratisme", "teknologi", "teknonim", "teknonimi", "teko", "tekoan", "tekoh", "tekokak", "tekong", "tekor", "tekoran", "tekpi", "teks", "tekstil", "tekstur", "tekstural", "tekte", "tektek", "tektit", "tektogenesa", "tektonik", "tektonis", "tektum", "tekua", "tekuk", "tekukur", "tekun", "tekung", "tekur", "tel", "tela", "telaah", "telabang", "telabat", "telacak", "teladan", "teladas", "telaga", "telah", "telajak", "telak", "telakup", "telampung", "telan", "telancang", "telang", "telangkai", "telangkup", "telanjang", "telanjur", "telantar", "telap", "telapak", "telas", "telat", "telatah", "telatap", "telaten", "telau", "tele", "telearsika", "teledek", "teledor", "teledrama", "telefon", "telefoni", "telefoto", "telegenik", "telegraf", "telegrafi", "telegrafis", "telegram", "telegrap", "telekan", "telekap", "telekinesis", "telekomedi", "telekomunikasi", "teleks", "teleku", "telekung", "telelensa", "telemeter", "telemetri", "telempap", "telempong", "teleng", "telenovela", "telentang", "teleologi", "teleost", "telepati", "telepok", "telepon", "teleprinter", "telepromter", "telepuk", "teler", "telerang", "teles", "teleskop", "telestesia", "televisi", "telgram", "telik", "telikung", "telimpuh", "telinak", "telinga", "telingkah", "telingkung", "teliti", "telmotofit", "telop", "telor", "telotak", "telpon", "teluh", "teluk", "teluki", "telungkup", "telunjuk", "telur", "telurat", "telurit", "telus", "telusuk", "telusur", "telut", "telutuh", "telutur", "telutut", "tem", "tema", "temaah", "temabur", "temaha", "temahak", "temak", "temalang", "temali", "teman", "temangau", "temangga", "temanten", "temara", "temaram", "temas", "tematik", "tematis", "tematisasi", "temayun", "tembadau", "tembaga", "tembak", "tembakang", "tembakau", "tembakul", "tembam", "tembang", "tembarau", "tembatar", "tembatu", "tembek", "tembekar", "tembel", "tembelang", "tembelian", "tembeliung", "tembelok", "tembem", "tembera", "temberam", "temberang", "temberas", "temberek", "tembereng", "temberih", "temberos", "tembesu", "tembiang", "tembikai", "tembikar", "tembilang", "tembilar", "tembiring", "tembis", "tembok", "tembolok", "tembong", "tembosa", "tembra", "tembu", "tembuk", "tembuku", "tembung", "tembuni", "tembus", "tembusu", "temegun", "temeh", "temengalan", "temenggung", "temenung", "temesar", "temetu", "temiang", "temilang", "temin", "temokus", "temoleh", "tempa", "tempah", "tempala", "tempan", "tempang", "tempap", "tempat", "tempaus", "tempawak", "tempawan", "tempayak", "tempayan", "tempayung", "tempe", "tempek", "tempel", "tempelak", "tempeleng", "temperamen", "temperamental", "temperas", "temperatur", "temperau", "tempiar", "tempias", "tempik", "tempilai", "tempinah", "tempinis", "templek", "templok", "tempo", "tempoh", "tempolong", "temponek", "tempong", "temporal", "temporer", "tempoyak", "tempoyan", "tempua", "tempuh", "tempui", "tempuling", "tempunai", "tempunik", "tempur", "tempurung", "tempus", "tempuyung", "temu", "temucut", "temukut", "temungkul", "temuras", "temurat", "temut-temut", "tenaga", "tenahak", "tenak", "tenam", "tenang", "tenar", "tenat", "tenda", "tendang", "tendas", "tendensi", "tendensius", "tender", "tendinitis", "tendo", "tendon", "tener", "teng", "tengadah", "tengah", "tengak", "tengalan", "tengar", "tengara", "tengas", "tenggadai", "tenggak", "tenggala", "tenggalung", "tenggan", "tenggang", "tenggara", "tenggarang", "tenggat", "tenggayun", "tenggayung", "tenggehem", "tenggek", "tenggelam", "tengger", "tenggiling", "tenggiri", "tenggiring", "tenggok", "tenggorok", "tengguli", "tengik", "tengil", "tengkalak", "tengkalang", "tengkaluk", "tengkam", "tengkang", "tengkar", "tengkarah", "tengkarap", "tengkaras", "tengkawang", "tengkek", "tengkel", "tengkelek", "tengker", "tengkerong", "tengkes", "tengking", "tengkoh", "tengkolok", "tengkorak", "tengku", "tengkujuh", "tengkuk", "tengkulak", "tengkuluk", "tengkurap", "tengkuyung", "tengok", "tengteng", "tengu", "tenis", "tenjet", "tenok", "tenong", "tenor", "tensi", "tentakel", "tentamen", "tentang", "tentara", "tentatif", "tentawan", "tenteng", "tenteram", "tentir", "tentu", "tenuk", "tenun", "tenung", "teodolit", "teokrasi", "teokratis", "teolog", "teologi", "teologis", "teoretikus", "teoretis", "teori", "teorisasi", "teosofi", "teosofis", "tepa", "tepak", "tepam", "tepas", "tepat", "tepeh", "tepek", "tepekong", "teperam", "tepes", "tepet", "tepi", "tepik", "tepis", "teplok", "tepo", "tepok", "tepos", "teptibau", "tepu", "tepuk", "tepung", "tepurang", "tepus", "ter", "tera", "teracak", "terada", "terajam", "teraju", "terak", "terakota", "terakup", "teral", "terala", "terali", "teraling", "teramisin", "terampil", "teran", "teranas", "terang", "terap", "terapang", "terapeutik", "terapi", "terarium", "teras", "terasi", "teraso", "terasul", "teratai", "teratak", "teratap", "teratologi", "teratu", "terau", "terawang", "teraweh", "terban", "terbang", "terbis", "terbit", "terbium", "terbul", "terbut", "terein", "terem", "terenang", "terendak", "terenen", "terentang", "terenyuh", "teres", "teret", "teretet", "teri", "teriak", "teriba", "terigu", "terik", "terika", "terikit", "teriko", "terima", "terin", "terindil", "tering", "teripang", "terista", "teritih", "teritik", "teritip", "teritis", "teritorial", "teritorium", "teriujung", "terjal", "terjang", "terjemah", "terjun", "terka", "terkadang", "terkam", "terkap", "terkul", "terkup", "terlak", "terlalu", "terlut", "term", "termaestesia", "termal", "termin", "terminal", "terminasi", "terminografi", "terminologi", "termion", "termionika", "termistor", "termodinamika", "termodinamis", "termoelektris", "termoelektrisitas", "termofili", "termofilik", "termofosforesens", "termograf", "termogram", "termohigrograf", "termokimia", "termoklin", "termolabil", "termolisis", "termolistrik", "termoluminesens", "termometer", "termonuklir", "termoplastik", "termos", "termosfer", "termostat", "terna", "ternak", "terobos", "terok", "teroka", "terombol", "teromol", "terompah", "terompet", "terondol", "terong", "terongko", "teropong", "teror", "teroris", "terorisme", "terowongan", "terpa", "terpal", "terpana", "terpedo", "terpentin", "tersier", "tertawa", "tertib", "terubuk", "terubus", "terucuk", "terucukan", "teruk", "terum", "terumba", "terumbu", "terumbuk", "teruna", "terung", "terungku", "teruntum", "terup", "terus", "terusi", "terwelu", "terzina", "tes", "tesaurus", "tesis", "tesmak", "testa", "testamen", "tester", "testes", "testikel", "testimonium", "testing", "testis", "testosteron", "teta", "tetak", "tetal", "tetampan", "tetamu", "tetangga", "tetanus", "tetap", "tetapi", "tetar", "tetas", "teteguk", "teteh", "tetek", "tetelan", "tetelo", "teter", "teterapan", "tetes", "tetibar", "tetibau", "tetikus", "tetirah", "tetiron", "tetoron", "tetra", "tetrahidrokanabinol", "tetrahidron", "tetraklorida", "tetraploid", "tetris", "tetua", "tetuang", "tewas", "teyan", "tezi", "theta", "tiada", "tiaga", "tiam", "tian", "tiang", "tiangui", "tiap", "tiara", "tiarap", "tib", "tiba", "tiban", "tidak", "tidur", "tifa", "tifus", "tiga", "tigari", "tigas", "tihul", "tijaniah", "tik", "tika", "tikai", "tikam", "tikar", "tikas", "tike", "tiket", "tikim", "tikpi", "tikung", "tikus", "tilam", "tilan", "tilang", "tilap", "tilas", "tilawah", "tilde", "tilik", "tim", "timah", "timang", "timarah", "timba", "timbal", "timbang", "timbau", "timbel", "timbil", "timbo", "timbre", "timbrung", "timbuk", "timbul", "timbun", "timburu", "timbus", "timi", "timol", "timpa", "timpal", "timpang", "timpani", "timpanitis", "timpanum", "timpas", "timpuh", "timpuk", "timpus", "timu-timu", "timun", "timur", "timus", "tin", "tindak", "tindan", "tindas", "tindawan", "tindih", "tindik", "tindis", "tiner", "ting", "tinggal", "tinggam", "tinggi", "tinggung", "tingi", "tingkah", "tingkal", "tingkalak", "tingkap", "tingkar", "tingkarang", "tingkarung", "tingkas", "tingkat", "tingkeb", "tingkis", "tingkrang", "tingkuh", "tingting", "tingtong", "tingtur", "tinja", "tinjak", "tinjau", "tinju", "tinta", "tinting", "tintir", "tinulat", "tip", "tipar", "tipe", "tipi", "tipikal", "tipis", "tipograf", "tipografi", "tipologi", "tipologis", "tipu", "tir", "tirah", "tirai", "tirakat", "tiram", "tiran", "tirani", "tiras", "tiraton", "tirau", "tiri", "tiris", "tirkah", "tiroid", "tiroiditis", "tiroksin", "tirta", "tiru", "tirus", "tis", "tisik", "tisotropi", "tisu", "titah", "titanium", "titar", "titel", "titer", "titi", "titik", "titilasi", "titimangsa", "titinada", "titip", "titir", "titis", "titisara", "titit", "titrasi", "titrimetri", "tituler", "tiung", "tiup", "tiwah", "tiwikrama", "tiwul", "tmesis", "toapekong", "toas", "tobak", "tobang", "tobat", "toblos", "toboh", "tobong", "tobralko", "todak", "todong", "toga", "togan", "toge", "togel", "togok", "toh", "tohok", "tohor", "toilet", "tok", "tokak", "tokcer", "toke", "tokek", "toko", "tokoh", "tokok", "tokong", "toksemia", "toksikogenik", "toksikolog", "toksikologi", "toksin", "toktok", "tol", "tolak", "tolan", "tolap", "toleh", "toleran", "toleransi", "tolerir", "tolok", "tolol", "tolong", "toluena", "tom", "toman", "tomang", "tomat", "tombak", "tomboi", "tombok", "tombol", "tombola", "tombong", "tombru", "tomong", "tompel", "ton", "tona", "tonase", "tonem", "tonetika", "tong", "tonggak", "tonggara", "tonggek", "tonggeret", "tonggok", "tonggong", "tonggos", "tongkah", "tongkang", "tongkat", "tongkeng", "tongkol", "tongkor", "tongkrong", "tongol", "tongong", "tongpes", "tongsan", "tongseng", "tongsit", "tongtong", "tonik", "tonikum", "tonil", "tonis", "tonisitas", "tonit", "tonjok", "tonjol", "tonometer", "tonsil", "tonton", "tonus", "top", "topan", "topang", "topas", "topdal", "topek", "topeng", "topes", "tophit", "topi", "topiari", "topik", "topikalisasi", "topikalitas", "topo", "topografi", "topografis", "topong", "toponimi", "torak", "toraks", "torani", "toreh", "torek", "tores", "torida", "torium", "tornado", "torne", "toro", "torpedo", "torpedor", "torsi", "torso", "tortor", "torus", "tos", "tosan", "toserba", "total", "totalisator", "totalitas", "totaliter", "totaliterisme", "totau", "totem", "totemisme", "totemproparte", "totok", "totol", "towel", "toya", "toyor", "tra", "trabekula", "tradisi", "tradisional", "tradisionalisme", "trafo", "tragedi", "tragikomedi", "tragis", "tragus", "trailer", "trakeid", "trakom", "traksi", "traktasi", "traktat", "traktir", "traktor", "traktus", "trama", "trampolin", "trans", "transaksi", "transduksi", "transek", "transeksual", "transenden", "transendental", "transfer", "transfigurasi", "transformasi", "transformasionalis", "transformatif", "transformator", "transfusi", "transgenik", "transisi", "transistor", "transit", "transitif", "transkrip", "transkripsi", "translasi", "transliterasi", "translokasi", "translusens", "transmigran", "transmigrasi", "transmisi", "transmiter", "transmogrifikasi", "transmutasi", "transnasional", "transonik", "transparan", "transparansi", "transpirasi", "transplantasi", "transpor", "transportasi", "transposisi", "transversal", "transvetisme", "trap", "trapesium", "trapezoid", "tras", "trauler", "trauma", "traumatis", "travesti", "trawler", "trayek", "trek", "trekbal", "trem", "trema", "trematoda", "trembesi", "tremer", "tremor", "tren", "trendi", "trengginas", "trenyuh", "tres", "tresna", "tri", "trias", "triatlon", "tribokelistrikan", "tribologi", "tribrata", "tribunal", "tribune", "tributa", "trica", "tridarma", "tridentat", "trienial", "triennale", "trifoliat", "triftong", "trigatra", "trigemius", "trigliserida", "trigonometri", "trigraf", "trihidrik", "trik", "triko", "trikotomi", "trikuspid", "tril", "trilateral", "trilingga", "trilipat", "triliun", "trilogi", "trilomba", "trim", "trimatra", "trimurti", "trinil", "trinitas", "trinitrotoluena", "trio", "triode", "trip", "tripartit", "tripleks", "triplet", "triplik", "tripod", "triprasetia", "trips", "tripsin", "tripsinogen", "triptofan", "triptotos", "trisep", "trisula", "tritunggal", "triturasi", "triumvirat", "trivalen", "trivialitas", "triwangsa", "triwindu", "triwulan", "trofi", "trofoblas", "troi", "troika", "trokanter", "trokea", "troli", "trombin", "trombon", "trombosis", "trombosit", "trombus", "tromol", "trompet", "trompong", "tropik", "tropika", "tropis", "tropisme", "tropopause", "troposfer", "tropus", "tros", "trotoar", "trubadur", "truf", "truk", "truntum", "trusa", "tsar", "tsunami", "tsuru", "tua", "tuah", "tuai", "tuak", "tual", "tuala", "tualang", "tuam", "tuan", "tuang", "tuangku", "tuanku", "tuap", "tuar", "tuarang", "tuas", "tuba", "tubagus", "tuban", "tube", "tubektomi", "tuberkulosis", "tubi", "tubin", "tubir", "tubruk", "tubuh", "tuding", "tuduh", "tudung", "tufa", "tufah", "tugal", "tugar", "tugas", "tugi", "tugu", "tugur", "tuhan", "tuhfah", "tuhfahlulajnas", "tuhfahtulajnas", "tuhfat", "tuhmah", "tuhu", "tuidi", "tuil", "tuit", "tujah", "tuji", "tuju", "tujuh", "tujul", "tuk", "tukai", "tukak", "tukal", "tukam", "tukang", "tukar", "tukas", "tukik", "tukil", "tukmis", "tuksedo", "tuku", "tukuk", "tukul", "tukun", "tukung", "tukup", "tula", "tulah", "tulak", "tulang", "tular", "tulat", "tule", "tulen", "tuli", "tulis", "tulium", "tulu", "tulup", "tulus", "tum", "tuma", "tuman", "tumang", "tumbakan", "tumbal", "tumbang", "tumbas", "tumben", "tumbu", "tumbuh", "tumbuk", "tumbung", "tumenggung", "tumika", "tumis", "tumit", "tumor", "tumpah", "tumpak", "tumpal", "tumpang", "tumpang-tindih", "tumpas", "tumpat", "tumpeng", "tumper", "tumpil", "tumplak", "tumplek", "tumpu", "tumpuk", "tumpul", "tumpur", "tumtam", "tumu", "tumungkul", "tumus", "tun", "tuna", "tunaaksara", "tunabusana", "tunadaksa", "tunaganda", "tunagizi", "tunagrahita", "tunai", "tunak", "tunakarya", "tunalaras", "tunam", "tunan", "tunanetra", "tunang", "tunapolitik", "tunarungu", "tunas", "tunasosial", "tunasusila", "tunatenaga", "tunawicara", "tunawisma", "tunda", "tundan", "tundang", "tundra", "tunduk", "tundun", "tundung", "tung", "tungau", "tunggak", "tunggal", "tungganai", "tunggang", "tunggik", "tungging", "tunggu", "tunggul", "tungkahan", "tungkai", "tungkak", "tungkap", "tungku", "tungkul", "tungkup", "tungkus", "tungro", "tungsten", "tungu", "tunik", "tunjal", "tunjam", "tunjang", "tunjuk", "tunjung", "tuntas", "tuntun", "tuntung", "tuntut", "tunu", "tupai", "tur", "tura", "turang", "turangga", "turap", "turas", "turba", "turbiditas", "turbin", "turbogenerator", "turbojet", "turbulen", "turbulensi", "turfat", "turgor", "turi", "turiang", "turinisasi", "turis", "turisme", "turistik", "turkuois", "turmalin", "turnamen", "turne", "turnoi", "tursi", "turun", "turus", "turut", "tus", "tusam", "tusir", "tuslah", "tustel", "tusuk", "tuter", "tutor", "tutorial", "tuts", "tutu", "tutuh", "tutuk", "tutul", "tutung", "tutup", "tutur", "tutut", "tuwuhan", "tuwung", "tuyuk", "tuyul", "uai", "uak", "uan", "uanda", "uang", "uap", "uar", "uba", "ubah", "uban", "ubang", "ubar", "ubat", "ubek", "ubel", "uber", "ubet", "ubi", "ubikuitas", "ubin", "ubit", "ubrak-abrik", "ubub", "ubudiah", "ubun-ubun", "ubung", "ubur-ubur", "ubyang-ubyung", "ucap", "ucek", "uci-uci", "ucis", "ucok", "ucu", "ucus", "uda", "udak", "udam", "udang", "udani", "udap", "udar", "udara", "ude", "udek", "udel", "udeng", "udet", "udi", "udik", "udim", "udo", "udu", "uduh", "uduk", "udut", "uek", "ufti", "ufuk", "ugahari", "ugal-ugalan", "ugem", "uger", "uget-uget", "ugut", "uhu", "uih", "uik", "uir-uir", "uis", "uit", "ujana", "ujang", "ujar", "uji", "uju", "ujub", "ujud", "ujuk", "ujul", "ujung", "ukas", "ukhrawi", "ukhuwah", "ukik", "ukir", "uktab", "ukulele", "ukup", "ukur", "ula-ula", "ulah", "ulak", "ulam", "ulama", "ulan", "ulang", "ulang-alik", "ulang-aling", "ulap-ulap", "ular", "ulas", "ulat", "ulayah", "ulayat", "ulek", "ulem", "ulen", "ules", "ulet", "uli", "ulik", "ulin", "uling", "ulir", "ulit", "ulna", "ulos", "ultima", "ultimatum", "ultimo", "ultimogenitur", "ultra", "ultrafilter", "ultramarin", "ultramikroskopik", "ultramikroskopiks", "ultramodern", "ultrasonik", "ultrasonika", "ultrasonografi", "ultraungu", "ultraviolet", "ulu", "uluk", "ulun", "ulung", "ulup", "ulur", "uma", "umak", "uman", "umang-umang", "umara", "umat", "umbai", "umbalan", "umban", "umbang", "umbang-ambing", "umbar", "umbara", "umbi", "umbilikus", "umbin", "umbisi", "umbo", "umbra", "umbu", "umbuk", "umbul", "umbur-umbur", "umbut", "umi", "umlaut", "umpak", "umpama", "umpan", "umpat", "umpet", "umpil", "umpuk", "umpun", "umput", "umrah", "umu", "umuk", "umum", "umun", "umur", "unam", "uncang", "uncang-uncit", "uncit", "uncu", "uncue", "uncui", "unda", "undagi", "undak", "undan", "undang", "undi", "unduh", "unduk-unduk", "undung-undung", "undur", "unek-unek", "ungah-angih", "ungam", "ungar", "unggah", "unggal", "unggang-anggit", "unggas", "unggat-unggit", "unggis", "unggit", "unggul", "unggun", "unggut", "ungka", "ungkah", "ungkai", "ungkak", "ungkal", "ungkap", "ungkat", "ungkau", "ungkil", "ungkir", "ungkit", "ungkul", "ungkur", "ungsi", "ungti", "ungu", "unguis", "uni", "uniat", "unifikasi", "uniform", "uniformitas", "unik", "unilateral", "unilineal", "unilinear", "union", "uniseks", "uniseluler", "unit", "unitaris", "unitarisme", "univalen", "universal", "universalia", "universalisme", "universalitas", "universiade", "universitas", "universiter", "universitet", "universum", "unjuk", "unjun", "unjung", "unjur", "unjut", "unsur", "unsuri", "unta", "untai", "untal", "untang-anting", "unti", "until", "unting", "untir", "untuk", "untun", "untung", "untut", "unun", "unyai", "upa", "upaboga", "upacara", "upaduta", "upah", "upajiwa", "upak", "upakara", "upakarti", "upam", "upan", "upanishad", "upar", "upau", "upawasa", "upaya", "upet", "upeti", "upih", "upik", "upil", "upsilon", "ura-ura", "uraemia", "urah", "urai", "urak", "urakus", "uran-uran", "uranisme", "uranium", "uranologi", "uranus", "urap", "uras", "urat", "urban", "urbanisasi", "urbanisme", "urdu", "urea", "uremia", "ureter", "uretra", "uretritis", "urgen", "urgensi", "uri", "urian", "uribang", "urik", "urinalisis", "urine", "uring", "urinoar", "urinometer", "urip", "uris", "urit", "urita", "uritan", "urna", "urolog", "urologi", "uroskopi", "uruk", "urun", "urung", "urup", "urus", "urut", "usada", "usah", "usaha", "usai", "usak", "usali", "usam", "usang", "usap", "usar", "usat", "user-user", "usia", "usik", "usil", "usir", "uskup", "usrek", "ustad", "ustaz", "ustazah", "usuk", "usul", "usuluddin", "usung", "usur", "usus", "usut", "uswah", "utak-atik", "utama", "utang", "utar-utar", "utara", "utarid", "utas", "uterus", "utih", "utik", "utilitas", "utopia", "utopis", "utopisme", "utrikel", "utrolokal", "utuh", "utus", "uvula", "uvular", "uwar", "uwungan", "uwur", "uyuh", "uzlah", "uzur", "vagina", "vak", "vakansi", "vakasi", "vakatur", "vakbon", "vaksin", "vaksinasi", "vakum", "vakuol", "vakuola", "valas", "valensi", "valentin", "valentine", "valeria", "valid", "validitas", "valis", "valium", "valorisasi", "valuta", "vampir", "vanadium", "vandal", "vandalisme", "vandalistis", "vandel", "vanili", "varia", "variabel", "variabilitas", "varian", "variansi", "variasi", "variatif", "varietas", "variola", "varises", "vas", "vasal", "vasektomi", "vaselin", "vaskular", "vaskularisasi", "vaskuler", "vaskulum", "vasodilasi", "vasodilator", "vasomotor", "vatikan", "vaucer", "vedda", "veddoid", "veem", "vegetarian", "vegetarir", "vegetaris", "vegetarisme", "vegetasi", "vektor", "velamentum", "velar", "velarisasi", "velodrom", "velositas", "velum", "vena", "venal", "venalitas", "vendeta", "vendor", "ventilasi", "ventilator", "ventrikel", "ventrikulus", "venus", "verba", "verbal", "verbalisan", "verbalisasi", "verbalisme", "verbalistis", "verbatim", "verbena", "verdigris", "verifikasi", "verifikatur", "veritisme", "verkoper", "vermilium", "vermiliun", "vermiseli", "vermisida", "vernis", "veronal", "verset", "versi", "verso", "verstek", "versus", "vertebra", "vertebrata", "vertikal", "verzet", "vespa", "veste", "vestibul", "vestibula", "vestibulum", "vet", "veter", "veteran", "veterinarian", "veteriner", "vetiver", "veto", "vetsin", "via", "viabel", "viabilitas", "viaduk", "vibran", "vibrasi", "vibrator", "vibrio", "vide", "video", "videofon", "videoklip", "videoteks", "vigia", "vigili", "vignet", "vikariat", "vikaris", "vila", "vinil", "vinyet", "viol", "viola", "violces", "violet", "violin", "violinis", "violis", "virga", "virginia", "virgo", "virilis", "virilisme", "virilitas", "virilokal", "virologi", "virtual", "virtuoso", "virulen", "virulensi", "virus", "visa", "visera", "visi", "visibel", "visibilitas", "visioner", "visitasi", "visitator", "visiun", "viskometer", "viskose", "viskositas", "vista", "visual", "visualisasi", "visum", "visus", "vitakultur", "vital", "vitalitas", "vitamin", "vitelin", "vitiligo", "vitreositas", "vitrifikasi", "vitriol", "vivarium", "vivifikasi", "vivipar", "vla", "vlek", "voal", "vodka", "vokabularium", "vokabuler", "vokal", "vokalia", "vokalis", "vokasional", "vokatif", "vokoid", "volatil", "volatilitas", "voli", "volt", "voltameter", "voltase", "volume", "volumeter", "volumetri", "volunter", "vonis", "vopo", "vorteks", "voting", "votum", "vrah", "vrahoto", "vulgar", "vulgata", "vulger", "vulkan", "vulkanis", "vulkanisasi", "vulkanolog", "vulkanologi", "vulkavit", "vulpen", "vulva", "vulvektomi", "vuring", "waad", "waadat", "wabah", "wabakdu", "wabarakatuh", "wacana", "wadah", "wadak", "wadal", "wadam", "wadat", "wadi", "wadon", "waduh", "waduk", "wadung", "wafa", "wafak", "wafat", "wage", "wagon", "wagu", "wah", "wahah", "wahai", "waham", "wahana", "wahdah", "wahdaniah", "wahdiah", "wahib", "wahid", "wahyu", "wai", "waid", "waima", "waisak", "waisya", "waitankung", "wajah", "wajan", "wajar", "wajib", "wajik", "wak", "wakaf", "wakil", "waktu", "wakun", "wakwak", "walabi", "walad", "walafiat", "walah", "walak", "walakhir", "walakin", "walang", "walangkopo", "walango", "walat", "walau", "walaupun", "waledan", "waleh", "walet", "walhal", "walhasil", "wali", "walikukun", "walimah", "walimana", "waliullah", "wallahi", "wallahualam", "wals", "waluh", "waluku", "wambrau", "wan", "wana", "wanara", "wanawisata", "wanda", "wandu", "wang", "wangi", "wangkang", "wangsa", "wangsit", "wani", "wanita", "wanodya", "wantah", "wantek", "wanti-wanti", "wantilan", "wara", "warak", "warakawuri", "waralaba", "warangan", "waranggana", "warangka", "waras", "warasah", "warawiri", "wardi", "warga", "wari", "waria", "warid", "waringin", "waris", "warita", "warkat", "warna", "warna-warni", "warok", "warsa", "warta", "waru", "waruga", "waruna", "warung", "warwar", "wasahlan", "wasak", "wasal", "wasalam", "wasangka", "wasi", "wasiat", "wasilah", "wasir", "wasit", "wasitah", "waskita", "waskom", "waslah", "waslap", "waspada", "wastafel", "waswas", "watak", "watan", "watang", "watas", "watase", "watermantel", "watermark", "waterpas", "waterpruf", "watt", "watu", "wau", "wawa", "wawancara", "wawanmuka", "wawanrembuk", "wawas", "wawu", "wayang", "wayuh", "wazari", "wazir", "weda", "wedam", "wedana", "wedang", "wedani", "wedar", "wede", "wedel", "weduk", "wegah", "weh", "weharima", "wejang", "wekel", "weker", "welahar", "welas", "weling", "welirang", "welit", "welter", "welut", "wenang", "wenter", "werak", "werangka", "werda", "werdatama", "were", "werek", "wereng", "werit", "werst", "wese", "wesel", "weselbor", "wesi", "wesket", "westernis", "westernisasi", "wet", "wetan", "weton", "wewarah", "wewaton", "wewe", "wibawa", "wicaksana", "wicara", "widi", "widiaiswara", "widiwasa", "widodari", "widoro", "widuri", "widyaiswara", "widyawisata", "wig", "wigata", "wihara", "wijaya", "wijayakusuma", "wijayamala", "wijayamulia", "wijdaniah", "wijen", "wiji", "wijik", "wikalat", "wiku", "wiladah", "wilah", "wilangon", "wilayah", "wilis", "wilwatikta", "wimana", "winaya", "windu", "wing", "wingit", "winglet", "winter", "wira", "wirabank", "wiracarita", "wiraga", "wirakarya", "wirang", "wiraniaga", "wirasuara", "wiraswasta", "wirid", "wiru", "wisa", "wisal", "wisata", "wisaya", "wisesa", "wisik", "wiski", "wisma", "wisnu", "wisuda", "witir", "wiwaha", "wiweka", "wiyaga", "wiyata", "wizurai", "wodka", "wol", "wolanda", "wolfram", "wombat", "won", "wong", "wora-wari", "wortel", "wosi", "wotogal-agil", "wrang", "wreda", "wredatama", "wregu", "wrisaba", "wudani", "wudu", "wuduk", "wujud", "wuker", "wukerar", "wuku", "wukuf", "wulan", "wulang", "wulu", "wulung", "wungon", "wungu", "wuwungan", "xantat", "xantena", "xantofil", "xenia", "xenofili", "xenofobia", "xenoglosia", "xenograf", "xenokrasi", "xenolit", "xenomania", "xenon", "xerofil", "xerofit", "xeroftalmia", "xerografi", "xerosis", "xifoid", "xilem", "xilena", "xilofon", "xilograf", "xilografi", "xiloid", "xiloidina", "xilol", "xilologi", "xilonit", "xilosa", "yad", "yahud", "yahudi", "yahudiah", "yahwe", "yais", "yaitu", "yakin", "yakis", "yakitori", "yakjuj", "yakni", "yaksa", "yakun", "yakut", "yamtuan", "yang", "yantra", "yard", "yargon", "yasan", "yasmin", "yasti", "yatim", "yaum", "yaumudin", "yaumulakhir", "yaumulaza", "yaumuljamak", "yaumuljaza", "yaumulkiamah", "yaumulmahsyar", "yayasan", "yayi", "yayu", "yehova", "yel", "yen", "yeyunum", "yodium", "yoga", "yoghurt", "yogi", "yogia", "yohimbina", "yojana", "yokal", "yolk", "yos", "yosong", "yoyo", "yubileum", "yuda", "yudikatif", "yudisial", "yudisium", "yudo", "yudoka", "yuk", "yunani", "yunda", "yunior", "yunta", "yupa", "yupiter", "yura", "yuran", "yuridis", "yuris", "yurisdiksi", "yurisprudensi", "yustisi", "yute", "yuvenil", "yuwana", "yuwaraja", "yuyitsu", "yuyu", "zabah", "zabaniah", "zabarjad", "zabib", "zabur", "zadah", "zahid", "zai", "zaim", "zair", "zaitun", "zakar", "zakat", "zakelek", "zakiah", "zakum", "zal", "zalim", "zalir", "zaman", "zamin", "zamindar", "zamrud", "zamzam", "zan", "zanggi", "zantara", "zarafah", "zarah", "zaratit", "zariah", "zariat", "zat", "zatua", "zawal", "zawiat", "zebra", "zebu", "zelot", "zen", "zend-avesta", "zendeling", "zending", "zeni", "zenit", "zeolit", "zeoponik", "zero", "zet", "zeta", "ziadah", "ziarah", "zib", "zig-zag", "zigomorf", "zigot", "zikir", "zilullah", "zimase", "zimi", "zimogen", "zimolisis", "zimosis", "zimotik", "zimurgi", "zina", "zindik", "zink", "zinkografi", "zion", "zionis", "zionisme", "zirafah", "zirah", "zirbad", "zirkonia", "zirkonium", "zirnikh", "ziter", "zodiak", "zoetrop", "zohal", "zohrah", "zohrat", "zona", "zonasi", "zonder", "zone", "zoning", "zoofit", "zoofobia", "zoogani", "zoogeografi", "zoologi", "zoonosis", "zoosemiotika", "zuama", "zuhud", "zuhur", "zulfikar", "zulhijah", "zulkaidah", "zulmat", "zulu", "zurafah", "zuriah", "zus", ""];
-},{}],"../node_modules/natural/lib/natural/stemmers/indonesian/prefix_rules.js":[function(require,module,exports) {
+},{}],"BlQR":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -39721,7 +39467,7 @@ rules.push(pr.DisambiguatorPrefixRule40);
 rules.push(pr.DisambiguatorPrefixRule41);
 rules.push(pr.DisambiguatorPrefixRule42);
 PrefixRules.rules = rules;
-},{"./removal":"../node_modules/natural/lib/natural/stemmers/indonesian/removal.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./data/kata-dasar.json":"../node_modules/natural/lib/natural/stemmers/indonesian/data/kata-dasar.json"}],"../node_modules/natural/lib/natural/stemmers/indonesian/stemmer_id.js":[function(require,module,exports) {
+},{"./removal":"jQaI","fs":"rDCW","./data/kata-dasar.json":"fmNn"}],"IjLb":[function(require,module,exports) {
 /*
 Copyright (c) 2017, Alif Bhaskoro, Andy Librian, R. Kukuh (Reimplemented from https://github.com/sastrawi/sastrawi)
 
@@ -40007,7 +39753,7 @@ function precedenceAdjustmentSpecification(word) {
 stemmer.isPlural = isPlural;
 stemmer.dictionary = dictionary;
 stemmer.a = suffix_rules[0];
-},{"./base_stemmer_id":"../node_modules/natural/lib/natural/stemmers/indonesian/base_stemmer_id.js","./suffix_rules":"../node_modules/natural/lib/natural/stemmers/indonesian/suffix_rules.js","./prefix_rules":"../node_modules/natural/lib/natural/stemmers/indonesian/prefix_rules.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./data/kata-dasar.json":"../node_modules/natural/lib/natural/stemmers/indonesian/data/kata-dasar.json"}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_nl.js":[function(require,module,exports) {
+},{"./base_stemmer_id":"K9OX","./suffix_rules":"b9X0","./prefix_rules":"BlQR","fs":"rDCW","./data/kata-dasar.json":"fmNn"}],"IKpd":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel, Martijn de Boer
 
@@ -40043,7 +39789,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.trim(text.split(/[^a-zA-Z0-9_']+/));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_pl.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"wCaQ":[function(require,module,exports) {
 /*
 Copyright (c) 2013, Paweł Łaskarzewski
 
@@ -40089,7 +39835,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
   // break a string up into an array of tokens by anything non-word
   return this.withoutEmpty(this.clearText(text).split(' '));
 };
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_vi.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"XbBT":[function(require,module,exports) {
 /*
 Copyright (c) 2018, Javis1205 (Github account name)
 
@@ -40125,7 +39871,7 @@ AggressiveTokenizer.prototype.tokenize = function (text) {
 };
 
 module.exports = AggressiveTokenizer;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/natural/lib/natural/tokenizers/tokenizer_case.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"XDOC":[function(require,module,exports) {
 /*
  Copyright (c) 2011, Chris Umbel, Alex Langberg
 
@@ -40183,7 +39929,7 @@ CaseTokenizer.prototype.tokenize = function (text, preserveApostrophe) {
 };
 
 module.exports = CaseTokenizer;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/underscore/underscore.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"h15N":[function(require,module,exports) {
 var global = arguments[3];
 var define;
 //     Underscore.js 1.9.2
@@ -41879,7 +41625,7 @@ var define;
   }
 }());
 
-},{}],"../node_modules/natural/lib/natural/tokenizers/orthography_matchers.js":[function(require,module,exports) {
+},{}],"E7Ih":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -41911,7 +41657,7 @@ var matchers = {
   fi: /[^A-Za-zÅåÄäÖö]/
 };
 module.exports = matchers;
-},{}],"../node_modules/natural/lib/natural/tokenizers/regexp_tokenizer.js":[function(require,module,exports) {
+},{}],"LYyI":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Rob Ellis, Chris Umbel
 
@@ -42017,7 +41763,7 @@ var WordPunctTokenizer = function (options) {
 
 util.inherits(WordPunctTokenizer, RegexpTokenizer);
 exports.WordPunctTokenizer = WordPunctTokenizer;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","underscore":"../node_modules/underscore/underscore.js","./orthography_matchers":"../node_modules/natural/lib/natural/tokenizers/orthography_matchers.js"}],"../node_modules/natural/lib/natural/tokenizers/treebank_word_tokenizer.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70","underscore":"h15N","./orthography_matchers":"E7Ih"}],"hvKR":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Rob Ellis, Chris Umbel
 
@@ -42069,7 +41815,7 @@ TreebankWordTokenizer.prototype.tokenize = function (text) {
 };
 
 module.exports = TreebankWordTokenizer;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","underscore":"../node_modules/underscore/underscore.js"}],"../node_modules/natural/lib/natural/tokenizers/sentence_tokenizer.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70","underscore":"h15N"}],"HOVZ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -42109,7 +41855,7 @@ SentenceTokenizer.prototype.tokenize = function (text) {
 };
 
 module.exports = SentenceTokenizer;
-},{"./tokenizer":"../node_modules/natural/lib/natural/tokenizers/tokenizer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js"}],"../node_modules/events/events.js":[function(require,module,exports) {
+},{"./tokenizer":"ZemB","util":"nq70"}],"FRpO":[function(require,module,exports) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -42517,7 +42263,7 @@ function unwrapListeners(arr) {
 
   return ret;
 }
-},{}],"../node_modules/os-browserify/browser.js":[function(require,module,exports) {
+},{}],"zv8z":[function(require,module,exports) {
 exports.endianness = function () { return 'LE' };
 
 exports.hostname = function () {
@@ -42568,7 +42314,7 @@ exports.homedir = function () {
 	return '/'
 };
 
-},{}],"../node_modules/natural/lib/natural/classifiers/classifier.js":[function(require,module,exports) {
+},{}],"X6da":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -43023,7 +42769,7 @@ Classifier.prototype.setOptions = setOptions;
 Classifier.restore = restore;
 Classifier.load = load;
 module.exports = Classifier;
-},{"../stemmers/porter_stemmer":"../node_modules/natural/lib/natural/stemmers/porter_stemmer.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","events":"../node_modules/events/events.js","os":"../node_modules/os-browserify/browser.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js"}],"../node_modules/apparatus/lib/apparatus/classifier/classifier.js":[function(require,module,exports) {
+},{"../stemmers/porter_stemmer":"hFgZ","util":"nq70","events":"FRpO","os":"zv8z","fs":"rDCW"}],"vMt0":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -43075,7 +42821,7 @@ Classifier.prototype.train = train;
 Classifier.prototype.classify = classify;
 Classifier.restore = restore;
 module.exports = Classifier;
-},{}],"../node_modules/apparatus/lib/apparatus/classifier/bayes_classifier.js":[function(require,module,exports) {
+},{}],"pa02":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -43204,7 +42950,7 @@ BayesClassifier.prototype.getClassifications = getClassifications;
 BayesClassifier.prototype.probabilityOfClass = probabilityOfClass;
 BayesClassifier.restore = restore;
 module.exports = BayesClassifier;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./classifier":"../node_modules/apparatus/lib/apparatus/classifier/classifier.js"}],"../node_modules/sylvester/lib/node-sylvester/sylvester.js":[function(require,module,exports) {
+},{"util":"nq70","./classifier":"vMt0"}],"zevT":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 // This file is required in order for any other classes to work. Some Vector methods work with the
 // other Sylvester classes and are useless unless they are included. Other classes such as Line and
@@ -43217,7 +42963,7 @@ var Sylvester = {
   precision: 1e-6
 };
 module.exports = Sylvester;
-},{}],"../node_modules/sylvester/lib/node-sylvester/matrix.js":[function(require,module,exports) {
+},{}],"NLhy":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 // Matrix class - depends on Vector.
 var fs = require('fs');
@@ -44240,7 +43986,7 @@ Matrix.Ones = function (n, m) {
 };
 
 module.exports = Matrix;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./sylvester":"../node_modules/sylvester/lib/node-sylvester/sylvester.js","./vector":"../node_modules/sylvester/lib/node-sylvester/vector.js"}],"../node_modules/sylvester/lib/node-sylvester/vector.js":[function(require,module,exports) {
+},{"fs":"rDCW","./sylvester":"zevT","./vector":"zeX0"}],"zeX0":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 // This file is required in order for any other classes to work. Some Vector methods work with the
 // other Sylvester classes and are useless unless they are included. Other classes such as Line and
@@ -44746,7 +44492,7 @@ Vector.log = function (v) {
 };
 
 module.exports = Vector;
-},{"./sylvester":"../node_modules/sylvester/lib/node-sylvester/sylvester.js","./matrix":"../node_modules/sylvester/lib/node-sylvester/matrix.js"}],"../node_modules/sylvester/lib/node-sylvester/plane.js":[function(require,module,exports) {
+},{"./sylvester":"zevT","./matrix":"NLhy"}],"RaXd":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 // Plane class - depends on Vector. Some methods require Matrix and Line.
 var Vector = require('./vector');
@@ -45081,7 +44827,7 @@ Plane.fromPoints = function (points) {
 };
 
 module.exports = Plane;
-},{"./vector":"../node_modules/sylvester/lib/node-sylvester/vector.js","./matrix":"../node_modules/sylvester/lib/node-sylvester/matrix.js","./line":"../node_modules/sylvester/lib/node-sylvester/line.js","./sylvester":"../node_modules/sylvester/lib/node-sylvester/sylvester.js"}],"../node_modules/sylvester/lib/node-sylvester/line.js":[function(require,module,exports) {
+},{"./vector":"zeX0","./matrix":"NLhy","./line":"mYx7","./sylvester":"zevT"}],"mYx7":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 var Vector = require('./vector');
 
@@ -45375,7 +45121,7 @@ Line.X = Line.create(Vector.Zero(3), Vector.i);
 Line.Y = Line.create(Vector.Zero(3), Vector.j);
 Line.Z = Line.create(Vector.Zero(3), Vector.k);
 module.exports = Line;
-},{"./vector":"../node_modules/sylvester/lib/node-sylvester/vector.js","./matrix":"../node_modules/sylvester/lib/node-sylvester/matrix.js","./plane":"../node_modules/sylvester/lib/node-sylvester/plane.js","./sylvester":"../node_modules/sylvester/lib/node-sylvester/sylvester.js"}],"../node_modules/sylvester/lib/node-sylvester/line.segment.js":[function(require,module,exports) {
+},{"./vector":"zeX0","./matrix":"NLhy","./plane":"RaXd","./sylvester":"zevT"}],"kTGp":[function(require,module,exports) {
 // Copyright (c) 2011, Chris Umbel, James Coglan
 // Line.Segment class - depends on Line and its dependencies.
 var Line = require('./line');
@@ -45518,7 +45264,7 @@ Line.Segment.create = function (v1, v2) {
 };
 
 module.exports = Line.Segment;
-},{"./line":"../node_modules/sylvester/lib/node-sylvester/line.js","./vector":"../node_modules/sylvester/lib/node-sylvester/vector.js"}],"../node_modules/sylvester/lib/node-sylvester/index.js":[function(require,module,exports) {
+},{"./line":"mYx7","./vector":"zeX0"}],"VTAy":[function(require,module,exports) {
 var global = arguments[3];
 // Copyright (c) 2011, Chris Umbel
 exports.Vector = require('./vector');
@@ -45531,7 +45277,7 @@ exports.Plane = require('./plane');
 global.$P = exports.Plane.create;
 exports.Line.Segment = require('./line.segment');
 exports.Sylvester = require('./sylvester');
-},{"./vector":"../node_modules/sylvester/lib/node-sylvester/vector.js","./matrix":"../node_modules/sylvester/lib/node-sylvester/matrix.js","./line":"../node_modules/sylvester/lib/node-sylvester/line.js","./plane":"../node_modules/sylvester/lib/node-sylvester/plane.js","./line.segment":"../node_modules/sylvester/lib/node-sylvester/line.segment.js","./sylvester":"../node_modules/sylvester/lib/node-sylvester/sylvester.js"}],"../node_modules/apparatus/lib/apparatus/classifier/logistic_regression_classifier.js":[function(require,module,exports) {
+},{"./vector":"zeX0","./matrix":"NLhy","./line":"mYx7","./plane":"RaXd","./line.segment":"kTGp","./sylvester":"zevT"}],"JMda":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -45715,7 +45461,7 @@ LogisticRegressionClassifier.prototype.computeThetas = computeThetas;
 LogisticRegressionClassifier.prototype.getClassifications = getClassifications;
 LogisticRegressionClassifier.restore = restore;
 module.exports = LogisticRegressionClassifier;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./classifier":"../node_modules/apparatus/lib/apparatus/classifier/classifier.js","sylvester":"../node_modules/sylvester/lib/node-sylvester/index.js"}],"../node_modules/apparatus/lib/apparatus/clusterer/kmeans.js":[function(require,module,exports) {
+},{"util":"nq70","./classifier":"vMt0","sylvester":"VTAy"}],"Yvyt":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -45828,11 +45574,11 @@ KMeans.prototype.createCentroids = createCentroids;
 KMeans.prototype.distanceFrom = distanceFrom;
 KMeans.prototype.cluster = cluster;
 module.exports = KMeans;
-},{"sylvester":"../node_modules/sylvester/lib/node-sylvester/index.js"}],"../node_modules/apparatus/lib/apparatus/index.js":[function(require,module,exports) {
+},{"sylvester":"VTAy"}],"ik60":[function(require,module,exports) {
 exports.BayesClassifier = require('./classifier/bayes_classifier');
 exports.LogisticRegressionClassifier = require('./classifier/logistic_regression_classifier');
 exports.KMeans = require('./clusterer/kmeans');
-},{"./classifier/bayes_classifier":"../node_modules/apparatus/lib/apparatus/classifier/bayes_classifier.js","./classifier/logistic_regression_classifier":"../node_modules/apparatus/lib/apparatus/classifier/logistic_regression_classifier.js","./clusterer/kmeans":"../node_modules/apparatus/lib/apparatus/clusterer/kmeans.js"}],"../node_modules/natural/lib/natural/classifiers/bayes_classifier.js":[function(require,module,exports) {
+},{"./classifier/bayes_classifier":"pa02","./classifier/logistic_regression_classifier":"JMda","./clusterer/kmeans":"Yvyt"}],"kd1i":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -45890,7 +45636,7 @@ function load(filename, stemmer, callback) {
 BayesClassifier.restore = restore;
 BayesClassifier.load = load;
 module.exports = BayesClassifier;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./classifier":"../node_modules/natural/lib/natural/classifiers/classifier.js","apparatus":"../node_modules/apparatus/lib/apparatus/index.js"}],"../node_modules/natural/lib/natural/classifiers/logistic_regression_classifier.js":[function(require,module,exports) {
+},{"util":"nq70","./classifier":"X6da","apparatus":"ik60"}],"a582":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -45951,7 +45697,7 @@ LogisticRegressionClassifier.prototype.train = train;
 LogisticRegressionClassifier.restore = restore;
 LogisticRegressionClassifier.load = load;
 module.exports = LogisticRegressionClassifier;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./classifier":"../node_modules/natural/lib/natural/classifiers/classifier.js","apparatus":"../node_modules/apparatus/lib/apparatus/index.js"}],"../node_modules/natural/lib/natural/inflectors/singular_plural_inflector.js":[function(require,module,exports) {
+},{"util":"nq70","./classifier":"X6da","apparatus":"ik60"}],"HTtH":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -46054,7 +45800,7 @@ TenseInflector.prototype.izeRegExps = function (token, forms) {
 };
 
 module.exports = TenseInflector;
-},{}],"../node_modules/natural/lib/natural/inflectors/form_set.js":[function(require,module,exports) {
+},{}],"wmD9":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -46082,7 +45828,7 @@ var FormSet = function () {
 };
 
 module.exports = FormSet;
-},{}],"../node_modules/natural/lib/natural/inflectors/noun_inflector.js":[function(require,module,exports) {
+},{}],"cxDQ":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -46181,7 +45927,7 @@ var NounInflector = function () {
 
 util.inherits(NounInflector, SingularPluralInflector);
 module.exports = NounInflector;
-},{"./singular_plural_inflector":"../node_modules/natural/lib/natural/inflectors/singular_plural_inflector.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","./form_set":"../node_modules/natural/lib/natural/inflectors/form_set.js"}],"../node_modules/natural/lib/natural/inflectors/fr/noun_inflector.js":[function(require,module,exports) {
+},{"./singular_plural_inflector":"HTtH","util":"nq70","./form_set":"wmD9"}],"dbaX":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -46289,7 +46035,7 @@ var NounInflector = function () {
 
 util.inherits(NounInflector, SingularPluralInflector);
 module.exports = NounInflector;
-},{"../singular_plural_inflector":"../node_modules/natural/lib/natural/inflectors/singular_plural_inflector.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","../form_set":"../node_modules/natural/lib/natural/inflectors/form_set.js"}],"../node_modules/natural/lib/natural/inflectors/ja/noun_inflector.js":[function(require,module,exports) {
+},{"../singular_plural_inflector":"HTtH","util":"nq70","../form_set":"wmD9"}],"cA4I":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -46407,7 +46153,7 @@ var NounInflector = function () {
 
 util.inherits(NounInflector, SingularPluralInflector);
 module.exports = NounInflector;
-},{"../singular_plural_inflector":"../node_modules/natural/lib/natural/inflectors/singular_plural_inflector.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","../form_set":"../node_modules/natural/lib/natural/inflectors/form_set.js"}],"../node_modules/natural/lib/natural/inflectors/present_verb_inflector.js":[function(require,module,exports) {
+},{"../singular_plural_inflector":"HTtH","util":"nq70","../form_set":"wmD9"}],"HSgG":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -46475,7 +46221,7 @@ var VerbInflector = function () {
 
 util.inherits(VerbInflector, SingularPluralInflector);
 module.exports = VerbInflector;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./singular_plural_inflector":"../node_modules/natural/lib/natural/inflectors/singular_plural_inflector.js","./form_set":"../node_modules/natural/lib/natural/inflectors/form_set.js"}],"../node_modules/natural/lib/natural/inflectors/count_inflector.js":[function(require,module,exports) {
+},{"util":"nq70","./singular_plural_inflector":"HTtH","./form_set":"wmD9"}],"AEFT":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -46527,7 +46273,7 @@ var CountInflector = function () {};
 
 CountInflector.nth = nth;
 module.exports = CountInflector;
-},{}],"../node_modules/path-browserify/index.js":[function(require,module,exports) {
+},{}],"UUq2":[function(require,module,exports) {
 var process = require("process");
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -46832,7 +46578,7 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-},{"process":"../node_modules/process/browser.js"}],"../node_modules/base64-js/index.js":[function(require,module,exports) {
+},{"process":"pBGv"}],"yh9p":[function(require,module,exports) {
 'use strict'
 
 exports.byteLength = byteLength
@@ -46986,7 +46732,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],"../node_modules/ieee754/index.js":[function(require,module,exports) {
+},{}],"JgNJ":[function(require,module,exports) {
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -47072,14 +46818,14 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"../node_modules/isarray/index.js":[function(require,module,exports) {
+},{}],"REa7":[function(require,module,exports) {
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],"../node_modules/buffer/index.js":[function(require,module,exports) {
+},{}],"dskh":[function(require,module,exports) {
 
 var global = arguments[3];
 /*!
@@ -48872,7 +48618,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":"../node_modules/base64-js/index.js","ieee754":"../node_modules/ieee754/index.js","isarray":"../node_modules/isarray/index.js","buffer":"../node_modules/buffer/index.js"}],"../node_modules/natural/lib/natural/wordnet/wordnet_file.js":[function(require,module,exports) {
+},{"base64-js":"yh9p","ieee754":"JgNJ","isarray":"REa7","buffer":"dskh"}],"DOQh":[function(require,module,exports) {
 var Buffer = require("buffer").Buffer;
 /*
 Copyright (c) 2011, Chris Umbel
@@ -48942,7 +48688,7 @@ var WordNetFile = function (dataDir, fileName) {
 WordNetFile.prototype.open = open;
 WordNetFile.appendLineChar = appendLineChar;
 module.exports = WordNetFile;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","path":"../node_modules/path-browserify/index.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","buffer":"../node_modules/buffer/index.js"}],"../node_modules/natural/lib/natural/wordnet/index_file.js":[function(require,module,exports) {
+},{"fs":"rDCW","path":"UUq2","util":"nq70","buffer":"dskh"}],"GkwZ":[function(require,module,exports) {
 var Buffer = require("buffer").Buffer;
 /*
 Copyright (c) 2011, Chris Umbel
@@ -49082,7 +48828,7 @@ IndexFile.prototype.lookup = lookup;
 IndexFile.prototype.find = find;
 IndexFile.prototype._findAt = findAt;
 module.exports = IndexFile;
-},{"./wordnet_file":"../node_modules/natural/lib/natural/wordnet/wordnet_file.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","buffer":"../node_modules/buffer/index.js"}],"../node_modules/natural/lib/natural/wordnet/data_file.js":[function(require,module,exports) {
+},{"./wordnet_file":"DOQh","fs":"rDCW","util":"nq70","buffer":"dskh"}],"f6Kj":[function(require,module,exports) {
 var Buffer = require("buffer").Buffer;
 /*
 Copyright (c) 2011, Chris Umbel
@@ -49168,7 +48914,7 @@ var DataFile = function (dataDir, name) {
 util.inherits(DataFile, WordNetFile);
 DataFile.prototype.get = get;
 module.exports = DataFile;
-},{"./wordnet_file":"../node_modules/natural/lib/natural/wordnet/wordnet_file.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","util":"../node_modules/node-libs-browser/node_modules/util/util.js","buffer":"../node_modules/buffer/index.js"}],"../node_modules/natural/lib/natural/wordnet/wordnet.js":[function(require,module,exports) {
+},{"./wordnet_file":"DOQh","fs":"rDCW","util":"nq70","buffer":"dskh"}],"zjvV":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -49336,7 +49082,7 @@ function WordNet(dataDir) {
 }
 
 module.exports = WordNet;
-},{"./index_file":"../node_modules/natural/lib/natural/wordnet/index_file.js","./data_file":"../node_modules/natural/lib/natural/wordnet/data_file.js"}],"../node_modules/natural/lib/natural/tfidf/tfidf.js":[function(require,module,exports) {
+},{"./index_file":"GkwZ","./data_file":"f6Kj"}],"KXVd":[function(require,module,exports) {
 var Buffer = require("buffer").Buffer;
 /*
 Copyright (c) 2011, Rob Ellis, Chris Umbel
@@ -49538,7 +49284,7 @@ TfIdf.prototype.setStopwords = function (customStopwords) {
   stopwords = customStopwords;
   return true;
 };
-},{"underscore":"../node_modules/underscore/underscore.js","../tokenizers/regexp_tokenizer":"../node_modules/natural/lib/natural/tokenizers/regexp_tokenizer.js","../util/stopwords":"../node_modules/natural/lib/natural/util/stopwords.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","buffer":"../node_modules/buffer/index.js"}],"../node_modules/natural/lib/natural/trie/trie.js":[function(require,module,exports) {
+},{"underscore":"h15N","../tokenizers/regexp_tokenizer":"LYyI","../util/stopwords":"l7Q1","fs":"rDCW","buffer":"dskh"}],"iysN":[function(require,module,exports) {
 /*
 Copyright (c) 2014 Ken Koch
 
@@ -49784,7 +49530,7 @@ Trie.prototype.getSize = function () {
 
 
 module.exports = Trie;
-},{}],"../node_modules/natural/lib/natural/analyzers/sentence_analyzer.js":[function(require,module,exports) {
+},{}],"AQuo":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Rob Ellis, Chris Umbel
 
@@ -49971,7 +49717,7 @@ Sentences.prototype.type = function (callback) {
 };
 
 module.exports = Sentences;
-},{"underscore":"../node_modules/underscore/underscore.js"}],"../node_modules/natural/lib/natural/util/bag.js":[function(require,module,exports) {
+},{"underscore":"h15N"}],"UTNL":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Lee Wenzhu
 
@@ -50026,7 +49772,7 @@ Bag.prototype.unpack = function () {
 };
 
 module.exports = Bag;
-},{}],"../node_modules/natural/lib/natural/util/edge_weighted_digraph.js":[function(require,module,exports) {
+},{}],"FvoX":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Lee Wenzhu
 
@@ -50146,7 +49892,7 @@ EdgeWeightedDigraph.prototype.toString = function () {
 };
 
 module.exports = EdgeWeightedDigraph;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","./bag":"../node_modules/natural/lib/natural/util/bag.js"}],"../node_modules/natural/lib/natural/util/topological.js":[function(require,module,exports) {
+},{"util":"nq70","./bag":"UTNL"}],"kjdP":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Lee Wenzhu
 
@@ -50251,7 +49997,7 @@ function uniqueVertexs(edges) {
 
 ;
 module.exports = Topological;
-},{}],"../node_modules/natural/lib/natural/util/shortest_path_tree.js":[function(require,module,exports) {
+},{}],"ZNbZ":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Lee Wenzhu
 
@@ -50359,7 +50105,7 @@ ShortestPathTree.prototype.pathTo = function (v) {
 };
 
 module.exports = ShortestPathTree;
-},{"./edge_weighted_digraph":"../node_modules/natural/lib/natural/util/edge_weighted_digraph.js","./topological":"../node_modules/natural/lib/natural/util/topological.js"}],"../node_modules/natural/lib/natural/spellcheck/spellcheck.js":[function(require,module,exports) {
+},{"./edge_weighted_digraph":"FvoX","./topological":"kjdP"}],"VpoG":[function(require,module,exports) {
 var Trie = require('../trie/trie'); // Probabilistic spellchecker based on http://norvig.com/spell-correct.html
 // The general idea is simple. Given a word, the spellchecker calculates all strings that are some user-defined edit distance away. Of those many candidates, it filters the ones that are not words and then returns an array of possible corrections in order of decreasing probability, based on the edit distance and the candidate's frequency in the input corpus
 // Words that are an edit distance of n away from the mispelled word are considered infinitely more probable than words that are of an edit distance >n
@@ -50458,7 +50204,7 @@ Spellcheck.prototype.editsWithMaxDistanceHelper = function (distanceCounter, dis
 };
 
 module.exports = Spellcheck;
-},{"../trie/trie":"../node_modules/natural/lib/natural/trie/trie.js"}],"../node_modules/natural/lib/natural/util/longest_path_tree.js":[function(require,module,exports) {
+},{"../trie/trie":"iysN"}],"NBgM":[function(require,module,exports) {
 /*
  Copyright (c) 2014, Lee Wenzhu
 
@@ -50564,7 +50310,7 @@ LongestPathTree.prototype.pathTo = function (v) {
 };
 
 module.exports = LongestPathTree;
-},{"./edge_weighted_digraph":"../node_modules/natural/lib/natural/util/edge_weighted_digraph.js","./topological":"../node_modules/natural/lib/natural/util/topological.js"}],"../node_modules/natural/lib/natural/ngrams/ngrams.js":[function(require,module,exports) {
+},{"./edge_weighted_digraph":"FvoX","./topological":"kjdP"}],"a1HV":[function(require,module,exports) {
 /*
 Copyright (c) 2011, 2018 Rob Ellis, Chris Umbel, Hugo W.L. ter Doest
 
@@ -50722,7 +50468,7 @@ var ngrams = function (sequence, n, startSymbol, endSymbol, stats) {
     return result;
   }
 };
-},{"underscore":"../node_modules/underscore/underscore.js","../tokenizers/regexp_tokenizer":"../node_modules/natural/lib/natural/tokenizers/regexp_tokenizer.js"}],"../node_modules/natural/lib/natural/ngrams/ngrams_zh.js":[function(require,module,exports) {
+},{"underscore":"h15N","../tokenizers/regexp_tokenizer":"LYyI"}],"k7oS":[function(require,module,exports) {
 /*
 Copyright (c) 2014, Lee Wenzhu
 
@@ -50807,7 +50553,7 @@ var ngrams = function (sequence, n, startSymbol, endSymbol) {
 
   return result;
 };
-},{"underscore":"../node_modules/underscore/underscore.js"}],"../node_modules/natural/lib/natural/distance/jaro-winkler_distance.js":[function(require,module,exports) {
+},{"underscore":"h15N"}],"Ls2c":[function(require,module,exports) {
 /*
 Copyright (c) 2012, Adam Phillabaum, Chris Umbel
 
@@ -50950,7 +50696,7 @@ function JaroWinklerDistance(s1, s2, dj, ignoreCase) {
 }
 
 module.exports = JaroWinklerDistance;
-},{}],"../node_modules/natural/lib/natural/distance/levenshtein_distance.js":[function(require,module,exports) {
+},{}],"dOpz":[function(require,module,exports) {
 /*
 Copyright (c) 2012, Sid Nallu, Chris Umbel
 
@@ -51207,7 +50953,7 @@ module.exports = {
   LevenshteinDistance: LevenshteinDistance,
   DamerauLevenshteinDistance: DamerauLevenshteinDistance
 };
-},{"underscore":"../node_modules/underscore/underscore.js"}],"../node_modules/natural/lib/natural/distance/dice_coefficient.js":[function(require,module,exports) {
+},{"underscore":"h15N"}],"yzYg":[function(require,module,exports) {
 /*
 Copyright (c) 2011, John Crepezzi, Chris Umbel
 
@@ -51297,7 +51043,7 @@ var compare = function (str1, str2) {
 };
 
 module.exports = compare;
-},{}],"../node_modules/natural/lib/natural/distance/hamming_distance.js":[function(require,module,exports) {
+},{}],"KQpg":[function(require,module,exports) {
 /*
 	Copyright (c) 2018, Shane Caldwell, Hugo ter Doest
 
@@ -51352,7 +51098,7 @@ function HammingDistance(s1, s2, ignoreCase) {
 }
 
 module.exports = HammingDistance;
-},{}],"../node_modules/natural/lib/natural/normalizers/normalizer.js":[function(require,module,exports) {
+},{}],"Z5wq":[function(require,module,exports) {
 /*
  Copyright (c) 2013, Kenneth Koch
 
@@ -51451,7 +51197,7 @@ var normalize_tokens = function (tokens) {
 
 
 exports.normalize_tokens = normalize_tokens;
-},{"../util/utils":"../node_modules/natural/lib/natural/util/utils.js"}],"../node_modules/natural/lib/natural/normalizers/remove_diacritics.js":[function(require,module,exports) {
+},{"../util/utils":"Jjya"}],"yWPV":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Alexy Maslennikov
 
@@ -51747,7 +51493,7 @@ module.exports = function (str) {
 
   return str;
 };
-},{}],"../node_modules/natural/lib/natural/transliterators/ja/index.js":[function(require,module,exports) {
+},{}],"cDO1":[function(require,module,exports) {
 /*
  Copyright (c) 2012, Guillaume Marty
 
@@ -52668,7 +52414,7 @@ module.exports = function (str) {
 
   return str;
 };
-},{"../../util/utils":"../node_modules/natural/lib/natural/util/utils.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleTemplates.js":[function(require,module,exports) {
+},{"../../util/utils":"Jjya"}],"yvKV":[function(require,module,exports) {
 /*
   Rule templates that provide metadata for generating transformation rules
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -53472,7 +53218,7 @@ function default_predicate(sentence, i, parameter) {
 }
 
 module.exports = ruleTemplates;
-},{}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Predicate.js":[function(require,module,exports) {
+},{}],"t9KM":[function(require,module,exports) {
 /*
   Predicates for the Brill tagger
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -53519,7 +53265,7 @@ Predicate.prototype.evaluate = function (sentence, position) {
 };
 
 module.exports = Predicate;
-},{"./RuleTemplates":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleTemplates.js"}],"../node_modules/jsonify/lib/parse.js":[function(require,module,exports) {
+},{"./RuleTemplates":"yvKV"}],"rcGy":[function(require,module,exports) {
 var at, // The index of the current character
     ch, // The current character
     escapee = {
@@ -53794,7 +53540,7 @@ module.exports = function (source, reviver) {
     }({'': result}, '')) : result;
 };
 
-},{}],"../node_modules/jsonify/lib/stringify.js":[function(require,module,exports) {
+},{}],"MRIO":[function(require,module,exports) {
 var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
     escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
     gap,
@@ -53950,11 +53696,11 @@ module.exports = function (value, replacer, space) {
     return str('', {'': value});
 };
 
-},{}],"../node_modules/jsonify/index.js":[function(require,module,exports) {
+},{}],"Mdbr":[function(require,module,exports) {
 exports.parse = require('./lib/parse');
 exports.stringify = require('./lib/stringify');
 
-},{"./lib/parse":"../node_modules/jsonify/lib/parse.js","./lib/stringify":"../node_modules/jsonify/lib/stringify.js"}],"../node_modules/json-stable-stringify/index.js":[function(require,module,exports) {
+},{"./lib/parse":"rcGy","./lib/stringify":"MRIO"}],"OTiH":[function(require,module,exports) {
 var json = typeof JSON !== 'undefined' ? JSON : require('jsonify');
 
 module.exports = function (obj, opts) {
@@ -54040,7 +53786,7 @@ var objectKeys = Object.keys || function (obj) {
     return keys;
 };
 
-},{"jsonify":"../node_modules/jsonify/index.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/Context.js":[function(require,module,exports) {
+},{"jsonify":"Mdbr"}],"pyBO":[function(require,module,exports) {
 /*
   Context class
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -54074,7 +53820,7 @@ Context.prototype.toString = function () {
 };
 
 module.exports = Context;
-},{"json-stable-stringify":"../node_modules/json-stable-stringify/index.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js":[function(require,module,exports) {
+},{"json-stable-stringify":"OTiH"}],"KDM0":[function(require,module,exports) {
 /*
   Sentence class that generates sample elements from sentences
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -54114,7 +53860,7 @@ Sentence.prototype.clone = function () {
 };
 
 module.exports = Sentence;
-},{"../../classifiers/maxent/Context":"../node_modules/natural/lib/natural/classifiers/maxent/Context.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TransformationRule.js":[function(require,module,exports) {
+},{"../../classifiers/maxent/Context":"pyBO"}],"RPrf":[function(require,module,exports) {
 /*
   Transformation rules for the Brill tagger
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -54218,7 +53964,7 @@ TransformationRule.prototype.score = function () {
 };
 
 module.exports = TransformationRule;
-},{"./Predicate":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Predicate.js","./Sentence":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TF_Parser.js":[function(require,module,exports) {
+},{"./Predicate":"t9KM","./Sentence":"KDM0"}],"DTBP":[function(require,module,exports) {
 module.exports = function () {
   /*
    * Generated by PEG.js 0.8.0.
@@ -55080,7 +54826,7 @@ module.exports = function () {
     parse: parse
   };
 }();
-},{"./TransformationRule":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TransformationRule.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Tagger.js":[function(require,module,exports) {
+},{"./TransformationRule":"RPrf"}],"Xres":[function(require,module,exports) {
 /*
   Brill's POS Tagger
   Copyright (C) 2016 Hugo W.L. ter Doest
@@ -55143,7 +54889,7 @@ Brill_POS_Tagger.prototype.applyRules = function (sentence) {
 };
 
 module.exports = Brill_POS_Tagger;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./TF_Parser":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TF_Parser.js","./Sentence":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleSet.js":[function(require,module,exports) {
+},{"fs":"rDCW","./TF_Parser":"DTBP","./Sentence":"KDM0"}],"ffuA":[function(require,module,exports) {
 /*
    Set of transformation rules
    Copyright (C) 2017 Hugo W.L. ter Doest
@@ -55228,7 +54974,7 @@ RuleSet.prototype.prettyPrint = function () {
 };
 
 module.exports = RuleSet;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./TF_Parser":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TF_Parser.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Trainer.js":[function(require,module,exports) {
+},{"fs":"rDCW","./TF_Parser":"DTBP"}],"Qeg1":[function(require,module,exports) {
 /*
   Brill POS Trainer class
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -55649,7 +55395,7 @@ Brill_POS_Trainer.prototype.printRulesWithScores = function () {
 };
 
 module.exports = Brill_POS_Trainer;
-},{"./TransformationRule":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/TransformationRule.js","./RuleSet":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleSet.js","./Sentence":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Tester.js":[function(require,module,exports) {
+},{"./TransformationRule":"RPrf","./RuleSet":"ffuA","./Sentence":"KDM0"}],"aFCJ":[function(require,module,exports) {
 /*
   Brill's POS Testing class
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -55702,7 +55448,7 @@ Brill_POS_Tester.prototype.test = function (corpus, tagger) {
 };
 
 module.exports = Brill_POS_Tester;
-},{}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Lexicon.js":[function(require,module,exports) {
+},{}],"OC82":[function(require,module,exports) {
 /*
   Lexicon class
   Copyright (C) 2016 Hugo W.L. ter Doest
@@ -55831,7 +55577,7 @@ Lexicon.prototype.setDefaultCategories = function (category, categoryCapitalised
 };
 
 module.exports = Lexicon;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleTemplate.js":[function(require,module,exports) {
+},{"fs":"rDCW"}],"SkzG":[function(require,module,exports) {
 /*
   Rule Template class for deriving transformation rules.
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -55859,7 +55605,7 @@ RuleTemplate.prototype.windowFitsSite = function (sentence, i) {
 };
 
 module.exports = RuleTemplate;
-},{}],"../node_modules/natural/lib/natural/classifiers/maxent/Sample.js":[function(require,module,exports) {
+},{}],"bYPC":[function(require,module,exports) {
 /*
     Sample space of observed events
     Copyright (C) 2018 Hugo W.L. ter Doest
@@ -56005,7 +55751,7 @@ Sample.prototype.load = function (filename, elementClass, callback) {
 };
 
 module.exports = Sample;
-},{"./Context":"../node_modules/natural/lib/natural/classifiers/maxent/Context.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js":[function(require,module,exports) {
+},{"./Context":"pyBO","fs":"rDCW"}],"OohD":[function(require,module,exports) {
 /*
     Feature class for features that fire (or don't) on combinations of context
     and class
@@ -56093,7 +55839,7 @@ Feature.prototype.observedExpectation = function (sample) {
 };
 
 module.exports = Feature;
-},{"./Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/Element.js":[function(require,module,exports) {
+},{"./Element":"s74o"}],"s74o":[function(require,module,exports) {
 /*
     Element class for elements in the event space
     Copyright (C) 2017 Hugo W.L. ter Doest
@@ -56128,7 +55874,7 @@ Element.prototype.toString = function () {
 };
 
 module.exports = Element;
-},{"./Feature":"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/POS/POS_Element.js":[function(require,module,exports) {
+},{"./Feature":"OohD"}],"hWGc":[function(require,module,exports) {
 /*
   Element class for POS tagging
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -56299,7 +56045,7 @@ POS_Element.prototype.generateFeatures = function (featureSet) {
 };
 
 module.exports = POS_Element;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","../Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js","../Feature":"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js"}],"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Corpus.js":[function(require,module,exports) {
+},{"util":"nq70","../Element":"s74o","../Feature":"OohD"}],"j2YB":[function(require,module,exports) {
 /*
   Corpus class for parsing and analysing corpora
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -56479,7 +56225,7 @@ Corpus.prototype.prettyPrint = function () {
 };
 
 module.exports = Corpus;
-},{"../../classifiers/maxent/Sample":"../node_modules/natural/lib/natural/classifiers/maxent/Sample.js","../../classifiers/maxent/POS/POS_Element":"../node_modules/natural/lib/natural/classifiers/maxent/POS/POS_Element.js","./Lexicon":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Lexicon.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/Distribution.js":[function(require,module,exports) {
+},{"../../classifiers/maxent/Sample":"bYPC","../../classifiers/maxent/POS/POS_Element":"hWGc","./Lexicon":"OC82"}],"IYO8":[function(require,module,exports) {
 /*
     Distribution class for probability distributions
     Copyright (C) 2017 Hugo W.L. ter Doest
@@ -56621,7 +56367,7 @@ Distribution.prototype.checkSum = function () {
 };
 
 module.exports = Distribution;
-},{"./Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/GISScaler.js":[function(require,module,exports) {
+},{"./Element":"s74o"}],"xzGg":[function(require,module,exports) {
 /*
     GISScaler class that finds parameters of features
     Copyright (C) 2017 Hugo W.L. ter Doest
@@ -56768,7 +56514,7 @@ GISScaler.prototype.run = function (maxIterations, minImprovement) {
 };
 
 module.exports = GISScaler;
-},{"./Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js","./Feature":"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js","./Distribution":"../node_modules/natural/lib/natural/classifiers/maxent/Distribution.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/FeatureSet.js":[function(require,module,exports) {
+},{"./Element":"s74o","./Feature":"OohD","./Distribution":"IYO8"}],"Nh8R":[function(require,module,exports) {
 /*
   Feature set class for administrating a set of unique feature
   Copyright (C) 2017 Hugo W.L. ter Doest
@@ -56832,7 +56578,7 @@ FeatureSet.prototype.prettyPrint = function () {
 };
 
 module.exports = FeatureSet;
-},{}],"../node_modules/natural/lib/natural/classifiers/maxent/Classifier.js":[function(require,module,exports) {
+},{}],"DEQJ":[function(require,module,exports) {
 /*
     Classifier class that provides functionality for training and
     classification
@@ -56959,7 +56705,7 @@ Classifier.prototype.classify = function (b) {
 };
 
 module.exports = Classifier;
-},{"fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","./Context":"../node_modules/natural/lib/natural/classifiers/maxent/Context.js","./Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js","./Sample":"../node_modules/natural/lib/natural/classifiers/maxent/Sample.js","./GISScaler":"../node_modules/natural/lib/natural/classifiers/maxent/GISScaler.js","./FeatureSet":"../node_modules/natural/lib/natural/classifiers/maxent/FeatureSet.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/SimpleExample/SE_Element.js":[function(require,module,exports) {
+},{"fs":"rDCW","./Context":"pyBO","./Element":"s74o","./Sample":"bYPC","./GISScaler":"xzGg","./FeatureSet":"Nh8R"}],"jZrX":[function(require,module,exports) {
 /*
   Simple Example Element class
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -57012,7 +56758,7 @@ SE_Element.prototype.generateFeatures = function (featureSet) {
 };
 
 module.exports = SE_Element;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","../Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js","../Feature":"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/POS/ME_Sentence.js":[function(require,module,exports) {
+},{"util":"nq70","../Element":"s74o","../Feature":"OohD"}],"YqO6":[function(require,module,exports) {
 /*
   Sentence class specific for MaxEnt modeling
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -57083,7 +56829,7 @@ ME_Sentence.prototype.generateSampleElements = function (sample) {
 };
 
 module.exports = ME_Sentence;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","../Context":"../node_modules/natural/lib/natural/classifiers/maxent/Context.js","../../../brill_pos_tagger/lib/Sentence":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js","./POS_Element":"../node_modules/natural/lib/natural/classifiers/maxent/POS/POS_Element.js"}],"../node_modules/natural/lib/natural/classifiers/maxent/POS/ME_Corpus.js":[function(require,module,exports) {
+},{"util":"nq70","../Context":"pyBO","../../../brill_pos_tagger/lib/Sentence":"KDM0","./POS_Element":"hWGc"}],"dJNV":[function(require,module,exports) {
 /*
   Corpus class specific for MaxEnt modeling
   Copyright (C) 2018 Hugo W.L. ter Doest
@@ -57139,7 +56885,7 @@ ME_Corpus.prototype.splitInTrainAndTest = function (percentageTrain) {
 };
 
 module.exports = ME_Corpus;
-},{"util":"../node_modules/node-libs-browser/node_modules/util/util.js","../Sample":"../node_modules/natural/lib/natural/classifiers/maxent/Sample.js","../../../brill_pos_tagger/lib/Corpus":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Corpus.js"}],"../node_modules/natural/lib/natural/sentiment/SentimentAnalyzer.js":[function(require,module,exports) {
+},{"util":"nq70","../Sample":"bYPC","../../../brill_pos_tagger/lib/Corpus":"j2YB"}],"vihp":[function(require,module,exports) {
 /*
   Copyright (c) 2018, Domingo Martín Mancera, Hugo W.L. ter Doest (based on https://github.com/dmarman/lorca)
 
@@ -57252,7 +56998,7 @@ class SentimentAnalyzer {
 }
 
 module.exports = SentimentAnalyzer;
-},{}],"../node_modules/natural/lib/natural/index.js":[function(require,module,exports) {
+},{}],"ruKG":[function(require,module,exports) {
 /*
 Copyright (c) 2011, Chris Umbel
 
@@ -57363,7 +57109,7 @@ exports.POS_Element = require('./classifiers/maxent/POS/POS_Element');
 exports.ME_Sentence = require('./classifiers/maxent/POS/ME_Sentence');
 exports.ME_Corpus = require('./classifiers/maxent/POS/ME_Corpus');
 exports.SentimentAnalyzer = require('./sentiment/SentimentAnalyzer');
-},{"./phonetics/soundex":"../node_modules/natural/lib/natural/phonetics/soundex.js","./phonetics/metaphone":"../node_modules/natural/lib/natural/phonetics/metaphone.js","./phonetics/double_metaphone":"../node_modules/natural/lib/natural/phonetics/double_metaphone.js","./phonetics/dm_soundex":"../node_modules/natural/lib/natural/phonetics/dm_soundex.js","./stemmers/porter_stemmer":"../node_modules/natural/lib/natural/stemmers/porter_stemmer.js","./stemmers/porter_stemmer_fa":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_fa.js","./stemmers/porter_stemmer_fr":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_fr.js","./stemmers/porter_stemmer_ru":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_ru.js","./stemmers/porter_stemmer_es":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_es.js","./stemmers/porter_stemmer_it":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_it.js","./stemmers/porter_stemmer_no":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_no.js","./stemmers/porter_stemmer_sv":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_sv.js","./stemmers/porter_stemmer_pt":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_pt.js","./stemmers/porter_stemmer_nl":"../node_modules/natural/lib/natural/stemmers/porter_stemmer_nl.js","./stemmers/lancaster_stemmer":"../node_modules/natural/lib/natural/stemmers/lancaster_stemmer.js","./stemmers/stemmer_ja":"../node_modules/natural/lib/natural/stemmers/stemmer_ja.js","./stemmers/indonesian/stemmer_id":"../node_modules/natural/lib/natural/stemmers/indonesian/stemmer_id.js","./tokenizers/aggressive_tokenizer_nl":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_nl.js","./tokenizers/aggressive_tokenizer_fa":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fa.js","./tokenizers/aggressive_tokenizer_fr":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_fr.js","./tokenizers/aggressive_tokenizer_ru":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_ru.js","./tokenizers/aggressive_tokenizer_es":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_es.js","./tokenizers/aggressive_tokenizer_it":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_it.js","./tokenizers/aggressive_tokenizer_pl":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_pl.js","./tokenizers/aggressive_tokenizer_pt":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_pt.js","./tokenizers/aggressive_tokenizer_no":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_no.js","./tokenizers/aggressive_tokenizer_sv":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_sv.js","./tokenizers/aggressive_tokenizer_vi":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer_vi.js","./tokenizers/aggressive_tokenizer":"../node_modules/natural/lib/natural/tokenizers/aggressive_tokenizer.js","./tokenizers/tokenizer_case":"../node_modules/natural/lib/natural/tokenizers/tokenizer_case.js","./tokenizers/regexp_tokenizer":"../node_modules/natural/lib/natural/tokenizers/regexp_tokenizer.js","./tokenizers/treebank_word_tokenizer":"../node_modules/natural/lib/natural/tokenizers/treebank_word_tokenizer.js","./tokenizers/tokenizer_ja":"../node_modules/natural/lib/natural/tokenizers/tokenizer_ja.js","./tokenizers/sentence_tokenizer":"../node_modules/natural/lib/natural/tokenizers/sentence_tokenizer.js","./classifiers/bayes_classifier":"../node_modules/natural/lib/natural/classifiers/bayes_classifier.js","./classifiers/logistic_regression_classifier":"../node_modules/natural/lib/natural/classifiers/logistic_regression_classifier.js","./inflectors/noun_inflector":"../node_modules/natural/lib/natural/inflectors/noun_inflector.js","./inflectors/fr/noun_inflector":"../node_modules/natural/lib/natural/inflectors/fr/noun_inflector.js","./inflectors/ja/noun_inflector":"../node_modules/natural/lib/natural/inflectors/ja/noun_inflector.js","./inflectors/present_verb_inflector":"../node_modules/natural/lib/natural/inflectors/present_verb_inflector.js","./inflectors/count_inflector":"../node_modules/natural/lib/natural/inflectors/count_inflector.js","./wordnet/wordnet":"../node_modules/natural/lib/natural/wordnet/wordnet.js","./tfidf/tfidf":"../node_modules/natural/lib/natural/tfidf/tfidf.js","./trie/trie":"../node_modules/natural/lib/natural/trie/trie.js","./analyzers/sentence_analyzer":"../node_modules/natural/lib/natural/analyzers/sentence_analyzer.js","./util/stopwords":"../node_modules/natural/lib/natural/util/stopwords.js","./util/shortest_path_tree":"../node_modules/natural/lib/natural/util/shortest_path_tree.js","./spellcheck/spellcheck":"../node_modules/natural/lib/natural/spellcheck/spellcheck.js","./util/longest_path_tree":"../node_modules/natural/lib/natural/util/longest_path_tree.js","./util/edge_weighted_digraph":"../node_modules/natural/lib/natural/util/edge_weighted_digraph.js","./ngrams/ngrams":"../node_modules/natural/lib/natural/ngrams/ngrams.js","./ngrams/ngrams_zh":"../node_modules/natural/lib/natural/ngrams/ngrams_zh.js","./distance/jaro-winkler_distance":"../node_modules/natural/lib/natural/distance/jaro-winkler_distance.js","./distance/levenshtein_distance":"../node_modules/natural/lib/natural/distance/levenshtein_distance.js","./distance/dice_coefficient":"../node_modules/natural/lib/natural/distance/dice_coefficient.js","./distance/hamming_distance":"../node_modules/natural/lib/natural/distance/hamming_distance.js","./normalizers/normalizer":"../node_modules/natural/lib/natural/normalizers/normalizer.js","./normalizers/normalizer_ja":"../node_modules/natural/lib/natural/normalizers/normalizer_ja.js","./normalizers/remove_diacritics":"../node_modules/natural/lib/natural/normalizers/remove_diacritics.js","./transliterators/ja":"../node_modules/natural/lib/natural/transliterators/ja/index.js","./brill_pos_tagger/lib/Brill_POS_Tagger":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Tagger.js","./brill_pos_tagger/lib/Brill_POS_Trainer":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Trainer.js","./brill_pos_tagger/lib/Brill_POS_Tester":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Brill_POS_Tester.js","./brill_pos_tagger/lib/Lexicon":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Lexicon.js","./brill_pos_tagger/lib/RuleSet":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleSet.js","./brill_pos_tagger/lib/RuleTemplates":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleTemplates.js","./brill_pos_tagger/lib/RuleTemplate":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/RuleTemplate.js","./brill_pos_tagger/lib/Corpus":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Corpus.js","./classifiers/maxent/Classifier":"../node_modules/natural/lib/natural/classifiers/maxent/Classifier.js","./classifiers/maxent/Context":"../node_modules/natural/lib/natural/classifiers/maxent/Context.js","./classifiers/maxent/Feature":"../node_modules/natural/lib/natural/classifiers/maxent/Feature.js","./classifiers/maxent/FeatureSet":"../node_modules/natural/lib/natural/classifiers/maxent/FeatureSet.js","./classifiers/maxent/Sample":"../node_modules/natural/lib/natural/classifiers/maxent/Sample.js","./classifiers/maxent/Element":"../node_modules/natural/lib/natural/classifiers/maxent/Element.js","./classifiers/maxent/SimpleExample/SE_Element":"../node_modules/natural/lib/natural/classifiers/maxent/SimpleExample/SE_Element.js","./brill_pos_tagger/lib/Sentence":"../node_modules/natural/lib/natural/brill_pos_tagger/lib/Sentence.js","./classifiers/maxent/GISScaler":"../node_modules/natural/lib/natural/classifiers/maxent/GISScaler.js","./classifiers/maxent/POS/POS_Element":"../node_modules/natural/lib/natural/classifiers/maxent/POS/POS_Element.js","./classifiers/maxent/POS/ME_Sentence":"../node_modules/natural/lib/natural/classifiers/maxent/POS/ME_Sentence.js","./classifiers/maxent/POS/ME_Corpus":"../node_modules/natural/lib/natural/classifiers/maxent/POS/ME_Corpus.js","./sentiment/SentimentAnalyzer":"../node_modules/natural/lib/natural/sentiment/SentimentAnalyzer.js"}],"../node_modules/canvas/lib/parse-font.js":[function(require,module,exports) {
+},{"./phonetics/soundex":"fHeJ","./phonetics/metaphone":"WElW","./phonetics/double_metaphone":"IUBO","./phonetics/dm_soundex":"yBLz","./stemmers/porter_stemmer":"hFgZ","./stemmers/porter_stemmer_fa":"xje2","./stemmers/porter_stemmer_fr":"q7pO","./stemmers/porter_stemmer_ru":"jwxo","./stemmers/porter_stemmer_es":"sT5O","./stemmers/porter_stemmer_it":"fYpG","./stemmers/porter_stemmer_no":"d9Kl","./stemmers/porter_stemmer_sv":"BtZF","./stemmers/porter_stemmer_pt":"vN4u","./stemmers/porter_stemmer_nl":"Bi3x","./stemmers/lancaster_stemmer":"QfRu","./stemmers/stemmer_ja":"DyXv","./stemmers/indonesian/stemmer_id":"IjLb","./tokenizers/aggressive_tokenizer_nl":"IKpd","./tokenizers/aggressive_tokenizer_fa":"q7Gk","./tokenizers/aggressive_tokenizer_fr":"CrSh","./tokenizers/aggressive_tokenizer_ru":"qWaQ","./tokenizers/aggressive_tokenizer_es":"WaGX","./tokenizers/aggressive_tokenizer_it":"v6r3","./tokenizers/aggressive_tokenizer_pl":"wCaQ","./tokenizers/aggressive_tokenizer_pt":"IWGI","./tokenizers/aggressive_tokenizer_no":"Cv9T","./tokenizers/aggressive_tokenizer_sv":"vQpl","./tokenizers/aggressive_tokenizer_vi":"XbBT","./tokenizers/aggressive_tokenizer":"nbJc","./tokenizers/tokenizer_case":"XDOC","./tokenizers/regexp_tokenizer":"LYyI","./tokenizers/treebank_word_tokenizer":"hvKR","./tokenizers/tokenizer_ja":"Fain","./tokenizers/sentence_tokenizer":"HOVZ","./classifiers/bayes_classifier":"kd1i","./classifiers/logistic_regression_classifier":"a582","./inflectors/noun_inflector":"cxDQ","./inflectors/fr/noun_inflector":"dbaX","./inflectors/ja/noun_inflector":"cA4I","./inflectors/present_verb_inflector":"HSgG","./inflectors/count_inflector":"AEFT","./wordnet/wordnet":"zjvV","./tfidf/tfidf":"KXVd","./trie/trie":"iysN","./analyzers/sentence_analyzer":"AQuo","./util/stopwords":"l7Q1","./util/shortest_path_tree":"ZNbZ","./spellcheck/spellcheck":"VpoG","./util/longest_path_tree":"NBgM","./util/edge_weighted_digraph":"FvoX","./ngrams/ngrams":"a1HV","./ngrams/ngrams_zh":"k7oS","./distance/jaro-winkler_distance":"Ls2c","./distance/levenshtein_distance":"dOpz","./distance/dice_coefficient":"yzYg","./distance/hamming_distance":"KQpg","./normalizers/normalizer":"Z5wq","./normalizers/normalizer_ja":"bYkY","./normalizers/remove_diacritics":"yWPV","./transliterators/ja":"cDO1","./brill_pos_tagger/lib/Brill_POS_Tagger":"Xres","./brill_pos_tagger/lib/Brill_POS_Trainer":"Qeg1","./brill_pos_tagger/lib/Brill_POS_Tester":"aFCJ","./brill_pos_tagger/lib/Lexicon":"OC82","./brill_pos_tagger/lib/RuleSet":"ffuA","./brill_pos_tagger/lib/RuleTemplates":"yvKV","./brill_pos_tagger/lib/RuleTemplate":"SkzG","./brill_pos_tagger/lib/Corpus":"j2YB","./classifiers/maxent/Classifier":"DEQJ","./classifiers/maxent/Context":"pyBO","./classifiers/maxent/Feature":"OohD","./classifiers/maxent/FeatureSet":"Nh8R","./classifiers/maxent/Sample":"bYPC","./classifiers/maxent/Element":"s74o","./classifiers/maxent/SimpleExample/SE_Element":"jZrX","./brill_pos_tagger/lib/Sentence":"KDM0","./classifiers/maxent/GISScaler":"xzGg","./classifiers/maxent/POS/POS_Element":"hWGc","./classifiers/maxent/POS/ME_Sentence":"YqO6","./classifiers/maxent/POS/ME_Corpus":"dJNV","./sentiment/SentimentAnalyzer":"vihp"}],"GqTT":[function(require,module,exports) {
 'use strict';
 /**
  * Font RegExp helpers.
@@ -57464,7 +57210,7 @@ module.exports = function (str) {
 
   return cache[str] = font;
 };
-},{}],"../node_modules/canvas/browser.js":[function(require,module,exports) {
+},{}],"MHvi":[function(require,module,exports) {
 /* globals document, ImageData */
 var parseFont = require('./lib/parse-font');
 
@@ -57516,7 +57262,7 @@ exports.loadImage = function (src, options) {
     image.src = src;
   });
 };
-},{"./lib/parse-font":"../node_modules/canvas/lib/parse-font.js"}],"d3.layout.cloud.js":[function(require,module,exports) {
+},{"./lib/parse-font":"GqTT"}],"UHLA":[function(require,module,exports) {
 // Word cloud layout by Jason Davies, http://www.jasondavies.com/word-cloud/
 // Algorithm due to Jonathan Feinberg, http://static.mrfeinberg.com/bv_ch03.pdf
 (function (exports) {
@@ -57965,7 +57711,7 @@ exports.loadImage = function (src, options) {
   c.textAlign = "center";
   exports.cloud = cloud;
 })(typeof exports === "undefined" ? d3.layout || (d3.layout = {}) : exports);
-},{"canvas":"../node_modules/canvas/browser.js"}],"word_cloud.js":[function(require,module,exports) {
+},{"canvas":"MHvi"}],"v7RF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -58080,7 +57826,7 @@ function draw(words) {
     return d.text;
   });
 }
-},{"natural":"../node_modules/natural/lib/natural/index.js","fs":"../node_modules/parcel-bundler/src/builtins/_empty.js","d3":"../node_modules/d3/index.js","./d3.layout.cloud.js":"d3.layout.cloud.js"}],"my-class.js":[function(require,module,exports) {
+},{"natural":"ruKG","fs":"rDCW","d3":"UzF0","./d3.layout.cloud.js":"UHLA"}],"elfx":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -58107,12 +57853,12 @@ function () {
 }();
 
 module.exports = MyClass;
-},{}],"example-data.json":[function(require,module,exports) {
+},{}],"dPF9":[function(require,module,exports) {
 module.exports = {
   "example": [1, 2, 3, 4, 5],
   "data": [6, 7, 8, 9, 10]
 };
-},{}],"index.js":[function(require,module,exports) {
+},{}],"Focm":[function(require,module,exports) {
 // You can require libraries
 var d3 = require('d3');
 
@@ -58512,209 +58258,5 @@ new autoComplete({
     header.innerHTML = "<span class='main-header-text1'>" + feedback.selection.value + "</span>";
   }
 });
-},{"d3":"../node_modules/d3/index.js","@tarekraafat/autocomplete.js/dist/js/autoComplete":"../node_modules/@tarekraafat/autocomplete.js/dist/js/autoComplete.js","./word_cloud.js":"word_cloud.js","./my-class":"my-class.js","./example-data.json":"example-data.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53525" + '/');
-
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      }); // Enable HMR for CSS by default.
-
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-
-  if (checkedAssets[id]) {
-    return;
-  }
-
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-
-    return true;
-  }
-}
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{"d3":"UzF0","@tarekraafat/autocomplete.js/dist/js/autoComplete":"LF4t","./word_cloud.js":"v7RF","./my-class":"elfx","./example-data.json":"dPF9"}]},{},["Focm"], null)
+//# sourceMappingURL=https://uw-cse442-wi20.github.io/FP-explore-college-majors/src.f3494b6b.js.map
