@@ -51,11 +51,15 @@ function plot_asin(asin, x_axis, y_axis){
 	var sum_list = [0, 0, 0, 0, 0];
 	var count_list = [0, 0, 0, 0, 0];
     max_review = 0;
+    avg_score = 0;
+    num_reviews = 0;
 	data.forEach(function(d) {
 	    sum_list[d.overall-1] += parseInt(d.reviewLength, 10);
 	    count_list[d.overall-1] += 1;
 	    d.overall = +d.overall;
 	    d.overall = d.overall + (Math.random() - .5) * .25
+        avg_score += d.overall;
+        num_reviews++;
 	    d.reviewLength = +d.reviewLength
         var a = new Date(d.unixReviewTime * 1000);
         year = a.getFullYear();
@@ -65,6 +69,17 @@ function plot_asin(asin, x_axis, y_axis){
             max_review = +d.reviewLength;
         }
 	});
+
+    avg_score = avg_score / num_reviews;
+    stars = "";
+    for (i = 0; i < 5; i++) {
+        if (i > avg_score) {
+            stars += "&#9734;";
+        } else {
+            stars += "&#9733;";
+        }
+    }
+    document.getElementById("stars-header-text").innerHTML = stars;
 
     score_axis = [.5, 5.5];
     year_axis = [2000, 2015]; // TODO make sure to grab the actual years
@@ -179,7 +194,7 @@ function plot_asin(asin, x_axis, y_axis){
 	    .attr("r", 8)
 	    .on("mouseover", function (d) {
             var textBox = document.getElementById("reviewBox");
-            textBox.innerHTML = d.reviewText;
+            textBox.innerHTML = "Review Text: <br/>" + d.reviewText;
 
 	         // div.transition()
 	         //     .duration(200)
