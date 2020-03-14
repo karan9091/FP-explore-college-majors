@@ -307,7 +307,7 @@ new autoComplete({
     onSelection: feedback => {
     	console.log(index_asin_map.get(title_index_map.get(feedback.selection.value)))
       var b = index_asin_map.get(title_index_map.get(feedback.selection.value)),
-          url = 'http://localhost:1234/index.html?name=' + encodeURIComponent(b);
+          url = 'http://localhost:1234/landing-page.html?name=' + encodeURIComponent(b);
       document.location.href = url;
 
     }
