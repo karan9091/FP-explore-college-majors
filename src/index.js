@@ -86,7 +86,7 @@ function plot_asin(asin, x_axis, y_axis){
             stars += "&#9733;";
         }
     }
-    document.getElementById("stars-header-text").innerHTML = stars;
+    document.getElementById("stars-header-text").innerHTML = "<span class='stars-header-text1'>" + stars + "</span>";
 
     score_axis = [.5, 5.5];
     year_axis = [2000, 2015]; // TODO make sure to grab the actual years
@@ -98,7 +98,7 @@ function plot_asin(asin, x_axis, y_axis){
     } else if (x_axis == "reviewLength") {
         x_axis_labels = [0, max_review + 50, "Review Length"];
     } else { // Year
-        x_axis_labels = [2000, 2015, "Year"];
+        x_axis_labels = [2000, 2019, "Year"];
     }
 
     if (y_axis == "score") {
@@ -106,7 +106,7 @@ function plot_asin(asin, x_axis, y_axis){
     } else if (y_axis == "reviewLength") {
         y_axis_labels = [0, max_review + 50, "Review Length"];
     } else { // Year
-        y_axis_labels = [2000, 2015, "Year"];
+        y_axis_labels = [2000, 2019, "Year"];
     }   
 
 
@@ -441,7 +441,7 @@ function parseMetadata(asin) {
                 all_titles.push(data['title']);
             });
             var header = document.getElementById("main-header-text");
-            header.innerHTML = index_title_map.get(asin_index_map.get(asin));
+            header.innerHTML = "<span class='main-header-text1'>" + index_title_map.get(asin_index_map.get(asin)) + "</span>";
 
         });
 
@@ -526,6 +526,6 @@ new autoComplete({
         var textBox = document.getElementById('reviewBox');
         textBox.innerHTML = "Hover over a point to read the Review!";
         var header = document.getElementById("main-header-text");
-        header.innerHTML = feedback.selection.value;
+        header.innerHTML = "<span class='main-header-text1'>" + feedback.selection.value + "</span>";
     }
 });
