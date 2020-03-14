@@ -53,7 +53,7 @@ function init() {
 function plot_asin(asin, x_axis, y_axis){	 
 	// 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
 
-    d3.csv('asin/' + asin + '.csv')
+    d3.csv('new_asin/' + asin + '.csv')
 	    .then((data) => {
 	var sum_list = [0, 0, 0, 0, 0];
 	var count_list = [0, 0, 0, 0, 0];
