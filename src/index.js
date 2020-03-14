@@ -14,12 +14,18 @@ myClassInstance.sayHi();
 const exampleData = require('./example-data.json');
 
 
-window.onload = init 
+window.onload = init ;
+document.addEventListener('DOMContentLoaded', (event) => {
+    //the event occurred
+    populate();
+  });
+
 var index_asin_map = new Map();
 var asin_index_map = new Map();
 var index_title_map = new Map();
 var title_index_map = new Map();
 var all_titles = []
+var asin = "";
 
 // read in asin csv into memory
 
@@ -34,6 +40,7 @@ function init() {
     }
     plot_asin(data.name, "score", "reviewLength");
     createCloud.createWordEntries(data.name);
+    asin = data.name;
     var textBox = document.getElementById('reviewBox');
     textBox.innerHTML = "Hover over a point to read the Review!";
     parseMetadata(data.name);
@@ -419,23 +426,37 @@ function parseMetadata(asin) {
     // read in asin csv into memory
     var index = 0;
     console.log("Started");
-    d3.csv('metadata_asin.csv', function(data) {
-        asin_index_map.set(data['asin'], index++);
-        index_asin_map.set(index - 1, data['asin']);
-    })
-    // read in title csv into memory
-    var index_1 = 0;
-    d3.csv('metadata_title.csv', function(data) {
-        index_title_map.set(index_1++, data['title']);
-        title_index_map.set(data['title'], index_1-1);
-        all_titles.push(data['title']);
-    })
+    d3.csv('metadata_asin.csv').then((d) => {
+        d.forEach(function(data) {
+            asin_index_map.set(data['asin'], index++);
+            index_asin_map.set(index - 1, data['asin']);
+        });
+
+        // read in title csv into memory
+        var index_1 = 0;
+        d3.csv('metadata_title.csv').then((d) => {
+            d.forEach(function(data) {
+                index_title_map.set(index_1++, data['title']);
+                title_index_map.set(data['title'], index_1-1);
+                all_titles.push(data['title']);
+            });
+            var header = document.getElementById("main-header-text");
+            header.innerHTML = index_title_map.get(asin_index_map.get(asin));
+
+        });
+
+    });
+
+
+    
+
+    /*
     var header = document.getElementById("main-header-text");
     console.log(index_title_map);
-    header.innerHTML = index_title_map.keys();
-    console.log("trying something");
-    console.log(asin_index_map);
-    console.log(asin_index_map.get("0000695009"));
+    header.innerHTML = index_title_map.get(asin_index_map.get(asin));
+    */
+
+
     // console.log(asin_index_map.has("000073991X"));
     // console.log("trying something");
     // console.log(index_title_map.has('5'));
@@ -444,6 +465,14 @@ function parseMetadata(asin) {
     // }
     // console.log()
     // console.log(asin);
+}
+
+function populate() {
+    console.log("populate() asin=" + asin);
+    var header = document.getElementById("main-header-text");
+    //console.log(index_title_map);
+    header.innerHTML = index_title_map.get(asin_index_map.get(asin));
+
 }
 new autoComplete({
     data: {
