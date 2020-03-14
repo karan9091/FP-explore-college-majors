@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 35, right: 20, bottom: 70, left: 60},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -15,9 +15,12 @@ var y = d3.scaleLinear()
 var svg = d3.select("#bargraph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    .attr("class", "bar-background")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
+
+
 
 // get the data
 d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
@@ -39,7 +42,7 @@ d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
       .attr("x", function(d) { return x(d.year); })
       .attr("width", x.bandwidth())
       .attr("y", function(d) { return y(d.reviewCount); })
-      .attr("height", function(d) { return height - y(d.reviewCount); });
+      .attr("height", function(d) { return height - y(d.reviewCount); })
 
   // add the x Axis
   svg.append("g")
@@ -49,5 +52,28 @@ d3.csv("Maximums_reviewCount_by_year.csv", function(error, data) {
   // add the y Axis
   svg.append("g")
       .call(d3.axisLeft(y));
+
+  svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," +
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .text("Date");
+
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text("Maximum Review Count for a Movie vs. Year");
+
+     svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Value");
 
 });
