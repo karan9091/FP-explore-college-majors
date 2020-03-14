@@ -1,0 +1,105 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+8025180,2,B0002AHVQO,"First, this is teaching on an old version of Visual Studio so you will have to read a lot of MSDN forums to find the new location of some of the tools mentioned (some have ceased to be included in VS2005 at all).
+
+Second, the code. There is none. Unless YOU type it yourself. Let me explain.
+
+Apparantly, you were supposed to go to dvpress.com to get the sample codes and slides.
+
+Well, there is no dvpress.com anymore, so if you use this DVD, be prepared to type a lot of code out by hand from the screen (which, by the way, doesn't always show all the code to copy, because it was made with the assumption you'd download it elsewhere).
+
+I ended up using the ""Print Screen"" button a lot to save notes for later (by pasting them to MSPaint and saving) and ease the transcription of code, but when run on a PC the DVD will not scan using the drag bar. That's right, you can only jump from chapter to chapter, and cannot navigate in to specific spots, except by using the ""Play Speed"" enhancement. So get ready to spend a lot of time ""fast forwarding"" and ""rewinding"" using the play speed method so that you can take a snapshot of the code you were supposed to have been given on dvpress.com.
+
+If anyone HAS the code and slides, how about making a review and posting a link to it. I would even volunteer some server space so I could get it myself. I don't think dvpress.com will mind since they apparantly ceased to exist long ago, and should have done this themselves anyway.",1186790400,,1474,4.306859205776173
+8025181,1,B0002AHVQO,"You can only learn so much by watching a DVD on programming, but with a poor teacher and no reference material that allows for practice of the content, it isn't worth the money spent to get it to the door let alone the money spent on the purchase itself.
+
+1.  No source code.
+
+2.  Advertized website to get source code or practice material covered doesn't exist.
+
+3.  Teaching poor at best.
+
+4.  Odd ticks from an instructor that is unprepared throughout the presentation.
+
+5.  Video and sound quality terrible.
+
+6.  Missing content from what is advertized on the DVD.",1134086400,,568,4.626262626262626
+8025182,3,B0002AHVQO,"Pros:
+
+This is a <u>great introduction to C#</u>.  Harold's examples are clear and easy to follow.  He also covers a wide variety of topics (see chapter list below).
+
+Cons:
+
+I would have initially given this video 4 stars except that Harold <u>talks way too slow</u> and there is <u>missing content</u> from what is advertised.
+
+Harold talks so slow that I had to watch the video between 1.4 and 2 times as fast as the normal speed (can be done with many DVD softwares such as InterVideo).  At this speed, though, the video was enjoyable.
+
+Two of the lessons (""Manipulating Strings"" and ""Exceptions"") were obviously truncated due to editing errors.  Most ""Manipulating Strings"" is present, but ""Exceptions"" is <u>1 minute!</u>  As a result, this video is not 8 hours (as advertised), but instead about 7 hours.
+
+Additionally, the back cover says that there will be a preview of Visual Studio .NET 2005 with a complete overview of generics.  There is <u>no mention of VS.NET 2005 or generics</u> on the whole DVD.
+
+The front cover says ""Labs, Code & Slides"" which could lead one to believe that the source code for the examples is available. <u>The source code is not included</u>.  This is a DVD video with no other content.
+
+Chapter Titles:
+
+1: Introducing .Net
+
+2: Visual Studio .Net
+
+3: The Building Blocks
+
+4: Putting It Together
+
+5: Type Conversion
+
+6: Classes and Objects
+
+7: Class Interfaces
+
+8: Arrays and Indexers
+
+9: Collections
+
+10: Events
+
+11: Windows Forms
+
+12: Building Forms
+
+13: Form Interoperability
+
+14: Working with Controls
+
+15: More Controls
+
+16: Adding Menus to Forms
+
+17: Streams and Files
+
+18: Working with XML
+
+19: Working with ADO.Net
+
+20. Manipulating Strings
+
+21: Exceptions
+
+22: Web Services
+
+23: Web Applications",1130025600,2,1742,4.940766550522648
+8025183,3,B0002AHVQO,"I recently purchased this DVD and thought I'd add my thoughts to the mix of reviews here.  I must throw out an immediate disclaimer that I've only made it through about 5 of the lessons so far, as I just received the DVD a few days ago.
+
+Yes, the sound quaity is fairly bad and the video quality is pretty mediocre. Neither of these were deal breakers for me, after the first few minutes I just sort of tune out the slight distortion of the audio. The price of this DVD is considerably cheaper than most other programming/C# material out there, so I was willing to cut it a little slack.
+
+As to the lip licking thing being distracting that is mentioned by other reviewers, I guess this is a personal thing. It will bother some people and not others. Yes Mr. Davis does lick his lips or make unusual gestures every so often, but again - for me - I just tuned it out after the first couple of times.
+
+I would also disagree with the statement that he cannot teach, or rather I think it's an overstatement. I do think that he covers some of the early material a bit too quickly and there are some inconsistancies and minor errors. (Again, I've only seen the first 5 lessons so far.) I think the main factor of this video's value will come from what the viewers level of experience with programming and their familiarity with object-oriented concepts. If you have any prior experience with programming, this is a useful DVD (and again, especially at this price). If you do not have prior experience, this will be a pretty steep learning curve. I would suggest reading something like Jesse Liberty's ""Learning C#"" from O'Reilly for those who are really new to programming and/or OO programming in particular.
+
+Overall, I'll go with 3 stars since there is some good material at a price lower than many books, but only 3 because more depth in some areas would be better and the video and especially audio do leave a lot to be desired.",1093564800,9,1926,4.475783475783476
+8025184,1,B0002AHVQO,"I was stupid enough to ignore the other 1 star review and bought this DVD anyway. It is very poor quality the instructor CAN NOT teach, and its true his lip licking is VERY anoying and the audio and video is very poor quality. I've never felt the need to write a review but this DVD was so bad I just had to let people know!!",1091059200,15,325,3.9393939393939394
+8025185,5,B0002AHVQO,"I've been writing Visual Basic code for a short while, nothing too complicated. I'd heard all the OOP buzz-words but it was all Greek to me. After a few hours with this amazing DVD, it's a different story. Just ask me about objects and inheritance. I'm now writing applications in C#.net and having a ball. In his review, kiki-knows-best complains about the presenter fidgeting. Looking at kiki's other reviews, I see that they're mostly Hollywood movies. So I understand the kind of slick presentation he's looking for. But as for me, I'm delighted with the obvious mastery of the subject, the pleasant relaxed presentation, and the presenter's uncanny ability to answer the questions I want to ask just as though he was standing beside me. Much to be preferred to a slick actor with shallow knowledge.",1090368000,7,803,4.911764705882353
+8025186,5,B0002AHVQO,"This is really good introduction to C# programming and the Microsoft .Net framework. Harold Davis does a really most excellent job of explaining concepts and syntax in a way that you will really understand. The DVD is very well organized.
+
+At first, I was a little skeptical of a training DVD as a way to learn this material, as opposed to a book or a flesh-and-blood teacher. I still think it may not be for everyone, but this DVD training course is very clear. I especially liked the material about events, and the chapter about types, and type conversion.
+
+Even if you are also taking a course in C# programming, or if you already know some, I think you will find this very valuable. And if it is your first C#, then is a most excellent way to get started.",1088035200,4,759,4.414285714285715
+8025187,5,B0002AHVQO,"I've been a fan of Harold Davis for years and have found his programming language books to be not only very useful, but also fun. C#.net is a powerful strongly typed language that fully incorporates the principles of object oriented programming. With this DVD in your hands you have Harold Davis by your side as you learn the ins and outs of C#.net. The features of the Visual Studio.net development environment are carefully explained, and then you are guided step-by-step as you master the features of C#.net. In addition to what may be more familiar programming constructs, you will learn to work with objects and inheritance. Davis doesn't shy away from advanced topics. The chapter on exception handling is a real knockout. At the end the pieces are all drawn together to help you master the use of C#.net in web applications.",1087516800,7,831,4.859154929577465

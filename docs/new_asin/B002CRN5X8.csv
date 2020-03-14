@@ -1,0 +1,320 @@
+,overall,asin,reviewText,unixReviewTime,vote,reviewLength,wordLength
+3907023,4,B002CRN5X8,"Good product, works well. I would have liked some sort of lanyard or click with it, though.",1268697600,,91,4.411764705882353
+3907024,4,B002CRN5X8,"...but, if I may get picky, it might have been smaller. Then it would have gone on my keychaind.",1268438400,,96,4.105263157894737
+3907025,5,B002CRN5X8,I appreciate having this fob for multifactor authentication for my AWS account.  I'm surprised about how affordable it is compared to what my company gets charged for for their fobs.,1268179200,,182,5.066666666666666
+3907026,5,B002CRN5X8,"There's really not much to say about the Ezio Time Token.  It's easy to configure it with your Amazon web service, offering an extra layer of security at a low cost. So it's a simple matter to enter your ID, password uniquely generated six digit code that changes every minute.  Thus, even if the bad guys knew your password, they can't log onto your Amazon web services without this key. And if you should lose the unit, Amazon does have an interim work-around process to get you going.",1267920000,,487,4.5227272727272725
+3907027,5,B002CRN5X8,"At myCloudWatcher we mange Cloud Hosting for many users.  This device allows me to provide Multi-Factor authentication for my account at AWS.  This is a great feature.  Every AWS user should use this option.  With this ""key"" you know that your hosting account is safe.
+
+If you have as many accounts as I have this option is a ""Must Have"".  Now only I can access my AWS account, even if my password is stolen.",1265155200,,408,4.445945945945946
+3907028,5,B002CRN5X8,"It's out of stock and missing from the Gemalto website.  Was this product shelved?  I'm a cloud architect and would like to recommend this product to my Fortune ## clients.
+
+It would be nice to see this fine product used with other apps, i.e., OAuth and OpenID integration for OSS web applications.
+
+If only someone would make a value OTP smartcard rfid prox badge with ironkey usb built in. :)",1262822400,3,394,4.585714285714285
+3907029,5,B002CRN5X8,"This does exactly what it is supposed to - adds two-factor authentication to AWS. Although I am slightly disheartened that it can only be used for AWS, and not any of the other Amazon products, it works as advertised. I feel more at ease that my proprietary information on AWS is secure and glad that I don't have to deal with constant password changes that would normally be required for even a shadow of what this style of authentication provides. If you use AWS in any professional capacity, I suggest using this device (as it's the only two-factor token solution available at this time).",1262736000,,591,4.6923076923076925
+3907030,5,B002CRN5X8,"The Gemalto Ezio token is quite similar to the RSA SecureID token which I think is more prevalent in the market. It does exactly one thing: Display a pseudo-random number that changes according to time. After the device is activated, it becomes impossible to login to AWS web interface without entering the number shown on the token.
+
+Activating the token with AWS is dead-simple, and its integration with the AWS authentication process is first-rate.
+
+The primary benefit of this device is that it provides a second-factor for authentication other than one's password. In other words, even if someone steals your AWS username and password, they still will not be able to access AWS web management functions without physical possession of the token. Since it's been proven time and again that SSL on its own does not a secure system make, this kind of extra protection is not a luxury but rather a necessity, and it's nice that Amazon finally provided such a solution.
+
+There are a few areas where the use of the token could be improved.
+
+* Only a single token can be linked to a single AWS account. This obviates a few usage scenarios for the device, which is a shame.
+* It would be nice if the use of the token would be extended to other parts of the Amazon network. Amazon Payments and the seller areas are obvious areas where this would be beneficial. I guess someone at Amazon decided this is not a consumer-oriented solution, which is odd because many banks and even PayPal use tokens such as this for authentication.
+* The token can only be used with Amazon. You can't sync it to any other AAA server. If you already have a Gemalto token that you carry around, you would not be able to consolidate it with the AWS token.
+
+If your business depends on AWS hosted infrastructure, the Ezio is something that you really must have. Think of it this way: How much money will you stand to lose if a malicious individual somehow manages to steals your login credentials? Probably more than the price of token plus shipping, right? Despite its current shortcomings (which will possibly be addressed by Amazon in the future), the Ezio token is an excellent solution that solves a real problem. If you manage any AWS service through the web, you'll definitely want to have one.",1260835200,3,2272,4.684210526315789
+3907031,5,B002CRN5X8,"In having to deal with placing orders on sites that I regular do my business or shopping on line has been a safety net for me.  Using the Ezio time token keeps what your work private and secure while online.  I use this feature in the same with other merchant companies that help me not only protect my account but will always have a different access code each you log on visiting the site. Using these tokens has been my pride and joy because not only that it provides a different code each time, it is so quick and easy to use.&nbsp;<a data-hook=""product-link-linked"" class=""a-link-normal"" href=""/Tarpeez-Soft-Bed-Cover-Standard-6-1-2-ft-bed/dp/B000P5IVAQ/ref=cm_cr_arp_d_rvw_txt?ie=UTF8"">Tarpeez Soft Bed Cover (Standard 6 1/2 ft bed)</a>",1260489600,,741,5.548672566371682
+3907032,5,B002CRN5X8,It is working just fine. I would update my review in case this change.,1505779200,,70,4.071428571428571
+3907033,3,B002CRN5X8,Mine broke after just 1 year (coworkers tokens died sooner than that). Ended up switching to a software token solution to avoid a lock out situation.,1501200000,2,149,4.769230769230769
+3907034,5,B002CRN5X8,"The battery in this has already lasted more than 4 years. Awesome. Much better than I expected. Also high-quality, rugged case that can survive living on a keychain that whole time.",1501113600,,181,4.870967741935484
+3907035,3,B002CRN5X8,"Needed some for AWS root accounts, they work, but will loose sync after a month of no use - its easy enough to resync with your account though. No problems with the display or button, had them for about 10 months, still work.",1498694400,,225,4.255813953488372
+3907036,5,B002CRN5X8,Best Amazon MFA device for simple 2 factor authentication. Highly recommend this product.,1497744000,,89,5.923076923076923
+3907037,5,B002CRN5X8,"""Great Tool""",1497571200,,12,5.5
+3907038,1,B002CRN5X8,"I can't really say if this product works or not, all I can report is that it's useless to me at this point. It came without any instructions and I talked to 3 people in their tech support and none of them can tell me what I need to do to use their product. Very disappointing.",1494979200,,276,3.9464285714285716
+3907039,1,B002CRN5X8,"Not working, arrived with dead battery",1488758400,,38,5.5
+3907040,5,B002CRN5X8,Was easy to setup.,1487548800,,18,3.75
+3907041,5,B002CRN5X8,"Before buying it I saw several reviews complaining that it would need re-synchronising a lot, but I've had mine several weeks now and had no problems with it. Arrived super fast too.",1486339200,,182,4.71875
+3907042,5,B002CRN5X8,Does what it should.,1485388800,,20,4.25
+3907043,1,B002CRN5X8,This token died in my pocket after a month. Waste of money.,1483488000,,59,4.0
+3907044,5,B002CRN5X8,"Not much to say.  Press button, receive MFA code.  Works exactly as expected.",1483315200,,77,4.846153846153846
+3907045,2,B002CRN5X8,"only 1 on 3 work correctly : of 2 tokens i receive the message that ""The token serial number was not found.""",1481241600,,108,3.9545454545454546
+3907046,1,B002CRN5X8,The built-in time source is so poor that the device usually has to be resynchronized when trying to log in to AWS. Seems pretty worthless; going back to using my phone for MFA.,1478044800,,176,4.363636363636363
+3907047,3,B002CRN5X8,Warning. This does NOT work for GovCloud. I confirmed this with AWS tech support today.,1472601600,,87,4.866666666666666
+3907048,5,B002CRN5X8,Works great - very reliable,1471651200,,27,4.6
+3907049,5,B002CRN5X8,ok,1470096000,,2,2.0
+3907050,2,B002CRN5X8,It works but does not stay synced over time.  I would't recommend the expense when there are free MFA options available.,1469664000,,120,4.714285714285714
+3907051,4,B002CRN5X8,"Bought two of these to use as MFA devices to secure some AWS accounts.  No problems getting them to work with AWS and they seem reliable and do the job.  The only complaint I have is that the plastic case seems really cheap and has a fair bit of flex and it can allow the LCD display to slightly deform which causes it temporarily impossible to read.  While in normal use this isn't a problem, it does make me worry about the long term reliability of these if you keep them on your key chain where they are susceptible to being hit or compressed in a pocket or purse.",1468627200,,567,4.18348623853211
+3907052,4,B002CRN5X8,Delivery quickly and performs as expected,1468627200,,41,6.0
+3907053,5,B002CRN5X8,This works for me.,1467849600,,18,3.75
+3907054,2,B002CRN5X8,"This device is not as readable as the RSA SecureID, but AWS has you locked-in as the only hard token option.  Consider a soft token if you want easily readable.
+
+2017-09-04 Update
+
+Today, I can no longer use the Hard Token as the display has partially failed, probably from being used on my key-ring for the last 15 months.  Certainly, not the life expectancy I was hoping for, since I used RSA Hard Tokens for years.",1466985600,3,417,4.447368421052632
+3907055,5,B002CRN5X8,Easy to use and my root AWS account is now more secure :),1465689600,,57,3.4615384615384617
+3907056,4,B002CRN5X8,"For my use case the device was to sit on the root account so that it could be easily transfered and virtual tokens were used for daily use, when infrequently used it would be out of sync every login. Moving it to the daily use scenario it worked without needing to be resynced.",1463788800,,277,4.245283018867925
+3907057,1,B002CRN5X8,"It drifts in under two minutes. I can't even re-sync it anymore. I just get the error ""Failed to associate the token"".",1460332800,,118,4.409090909090909
+3907058,1,B002CRN5X8,The token is designed to be used as two factor authentication when accessing AWS which prompts for a 6 digit number that is provide by the token.  Unfortunately these produce an 8 digit code making the tokens useless.  I have looked for ways to change that configuration but haven't found a way.  Must send these back.,1459728000,,318,4.642857142857143
+3907059,5,B002CRN5X8,This was easy to set up with my AWS account and also arrived much quicker than expected to the UK.,1457308800,,98,3.95
+3907060,3,B002CRN5X8,Feels good,1453939200,,10,4.5
+3907061,5,B002CRN5X8,This is the only supported hardware MFA supported for AWS and it does it's job admirably.,1450483200,,89,4.625
+3907062,4,B002CRN5X8,"Simply works.
+a thinner form factor would have been nice, but robustness is better because of thickness.",1449014400,,104,5.176470588235294
+3907063,4,B002CRN5X8,"Does what it says on the can....
+Quick and Excellent Service from the vendor....
+What more can one ask for?",1448841600,,107,4.4
+3907064,5,B002CRN5X8,loving it!,1447632000,,10,4.5
+3907065,1,B002CRN5X8,"Ordered 12 tokens in November last year. In the package, I have only received 7 tokens out of 12. 5 boxes were empty with black X on them. I was not able to get any refund until now - wasted a lot of time with support, shipping back the staff etc. at the end I just gave up.
+
+Since I use these tokens quite often, I can confirm that the clock drifts very frequently and token requires re-sync which is very inconvenient for users. Moreover, there are times where it is not possible to perform re-sync of the token by user -- the only possibility then is to login to account with different privileged user, remove token from user and re-add it again. Obviously this can cause many different problems especially when these tokens are used by privileged users.
+
+My advice to anyone who is going to try to buy this is to consider using google authentication app (you can get it on all Androind, iOS, Windows Mobile OS) instead. That one is reliable and I never had to re-sync the token, you can manage multiple accounts with one app ... .
+
+However if the company policy requires using hardware tokens for some user accounts you will most probably be stuck with this product.",1447632000,2,1170,4.457943925233645
+3907066,5,B002CRN5X8,Does what it is supposed to,1447027200,,27,3.6666666666666665
+3907067,3,B002CRN5X8,I use the as a MFA device voor AWS. It's ok but a bit too bulky to hang on your keychain.,1446940800,,89,3.2857142857142856
+3907068,5,B002CRN5X8,Worked perfectly to secure my AWS account.,1446940800,,42,5.142857142857143
+3907069,5,B002CRN5X8,Good.,1445817600,,5,5.0
+3907070,5,B002CRN5X8,Great product.,1445212800,,14,6.5
+3907071,5,B002CRN5X8,The token arrived as expected and the procurement process is simple and efficient,1444867200,,81,5.3076923076923075
+3907072,5,B002CRN5X8,"Brilliant. Simple, Cost effective security measure",1443484800,,50,7.5
+3907073,4,B002CRN5X8,Works.,1443398400,,6,6.0
+3907074,5,B002CRN5X8,works as expected,1443312000,,17,5.0
+3907075,5,B002CRN5X8,Works like a champ,1443312000,,18,3.75
+3907076,1,B002CRN5X8,Goes out of sync with AWS every month.,1442966400,,38,3.875
+3907077,2,B002CRN5X8,Loses connection with our AWS account frequently and pairing it again is becoming problematic. Still waiting on support from Gemalto. We will see how it goes.,1440720000,,158,5.115384615384615
+3907078,5,B002CRN5X8,Perfect for better security !,1439078400,,29,5.0
+3907079,5,B002CRN5X8,"Items arrived in the UK on time and as expected.
+
+Will be buying more of these when we expand our Amazon AWS use.
+
+Adam...",1438646400,,122,4.041666666666667
+3907080,5,B002CRN5X8,"I could download the applications to my phone just fine, but every time I scanned the QR code with my phone I received an error measage.  The Gemalto worked without any problems.",1438387200,,178,4.5625
+3907081,5,B002CRN5X8,Delivery very fast and the work fine.,1437955200,,37,4.428571428571429
+3907082,5,B002CRN5X8,It works. Simple. Its fairly small and does the job. I use it with amazon web services which often has to re-sync but apart from that no problems. The re-syncing is be an AWS issue and not the device.,1437868800,,200,4.153846153846154
+3907083,5,B002CRN5X8,Nice device,1437264000,,11,5.0
+3907084,5,B002CRN5X8,"Works great.
+
+I got this to secure my Amazon Web Service account with two-factor authentication.  You can also use the google authenticator app on iOS/Android as an alternative.
+
+I have two accounts set up in AWS.  Primary account used this, and the secondary account uses google authenticator on Android.  This way, if I lose one, I have the other for backup.  (I already had to wipe the phone for some software glitches, so this came in handy)",1435017600,,445,4.714285714285714
+3907085,3,B002CRN5X8,"Nowhere near as reliable as Google authenticator running on my pebble.
+Disappointing too that it only works with Amazon.
+It does however do the basics, and if you wait until a number just changes, it works nearly every time.",1434412800,,224,4.769230769230769
+3907086,3,B002CRN5X8,"I don't use it every day, and for some reason this means I'm always out of sync on amazon and have to resync it each time I log in.",1433116800,,131,3.5517241379310347
+3907087,5,B002CRN5X8,"Great product, works exactly as advertised.",1432252800,,43,6.333333333333333
+3907088,1,B002CRN5X8,"Didn't work, was using for AWS MFA... I called AWS when it would not work properly and they said a certain number of the devices wouldn't sync and to return it. I ended up with the Android based AWS MFA app.",1432080000,,207,4.073170731707317
+3907089,5,B002CRN5X8,Does what a digital token needs to do. Happy with the device.,1431216000,,61,4.166666666666667
+3907090,3,B002CRN5X8,"I found out you can use it with one AWS account only - and it is a bummer... Since we have 2 AWS accounts :(dev + prod), and I have root account and personal account in each - which is 4 accounts.
+And I can use this one for only one account... Bummer.
+
+Other than that - excellent.",1430870400,,281,3.8448275862068964
+3907091,5,B002CRN5X8,Excellent,1430179200,,9,9.0
+3907092,1,B002CRN5X8,"Poor quality, display fades after time",1428105600,,38,5.5
+3907093,1,B002CRN5X8,"I gave up using this because it drifts and requires frequent re-syncing. It may work fairly well for 9 months or so if you use it every day, but if you log in less frequently it will drive you crazy. But even if you use it every day, after a year or so it starts requiring re-syncing every time you log in. I do not recommend this product. We bought 6 of these and have had issues with every one.",1427846400,,396,3.9625
+3907094,4,B002CRN5X8,"I just got the electronic token generator from Gemalto. As their notes specify, this is a specialized device for Amazon Web Services (e.g., you can't use it with your GMail account). It seems like a good product. The only reason I didn't give it a five star review is the Amazon definition for five starts is ""I love it"". How in love can you be with an electronic token generator? But I certainly like it.
+
+Anyone who is developing a significant web application should be thinking about security from the start . Amazon Web Services also gives you tools for locking down your application (although it can be time consuming wading through their sometimes obscure documentation). One area of weakness is your AWS root account (e.g., the account you use to login to the AWS consoles). This account has absolute power over your application. Obviously this account has the power to delete your databases and remove all of your EC2 instances, crippling or destroying your application.  If your application gets notice and starts collecting a user base, people will attempt to hack it.
+
+Two factor authentication makes your AWS root account unhackable. Only someone with your email address, your password and the token generator can log in to your account. Short of kidnapping, this is unlikely to happen. Two factor authentication removes a major security vulnerability. All for the cost of $13.
+
+Sure you could use the free Google App on your phone. Right now, phones are one of the items most targeted by thieves. Perhaps this will change as stolen phones are set up to be disabled. But if your phone is stolen, you will not be able to get into your AWS account until you can get support to reset it. So for me this token generator was a good choice.",1427760000,4,1746,4.752475247524752
+3907095,3,B002CRN5X8,"These things drift a lot. I got three of these for key aws admin users, including myself. I only have to log in every few days (not every few hours). Almost EVERY TIME I have to go through the ""your device seems to be out of sync with our servers, please enter two consecutive numbers to resync) - which gives me the impression that these are at best 1.5 factor authentication...
+
+Back to update my review, after another week of trying. These things really are useless. Luckily I never put one on the root account so I was not totally locked out, but if you risk using these, plan on resyncing as root user (not IAM user) regularly. Why Amazon nags me to put it on the root account as well, I have no idea - that is reckless advice in my experience, which luckily I ignored. My roll out to other users put on hold.
+
+Back to update my review again. Gemalto were very helpful, and offered to replace these items; however I was told (no source unfortunately) that AWS had been having problems with the sync process, and that the problem was now resolved. I was highly dubious, except that this was entirely consistent with my own subsequent experience: I re-registered the one test token (since the roll-out was on hold - see above) and since then (approx 3 weeks ago, have had not one single auth problem. So I have to believe the problems we experienced first off were caused by AWS sync problems, and not by the Gemalto tokens.
+
+Have now resumed the roll-out. Upped to 3 stars based on good support, and a resolved problem.",1427241600,4,1523,4.432142857142857
+3907096,5,B002CRN5X8,very useful,1426550400,,11,5.0
+3907097,5,B002CRN5X8,Very Good !,1425600000,,11,3.0
+3907098,5,B002CRN5X8,does what it's supposed to do.,1425513600,,30,4.166666666666667
+3907099,5,B002CRN5X8,ok,1424563200,,2,2.0
+3907100,3,B002CRN5X8,It's merely OK since it doesn't offer an indication of how much longer the current token will be active. Most other devices I've used included some sort of visual countdown enabling you to determine whether it was worth starting to enter the current code or to wait for the next one.,1424131200,,283,4.568627450980392
+3907101,5,B002CRN5X8,Works perfectly with no issues.,1422921600,,31,5.4
+3907102,5,B002CRN5X8,"This standard token is great, but the OTP-Display Card is really cool  - something special!!!",1419379200,,93,5.2
+3907103,1,B002CRN5X8,"Not so fast people. This unit failed after a couple of months and would not resync. AWS told me they wanted me to fax over every document I had to prove I was the owner. Major inconvenience. I like the idea of 2FA, but this is a bad call. The device itself has a design flaw.",1418688000,3,275,3.9285714285714284
+3907104,5,B002CRN5X8,"all perfect, simple and works as required - very cheap peace of mind !",1416528000,,70,4.071428571428571
+3907105,1,B002CRN5X8,Device does not stay synced with AWS.  Going back to Google Authenticator.  Save your money on this cheap device.,1415836800,2,113,4.894736842105263
+3907106,2,B002CRN5X8,I had to pay taxes when the packet arrived,1415836800,,42,3.7777777777777777
+3907107,5,B002CRN5X8,Works fine,1415404800,,10,4.5
+3907108,5,B002CRN5X8,Work exactly as described. Not a lot else to say.,1414195200,,49,4.0
+3907109,5,B002CRN5X8,works as expected,1413158400,,17,5.0
+3907110,3,B002CRN5X8,"It does what it's supposed to, but I think it's a very clumsy security token that needs a redesign. AWS has stuck with this vendor but they should really improve the design of this thing.",1412899200,2,187,4.371428571428571
+3907111,1,B002CRN5X8,"Antiquated, use an app like Authy or Google Authenticator instead.",1412899200,2,66,5.7
+3907112,5,B002CRN5X8,A++++,1412553600,,5,5.0
+3907113,4,B002CRN5X8,"Works as expected, easily",1411948800,,25,5.5
+3907114,5,B002CRN5X8,I carry this little thing everywhere I go that has public WiFi. It works like a charm keeping me safe from hacker harm!,1410825600,,119,4.217391304347826
+3907115,4,B002CRN5X8,"no RSA, and i've consolidated on Google Authenticator (after trying others, especially authy). just get Google Auth. There's a reason (even) M$ recommends it!",1410393600,,158,5.625
+3907116,3,B002CRN5X8,"Constantly losing sync with AWS IAM. If you buy this, be prepared for it to almost never work. We made several attempts at resynchronizing the device to Amazon AWS and they were all successful but within the span of every two week period, the device will become unsynchronized with Amazon. It's not very clear if this is the clock specifically or some other issue but all of our Gemalto tags seem to display this trait.",1409011200,5,419,4.6
+3907117,5,B002CRN5X8,I purchased this as a Multi Factor Authentication (MFA) device for the AWS console. Easy to set up and works exactly as described.,1408579200,,130,4.695652173913044
+3907118,5,B002CRN5X8,provides the security you would expect at a very reasonable price.,1407888000,,66,5.090909090909091
+3907119,5,B002CRN5X8,"Although I've read about this device getting out of sync, I haven't experienced this problem. I love that it fits on my keyring, and that losing my phone won't lock me out of my sensitive work accounts.",1406937600,,202,4.486486486486487
+3907120,5,B002CRN5X8,"Works as advertised, perfectly reasonable delivery time. Packaging was a bit subpar with the token able to bounce around inside the box a fair bit, but that's not enough of a reason to deduct a star.",1406419200,,199,4.555555555555555
+3907121,1,B002CRN5X8,I bought this token because it was supposedly OATH compatible but I never received any secret keys or import files through email. I have tried contacting Gemalto support but end up leaving a message for a voicemail box.,1404259200,2,219,4.7894736842105265
+3907122,5,B002CRN5X8,"It was delivered very quickly, and operates as advertised.  It was simple to set up, and easy to keep a hold of.  Just leave it on your key chain.",1401926400,,146,4.0
+3907123,1,B002CRN5X8,"This thing stopped working after a year and a half. I used it a couple times per week and it was stored in an office. Now all i get when i turn it on is ""Err""
+
+So, not only have i wasted my money, but i also can't access my aws account... go figure",1399507200,,248,3.5925925925925926
+3907124,4,B002CRN5X8,"I've managed networks large and small, but when it comes to my own servers on AWS... I grabbed one of these in a heartbeat.  Shipping is quick, packaging is great.  The product itself is really well-made.  Integrate it with Amazon in 2 minutes and you're on a rolling password every 30 seconds.  It prompts you a second time for your token code after you enter your normal amazon password.  Love it!  Just keep in mind that when you set it up, when it asks you for two passwords... it's looking for one click on the device.  Wait 30 seconds beyond it shutting off.  Click one more time, and that's your second number.  The documentation on this process is pretty much missing and I wasn't sure why I should wait out for a new code to generate.  Seems a little risky, honestly -- since it might map the two numbers in a sequence instead of just running off the serial number.  Is this a future risk?",1399248000,,898,4.381818181818182
+3907125,1,B002CRN5X8,"... no doccuments, no instrutions, no weblink, no email address. All in all not a really pleasant experience this time. I won't return it for a refund (too much hassle) but doubt that it will ever be put to any use other than a toy for the grandbaby to play with.",1398988800,,263,4.176470588235294
+3907126,1,B002CRN5X8,"I bought 10 or more I can not remember, at least one for each of my employees in my company. After a week absolutely all had the same problem. lcd screen seemingly disconnected internally and you must push strong the button to see the numbers .. some were completely useless in 2 or 3 days ..",1397347200,,292,4.232142857142857
+3907127,3,B002CRN5X8,cool little device. how every time you press the button it give a different number excellent technology I may use this for other applications.,1397088000,,142,4.958333333333333
+3907128,3,B002CRN5X8,"The clock on this token drifts so much that I have to re-sync Every Darn Time I go to use it. This results in a 2-minute delay while I go through the re-sync process.
+
+I only login to AWS about once a quarter, and I'm sure if I used it more often it would stay in-sync.
+
+I'm too paranoid to use the Android app, given the impact of a breach on my personal account, I'm stuck with this token.",1395619200,12,391,3.9367088607594938
+3907129,4,B002CRN5X8,"It is Good item for security
+If it was more cheep, I was happy more
+That's all ,I expect next shopping.",1395446400,,103,3.9523809523809526
+3907130,4,B002CRN5X8,This token works exactly as you would expect; the build quality is solid but the token itself is light an unobtrusive.,1392249600,,118,4.666666666666667
+3907131,1,B002CRN5X8,"You set it up on your account, and you need one for every logon which sucks, then it goes out of sync or stops working and you have to contact support to get them to remove MFA & start again.
+Eventually it just stopped working.
+Then Gemalto support were totally unresponsive.",1391990400,,275,4.411764705882353
+3907132,5,B002CRN5X8,"Works perfectly and the price is right.
+
+I highly recommend that anyone with an AWS account use one to protect their parent login.",1390521600,,130,4.6521739130434785
+3907133,3,B002CRN5X8,"You must secure your AWS services, you can not do without this level of security.  This token works well when it works, However the token drifts frequently.  Re-syncing is easy, but in all of the years owning 2-factor tokens. I've never had to resync this much.  Google authenticator is more reliable than this.
+
+Bottom line: You must secure your AWS account. This works, but I with Amazon would switch to something more reliable.",1389484800,5,430,4.8493150684931505
+3907134,3,B002CRN5X8,"The second time is a good product the first one that I bought didn't work.  This one does. I would buy, again to complete my project,",1388707200,,133,4.115384615384615
+3907135,2,B002CRN5X8,"I liked how it seemed to work at first.
+I didn't like how it seemed to give up the ghost so quickly.
+Wish it was a little smaller ... but it isn't bad ... if it just worked.
+Received from seller quickly.",1388534400,,203,3.857142857142857
+3907136,5,B002CRN5X8,"Excellent device, just what you want for cheap and easy hardware authentication. Easy to setup with the serial number and two numbers and you're up and running with AWS and hardware MFA.",1385856000,,186,4.84375
+3907137,5,B002CRN5X8,"I was doubtful at first about locking my Amazon account down with this device but it means that if someone does manage to get hold of my username and password for my account then they will still need to have physical access to my gemalto MFA device.
+
+Its not bullet proof protection but it certainly means there is an added layer of protection which could possibly thwart a malicious person from accessing my sensitive data.",1382832000,,424,4.653333333333333
+3907138,2,B002CRN5X8,"Good security device but breaks very easily which is not good when we need to access our web servers. Have to constantly replace. however, isn't much other option. Could Gemalto please make these more robust. Cheers.",1382054400,,216,5.027777777777778
+3907139,5,B002CRN5X8,"I chose this rating because amazon always provides the best quality and instruction when it comes to working with them as an affiliate. It definately helps keep your password safe as it changes every 5 minutes. I thought it would be a hassle but It was not. I like that it is tangible as it helps me to remember just how important security is in the online environment. If your an associate with amazon i highly recommend going this route, its worth the purchase.",1381622400,,463,4.523809523809524
+3907140,5,B002CRN5X8,This little gizmo is just perfect for the multi-device authentication I wanted for my AWS account. It's perfect to fit as a key fob so I won't lose it.,1379462400,,151,4.241379310344827
+3907141,4,B002CRN5X8,"I am worry what will happen if the Token is malfunction or no battery, will I get another way to access Amazon Web Services within short period ?",1372204800,,145,4.214285714285714
+3907142,5,B002CRN5X8,"Don't know what else to use it for, but it works fine on AWS.  It could come with a keychain lanyard, the hole in it is not particularly well suited to a keyring without one.  But the functionality is fine on it, button seems not easy to press on accident, which is good for these things.  The bank one always has a dead battery from being accidentally pressed in my briefcase, not so on the gamalto.",1371600000,,400,4.2368421052631575
+3907143,5,B002CRN5X8,"We use these tokens as master MFA keys for our accounts and use them only for creation/modification of IAM users, who use virtual MFA  on their smartphones.",1369440000,,156,4.777777777777778
+3907144,1,B002CRN5X8,"this is the worst deal i have done.
+they sent it for me as a dvd, and i was taxed by U$ 100 over the product's price",1368403200,,116,3.3333333333333335
+3907145,5,B002CRN5X8,"Enchases security on an easy way.
+I use also the other products from Gemalto and I'm very satisfied with quality and usability.",1368057600,,127,4.818181818181818
+3907146,2,B002CRN5X8,"Having two factor authentication with AWS is a great feature. Needing to use the Gemalto token less so.  The token was sent and received quickly; however, Gemalto contacted me right away to inform me that the token was part of a bad batch.  I was told it would initially take 4 weeks until I could get a replacement.  After reaching someone in customer service because the notification and process looked sketchy, they were able to provide the replacement within a week.  Great.  I registered the device and was working fine the first week.  The next week, I could not authenticate with the device and had to call AWS customer service to de-activate the device in order to eventually log into my AWS account.  AWS offers virtual tokens through the Google Authenticator app which I would recommend instead of this token.",1367452800,,819,4.807142857142857
+3907147,5,B002CRN5X8,"Great.
+Should be mandatory for all accounts amazon aws.
+Guarantees my safety.
+
+The only bad point is that I was taxed in Brazil custom house of my parents, I had to pay a fine equivalent to 60 dollars.
+
+The device is great, I have more peace of mind with the security of my information now.
+Great device.",1366329600,,304,4.315789473684211
+3907148,5,B002CRN5X8,Small and handy but easy to misplace. Every morning I need to give my laptop bag a thorough pat to get hold of the Token but it does the job!,1362873600,,141,3.7333333333333334
+3907149,4,B002CRN5X8,"Dislikes:
+- Takes much time to receive the security device as a german customer
+
+Likes:
+- A simple first time configuration
+- Not scratchable :-)
+- Easy to use because of just one click to sign in
+
+Price level is ok!
+
+I would recommend this security device to my customers as well!",1362873600,,281,4.365384615384615
+3907150,4,B002CRN5X8,"It just works as it should. It could be smaller but I don see how to fit the button and readable display if it would be smaller, so it's just perfect for the job.",1362182400,,162,3.7941176470588234
+3907151,1,B002CRN5X8,"This well-designed (mechanically) little e-key totally disappointed me. The fourth time I pushed the button it said ""Err"" instead of dispensing a code. I sure hope these things get more robust, because the days of passwords are gone.",1360108800,,233,5.157894736842105
+3907152,5,B002CRN5X8,"Works just as described.  Was relatively easy to get it setup with my AWS account. Hit the button, get a code, login.",1358726400,,117,4.318181818181818
+3907153,1,B002CRN5X8,"The device stopped displaying a number when I press the button within a few months of owning it. I have tried to contact various parts of Gemalto. The departments I can get through to refuse to deal with the complaint as I have to go to the specific department I purchased it from. The specific webstore (contacted via Gemalto.noram@gemalto.com) does not respond to emails and their phone number goes through to voicemail to a mailbox that isn't accepting messages as it is full.
+
+The device itself is quite flimsy compared to other 2-factor devices I use.
+
+Buy with caution, if the device fails there does not appear to be any customer support.",1358121600,6,645,4.75
+3907154,5,B002CRN5X8,"I have a 'dumbphone' and this works great, It's attached to the case on the keychain accy, matches my phone.",1357430400,,108,4.45
+3907155,4,B002CRN5X8,"This is an excellent way to add an extra layer of security to your AWS account. I highly recommend this to anyone using AWS in their business.
+
+Word of warning: after a couple months the serial number on the back had started wearing off. I wrote down the information just to be safe, and I'm glad I did because eventually it wore off completely. Writing down the serial number isn't a security risk, so I suggest you do it if you purchase one. I knocked off a star for this, because I have a similar device from Verisign which doesn't have this issue at all.",1356393600,2,558,4.314285714285714
+3907156,5,B002CRN5X8,"The odd time I'll have an issue where I can't long in but I just wait for the next key cycle and that'll always work.
+
+Wish there was some sort of ""loading bar"" to tell me when it was going to refresh to the next key but still a great product.",1355184000,3,243,3.764705882352941
+3907157,5,B002CRN5X8,"The device is small enough that its hard to notice it amongst your key fob and other slightly larger items on your keychain.
+
+Once you hit the button, numbers quickly display on the simple led screen and stay there long enough for you to grab all 6 digits. This is a security device and there isn't much more to it. 5 stars because it does exactly what is expected of it.
+
+The device is brand new to us, so we cannot ascertain the longevity of the device over time (the battery life, if it holds up to frequent battering by your keys or other objects nearby, etc).",1346716800,,564,4.261682242990654
+3907158,5,B002CRN5X8,"I have had something like this before. Based on prior experience, do NOT put it on your keychain. Leave it at the primary station or hang it on a wall. They do not take the beating, long term.
+
+No backlight so have a flashlight handy if you are working in the dark.
+
+Does what it says it will. 2 Factor authentication is a must today.",1346630400,,334,4.123076923076923
+3907159,4,B002CRN5X8,The core product is fine. Ideal improvements would be a better key ring attachment (the competing product from RSA I have on the same key ring is stronger than the plastic on the gemalto). Something as important as this needs to be carried around all the time in case you need it for DR/support and resilience is critical...,1338163200,,324,4.603448275862069
+3907160,3,B002CRN5X8,"Devices took 4 weeks to be delivered and in the mean time we realized that, because we're running multiple accounts under consolidated billing and can only assign one device to one account that we'd require a crazy number of MFA devices.
+
+A better option is to use the smartphone app if you need to manage multiple accounts.
+
+As we're on android and the Amazon Authentication app is (seemingly) only available through amazon's bespoke market place (which requires all kinds of security settings to be turned off), we've decided to use the Google authentication app in its place.
+
+I wish Amazon would release apps through the proper channels for android and therefore everyone could have access to the official version of this app rather than finding a workaround.",1337644800,6,763,4.9921259842519685
+3907161,5,B002CRN5X8,I have been using this device for about a week now to authenticate to Amazon AWS ec2 instances. Had a bit of a problem getting the unit registered-- but that was because of my impatience. There can be a little bit of latency (I'm talking two-three seconds) that can make the unit appear to fail. My protocol is 1) see prompt for 6-digit key entry 2) activate device to reveal key 3) take deep relaxing breath 4) enter key. Device has worked perfectly using this protocol. Use of the device should be combined with a strong password-- I wouldn't trust any pseudo-random device as my sole security factor. Use it to make a strong password stronger and you will be set. Very inexpensive. I hope it becomes available again--maybe unavailable because they are upgrading to a newer model? I'd like to deploy this device generally in my network (i.e. get a server component so I can augment my rsa keys used for remote access).,1335398400,,920,4.615853658536586
+3907162,5,B002CRN5X8,"We use these device to log into our AWS account for added security, and it works very well.
+Very easy device registration and logging in is fast and easy.
+I've only been using these for a couple of weeks now and didn't notice any resync.",1334016000,,237,4.288888888888889
+3907163,5,B002CRN5X8,"I just moved the mid-sized company I work for over to AWS for Route 53 zones, a couple of EC2 instances, and some Cluster assembly work on genomes.  I've been switching back and forth between using this token and Google Authenticator.  GA is easier to remember since it's on my phone and I don't forget it, but this little token is perfectly adequate.  I'm pretty tough on equipment, and apart from a couple scratches, this thing is unaffected.
+
+They're like 12 bucks a pop.  If I implement IAM, I can afford to push these to all our users and enforce 2-factor auth, and still keep a few extras around as replacements.  The days of needing RSA tags bought by the case at great expense are over.
+
+Gemalto does offer a few other form factors on their site that aren't available for AWS, I would like to have the credit card option instead, but I can live with this as long as I keep it clipped to my pocket protector.  (Including a badge clip would have been a nice touch.)",1326240000,,971,4.385474860335195
+3907164,3,B002CRN5X8,"I have about 52 of these, most of which are attached to AWS accounts.  I'm really happy with the added security but unhappy with the drift.  I rarely log into any of the accounts but almost without fail I need to re-sync the token any time I do.",1325548800,19,245,4.083333333333333
+3907165,4,B002CRN5X8,"I travel a lot and many times i'm force to use insecure connections, some time i can't get any type of vpn working and need to access my amazon account.
+With this token i have no problems using my login and password and don't get paranoid about safety.",1324857600,,252,4.270833333333333
+3907166,5,B002CRN5X8,"I ordered it from Slovakia (central europe), it came after couple of weeks and it's working - there isn't much about it's functionality to write - nubers are visible ok :-). How long the battery will work, no idea yet :-).",1322438400,,222,4.439024390243903
+3907167,5,B002CRN5X8,"works like magic
+arrived in time without any troubles
+willing to have this device for each website I use : )",1321228800,,108,4.190476190476191
+3907168,3,B002CRN5X8,"I have had the Gemalto Token token for almost two years now to provide two factor authentication for my amazon services.
+
+It works well, but about 20% of the time I am required to submit two keys to resync the device, which can add quite some time on the login process.
+
+Short: Adds security but isn't working as seamlessly as I'd expect.",1321056000,11,338,4.435483870967742
+3907169,5,B002CRN5X8,"I bought to this Ezio time-based 6-digits token for use with amazon web services for convenience of me for focus matter things to bought 10/03/2011,
+Actually, after revewing to this gemalto item, so far so good and no damage, seems to new one stock of inventory,
+I guess great useful to gemalto between amazon.com and me for each other convenience, but I'm not sure yet now for when they permit to this gemalto for me, There is unsatisfactory for my situation now, So I got a watch to in process of time for them,
+However, I hope to expect allow use this gemalto sooner or later, Thanks again, Sincerely  November 4,2011",1320364800,,620,4.585585585585585
+3907170,5,B002CRN5X8,Easy and simple to use and well integrated with AWS. This product is doing it's job and the price is affordable.,1320019200,,112,4.380952380952381
+3907171,5,B002CRN5X8,"Great product and easy setup.
+Small enough to carry and yet big enough to avoid loosing it
+When dealing with AWS i am now really secure about accessing the AWS Console and account services.",1318809600,,189,4.588235294117647
+3907172,1,B002CRN5X8,The product has not been received 4 weeks after order being placed. The product has not been received 4 weeks after order being placed. The product has not been received 4 weeks after order being placed.,1316908800,,203,4.666666666666667
+3907173,5,B002CRN5X8,"It is a simple device that shows a code when you press a button.  It doesn't make your tea, it doesn't connect to the internet, it just does what it is required to do and does it well.  No problems, looks solid, battery life should be fine (no problems so far).",1311033600,,261,4.098039215686274
+3907174,2,B002CRN5X8,"Just bought a handful devices and started registering by using the AWS console app. As the first attempt failed, I tried the next device just to see if I did a mistake or if the deveice has a problem. Surprisingly I was able to register the second device so I continued trying to register the remaining ones. As a result, I was able to register just 2 out of 5 devices so that I started searching the Amazon AWS pages for help. Amazon offers a link for exactly this problem which leads to a web form I filled out and, a couple of hours later, I received a phone call but we couldn't manage to get the devices registered by now. I'm still confident to get this fixed with the help of the Amazon support as they promised to get back to me, but I think it's a standard technology which simply has to work and not rocket science. Or perhaps it's just back luck that 3 out of 5 of my devices don't work at the beginning.",1309305600,,915,4.146067415730337
+3907175,5,B002CRN5X8,I need more security to my AWS account.  This Token is the solution.  Now I'm sure that access to my account is very secured.,1308096000,,125,4.166666666666667
+3907176,5,B002CRN5X8,"Small, light, cheap; there is no reason not to buy one of these if you have an AWS account.  Google has similar security technologies, using things such as SMS messages, but this physical device is great as well.  I had it shipped to Canada and taxes/duty/brokerage fees were all included in the small initial shipping fee -- great stuff!
+
+Setup with Amazon was quick, easy, and I feel SOOoo much better knowing that my account has an extra layer of security now.  With trojans and keyloggers lurking in every corner these days, a temporal security system is just what I needed.
+
+It did not come with a lanyard though, so losing it could be easy if you don't take care.  I bought a big neon lanyard for mine so I would never misplace it.
+
+The LCD screen is also kinda small and dim; I assume the battery life will last years because of this, but if you have bad vision or dim lighting, it might be a bit challenging to read the code off when needed.
+
+I got no idea what to do if I lose mine, as that scenario doesn't seem to be mentioned in plain sight, but I'll worry about that another day.  Right now, I feel relieved.
+
+5/5, since it's cheap and it works as expected.  Too bad I can't use it for more of my other IT services though, as I can't find anyone else supporting it other than AWS. meh",1304640000,,1297,4.253061224489796
+3907177,5,B002CRN5X8,"Want to make your AWS account more secure? The Ezio Time Token is an easy and effective security enhancement.
+
+Each time you log into your AWS acount, you do not only use your userid and password (which could be sniffed by a keylogger), but also a 6 digit code created by this little device. A lot more difficult to crack than userid and password alone (unless there is a hidden backdoor, who knows?) with only a little bit of additional typing.",1299110400,,445,4.493827160493828
+3907178,4,B002CRN5X8,"I purchased this security token to use with my Amazon Web Service account.  At first there were problems when trying to register the token with AWS.  After communicating back and forth with support a few times, it was determined that I received a token from a bad batch.  Support promptly sent me out a new token for no additional charge.  The new token registered fine and works perfectly.  The device is simple looking, but works without a problem.  Product is a great value for the price.",1295222400,,491,4.651162790697675
+3907179,5,B002CRN5X8,"There is not much to say, as it is just a token. The setup and configuration were simple and quick. It works well and does exactly what I would have expected.",1281916800,,158,4.129032258064516
+3907180,5,B002CRN5X8,"I'm a new user to Amazon S3 after a long hunt for a secure storage environment for my sensitive business records.  S3 + the Time Token makes the perfect ticket to provide me with the assurance that I need.  Nice product.  Size is fine, functionality is great.  No complaints.",1276128000,,275,4.551020408163265
+3907181,5,B002CRN5X8,"Works as advertised, but could be slightly smaller. It measures approximately 55x25x10mm (2.2x1x0.4 inches). Well worth the cost for the extra account security offered.",1272672000,,168,6.041666666666667
+8364379,4,B002CRN5X8,"I only needed this to scare my nephew. He was caught with copies of some of my bank statements, utility bills, paystubs, and stuff in his bedroom.  His father shredded the copies.
+
+I bought this to make him think it is required to get into my accounts.  That way he, or his friends will not try.",1525737600,,295,4.232142857142857
+8364380,5,B002CRN5X8,Works as adverstised,1523923200,,20,6.0
+8364381,2,B002CRN5X8,"Bought this April of 2017 and the battery died March 2018. Battery change is not insignificant task as it is soldered in.  When new battery replaced, the display worked, but only displayed err.  Support pages and phone support not very good.  Will try a different OTP and see if it is any better.",1521158400,,296,4.547169811320755
+8364382,5,B002CRN5X8,Good,1517270400,,4,4.0
+8364383,5,B002CRN5X8,Has been working as advertised for over 2 months,1515888000,,48,4.444444444444445
+8364384,5,B002CRN5X8,Perfekt works like it should.,1513209600,,29,5.0
+8364385,5,B002CRN5X8,"I use this every day, its brilliant",1510272000,,35,4.142857142857143
+8364386,4,B002CRN5X8,I have purchased a dozen of these for securing AWS accounts.  They are locked in a safe and only used tops every month or 2.  They aren't getting abuse or being used very frequently and are filling the need very well.  I haven't had issues with them falling out of sync or experiencing poor batter life.  The oldest of them is 10 months old.  Again - they aren't used very often though.  Not sure how they would hold up if you were carrying on a keychain and using everyday.  Use software MFA like Google Authenticator if you are using everyday.,1509494400,,545,4.39
+8364387,1,B002CRN5X8,"I bought 2 units. Both have drifted so far that I have to deactivate and reactive them every few months.
+
+Very low quality device. Don't depend on this to",1508630400,,154,4.310344827586207
+8364388,4,B002CRN5X8,"I bought some of these because I prefer the fob to smartphone 2FA. I have had no trouble with them, they have worked reliably since I bought them several months ago.",1506297600,,165,4.354838709677419
