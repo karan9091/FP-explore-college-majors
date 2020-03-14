@@ -79,8 +79,8 @@ function plot_asin(asin, x_axis, y_axis){
 
     avg_score = avg_score / num_reviews;
     stars = "";
-    for (i = 0; i < 5; i++) {
-        if (i > avg_score) {
+    for (i = 1; i <= 5; i++) {
+        if (i > avg_score + .5) {
             stars += "&#9734;";
         } else {
             stars += "&#9733;";

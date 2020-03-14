@@ -1,123 +1,45 @@
 <!DOCTYPE html>
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Amazon Reviews</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
+    <meta charset="UTF-8">
+    <title>My Title</title>
     <style>body {
 			background-color: #FFF5DA;
 		}
-		#autoComplete:focus::selection {
-			color: #FFF5DA;
-		}
-		.autoComplete_result::selection{
-			color:#FFF5DA;
-			background-color: #FFF5DA;
-		}
-
-		#autoComplete {
-			color:#FFF5DA;
-			background-color: #FFF5DA;
-			height:3.15rem;
-			width:19rem
-		}
-
-		#autoComplete:hover {
-			height:3.5rem;
-			width:25rem;
-		}
-
-		#autoComplete_list {
-			background-color: #FFF5DA;
-		}
-
-		.autoComplete_highlighted::selection {
-			color:#FFF5DA;
-			background-color: #FFF5DA;
-		}
-		#autoComplete_wrapper {
-			color: #FFF5DA;
-			background-color: #FFF5DA;
-		}
-		
-		.row {
+	    .row {
 		  display: flex;
-		}
-
-		.bar { fill: steelblue;
-		 }
-
-		.bar-background {
-			background-color: #FFF5DA;
 		}
 
 		.column {
 		  flex: 50%;
 		}
 
-		#landing-header, #help-text {
+		#header {
 			width: 100%;
 			text-align: center;
+			background-color: #FFF5DA;
+		}
+		.line {
+			fill: none;
+			stroke: steelblue;;
+			stroke-width: 6;
+		}
+		.dot {
+			fill: none;
+			stroke: #000000;
+		 	stroke-width: 2px;
 		}
 
-		#text-header {
-			display: inline-block; 
-			margin: 0 auto;
-			padding: 3px;
-		}
-/*
-		#interesting-reviews {
-			text-align: center;
-			align-content: center;
-			margin-right: auto;
-		    margin-left: auto;
-		    width: 200px;
-		}*/
-
-		#heatmap {
-			width: 100%;
-		    height: 300px;
-		}
-		#text-header {
-			display: inline-block; 
-			margin: 0 auto;
-			padding: 3px;
+		.dot:hover {
+			fill: #4CAF50;
 		}
 
-		h1 { 
-			font-family: Raleway; 
-			font-size: 80px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 700; 
-			line-height: 26.4px; 
-			color: #2C1424;
+		not(.dot:hover) {
+			fill: #4CAF50;
 		}
-		
-		h2 { 
-			font-family: Raleway; 
-			font-size: 20px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 700; 
-			line-height: 15.4px; 
-			color: #2C1424;
-		} 
-		
-		p { 
-			font-family: Raleway; 
-			font-size: 20px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 400; 
-			line-height: 20px; 
-			color: #2C1424;
-		} 
 
 		.button {
-			font-family: Raleway; 
 			background-color: #4CAF50; /* Green */
 			border: none;
 			color: white;
@@ -132,83 +54,174 @@
 		}
 
 		.button {
-			font-family: Raleway; 
-			background-color: #FFF5DA; 
-			color: #2C1424; 
-			border: 2px solid #F5B53A;
-			align-self: center;
-			width: 330px;
+			background-color: white;
+			color: black;
+			border: 2px solid #008CBA;
 		}
 
 		.button:hover {
-			background-color: #F5B53A;
+			background-color: #008CBA;
 			color: white;
 		}
 		.button_pressed {
 			background-color: #008CBA;
 			color: white;
 		}
-
-		#help-text {
-			margin-left: 350px;
-			margin-right: 350px;
+		.label {
+			vertical-align: middle;
+			min-height: 18px;
+			font-size: 16px;
 		}
-		hr {
-  			border: 1px solid #FF6A71;
+		.select {
+			vertical-align: middle;
+			height: 30px;
+			padding: 10px;
+		}
+
+		#graph1 {
+			margin-right: 100px;
+		}
+		.div_menu {
+			display: inline-block;
+			margin: 0 auto;
+			padding: 3px;
+			text-align: center;
+			overflow:visible;
+		}
+
+		#subheader {
+			width: 100%;
+			text-align: center;
+		}
+		/* Dropdown Button */
+		.dropbtn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		}
+
+		.dropbtn2 {
+		  background-color: #DA4165;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content2 a:hover {background-color: #ab324e;}
+
+
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown, .dropdown2 {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content, .dropdown-content2 {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a, .dropdown-content2 a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown2:hover .dropdown-content2 {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown2:hover .dropbtn2 {background-color: #ab324e;}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content2 a:hover {background-color: #ddd;}
+
+		.main-header {
+			display: inline-block;
+			margin: 0 auto;
+			padding: 3px;
+			margin-bottom: 16px;
+
+		}
+
+		.main-header-text {
+			font-family: Raleway;
+			font-size: 80px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 700;
+			line-height: 26.4px;
+			color: #2C1424;
 		}</style>
   </head>
-  
+
 
   <body>
-    <div align="center" class="row">
-	    <div id="landing-header" align="center">
-	    	<h1>Amazon Reviews</h1>
-	    </div>
+	<div align="center" id="main-header">
+		<h1 id="main-header-text"></h1>
 	</div>
-	   
-
-	<div align="center" class="row">
-		<div id="help-text" align="center">
-	    	<p>
-Amazon has hundreds of thousands of reviews of movies and TV shows, and we have created a way to better visualize the reviews. Simply search below, or choose one of our curated reviews and explore the information on the next page.  
-			</p>
-		</div>
+	<div align="center" id="stars-header">
+		<h1 id="stars-header-text">
+		</h1>
 	</div>
-	<hr>
-	<link rel="stylesheet" type="text/css" href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/interesting-reviews-button.3de01de2.css">
-
-	<div align="center" class="row">
-		<div class="column">
-			<div id="heatmap" align-items="center">
-				<div class="container" id="bargraph" style="width:100%">
-					<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/bar_graph.a7ebeb4f.js"></script>
+    <div align="center" class="row" id="header" ,="" style="background-color: #FFF5DA">
+		<div class="div_menu" align="center" id="text-header">
+			<button class="button" ,="" onclick="location.href = 'index.html';" id="home_button">Home</button>
+			<div class="dropdown">
+				<button class="dropbtn">X-Axis / Y-Axis</button>
+				<div class="dropdown-content">
+				    <a id="dropdown-1">X: Year <br> Y: Review Length</a>
+				    <a id="dropdown-2">X: Score <br> Y: Review Length</a>
+				    <a id="dropdown-3">X: Review Length<br> Y: Year</a>
+				    <a id="dropdown-4">X: Review Length<br> Y: Score</a>
+				    <a id="dropdown-5">X: Year <br> Y: Score</a>
+				    <a id="dropdown-6">X: Score <br> Y: Year</a>
 				</div>
 			</div>
+			<input id="autoComplete" tabindex="1">
 		</div>
-		<div class="column">
-			<div align-items="center" position="absolute" style="width: 100%;height:300px;">
-				<div id="interesting-reviews">
-					<h2 style="color: #2C1424;">Interesting Findings:</h2>
-					<a href="#" class="button">Most liked comment</a>
-					<a href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/index.html?name=B000WGWQG8" class="btn-gradient blue block">Most Reviewed Movie</a>
-					<a href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/index.html?name=B01GWC8JWA" class="btn-gradient orange block">Movie with Longest Average Review</a>
-					<a href="https://uw-cse442-wi20.github.io/FP-explore-college-majors/index.html" class="button">Another interesting review</a>
-				</div>
+
+    </div>
+	<div class="row">
+	  <div class="column1" style="width: 100%%; height: auto;">
+	  	<div id="graph1" class="graph"></div>
+	  </div>
+
+	</div>
+	<div class="row">
+	  	<div style="width: 50%; max-height: 300px">
+			<div type="text" id="reviewBox" style="max-height: 300px; overflow: auto;background-color: #4CAF50; color: white; scrollbar-base-color: gold; font-family: sans-serif; padding: 10px;">
 			</div>
-			<div align="center" id="header" ,="" style="background-color: #FFF5DA">
-				<div class="div_menu" align="center" id="text-header">
-					<input id="autoComplete" tabindex="1">
-				</div>
-			</div>
+		</div>
+		<div id="wordcloud" style="width: 50%; height: auto;">
 		</div>
 	</div>
-
-    <script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/landing-page.717825b3.js"></script>
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
-	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/d3.layout.cloud.2ce218a8.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
-
+	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/d3.layout.cloud.2ce218a8.js"></script>
+	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/word_cloud.16658cb2.js"></script>
+	<script src="https://uw-cse442-wi20.github.io/FP-explore-college-majors/src.da9c195e.js"></script>
   </body>
 </html>
