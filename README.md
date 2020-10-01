@@ -48,10 +48,10 @@ so any files you put in the `static/` folder will be available over the network.
 
 ### Using 3rd party libraries
 
-You are more than welcome to use open source packages such as D3.js, just make sure to cite these.
+You are more than welcome to use open-source packages such as D3.js, just make sure to cite these.
 
 To add a new one run `npm install --save <library-name>`, e.g. `npm install --save d3`. This will
-add the library locally so it is available for use in your JS files. It will also add `d3` to the
+add the library locally so it is available for use in your JS files. It will also add d'3 to the
 list of dependencies in `package.json`.
 
 _Note that if you install a library your teammates will need to install it too. Once the dep is added
